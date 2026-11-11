@@ -375,3 +375,28 @@ table.grid tr.row[aria-selected="true"] td {
   margin-top: 1px;
   text-shadow: 0 0 3px var(--bg);
 }
+
+/* earthquake markers: single-hue activity marker, sized by magnitude */
+.quake-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1.5px solid var(--quake);
+  background: color-mix(in srgb, var(--quake) 18%, transparent);
+  color: var(--quake);
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  cursor: pointer;
+  padding: 0;
+}
+.quake-marker.recent {
+  background: color-mix(in srgb, var(--quake) 34%, transparent);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+:root {
+  --quake: #e8833a;
+}
+:root[data-theme="light"] {
+  --quake: #b5540a;
+}

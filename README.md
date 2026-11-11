@@ -13,6 +13,24 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 | Current weather and 7-day forecast, 8 cities | Open-Meteo | Open, no key, free for non-commercial use; called from the browser | Every 15 min |
 | Country boundaries, lakes, disputed areas | Natural Earth (public domain) | Bundled | Static |
 | Infrastructure projects | Curated, with source URLs per record | `data/curated/infrastructure.geojson` | Monthly review |
+| **v2** Commodity prices (coffee, gold, crude oil) | World Bank Pink Sheet (.xlsx) | Open, no key | Daily job (source monthly) |
+| **v2** Daily birr/USD (market) | open.er-api.com | Open, no key | Daily job |
+| **v2** Earthquakes (Horn/Rift region) | USGS | Open GeoJSON; called from the browser | Every 10 min |
+| **v2** Red Sea transit (Bab el-Mandeb, Suez) | IMF PortWatch (ArcGIS) | Open, no key | Daily job |
+| **v2** Headlines | GDELT 2.0 Doc API | Open, no key, rate-limited | Daily job |
+| **v2** Trade partners and balance | UN Comtrade | Free tier, **needs a key** (see below) | Daily job |
+
+### v2 features
+
+Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle "Quakes"), the **Red Sea risk monitor**, a **headlines** feed, an in-page **alerts banner** (FX moves, Red Sea drops, big quakes), **event markers** on the vital charts (birr float, GERD milestones), an **Ethiopian-calendar** axis toggle (E.C./G.C.) on those charts, and a **Trade panel**.
+
+### Enabling the Trade panel (optional)
+
+The Trade panel needs a free UN Comtrade key:
+
+1. Register at [comtradeplus.un.org](https://comtradeplus.un.org/) (free tier, email).
+2. In the repo: **Settings → Secrets and variables → Actions → New repository secret**, named `COMTRADE_PRIMARY_KEY`.
+3. Re-run **Update data and deploy**. Until then the panel shows an "awaiting key" state and the TRADE desk light is amber; nothing else is affected.
 
 The IMF DataMapper refused requests from the build sandbox (HTTP 403). The fetcher records this in `data/health.json`, and the System Health panel shows the source as OFFLINE. The dashboard works without it, since the World Bank is the primary source.
 
@@ -53,6 +71,8 @@ npm run dev
 2. **Settings → Actions → General → Workflow permissions: Read and write.** The daily job commits refreshed `/data`.
 3. Run **Actions → Update data and deploy → Run workflow** once. The site is published at `https://<owner>.github.io/<repo>/`.
 
-## Not in v1
+## Still to come
 
-Trade panel, FX/commodity tiles, news, earthquakes, flights, rainfall overlay, event timeline, Ethiopian-calendar toggle for charts, alerts, Red Sea monitor (v2); insight features (v3). The TRADE, HUMANITARIAN and COMMS desks arrive with those phases.
+Not yet built: flights near Bole (OpenSky; skipped for now — needs an account), a rainfall/CHIRPS overlay, and the v3 insight features (corridor dependency gauge, rainfall-to-economy link, electricity-exports tracker, debt view, official/parallel FX gap, weekly brief). The HUMANITARIAN desk arrives with the HDX layer.
+
+A larger in-progress feature: a **world map** where clicking any country opens a bilateral "relations with Ethiopia" profile — sourced trade (via Comtrade), shared organizations/blocs, side-by-side indicators, and curated sourced notes for key partners.

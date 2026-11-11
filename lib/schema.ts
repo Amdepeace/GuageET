@@ -88,6 +88,71 @@ export type InfraProps = {
   sources: { title: string; url: string }[];
 };
 
+// --- v2 types -------------------------------------------------------------
+
+export type SimpleSeries = {
+  id: string;
+  label: string;
+  callsign: string;
+  unit: string;
+  format: "pct" | "usd" | "count" | "rate";
+  source: string;
+  sourceUrl: string;
+  history: Observation[];
+};
+
+export type NewsItem = {
+  title: string;
+  url: string;
+  domain: string;
+  seenAt: string; // ISO
+};
+
+export type NewsFile = { fetchedAt: string; items: NewsItem[] };
+
+export type ChokepointDay = { date: string; ships: number; capacity: number };
+export type Chokepoint = {
+  id: string;
+  name: string;
+  history: ChokepointDay[];
+  baselineShips: number; // median of the window, for the risk gauge
+};
+export type RedSeaFile = { fetchedAt: string; source: string; sourceUrl: string; chokepoints: Chokepoint[] };
+
+export type TimelineEvent = {
+  date: string; // ISO date
+  label: string;
+  type: "fx" | "trade" | "power" | "conflict" | "policy";
+  detail: string;
+  indicators?: string[]; // which vital charts to mark
+  sourceUrl?: string;
+};
+
+export type AlertLevel = "amber" | "red";
+export type Alert = {
+  id: string;
+  level: AlertLevel;
+  title: string;
+  detail: string;
+  at: string;
+  source: string;
+  sourceUrl?: string;
+};
+export type AlertsFile = { generatedAt: string; alerts: Alert[] };
+
+export type TradePartner = { partner: string; partnerCode: string; value: number };
+export type TradeFile = {
+  fetchedAt: string;
+  source: string;
+  sourceUrl: string;
+  period: string; // latest year with data
+  available: boolean; // false when no Comtrade key is configured
+  note: string;
+  exportsByPartner: TradePartner[];
+  importsByPartner: TradePartner[];
+  balance: { period: string; exports: number; imports: number }[];
+};
+
 export type IndicatorConfig = {
   id: string;
   label: string;

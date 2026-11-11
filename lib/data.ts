@@ -14,6 +14,13 @@ import changesJson from "@/data/changes.json";
 import eventsJson from "@/data/events.json";
 import healthJson from "@/data/health.json";
 import infraJson from "@/data/curated/infrastructure.geojson";
+import commoditiesJson from "@/data/commodities.json";
+import fxDailyJson from "@/data/fx-daily.json";
+import newsJson from "@/data/news.json";
+import redseaJson from "@/data/redsea.json";
+import tradeJson from "@/data/trade.json";
+import alertsJson from "@/data/alerts.json";
+import timelineJson from "@/data/curated/timeline.json";
 import type {
   ChangeEntry,
   CountryCode,
@@ -21,6 +28,12 @@ import type {
   IndicatorConfig,
   InfraProps,
   SourceHealth,
+  SimpleSeries,
+  NewsFile,
+  RedSeaFile,
+  TradeFile,
+  AlertsFile,
+  TimelineEvent,
 } from "./schema";
 
 export type City = { id: string; name: string; am: string; lat: number; lon: number; labelAnchor?: "top" | "bottom" };
@@ -60,6 +73,13 @@ export type DashboardData = {
   infra: InfraFeature[];
   cities: City[];
   thresholds: Record<string, ThresholdRule[]>;
+  commodities: SimpleSeries[];
+  fxDaily: SimpleSeries;
+  news: NewsFile;
+  redsea: RedSeaFile;
+  trade: TradeFile;
+  alerts: AlertsFile;
+  timeline: TimelineEvent[];
 };
 
 export function loadData(): DashboardData {
@@ -74,5 +94,12 @@ export function loadData(): DashboardData {
     infra: (infraJson as unknown as { features: InfraFeature[] }).features,
     cities: citiesJson as City[],
     thresholds: thresholds as Record<string, ThresholdRule[]>,
+    commodities: commoditiesJson as SimpleSeries[],
+    fxDaily: fxDailyJson as SimpleSeries,
+    news: newsJson as NewsFile,
+    redsea: redseaJson as RedSeaFile,
+    trade: tradeJson as TradeFile,
+    alerts: alertsJson as AlertsFile,
+    timeline: (timelineJson as { events: TimelineEvent[] }).events,
   };
 }

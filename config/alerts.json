@@ -1,0 +1,8 @@
+{
+  "_doc": "Rules the scheduled job turns into data/alerts.json, shown as an in-page banner. Live sources (earthquakes, intraday FX) also raise alerts in the browser. Keep thresholds conservative so the banner means something.",
+  "fxDailyMovePct": 3,
+  "redSeaDropPct": 40,
+  "commodityMovePct": 10,
+  "quakeMinMagnitude": 4.5,
+  "quakeRegion": { "minLat": 3, "maxLat": 15, "minLon": 33, "maxLon": 48 }
+}

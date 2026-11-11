@@ -1,0 +1,3275 @@
+[
+  {
+    "id": "coffee_arabica",
+    "label": "Coffee (Arabica)",
+    "callsign": "COFFEE",
+    "unit": "USD/kg",
+    "format": "rate",
+    "source": "World Bank Pink Sheet",
+    "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+    "history": [
+      {
+        "value": 3.197,
+        "unit": "USD/kg",
+        "asOf": "2016-01-31",
+        "period": "Jan 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.256,
+        "unit": "USD/kg",
+        "asOf": "2016-02-29",
+        "period": "Feb 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.472,
+        "unit": "USD/kg",
+        "asOf": "2016-03-31",
+        "period": "Mar 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.4,
+        "unit": "USD/kg",
+        "asOf": "2016-04-30",
+        "period": "Apr 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.421,
+        "unit": "USD/kg",
+        "asOf": "2016-05-31",
+        "period": "May 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.648,
+        "unit": "USD/kg",
+        "asOf": "2016-06-30",
+        "period": "Jun 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.787,
+        "unit": "USD/kg",
+        "asOf": "2016-07-31",
+        "period": "Jul 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.694,
+        "unit": "USD/kg",
+        "asOf": "2016-08-31",
+        "period": "Aug 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.887,
+        "unit": "USD/kg",
+        "asOf": "2016-09-30",
+        "period": "Sep 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.945,
+        "unit": "USD/kg",
+        "asOf": "2016-10-31",
+        "period": "Oct 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.059,
+        "unit": "USD/kg",
+        "asOf": "2016-11-30",
+        "period": "Nov 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.567,
+        "unit": "USD/kg",
+        "asOf": "2016-12-31",
+        "period": "Dec 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.717,
+        "unit": "USD/kg",
+        "asOf": "2017-01-31",
+        "period": "Jan 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.667,
+        "unit": "USD/kg",
+        "asOf": "2017-02-28",
+        "period": "Feb 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.531,
+        "unit": "USD/kg",
+        "asOf": "2017-03-31",
+        "period": "Mar 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.426,
+        "unit": "USD/kg",
+        "asOf": "2017-04-30",
+        "period": "Apr 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.307,
+        "unit": "USD/kg",
+        "asOf": "2017-05-31",
+        "period": "May 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.157,
+        "unit": "USD/kg",
+        "asOf": "2017-06-30",
+        "period": "Jun 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.299,
+        "unit": "USD/kg",
+        "asOf": "2017-07-31",
+        "period": "Jul 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.304,
+        "unit": "USD/kg",
+        "asOf": "2017-08-31",
+        "period": "Aug 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.231,
+        "unit": "USD/kg",
+        "asOf": "2017-09-30",
+        "period": "Sep 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.102,
+        "unit": "USD/kg",
+        "asOf": "2017-10-31",
+        "period": "Oct 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.106,
+        "unit": "USD/kg",
+        "asOf": "2017-11-30",
+        "period": "Nov 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.03,
+        "unit": "USD/kg",
+        "asOf": "2017-12-31",
+        "period": "Dec 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.06,
+        "unit": "USD/kg",
+        "asOf": "2018-01-31",
+        "period": "Jan 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.004,
+        "unit": "USD/kg",
+        "asOf": "2018-02-28",
+        "period": "Feb 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.977,
+        "unit": "USD/kg",
+        "asOf": "2018-03-31",
+        "period": "Mar 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.962,
+        "unit": "USD/kg",
+        "asOf": "2018-04-30",
+        "period": "Apr 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.99,
+        "unit": "USD/kg",
+        "asOf": "2018-05-31",
+        "period": "May 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.955,
+        "unit": "USD/kg",
+        "asOf": "2018-06-30",
+        "period": "Jun 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.879,
+        "unit": "USD/kg",
+        "asOf": "2018-07-31",
+        "period": "Jul 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.76,
+        "unit": "USD/kg",
+        "asOf": "2018-08-31",
+        "period": "Aug 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.672,
+        "unit": "USD/kg",
+        "asOf": "2018-09-30",
+        "period": "Sep 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.028,
+        "unit": "USD/kg",
+        "asOf": "2018-10-31",
+        "period": "Oct 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.023,
+        "unit": "USD/kg",
+        "asOf": "2018-11-30",
+        "period": "Nov 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.802,
+        "unit": "USD/kg",
+        "asOf": "2018-12-31",
+        "period": "Dec 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.832,
+        "unit": "USD/kg",
+        "asOf": "2019-01-31",
+        "period": "Jan 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.832,
+        "unit": "USD/kg",
+        "asOf": "2019-02-28",
+        "period": "Feb 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.731,
+        "unit": "USD/kg",
+        "asOf": "2019-03-31",
+        "period": "Mar 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.67,
+        "unit": "USD/kg",
+        "asOf": "2019-04-30",
+        "period": "Apr 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.658,
+        "unit": "USD/kg",
+        "asOf": "2019-05-31",
+        "period": "May 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.86,
+        "unit": "USD/kg",
+        "asOf": "2019-06-30",
+        "period": "Jun 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.987,
+        "unit": "USD/kg",
+        "asOf": "2019-07-31",
+        "period": "Jul 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.783,
+        "unit": "USD/kg",
+        "asOf": "2019-08-31",
+        "period": "Aug 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.842,
+        "unit": "USD/kg",
+        "asOf": "2019-09-30",
+        "period": "Sep 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.8,
+        "unit": "USD/kg",
+        "asOf": "2019-10-31",
+        "period": "Oct 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.108,
+        "unit": "USD/kg",
+        "asOf": "2019-11-30",
+        "period": "Nov 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.455,
+        "unit": "USD/kg",
+        "asOf": "2019-12-31",
+        "period": "Dec 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.135,
+        "unit": "USD/kg",
+        "asOf": "2020-01-31",
+        "period": "Jan 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2.987,
+        "unit": "USD/kg",
+        "asOf": "2020-02-29",
+        "period": "Feb 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.27,
+        "unit": "USD/kg",
+        "asOf": "2020-03-31",
+        "period": "Mar 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.407,
+        "unit": "USD/kg",
+        "asOf": "2020-04-30",
+        "period": "Apr 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.303,
+        "unit": "USD/kg",
+        "asOf": "2020-05-31",
+        "period": "May 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.12,
+        "unit": "USD/kg",
+        "asOf": "2020-06-30",
+        "period": "Jun 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.236,
+        "unit": "USD/kg",
+        "asOf": "2020-07-31",
+        "period": "Jul 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.599,
+        "unit": "USD/kg",
+        "asOf": "2020-08-31",
+        "period": "Aug 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.672,
+        "unit": "USD/kg",
+        "asOf": "2020-09-30",
+        "period": "Sep 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.352,
+        "unit": "USD/kg",
+        "asOf": "2020-10-31",
+        "period": "Oct 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.323,
+        "unit": "USD/kg",
+        "asOf": "2020-11-30",
+        "period": "Nov 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.479,
+        "unit": "USD/kg",
+        "asOf": "2020-12-31",
+        "period": "Dec 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.542,
+        "unit": "USD/kg",
+        "asOf": "2021-01-31",
+        "period": "Jan 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.669,
+        "unit": "USD/kg",
+        "asOf": "2021-02-28",
+        "period": "Feb 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.683,
+        "unit": "USD/kg",
+        "asOf": "2021-03-31",
+        "period": "Mar 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3.718,
+        "unit": "USD/kg",
+        "asOf": "2021-04-30",
+        "period": "Apr 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.111,
+        "unit": "USD/kg",
+        "asOf": "2021-05-31",
+        "period": "May 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.243,
+        "unit": "USD/kg",
+        "asOf": "2021-06-30",
+        "period": "Jun 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.504,
+        "unit": "USD/kg",
+        "asOf": "2021-07-31",
+        "period": "Jul 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.767,
+        "unit": "USD/kg",
+        "asOf": "2021-08-31",
+        "period": "Aug 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.972,
+        "unit": "USD/kg",
+        "asOf": "2021-09-30",
+        "period": "Sep 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.314,
+        "unit": "USD/kg",
+        "asOf": "2021-10-31",
+        "period": "Oct 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.709,
+        "unit": "USD/kg",
+        "asOf": "2021-11-30",
+        "period": "Nov 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.91,
+        "unit": "USD/kg",
+        "asOf": "2021-12-31",
+        "period": "Dec 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.976,
+        "unit": "USD/kg",
+        "asOf": "2022-01-31",
+        "period": "Jan 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 6.169,
+        "unit": "USD/kg",
+        "asOf": "2022-02-28",
+        "period": "Feb 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.699,
+        "unit": "USD/kg",
+        "asOf": "2022-03-31",
+        "period": "Mar 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.854,
+        "unit": "USD/kg",
+        "asOf": "2022-04-30",
+        "period": "Apr 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.741,
+        "unit": "USD/kg",
+        "asOf": "2022-05-31",
+        "period": "May 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 6.034,
+        "unit": "USD/kg",
+        "asOf": "2022-06-30",
+        "period": "Jun 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.639,
+        "unit": "USD/kg",
+        "asOf": "2022-07-31",
+        "period": "Jul 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.918,
+        "unit": "USD/kg",
+        "asOf": "2022-08-31",
+        "period": "Aug 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.897,
+        "unit": "USD/kg",
+        "asOf": "2022-09-30",
+        "period": "Sep 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.293,
+        "unit": "USD/kg",
+        "asOf": "2022-10-31",
+        "period": "Oct 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.715,
+        "unit": "USD/kg",
+        "asOf": "2022-11-30",
+        "period": "Nov 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.629,
+        "unit": "USD/kg",
+        "asOf": "2022-12-31",
+        "period": "Dec 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.558,
+        "unit": "USD/kg",
+        "asOf": "2023-01-31",
+        "period": "Jan 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.065,
+        "unit": "USD/kg",
+        "asOf": "2023-02-28",
+        "period": "Feb 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.902,
+        "unit": "USD/kg",
+        "asOf": "2023-03-31",
+        "period": "Mar 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.061,
+        "unit": "USD/kg",
+        "asOf": "2023-04-30",
+        "period": "Apr 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.853,
+        "unit": "USD/kg",
+        "asOf": "2023-05-31",
+        "period": "May 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.572,
+        "unit": "USD/kg",
+        "asOf": "2023-06-30",
+        "period": "Jun 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.266,
+        "unit": "USD/kg",
+        "asOf": "2023-07-31",
+        "period": "Jul 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.117,
+        "unit": "USD/kg",
+        "asOf": "2023-08-31",
+        "period": "Aug 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.046,
+        "unit": "USD/kg",
+        "asOf": "2023-09-30",
+        "period": "Sep 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.048,
+        "unit": "USD/kg",
+        "asOf": "2023-10-31",
+        "period": "Oct 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.347,
+        "unit": "USD/kg",
+        "asOf": "2023-11-30",
+        "period": "Nov 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.646,
+        "unit": "USD/kg",
+        "asOf": "2023-12-31",
+        "period": "Dec 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.473,
+        "unit": "USD/kg",
+        "asOf": "2024-01-31",
+        "period": "Jan 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.603,
+        "unit": "USD/kg",
+        "asOf": "2024-02-29",
+        "period": "Feb 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4.605,
+        "unit": "USD/kg",
+        "asOf": "2024-03-31",
+        "period": "Mar 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.274,
+        "unit": "USD/kg",
+        "asOf": "2024-04-30",
+        "period": "Apr 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.083,
+        "unit": "USD/kg",
+        "asOf": "2024-05-31",
+        "period": "May 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.476,
+        "unit": "USD/kg",
+        "asOf": "2024-06-30",
+        "period": "Jun 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.668,
+        "unit": "USD/kg",
+        "asOf": "2024-07-31",
+        "period": "Jul 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 5.764,
+        "unit": "USD/kg",
+        "asOf": "2024-08-31",
+        "period": "Aug 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 6.125,
+        "unit": "USD/kg",
+        "asOf": "2024-09-30",
+        "period": "Sep 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 6.102,
+        "unit": "USD/kg",
+        "asOf": "2024-10-31",
+        "period": "Oct 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 6.724,
+        "unit": "USD/kg",
+        "asOf": "2024-11-30",
+        "period": "Nov 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 7.569,
+        "unit": "USD/kg",
+        "asOf": "2024-12-31",
+        "period": "Dec 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 7.815,
+        "unit": "USD/kg",
+        "asOf": "2025-01-31",
+        "period": "Jan 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 9.049,
+        "unit": "USD/kg",
+        "asOf": "2025-02-28",
+        "period": "Feb 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 8.919,
+        "unit": "USD/kg",
+        "asOf": "2025-03-31",
+        "period": "Mar 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 8.636,
+        "unit": "USD/kg",
+        "asOf": "2025-04-30",
+        "period": "Apr 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 8.771,
+        "unit": "USD/kg",
+        "asOf": "2025-05-31",
+        "period": "May 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 8.006,
+        "unit": "USD/kg",
+        "asOf": "2025-06-30",
+        "period": "Jun 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 7.176,
+        "unit": "USD/kg",
+        "asOf": "2025-07-31",
+        "period": "Jul 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 8.076,
+        "unit": "USD/kg",
+        "asOf": "2025-08-31",
+        "period": "Aug 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 8.831,
+        "unit": "USD/kg",
+        "asOf": "2025-09-30",
+        "period": "Sep 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 8.902,
+        "unit": "USD/kg",
+        "asOf": "2025-10-31",
+        "period": "Oct 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 9.046,
+        "unit": "USD/kg",
+        "asOf": "2025-11-30",
+        "period": "Nov 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 8.405,
+        "unit": "USD/kg",
+        "asOf": "2025-12-31",
+        "period": "Dec 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      }
+    ]
+  },
+  {
+    "id": "gold",
+    "label": "Gold",
+    "callsign": "GOLD",
+    "unit": "USD/troy oz",
+    "format": "rate",
+    "source": "World Bank Pink Sheet",
+    "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+    "history": [
+      {
+        "value": 1097.91,
+        "unit": "USD/troy oz",
+        "asOf": "2016-01-31",
+        "period": "Jan 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1199.5,
+        "unit": "USD/troy oz",
+        "asOf": "2016-02-29",
+        "period": "Feb 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1245.14,
+        "unit": "USD/troy oz",
+        "asOf": "2016-03-31",
+        "period": "Mar 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1242.26,
+        "unit": "USD/troy oz",
+        "asOf": "2016-04-30",
+        "period": "Apr 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1260.95,
+        "unit": "USD/troy oz",
+        "asOf": "2016-05-31",
+        "period": "May 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1276.4,
+        "unit": "USD/troy oz",
+        "asOf": "2016-06-30",
+        "period": "Jun 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1336.66,
+        "unit": "USD/troy oz",
+        "asOf": "2016-07-31",
+        "period": "Jul 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1340.17,
+        "unit": "USD/troy oz",
+        "asOf": "2016-08-31",
+        "period": "Aug 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1326.61,
+        "unit": "USD/troy oz",
+        "asOf": "2016-09-30",
+        "period": "Sep 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1266.55,
+        "unit": "USD/troy oz",
+        "asOf": "2016-10-31",
+        "period": "Oct 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1238.35,
+        "unit": "USD/troy oz",
+        "asOf": "2016-11-30",
+        "period": "Nov 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1157.36,
+        "unit": "USD/troy oz",
+        "asOf": "2016-12-31",
+        "period": "Dec 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1192.1,
+        "unit": "USD/troy oz",
+        "asOf": "2017-01-31",
+        "period": "Jan 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1234.2,
+        "unit": "USD/troy oz",
+        "asOf": "2017-02-28",
+        "period": "Feb 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1231.42,
+        "unit": "USD/troy oz",
+        "asOf": "2017-03-31",
+        "period": "Mar 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1266.88,
+        "unit": "USD/troy oz",
+        "asOf": "2017-04-30",
+        "period": "Apr 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1246.04,
+        "unit": "USD/troy oz",
+        "asOf": "2017-05-31",
+        "period": "May 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1260.26,
+        "unit": "USD/troy oz",
+        "asOf": "2017-06-30",
+        "period": "Jun 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1236.84,
+        "unit": "USD/troy oz",
+        "asOf": "2017-07-31",
+        "period": "Jul 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1283.04,
+        "unit": "USD/troy oz",
+        "asOf": "2017-08-31",
+        "period": "Aug 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1314.07,
+        "unit": "USD/troy oz",
+        "asOf": "2017-09-30",
+        "period": "Sep 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1279.51,
+        "unit": "USD/troy oz",
+        "asOf": "2017-10-31",
+        "period": "Oct 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1281.9,
+        "unit": "USD/troy oz",
+        "asOf": "2017-11-30",
+        "period": "Nov 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1264.45,
+        "unit": "USD/troy oz",
+        "asOf": "2017-12-31",
+        "period": "Dec 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1331.3,
+        "unit": "USD/troy oz",
+        "asOf": "2018-01-31",
+        "period": "Jan 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1330.73,
+        "unit": "USD/troy oz",
+        "asOf": "2018-02-28",
+        "period": "Feb 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1324.66,
+        "unit": "USD/troy oz",
+        "asOf": "2018-03-31",
+        "period": "Mar 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1334.76,
+        "unit": "USD/troy oz",
+        "asOf": "2018-04-30",
+        "period": "Apr 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1303.45,
+        "unit": "USD/troy oz",
+        "asOf": "2018-05-31",
+        "period": "May 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1281.57,
+        "unit": "USD/troy oz",
+        "asOf": "2018-06-30",
+        "period": "Jun 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1237.71,
+        "unit": "USD/troy oz",
+        "asOf": "2018-07-31",
+        "period": "Jul 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1201.71,
+        "unit": "USD/troy oz",
+        "asOf": "2018-08-31",
+        "period": "Aug 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1198.39,
+        "unit": "USD/troy oz",
+        "asOf": "2018-09-30",
+        "period": "Sep 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1215.39,
+        "unit": "USD/troy oz",
+        "asOf": "2018-10-31",
+        "period": "Oct 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1220.65,
+        "unit": "USD/troy oz",
+        "asOf": "2018-11-30",
+        "period": "Nov 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1250.4,
+        "unit": "USD/troy oz",
+        "asOf": "2018-12-31",
+        "period": "Dec 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1291.75,
+        "unit": "USD/troy oz",
+        "asOf": "2019-01-31",
+        "period": "Jan 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1320.07,
+        "unit": "USD/troy oz",
+        "asOf": "2019-02-28",
+        "period": "Feb 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1300.9,
+        "unit": "USD/troy oz",
+        "asOf": "2019-03-31",
+        "period": "Mar 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1285.91,
+        "unit": "USD/troy oz",
+        "asOf": "2019-04-30",
+        "period": "Apr 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1283.7,
+        "unit": "USD/troy oz",
+        "asOf": "2019-05-31",
+        "period": "May 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1359.04,
+        "unit": "USD/troy oz",
+        "asOf": "2019-06-30",
+        "period": "Jun 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1412.89,
+        "unit": "USD/troy oz",
+        "asOf": "2019-07-31",
+        "period": "Jul 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1500.41,
+        "unit": "USD/troy oz",
+        "asOf": "2019-08-31",
+        "period": "Aug 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1510.58,
+        "unit": "USD/troy oz",
+        "asOf": "2019-09-30",
+        "period": "Sep 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1494.81,
+        "unit": "USD/troy oz",
+        "asOf": "2019-10-31",
+        "period": "Oct 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1470.79,
+        "unit": "USD/troy oz",
+        "asOf": "2019-11-30",
+        "period": "Nov 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1479.13,
+        "unit": "USD/troy oz",
+        "asOf": "2019-12-31",
+        "period": "Dec 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1560.67,
+        "unit": "USD/troy oz",
+        "asOf": "2020-01-31",
+        "period": "Jan 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1597.1,
+        "unit": "USD/troy oz",
+        "asOf": "2020-02-29",
+        "period": "Feb 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1591.93,
+        "unit": "USD/troy oz",
+        "asOf": "2020-03-31",
+        "period": "Mar 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1683.17,
+        "unit": "USD/troy oz",
+        "asOf": "2020-04-30",
+        "period": "Apr 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1715.91,
+        "unit": "USD/troy oz",
+        "asOf": "2020-05-31",
+        "period": "May 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1732.22,
+        "unit": "USD/troy oz",
+        "asOf": "2020-06-30",
+        "period": "Jun 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1846.51,
+        "unit": "USD/troy oz",
+        "asOf": "2020-07-31",
+        "period": "Jul 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1968.63,
+        "unit": "USD/troy oz",
+        "asOf": "2020-08-31",
+        "period": "Aug 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1921.92,
+        "unit": "USD/troy oz",
+        "asOf": "2020-09-30",
+        "period": "Sep 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1900.27,
+        "unit": "USD/troy oz",
+        "asOf": "2020-10-31",
+        "period": "Oct 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1866.3,
+        "unit": "USD/troy oz",
+        "asOf": "2020-11-30",
+        "period": "Nov 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1858.42,
+        "unit": "USD/troy oz",
+        "asOf": "2020-12-31",
+        "period": "Dec 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1866.98,
+        "unit": "USD/troy oz",
+        "asOf": "2021-01-31",
+        "period": "Jan 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1808.17,
+        "unit": "USD/troy oz",
+        "asOf": "2021-02-28",
+        "period": "Feb 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1718.23,
+        "unit": "USD/troy oz",
+        "asOf": "2021-03-31",
+        "period": "Mar 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1760.04,
+        "unit": "USD/troy oz",
+        "asOf": "2021-04-30",
+        "period": "Apr 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1850.26,
+        "unit": "USD/troy oz",
+        "asOf": "2021-05-31",
+        "period": "May 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1834.57,
+        "unit": "USD/troy oz",
+        "asOf": "2021-06-30",
+        "period": "Jun 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1807.84,
+        "unit": "USD/troy oz",
+        "asOf": "2021-07-31",
+        "period": "Jul 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1785.28,
+        "unit": "USD/troy oz",
+        "asOf": "2021-08-31",
+        "period": "Aug 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1775.14,
+        "unit": "USD/troy oz",
+        "asOf": "2021-09-30",
+        "period": "Sep 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1776.85,
+        "unit": "USD/troy oz",
+        "asOf": "2021-10-31",
+        "period": "Oct 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1821.76,
+        "unit": "USD/troy oz",
+        "asOf": "2021-11-30",
+        "period": "Nov 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1790.43,
+        "unit": "USD/troy oz",
+        "asOf": "2021-12-31",
+        "period": "Dec 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1816.02,
+        "unit": "USD/troy oz",
+        "asOf": "2022-01-31",
+        "period": "Jan 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1856.3,
+        "unit": "USD/troy oz",
+        "asOf": "2022-02-28",
+        "period": "Feb 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1947.83,
+        "unit": "USD/troy oz",
+        "asOf": "2022-03-31",
+        "period": "Mar 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1936.86,
+        "unit": "USD/troy oz",
+        "asOf": "2022-04-30",
+        "period": "Apr 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1848.5,
+        "unit": "USD/troy oz",
+        "asOf": "2022-05-31",
+        "period": "May 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1836.57,
+        "unit": "USD/troy oz",
+        "asOf": "2022-06-30",
+        "period": "Jun 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1732.74,
+        "unit": "USD/troy oz",
+        "asOf": "2022-07-31",
+        "period": "Jul 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1764.56,
+        "unit": "USD/troy oz",
+        "asOf": "2022-08-31",
+        "period": "Aug 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1680.78,
+        "unit": "USD/troy oz",
+        "asOf": "2022-09-30",
+        "period": "Sep 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1664.45,
+        "unit": "USD/troy oz",
+        "asOf": "2022-10-31",
+        "period": "Oct 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1725.07,
+        "unit": "USD/troy oz",
+        "asOf": "2022-11-30",
+        "period": "Nov 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1797.55,
+        "unit": "USD/troy oz",
+        "asOf": "2022-12-31",
+        "period": "Dec 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1897.71,
+        "unit": "USD/troy oz",
+        "asOf": "2023-01-31",
+        "period": "Jan 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1854.54,
+        "unit": "USD/troy oz",
+        "asOf": "2023-02-28",
+        "period": "Feb 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1912.73,
+        "unit": "USD/troy oz",
+        "asOf": "2023-03-31",
+        "period": "Mar 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1999.77,
+        "unit": "USD/troy oz",
+        "asOf": "2023-04-30",
+        "period": "Apr 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1992.13,
+        "unit": "USD/troy oz",
+        "asOf": "2023-05-31",
+        "period": "May 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1942.9,
+        "unit": "USD/troy oz",
+        "asOf": "2023-06-30",
+        "period": "Jun 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1951.02,
+        "unit": "USD/troy oz",
+        "asOf": "2023-07-31",
+        "period": "Jul 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1918.7,
+        "unit": "USD/troy oz",
+        "asOf": "2023-08-31",
+        "period": "Aug 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1915.95,
+        "unit": "USD/troy oz",
+        "asOf": "2023-09-30",
+        "period": "Sep 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1916.25,
+        "unit": "USD/troy oz",
+        "asOf": "2023-10-31",
+        "period": "Oct 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 1984.11,
+        "unit": "USD/troy oz",
+        "asOf": "2023-11-30",
+        "period": "Nov 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2026.18,
+        "unit": "USD/troy oz",
+        "asOf": "2023-12-31",
+        "period": "Dec 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2034.04,
+        "unit": "USD/troy oz",
+        "asOf": "2024-01-31",
+        "period": "Jan 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2023.24,
+        "unit": "USD/troy oz",
+        "asOf": "2024-02-29",
+        "period": "Feb 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2158.01,
+        "unit": "USD/troy oz",
+        "asOf": "2024-03-31",
+        "period": "Mar 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2331.45,
+        "unit": "USD/troy oz",
+        "asOf": "2024-04-30",
+        "period": "Apr 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2351.13,
+        "unit": "USD/troy oz",
+        "asOf": "2024-05-31",
+        "period": "May 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2326.44,
+        "unit": "USD/troy oz",
+        "asOf": "2024-06-30",
+        "period": "Jun 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2398.2,
+        "unit": "USD/troy oz",
+        "asOf": "2024-07-31",
+        "period": "Jul 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2470.15,
+        "unit": "USD/troy oz",
+        "asOf": "2024-08-31",
+        "period": "Aug 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2570.55,
+        "unit": "USD/troy oz",
+        "asOf": "2024-09-30",
+        "period": "Sep 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2690.08,
+        "unit": "USD/troy oz",
+        "asOf": "2024-10-31",
+        "period": "Oct 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2651.13,
+        "unit": "USD/troy oz",
+        "asOf": "2024-11-30",
+        "period": "Nov 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2648.01,
+        "unit": "USD/troy oz",
+        "asOf": "2024-12-31",
+        "period": "Dec 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2709.69,
+        "unit": "USD/troy oz",
+        "asOf": "2025-01-31",
+        "period": "Jan 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2894.73,
+        "unit": "USD/troy oz",
+        "asOf": "2025-02-28",
+        "period": "Feb 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 2983.25,
+        "unit": "USD/troy oz",
+        "asOf": "2025-03-31",
+        "period": "Mar 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3217.64,
+        "unit": "USD/troy oz",
+        "asOf": "2025-04-30",
+        "period": "Apr 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3309.49,
+        "unit": "USD/troy oz",
+        "asOf": "2025-05-31",
+        "period": "May 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3352.66,
+        "unit": "USD/troy oz",
+        "asOf": "2025-06-30",
+        "period": "Jun 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3340.15,
+        "unit": "USD/troy oz",
+        "asOf": "2025-07-31",
+        "period": "Jul 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3368.03,
+        "unit": "USD/troy oz",
+        "asOf": "2025-08-31",
+        "period": "Aug 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 3667.68,
+        "unit": "USD/troy oz",
+        "asOf": "2025-09-30",
+        "period": "Sep 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4058.33,
+        "unit": "USD/troy oz",
+        "asOf": "2025-10-31",
+        "period": "Oct 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4087.19,
+        "unit": "USD/troy oz",
+        "asOf": "2025-11-30",
+        "period": "Nov 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 4309.23,
+        "unit": "USD/troy oz",
+        "asOf": "2025-12-31",
+        "period": "Dec 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      }
+    ]
+  },
+  {
+    "id": "crude_oil",
+    "label": "Crude oil (avg)",
+    "callsign": "OIL",
+    "unit": "USD/bbl",
+    "format": "rate",
+    "source": "World Bank Pink Sheet",
+    "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+    "history": [
+      {
+        "value": 29.78,
+        "unit": "USD/bbl",
+        "asOf": "2016-01-31",
+        "period": "Jan 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 31.03,
+        "unit": "USD/bbl",
+        "asOf": "2016-02-29",
+        "period": "Feb 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 37.34,
+        "unit": "USD/bbl",
+        "asOf": "2016-03-31",
+        "period": "Mar 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 40.75,
+        "unit": "USD/bbl",
+        "asOf": "2016-04-30",
+        "period": "Apr 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 45.937,
+        "unit": "USD/bbl",
+        "asOf": "2016-05-31",
+        "period": "May 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 47.687,
+        "unit": "USD/bbl",
+        "asOf": "2016-06-30",
+        "period": "Jun 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 44.127,
+        "unit": "USD/bbl",
+        "asOf": "2016-07-31",
+        "period": "Jul 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 44.877,
+        "unit": "USD/bbl",
+        "asOf": "2016-08-31",
+        "period": "Aug 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 45.043,
+        "unit": "USD/bbl",
+        "asOf": "2016-09-30",
+        "period": "Sep 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 49.293,
+        "unit": "USD/bbl",
+        "asOf": "2016-10-31",
+        "period": "Oct 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 45.26,
+        "unit": "USD/bbl",
+        "asOf": "2016-11-30",
+        "period": "Nov 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 52.62,
+        "unit": "USD/bbl",
+        "asOf": "2016-12-31",
+        "period": "Dec 2016",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 53.59,
+        "unit": "USD/bbl",
+        "asOf": "2017-01-31",
+        "period": "Jan 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 54.353,
+        "unit": "USD/bbl",
+        "asOf": "2017-02-28",
+        "period": "Feb 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 50.903,
+        "unit": "USD/bbl",
+        "asOf": "2017-03-31",
+        "period": "Mar 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 52.163,
+        "unit": "USD/bbl",
+        "asOf": "2017-04-30",
+        "period": "Apr 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 49.893,
+        "unit": "USD/bbl",
+        "asOf": "2017-05-31",
+        "period": "May 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 46.167,
+        "unit": "USD/bbl",
+        "asOf": "2017-06-30",
+        "period": "Jun 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 47.657,
+        "unit": "USD/bbl",
+        "asOf": "2017-07-31",
+        "period": "Jul 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 49.943,
+        "unit": "USD/bbl",
+        "asOf": "2017-08-31",
+        "period": "Aug 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 52.95,
+        "unit": "USD/bbl",
+        "asOf": "2017-09-30",
+        "period": "Sep 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 54.92,
+        "unit": "USD/bbl",
+        "asOf": "2017-10-31",
+        "period": "Oct 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 59.933,
+        "unit": "USD/bbl",
+        "asOf": "2017-11-30",
+        "period": "Nov 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 61.187,
+        "unit": "USD/bbl",
+        "asOf": "2017-12-31",
+        "period": "Dec 2017",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 66.227,
+        "unit": "USD/bbl",
+        "asOf": "2018-01-31",
+        "period": "Jan 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 63.46,
+        "unit": "USD/bbl",
+        "asOf": "2018-02-28",
+        "period": "Feb 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 64.167,
+        "unit": "USD/bbl",
+        "asOf": "2018-03-31",
+        "period": "Mar 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 68.793,
+        "unit": "USD/bbl",
+        "asOf": "2018-04-30",
+        "period": "Apr 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 73.43,
+        "unit": "USD/bbl",
+        "asOf": "2018-05-31",
+        "period": "May 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 71.977,
+        "unit": "USD/bbl",
+        "asOf": "2018-06-30",
+        "period": "Jun 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 72.667,
+        "unit": "USD/bbl",
+        "asOf": "2018-07-31",
+        "period": "Jul 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 71.083,
+        "unit": "USD/bbl",
+        "asOf": "2018-08-31",
+        "period": "Aug 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 75.363,
+        "unit": "USD/bbl",
+        "asOf": "2018-09-30",
+        "period": "Sep 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 76.727,
+        "unit": "USD/bbl",
+        "asOf": "2018-10-31",
+        "period": "Oct 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 62.317,
+        "unit": "USD/bbl",
+        "asOf": "2018-11-30",
+        "period": "Nov 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 53.96,
+        "unit": "USD/bbl",
+        "asOf": "2018-12-31",
+        "period": "Dec 2018",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 56.583,
+        "unit": "USD/bbl",
+        "asOf": "2019-01-31",
+        "period": "Jan 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 61.133,
+        "unit": "USD/bbl",
+        "asOf": "2019-02-28",
+        "period": "Feb 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 63.787,
+        "unit": "USD/bbl",
+        "asOf": "2019-03-31",
+        "period": "Mar 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 68.577,
+        "unit": "USD/bbl",
+        "asOf": "2019-04-30",
+        "period": "Apr 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 66.833,
+        "unit": "USD/bbl",
+        "asOf": "2019-05-31",
+        "period": "May 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 59.76,
+        "unit": "USD/bbl",
+        "asOf": "2019-06-30",
+        "period": "Jun 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 61.477,
+        "unit": "USD/bbl",
+        "asOf": "2019-07-31",
+        "period": "Jul 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 57.67,
+        "unit": "USD/bbl",
+        "asOf": "2019-08-31",
+        "period": "Aug 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 60.04,
+        "unit": "USD/bbl",
+        "asOf": "2019-09-30",
+        "period": "Sep 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 57.273,
+        "unit": "USD/bbl",
+        "asOf": "2019-10-31",
+        "period": "Oct 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 60.403,
+        "unit": "USD/bbl",
+        "asOf": "2019-11-30",
+        "period": "Nov 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 63.353,
+        "unit": "USD/bbl",
+        "asOf": "2019-12-31",
+        "period": "Dec 2019",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 61.627,
+        "unit": "USD/bbl",
+        "asOf": "2020-01-31",
+        "period": "Jan 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 53.347,
+        "unit": "USD/bbl",
+        "asOf": "2020-02-29",
+        "period": "Feb 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 32.203,
+        "unit": "USD/bbl",
+        "asOf": "2020-03-31",
+        "period": "Mar 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 21.043,
+        "unit": "USD/bbl",
+        "asOf": "2020-04-30",
+        "period": "Apr 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 30.38,
+        "unit": "USD/bbl",
+        "asOf": "2020-05-31",
+        "period": "May 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 39.457,
+        "unit": "USD/bbl",
+        "asOf": "2020-06-30",
+        "period": "Jun 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 42.067,
+        "unit": "USD/bbl",
+        "asOf": "2020-07-31",
+        "period": "Jul 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 43.443,
+        "unit": "USD/bbl",
+        "asOf": "2020-08-31",
+        "period": "Aug 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 40.597,
+        "unit": "USD/bbl",
+        "asOf": "2020-09-30",
+        "period": "Sep 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 39.9,
+        "unit": "USD/bbl",
+        "asOf": "2020-10-31",
+        "period": "Oct 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 42.303,
+        "unit": "USD/bbl",
+        "asOf": "2020-11-30",
+        "period": "Nov 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 48.727,
+        "unit": "USD/bbl",
+        "asOf": "2020-12-31",
+        "period": "Dec 2020",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 53.603,
+        "unit": "USD/bbl",
+        "asOf": "2021-01-31",
+        "period": "Jan 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 60.463,
+        "unit": "USD/bbl",
+        "asOf": "2021-02-28",
+        "period": "Feb 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 63.83,
+        "unit": "USD/bbl",
+        "asOf": "2021-03-31",
+        "period": "Mar 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 62.95,
+        "unit": "USD/bbl",
+        "asOf": "2021-04-30",
+        "period": "Apr 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 66.4,
+        "unit": "USD/bbl",
+        "asOf": "2021-05-31",
+        "period": "May 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 71.803,
+        "unit": "USD/bbl",
+        "asOf": "2021-06-30",
+        "period": "Jun 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 73.283,
+        "unit": "USD/bbl",
+        "asOf": "2021-07-31",
+        "period": "Jul 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 68.867,
+        "unit": "USD/bbl",
+        "asOf": "2021-08-31",
+        "period": "Aug 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 72.8,
+        "unit": "USD/bbl",
+        "asOf": "2021-09-30",
+        "period": "Sep 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 82.063,
+        "unit": "USD/bbl",
+        "asOf": "2021-10-31",
+        "period": "Oct 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 79.917,
+        "unit": "USD/bbl",
+        "asOf": "2021-11-30",
+        "period": "Nov 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 72.867,
+        "unit": "USD/bbl",
+        "asOf": "2021-12-31",
+        "period": "Dec 2021",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 83.92,
+        "unit": "USD/bbl",
+        "asOf": "2022-01-31",
+        "period": "Jan 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 93.543,
+        "unit": "USD/bbl",
+        "asOf": "2022-02-28",
+        "period": "Feb 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 112.397,
+        "unit": "USD/bbl",
+        "asOf": "2022-03-31",
+        "period": "Mar 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 103.413,
+        "unit": "USD/bbl",
+        "asOf": "2022-04-30",
+        "period": "Apr 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 110.097,
+        "unit": "USD/bbl",
+        "asOf": "2022-05-31",
+        "period": "May 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 116.8,
+        "unit": "USD/bbl",
+        "asOf": "2022-06-30",
+        "period": "Jun 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 105.083,
+        "unit": "USD/bbl",
+        "asOf": "2022-07-31",
+        "period": "Jul 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 95.973,
+        "unit": "USD/bbl",
+        "asOf": "2022-08-31",
+        "period": "Aug 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 88.22,
+        "unit": "USD/bbl",
+        "asOf": "2022-09-30",
+        "period": "Sep 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 90.327,
+        "unit": "USD/bbl",
+        "asOf": "2022-10-31",
+        "period": "Oct 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 87.377,
+        "unit": "USD/bbl",
+        "asOf": "2022-11-30",
+        "period": "Nov 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 78.067,
+        "unit": "USD/bbl",
+        "asOf": "2022-12-31",
+        "period": "Dec 2022",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 80.41,
+        "unit": "USD/bbl",
+        "asOf": "2023-01-31",
+        "period": "Jan 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 80.253,
+        "unit": "USD/bbl",
+        "asOf": "2023-02-28",
+        "period": "Feb 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 76.473,
+        "unit": "USD/bbl",
+        "asOf": "2023-03-31",
+        "period": "Mar 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 82.46,
+        "unit": "USD/bbl",
+        "asOf": "2023-04-30",
+        "period": "Apr 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 74.123,
+        "unit": "USD/bbl",
+        "asOf": "2023-05-31",
+        "period": "May 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 73.263,
+        "unit": "USD/bbl",
+        "asOf": "2023-06-30",
+        "period": "Jun 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 78.983,
+        "unit": "USD/bbl",
+        "asOf": "2023-07-31",
+        "period": "Jul 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 84.724,
+        "unit": "USD/bbl",
+        "asOf": "2023-08-31",
+        "period": "Aug 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 92.22,
+        "unit": "USD/bbl",
+        "asOf": "2023-09-30",
+        "period": "Sep 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 89.084,
+        "unit": "USD/bbl",
+        "asOf": "2023-10-31",
+        "period": "Oct 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 81.354,
+        "unit": "USD/bbl",
+        "asOf": "2023-11-30",
+        "period": "Nov 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 75.719,
+        "unit": "USD/bbl",
+        "asOf": "2023-12-31",
+        "period": "Dec 2023",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 77.672,
+        "unit": "USD/bbl",
+        "asOf": "2024-01-31",
+        "period": "Jan 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 80.548,
+        "unit": "USD/bbl",
+        "asOf": "2024-02-29",
+        "period": "Feb 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 83.546,
+        "unit": "USD/bbl",
+        "asOf": "2024-03-31",
+        "period": "Mar 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 88.011,
+        "unit": "USD/bbl",
+        "asOf": "2024-04-30",
+        "period": "Apr 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 81.445,
+        "unit": "USD/bbl",
+        "asOf": "2024-05-31",
+        "period": "May 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 81.205,
+        "unit": "USD/bbl",
+        "asOf": "2024-06-30",
+        "period": "Jun 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 83.259,
+        "unit": "USD/bbl",
+        "asOf": "2024-07-31",
+        "period": "Jul 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 78.121,
+        "unit": "USD/bbl",
+        "asOf": "2024-08-31",
+        "period": "Aug 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 72.424,
+        "unit": "USD/bbl",
+        "asOf": "2024-09-30",
+        "period": "Sep 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 73.971,
+        "unit": "USD/bbl",
+        "asOf": "2024-10-31",
+        "period": "Oct 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 72.292,
+        "unit": "USD/bbl",
+        "asOf": "2024-11-30",
+        "period": "Nov 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 72.311,
+        "unit": "USD/bbl",
+        "asOf": "2024-12-31",
+        "period": "Dec 2024",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 78.162,
+        "unit": "USD/bbl",
+        "asOf": "2025-01-31",
+        "period": "Jan 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 73.819,
+        "unit": "USD/bbl",
+        "asOf": "2025-02-28",
+        "period": "Feb 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 70.701,
+        "unit": "USD/bbl",
+        "asOf": "2025-03-31",
+        "period": "Mar 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 65.905,
+        "unit": "USD/bbl",
+        "asOf": "2025-04-30",
+        "period": "Apr 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 62.749,
+        "unit": "USD/bbl",
+        "asOf": "2025-05-31",
+        "period": "May 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 69.147,
+        "unit": "USD/bbl",
+        "asOf": "2025-06-30",
+        "period": "Jun 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 69.19,
+        "unit": "USD/bbl",
+        "asOf": "2025-07-31",
+        "period": "Jul 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 66.718,
+        "unit": "USD/bbl",
+        "asOf": "2025-08-31",
+        "period": "Aug 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 66.457,
+        "unit": "USD/bbl",
+        "asOf": "2025-09-30",
+        "period": "Sep 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 63.04,
+        "unit": "USD/bbl",
+        "asOf": "2025-10-31",
+        "period": "Oct 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 62.336,
+        "unit": "USD/bbl",
+        "asOf": "2025-11-30",
+        "period": "Nov 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      },
+      {
+        "value": 60.88,
+        "unit": "USD/bbl",
+        "asOf": "2025-12-31",
+        "period": "Dec 2025",
+        "source": "World Bank Pink Sheet",
+        "sourceUrl": "https://www.worldbank.org/en/research/commodity-markets",
+        "fetchedAt": "2026-11-11T23:07:17.193Z"
+      }
+    ]
+  }
+]

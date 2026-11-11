@@ -7,6 +7,7 @@ import disputed from "@/data/geo/disputed.geojson";
 import type { City, InfraFeature } from "@/lib/data";
 import type { CityWeather } from "@/lib/openMeteo";
 import { ALL_LAYERS, type Layer } from "@/lib/urlState";
+import type { Quake } from "@/lib/usgs";
 
 const HOME: LngLatBoundsLike = [
   [32.5, -6],
@@ -46,11 +47,13 @@ export function MapView({
   infra,
   cities,
   weather,
+  quakes,
   layers,
   onLayers,
   selected,
   onSelect,
   onCity,
+  onQuake,
   initialView,
   onViewChange,
   pulseKey,
@@ -59,11 +62,13 @@ export function MapView({
   infra: InfraFeature[];
   cities: City[];
   weather: CityWeather[] | null;
+  quakes: Quake[];
   layers: Layer[];
   onLayers: (l: Layer[]) => void;
   selected: string | null;
   onSelect: (id: string | null) => void;
   onCity: (id: string) => void;
+  onQuake: (id: string) => void;
   initialView: { zoom: number | null; center: [number, number] | null };
   onViewChange: (zoom: number, center: [number, number]) => void;
   pulseKey: number;
@@ -72,10 +77,11 @@ export function MapView({
   const el = useRef<HTMLDivElement>(null);
   const map = useRef<MlMap | null>(null);
   const cityMarkers = useRef<maplibregl.Marker[]>([]);
+  const quakeMarkers = useRef<maplibregl.Marker[]>([]);
   const [ready, setReady] = useState(false);
   const [hover, setHover] = useState<{ x: number; y: number; text: string } | null>(null);
-  const cb = useRef({ onSelect, onViewChange, onCity });
-  cb.current = { onSelect, onViewChange, onCity };
+  const cb = useRef({ onSelect, onViewChange, onCity, onQuake });
+  cb.current = { onSelect, onViewChange, onCity, onQuake };
 
   // init once
   useEffect(() => {
@@ -273,6 +279,40 @@ export function MapView({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cities, weather, ready]);
 
+  // earthquake markers (live activity layer)
+  useEffect(() => {
+    const m = map.current;
+    if (!m || !ready) return;
+    quakeMarkers.current.forEach((mk) => mk.remove());
+    const show = layers.includes("activity");
+    const now = Date.now();
+    quakeMarkers.current = quakes.map((q) => {
+      const recent = now - q.time < 86_400_000;
+      const size = Math.max(10, Math.min(34, 6 + q.mag * 4));
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "quake-marker";
+      b.setAttribute("aria-label", `Magnitude ${q.mag} earthquake, ${q.place}`);
+      b.style.width = b.style.height = `${size}px`;
+      if (recent) b.classList.add("recent");
+      const lab = document.createElement("span");
+      lab.textContent = q.mag.toFixed(1);
+      b.append(lab);
+      b.addEventListener("click", (e) => {
+        e.stopPropagation();
+        cb.current.onQuake(q.id);
+      });
+      b.style.display = show ? "" : "none";
+      return new maplibregl.Marker({ element: b }).setLngLat([q.lon, q.lat]).addTo(m);
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [quakes, ready]);
+
+  useEffect(() => {
+    const show = layers.includes("activity");
+    for (const mk of quakeMarkers.current) mk.getElement().style.display = show ? "" : "none";
+  }, [layers]);
+
   const toggle = (l: Layer) => onLayers(layers.includes(l) ? layers.filter((x) => x !== l) : ALL_LAYERS.filter((x) => x === l || layers.includes(x)));
 
   return (
@@ -287,6 +327,7 @@ export function MapView({
               ["existing", "Existing infra"],
               ["planned", "Planned infra"],
               ["weather", "Weather"],
+              ["activity", "Quakes"],
             ] as [Layer, string][]
           ).map(([l, label]) => (
             <button key={l} type="button" className="ctl" aria-pressed={layers.includes(l)} onClick={() => toggle(l)}>
@@ -333,6 +374,12 @@ function Legend() {
           <line x1="1" y1="4" x2="25" y2="4" stroke="var(--ink-2)" strokeWidth="1" strokeDasharray="2 2" />
         </svg>
         <span>Disputed area</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <svg width="26" height="10" aria-hidden>
+          <circle cx="8" cy="5" r="4" fill="none" stroke="var(--quake)" strokeWidth="1.5" />
+        </svg>
+        <span>Quake (size = magnitude)</span>
       </div>
     </div>
   );

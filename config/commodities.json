@@ -1,0 +1,10 @@
+{
+  "_doc": "World Bank Pink Sheet (Commodity Markets), 'Monthly Prices' sheet. Columns are matched by name, not position, so a column shift does not break the fetch. sourceFile is a dated URL that changes when the Pink Sheet is republished; if it 404s the fetcher keeps the last good values and marks the source OFFLINE. Update sourceFile from https://www.worldbank.org/en/research/commodity-markets.",
+  "sourceFile": "https://thedocs.worldbank.org/en/doc/18675f1d1639c7a34d463f59263ba0a2-0050012025/related/CMO-Historical-Data-Monthly.xlsx",
+  "landingPage": "https://www.worldbank.org/en/research/commodity-markets",
+  "items": [
+    { "id": "coffee_arabica", "label": "Coffee (Arabica)", "callsign": "COFFEE", "column": "Coffee, Arabica", "unit": "USD/kg", "format": "rate", "note": "Ethiopia's main export crop." },
+    { "id": "gold", "label": "Gold", "callsign": "GOLD", "column": "Gold", "unit": "USD/troy oz", "format": "rate", "note": "A significant Ethiopian export and reserve asset." },
+    { "id": "crude_oil", "label": "Crude oil (avg)", "callsign": "OIL", "column": "Crude oil, average", "unit": "USD/bbl", "format": "rate", "note": "Proxy for Ethiopia's fuel import bill." }
+  ]
+}

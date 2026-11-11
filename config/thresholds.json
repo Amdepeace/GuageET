@@ -4,6 +4,13 @@
     { "indicator": "inflation", "amberAbove": 10, "redAbove": 20, "text": "CPI inflation: amber above 10%, red above 20%" },
     { "indicator": "gdp_growth", "amberBelow": 4, "redBelow": 0, "text": "GDP growth: amber below 4%, red below 0%" }
   ],
+  "TRADE": [
+    { "metric": "redsea_drop_pct", "amberAbove": 25, "redAbove": 40, "text": "Bab el-Mandeb transit vs window median: amber below −25%, red below −40%" },
+    { "metric": "trade_unavailable", "amberAbove": 0, "text": "Trade data: amber until a UN Comtrade key is configured" }
+  ],
+  "COMMS": [
+    { "metric": "news_offline", "amberAbove": 0, "text": "Headlines feed: amber when the GDELT fetch is failing" }
+  ],
   "INFRA": [
     { "metric": "unverified_records", "amberAbove": 0, "redAbove": 3, "text": "Curated records not verified: amber if any, red above 3" },
     { "metric": "oldest_verification_days", "amberAbove": 45, "redAbove": 90, "text": "Oldest curated verification: amber after 45 days, red after 90 days" }

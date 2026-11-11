@@ -1,9 +1,17 @@
 "use client";
 import { useState } from "react";
-import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import { COUNTRIES, type CountryCode, type CountryFile, type IndicatorConfig } from "@/lib/schema";
+import { CartesianGrid, Line, LineChart, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { COUNTRIES, type CountryCode, type CountryFile, type IndicatorConfig, type TimelineEvent } from "@/lib/schema";
 import { formatDelta, formatValue, shortDate } from "@/lib/format";
+import { toEthiopian } from "@/lib/ethiopianCalendar";
 import { Field } from "../shell/Drawer";
+
+// Ethiopian calendar year at the period end (annual series end on Dec 31).
+function ecYear(period: string): string {
+  const y = Number(period);
+  if (!Number.isFinite(y)) return period;
+  return `${toEthiopian(y, 12, 31).year} EC`;
+}
 
 export function VitalDetail({
   ind,
@@ -11,20 +19,30 @@ export function VitalDetail({
   country,
   onCountry,
   staleSources,
+  timeline,
 }: {
   ind: IndicatorConfig;
   countries: Record<CountryCode, CountryFile>;
   country: CountryCode;
   onCountry: (c: CountryCode) => void;
   staleSources: Set<string>;
+  timeline: TimelineEvent[];
 }) {
   const [showTable, setShowTable] = useState(false);
+  const [ec, setEc] = useState(false);
   const s = countries[country]?.series[ind.id];
   const h = s?.history ?? [];
   const last = h.at(-1);
   const prev = h.at(-2);
   const fmt = (v: number) => formatValue(v, ind.format);
   const name = COUNTRIES.find((c) => c.code === country)!.name;
+  const xLabel = (period: string) => (ec ? ecYear(period) : period);
+  // timeline events that annotate this indicator and fall within the data's year range
+  const years = new Set(h.map((o) => o.period));
+  const marks =
+    country === "ETH"
+      ? timeline.filter((e) => e.indicators?.includes(ind.id) && years.has(String(new Date(e.date).getUTCFullYear())))
+      : [];
 
   return (
     <>
@@ -67,8 +85,11 @@ export function VitalDetail({
           </div>
 
           <div>
-            <div className="flex items-center mb-1">
+            <div className="flex items-center gap-1 mb-1">
               <span className="label grow">History · {h.length} periods</span>
+              <button type="button" className="ctl" aria-pressed={ec} onClick={() => setEc((v) => !v)} title="Show years in the Ethiopian calendar">
+                {ec ? "G.C." : "E.C."}
+              </button>
               <button type="button" className="ctl" aria-pressed={showTable} onClick={() => setShowTable((v) => !v)}>
                 {showTable ? "CHART" : "TABLE"}
               </button>
@@ -86,7 +107,7 @@ export function VitalDetail({
                   <tbody>
                     {[...h].reverse().map((o) => (
                       <tr key={o.asOf}>
-                        <td>{o.period}</td>
+                        <td>{xLabel(o.period)}</td>
                         <td style={{ textAlign: "right" }}>{fmt(o.value)}</td>
                         <td className="muted">{shortDate(o.fetchedAt)}</td>
                       </tr>
@@ -97,8 +118,17 @@ export function VitalDetail({
             ) : (
               <div style={{ height: 200 }}>
                 <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={h.map((o) => ({ period: o.period, value: o.value }))} margin={{ top: 8, right: 8, bottom: 0, left: 0 }}>
+                  <LineChart data={h.map((o) => ({ period: xLabel(o.period), value: o.value }))} margin={{ top: 8, right: 8, bottom: 0, left: 0 }}>
                     <CartesianGrid stroke="var(--grid)" vertical={false} />
+                    {marks.map((e) => (
+                      <ReferenceLine
+                        key={e.date}
+                        x={xLabel(String(new Date(e.date).getUTCFullYear()))}
+                        stroke="var(--warn)"
+                        strokeDasharray="3 3"
+                        label={{ value: e.label, position: "insideTopLeft", fill: "var(--warn)", fontSize: 9 }}
+                      />
+                    ))}
                     <XAxis dataKey="period" tick={{ fill: "var(--ink-3)", fontSize: 10 }} stroke="var(--line)" tickLine={false} minTickGap={16} />
                     <YAxis
                       tick={{ fill: "var(--ink-3)", fontSize: 10 }}
@@ -121,6 +151,24 @@ export function VitalDetail({
               </div>
             )}
           </div>
+
+          {marks.length > 0 && (
+            <div>
+              <div className="label mb-1">Marked events</div>
+              <ul className="text-[11.5px] flex flex-col gap-1">
+                {marks.map((e) => (
+                  <li key={e.date}>
+                    <span className="mono muted">{e.date}</span> · <span style={{ color: "var(--warn)" }}>{e.label}</span> — {e.detail}{" "}
+                    {e.sourceUrl && (
+                      <a href={e.sourceUrl} target="_blank" rel="noreferrer">
+                        ↗
+                      </a>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <div>
             <div className="label mb-1">Other sources</div>

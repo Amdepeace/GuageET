@@ -1,0 +1,37 @@
+{
+  "_doc": "Hand-maintained key dates marked on vital charts and listed in the timeline. Each event lists which indicators it annotates. Keep each event dated and sourced. Reviewed with the infrastructure checklist.",
+  "events": [
+    {
+      "date": "2024-07-29",
+      "label": "Birr floated",
+      "type": "fx",
+      "detail": "The National Bank of Ethiopia moved to a market-based exchange rate, part of an IMF programme. The official birr/USD rate jumped sharply.",
+      "indicators": ["fx_usd", "inflation", "etb_usd_daily"],
+      "sourceUrl": "https://www.imf.org/en/News/Articles/2024/07/29/pr24285-ethiopia-imf-exec-board-approves-eff-arrangement"
+    },
+    {
+      "date": "2025-09-09",
+      "label": "GERD inaugurated",
+      "type": "power",
+      "detail": "The Grand Ethiopian Renaissance Dam was inaugurated at its full 5,150 MW capacity.",
+      "indicators": ["gdp_growth"],
+      "sourceUrl": "https://tractebel-engie.com/en/news/africas-largest-hydropower-scheme-inaugurated-in-ethiopia-doubling-national-power-capacity/"
+    },
+    {
+      "date": "2023-12-01",
+      "label": "Red Sea shipping disrupted",
+      "type": "conflict",
+      "detail": "Attacks on shipping in the Bab el-Mandeb strait from late 2023 cut transit volumes through the Red Sea, raising freight costs on Ethiopia's main trade route.",
+      "indicators": ["external_debt"],
+      "sourceUrl": "https://portwatch.imf.org/"
+    },
+    {
+      "date": "2022-02-20",
+      "label": "GERD first power",
+      "type": "power",
+      "detail": "The first GERD turbine began generating electricity.",
+      "indicators": ["gdp_growth"],
+      "sourceUrl": "https://en.wikipedia.org/wiki/Grand_Ethiopian_Renaissance_Dam"
+    }
+  ]
+}

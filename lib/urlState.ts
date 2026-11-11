@@ -1,7 +1,7 @@
 // The URL stores the active view, so a link opens the exact same view.
 // ?layers=existing,planned,weather&sel=gerd&cmp=inflation&z=5.1&c=39.50,8.60
-export type Layer = "existing" | "planned" | "weather";
-export const ALL_LAYERS: Layer[] = ["existing", "planned", "weather"];
+export type Layer = "existing" | "planned" | "weather" | "activity";
+export const ALL_LAYERS: Layer[] = ["existing", "planned", "weather", "activity"];
 
 export type ViewState = {
   layers: Layer[];

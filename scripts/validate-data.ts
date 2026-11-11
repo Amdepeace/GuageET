@@ -1,10 +1,23 @@
 // CI gate: every stored figure must carry source and as-of date, and every
 // curated record must carry at least one source URL and a last-verified date.
 import { join } from "node:path";
-import { COUNTRIES, type CountryFile, type InfraProps } from "../lib/schema";
+import { COUNTRIES, type CountryFile, type InfraProps, type SimpleSeries } from "../lib/schema";
 import { DATA, assertObservation, countryPath, readJson } from "./lib/store";
 
 const errors: string[] = [];
+
+// v2 contract-shaped files: commodities (array) and daily FX (single series)
+const commodities = readJson<SimpleSeries[]>(join(DATA, "commodities.json"), []);
+const fx = readJson<SimpleSeries | null>(join(DATA, "fx-daily.json"), null);
+for (const s of [...commodities, ...(fx ? [fx] : [])]) {
+  for (const o of s.history) {
+    try {
+      assertObservation(o, `${s.id}/${o.period}`);
+    } catch (e) {
+      errors.push((e as Error).message);
+    }
+  }
+}
 for (const c of COUNTRIES) {
   const file = readJson<CountryFile | null>(countryPath(c.code), null);
   if (!file) {

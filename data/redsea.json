@@ -1,0 +1,1221 @@
+{
+  "fetchedAt": "2026-11-11T23:05:39.551Z",
+  "source": "IMF PortWatch",
+  "sourceUrl": "https://portwatch.imf.org/",
+  "chokepoints": [
+    {
+      "id": "chokepoint4",
+      "name": "Bab el-Mandeb Strait",
+      "history": [
+        {
+          "date": "2026-07-12",
+          "ships": 41,
+          "capacity": 1366176
+        },
+        {
+          "date": "2026-07-13",
+          "ships": 46,
+          "capacity": 1954128
+        },
+        {
+          "date": "2026-07-14",
+          "ships": 46,
+          "capacity": 1564038
+        },
+        {
+          "date": "2026-07-15",
+          "ships": 40,
+          "capacity": 1317165
+        },
+        {
+          "date": "2026-07-16",
+          "ships": 33,
+          "capacity": 1189533
+        },
+        {
+          "date": "2026-07-17",
+          "ships": 46,
+          "capacity": 1594172
+        },
+        {
+          "date": "2026-07-18",
+          "ships": 40,
+          "capacity": 1845862
+        },
+        {
+          "date": "2026-07-19",
+          "ships": 33,
+          "capacity": 1341101
+        },
+        {
+          "date": "2026-07-20",
+          "ships": 35,
+          "capacity": 1469920
+        },
+        {
+          "date": "2026-07-21",
+          "ships": 26,
+          "capacity": 994834
+        },
+        {
+          "date": "2026-07-22",
+          "ships": 31,
+          "capacity": 1155436
+        },
+        {
+          "date": "2026-07-23",
+          "ships": 34,
+          "capacity": 1568922
+        },
+        {
+          "date": "2026-07-24",
+          "ships": 30,
+          "capacity": 1016622
+        },
+        {
+          "date": "2026-07-25",
+          "ships": 22,
+          "capacity": 700899
+        },
+        {
+          "date": "2026-07-26",
+          "ships": 20,
+          "capacity": 814080
+        },
+        {
+          "date": "2026-07-27",
+          "ships": 32,
+          "capacity": 1446031
+        },
+        {
+          "date": "2026-07-28",
+          "ships": 33,
+          "capacity": 1179765
+        },
+        {
+          "date": "2026-07-29",
+          "ships": 34,
+          "capacity": 765593
+        },
+        {
+          "date": "2026-07-30",
+          "ships": 38,
+          "capacity": 734770
+        },
+        {
+          "date": "2026-07-31",
+          "ships": 28,
+          "capacity": 614761
+        },
+        {
+          "date": "2026-08-01",
+          "ships": 20,
+          "capacity": 626072
+        },
+        {
+          "date": "2026-08-02",
+          "ships": 30,
+          "capacity": 1067102
+        },
+        {
+          "date": "2026-08-03",
+          "ships": 17,
+          "capacity": 588450
+        },
+        {
+          "date": "2026-08-04",
+          "ships": 27,
+          "capacity": 1119992
+        },
+        {
+          "date": "2026-08-05",
+          "ships": 14,
+          "capacity": 479625
+        },
+        {
+          "date": "2026-08-06",
+          "ships": 31,
+          "capacity": 1080015
+        },
+        {
+          "date": "2026-08-07",
+          "ships": 30,
+          "capacity": 891777
+        },
+        {
+          "date": "2026-08-08",
+          "ships": 25,
+          "capacity": 647340
+        },
+        {
+          "date": "2026-08-09",
+          "ships": 34,
+          "capacity": 1026734
+        },
+        {
+          "date": "2026-08-10",
+          "ships": 29,
+          "capacity": 782465
+        },
+        {
+          "date": "2026-08-11",
+          "ships": 25,
+          "capacity": 676619
+        },
+        {
+          "date": "2026-08-12",
+          "ships": 25,
+          "capacity": 972120
+        },
+        {
+          "date": "2026-08-13",
+          "ships": 20,
+          "capacity": 553186
+        },
+        {
+          "date": "2026-08-14",
+          "ships": 31,
+          "capacity": 1140524
+        },
+        {
+          "date": "2026-08-15",
+          "ships": 40,
+          "capacity": 1066055
+        },
+        {
+          "date": "2026-08-16",
+          "ships": 36,
+          "capacity": 1378089
+        },
+        {
+          "date": "2026-08-17",
+          "ships": 29,
+          "capacity": 754030
+        },
+        {
+          "date": "2026-08-18",
+          "ships": 32,
+          "capacity": 672649
+        },
+        {
+          "date": "2026-08-19",
+          "ships": 33,
+          "capacity": 905976
+        },
+        {
+          "date": "2026-08-20",
+          "ships": 29,
+          "capacity": 947827
+        },
+        {
+          "date": "2026-08-21",
+          "ships": 21,
+          "capacity": 635516
+        },
+        {
+          "date": "2026-08-22",
+          "ships": 33,
+          "capacity": 983351
+        },
+        {
+          "date": "2026-08-23",
+          "ships": 29,
+          "capacity": 1117466
+        },
+        {
+          "date": "2026-08-24",
+          "ships": 36,
+          "capacity": 1155194
+        },
+        {
+          "date": "2026-08-25",
+          "ships": 25,
+          "capacity": 907715
+        },
+        {
+          "date": "2026-08-26",
+          "ships": 26,
+          "capacity": 765317
+        },
+        {
+          "date": "2026-08-27",
+          "ships": 21,
+          "capacity": 685258
+        },
+        {
+          "date": "2026-08-28",
+          "ships": 27,
+          "capacity": 952444
+        },
+        {
+          "date": "2026-08-29",
+          "ships": 20,
+          "capacity": 641277
+        },
+        {
+          "date": "2026-08-30",
+          "ships": 29,
+          "capacity": 955552
+        },
+        {
+          "date": "2026-08-31",
+          "ships": 24,
+          "capacity": 616646
+        },
+        {
+          "date": "2026-09-01",
+          "ships": 19,
+          "capacity": 583729
+        },
+        {
+          "date": "2026-09-02",
+          "ships": 38,
+          "capacity": 1877300
+        },
+        {
+          "date": "2026-09-03",
+          "ships": 24,
+          "capacity": 749058
+        },
+        {
+          "date": "2026-09-04",
+          "ships": 32,
+          "capacity": 939446
+        },
+        {
+          "date": "2026-09-05",
+          "ships": 18,
+          "capacity": 479054
+        },
+        {
+          "date": "2026-09-06",
+          "ships": 23,
+          "capacity": 772334
+        },
+        {
+          "date": "2026-09-07",
+          "ships": 34,
+          "capacity": 928473
+        },
+        {
+          "date": "2026-09-08",
+          "ships": 22,
+          "capacity": 1079450
+        },
+        {
+          "date": "2026-09-09",
+          "ships": 35,
+          "capacity": 1204665
+        },
+        {
+          "date": "2026-09-10",
+          "ships": 27,
+          "capacity": 811308
+        },
+        {
+          "date": "2026-09-11",
+          "ships": 22,
+          "capacity": 961218
+        },
+        {
+          "date": "2026-09-12",
+          "ships": 20,
+          "capacity": 714526
+        },
+        {
+          "date": "2026-09-13",
+          "ships": 31,
+          "capacity": 918133
+        },
+        {
+          "date": "2026-09-14",
+          "ships": 25,
+          "capacity": 742155
+        },
+        {
+          "date": "2026-09-15",
+          "ships": 24,
+          "capacity": 974505
+        },
+        {
+          "date": "2026-09-16",
+          "ships": 19,
+          "capacity": 784020
+        },
+        {
+          "date": "2026-09-17",
+          "ships": 27,
+          "capacity": 762343
+        },
+        {
+          "date": "2026-09-18",
+          "ships": 27,
+          "capacity": 932286
+        },
+        {
+          "date": "2026-09-19",
+          "ships": 25,
+          "capacity": 813758
+        },
+        {
+          "date": "2026-09-20",
+          "ships": 26,
+          "capacity": 715953
+        },
+        {
+          "date": "2026-09-21",
+          "ships": 27,
+          "capacity": 782264
+        },
+        {
+          "date": "2026-09-22",
+          "ships": 22,
+          "capacity": 1101879
+        },
+        {
+          "date": "2026-09-23",
+          "ships": 25,
+          "capacity": 847745
+        },
+        {
+          "date": "2026-09-24",
+          "ships": 31,
+          "capacity": 1175553
+        },
+        {
+          "date": "2026-09-25",
+          "ships": 29,
+          "capacity": 1359322
+        },
+        {
+          "date": "2026-09-26",
+          "ships": 29,
+          "capacity": 1136344
+        },
+        {
+          "date": "2026-09-27",
+          "ships": 27,
+          "capacity": 1321601
+        },
+        {
+          "date": "2026-09-28",
+          "ships": 30,
+          "capacity": 943325
+        },
+        {
+          "date": "2026-09-29",
+          "ships": 37,
+          "capacity": 980632
+        },
+        {
+          "date": "2026-09-30",
+          "ships": 22,
+          "capacity": 738133
+        },
+        {
+          "date": "2026-10-01",
+          "ships": 28,
+          "capacity": 888347
+        },
+        {
+          "date": "2026-10-02",
+          "ships": 26,
+          "capacity": 823908
+        },
+        {
+          "date": "2026-10-03",
+          "ships": 30,
+          "capacity": 1149125
+        },
+        {
+          "date": "2026-10-04",
+          "ships": 34,
+          "capacity": 1133173
+        },
+        {
+          "date": "2026-10-05",
+          "ships": 28,
+          "capacity": 1301061
+        },
+        {
+          "date": "2026-10-06",
+          "ships": 33,
+          "capacity": 903855
+        },
+        {
+          "date": "2026-10-07",
+          "ships": 35,
+          "capacity": 1473591
+        },
+        {
+          "date": "2026-10-08",
+          "ships": 25,
+          "capacity": 788622
+        },
+        {
+          "date": "2026-10-09",
+          "ships": 24,
+          "capacity": 673505
+        },
+        {
+          "date": "2026-10-10",
+          "ships": 22,
+          "capacity": 573864
+        },
+        {
+          "date": "2026-10-11",
+          "ships": 31,
+          "capacity": 1136777
+        },
+        {
+          "date": "2026-10-12",
+          "ships": 34,
+          "capacity": 997549
+        },
+        {
+          "date": "2026-10-13",
+          "ships": 17,
+          "capacity": 600323
+        },
+        {
+          "date": "2026-10-14",
+          "ships": 24,
+          "capacity": 1037239
+        },
+        {
+          "date": "2026-10-15",
+          "ships": 24,
+          "capacity": 952646
+        },
+        {
+          "date": "2026-10-16",
+          "ships": 25,
+          "capacity": 1333613
+        },
+        {
+          "date": "2026-10-17",
+          "ships": 29,
+          "capacity": 1028126
+        },
+        {
+          "date": "2026-10-18",
+          "ships": 32,
+          "capacity": 1055547
+        },
+        {
+          "date": "2026-10-19",
+          "ships": 36,
+          "capacity": 991763
+        },
+        {
+          "date": "2026-10-20",
+          "ships": 33,
+          "capacity": 1050978
+        },
+        {
+          "date": "2026-10-21",
+          "ships": 21,
+          "capacity": 661045
+        },
+        {
+          "date": "2026-10-22",
+          "ships": 23,
+          "capacity": 848233
+        },
+        {
+          "date": "2026-10-23",
+          "ships": 32,
+          "capacity": 954463
+        },
+        {
+          "date": "2026-10-24",
+          "ships": 21,
+          "capacity": 844169
+        },
+        {
+          "date": "2026-10-25",
+          "ships": 36,
+          "capacity": 1157839
+        },
+        {
+          "date": "2026-10-26",
+          "ships": 29,
+          "capacity": 1261879
+        },
+        {
+          "date": "2026-10-27",
+          "ships": 27,
+          "capacity": 828672
+        },
+        {
+          "date": "2026-10-28",
+          "ships": 19,
+          "capacity": 770357
+        },
+        {
+          "date": "2026-10-29",
+          "ships": 22,
+          "capacity": 794179
+        },
+        {
+          "date": "2026-10-30",
+          "ships": 26,
+          "capacity": 681696
+        },
+        {
+          "date": "2026-10-31",
+          "ships": 38,
+          "capacity": 1368694
+        },
+        {
+          "date": "2026-11-01",
+          "ships": 30,
+          "capacity": 1042630
+        },
+        {
+          "date": "2026-11-02",
+          "ships": 30,
+          "capacity": 1145508
+        },
+        {
+          "date": "2026-11-03",
+          "ships": 25,
+          "capacity": 1171803
+        },
+        {
+          "date": "2026-11-04",
+          "ships": 27,
+          "capacity": 775498
+        },
+        {
+          "date": "2026-11-05",
+          "ships": 34,
+          "capacity": 893935
+        },
+        {
+          "date": "2026-11-06",
+          "ships": 25,
+          "capacity": 983506
+        },
+        {
+          "date": "2026-11-07",
+          "ships": 19,
+          "capacity": 713600
+        },
+        {
+          "date": "2026-11-08",
+          "ships": 24,
+          "capacity": 715603
+        }
+      ],
+      "baselineShips": 28
+    },
+    {
+      "id": "chokepoint1",
+      "name": "Suez Canal",
+      "history": [
+        {
+          "date": "2026-07-12",
+          "ships": 39,
+          "capacity": 1325078
+        },
+        {
+          "date": "2026-07-13",
+          "ships": 43,
+          "capacity": 2133513
+        },
+        {
+          "date": "2026-07-14",
+          "ships": 34,
+          "capacity": 2108558
+        },
+        {
+          "date": "2026-07-15",
+          "ships": 42,
+          "capacity": 1599188
+        },
+        {
+          "date": "2026-07-16",
+          "ships": 39,
+          "capacity": 1503404
+        },
+        {
+          "date": "2026-07-17",
+          "ships": 44,
+          "capacity": 1437081
+        },
+        {
+          "date": "2026-07-18",
+          "ships": 46,
+          "capacity": 1545567
+        },
+        {
+          "date": "2026-07-19",
+          "ships": 43,
+          "capacity": 1973255
+        },
+        {
+          "date": "2026-07-20",
+          "ships": 36,
+          "capacity": 1025936
+        },
+        {
+          "date": "2026-07-21",
+          "ships": 40,
+          "capacity": 1064198
+        },
+        {
+          "date": "2026-07-22",
+          "ships": 44,
+          "capacity": 1810632
+        },
+        {
+          "date": "2026-07-23",
+          "ships": 46,
+          "capacity": 1595346
+        },
+        {
+          "date": "2026-07-24",
+          "ships": 46,
+          "capacity": 1570826
+        },
+        {
+          "date": "2026-07-25",
+          "ships": 37,
+          "capacity": 859389
+        },
+        {
+          "date": "2026-07-26",
+          "ships": 37,
+          "capacity": 1406914
+        },
+        {
+          "date": "2026-07-27",
+          "ships": 51,
+          "capacity": 2078535
+        },
+        {
+          "date": "2026-07-28",
+          "ships": 43,
+          "capacity": 1711440
+        },
+        {
+          "date": "2026-07-29",
+          "ships": 39,
+          "capacity": 1394958
+        },
+        {
+          "date": "2026-07-30",
+          "ships": 47,
+          "capacity": 1490722
+        },
+        {
+          "date": "2026-07-31",
+          "ships": 38,
+          "capacity": 1702919
+        },
+        {
+          "date": "2026-08-01",
+          "ships": 42,
+          "capacity": 1054183
+        },
+        {
+          "date": "2026-08-02",
+          "ships": 31,
+          "capacity": 1245322
+        },
+        {
+          "date": "2026-08-03",
+          "ships": 44,
+          "capacity": 1629747
+        },
+        {
+          "date": "2026-08-04",
+          "ships": 35,
+          "capacity": 1725936
+        },
+        {
+          "date": "2026-08-05",
+          "ships": 43,
+          "capacity": 1122360
+        },
+        {
+          "date": "2026-08-06",
+          "ships": 39,
+          "capacity": 1223896
+        },
+        {
+          "date": "2026-08-07",
+          "ships": 43,
+          "capacity": 1092368
+        },
+        {
+          "date": "2026-08-08",
+          "ships": 35,
+          "capacity": 1291308
+        },
+        {
+          "date": "2026-08-09",
+          "ships": 48,
+          "capacity": 1948912
+        },
+        {
+          "date": "2026-08-10",
+          "ships": 43,
+          "capacity": 1526277
+        },
+        {
+          "date": "2026-08-11",
+          "ships": 57,
+          "capacity": 2025377
+        },
+        {
+          "date": "2026-08-12",
+          "ships": 27,
+          "capacity": 828942
+        },
+        {
+          "date": "2026-08-13",
+          "ships": 40,
+          "capacity": 1099325
+        },
+        {
+          "date": "2026-08-14",
+          "ships": 39,
+          "capacity": 1545753
+        },
+        {
+          "date": "2026-08-15",
+          "ships": 39,
+          "capacity": 1205996
+        },
+        {
+          "date": "2026-08-16",
+          "ships": 41,
+          "capacity": 1156924
+        },
+        {
+          "date": "2026-08-17",
+          "ships": 46,
+          "capacity": 1644490
+        },
+        {
+          "date": "2026-08-18",
+          "ships": 39,
+          "capacity": 1400889
+        },
+        {
+          "date": "2026-08-19",
+          "ships": 45,
+          "capacity": 1474879
+        },
+        {
+          "date": "2026-08-20",
+          "ships": 33,
+          "capacity": 1163366
+        },
+        {
+          "date": "2026-08-21",
+          "ships": 55,
+          "capacity": 1747986
+        },
+        {
+          "date": "2026-08-22",
+          "ships": 39,
+          "capacity": 1362057
+        },
+        {
+          "date": "2026-08-23",
+          "ships": 37,
+          "capacity": 1057863
+        },
+        {
+          "date": "2026-08-24",
+          "ships": 46,
+          "capacity": 1546509
+        },
+        {
+          "date": "2026-08-25",
+          "ships": 51,
+          "capacity": 1607129
+        },
+        {
+          "date": "2026-08-26",
+          "ships": 41,
+          "capacity": 1797218
+        },
+        {
+          "date": "2026-08-27",
+          "ships": 33,
+          "capacity": 990230
+        },
+        {
+          "date": "2026-08-28",
+          "ships": 39,
+          "capacity": 1407614
+        },
+        {
+          "date": "2026-08-29",
+          "ships": 38,
+          "capacity": 1096394
+        },
+        {
+          "date": "2026-08-30",
+          "ships": 53,
+          "capacity": 1691917
+        },
+        {
+          "date": "2026-08-31",
+          "ships": 30,
+          "capacity": 1195282
+        },
+        {
+          "date": "2026-09-01",
+          "ships": 51,
+          "capacity": 2179281
+        },
+        {
+          "date": "2026-09-02",
+          "ships": 41,
+          "capacity": 1371952
+        },
+        {
+          "date": "2026-09-03",
+          "ships": 41,
+          "capacity": 2092328
+        },
+        {
+          "date": "2026-09-04",
+          "ships": 56,
+          "capacity": 2224519
+        },
+        {
+          "date": "2026-09-05",
+          "ships": 42,
+          "capacity": 1216694
+        },
+        {
+          "date": "2026-09-06",
+          "ships": 30,
+          "capacity": 1081066
+        },
+        {
+          "date": "2026-09-07",
+          "ships": 39,
+          "capacity": 991418
+        },
+        {
+          "date": "2026-09-08",
+          "ships": 43,
+          "capacity": 1650448
+        },
+        {
+          "date": "2026-09-09",
+          "ships": 37,
+          "capacity": 1640210
+        },
+        {
+          "date": "2026-09-10",
+          "ships": 37,
+          "capacity": 1724793
+        },
+        {
+          "date": "2026-09-11",
+          "ships": 48,
+          "capacity": 1561840
+        },
+        {
+          "date": "2026-09-12",
+          "ships": 40,
+          "capacity": 1254502
+        },
+        {
+          "date": "2026-09-13",
+          "ships": 21,
+          "capacity": 1003061
+        },
+        {
+          "date": "2026-09-14",
+          "ships": 51,
+          "capacity": 2354715
+        },
+        {
+          "date": "2026-09-15",
+          "ships": 32,
+          "capacity": 1304361
+        },
+        {
+          "date": "2026-09-16",
+          "ships": 37,
+          "capacity": 1696929
+        },
+        {
+          "date": "2026-09-17",
+          "ships": 37,
+          "capacity": 1544385
+        },
+        {
+          "date": "2026-09-18",
+          "ships": 51,
+          "capacity": 1593117
+        },
+        {
+          "date": "2026-09-19",
+          "ships": 43,
+          "capacity": 1245657
+        },
+        {
+          "date": "2026-09-20",
+          "ships": 42,
+          "capacity": 1713133
+        },
+        {
+          "date": "2026-09-21",
+          "ships": 38,
+          "capacity": 1530074
+        },
+        {
+          "date": "2026-09-22",
+          "ships": 47,
+          "capacity": 2112667
+        },
+        {
+          "date": "2026-09-23",
+          "ships": 32,
+          "capacity": 1567894
+        },
+        {
+          "date": "2026-09-24",
+          "ships": 41,
+          "capacity": 1094081
+        },
+        {
+          "date": "2026-09-25",
+          "ships": 37,
+          "capacity": 1206751
+        },
+        {
+          "date": "2026-09-26",
+          "ships": 48,
+          "capacity": 1886870
+        },
+        {
+          "date": "2026-09-27",
+          "ships": 37,
+          "capacity": 1277754
+        },
+        {
+          "date": "2026-09-28",
+          "ships": 28,
+          "capacity": 1152731
+        },
+        {
+          "date": "2026-09-29",
+          "ships": 40,
+          "capacity": 1534120
+        },
+        {
+          "date": "2026-09-30",
+          "ships": 45,
+          "capacity": 2145344
+        },
+        {
+          "date": "2026-10-01",
+          "ships": 55,
+          "capacity": 2561497
+        },
+        {
+          "date": "2026-10-02",
+          "ships": 42,
+          "capacity": 2372439
+        },
+        {
+          "date": "2026-10-03",
+          "ships": 46,
+          "capacity": 2019755
+        },
+        {
+          "date": "2026-10-04",
+          "ships": 46,
+          "capacity": 1413336
+        },
+        {
+          "date": "2026-10-05",
+          "ships": 36,
+          "capacity": 1339861
+        },
+        {
+          "date": "2026-10-06",
+          "ships": 48,
+          "capacity": 1798283
+        },
+        {
+          "date": "2026-10-07",
+          "ships": 32,
+          "capacity": 1640112
+        },
+        {
+          "date": "2026-10-08",
+          "ships": 37,
+          "capacity": 1710275
+        },
+        {
+          "date": "2026-10-09",
+          "ships": 55,
+          "capacity": 1773726
+        },
+        {
+          "date": "2026-10-10",
+          "ships": 41,
+          "capacity": 2094816
+        },
+        {
+          "date": "2026-10-11",
+          "ships": 43,
+          "capacity": 1300421
+        },
+        {
+          "date": "2026-10-12",
+          "ships": 50,
+          "capacity": 2194694
+        },
+        {
+          "date": "2026-10-13",
+          "ships": 36,
+          "capacity": 1449755
+        },
+        {
+          "date": "2026-10-14",
+          "ships": 54,
+          "capacity": 2648709
+        },
+        {
+          "date": "2026-10-15",
+          "ships": 42,
+          "capacity": 1716065
+        },
+        {
+          "date": "2026-10-16",
+          "ships": 43,
+          "capacity": 1542020
+        },
+        {
+          "date": "2026-10-17",
+          "ships": 42,
+          "capacity": 2180846
+        },
+        {
+          "date": "2026-10-18",
+          "ships": 43,
+          "capacity": 1554286
+        },
+        {
+          "date": "2026-10-19",
+          "ships": 36,
+          "capacity": 1284126
+        },
+        {
+          "date": "2026-10-20",
+          "ships": 39,
+          "capacity": 1852568
+        },
+        {
+          "date": "2026-10-21",
+          "ships": 40,
+          "capacity": 1373546
+        },
+        {
+          "date": "2026-10-22",
+          "ships": 43,
+          "capacity": 1769903
+        },
+        {
+          "date": "2026-10-23",
+          "ships": 44,
+          "capacity": 1805704
+        },
+        {
+          "date": "2026-10-24",
+          "ships": 41,
+          "capacity": 2077496
+        },
+        {
+          "date": "2026-10-25",
+          "ships": 46,
+          "capacity": 1705711
+        },
+        {
+          "date": "2026-10-26",
+          "ships": 40,
+          "capacity": 1833211
+        },
+        {
+          "date": "2026-10-27",
+          "ships": 51,
+          "capacity": 1636386
+        },
+        {
+          "date": "2026-10-28",
+          "ships": 45,
+          "capacity": 2138194
+        },
+        {
+          "date": "2026-10-29",
+          "ships": 28,
+          "capacity": 1351271
+        },
+        {
+          "date": "2026-10-30",
+          "ships": 47,
+          "capacity": 1801730
+        },
+        {
+          "date": "2026-10-31",
+          "ships": 44,
+          "capacity": 1760478
+        },
+        {
+          "date": "2026-11-01",
+          "ships": 46,
+          "capacity": 2080955
+        },
+        {
+          "date": "2026-11-02",
+          "ships": 39,
+          "capacity": 1726730
+        },
+        {
+          "date": "2026-11-03",
+          "ships": 39,
+          "capacity": 1918291
+        },
+        {
+          "date": "2026-11-04",
+          "ships": 37,
+          "capacity": 1736814
+        },
+        {
+          "date": "2026-11-05",
+          "ships": 52,
+          "capacity": 2673200
+        },
+        {
+          "date": "2026-11-06",
+          "ships": 49,
+          "capacity": 1779745
+        },
+        {
+          "date": "2026-11-07",
+          "ships": 52,
+          "capacity": 1954319
+        },
+        {
+          "date": "2026-11-08",
+          "ships": 43,
+          "capacity": 2163702
+        }
+      ],
+      "baselineShips": 42
+    }
+  ]
+}

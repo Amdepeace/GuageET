@@ -38,21 +38,32 @@ jobs:
 
       - run: npm ci
 
-      - name: Fetch World Bank (daily)
+      # Daily sources (keyless): World Bank, commodities, FX, news, Red Sea, Comtrade.
+      - name: Fetch daily sources
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.fetch)
-        run: npm run fetch:worldbank
+        env:
+          COMTRADE_PRIMARY_KEY: ${{ secrets.COMTRADE_PRIMARY_KEY }}
+        run: |
+          npm run fetch:worldbank
+          npm run fetch:commodities
+          npm run fetch:fx
+          npm run fetch:news
+          npm run fetch:redsea
+          npm run fetch:comtrade
 
-      - name: Fetch IMF (weekly, Mondays, or on manual run)
+      - name: Fetch IMF (Mondays only, to poll sparingly)
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.fetch)
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%u)" = "1" ]; then
             npm run fetch:imf
           else
-            echo "Not Monday: IMF fetch skipped to poll sparingly."
+            echo "Not Monday: IMF fetch skipped."
           fi
 
-      - name: Compute what-changed feed
-        run: npm run build:changes
+      - name: Compute what-changed feed and alerts
+        run: |
+          npm run build:changes
+          npm run build:alerts
 
       - name: Validate data contract
         run: npm run validate

@@ -4,5 +4,47 @@
     "kind": "source_error",
     "source": "IMF WEO",
     "message": "Fetch failed: NGDP_RPCH: HTTP 403 for https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH/ETH/KEN/DJI/EGY/SDN/TZA; PCPIPCH: HTTP 403 for https://www.imf.org/external/datamapper/api/v1/PCPIPCH/ETH/KEN/DJI/EGY/SDN/TZA"
+  },
+  {
+    "at": "2026-11-11T23:03:59.431Z",
+    "kind": "new_period",
+    "indicator": "coffee_arabica",
+    "period": "Dec 2025",
+    "value": 8.404672826,
+    "unit": "USD/kg",
+    "source": "World Bank Pink Sheet",
+    "message": "Coffee (Arabica): Dec 2025 price"
+  },
+  {
+    "at": "2026-11-11T23:03:59.431Z",
+    "kind": "new_period",
+    "indicator": "gold",
+    "period": "Dec 2025",
+    "value": 4309.23,
+    "unit": "USD/troy oz",
+    "source": "World Bank Pink Sheet",
+    "message": "Gold: Dec 2025 price"
+  },
+  {
+    "at": "2026-11-11T23:03:59.431Z",
+    "kind": "new_period",
+    "indicator": "crude_oil",
+    "period": "Dec 2025",
+    "value": 60.88,
+    "unit": "USD/bbl",
+    "source": "World Bank Pink Sheet",
+    "message": "Crude oil (avg): Dec 2025 price"
+  },
+  {
+    "at": "2026-11-11T23:05:39.021Z",
+    "kind": "source_error",
+    "source": "GDELT",
+    "message": "Fetch failed: fetch failed"
+  },
+  {
+    "at": "2026-11-11T23:05:41.643Z",
+    "kind": "source_error",
+    "source": "UN Comtrade",
+    "message": "Fetch failed: No COMTRADE_PRIMARY_KEY configured"
   }
 ]
