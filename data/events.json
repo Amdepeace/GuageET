@@ -1,0 +1,8 @@
+[
+  {
+    "at": "2026-11-11T15:03:47.593Z",
+    "kind": "source_error",
+    "source": "IMF WEO",
+    "message": "Fetch failed: NGDP_RPCH: HTTP 403 for https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH/ETH/KEN/DJI/EGY/SDN/TZA; PCPIPCH: HTTP 403 for https://www.imf.org/external/datamapper/api/v1/PCPIPCH/ETH/KEN/DJI/EGY/SDN/TZA"
+  }
+]

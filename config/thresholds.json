@@ -1,0 +1,18 @@
+{
+  "_doc": "Status-light rules per desk. A desk takes the worst light among its rules. Every rule is shown to the user on click. Values compare against Ethiopia's latest primary observation.",
+  "ECON": [
+    { "indicator": "inflation", "amberAbove": 10, "redAbove": 20, "text": "CPI inflation: amber above 10%, red above 20%" },
+    { "indicator": "gdp_growth", "amberBelow": 4, "redBelow": 0, "text": "GDP growth: amber below 4%, red below 0%" }
+  ],
+  "INFRA": [
+    { "metric": "unverified_records", "amberAbove": 0, "redAbove": 3, "text": "Curated records not verified: amber if any, red above 3" },
+    { "metric": "oldest_verification_days", "amberAbove": 45, "redAbove": 90, "text": "Oldest curated verification: amber after 45 days, red after 90 days" }
+  ],
+  "WEATHER": [
+    { "metric": "max_temp_c", "amberAbove": 38, "redAbove": 42, "text": "Any city 7-day max temperature: amber above 38°C, red above 42°C" },
+    { "metric": "daily_precip_mm", "amberAbove": 50, "redAbove": 100, "text": "Any city single-day forecast rain: amber above 50 mm, red above 100 mm" }
+  ],
+  "SYSTEM": [
+    { "metric": "offline_sources", "amberAbove": 0, "redAbove": 1, "text": "Sources OFFLINE: amber if one, red if more than one" }
+  ]
+}

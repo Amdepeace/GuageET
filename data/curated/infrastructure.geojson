@@ -1,0 +1,728 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "add-dji-rail",
+    "callsign": "ADD-DJI RAIL",
+    "name": "Addis Ababa–Djibouti Railway",
+    "type": "rail",
+    "layer": "existing",
+    "status": "operational",
+    "costUsd": 4500000000.0,
+    "costNote": "Widely reported total for both countries' sections; not an audited figure.",
+    "funders": [
+     "Export-Import Bank of China"
+    ],
+    "connects": [
+     "Addis Ababa",
+     "Dire Dawa",
+     "Port of Djibouti"
+    ],
+    "verified": true,
+    "summary": "752 km electrified standard-gauge line operated by Ethio-Djibouti Railway (EDR). Commercial service since 2018. EDR plans to raise freight capacity from 2 Mt to 6.2 Mt a year by 2027 and to link more Djibouti terminals by end-2026.",
+    "geometryNote": "Schematic path through the listed towns, not a surveyed alignment.",
+    "sources": [
+     {
+      "title": "Wikipedia: Addis Ababa–Djibouti Railway",
+      "url": "https://en.wikipedia.org/wiki/Addis_Ababa%E2%80%93Djibouti_Railway"
+     },
+     {
+      "title": "Capital Ethiopia: EDR to double freight capacity",
+      "url": "https://capitalethiopia.com/2026/01/11/ethio-djibouti-railway-to-double-freight-capacity-by-year-end/"
+     },
+     {
+      "title": "Capital Ethiopia: ports to be linked to railway by 2026",
+      "url": "https://capitalethiopia.com/2026/02/22/ethiopia-and-djibouti-seal-deal-to-link-strategic-ports-to-railway-by-2026/"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      38.74,
+      9.03
+     ],
+     [
+      39.27,
+      8.54
+     ],
+     [
+      40.17,
+      8.98
+     ],
+     [
+      40.75,
+      9.24
+     ],
+     [
+      41.85,
+      9.6
+     ],
+     [
+      42.4,
+      11.0
+     ],
+     [
+      42.71,
+      11.16
+     ],
+     [
+      43.08,
+      11.53
+     ],
+     [
+      43.14,
+      11.59
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "dji-road",
+    "callsign": "DJI ROAD",
+    "name": "Addis–Djibouti road corridor (via Galafi)",
+    "type": "road",
+    "layer": "existing",
+    "status": "operational",
+    "costUsd": null,
+    "funders": [
+     "Multiple (World Bank, AfDB, EU and national budgets over several decades)"
+    ],
+    "connects": [
+     "Addis Ababa",
+     "Semera",
+     "Galafi border",
+     "Port of Djibouti"
+    ],
+    "verified": true,
+    "summary": "Main truck route for Ethiopia's imports via Djibouti. A 2026 fuel shortage slowed trucking on this corridor and shifted some cargo to rail.",
+    "geometryNote": "Schematic path through the listed towns, not a surveyed alignment.",
+    "sources": [
+     {
+      "title": "Capital Ethiopia: fuel shortage slows Djibouti trucking",
+      "url": "https://capitalethiopia.com/2026/04/11/fuel-shortage-slows-djibouti-trucking-railway-cuts-turnaround-by-28/"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      38.74,
+      9.03
+     ],
+     [
+      39.27,
+      8.54
+     ],
+     [
+      40.17,
+      8.98
+     ],
+     [
+      40.65,
+      10.17
+     ],
+     [
+      40.76,
+      11.42
+     ],
+     [
+      41.01,
+      11.79
+     ],
+     [
+      41.85,
+      11.72
+     ],
+     [
+      42.1,
+      11.52
+     ],
+     [
+      42.75,
+      11.35
+     ],
+     [
+      43.14,
+      11.59
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "bole",
+    "callsign": "BOLE",
+    "name": "Addis Ababa Bole International Airport",
+    "type": "airport",
+    "layer": "existing",
+    "status": "operational",
+    "costUsd": null,
+    "funders": [
+     "Ethiopian Airlines Group"
+    ],
+    "connects": [
+     "Ethiopian Airlines hub"
+    ],
+    "verified": true,
+    "summary": "Ethiopian Airlines' hub. Reported annual capacity ranges from 20 to 25 million passengers depending on the source; the domestic terminal is being expanded.",
+    "geometryNote": "Approximate site location.",
+    "sources": [
+     {
+      "title": "Engineering News: Ethiopia's bid for the skies (Nov 2026)",
+      "url": "https://www.engineeringnews.co.za/article/ethiopias-bid-for-the-skies-2026-11-06"
+     },
+     {
+      "title": "Ecofin: Bole domestic terminal expansion",
+      "url": "https://www.ecofinagency.com/news-infrastructures/1703-53835-ethiopian-airlines-expands-bole-domestic-terminal-as-part-of-plan-to-join-global-top-20"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     38.799,
+     8.978
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "gerd",
+    "callsign": "GERD",
+    "name": "Grand Ethiopian Renaissance Dam",
+    "type": "dam",
+    "layer": "existing",
+    "status": "operational",
+    "costUsd": 5000000000.0,
+    "costNote": "Approximate; reported as about $5 billion.",
+    "funders": [
+     "Government of Ethiopia (public bonds and domestic contributions)"
+    ],
+    "connects": [
+     "Blue Nile",
+     "National grid"
+    ],
+    "verified": true,
+    "summary": "5,150 MW hydropower dam on the Blue Nile, inaugurated 9 September 2025. Egypt and Sudan dispute its operation.",
+    "geometryNote": "Approximate site location.",
+    "sources": [
+     {
+      "title": "Tractebel: GERD inaugurated",
+      "url": "https://tractebel-engie.com/en/news/africas-largest-hydropower-scheme-inaugurated-in-ethiopia-doubling-national-power-capacity/"
+     },
+     {
+      "title": "ENR: Ethiopia inaugurates Renaissance Dam",
+      "url": "https://www.enr.com/articles/61317-ethiopia-inaugurates-5b-renaissance-dam-africas-largest-hydropower-project"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     35.09,
+     11.21
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "eth-ken-hvdc",
+    "callsign": "ETH-KEN HVDC",
+    "name": "Ethiopia–Kenya 500 kV HVDC interconnector",
+    "type": "power_line",
+    "layer": "existing",
+    "status": "operational",
+    "costUsd": 1260000000.0,
+    "funders": [
+     "World Bank",
+     "African Development Bank",
+     "Agence Française de Développement",
+     "Governments of Ethiopia and Kenya"
+    ],
+    "connects": [
+     "Wolayta Sodo",
+     "Suswa (Kenya)"
+    ],
+    "verified": true,
+    "summary": "1,045 km line rated 2,000 MW. Kenya imported about 200 MW; a July 2026 supply agreement sets up a rise to 400 MW, reported for December 2026.",
+    "geometryNote": "Schematic path through the listed towns, not a surveyed alignment.",
+    "sources": [
+     {
+      "title": "The Star: Kenya deepens Ethiopian power imports (Jul 2026)",
+      "url": "https://www.the-star.co.ke/business/kenya/2026-07-13-kenya-deepens-ethiopian-power-imports-in-fresh-supply-deal"
+     },
+     {
+      "title": "Capital Ethiopia: scale-up by December 2026",
+      "url": "https://capitalethiopia.com/2026/09/15/ethiopia-kenya-finalize-preparations-to-scale-up-cross-border-power-trade-by-december-2026"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      37.75,
+      6.85
+     ],
+     [
+      39.06,
+      3.52
+     ],
+     [
+      37.99,
+      2.33
+     ],
+     [
+      37.58,
+      0.35
+     ],
+     [
+      36.35,
+      -1.05
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "eth-dji-power-1",
+    "callsign": "ETH-DJI PWR1",
+    "name": "Ethiopia–Djibouti power interconnection (first line)",
+    "type": "power_line",
+    "layer": "existing",
+    "status": "operational",
+    "costUsd": null,
+    "funders": [
+     "African Development Bank"
+    ],
+    "connects": [
+     "Dire Dawa",
+     "Djibouti"
+    ],
+    "verified": true,
+    "summary": "230 kV line supplying Djibouti from the Ethiopian grid; reported to be near its transfer limit, which is why a second line is planned.",
+    "geometryNote": "Schematic path through the listed towns, not a surveyed alignment.",
+    "sources": [
+     {
+      "title": "Oxford Business Group: second interconnection with Ethiopia",
+      "url": "https://oxfordbusinessgroup.com/reports/djibouti/2023-report/energy-utilities/regional-linkages-a-second-electricity-interconnection-link-with-ethiopia-marks-another-step-towards-regional-integration-analysis/"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      41.85,
+      9.6
+     ],
+     [
+      42.71,
+      11.16
+     ],
+     [
+      43.14,
+      11.59
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "eth-sdn-power",
+    "callsign": "ETH-SDN PWR",
+    "name": "Ethiopia–Sudan power interconnection (Metema–Gedaref)",
+    "type": "power_line",
+    "layer": "existing",
+    "status": "operational",
+    "costUsd": null,
+    "funders": [
+     "World Bank (Nile Basin Initiative)"
+    ],
+    "connects": [
+     "Gondar region",
+     "Gedaref (Sudan)"
+    ],
+    "verified": false,
+    "summary": "230 kV, about 296 km, energised around 2012 with an initial 100 MW. Current export volume to Sudan is not confirmed by a recent source.",
+    "geometryNote": "Schematic path through the listed towns, not a surveyed alignment.",
+    "sources": [
+     {
+      "title": "Sudan Tribune: Ethiopian electric cable to Sudan completed",
+      "url": "https://sudantribune.com/?p=41082"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      37.47,
+      12.6
+     ],
+     [
+      36.2,
+      12.96
+     ],
+     [
+      35.38,
+      14.03
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "bishoftu",
+    "callsign": "BISHOFTU",
+    "name": "Bishoftu International Airport",
+    "type": "airport",
+    "layer": "planned",
+    "status": "under_construction",
+    "costUsd": 12500000000.0,
+    "costNote": "Reported total; some outlets give $12.7 billion.",
+    "funders": [
+     "Ethiopian Airlines Group (20–30%)",
+     "International lenders (being arranged)"
+    ],
+    "connects": [
+     "Addis Ababa (planned rail and road links)"
+    ],
+    "verified": true,
+    "summary": "Construction launched 10 January 2026; earthworks under way. Main contractor selection moved to early 2027. Phase one targeted for 2030, up to 110 million passengers a year at full build.",
+    "geometryNote": "Approximate site location. Exact site boundary not published in the cited sources.",
+    "sources": [
+     {
+      "title": "Al Arabiya: construction begins (Jan 2026)",
+      "url": "https://english.alarabiya.net/News/world/2026/01/10/ethiopia-begins-125-billion-construction-of-africa-s-biggest-airport-"
+     },
+     {
+      "title": "Travel Extra: bidding pushed to 2027",
+      "url": "https://www.travelextra.ie/ethiopian-airlines-pushes-back-bishoftu-bidding-process-to-2027/"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     39.02,
+     8.71
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "berbera-corridor",
+    "callsign": "BERBERA COR",
+    "name": "Berbera corridor (Togochale–Hargeisa–Berbera road)",
+    "type": "corridor",
+    "layer": "planned",
+    "status": "under_construction",
+    "costUsd": 400000000.0,
+    "costNote": "2019 launch estimate for the road.",
+    "funders": [
+     "Abu Dhabi Fund for Development",
+     "DP World (port and corridor)"
+    ],
+    "connects": [
+     "Jijiga",
+     "Togochale/Wajaale border",
+     "Hargeisa",
+     "Port of Berbera"
+    ],
+    "verified": false,
+    "summary": "Road from the Ethiopian border to Berbera port, launched 2019. An undated report gives 85% complete; no 2026 status found.",
+    "geometryNote": "Schematic path through the listed towns, not a surveyed alignment.",
+    "sources": [
+     {
+      "title": "The Reporter: Berbera–Togochale road nears completion (undated)",
+      "url": "https://www.thereporterethiopia.com/article/berbera-togochale-road-project-nears-completion"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      42.8,
+      9.35
+     ],
+     [
+      43.33,
+      9.61
+     ],
+     [
+      44.06,
+      9.56
+     ],
+     [
+      45.01,
+      10.44
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "lapsset",
+    "callsign": "LAPSSET",
+    "name": "LAPSSET corridor (Lamu–Isiolo–Moyale–Hawassa)",
+    "type": "corridor",
+    "layer": "planned",
+    "status": "under_construction",
+    "costUsd": null,
+    "costNote": "Full programme estimates vary widely; not shown.",
+    "funders": [
+     "Government of Kenya",
+     "Government of Ethiopia",
+     "African Development Bank (Isiolo–Moyale–Hawassa road)"
+    ],
+    "connects": [
+     "Port of Lamu",
+     "Isiolo",
+     "Moyale",
+     "Hawassa"
+    ],
+    "verified": true,
+    "summary": "Lamu port declared operational Feb 2026. Isiolo–Moyale–Hawassa road reported complete; Lamu–Garissa–Isiolo road partly built. Lamu–Ethiopia railway at planning stage.",
+    "geometryNote": "Schematic path through the listed towns, not a surveyed alignment.",
+    "sources": [
+     {
+      "title": "AllAfrica: Lamu Port now operational (Feb 2026)",
+      "url": "https://allafrica.com/stories/202602160082.html"
+     },
+     {
+      "title": "The Star: LAPSSET SGR gains momentum (Feb 2026)",
+      "url": "https://www.the-star.co.ke/business/2026-02-12-lapsset-sgr-project-gains-momentum-as-kenya-gears-up-for-lamu-isiolo-line"
+     },
+     {
+      "title": "The Star: key LAPSSET projects stall (Jul 2025)",
+      "url": "https://www.the-star.co.ke/news/2025-07-27-lapsset-gamechanger-project-a-pipedream-as-key-projects-stall"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      40.9,
+      -2.27
+     ],
+     [
+      39.65,
+      -0.45
+     ],
+     [
+      37.58,
+      0.35
+     ],
+     [
+      37.99,
+      2.33
+     ],
+     [
+      39.06,
+      3.52
+     ],
+     [
+      38.48,
+      7.06
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "eth-tza-power",
+    "callsign": "ETH-TZA PWR",
+    "name": "Ethiopia–Tanzania power link (via Kenya)",
+    "type": "power_line",
+    "layer": "planned",
+    "status": "trial",
+    "costUsd": null,
+    "funders": [
+     "World Bank",
+     "African Development Bank",
+     "JICA (Kenya–Tanzania 400 kV line)"
+    ],
+    "connects": [
+     "Suswa (Kenya)",
+     "Arusha",
+     "Singida (Tanzania)"
+    ],
+    "verified": false,
+    "summary": "Ethiopian power wheeled to Tanzania over Kenya's grid in pilot flows (reported up to 100 MW). Regular trade awaits Kenya–Tanzania upgrades; sources conflict on progress.",
+    "geometryNote": "Schematic path through the listed towns, not a surveyed alignment.",
+    "sources": [
+     {
+      "title": "Eastleigh Voice: Ethiopia begins supplying Tanzania via Kenya",
+      "url": "https://eastleighvoice.co.ke/ketraco/172608/ethiopia-begins-supplying-electricity-to-tanzania-through-kenya-s-transmission-network"
+     },
+     {
+      "title": "Energize: first cross-border wheeling",
+      "url": "https://www.energize.co.za/article/east-africa-completes-first-cross-border-electricity-wheeling"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      36.35,
+      -1.05
+     ],
+     [
+      36.84,
+      -1.68
+     ],
+     [
+      36.79,
+      -2.55
+     ],
+     [
+      36.68,
+      -3.37
+     ],
+     [
+      34.75,
+      -4.82
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "eth-dji-power-2",
+    "callsign": "ETH-DJI PWR2",
+    "name": "Ethiopia–Djibouti second power interconnection",
+    "type": "power_line",
+    "layer": "planned",
+    "status": "planned",
+    "costUsd": null,
+    "costNote": "AfDB grants of $83.6 million cover part of the project.",
+    "funders": [
+     "African Development Fund"
+    ],
+    "connects": [
+     "Semera",
+     "Nagad (Djibouti)"
+    ],
+    "verified": false,
+    "summary": "230 kV double-circuit line, about 292 km. Construction agreement signed November 2025; no progress reports found since.",
+    "geometryNote": "Schematic path through the listed towns, not a surveyed alignment.",
+    "sources": [
+     {
+      "title": "Dawan Africa: construction deal signed",
+      "url": "https://www.dawan.africa/news/djibouti-and-ethiopia-sign-deal-for-second-power-interconnection-project"
+     },
+     {
+      "title": "The Exchange: AfDB $83.6m grants",
+      "url": "https://theexchange.africa/afdb-extends-83-6mn-in-grants-to-boost-ethiopia-djibouti-electricity-trade/"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      41.01,
+      11.79
+     ],
+     [
+      41.85,
+      11.72
+     ],
+     [
+      43.08,
+      11.53
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "awash-weldiya-rail",
+    "callsign": "AWASH-WLD RAIL",
+    "name": "Awash–Kombolcha–Weldiya–Hara Gebeya Railway",
+    "type": "rail",
+    "layer": "planned",
+    "status": "stalled",
+    "costUsd": 1700000000.0,
+    "costNote": "2015 financing package.",
+    "funders": [
+     "Turk Eximbank and other lenders"
+    ],
+    "connects": [
+     "Awash (ADD-DJI RAIL)",
+     "Kombolcha",
+     "Weldiya"
+    ],
+    "verified": true,
+    "summary": "Started 2015, suspended with the Kombolcha–Hara Gebeya section incomplete. Arbitration with contractor Yapı Merkezi concluded Sept 2026; ERC aims to finish remaining work within two years.",
+    "geometryNote": "Schematic path through the listed towns, not a surveyed alignment.",
+    "sources": [
+     {
+      "title": "Capital Ethiopia: ERC aims for two-year completion (Oct 2026)",
+      "url": "https://capitalethiopia.com/2026/10/18/erc-aims-for-two-year-completion-of-awash-kombolcha-railway-project/"
+     },
+     {
+      "title": "The Reporter: Railway Corp steps closer to resuming",
+      "url": "https://www.thereporterethiopia.com/46575/"
+     }
+    ],
+    "lastVerified": "2026-11-11"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      40.17,
+      8.98
+     ],
+     [
+      39.73,
+      11.08
+     ],
+     [
+      39.6,
+      11.83
+     ],
+     [
+      39.62,
+      11.9
+     ]
+    ]
+   }
+  }
+ ]
+}

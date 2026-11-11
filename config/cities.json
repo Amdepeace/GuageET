@@ -1,0 +1,10 @@
+[
+  { "id": "ADD", "name": "Addis Ababa", "am": "አዲስ አበባ", "lat": 9.0300, "lon": 38.7400 },
+  { "id": "DIR", "name": "Dire Dawa", "am": "ድሬ ዳዋ", "lat": 9.6000, "lon": 41.8500 },
+  { "id": "MEK", "name": "Mekelle", "am": "መቐለ", "lat": 13.4967, "lon": 39.4753 },
+  { "id": "BAH", "name": "Bahir Dar", "am": "ባሕር ዳር", "lat": 11.5936, "lon": 37.3908 },
+  { "id": "HAW", "name": "Hawassa", "am": "ሀዋሳ", "lat": 7.0621, "lon": 38.4764 },
+  { "id": "JIM", "name": "Jimma", "am": "ጅማ", "lat": 7.6667, "lon": 36.8333 },
+  { "id": "GON", "name": "Gondar", "am": "ጎንደር", "lat": 12.6000, "lon": 37.4667, "labelAnchor": "bottom" },
+  { "id": "JIJ", "name": "Jijiga", "am": "ጅጅጋ", "lat": 9.3500, "lon": 42.8000 }
+]

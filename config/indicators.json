@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gdp_growth",
+    "label": "GDP growth",
+    "callsign": "GDP",
+    "unit": "% y/y",
+    "format": "pct",
+    "frequency": "annual",
+    "expectedRefreshDays": 400,
+    "higherIsBetter": true,
+    "worldBank": "NY.GDP.MKTP.KD.ZG",
+    "imf": "NGDP_RPCH"
+  },
+  {
+    "id": "inflation",
+    "label": "Inflation (CPI)",
+    "callsign": "CPI",
+    "unit": "% y/y",
+    "format": "pct",
+    "frequency": "annual",
+    "expectedRefreshDays": 400,
+    "higherIsBetter": false,
+    "worldBank": "FP.CPI.TOTL.ZG",
+    "imf": "PCPIPCH"
+  },
+  {
+    "id": "fx_usd",
+    "label": "Birr per USD (official, annual avg)",
+    "callsign": "FX",
+    "unit": "LCU per USD",
+    "format": "rate",
+    "frequency": "annual",
+    "expectedRefreshDays": 400,
+    "higherIsBetter": null,
+    "worldBank": "PA.NUS.FCRF",
+    "imf": null
+  },
+  {
+    "id": "reserves",
+    "label": "Foreign reserves (incl. gold)",
+    "callsign": "RES",
+    "unit": "USD",
+    "format": "usd",
+    "frequency": "annual",
+    "expectedRefreshDays": 400,
+    "higherIsBetter": true,
+    "worldBank": "FI.RES.TOTL.CD",
+    "imf": null
+  },
+  {
+    "id": "external_debt",
+    "label": "External debt stocks",
+    "callsign": "DEBT",
+    "unit": "USD",
+    "format": "usd",
+    "frequency": "annual",
+    "expectedRefreshDays": 400,
+    "higherIsBetter": false,
+    "worldBank": "DT.DOD.DECT.CD",
+    "imf": null
+  },
+  {
+    "id": "population",
+    "label": "Population",
+    "callsign": "POP",
+    "unit": "people",
+    "format": "count",
+    "frequency": "annual",
+    "expectedRefreshDays": 400,
+    "higherIsBetter": null,
+    "worldBank": "SP.POP.TOTL",
+    "imf": null
+  }
+]

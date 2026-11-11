@@ -1,0 +1,98 @@
+# One workflow fetches data, commits it, builds the static site and deploys it
+# to GitHub Pages. It is a single workflow on purpose: commits pushed with the
+# built-in GITHUB_TOKEN do not trigger other workflows.
+# Cost: free (public repository; GitHub-hosted runners and Pages).
+name: Update data and deploy
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # daily 03:17 UTC (06:17 Addis Ababa)
+  push:
+  workflow_dispatch:
+    inputs:
+      fetch:
+        description: "Fetch fresh data before building"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write # commit refreshed /data
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # deploy only from the default branch; other branches just build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch World Bank (daily)
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.fetch)
+        run: npm run fetch:worldbank
+
+      - name: Fetch IMF (weekly, Mondays, or on manual run)
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.fetch)
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%u)" = "1" ]; then
+            npm run fetch:imf
+          else
+            echo "Not Monday: IMF fetch skipped to poll sparingly."
+          fi
+
+      - name: Compute what-changed feed
+        run: npm run build:changes
+
+      - name: Validate data contract
+        run: npm run validate
+
+      - name: Commit refreshed data
+        if: github.ref_name == github.event.repository.default_branch && github.event_name != 'push'
+        run: |
+          if [ -n "$(git status --porcelain data)" ]; then
+            git config user.name "ethiopia-vitals-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data
+            git commit -m "data: scheduled refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          else
+            echo "No data changes."
+          fi
+
+      - name: Configure Pages
+        id: pages
+        if: github.ref_name == github.event.repository.default_branch
+        uses: actions/configure-pages@v5
+
+      - name: Build static site
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_TELEMETRY_DISABLED: "1"
+        run: npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref_name == github.event.repository.default_branch
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

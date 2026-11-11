@@ -1,0 +1,830 @@
+{
+  "country": "TZA",
+  "series": {
+    "gdp_growth": {
+      "id": "gdp_growth",
+      "country": "TZA",
+      "history": [
+        {
+          "value": 6.33652342666889,
+          "unit": "% y/y",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 7.67215543486064,
+          "unit": "% y/y",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 4.50015356010131,
+          "unit": "% y/y",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 6.78158560065316,
+          "unit": "% y/y",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 6.73246186832483,
+          "unit": "% y/y",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 6.16062877406682,
+          "unit": "% y/y",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 6.86711619644551,
+          "unit": "% y/y",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 6.72726996832438,
+          "unit": "% y/y",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 5.50267599384966,
+          "unit": "% y/y",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 5.79999999996723,
+          "unit": "% y/y",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 1.99196460647855,
+          "unit": "% y/y",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 4.32138429480482,
+          "unit": "% y/y",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 4.56600576430955,
+          "unit": "% y/y",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 5.06952353203394,
+          "unit": "% y/y",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 5.5263138305945,
+          "unit": "% y/y",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 5.85286828692739,
+          "unit": "% y/y",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "inflation": {
+      "id": "inflation",
+      "country": "TZA",
+      "history": [
+        {
+          "value": 6.20015595647402,
+          "unit": "% y/y",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 12.6909694699162,
+          "unit": "% y/y",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 16.0010938506338,
+          "unit": "% y/y",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 7.87072364573958,
+          "unit": "% y/y",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 6.13161432988011,
+          "unit": "% y/y",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 5.58816952959298,
+          "unit": "% y/y",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 5.17476629301493,
+          "unit": "% y/y",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 5.3187160522893,
+          "unit": "% y/y",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 3.49445848856181,
+          "unit": "% y/y",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 3.4642805799902,
+          "unit": "% y/y",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 3.29029062798325,
+          "unit": "% y/y",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 3.69091958802198,
+          "unit": "% y/y",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 4.35027204269101,
+          "unit": "% y/y",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 3.79923291384916,
+          "unit": "% y/y",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 3.05694676312372,
+          "unit": "% y/y",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 3.32697361316105,
+          "unit": "% y/y",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "fx_usd": {
+      "id": "fx_usd",
+      "country": "TZA",
+      "history": [
+        {
+          "value": 1395.625,
+          "unit": "LCU per USD",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 1557.43333333333,
+          "unit": "LCU per USD",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 1571.69833333333,
+          "unit": "LCU per USD",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 1597.55583333333,
+          "unit": "LCU per USD",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 1653.23083333333,
+          "unit": "LCU per USD",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 1991.39083333333,
+          "unit": "LCU per USD",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 2177.08666666666,
+          "unit": "LCU per USD",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 2228.85666666666,
+          "unit": "LCU per USD",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 2263.78166666666,
+          "unit": "LCU per USD",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 2288.20666666666,
+          "unit": "LCU per USD",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 2294.14615050508,
+          "unit": "LCU per USD",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 2297.76422623792,
+          "unit": "LCU per USD",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 2303.03367612331,
+          "unit": "LCU per USD",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 2383.04258333333,
+          "unit": "LCU per USD",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 2597.90041666666,
+          "unit": "LCU per USD",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "reserves": {
+      "id": "reserves",
+      "country": "TZA",
+      "history": [
+        {
+          "value": 3904676571.7126,
+          "unit": "USD",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FI.RES.TOTL.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 3726158402.29752,
+          "unit": "USD",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FI.RES.TOTL.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 4052224337.93442,
+          "unit": "USD",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FI.RES.TOTL.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 4673729809.1813,
+          "unit": "USD",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FI.RES.TOTL.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 4390430240.9706,
+          "unit": "USD",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FI.RES.TOTL.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 4080762377.72074,
+          "unit": "USD",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FI.RES.TOTL.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 4350687047.93764,
+          "unit": "USD",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FI.RES.TOTL.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 5887869884.67437,
+          "unit": "USD",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FI.RES.TOTL.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 5049646420.47729,
+          "unit": "USD",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/FI.RES.TOTL.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "external_debt": {
+      "id": "external_debt",
+      "country": "TZA",
+      "history": [
+        {
+          "value": 8940294123.8,
+          "unit": "USD",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 10129709978.7,
+          "unit": "USD",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 12051758630,
+          "unit": "USD",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 13970650221.5,
+          "unit": "USD",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 16391470516.4,
+          "unit": "USD",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 18341850201.8,
+          "unit": "USD",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 19530747919.3,
+          "unit": "USD",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 21616674354.8,
+          "unit": "USD",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 22629441143.6,
+          "unit": "USD",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 24451640158.6,
+          "unit": "USD",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 25772198397,
+          "unit": "USD",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 28817909448.5,
+          "unit": "USD",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 30443587044.6,
+          "unit": "USD",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 34584902584.9,
+          "unit": "USD",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 36343119611.6,
+          "unit": "USD",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "population": {
+      "id": "population",
+      "country": "TZA",
+      "history": [
+        {
+          "value": 44758488,
+          "unit": "people",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 46029367,
+          "unit": "people",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 47374260,
+          "unit": "people",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 48824128,
+          "unit": "people",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 50351512,
+          "unit": "people",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 52020962,
+          "unit": "people",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 53824013,
+          "unit": "people",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 55652890,
+          "unit": "people",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 57437145,
+          "unit": "people",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 59174891,
+          "unit": "people",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 60972798,
+          "unit": "people",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 62830412,
+          "unit": "people",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 64711821,
+          "unit": "people",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 66617606,
+          "unit": "people",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 68560157,
+          "unit": "people",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        },
+        {
+          "value": 70545865,
+          "unit": "people",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.POP.TOTL?locations=TZ",
+          "fetchedAt": "2026-11-11T12:10:35.448Z"
+        }
+      ],
+      "alternatives": []
+    }
+  }
+}
