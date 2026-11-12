@@ -2,8 +2,8 @@
   "World Bank WDI": {
     "source": "World Bank WDI",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-11T15:03:17.869Z",
-    "lastSuccessAt": "2026-11-11T15:03:17.869Z",
+    "lastAttemptAt": "2026-11-12T07:41:18.560Z",
+    "lastSuccessAt": "2026-11-12T07:41:18.560Z",
     "lastError": null
   },
   "IMF WEO": {
@@ -53,6 +53,13 @@
     "expectedRefreshDays": 30,
     "lastAttemptAt": "2026-11-11T23:27:14.496Z",
     "lastSuccessAt": "2026-11-11T23:27:14.496Z",
+    "lastError": null
+  },
+  "HDX (HAPI)": {
+    "source": "HDX (HAPI)",
+    "expectedRefreshDays": 30,
+    "lastAttemptAt": "2026-11-12T07:46:18.033Z",
+    "lastSuccessAt": "2026-11-12T07:46:18.033Z",
     "lastError": null
   }
 }

@@ -19,6 +19,9 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 | **v2** Red Sea transit (Bab el-Mandeb, Suez) | IMF PortWatch (ArcGIS) | Open, no key | Daily job |
 | **v2** Headlines | GDELT 2.0 Doc API | Open, no key, rate-limited | Daily job |
 | **v2** Trade partners and balance | UN Comtrade | Free tier, **needs a key** (see below) | Daily job |
+| Remittances received, FDI net inflows | World Bank | Open, no key | Daily job |
+| External-debt composition, ratios, IMF programme | World Bank IDS + curated IMF timeline | Open, no key (timeline curated) | Daily job |
+| People in need, food insecurity (IPC), staple food prices | HDX (HAPI) | Free, **needs an app identifier** (see below) | Daily job |
 
 ### v2 features
 
@@ -81,6 +84,16 @@ Zoom the map out and click any country to open its **relations with Ethiopia**:
 - **Curated relations profile** — current relations, history and economic ties for ~14 key partners (China, US, Eritrea, Egypt, Sudan, Djibouti, Kenya, Somalia, Saudi, UAE, Türkiye, Russia, India, Italy), each sourced in `data/curated/relations.json`. Other countries show the structured sourced data only, never invented prose.
 
 The world layer is bundled Natural Earth 110m (`data/geo/world.geojson`); the detailed regional base stays as-is.
+
+### Enabling the Humanitarian panel (optional)
+
+The HUMANITARIAN panel uses HDX HAPI, which needs a free **app identifier** (just an app name + email, no account):
+
+1. Generate one at [hapi.humdata.org/docs](https://hapi.humdata.org/docs) (the "Get started / app identifier" step).
+2. Add it as the repo secret `HDX_APP_IDENTIFIER`.
+3. Re-run the workflow. People-in-need, food insecurity (IPC) and staple prices populate; the HUMANITARIAN desk goes live.
+
+Each humanitarian figure keeps its own reference period and original provider (IPC, WFP, OCHA) — some series (e.g. national IPC) update infrequently, so they are clearly dated rather than shown as current.
 
 ## Still to come
 

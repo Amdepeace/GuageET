@@ -1,0 +1,25 @@
+{
+  "_doc": "Curated milestones in Ethiopia's IMF programme and debt restructuring (G20 Common Framework). Hand-maintained; keep each entry dated and sourced. Reviewed with the monthly checklist.",
+  "programme": "IMF Extended Credit Facility (ECF) and G20 Common Framework debt treatment",
+  "events": [
+    {
+      "date": "2021-02-01",
+      "label": "Ethiopia requests G20 Common Framework treatment",
+      "detail": "Ethiopia became one of the first countries to seek debt treatment under the G20 Common Framework.",
+      "sourceUrl": "https://www.imf.org/en/Countries/ETH"
+    },
+    {
+      "date": "2024-07-29",
+      "label": "IMF Board approves four-year ECF (~US$3.4bn)",
+      "detail": "Approval unlocked immediate financing and underpinned the shift to a market-based exchange rate.",
+      "sourceUrl": "https://www.imf.org/en/News/Articles/2024/07/29/pr24285-ethiopia-imf-exec-board-approves-eff-arrangement"
+    },
+    {
+      "date": "2025-03-01",
+      "label": "Official-creditor (Paris Club / China) agreement in principle",
+      "detail": "Ethiopia reached understandings with its Official Creditor Committee on restructuring terms.",
+      "sourceUrl": "https://www.imf.org/en/Countries/ETH"
+    }
+  ],
+  "note": "Programme reviews occur roughly twice a year; dates shift. Check the IMF Ethiopia country page for the latest review and disbursement."
+}

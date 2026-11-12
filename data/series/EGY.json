@@ -897,6 +897,308 @@
         }
       ],
       "alternatives": []
+    },
+    "remittances": {
+      "id": "remittances",
+      "country": "EGY",
+      "history": [
+        {
+          "value": 12453100000,
+          "unit": "USD",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 14324300000,
+          "unit": "USD",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 19236400000,
+          "unit": "USD",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 17833100000,
+          "unit": "USD",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 19570400000,
+          "unit": "USD",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 18325400000,
+          "unit": "USD",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 18590400000,
+          "unit": "USD",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 24737400000,
+          "unit": "USD",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 25515700000,
+          "unit": "USD",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 26781400000,
+          "unit": "USD",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 29602900000,
+          "unit": "USD",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 31487000000,
+          "unit": "USD",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 28332800000,
+          "unit": "USD",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 19532100000,
+          "unit": "USD",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 29559100000,
+          "unit": "USD",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 41517400000,
+          "unit": "USD",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.TRF.PWKR.CD.DT?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "fdi": {
+      "id": "fdi",
+      "country": "EGY",
+      "history": [
+        {
+          "value": 6385600000,
+          "unit": "USD",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": -482700000,
+          "unit": "USD",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 2797700000,
+          "unit": "USD",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 4192200000,
+          "unit": "USD",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 4612200000,
+          "unit": "USD",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 6925200000,
+          "unit": "USD",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 8106800000,
+          "unit": "USD",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 7408700000,
+          "unit": "USD",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 8141300000,
+          "unit": "USD",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 9010100000,
+          "unit": "USD",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 5851800000,
+          "unit": "USD",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 5122300000,
+          "unit": "USD",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 11399900000,
+          "unit": "USD",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 9840600000,
+          "unit": "USD",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 46578000000,
+          "unit": "USD",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        },
+        {
+          "value": 15452700000,
+          "unit": "USD",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD?locations=EG",
+          "fetchedAt": "2026-11-12T07:35:53.676Z"
+        }
+      ],
+      "alternatives": []
     }
   }
 }

@@ -172,6 +172,30 @@ export type WorldIndicatorsFile = {
 export type RelationProfile = { current: string; history: string; investment: string; sources: { title: string; url: string }[] };
 export type RelationsFile = { profiles: Record<string, RelationProfile> };
 
+export type DebtSlice = { id: string; label: string; value: number; period: string };
+export type DebtRatio = { value: number; period: string; label: string; format: "usd" | "pct" };
+export type DebtFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  composition: DebtSlice[];
+  ratios: Record<string, DebtRatio>;
+  totalHistory: { period: string; value: number }[];
+};
+export type ImfEvent = { date: string; label: string; detail: string; sourceUrl?: string };
+export type ImfProgramme = { programme: string; events: ImfEvent[]; note: string };
+
+export type HumanitarianFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  note: string;
+  peopleInNeed: { value: number; population: number | null; period: string } | null;
+  ipcPhase3plus: { value: number; period: string } | null;
+  foodPrices: { commodity: string; price: number; unit: string; currency: string; period: string }[];
+};
+
 export type IndicatorConfig = {
   id: string;
   label: string;

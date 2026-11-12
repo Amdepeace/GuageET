@@ -137,11 +137,12 @@ export function recordHealth(
   appendEvents(events);
 }
 
-export async function fetchJson(url: string, tries = 3): Promise<unknown> {
+export async function fetchJson(url: string, tries = 3, timeoutMs = 25000): Promise<unknown> {
   let lastErr: unknown;
   for (let i = 0; i < tries; i++) {
     try {
-      const res = await fetch(url);
+      // abort a stalled connection so a hung request can't block the pipeline
+      const res = await fetch(url, { signal: AbortSignal.timeout(timeoutMs) });
       if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
       return await res.json();
     } catch (e) {

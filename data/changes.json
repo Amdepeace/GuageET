@@ -72,6 +72,30 @@
     "source": "World Bank WDI"
   },
   {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "ETH",
+    "indicator": "remittances",
+    "period": "2024",
+    "previousPeriod": "2023",
+    "value": 7137687012.83626,
+    "previous": 539360389.32098,
+    "unit": "USD",
+    "pctChange": 1223.3613654540238,
+    "source": "World Bank WDI"
+  },
+  {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "ETH",
+    "indicator": "fdi",
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 3795753825,
+    "previous": 4021755290,
+    "unit": "USD",
+    "pctChange": -5.619473307138983,
+    "source": "World Bank WDI"
+  },
+  {
     "at": "2026-11-11T12:10:35.448Z",
     "country": "KEN",
     "indicator": "gdp_growth",
@@ -141,6 +165,30 @@
     "previous": 56432944,
     "unit": "people",
     "pctChange": 1.9484168679911509,
+    "source": "World Bank WDI"
+  },
+  {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "KEN",
+    "indicator": "remittances",
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 5113701649.81261,
+    "previous": 4999830478.63972,
+    "unit": "USD",
+    "pctChange": 2.277500640459116,
+    "source": "World Bank WDI"
+  },
+  {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "KEN",
+    "indicator": "fdi",
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 1110789689.33189,
+    "previous": 780100474.232942,
+    "unit": "USD",
+    "pctChange": 42.39059275333842,
     "source": "World Bank WDI"
   },
   {
@@ -216,6 +264,30 @@
     "source": "World Bank WDI"
   },
   {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "DJI",
+    "indicator": "remittances",
+    "period": "2024",
+    "previousPeriod": "2023",
+    "value": 55997202.1910131,
+    "previous": 58592613.0400753,
+    "unit": "USD",
+    "pctChange": -4.429587134622301,
+    "source": "World Bank WDI"
+  },
+  {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "DJI",
+    "indicator": "fdi",
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 149040850,
+    "previous": 67819948.247534,
+    "unit": "USD",
+    "pctChange": 119.75960443971476,
+    "source": "World Bank WDI"
+  },
+  {
     "at": "2026-11-11T12:10:35.448Z",
     "country": "EGY",
     "indicator": "gdp_growth",
@@ -285,6 +357,30 @@
     "previous": 116538258,
     "unit": "people",
     "pctChange": 1.5683579207096092,
+    "source": "World Bank WDI"
+  },
+  {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "EGY",
+    "indicator": "remittances",
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 41517400000,
+    "previous": 29559100000,
+    "unit": "USD",
+    "pctChange": 40.45556190817718,
+    "source": "World Bank WDI"
+  },
+  {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "EGY",
+    "indicator": "fdi",
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 15452700000,
+    "previous": 46578000000,
+    "unit": "USD",
+    "pctChange": -66.82403709905964,
     "source": "World Bank WDI"
   },
   {
@@ -360,6 +456,30 @@
     "source": "World Bank WDI"
   },
   {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "SDN",
+    "indicator": "remittances",
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 11940591.8358075,
+    "previous": 22789267.1940228,
+    "unit": "USD",
+    "pctChange": -47.60431858493767,
+    "source": "World Bank WDI"
+  },
+  {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "SDN",
+    "indicator": "fdi",
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 1899.8,
+    "previous": 4702.7281,
+    "unit": "USD",
+    "pctChange": -59.6021721944758,
+    "source": "World Bank WDI"
+  },
+  {
     "at": "2026-11-11T12:10:35.448Z",
     "country": "TZA",
     "indicator": "gdp_growth",
@@ -429,6 +549,30 @@
     "previous": 68560157,
     "unit": "people",
     "pctChange": 2.896300252054557,
+    "source": "World Bank WDI"
+  },
+  {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "TZA",
+    "indicator": "remittances",
+    "period": "2024",
+    "previousPeriod": "2023",
+    "value": 1123259919.1452,
+    "previous": 1237899448.64826,
+    "unit": "USD",
+    "pctChange": -9.260811096429697,
+    "source": "World Bank WDI"
+  },
+  {
+    "at": "2026-11-12T07:35:53.676Z",
+    "country": "TZA",
+    "indicator": "fdi",
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 1717575170,
+    "previous": 1717575169.471,
+    "unit": "USD",
+    "pctChange": 3.079923681197292e-8,
     "source": "World Bank WDI"
   }
 ]

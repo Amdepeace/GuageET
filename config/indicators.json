@@ -70,5 +70,29 @@
     "higherIsBetter": null,
     "worldBank": "SP.POP.TOTL",
     "imf": null
+  },
+  {
+    "id": "remittances",
+    "label": "Remittances received",
+    "callsign": "REMIT",
+    "unit": "USD",
+    "format": "usd",
+    "frequency": "annual",
+    "expectedRefreshDays": 400,
+    "higherIsBetter": true,
+    "worldBank": "BX.TRF.PWKR.CD.DT",
+    "imf": null
+  },
+  {
+    "id": "fdi",
+    "label": "FDI net inflows",
+    "callsign": "FDI",
+    "unit": "USD",
+    "format": "usd",
+    "frequency": "annual",
+    "expectedRefreshDays": 400,
+    "higherIsBetter": true,
+    "worldBank": "BX.KLT.DINV.CD.WD",
+    "imf": null
   }
 ]

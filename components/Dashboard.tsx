@@ -28,6 +28,8 @@ import { CityDetail, WeatherPanel } from "./weather/WeatherPanel";
 import { QuakeDetail } from "./map/QuakeDetail";
 import { RelationsPanel } from "./relations/RelationsPanel";
 import { buildRelations } from "@/lib/relations";
+import { DebtPanel } from "./econ/DebtPanel";
+import { HumanitarianPanel } from "./humanitarian/HumanitarianPanel";
 
 // MapLibre is the heaviest dependency; load it after the vitals render.
 const MapView = dynamic(() => import("./map/MapView").then((m) => m.MapView), {
@@ -222,6 +224,10 @@ export function Dashboard({ data }: { data: DashboardData }) {
           return trade.available ? 0 : 1;
         case "news_offline":
           return statusOf("GDELT") === "OFFLINE" ? 1 : 0;
+        case "debt_gni_pct":
+          return data.debt.ratios.pct_gni?.value ?? null;
+        case "ipc3plus_millions":
+          return data.humanitarian.ipcPhase3plus ? data.humanitarian.ipcPhase3plus.value / 1e6 : null;
       }
       return null;
     };
@@ -233,7 +239,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
       });
     }
     return out;
-  }, [countries, infra, now, oldestVerified, weather.snap, sourceRows, thresholds, redsea, trade.available, statusOf]);
+  }, [countries, infra, now, oldestVerified, weather.snap, sourceRows, thresholds, redsea, trade.available, statusOf, data.debt, data.humanitarian]);
   const desks = Object.entries(deskRules).map(([id, r]) => ({ id, light: worst(r.map((x) => x.light)) as Light }));
 
   // --- selection -----------------------------------------------------------
@@ -379,6 +385,11 @@ export function Dashboard({ data }: { data: DashboardData }) {
           <WeatherPanel cities={cities} snap={weather.snap} status={weatherStatus} now={now} onCity={(id) => setDetail({ kind: "city", id })} />
           <RedSeaMonitor data={redsea} status={statusOf(redsea.source)} now={now} />
         </div>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+        <DebtPanel debt={data.debt} imf={data.imfProgramme} status={statusOf(data.debt.source)} now={now} />
+        <HumanitarianPanel data={data.humanitarian} status={statusOf(data.humanitarian.source)} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">

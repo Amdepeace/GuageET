@@ -11,6 +11,12 @@
   "COMMS": [
     { "metric": "news_offline", "amberAbove": 0, "text": "Headlines feed: amber when the GDELT fetch is failing" }
   ],
+  "DEBT": [
+    { "metric": "debt_gni_pct", "amberAbove": 40, "redAbove": 60, "text": "External debt to GNI: amber above 40%, red above 60%" }
+  ],
+  "HUMANITARIAN": [
+    { "metric": "ipc3plus_millions", "amberAbove": 3, "redAbove": 10, "text": "People in IPC Phase 3+ (crisis or worse): amber above 3M, red above 10M" }
+  ],
   "INFRA": [
     { "metric": "unverified_records", "amberAbove": 0, "redAbove": 3, "text": "Curated records not verified: amber if any, red above 3" },
     { "metric": "oldest_verification_days", "amberAbove": 45, "redAbove": 90, "text": "Oldest curated verification: amber after 45 days, red after 90 days" }

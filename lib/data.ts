@@ -24,6 +24,9 @@ import timelineJson from "@/data/curated/timeline.json";
 import worldIndicatorsJson from "@/data/world-indicators.json";
 import blocsJson from "@/config/blocs.json";
 import relationsJson from "@/data/curated/relations.json";
+import debtJson from "@/data/debt.json";
+import imfProgrammeJson from "@/data/curated/imf-programme.json";
+import humanitarianJson from "@/data/humanitarian.json";
 import type {
   ChangeEntry,
   CountryCode,
@@ -40,6 +43,9 @@ import type {
   Bloc,
   WorldIndicatorsFile,
   RelationsFile,
+  DebtFile,
+  ImfProgramme,
+  HumanitarianFile,
 } from "./schema";
 
 export type City = { id: string; name: string; am: string; lat: number; lon: number; labelAnchor?: "top" | "bottom" };
@@ -89,6 +95,9 @@ export type DashboardData = {
   worldIndicators: WorldIndicatorsFile;
   blocs: Bloc[];
   relations: RelationsFile;
+  debt: DebtFile;
+  imfProgramme: ImfProgramme;
+  humanitarian: HumanitarianFile;
 };
 
 export function loadData(): DashboardData {
@@ -113,5 +122,8 @@ export function loadData(): DashboardData {
     worldIndicators: worldIndicatorsJson as WorldIndicatorsFile,
     blocs: (blocsJson as { blocs: Bloc[] }).blocs,
     relations: relationsJson as RelationsFile,
+    debt: debtJson as DebtFile,
+    imfProgramme: imfProgrammeJson as ImfProgramme,
+    humanitarian: humanitarianJson as HumanitarianFile,
   };
 }

@@ -1,0 +1,13 @@
+{
+  "source": "HDX (HAPI)",
+  "sourceUrl": "https://data.humdata.org/",
+  "fetchedAt": "2026-11-12T07:46:17.248Z",
+  "available": true,
+  "note": "Each figure carries its own reference period and original provider (WFP, IPC, OCHA). Some HDX series update infrequently.",
+  "peopleInNeed": null,
+  "ipcPhase3plus": {
+    "value": 16756345,
+    "period": "2021-05-01"
+  },
+  "foodPrices": []
+}
