@@ -141,6 +141,8 @@ export type Alert = {
 export type AlertsFile = { generatedAt: string; alerts: Alert[] };
 
 export type TradePartner = { partner: string; partnerCode: string; value: number };
+export type TradeCommodity = { code: string; label: string; value: number };
+export type BilateralTrade = { partner: string; exports: number; imports: number };
 export type TradeFile = {
   fetchedAt: string;
   source: string;
@@ -151,7 +153,24 @@ export type TradeFile = {
   exportsByPartner: TradePartner[];
   importsByPartner: TradePartner[];
   balance: { period: string; exports: number; imports: number }[];
+  // bilateral totals keyed by partner M49 code (matches world.geojson `un`)
+  bilateral: Record<string, BilateralTrade>;
+  topExportCommodities: TradeCommodity[];
+  topImportCommodities: TradeCommodity[];
 };
+
+// --- world relations ------------------------------------------------------
+
+export type Bloc = { id: string; name: string; note: string; sourceUrl: string; members: string[] };
+export type WorldIndicatorValue = { value: number; year: string };
+export type WorldIndicatorsFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  countries: Record<string, { population?: WorldIndicatorValue; gdp_usd?: WorldIndicatorValue; gdp_growth?: WorldIndicatorValue }>;
+};
+export type RelationProfile = { current: string; history: string; investment: string; sources: { title: string; url: string }[] };
+export type RelationsFile = { profiles: Record<string, RelationProfile> };
 
 export type IndicatorConfig = {
   id: string;

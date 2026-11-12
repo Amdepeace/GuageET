@@ -17,7 +17,8 @@
     "fetch:news": "tsx scripts/fetch-news.ts",
     "fetch:redsea": "tsx scripts/fetch-redsea.ts",
     "fetch:comtrade": "tsx scripts/fetch-comtrade.ts",
-    "build:alerts": "tsx scripts/build-alerts.ts"
+    "build:alerts": "tsx scripts/build-alerts.ts",
+    "fetch:world": "tsx scripts/fetch-world-indicators.ts"
   },
   "dependencies": {
     "@fontsource/inter": "^5.3.0",

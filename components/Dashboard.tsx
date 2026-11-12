@@ -26,6 +26,8 @@ import { InfraTable } from "./infra/InfraTable";
 import { InfraDetail } from "./infra/InfraDetail";
 import { CityDetail, WeatherPanel } from "./weather/WeatherPanel";
 import { QuakeDetail } from "./map/QuakeDetail";
+import { RelationsPanel } from "./relations/RelationsPanel";
+import { buildRelations } from "@/lib/relations";
 
 // MapLibre is the heaviest dependency; load it after the vitals render.
 const MapView = dynamic(() => import("./map/MapView").then((m) => m.MapView), {
@@ -39,6 +41,7 @@ type Detail =
   | { kind: "infra"; id: string }
   | { kind: "city"; id: string }
   | { kind: "quake"; id: string }
+  | { kind: "country"; iso3: string; un: string | null; name: string }
   | { kind: "desk"; id: string }
   | null;
 
@@ -291,6 +294,14 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </Drawer>
       );
     }
+    if (detail.kind === "country") {
+      const rel = buildRelations(data, { iso3: detail.iso3, un: detail.un, name: detail.name });
+      return (
+        <Drawer title={`${detail.name} · relations`} callsign={detail.iso3} onClose={closeDetail}>
+          <RelationsPanel rel={rel} />
+        </Drawer>
+      );
+    }
     const rules = deskRules[detail.id] ?? [];
     return (
       <Drawer title={`${detail.id} status light`} callsign={detail.id} onClose={closeDetail}>
@@ -351,6 +362,8 @@ export function Dashboard({ data }: { data: DashboardData }) {
               onSelect={selectInfra}
               onCity={(id) => setDetail({ kind: "city", id })}
               onQuake={(id) => setDetail({ kind: "quake", id })}
+              onCountry={(c) => setDetail({ kind: "country", iso3: c.iso3, un: c.un, name: c.name })}
+              relationsSel={detail?.kind === "country" ? detail.iso3 : null}
               initialView={{ zoom: view.zoom, center: view.center }}
               onViewChange={onViewChange}
               pulseKey={weather.pulse}

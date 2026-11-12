@@ -21,6 +21,9 @@ import redseaJson from "@/data/redsea.json";
 import tradeJson from "@/data/trade.json";
 import alertsJson from "@/data/alerts.json";
 import timelineJson from "@/data/curated/timeline.json";
+import worldIndicatorsJson from "@/data/world-indicators.json";
+import blocsJson from "@/config/blocs.json";
+import relationsJson from "@/data/curated/relations.json";
 import type {
   ChangeEntry,
   CountryCode,
@@ -34,6 +37,9 @@ import type {
   TradeFile,
   AlertsFile,
   TimelineEvent,
+  Bloc,
+  WorldIndicatorsFile,
+  RelationsFile,
 } from "./schema";
 
 export type City = { id: string; name: string; am: string; lat: number; lon: number; labelAnchor?: "top" | "bottom" };
@@ -80,6 +86,9 @@ export type DashboardData = {
   trade: TradeFile;
   alerts: AlertsFile;
   timeline: TimelineEvent[];
+  worldIndicators: WorldIndicatorsFile;
+  blocs: Bloc[];
+  relations: RelationsFile;
 };
 
 export function loadData(): DashboardData {
@@ -101,5 +110,8 @@ export function loadData(): DashboardData {
     trade: tradeJson as TradeFile,
     alerts: alertsJson as AlertsFile,
     timeline: (timelineJson as { events: TimelineEvent[] }).events,
+    worldIndicators: worldIndicatorsJson as WorldIndicatorsFile,
+    blocs: (blocsJson as { blocs: Bloc[] }).blocs,
+    relations: relationsJson as RelationsFile,
   };
 }

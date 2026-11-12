@@ -71,8 +71,17 @@ npm run dev
 2. **Settings → Actions → General → Workflow permissions: Read and write.** The daily job commits refreshed `/data`.
 3. Run **Actions → Update data and deploy → Run workflow** once. The site is published at `https://<owner>.github.io/<repo>/`.
 
+## World relations
+
+Zoom the map out and click any country to open its **relations with Ethiopia**:
+
+- **Key indicators** — that country's GDP, population and growth beside Ethiopia's (World Bank, all countries via `data/world-indicators.json`).
+- **Shared organizations & blocs** — which of AU, IGAD, COMESA, EAC, BRICS+, Arab League, EU, Nile Basin, OPEC, Commonwealth and G20 it shares with Ethiopia, plus the ones only one of them is in (curated membership in `config/blocs.json`, computed overlap).
+- **Bilateral trade** — Ethiopia's exports to / imports from that country (UN Comtrade, keyed by M49; needs the Comtrade key).
+- **Curated relations profile** — current relations, history and economic ties for ~14 key partners (China, US, Eritrea, Egypt, Sudan, Djibouti, Kenya, Somalia, Saudi, UAE, Türkiye, Russia, India, Italy), each sourced in `data/curated/relations.json`. Other countries show the structured sourced data only, never invented prose.
+
+The world layer is bundled Natural Earth 110m (`data/geo/world.geojson`); the detailed regional base stays as-is.
+
 ## Still to come
 
-Not yet built: flights near Bole (OpenSky; skipped for now — needs an account), a rainfall/CHIRPS overlay, and the v3 insight features (corridor dependency gauge, rainfall-to-economy link, electricity-exports tracker, debt view, official/parallel FX gap, weekly brief). The HUMANITARIAN desk arrives with the HDX layer.
-
-A larger in-progress feature: a **world map** where clicking any country opens a bilateral "relations with Ethiopia" profile — sourced trade (via Comtrade), shared organizations/blocs, side-by-side indicators, and curated sourced notes for key partners.
+Not yet built: flights near Bole (OpenSky; skipped for now — needs an account), a rainfall/CHIRPS overlay, per-partner commodity breakdowns in the relations panel, and the v3 insight features (corridor dependency gauge, rainfall-to-economy link, electricity-exports tracker, debt view, official/parallel FX gap, weekly brief). The HUMANITARIAN desk arrives with the HDX layer.

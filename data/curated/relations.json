@@ -1,0 +1,117 @@
+{
+  "_doc": "Curated, sourced profiles of Ethiopia's bilateral relations with key partners, keyed by ISO3 (matching data/geo/world.geojson). These are brief factual summaries, each with sources; they are reviewed with the monthly checklist. Countries without an entry show only the structured sourced data (trade, shared blocs, indicators). Written as background, not real-time reporting.",
+  "profiles": {
+    "CHN": {
+      "current": "China is Ethiopia's largest bilateral trading partner, creditor and infrastructure financier, and a fellow BRICS member since 2024.",
+      "history": "Modern ties date from 1970; relations deepened sharply in the 2000s around infrastructure lending and construction.",
+      "investment": "Chinese finance and firms built the Addis Ababa–Djibouti railway, the Addis light rail, industrial parks and much of the road and telecom network; Ethiopian external debt to China has been part of restructuring talks.",
+      "sources": [
+        { "title": "Wikipedia: China–Ethiopia relations", "url": "https://en.wikipedia.org/wiki/China%E2%80%93Ethiopia_relations" }
+      ]
+    },
+    "USA": {
+      "current": "The United States is a major donor and historically close partner; ties were strained over the 2020–2022 Tigray conflict (including AGOA trade-preference removal in 2022) and have since been managed cautiously.",
+      "history": "Relations go back to 1903; the US was Ethiopia's principal Western partner through the Cold War Haile Selassie era.",
+      "investment": "The US is a large provider of humanitarian and development assistance; commercial investment is smaller than China's but growing in aviation and services.",
+      "sources": [
+        { "title": "Wikipedia: Ethiopia–United States relations", "url": "https://en.wikipedia.org/wiki/Ethiopia%E2%80%93United_States_relations" }
+      ]
+    },
+    "ERI": {
+      "current": "Relations swung from a 1998–2000 border war and two decades of 'no war, no peace' to a 2018 peace agreement, then cooled again amid tensions after the Tigray war.",
+      "history": "Eritrea gained independence from Ethiopia in 1993; the 1998–2000 war and the border stalemate defined relations until 2018.",
+      "investment": "Economic ties are limited; Ethiopia's access to Eritrean Red Sea ports (Assab, Massawa) is a recurring strategic question.",
+      "sources": [
+        { "title": "Wikipedia: Eritrea–Ethiopia relations", "url": "https://en.wikipedia.org/wiki/Eritrea%E2%80%93Ethiopia_relations" }
+      ]
+    },
+    "EGY": {
+      "current": "Relations are dominated by the dispute over the Grand Ethiopian Renaissance Dam and Nile water sharing; both are African Union and COMESA members but disagree sharply on the dam.",
+      "history": "Nile hydro-politics have shaped ties for over a century; tensions rose through the GERD's filling (2020–2023) and its 2025 inauguration.",
+      "investment": "Bilateral trade and investment are modest relative to the political weight of the water question.",
+      "sources": [
+        { "title": "Wikipedia: Egypt–Ethiopia relations", "url": "https://en.wikipedia.org/wiki/Egypt%E2%80%93Ethiopia_relations" }
+      ]
+    },
+    "SDN": {
+      "current": "Neighbouring states sharing a long border, power interconnection and the Nile question; relations are complicated by the al-Fashaga border dispute and Sudan's civil war since 2023.",
+      "history": "Long-standing ties with periods of cooperation and friction over borders and cross-border groups.",
+      "investment": "Ethiopia exports electricity to Sudan and trades across the border; the Sudanese war has disrupted flows and displaced people into Ethiopia.",
+      "sources": [
+        { "title": "Wikipedia: Ethiopia–Sudan relations", "url": "https://en.wikipedia.org/wiki/Ethiopia%E2%80%93Sudan_relations" }
+      ]
+    },
+    "DJI": {
+      "current": "Djibouti is Ethiopia's primary gateway to the sea, handling the large majority of its import–export trade; relations are close and economically interdependent.",
+      "history": "Ties deepened after the 1998 Eritrea war closed Eritrean ports, making Djibouti Ethiopia's main corridor.",
+      "investment": "The Addis–Djibouti railway, road corridor, power and water links and a planned fuel pipeline bind the two economies; Ethiopia pays substantial annual port fees.",
+      "sources": [
+        { "title": "Wikipedia: Djibouti–Ethiopia relations", "url": "https://en.wikipedia.org/wiki/Djibouti%E2%80%93Ethiopia_relations" }
+      ]
+    },
+    "KEN": {
+      "current": "A stable partnership and fellow IGAD/COMESA member; cooperation spans a cross-border electricity line, roads and regional diplomacy.",
+      "history": "Generally cooperative relations with a long-standing (if lightly demarcated) border and shared security interests.",
+      "investment": "Ethiopia exports power to Kenya over the 500 kV HVDC interconnector; the LAPSSET corridor aims to link the two further.",
+      "sources": [
+        { "title": "Wikipedia: Ethiopia–Kenya relations", "url": "https://en.wikipedia.org/wiki/Ethiopia%E2%80%93Kenya_relations" }
+      ]
+    },
+    "SOM": {
+      "current": "Relations are sensitive: Ethiopia contributes to regional security efforts against al-Shabaab, but a January 2024 Ethiopia–Somaliland port memorandum sharply strained ties with Mogadishu before a late-2024 rapprochement.",
+      "history": "Marked by the 1977–78 Ogaden war and recurring tension, alongside periods of security cooperation.",
+      "investment": "Economic ties are limited; the central issues are security and Ethiopia's search for sea access.",
+      "sources": [
+        { "title": "Wikipedia: Ethiopia–Somalia relations", "url": "https://en.wikipedia.org/wiki/Ethiopia%E2%80%93Somalia_relations" }
+      ]
+    },
+    "SAU": {
+      "current": "Saudi Arabia is an important partner for remittances, labour migration and investment, and has hosted Ethiopia–Eritrea diplomacy.",
+      "history": "Long-standing ties through migration, religion and Red Sea trade.",
+      "investment": "Saudi capital has featured in Ethiopian agriculture and other sectors; large numbers of Ethiopians work in Saudi Arabia, a major remittance source.",
+      "sources": [
+        { "title": "Wikipedia: Ethiopia–Saudi Arabia relations", "url": "https://en.wikipedia.org/wiki/Ethiopia%E2%80%93Saudi_Arabia_relations" }
+      ]
+    },
+    "ARE": {
+      "current": "The UAE is a significant investor and financial backer and a fellow BRICS member since 2024; it has provided support and brokered regional deals.",
+      "history": "Relations grew rapidly from the late 2010s around investment and Red Sea/Horn of Africa interests.",
+      "investment": "Emirati investment spans logistics (DP World's Berbera involvement), agriculture and finance; the UAE has extended financial support to Ethiopia.",
+      "sources": [
+        { "title": "Wikipedia: Ethiopia–United Arab Emirates relations", "url": "https://en.wikipedia.org/wiki/Ethiopia%E2%80%93United_Arab_Emirates_relations" }
+      ]
+    },
+    "TUR": {
+      "current": "Türkiye is a fast-growing trade and investment partner and has supplied defence equipment; relations are warm.",
+      "history": "Ties expanded markedly from the 2000s as Turkey broadened its Africa engagement.",
+      "investment": "Turkish firms are among the larger foreign employers in Ethiopian manufacturing, especially textiles.",
+      "sources": [
+        { "title": "Wikipedia: Ethiopia–Turkey relations", "url": "https://en.wikipedia.org/wiki/Ethiopia%E2%80%93Turkey_relations" }
+      ]
+    },
+    "RUS": {
+      "current": "Relations are cordial and a fellow BRICS link since 2024, spanning diplomacy, energy and defence discussions.",
+      "history": "Ties date to imperial times and were close during the Derg era (1974–1991).",
+      "investment": "Cooperation has included discussions on nuclear energy and other sectors; trade is modest relative to China.",
+      "sources": [
+        { "title": "Wikipedia: Ethiopia–Russia relations", "url": "https://en.wikipedia.org/wiki/Ethiopia%E2%80%93Russia_relations" }
+      ]
+    },
+    "IND": {
+      "current": "India is a notable investor and development partner with long educational and commercial links.",
+      "history": "Friendly post-independence ties with Indian teachers and businesses long present in Ethiopia.",
+      "investment": "Indian firms have invested in agriculture, manufacturing and pharmaceuticals; India has extended lines of credit for infrastructure.",
+      "sources": [
+        { "title": "Wikipedia: Ethiopia–India relations", "url": "https://en.wikipedia.org/wiki/Ethiopia%E2%80%93India_relations" }
+      ]
+    },
+    "ITA": {
+      "current": "A significant European trade partner and donor with deep, complicated historical ties.",
+      "history": "Italy invaded in 1895–96 (defeated at Adwa) and again occupied Ethiopia in 1936–41; post-war relations normalised into development and commercial cooperation.",
+      "investment": "Italian firms and development finance feature in construction and agriculture.",
+      "sources": [
+        { "title": "Wikipedia: Ethiopia–Italy relations", "url": "https://en.wikipedia.org/wiki/Ethiopia%E2%80%93Italy_relations" }
+      ]
+    }
+  }
+}

@@ -4,6 +4,7 @@ import maplibregl, { type GeoJSONSource, type LngLatBoundsLike, type Map as MlMa
 import countries from "@/data/geo/countries.geojson";
 import lakes from "@/data/geo/lakes.geojson";
 import disputed from "@/data/geo/disputed.geojson";
+import world from "@/data/geo/world.geojson";
 import type { City, InfraFeature } from "@/lib/data";
 import type { CityWeather } from "@/lib/openMeteo";
 import { ALL_LAYERS, type Layer } from "@/lib/urlState";
@@ -54,6 +55,8 @@ export function MapView({
   onSelect,
   onCity,
   onQuake,
+  onCountry,
+  relationsSel,
   initialView,
   onViewChange,
   pulseKey,
@@ -69,6 +72,8 @@ export function MapView({
   onSelect: (id: string | null) => void;
   onCity: (id: string) => void;
   onQuake: (id: string) => void;
+  onCountry: (c: { iso3: string; un: string | null; name: string }) => void;
+  relationsSel: string | null;
   initialView: { zoom: number | null; center: [number, number] | null };
   onViewChange: (zoom: number, center: [number, number]) => void;
   pulseKey: number;
@@ -80,8 +85,9 @@ export function MapView({
   const quakeMarkers = useRef<maplibregl.Marker[]>([]);
   const [ready, setReady] = useState(false);
   const [hover, setHover] = useState<{ x: number; y: number; text: string } | null>(null);
-  const cb = useRef({ onSelect, onViewChange, onCity, onQuake });
-  cb.current = { onSelect, onViewChange, onCity, onQuake };
+  const [hoverCountry, setHoverCountry] = useState<string | null>(null);
+  const cb = useRef({ onSelect, onViewChange, onCity, onQuake, onCountry });
+  cb.current = { onSelect, onViewChange, onCity, onQuake, onCountry };
 
   // init once
   useEffect(() => {
@@ -96,7 +102,8 @@ export function MapView({
       dragRotate: false,
       pitchWithRotate: false,
       maxZoom: 9,
-      minZoom: 2.5,
+      minZoom: 1.2,
+      renderWorldCopies: true,
       cooperativeGestures: false,
     });
     m.touchZoomRotate.disableRotation();
@@ -111,17 +118,24 @@ export function MapView({
 
     m.on("load", () => {
       m.addSource("grat", { type: "geojson", data: graticule() as never });
+      m.addSource("world", { type: "geojson", data: world as never, promoteId: "iso3" });
       m.addSource("countries", { type: "geojson", data: countries as never });
       m.addSource("lakes", { type: "geojson", data: lakes as never });
       m.addSource("disputed", { type: "geojson", data: disputed as never });
       m.addSource("infra", { type: "geojson", data: { type: "FeatureCollection", features: infra } as never, promoteId: "id" });
 
       m.addLayer({ id: "grat", type: "line", source: "grat", paint: { "line-color": "#ffffff", "line-opacity": 0.05, "line-width": 1 } });
+      // whole-world clickable base (sits under the detailed regional land)
+      m.addLayer({ id: "world-fill", type: "fill", source: "world", paint: { "fill-color": "#101922", "fill-opacity": 1 } });
+      m.addLayer({ id: "world-line", type: "line", source: "world", paint: { "line-color": "#223040", "line-width": 0.6 } });
       m.addLayer({ id: "land", type: "fill", source: "countries", paint: { "fill-color": "#121c25" } });
       m.addLayer({ id: "lakes", type: "fill", source: "lakes", paint: { "fill-color": "#0a1e2c" } });
       m.addLayer({ id: "borders", type: "line", source: "countries", paint: { "line-color": "#2f4152", "line-width": 0.8 } });
       m.addLayer({ id: "eth-border", type: "line", source: "countries", filter: ["==", ["get", "iso3"], "ETH"], paint: { "line-color": "#6c7f90", "line-width": 1.4 } });
       m.addLayer({ id: "disputed", type: "line", source: "disputed", paint: { "line-color": "#9fb0bf", "line-width": 1, "line-dasharray": [2, 2], "line-opacity": 0.7 } });
+      // relations selection: drawn above the regional land so it shows in-region too
+      m.addLayer({ id: "world-sel", type: "fill", source: "world", filter: ["==", ["get", "iso3"], ""] as never, paint: { "fill-color": "#22c3e6", "fill-opacity": 0.16 } });
+      m.addLayer({ id: "world-sel-line", type: "line", source: "world", filter: ["==", ["get", "iso3"], ""] as never, paint: { "line-color": "#22c3e6", "line-width": 1.6 } });
 
       const isLine = ["==", ["geometry-type"], "LineString"];
       const isPt = ["==", ["geometry-type"], "Point"];
@@ -165,10 +179,24 @@ export function MapView({
           setHover(null);
         });
       }
+      // country hover (for the relations layer)
+      m.on("mousemove", "world-fill", (e) => {
+        const p = e.features?.[0]?.properties as { name?: string } | undefined;
+        setHoverCountry(p?.name ?? null);
+      });
+      m.on("mouseleave", "world-fill", () => setHoverCountry(null));
       m.on("click", (e) => {
         const hits = m.queryRenderedFeatures(e.point, { layers: ["infra-hit-pt", "infra-hit-line"] });
         const id = (hits[0]?.properties as { id?: string } | undefined)?.id ?? null;
-        if (id) cb.current.onSelect(id);
+        if (id) {
+          cb.current.onSelect(id);
+          return;
+        }
+        // no infrastructure under the cursor: open the country's relations
+        const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as
+          | { iso3?: string; un?: string | number | null; name?: string }
+          | undefined;
+        if (c?.iso3 && c.name) cb.current.onCountry({ iso3: c.iso3, un: c.un != null ? String(c.un) : null, name: c.name });
       });
       m.on("moveend", () => {
         const c = m.getCenter();
@@ -193,6 +221,10 @@ export function MapView({
     const light = theme === "light";
     m.setPaintProperty("bg", "background-color", cssVar("--water"));
     m.setPaintProperty("lakes", "fill-color", cssVar("--water"));
+    m.setPaintProperty("world-fill", "fill-color", light ? "#dde5ec" : "#101922");
+    m.setPaintProperty("world-line", "line-color", cssVar("--line"));
+    m.setPaintProperty("world-sel", "fill-color", cssVar("--accent"));
+    m.setPaintProperty("world-sel-line", "line-color", cssVar("--accent"));
     m.setPaintProperty("land", "fill-color", ["case", ["==", ["get", "iso3"], "ETH"], cssVar("--land-focus"), cssVar("--land")]);
     m.setPaintProperty("borders", "line-color", cssVar("--line-strong"));
     m.setPaintProperty("eth-border", "line-color", cssVar("--ink-3"));
@@ -211,6 +243,27 @@ export function MapView({
     if (!m || !ready) return;
     (m.getSource("infra") as GeoJSONSource).setData({ type: "FeatureCollection", features: infra } as never);
   }, [infra, ready]);
+
+  // relations: highlight the selected country and bring it into view
+  useEffect(() => {
+    const m = map.current;
+    if (!m || !ready) return;
+    const iso = relationsSel ?? "";
+    m.setFilter("world-sel", ["==", ["get", "iso3"], iso] as never);
+    m.setFilter("world-sel-line", ["==", ["get", "iso3"], iso] as never);
+    if (!relationsSel) return;
+    const f = (world as { features: { properties: { iso3: string }; geometry: GeoJSON.Geometry }[] }).features.find((x) => x.properties.iso3 === relationsSel);
+    if (!f) return;
+    const b = new maplibregl.LngLatBounds();
+    const extend = (coords: number[][]) => coords.forEach((c) => b.extend(c as [number, number]));
+    const g = f.geometry;
+    if (g.type === "Polygon") g.coordinates.forEach(extend);
+    else if (g.type === "MultiPolygon") g.coordinates.forEach((poly) => poly.forEach(extend));
+    if (b.isEmpty()) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const vb = m.getBounds();
+    if (!(vb.contains(b.getSouthWest()) && vb.contains(b.getNorthEast()))) m.fitBounds(b, { padding: 60, duration: reduce ? 0 : 600, maxZoom: 6 });
+  }, [relationsSel, ready]);
 
   // layer visibility
   useEffect(() => {
@@ -349,6 +402,15 @@ export function MapView({
             {hover.text}
           </div>
         )}
+        <div className="absolute left-2 top-2 panel px-2 py-1 text-[10.5px] z-10" style={{ background: "var(--panel)" }}>
+          {hoverCountry ? (
+            <span>
+              <span className="ink2">{hoverCountry}</span> <span className="muted">· click for relations with Ethiopia</span>
+            </span>
+          ) : (
+            <span className="muted">Zoom out and click any country for its relations with Ethiopia</span>
+          )}
+        </div>
         <Legend />
       </div>
     </div>

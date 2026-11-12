@@ -1,11 +1,14 @@
 {
-  "fetchedAt": "2026-11-11T23:05:41.642Z",
+  "fetchedAt": "2026-11-11T23:28:08.081Z",
   "source": "UN Comtrade",
   "sourceUrl": "https://comtradeplus.un.org/",
   "period": "",
   "available": false,
-  "note": "Set COMTRADE_PRIMARY_KEY (a free UN Comtrade subscription key) as a GitHub Secret to populate the trade panel.",
+  "note": "Set COMTRADE_PRIMARY_KEY (a free UN Comtrade subscription key) as a GitHub Secret to populate trade data.",
   "exportsByPartner": [],
   "importsByPartner": [],
-  "balance": []
+  "balance": [],
+  "bilateral": {},
+  "topExportCommodities": [],
+  "topImportCommodities": []
 }

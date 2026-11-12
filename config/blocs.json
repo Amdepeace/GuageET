@@ -1,0 +1,82 @@
+{
+  "_doc": "Curated membership of organizations and blocs relevant to Ethiopia's foreign relations, by ISO3 (matching data/geo/world.geojson). Ethiopia's own membership is computed from whether ETH is in each list. This is a selected set, not every organization. Membership is as of 2025; review with the monthly checklist. Sources are official bloc pages.",
+  "blocs": [
+    {
+      "id": "AU",
+      "name": "African Union",
+      "note": "Continental union of African states.",
+      "sourceUrl": "https://au.int/en/member_states/countryprofiles2",
+      "members": ["DZA","AGO","BEN","BWA","BFA","BDI","CPV","CMR","CAF","TCD","COM","COG","COD","CIV","DJI","EGY","GNQ","ERI","SWZ","ETH","GAB","GMB","GHA","GIN","GNB","KEN","LSO","LBR","LBY","MDG","MWI","MLI","MRT","MUS","MAR","MOZ","NAM","NER","NGA","RWA","STP","SEN","SYC","SLE","SOM","ZAF","SSD","SDN","TZA","TGO","TUN","UGA","ZMB","ZWE"]
+    },
+    {
+      "id": "IGAD",
+      "name": "IGAD",
+      "note": "Intergovernmental Authority on Development (Horn of Africa).",
+      "sourceUrl": "https://igad.int/",
+      "members": ["DJI","ERI","ETH","KEN","SOM","SSD","SDN","UGA"]
+    },
+    {
+      "id": "COMESA",
+      "name": "COMESA",
+      "note": "Common Market for Eastern and Southern Africa.",
+      "sourceUrl": "https://www.comesa.int/",
+      "members": ["BDI","COM","COD","DJI","EGY","SWZ","ERI","ETH","KEN","LBY","MDG","MWI","MUS","RWA","SYC","SOM","SDN","TUN","UGA","ZMB","ZWE"]
+    },
+    {
+      "id": "EAC",
+      "name": "East African Community",
+      "note": "Regional economic community; Ethiopia is not a member.",
+      "sourceUrl": "https://www.eac.int/",
+      "members": ["BDI","COD","KEN","RWA","SSD","SOM","TZA","UGA"]
+    },
+    {
+      "id": "BRICS",
+      "name": "BRICS+",
+      "note": "Expanded BRICS grouping; Ethiopia joined in January 2024.",
+      "sourceUrl": "https://infobrics.org/",
+      "members": ["BRA","RUS","IND","CHN","ZAF","EGY","ETH","IRN","ARE","IDN"]
+    },
+    {
+      "id": "ARAB_LEAGUE",
+      "name": "Arab League",
+      "note": "League of Arab States; Ethiopia is not a member.",
+      "sourceUrl": "http://www.leagueofarabstates.net/",
+      "members": ["DZA","BHR","COM","DJI","EGY","IRQ","JOR","KWT","LBN","LBY","MRT","MAR","OMN","PSE","QAT","SAU","SOM","SDN","SYR","TUN","ARE","YEM"]
+    },
+    {
+      "id": "EU",
+      "name": "European Union",
+      "note": "Ethiopia is not a member; the EU is a major donor and trade partner.",
+      "sourceUrl": "https://european-union.europa.eu/principles-countries-history/eu-countries_en",
+      "members": ["AUT","BEL","BGR","HRV","CYP","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","IRL","ITA","LVA","LTU","LUX","MLT","NLD","POL","PRT","ROU","SVK","SVN","ESP","SWE"]
+    },
+    {
+      "id": "NILE_BASIN",
+      "name": "Nile Basin Initiative",
+      "note": "Riparian states of the Nile; central to the GERD question.",
+      "sourceUrl": "https://nilebasin.org/",
+      "members": ["BDI","COD","EGY","ETH","KEN","RWA","SSD","SDN","TZA","UGA"]
+    },
+    {
+      "id": "OPEC",
+      "name": "OPEC",
+      "note": "Oil exporters; Ethiopia is not a member.",
+      "sourceUrl": "https://www.opec.org/opec_web/en/about_us/25.htm",
+      "members": ["DZA","COG","GNQ","GAB","IRN","IRQ","KWT","LBY","NGA","SAU","ARE","VEN"]
+    },
+    {
+      "id": "COMMONWEALTH",
+      "name": "Commonwealth",
+      "note": "Commonwealth of Nations; Ethiopia is not a member.",
+      "sourceUrl": "https://thecommonwealth.org/our-member-countries",
+      "members": ["ATG","AUS","BHS","BGD","BRB","BLZ","BWA","BRN","CMR","CAN","CYP","DMA","SWZ","FJI","GAB","GMB","GHA","GRD","GUY","IND","JAM","KEN","KIR","LSO","MWI","MYS","MDV","MLT","MUS","MOZ","NAM","NRU","NZL","NGA","PAK","PNG","RWA","KNA","LCA","VCT","WSM","SYC","SLE","SGP","SLB","ZAF","LKA","TZA","TGO","TON","TTO","TUV","UGA","GBR","VUT","ZMB"]
+    },
+    {
+      "id": "G20",
+      "name": "G20",
+      "note": "Major economies; Ethiopia participates through the African Union (a G20 member since 2023) but is not an individual member.",
+      "sourceUrl": "https://www.g20.org/",
+      "members": ["ARG","AUS","BRA","CAN","CHN","FRA","DEU","IND","IDN","ITA","JPN","KOR","MEX","RUS","SAU","ZAF","TUR","GBR","USA"]
+    }
+  ]
+}

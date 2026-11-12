@@ -44,8 +44,15 @@
   "UN Comtrade": {
     "source": "UN Comtrade",
     "expectedRefreshDays": 40,
-    "lastAttemptAt": "2026-11-11T23:05:41.643Z",
+    "lastAttemptAt": "2026-11-11T23:28:08.082Z",
     "lastSuccessAt": null,
     "lastError": "No COMTRADE_PRIMARY_KEY configured"
+  },
+  "World Bank (world indicators)": {
+    "source": "World Bank (world indicators)",
+    "expectedRefreshDays": 30,
+    "lastAttemptAt": "2026-11-11T23:27:14.496Z",
+    "lastSuccessAt": "2026-11-11T23:27:14.496Z",
+    "lastError": null
   }
 }

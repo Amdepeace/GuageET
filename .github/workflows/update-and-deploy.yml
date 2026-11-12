@@ -45,6 +45,7 @@ jobs:
           COMTRADE_PRIMARY_KEY: ${{ secrets.COMTRADE_PRIMARY_KEY }}
         run: |
           npm run fetch:worldbank
+          npm run fetch:world
           npm run fetch:commodities
           npm run fetch:fx
           npm run fetch:news
