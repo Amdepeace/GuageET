@@ -48,15 +48,15 @@
     "source": "World Bank WDI"
   },
   {
-    "at": "2026-11-11T12:10:35.448Z",
+    "at": "2026-11-13T10:58:31.488Z",
     "country": "ETH",
     "indicator": "external_debt",
-    "period": "2024",
-    "previousPeriod": "2023",
-    "value": 36548259483.3,
-    "previous": 33273672181.5,
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 39972729017,
+    "previous": 36645147483.3,
     "unit": "USD",
-    "pctChange": 9.84137634084361,
+    "pctChange": 9.080551620692614,
     "source": "World Bank WDI"
   },
   {
@@ -144,15 +144,15 @@
     "source": "World Bank WDI"
   },
   {
-    "at": "2026-11-11T12:10:35.448Z",
+    "at": "2026-11-13T10:58:31.488Z",
     "country": "KEN",
     "indicator": "external_debt",
-    "period": "2024",
-    "previousPeriod": "2023",
-    "value": 42886127218.3,
-    "previous": 42910026054.2,
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 46313111751.7,
+    "previous": 43023047666.5,
     "unit": "USD",
-    "pctChange": -0.05569522579596453,
+    "pctChange": 7.647212979200015,
     "source": "World Bank WDI"
   },
   {
@@ -240,15 +240,15 @@
     "source": "World Bank WDI"
   },
   {
-    "at": "2026-11-11T12:10:35.448Z",
+    "at": "2026-11-13T10:58:31.488Z",
     "country": "DJI",
     "indicator": "external_debt",
-    "period": "2024",
-    "previousPeriod": "2023",
-    "value": 3457016382.4,
-    "previous": 3428806710.3,
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 3754815591.6,
+    "previous": 3447929848.9,
     "unit": "USD",
-    "pctChange": 0.8227256443257405,
+    "pctChange": 8.900579656454036,
     "source": "World Bank WDI"
   },
   {
@@ -336,15 +336,15 @@
     "source": "World Bank WDI"
   },
   {
-    "at": "2026-11-11T12:10:35.448Z",
+    "at": "2026-11-13T10:58:31.488Z",
     "country": "EGY",
     "indicator": "external_debt",
-    "period": "2024",
-    "previousPeriod": "2023",
-    "value": 155972716013.2,
-    "previous": 168182236339.6,
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 164266058862.9,
+    "previous": 155999495755.8,
     "unit": "USD",
-    "pctChange": -7.2596967385699775,
+    "pctChange": 5.299096043259268,
     "source": "World Bank WDI"
   },
   {
@@ -432,15 +432,15 @@
     "source": "World Bank WDI"
   },
   {
-    "at": "2026-11-11T12:10:35.448Z",
+    "at": "2026-11-13T10:58:31.488Z",
     "country": "SDN",
     "indicator": "external_debt",
-    "period": "2024",
-    "previousPeriod": "2023",
-    "value": 22020660462.5,
-    "previous": 22580297676.7,
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 24183021728,
+    "previous": 23384200086.3,
     "unit": "USD",
-    "pctChange": -2.478431516770814,
+    "pctChange": 3.4160742670347015,
     "source": "World Bank WDI"
   },
   {
@@ -528,15 +528,15 @@
     "source": "World Bank WDI"
   },
   {
-    "at": "2026-11-11T12:10:35.448Z",
+    "at": "2026-11-13T10:58:31.488Z",
     "country": "TZA",
     "indicator": "external_debt",
-    "period": "2024",
-    "previousPeriod": "2023",
-    "value": 36343119611.6,
-    "previous": 34584902584.9,
+    "period": "2025",
+    "previousPeriod": "2024",
+    "value": 38708550044.8,
+    "previous": 35340641701.3,
     "unit": "USD",
-    "pctChange": 5.08377036015607,
+    "pctChange": 9.52984490764386,
     "source": "World Bank WDI"
   },
   {

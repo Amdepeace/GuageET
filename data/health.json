@@ -2,64 +2,15 @@
   "World Bank WDI": {
     "source": "World Bank WDI",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-12T07:41:18.560Z",
-    "lastSuccessAt": "2026-11-12T07:41:18.560Z",
+    "lastAttemptAt": "2026-11-13T11:04:32.238Z",
+    "lastSuccessAt": "2026-11-13T11:04:32.238Z",
     "lastError": null
   },
   "IMF WEO": {
     "source": "IMF WEO",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-11T15:03:47.593Z",
+    "lastAttemptAt": "2026-11-11T22:37:34.035Z",
     "lastSuccessAt": null,
     "lastError": "NGDP_RPCH: HTTP 403 for https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH/ETH/KEN/DJI/EGY/SDN/TZA; PCPIPCH: HTTP 403 for https://www.imf.org/external/datamapper/api/v1/PCPIPCH/ETH/KEN/DJI/EGY/SDN/TZA"
-  },
-  "World Bank Pink Sheet": {
-    "source": "World Bank Pink Sheet",
-    "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-11T23:07:18.339Z",
-    "lastSuccessAt": "2026-11-11T23:07:18.339Z",
-    "lastError": null
-  },
-  "open.er-api.com": {
-    "source": "open.er-api.com",
-    "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-11T23:04:01.520Z",
-    "lastSuccessAt": "2026-11-11T23:04:01.520Z",
-    "lastError": null
-  },
-  "GDELT": {
-    "source": "GDELT",
-    "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-11T23:05:39.021Z",
-    "lastSuccessAt": null,
-    "lastError": "fetch failed"
-  },
-  "IMF PortWatch": {
-    "source": "IMF PortWatch",
-    "expectedRefreshDays": 2,
-    "lastAttemptAt": "2026-11-11T23:05:41.222Z",
-    "lastSuccessAt": "2026-11-11T23:05:41.222Z",
-    "lastError": null
-  },
-  "UN Comtrade": {
-    "source": "UN Comtrade",
-    "expectedRefreshDays": 40,
-    "lastAttemptAt": "2026-11-11T23:28:08.082Z",
-    "lastSuccessAt": null,
-    "lastError": "No COMTRADE_PRIMARY_KEY configured"
-  },
-  "World Bank (world indicators)": {
-    "source": "World Bank (world indicators)",
-    "expectedRefreshDays": 30,
-    "lastAttemptAt": "2026-11-11T23:27:14.496Z",
-    "lastSuccessAt": "2026-11-11T23:27:14.496Z",
-    "lastError": null
-  },
-  "HDX (HAPI)": {
-    "source": "HDX (HAPI)",
-    "expectedRefreshDays": 30,
-    "lastAttemptAt": "2026-11-12T07:46:18.033Z",
-    "lastSuccessAt": "2026-11-12T07:46:18.033Z",
-    "lastError": null
   }
 }

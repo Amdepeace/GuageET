@@ -718,13 +718,22 @@
           "fetchedAt": "2026-11-11T12:10:35.448Z"
         },
         {
-          "value": 36548259483.3,
+          "value": 36645147483.3,
           "unit": "USD",
           "asOf": "2024-12-31",
           "period": "2024",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=ET",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
+        },
+        {
+          "value": 39972729017,
+          "unit": "USD",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=ET",
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         }
       ],
       "alternatives": []
