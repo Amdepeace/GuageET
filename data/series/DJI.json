@@ -673,40 +673,49 @@
           "fetchedAt": "2026-11-11T12:10:35.448Z"
         },
         {
-          "value": 3206547225.4,
+          "value": 3206550623.2,
           "unit": "USD",
           "asOf": "2021-12-31",
           "period": "2021",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=DJ",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 3170133063.9,
+          "value": 3170278263.7,
           "unit": "USD",
           "asOf": "2022-12-31",
           "period": "2022",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=DJ",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 3428806710.3,
+          "value": 3423784730.3,
           "unit": "USD",
           "asOf": "2023-12-31",
           "period": "2023",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=DJ",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 3457016382.4,
+          "value": 3447929848.9,
           "unit": "USD",
           "asOf": "2024-12-31",
           "period": "2024",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=DJ",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
+        },
+        {
+          "value": 3754815591.6,
+          "unit": "USD",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=DJ",
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         }
       ],
       "alternatives": []

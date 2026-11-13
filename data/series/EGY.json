@@ -610,139 +610,148 @@
       "country": "EGY",
       "history": [
         {
-          "value": 36803931990.1,
+          "value": 36785331990.1,
           "unit": "USD",
           "asOf": "2010-12-31",
           "period": "2010",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 35208762810.6,
+          "value": 35191362810.6,
           "unit": "USD",
           "asOf": "2011-12-31",
           "period": "2011",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 40061753451.8,
+          "value": 40045553451.8,
           "unit": "USD",
           "asOf": "2012-12-31",
           "period": "2012",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 46534987114.9,
+          "value": 46519987114.9,
           "unit": "USD",
           "asOf": "2013-12-31",
           "period": "2013",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 41772774970.9,
+          "value": 41758974970.9,
           "unit": "USD",
           "asOf": "2014-12-31",
           "period": "2014",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 49873938935.6,
+          "value": 49861338935.6,
           "unit": "USD",
           "asOf": "2015-12-31",
           "period": "2015",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 69188517055.2,
+          "value": 69177117055.2,
           "unit": "USD",
           "asOf": "2016-12-31",
           "period": "2016",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 84587108845.3,
+          "value": 84576908845.3,
           "unit": "USD",
           "asOf": "2017-12-31",
           "period": "2017",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 99457163486.3,
+          "value": 99455787805.7,
           "unit": "USD",
           "asOf": "2018-12-31",
           "period": "2018",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 114910260649.9,
+          "value": 114911366046.7,
           "unit": "USD",
           "asOf": "2019-12-31",
           "period": "2019",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 132538717154,
+          "value": 132560359378.4,
           "unit": "USD",
           "asOf": "2020-12-31",
           "period": "2020",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 145998330659.9,
+          "value": 146037738656.6,
           "unit": "USD",
           "asOf": "2021-12-31",
           "period": "2021",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 163111452414.1,
+          "value": 163156005213.9,
           "unit": "USD",
           "asOf": "2022-12-31",
           "period": "2022",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 168182236339.6,
+          "value": 168216435528.1,
           "unit": "USD",
           "asOf": "2023-12-31",
           "period": "2023",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         },
         {
-          "value": 155972716013.2,
+          "value": 155999495755.8,
           "unit": "USD",
           "asOf": "2024-12-31",
           "period": "2024",
           "source": "World Bank WDI",
           "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
-          "fetchedAt": "2026-11-11T12:10:35.448Z"
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
+        },
+        {
+          "value": 164266058862.9,
+          "unit": "USD",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/DT.DOD.DECT.CD?locations=EG",
+          "fetchedAt": "2026-11-13T10:58:31.488Z"
         }
       ],
       "alternatives": []

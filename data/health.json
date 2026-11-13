@@ -2,8 +2,8 @@
   "World Bank WDI": {
     "source": "World Bank WDI",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-12T11:08:32.613Z",
-    "lastSuccessAt": "2026-11-12T11:08:32.613Z",
+    "lastAttemptAt": "2026-11-13T11:04:32.238Z",
+    "lastSuccessAt": "2026-11-13T11:04:32.238Z",
     "lastError": null
   },
   "IMF WEO": {
