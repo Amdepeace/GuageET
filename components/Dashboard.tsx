@@ -30,6 +30,7 @@ import { RelationsPanel } from "./relations/RelationsPanel";
 import { buildRelations } from "@/lib/relations";
 import { DebtPanel } from "./econ/DebtPanel";
 import { HumanitarianPanel } from "./humanitarian/HumanitarianPanel";
+import { AboutPanel } from "./shell/AboutPanel";
 
 // MapLibre is the heaviest dependency; load it after the vitals render.
 const MapView = dynamic(() => import("./map/MapView").then((m) => m.MapView), {
@@ -45,6 +46,7 @@ type Detail =
   | { kind: "quake"; id: string }
   | { kind: "country"; iso3: string; un: string | null; name: string }
   | { kind: "desk"; id: string }
+  | { kind: "about" }
   | null;
 
 const DAY = 86_400_000;
@@ -171,6 +173,13 @@ export function Dashboard({ data }: { data: DashboardData }) {
     [health, now, weatherStatus, weather.snap, weather.error, quakeStatus, quakes.snap, quakes.error, curatedStatus, oldestVerified],
   );
   const statusOf = useCallback((source: string): HealthStatus => sourceRows.find((r) => r.source === source)?.status ?? "NOMINAL", [sourceRows]);
+  // headlines come from two sources; the feed is healthy if either works
+  const newsStatus: HealthStatus = (() => {
+    const rank: Record<HealthStatus, number> = { NOMINAL: 0, DELAYED: 1, OFFLINE: 2 };
+    const a = statusOf("GDELT");
+    const b = statusOf("News RSS");
+    return rank[a] <= rank[b] ? a : b;
+  })();
   const staleSources = useMemo(() => new Set(sourceRows.filter((r) => r.status === "OFFLINE").map((r) => r.source)), [sourceRows]);
   const lastSync = Object.values(health)
     .map((h) => h.lastSuccessAt)
@@ -223,7 +232,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
         case "trade_unavailable":
           return trade.available ? 0 : 1;
         case "news_offline":
-          return statusOf("GDELT") === "OFFLINE" ? 1 : 0;
+          return newsStatus === "OFFLINE" ? 1 : 0;
         case "debt_gni_pct":
           return data.debt.ratios.pct_gni?.value ?? null;
         case "ipc3plus_millions":
@@ -239,7 +248,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
       });
     }
     return out;
-  }, [countries, infra, now, oldestVerified, weather.snap, sourceRows, thresholds, redsea, trade.available, statusOf, data.debt, data.humanitarian]);
+  }, [countries, infra, now, oldestVerified, weather.snap, sourceRows, thresholds, redsea, trade.available, newsStatus, data.debt, data.humanitarian]);
   const desks = Object.entries(deskRules).map(([id, r]) => ({ id, light: worst(r.map((x) => x.light)) as Light }));
 
   // --- selection -----------------------------------------------------------
@@ -308,6 +317,13 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </Drawer>
       );
     }
+    if (detail.kind === "about") {
+      return (
+        <Drawer title="About this dashboard" callsign="INFO" onClose={closeDetail}>
+          <AboutPanel data={data} statusOf={(key) => (sourceRows.some((r) => r.source === key) ? statusOf(key) : null)} />
+        </Drawer>
+      );
+    }
     const rules = deskRules[detail.id] ?? [];
     return (
       <Drawer title={`${detail.id} status light`} callsign={detail.id} onClose={closeDetail}>
@@ -331,7 +347,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
 
   return (
     <main className="min-h-screen flex flex-col gap-2 p-2 md:p-3 max-w-[1800px] mx-auto">
-      <StatusBar lastSync={lastSync} desks={desks} onDesk={(id) => setDetail({ kind: "desk", id })} theme={theme} onTheme={toggleTheme} />
+      <StatusBar lastSync={lastSync} desks={desks} onDesk={(id) => setDetail({ kind: "desk", id })} theme={theme} onTheme={toggleTheme} onAbout={() => setDetail({ kind: "about" })} />
 
       <AlertBanner alerts={alerts} />
 
@@ -394,7 +410,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
         <TradePanel trade={trade} status={statusOf(trade.source)} />
-        <NewsFeed news={news} status={statusOf("GDELT")} now={now} />
+        <NewsFeed news={news} status={newsStatus} now={now} />
       </div>
 
       <InfraTable infra={infra} selected={view.sel} onSelect={(id) => selectInfra(id)} />
@@ -403,7 +419,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
 
       <footer className="text-[10.5px] muted px-1 pb-2 flex flex-wrap gap-x-3">
         <span>Every figure shows its source and period. Values are never estimated; on a failed fetch the last good value stays, marked stale.</span>
-        <span>Data: World Bank · IMF · Open-Meteo · USGS · World Bank Pink Sheet · open.er-api · IMF PortWatch · GDELT · UN Comtrade · Natural Earth · curated records.</span>
+        <span>Data: World Bank · IMF · Open-Meteo · USGS · World Bank Pink Sheet · open.er-api · IMF PortWatch · GDELT and Ethiopian outlet RSS · UN Comtrade · Natural Earth · curated records.</span>
       </footer>
       {detailNode}
     </main>

@@ -9,7 +9,7 @@
     { "metric": "trade_unavailable", "amberAbove": 0, "text": "Trade data: amber until a UN Comtrade key is configured" }
   ],
   "COMMS": [
-    { "metric": "news_offline", "amberAbove": 0, "text": "Headlines feed: amber when the GDELT fetch is failing" }
+    { "metric": "news_offline", "amberAbove": 0, "text": "Headlines feed: amber when both GDELT and the Ethiopian-outlet RSS feeds are failing" }
   ],
   "DEBT": [
     { "metric": "debt_gni_pct", "amberAbove": 40, "redAbove": 60, "text": "External debt to GNI: amber above 40%, red above 60%" }

@@ -181,6 +181,8 @@ export type DebtFile = {
   composition: DebtSlice[];
   ratios: Record<string, DebtRatio>;
   totalHistory: { period: string; value: number }[];
+  /** Named creditors (e.g. China, World Bank-IDA), largest first. */
+  creditors?: { group: string; name: string; value: number; period: string }[];
 };
 export type ImfEvent = { date: string; label: string; detail: string; sourceUrl?: string };
 export type ImfProgramme = { programme: string; events: ImfEvent[]; note: string };

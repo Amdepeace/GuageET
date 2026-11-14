@@ -14,7 +14,7 @@ export function NewsFeed({ news, status, now }: { news: NewsFile; status: Health
       <div className="max-h-[240px] overflow-y-auto scroll-thin">
         {items.length === 0 ? (
           <div className="px-3 py-3 text-[12px] muted">
-            No headlines yet. The scheduled job pulls Ethiopia economy and infrastructure news from GDELT; it appears here after the first successful run.
+            No headlines yet. The scheduled job pulls Ethiopia economy and infrastructure headlines from GDELT and Ethiopian outlets; they appear here after the first successful run.
           </div>
         ) : (
           <ul className="flex flex-col">
@@ -35,7 +35,9 @@ export function NewsFeed({ news, status, now }: { news: NewsFile; status: Health
         <a href="https://www.gdeltproject.org/" target="_blank" rel="noreferrer">
           GDELT
         </a>
-        <span>· English-language, last 14 days</span>
+        <span>
+          · Capital Ethiopia · The Reporter · Addis Fortune (RSS, headlines and links only) · economy and infrastructure topics
+        </span>
         {news.fetchedAt && now && <span className="mono">· fetched {ago(news.fetchedAt, now)} ago</span>}
       </div>
     </div>

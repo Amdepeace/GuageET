@@ -12,12 +12,14 @@ export function StatusBar({
   onDesk,
   theme,
   onTheme,
+  onAbout,
 }: {
   lastSync: string | null;
   desks: Desk[];
   onDesk: (id: string) => void;
   theme: string;
   onTheme: () => void;
+  onAbout: () => void;
 }) {
   const [now, setNow] = useState<Date | null>(null);
   useEffect(() => {
@@ -53,6 +55,9 @@ export function StatusBar({
           </button>
         ))}
       </nav>
+      <button type="button" className="ctl" onClick={onAbout} title="Sources, definitions and data downloads">
+        ABOUT
+      </button>
       <button type="button" className="ctl" onClick={onTheme} aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`}>
         {theme === "light" ? "◐ DARK" : "◑ LIGHT"}
       </button>

@@ -274,7 +274,17 @@
           "fetchedAt": "2026-11-11T12:10:35.448Z"
         }
       ],
-      "alternatives": []
+      "alternatives": [
+        {
+          "value": 138.81,
+          "unit": "% y/y",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "IMF WEO",
+          "sourceUrl": "https://www.imf.org/external/datamapper/PCPIPCH@WEO/SDN",
+          "fetchedAt": "2026-11-14T11:11:46.813Z"
+        }
+      ]
     },
     "fx_usd": {
       "id": "fx_usd",

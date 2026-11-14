@@ -50,7 +50,10 @@ export function DebtPanel({ debt, imf, status, now }: { debt: DebtFile; imf: Imf
                     {c.label}
                   </span>
                   <span className="relative h-[12px] block bg-[var(--panel-2)]">
-                    <span className="absolute top-0 bottom-0 left-0" style={{ width: `max(${(c.value / max) * 100}%, 2px)`, background: "var(--accent)", borderRadius: "0 3px 3px 0" }} />
+                    <span
+                      className="absolute top-0 bottom-0 left-0"
+                      style={{ width: `max(${(c.value / max) * 100}%, 2px)`, background: c.id === "residual" ? "var(--ink-3)" : "var(--accent)", opacity: c.id === "residual" ? 0.55 : 1, borderRadius: "0 3px 3px 0" }}
+                    />
                   </span>
                   <span className="mono text-[11px] text-right">
                     ${compact(c.value)} <span className="muted">{total ? `${((c.value / total) * 100).toFixed(0)}%` : ""}</span>
@@ -59,7 +62,28 @@ export function DebtPanel({ debt, imf, status, now }: { debt: DebtFile; imf: Imf
               ))}
             </ul>
           )}
+          {comp.some((c) => c.id === "residual") && (
+            <p className="text-[10px] muted mt-1">&ldquo;Other (residual)&rdquo; = published total minus the classes above (other private and non-guaranteed debt); computed, not a published line.</p>
+          )}
         </div>
+
+        {/* named creditors */}
+        {(debt.creditors ?? []).length > 0 && (
+          <div>
+            <div className="label mb-1">Largest creditors</div>
+            <ul className="flex flex-col gap-[4px]">
+              {(debt.creditors ?? []).slice(0, 8).map((c) => (
+                <li key={`${c.group}-${c.name}`} className="grid grid-cols-[1fr_auto] gap-2 text-[11.5px]">
+                  <span className="truncate" title={`${c.name} · ${c.group}`}>
+                    {c.name} <span className="muted text-[10px]">{c.group.replace(" (PPG)", "")}</span>
+                  </span>
+                  <span className="mono">${compact(c.value)}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-[10px] muted mt-1">&ldquo;Multiple Lenders&rdquo; is the World Bank&apos;s label for loans from several bilateral lenders together.</p>
+          </div>
+        )}
 
         {/* IMF programme timeline */}
         <div>

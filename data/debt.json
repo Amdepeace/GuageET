@@ -1,1 +1,223 @@
-{"source":"World Bank IDS","sourceUrl":"https://www.worldbank.org/en/programs/debt-statistics/ids","fetchedAt":"","composition":[],"ratios":{},"totalHistory":[]}
+{
+  "source": "World Bank IDS",
+  "sourceUrl": "https://www.worldbank.org/en/programs/debt-statistics/ids",
+  "fetchedAt": "2026-11-14T11:00:51.634Z",
+  "composition": [
+    {
+      "id": "multilateral",
+      "label": "Multilateral (PPG)",
+      "value": 17095993091.9,
+      "period": "2025"
+    },
+    {
+      "id": "bilateral",
+      "label": "Bilateral (PPG)",
+      "value": 12400147835.1,
+      "period": "2025"
+    },
+    {
+      "id": "bonds",
+      "label": "Bonds (PPG)",
+      "value": 1000000000,
+      "period": "2025"
+    },
+    {
+      "id": "commercial",
+      "label": "Commercial banks (PPG)",
+      "value": 4214167550,
+      "period": "2025"
+    },
+    {
+      "id": "imf_credit",
+      "label": "Use of IMF credit",
+      "value": 2723858930.2,
+      "period": "2025"
+    },
+    {
+      "id": "short_term",
+      "label": "Short-term debt",
+      "value": 940627674.3,
+      "period": "2025"
+    },
+    {
+      "id": "residual",
+      "label": "Other (residual)",
+      "value": 1597933935.5,
+      "period": "2025"
+    }
+  ],
+  "ratios": {
+    "total": {
+      "value": 39972729017,
+      "period": "2025",
+      "label": "External debt stocks",
+      "format": "usd"
+    },
+    "pct_gni": {
+      "value": 31.6883629798664,
+      "period": "2025",
+      "label": "External debt / GNI",
+      "format": "pct"
+    },
+    "debt_service": {
+      "value": 1219431299,
+      "period": "2025",
+      "label": "Total debt service",
+      "format": "usd"
+    },
+    "reserves_pct": {
+      "value": 10.3544942459446,
+      "period": "2024",
+      "label": "Reserves / external debt",
+      "format": "pct"
+    }
+  },
+  "totalHistory": [
+    {
+      "period": "2008",
+      "value": 2847636291.2
+    },
+    {
+      "period": "2009",
+      "value": 5361419433.9
+    },
+    {
+      "period": "2010",
+      "value": 7287411658.5
+    },
+    {
+      "period": "2011",
+      "value": 8607523904.7
+    },
+    {
+      "period": "2012",
+      "value": 10465118049.7
+    },
+    {
+      "period": "2013",
+      "value": 12585463066
+    },
+    {
+      "period": "2014",
+      "value": 16946037499.2
+    },
+    {
+      "period": "2015",
+      "value": 20443875424.1
+    },
+    {
+      "period": "2016",
+      "value": 23396722284.1
+    },
+    {
+      "period": "2017",
+      "value": 26170602394.7
+    },
+    {
+      "period": "2018",
+      "value": 29842524863.7
+    },
+    {
+      "period": "2019",
+      "value": 30377335498.2
+    },
+    {
+      "period": "2020",
+      "value": 32364057104.1
+    },
+    {
+      "period": "2021",
+      "value": 32000197807.2
+    },
+    {
+      "period": "2022",
+      "value": 30620768251.9
+    },
+    {
+      "period": "2023",
+      "value": 33273672181.5
+    },
+    {
+      "period": "2024",
+      "value": 36645147483.3
+    },
+    {
+      "period": "2025",
+      "value": 39972729017
+    }
+  ],
+  "creditors": [
+    {
+      "group": "Multilateral (PPG)",
+      "name": "World Bank-IDA",
+      "value": 14081315000,
+      "period": "2025"
+    },
+    {
+      "group": "Bilateral (PPG)",
+      "name": "China",
+      "value": 6082374775.2,
+      "period": "2025"
+    },
+    {
+      "group": "Bilateral (PPG)",
+      "name": "Multiple Lenders",
+      "value": 4067294000,
+      "period": "2025"
+    },
+    {
+      "group": "Multilateral (PPG)",
+      "name": "African Dev. Bank",
+      "value": 2235816059.5,
+      "period": "2025"
+    },
+    {
+      "group": "Commercial banks (PPG)",
+      "name": "United States",
+      "value": 2156037275,
+      "period": "2025"
+    },
+    {
+      "group": "Bonds (PPG)",
+      "name": "Bondholders",
+      "value": 1000000000,
+      "period": "2025"
+    },
+    {
+      "group": "Commercial banks (PPG)",
+      "name": "Japan",
+      "value": 511617700,
+      "period": "2025"
+    },
+    {
+      "group": "Bilateral (PPG)",
+      "name": "Korea, Republic of",
+      "value": 460166953.5,
+      "period": "2025"
+    },
+    {
+      "group": "Commercial banks (PPG)",
+      "name": "Switzerland",
+      "value": 454617000,
+      "period": "2025"
+    },
+    {
+      "group": "Multilateral (PPG)",
+      "name": "International Fund for Agricultural Dev.",
+      "value": 432131548.8,
+      "period": "2025"
+    },
+    {
+      "group": "Commercial banks (PPG)",
+      "name": "Italy",
+      "value": 399500000,
+      "period": "2025"
+    },
+    {
+      "group": "Bilateral (PPG)",
+      "name": "India",
+      "value": 290639000,
+      "period": "2025"
+    }
+  ]
+}

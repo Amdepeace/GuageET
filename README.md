@@ -9,7 +9,7 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 | Data | Source | Access | Refresh |
 |---|---|---|---|
 | GDP growth, inflation, FX (official annual avg), reserves, external debt, population | World Bank Indicators API v2 | Open, no key | Daily job (source updates annually) |
-| Alternative values for GDP growth and inflation | IMF DataMapper (WEO) | Open, no key | Weekly job, Mondays |
+| Alternative values for GDP growth and inflation | IMF World Economic Outlook via the IMF SDMX API (`api.imf.org`) | Open, no key | Weekly job, Mondays |
 | Current weather and 7-day forecast, 8 cities | Open-Meteo | Open, no key, free for non-commercial use; called from the browser | Every 15 min |
 | Country boundaries, lakes, disputed areas | Natural Earth (public domain) | Bundled | Static |
 | Infrastructure projects | Curated, with source URLs per record | `data/curated/infrastructure.geojson` | Monthly review |
@@ -17,7 +17,7 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 | **v2** Daily birr/USD (market) | open.er-api.com | Open, no key | Daily job |
 | **v2** Earthquakes (Horn/Rift region) | USGS | Open GeoJSON; called from the browser | Every 10 min |
 | **v2** Red Sea transit (Bab el-Mandeb, Suez) | IMF PortWatch (ArcGIS) | Open, no key | Daily job |
-| **v2** Headlines | GDELT 2.0 Doc API | Open, no key, rate-limited | Daily job |
+| **v2** Headlines | GDELT 2.0 Doc API plus RSS from Capital Ethiopia, The Reporter and Addis Fortune | Open, no key; GDELT rate-limits, so RSS is the fallback | Daily job |
 | **v2** Trade partners and balance | UN Comtrade | Free tier, **needs a key** (see below) | Daily job |
 | Remittances received, FDI net inflows | World Bank | Open, no key | Daily job |
 | External-debt composition, ratios, IMF programme | World Bank IDS + curated IMF timeline | Open, no key (timeline curated) | Daily job |

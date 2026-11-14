@@ -137,7 +137,28 @@ export function recordHealth(
   appendEvents(events);
 }
 
-export async function fetchJson(url: string, tries = 3, timeoutMs = 25000): Promise<unknown> {
+/** Fetch a text body (RSS/XML) with a timeout and retries. */
+export async function fetchText(url: string, tries = 2, timeoutMs = 30_000): Promise<string> {
+  let lastErr: unknown;
+  for (let i = 0; i < tries; i++) {
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(timeoutMs), redirect: "follow" });
+      if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+      return await res.text();
+    } catch (e) {
+      lastErr = e;
+      await new Promise((r) => setTimeout(r, 2000 * 2 ** i));
+    }
+  }
+  throw lastErr;
+}
+
+/** The World Bank data API is often slow (single small queries can take
+ *  1-2 minutes), so its calls get a long timeout; everything else uses the
+ *  default. A timeout still exists so a hung connection cannot stall the job. */
+export const WB_TIMEOUT_MS = 180_000;
+
+export async function fetchJson(url: string, tries = 3, timeoutMs = 60_000): Promise<unknown> {
   let lastErr: unknown;
   for (let i = 0; i < tries; i++) {
     try {

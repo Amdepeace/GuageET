@@ -28,6 +28,7 @@ jobs:
   build:
     # deploy only from the default branch; other branches just build
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v5
 
@@ -45,15 +46,10 @@ jobs:
           COMTRADE_PRIMARY_KEY: ${{ secrets.COMTRADE_PRIMARY_KEY }}
           HDX_APP_IDENTIFIER: ${{ secrets.HDX_APP_IDENTIFIER }}
         run: |
-          npm run fetch:worldbank
-          npm run fetch:world
-          npm run fetch:commodities
-          npm run fetch:fx
-          npm run fetch:news
-          npm run fetch:redsea
-          npm run fetch:comtrade
-          npm run fetch:debt
-          npm run fetch:hdx
+          # One failing source must not stop the others; each keeps its last good data.
+          for job in worldbank world commodities fx news redsea comtrade debt hdx; do
+            npm run -s "fetch:$job" || echo "::warning::fetch:$job failed (last good data kept)"
+          done
 
       - name: Fetch IMF (Mondays only, to poll sparingly)
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.fetch)
