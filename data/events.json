@@ -802,5 +802,35 @@
     "unit": "USD",
     "source": "World Bank WDI",
     "message": "2010 figure revised"
+  },
+  {
+    "at": "2026-11-14T10:28:16.839Z",
+    "kind": "source_error",
+    "source": "World Bank WDI",
+    "message": "Fetch failed: BX.TRF.PWKR.CD.DT: The operation was aborted due to timeout; BX.KLT.DINV.CD.WD: The operation was aborted due to timeout"
+  },
+  {
+    "at": "2026-11-14T10:29:49.246Z",
+    "kind": "source_error",
+    "source": "GDELT",
+    "message": "Fetch failed: 429 rate limited"
+  },
+  {
+    "at": "2026-11-14T10:29:51.215Z",
+    "kind": "source_error",
+    "source": "UN Comtrade",
+    "message": "Fetch failed: No COMTRADE_PRIMARY_KEY configured"
+  },
+  {
+    "at": "2026-11-14T10:31:32.202Z",
+    "kind": "source_error",
+    "source": "World Bank IDS",
+    "message": "Fetch failed: The operation was aborted due to timeout"
+  },
+  {
+    "at": "2026-11-14T10:31:32.529Z",
+    "kind": "source_error",
+    "source": "HDX (HAPI)",
+    "message": "Fetch failed: No HDX_APP_IDENTIFIER configured"
   }
 ]

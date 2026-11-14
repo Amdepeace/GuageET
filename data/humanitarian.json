@@ -1,13 +1,10 @@
 {
   "source": "HDX (HAPI)",
   "sourceUrl": "https://data.humdata.org/",
-  "fetchedAt": "2026-11-12T07:46:17.248Z",
-  "available": true,
-  "note": "Each figure carries its own reference period and original provider (WFP, IPC, OCHA). Some HDX series update infrequently.",
+  "fetchedAt": "2026-11-14T10:31:32.529Z",
+  "available": false,
+  "note": "Set HDX_APP_IDENTIFIER (a free HDX app identifier) as a GitHub Secret to populate the humanitarian panel.",
   "peopleInNeed": null,
-  "ipcPhase3plus": {
-    "value": 16756345,
-    "period": "2021-05-01"
-  },
+  "ipcPhase3plus": null,
   "foodPrices": []
 }
