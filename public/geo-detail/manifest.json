@@ -1,0 +1,157 @@
+{
+ "builtAt": "2026-11-14T12:00:17Z",
+ "source": "Humanitarian OpenStreetMap Team (HOT) exports on HDX (hotosm_eth_*), derived from OpenStreetMap",
+ "sourceUrl": "https://data.humdata.org/organization/hot",
+ "license": "Open Database License (ODbL) 1.0",
+ "attribution": "© OpenStreetMap contributors",
+ "files": {
+  "rivers.json": {
+   "features": 9936,
+   "bytes": 5757289,
+   "description": "River and canal lines (OSM waterway=river|canal)",
+   "coordinatePrecision": 4
+  },
+  "streams.json": {
+   "features": 18344,
+   "bytes": 3706700,
+   "description": "Streams and small tributaries (OSM waterway=stream)",
+   "coordinatePrecision": 4
+  },
+  "water.json": {
+   "features": 915,
+   "bytes": 1068682,
+   "description": "Lakes, reservoirs, wetlands and river areas of 0.1 km2 or more",
+   "coordinatePrecision": 4
+  },
+  "rail.json": {
+   "features": 1016,
+   "bytes": 216893,
+   "description": "Railway lines and stations",
+   "coordinatePrecision": 4
+  },
+  "airports.json": {
+   "features": 162,
+   "bytes": 27726,
+   "description": "Aerodromes and runways",
+   "coordinatePrecision": 5
+  },
+  "places.json": {
+   "features": 2715,
+   "bytes": 472883,
+   "description": "Named cities, towns and villages",
+   "coordinatePrecision": 4
+  },
+  "facilities.json": {
+   "features": 11723,
+   "bytes": 2282933,
+   "description": "Health, education, finance, fuel, market, civic, transport and industry facilities",
+   "coordinatePrecision": 5,
+   "categories": {
+    "health": 1193,
+    "education": 6531,
+    "fuel": 622,
+    "market": 470,
+    "finance": 1647,
+    "civic": 331,
+    "industry": 494,
+    "transport": 435
+   }
+  },
+  "roads-major.json": {
+   "features": 13681,
+   "bytes": 4383983,
+   "description": "Motorway, trunk, primary and secondary roads",
+   "coordinatePrecision": 4
+  },
+  "roads-tertiary.json": {
+   "features": 12894,
+   "bytes": 5108901,
+   "description": "Tertiary roads",
+   "coordinatePrecision": 4
+  },
+  "cities/ADD.json": {
+   "features": 52864,
+   "bytes": 9327231,
+   "description": "Minor streets (residential, unclassified, service) inside the ADD extent",
+   "coordinatePrecision": 5,
+   "city": "ADD"
+  },
+  "cities/ADA.json": {
+   "features": 6375,
+   "bytes": 1096847,
+   "description": "Minor streets (residential, unclassified, service) inside the ADA extent",
+   "coordinatePrecision": 5,
+   "city": "ADA"
+  },
+  "cities/BIS.json": {
+   "features": 1932,
+   "bytes": 358601,
+   "description": "Minor streets (residential, unclassified, service) inside the BIS extent",
+   "coordinatePrecision": 5,
+   "city": "BIS"
+  },
+  "cities/DIR.json": {
+   "features": 3339,
+   "bytes": 597269,
+   "description": "Minor streets (residential, unclassified, service) inside the DIR extent",
+   "coordinatePrecision": 5,
+   "city": "DIR"
+  },
+  "cities/HAR.json": {
+   "features": 873,
+   "bytes": 185327,
+   "description": "Minor streets (residential, unclassified, service) inside the HAR extent",
+   "coordinatePrecision": 5,
+   "city": "HAR"
+  },
+  "cities/JIJ.json": {
+   "features": 2605,
+   "bytes": 462372,
+   "description": "Minor streets (residential, unclassified, service) inside the JIJ extent",
+   "coordinatePrecision": 5,
+   "city": "JIJ"
+  },
+  "cities/MEK.json": {
+   "features": 4771,
+   "bytes": 895946,
+   "description": "Minor streets (residential, unclassified, service) inside the MEK extent",
+   "coordinatePrecision": 5,
+   "city": "MEK"
+  },
+  "cities/DES.json": {
+   "features": 1059,
+   "bytes": 221455,
+   "description": "Minor streets (residential, unclassified, service) inside the DES extent",
+   "coordinatePrecision": 5,
+   "city": "DES"
+  },
+  "cities/BAH.json": {
+   "features": 3167,
+   "bytes": 564208,
+   "description": "Minor streets (residential, unclassified, service) inside the BAH extent",
+   "coordinatePrecision": 5,
+   "city": "BAH"
+  },
+  "cities/GON.json": {
+   "features": 1667,
+   "bytes": 327602,
+   "description": "Minor streets (residential, unclassified, service) inside the GON extent",
+   "coordinatePrecision": 5,
+   "city": "GON"
+  },
+  "cities/HAW.json": {
+   "features": 3037,
+   "bytes": 571620,
+   "description": "Minor streets (residential, unclassified, service) inside the HAW extent",
+   "coordinatePrecision": 5,
+   "city": "HAW"
+  },
+  "cities/JIM.json": {
+   "features": 2070,
+   "bytes": 407829,
+   "description": "Minor streets (residential, unclassified, service) inside the JIM extent",
+   "coordinatePrecision": 5,
+   "city": "JIM"
+  }
+ }
+}

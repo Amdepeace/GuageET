@@ -85,6 +85,8 @@ export type InfraProps = {
   verified: boolean;
   summary: string;
   geometryNote: string; // how the drawn line/point was derived
+  /** hand-drawn path (true) vs geometry taken from real map data (false); schematic lines fade at city zoom */
+  schematic?: boolean;
   sources: { title: string; url: string }[];
 };
 

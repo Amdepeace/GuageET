@@ -73,7 +73,10 @@ export type EventEntry = {
 export type InfraFeature = {
   type: "Feature";
   properties: InfraProps;
-  geometry: { type: "Point"; coordinates: [number, number] } | { type: "LineString"; coordinates: [number, number][] };
+  geometry:
+    | { type: "Point"; coordinates: [number, number] }
+    | { type: "LineString"; coordinates: [number, number][] }
+    | { type: "MultiLineString"; coordinates: [number, number][][] };
 };
 
 export type DashboardData = {

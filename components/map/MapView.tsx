@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import maplibregl, { type GeoJSONSource, type LngLatBoundsLike, type Map as MlMap } from "maplibre-gl";
 import countries from "@/data/geo/countries.geojson";
 import lakes from "@/data/geo/lakes.geojson";
@@ -7,8 +7,11 @@ import disputed from "@/data/geo/disputed.geojson";
 import world from "@/data/geo/world.geojson";
 import type { City, InfraFeature } from "@/lib/data";
 import type { CityWeather } from "@/lib/openMeteo";
-import { ALL_LAYERS, type Layer } from "@/lib/urlState";
+import { ALL_LAYERS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import type { Quake } from "@/lib/usgs";
+import { GLYPHS_URL, HIT_LAYERS, LAYER_KIND, pretty, type DetailFeature } from "./detail";
+import { LayerPanel } from "./LayerPanel";
+import { CITIES, useDetailLayers } from "./useDetailLayers";
 
 const HOME: LngLatBoundsLike = [
   [32.5, -6],
@@ -41,6 +44,7 @@ function graticule() {
   return { type: "FeatureCollection", features: f };
 }
 
+const LINES = ["in", ["geometry-type"], ["literal", ["LineString", "MultiLineString"]]];
 const POWER = ["in", ["get", "type"], ["literal", ["power_line", "dam"]]];
 const CAT_COLOR = (power: string, transport: string) => ["case", POWER, power, transport];
 
@@ -56,6 +60,11 @@ export function MapView({
   onCity,
   onQuake,
   onCountry,
+  onFeature,
+  fac,
+  onFac,
+  lang,
+  onLang,
   relationsSel,
   initialView,
   onViewChange,
@@ -73,6 +82,11 @@ export function MapView({
   onCity: (id: string) => void;
   onQuake: (id: string) => void;
   onCountry: (c: { iso3: string; un: string | null; name: string }) => void;
+  onFeature: (f: DetailFeature) => void;
+  fac: FacCat[];
+  onFac: (c: FacCat) => void;
+  lang: Lang;
+  onLang: (l: Lang) => void;
   relationsSel: string | null;
   initialView: { zoom: number | null; center: [number, number] | null };
   onViewChange: (zoom: number, center: [number, number]) => void;
@@ -86,22 +100,24 @@ export function MapView({
   const [ready, setReady] = useState(false);
   const [hover, setHover] = useState<{ x: number; y: number; text: string } | null>(null);
   const [hoverCountry, setHoverCountry] = useState<string | null>(null);
-  const cb = useRef({ onSelect, onViewChange, onCity, onQuake, onCountry });
-  cb.current = { onSelect, onViewChange, onCity, onQuake, onCountry };
+  const [panelOpen, setPanelOpen] = useState(false);
+  const cb = useRef({ onSelect, onViewChange, onCity, onQuake, onCountry, onFeature });
+  cb.current = { onSelect, onViewChange, onCity, onQuake, onCountry, onFeature };
+  const avoid = useMemo(() => cities.map((c) => [c.lon, c.lat] as [number, number]), [cities]);
 
   // init once
   useEffect(() => {
     if (!el.current) return;
     const m = new maplibregl.Map({
       container: el.current,
-      style: { version: 8, sources: {}, layers: [{ id: "bg", type: "background", paint: { "background-color": "#0a1e2c" } }] },
+      style: { version: 8, glyphs: GLYPHS_URL(), sources: {}, layers: [{ id: "bg", type: "background", paint: { "background-color": "#0a1e2c" } }] },
       bounds: initialView.center ? undefined : HOME,
       center: initialView.center ?? undefined,
       zoom: initialView.zoom ?? undefined,
       attributionControl: false,
       dragRotate: false,
       pitchWithRotate: false,
-      maxZoom: 9,
+      maxZoom: 16,
       minZoom: 1.2,
       renderWorldCopies: true,
       cooperativeGestures: false,
@@ -111,7 +127,8 @@ export function MapView({
     m.addControl(
       new maplibregl.AttributionControl({
         compact: true,
-        customAttribution: 'Boundaries: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noreferrer">Natural Earth</a> · dashed = disputed',
+        customAttribution:
+          'Boundaries: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noreferrer">Natural Earth</a> · dashed = disputed · Roads, rivers, facilities: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>',
       }),
       "bottom-right",
     );
@@ -137,13 +154,13 @@ export function MapView({
       m.addLayer({ id: "world-sel", type: "fill", source: "world", filter: ["==", ["get", "iso3"], ""] as never, paint: { "fill-color": "#22c3e6", "fill-opacity": 0.16 } });
       m.addLayer({ id: "world-sel-line", type: "line", source: "world", filter: ["==", ["get", "iso3"], ""] as never, paint: { "line-color": "#22c3e6", "line-width": 1.6 } });
 
-      const isLine = ["==", ["geometry-type"], "LineString"];
+      const isLine = ["in", ["geometry-type"], ["literal", ["LineString", "MultiLineString"]]];
       const isPt = ["==", ["geometry-type"], "Point"];
       const L = (layer: string) => ["==", ["get", "layer"], layer];
       // selection halo (under the lines)
       m.addLayer({ id: "infra-halo", type: "line", source: "infra", filter: ["all", isLine, ["==", ["get", "id"], ""]] as never, paint: { "line-color": "#ffffff", "line-width": 7, "line-opacity": 0.25 } });
-      m.addLayer({ id: "infra-existing", type: "line", source: "infra", filter: ["all", isLine, L("existing")] as never, layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": CAT_COLOR("#9a7cf0", "#0ea5c6") as never, "line-width": 2.2 } });
-      m.addLayer({ id: "infra-planned", type: "line", source: "infra", filter: ["all", isLine, L("planned")] as never, layout: { "line-join": "round" }, paint: { "line-color": CAT_COLOR("#9a7cf0", "#0ea5c6") as never, "line-width": 2, "line-dasharray": [2.2, 1.6] } });
+      m.addLayer({ id: "infra-existing", type: "line", source: "infra", filter: ["all", isLine, L("existing")] as never, layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": CAT_COLOR("#9a7cf0", "#0ea5c6") as never, "line-opacity": ["interpolate", ["linear"], ["zoom"], 9, 1, 12, ["case", ["==", ["get", "schematic"], true], 0.28, 1], 14, ["case", ["==", ["get", "schematic"], true], 0.08, 1]], "line-width": 2.2 } });
+      m.addLayer({ id: "infra-planned", type: "line", source: "infra", filter: ["all", isLine, L("planned")] as never, layout: { "line-join": "round" }, paint: { "line-color": CAT_COLOR("#9a7cf0", "#0ea5c6") as never, "line-opacity": ["interpolate", ["linear"], ["zoom"], 9, 1, 12, ["case", ["==", ["get", "schematic"], true], 0.28, 1], 14, ["case", ["==", ["get", "schematic"], true], 0.08, 1]], "line-width": 2, "line-dasharray": [2.2, 1.6] } });
       m.addLayer({ id: "infra-pts-halo", type: "circle", source: "infra", filter: ["all", isPt, ["==", ["get", "id"], ""]] as never, paint: { "circle-radius": 13, "circle-color": "#ffffff", "circle-opacity": 0.2 } });
       m.addLayer({
         id: "infra-pts",
@@ -168,23 +185,43 @@ export function MapView({
         new maplibregl.Marker({ element: d }).setLngLat([lon, lat]).addTo(m);
       }
 
-      for (const id of ["infra-hit-line", "infra-hit-pt"]) {
-        m.on("mousemove", id, (e) => {
-          m.getCanvas().style.cursor = "pointer";
-          const p = e.features?.[0]?.properties as { callsign: string; name: string } | undefined;
-          if (p) setHover({ x: e.point.x, y: e.point.y, text: `${p.callsign} · ${p.name}` });
-        });
-        m.on("mouseleave", id, () => {
-          m.getCanvas().style.cursor = "";
-          setHover(null);
-        });
-      }
-      // country hover (for the relations layer)
-      m.on("mousemove", "world-fill", (e) => {
-        const p = e.features?.[0]?.properties as { name?: string } | undefined;
-        setHoverCountry(p?.name ?? null);
+      // one pointer handler: infrastructure first, then the detailed layers, then the country
+      const tip = (kind: DetailFeature["kind"], p: Record<string, unknown>) => {
+        const name = (p.n as string) || (p.a as string);
+        const cls = pretty(p.h ?? p.t);
+        switch (kind) {
+          case "facility":
+            return `${cls} · ${name ?? "unnamed"}`;
+          case "road":
+          case "street":
+            return name ? `${name} · ${cls}` : `${cls} road`;
+          case "river":
+            return name ? `${name} (river)` : "River";
+          case "stream":
+            return name ? `${name} (stream)` : "Stream";
+          default:
+            return name ?? cls;
+        }
+      };
+      const detailAt = (x: number, y: number, r: number) => {
+        const present = HIT_LAYERS.filter((id) => m.getLayer(id));
+        return present.length ? m.queryRenderedFeatures([[x - r, y - r], [x + r, y + r]], { layers: present })[0] : undefined;
+      };
+      m.on("mousemove", (e) => {
+        const infraHit = m.queryRenderedFeatures(e.point, { layers: ["infra-hit-pt", "infra-hit-line"] })[0];
+        const ip = infraHit?.properties as { callsign: string; name: string } | undefined;
+        const f = infraHit ? undefined : detailAt(e.point.x, e.point.y, 5);
+        if (ip) setHover({ x: e.point.x, y: e.point.y, text: `${ip.callsign} · ${ip.name}` });
+        else if (f) setHover({ x: e.point.x, y: e.point.y, text: tip(LAYER_KIND[f.layer.id], f.properties as Record<string, unknown>) });
+        else setHover(null);
+        m.getCanvas().style.cursor = ip || f ? "pointer" : "";
+        const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as { name?: string } | undefined;
+        setHoverCountry(c?.name ?? null);
       });
-      m.on("mouseleave", "world-fill", () => setHoverCountry(null));
+      m.getCanvas().addEventListener("mouseleave", () => {
+        setHover(null);
+        setHoverCountry(null);
+      });
       m.on("click", (e) => {
         const hits = m.queryRenderedFeatures(e.point, { layers: ["infra-hit-pt", "infra-hit-line"] });
         const id = (hits[0]?.properties as { id?: string } | undefined)?.id ?? null;
@@ -192,7 +229,17 @@ export function MapView({
           cb.current.onSelect(id);
           return;
         }
-        // no infrastructure under the cursor: open the country's relations
+        const f = detailAt(e.point.x, e.point.y, 6);
+        if (f) {
+          const g = f.geometry as { type: string; coordinates: [number, number] };
+          cb.current.onFeature({
+            kind: LAYER_KIND[f.layer.id],
+            props: f.properties as Record<string, unknown>,
+            lngLat: g.type === "Point" ? g.coordinates : [e.lngLat.lng, e.lngLat.lat],
+          });
+          return;
+        }
+        // nothing mapped under the cursor: open the country's relations
         const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as
           | { iso3?: string; un?: string | number | null; name?: string }
           | undefined;
@@ -278,7 +325,7 @@ export function MapView({
     const f = ["in", ["get", "layer"], ["literal", which]];
     m.setFilter("infra-pts", ["all", ["==", ["geometry-type"], "Point"], f] as never);
     m.setFilter("infra-hit-pt", ["all", ["==", ["geometry-type"], "Point"], f] as never);
-    m.setFilter("infra-hit-line", ["all", ["==", ["geometry-type"], "LineString"], f] as never);
+    m.setFilter("infra-hit-line", ["all", LINES, f] as never);
     for (const mk of cityMarkers.current) mk.getElement().style.display = layers.includes("weather") ? "" : "none";
   }, [layers, ready]);
 
@@ -287,7 +334,7 @@ export function MapView({
     const m = map.current;
     if (!m || !ready) return;
     const id = selected ?? "";
-    m.setFilter("infra-halo", ["all", ["==", ["geometry-type"], "LineString"], ["==", ["get", "id"], id]] as never);
+    m.setFilter("infra-halo", ["all", LINES, ["==", ["get", "id"], id]] as never);
     m.setFilter("infra-pts-halo", ["all", ["==", ["geometry-type"], "Point"], ["==", ["get", "id"], id]] as never);
     const f = infra.find((x) => x.properties.id === selected);
     if (!f) return;
@@ -297,7 +344,8 @@ export function MapView({
       if (!m.getBounds().contains(c)) m.easeTo({ center: c, duration: reduce ? 0 : 600 });
     } else {
       const b = new maplibregl.LngLatBounds();
-      f.geometry.coordinates.forEach((c) => b.extend(c));
+      const pts = f.geometry.type === "MultiLineString" ? f.geometry.coordinates.flat() : f.geometry.coordinates;
+      pts.forEach((c) => b.extend(c));
       const vb = m.getBounds();
       if (!(vb.contains(b.getSouthWest()) && vb.contains(b.getNorthEast()))) m.fitBounds(b, { padding: 50, duration: reduce ? 0 : 600, maxZoom: 6.5 });
     }
@@ -368,6 +416,20 @@ export function MapView({
 
   const toggle = (l: Layer) => onLayers(layers.includes(l) ? layers.filter((x) => x !== l) : ALL_LAYERS.filter((x) => x === l || layers.includes(x)));
 
+  // detailed OpenStreetMap layers: loaded on demand, drawn and labelled here
+  const detail = useDetailLayers({ map, ready, layers, facCats: fac, theme, lang, avoid });
+  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rail", "places", "facilities", "streets"];
+  const detailOn = DETAIL.filter((l) => layers.includes(l)).length;
+
+  const jump = (id: string) => {
+    const c = CITIES.find((x) => x.id === id);
+    const m = map.current;
+    if (!c || !m) return;
+    if (!layers.includes("streets")) toggle("streets");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    m.fitBounds([[c.bbox[0], c.bbox[1]], [c.bbox[2], c.bbox[3]]], { padding: 30, maxZoom: 14, duration: reduce ? 0 : 700 });
+  };
+
   return (
     <div className="panel relative flex flex-col h-full min-h-[380px]">
       <div className="panel-title flex-wrap">
@@ -387,6 +449,9 @@ export function MapView({
               {label}
             </button>
           ))}
+          <button type="button" className="ctl" aria-pressed={panelOpen} onClick={() => setPanelOpen((v) => !v)} aria-label="Detail layers: rivers, roads, towns, facilities, city streets">
+            Detail layers · {detailOn}
+          </button>
           <button type="button" className="ctl" onClick={() => map.current?.fitBounds(HOME, { duration: 500 })} aria-label="Reset map view">
             ⌂
           </button>
@@ -411,6 +476,21 @@ export function MapView({
             <span className="muted">Zoom out and click any country for its relations with Ethiopia</span>
           )}
         </div>
+        {panelOpen && (
+          <LayerPanel
+            layers={layers}
+            onToggle={toggle}
+            fac={fac}
+            onFac={onFac}
+            theme={theme}
+            lang={lang}
+            onLang={onLang}
+            loading={detail.loading}
+            errors={detail.errors}
+            onJump={jump}
+            onClose={() => setPanelOpen(false)}
+          />
+        )}
         <Legend />
       </div>
     </div>

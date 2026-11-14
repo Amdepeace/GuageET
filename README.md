@@ -12,6 +12,7 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 | Alternative values for GDP growth and inflation | IMF World Economic Outlook via the IMF SDMX API (`api.imf.org`) | Open, no key | Weekly job, Mondays |
 | Current weather and 7-day forecast, 8 cities | Open-Meteo | Open, no key, free for non-commercial use; called from the browser | Every 15 min |
 | Country boundaries, lakes, disputed areas | Natural Earth (public domain) | Bundled | Static |
+| **Detailed map**: rivers, streams, lakes, roads, rail, towns, facilities, city streets | OpenStreetMap via the HOT exports on HDX (ODbL) | Static files in `public/geo-detail/`, loaded on demand | Snapshot, rebuilt by hand |
 | Infrastructure projects | Curated, with source URLs per record | `data/curated/infrastructure.geojson` | Monthly review |
 | **v2** Commodity prices (coffee, gold, crude oil) | World Bank Pink Sheet (.xlsx) | Open, no key | Daily job (source monthly) |
 | **v2** Daily birr/USD (market) | open.er-api.com | Open, no key | Daily job |
@@ -74,6 +75,18 @@ npm run dev
 2. **Settings → Actions → General → Workflow permissions: Read and write.** The daily job commits refreshed `/data`.
 3. Run **Actions → Update data and deploy → Run workflow** once. The site is published at `https://<owner>.github.io/<repo>/`.
 
+## Detailed map
+
+Open the **Detail layers** panel on the map to switch on rivers and lakes, streams and tributaries, main and tertiary roads, rail and runways, towns and villages, facilities, and city streets. Everything is OpenStreetMap data, loaded only when a layer is switched on, so the page itself stays light.
+
+- **Rivers:** about 10,000 river segments, 18,000 streams, and lakes, reservoirs and wetlands (including the GERD reservoir), with river names along the line.
+- **Roads:** the national network from motorway to tertiary, with road names, plus full street networks (and street names) for 12 cities: Addis Ababa, Adama, Bishoftu, Dire Dawa, Harar, Jijiga, Mekelle, Dessie, Bahir Dar, Gondar, Hawassa and Jimma. Use **Jump to a city** or just zoom in.
+- **Facilities:** about 11,700 points (health, schools and universities, banks, fuel, markets, civic and safety, transport, industry), each category with its own icon shape, so colour is never the only cue.
+- **Names:** English or Amharic (አማርኛ), drawn as native map text using self-hosted Noto Sans glyphs.
+- **Rail:** the curated Addis–Djibouti and Awash–Weldiya lines use the real OpenStreetMap track. Other curated lines are hand-drawn and are marked `schematic`, so they fade out when you zoom to city scale.
+
+Licence and rebuild steps for the data are in [`public/geo-detail/README.md`](public/geo-detail/README.md). OpenStreetMap is volunteer-mapped: an empty area may simply be unmapped.
+
 ## World relations
 
 Zoom the map out and click any country to open its **relations with Ethiopia**:
@@ -97,4 +110,4 @@ Each humanitarian figure keeps its own reference period and original provider (I
 
 ## Still to come
 
-Not yet built: flights near Bole (OpenSky; skipped for now — needs an account), a rainfall/CHIRPS overlay, per-partner commodity breakdowns in the relations panel, and the v3 insight features (corridor dependency gauge, rainfall-to-economy link, electricity-exports tracker, debt view, official/parallel FX gap, weekly brief). The HUMANITARIAN desk arrives with the HDX layer.
+Not yet built: flights near Bole (OpenSky; needs an account), a rainfall/CHIRPS overlay, per-partner commodity breakdowns in the relations panel, and the remaining v3 insight features (corridor dependency gauge, rainfall-to-economy link, electricity-exports tracker, official/parallel FX gap, weekly brief). On the detailed map: power lines and substations and building footprints are not in the HOT exports used, so they would need another source; the curated power lines stay schematic.

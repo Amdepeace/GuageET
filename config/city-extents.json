@@ -1,0 +1,17 @@
+{
+  "_doc": "Built-up extents of the cities that get a full street network in the detailed map. bbox is [west, south, east, north]. The street files are built by scripts/build-detail-geo.py from OpenStreetMap data; the map lets you jump to each city.",
+  "cities": [
+    { "id": "ADD", "name": "Addis Ababa", "am": "አዲስ አበባ", "bbox": [38.62, 8.86, 38.95, 9.12] },
+    { "id": "ADA", "name": "Adama", "am": "አዳማ", "bbox": [39.2, 8.48, 39.34, 8.62] },
+    { "id": "BIS", "name": "Bishoftu", "am": "ደብረ ዘይት", "bbox": [38.98, 8.7, 39.08, 8.8] },
+    { "id": "DIR", "name": "Dire Dawa", "am": "ድሬ ዳዋ", "bbox": [41.78, 9.53, 41.95, 9.67] },
+    { "id": "HAR", "name": "Harar", "am": "ሐረር", "bbox": [42.08, 9.28, 42.18, 9.36] },
+    { "id": "JIJ", "name": "Jijiga", "am": "ጅጅጋ", "bbox": [42.74, 9.3, 42.86, 9.42] },
+    { "id": "MEK", "name": "Mekelle", "am": "መቐለ", "bbox": [39.4, 13.42, 39.58, 13.58] },
+    { "id": "DES", "name": "Dessie", "am": "ደሴ", "bbox": [39.58, 11.08, 39.7, 11.2] },
+    { "id": "BAH", "name": "Bahir Dar", "am": "ባሕር ዳር", "bbox": [37.3, 11.52, 37.48, 11.68] },
+    { "id": "GON", "name": "Gondar", "am": "ጎንደር", "bbox": [37.4, 12.55, 37.55, 12.66] },
+    { "id": "HAW", "name": "Hawassa", "am": "ሀዋሳ", "bbox": [38.4, 6.98, 38.55, 7.12] },
+    { "id": "JIM", "name": "Jimma", "am": "ጅማ", "bbox": [36.78, 7.62, 36.92, 7.74] }
+  ]
+}

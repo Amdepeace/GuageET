@@ -31,6 +31,9 @@ import { buildRelations } from "@/lib/relations";
 import { DebtPanel } from "./econ/DebtPanel";
 import { HumanitarianPanel } from "./humanitarian/HumanitarianPanel";
 import { AboutPanel } from "./shell/AboutPanel";
+import { FeatureDetail, featureTitle } from "./map/FeatureDetail";
+import type { DetailFeature } from "./map/detail";
+import type { FacCat } from "@/lib/urlState";
 
 // MapLibre is the heaviest dependency; load it after the vitals render.
 const MapView = dynamic(() => import("./map/MapView").then((m) => m.MapView), {
@@ -47,6 +50,7 @@ type Detail =
   | { kind: "country"; iso3: string; un: string | null; name: string }
   | { kind: "desk"; id: string }
   | { kind: "about" }
+  | { kind: "feature"; f: DetailFeature }
   | null;
 
 const DAY = 86_400_000;
@@ -317,6 +321,13 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </Drawer>
       );
     }
+    if (detail.kind === "feature") {
+      return (
+        <Drawer title={featureTitle(detail.f)} callsign="MAP" onClose={closeDetail}>
+          <FeatureDetail f={detail.f} />
+        </Drawer>
+      );
+    }
     if (detail.kind === "about") {
       return (
         <Drawer title="About this dashboard" callsign="INFO" onClose={closeDetail}>
@@ -385,6 +396,11 @@ export function Dashboard({ data }: { data: DashboardData }) {
               onCity={(id) => setDetail({ kind: "city", id })}
               onQuake={(id) => setDetail({ kind: "quake", id })}
               onCountry={(c) => setDetail({ kind: "country", iso3: c.iso3, un: c.un, name: c.name })}
+              onFeature={(f) => setDetail({ kind: "feature", f })}
+              lang={view.lang}
+              onLang={(lang) => setView((v) => ({ ...v, lang }))}
+              fac={view.fac}
+              onFac={(c: FacCat) => setView((v) => ({ ...v, fac: v.fac.includes(c) ? v.fac.filter((x) => x !== c) : [...v.fac, c] }))}
               relationsSel={detail?.kind === "country" ? detail.iso3 : null}
               initialView={{ zoom: view.zoom, center: view.center }}
               onViewChange={onViewChange}

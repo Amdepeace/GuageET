@@ -31,6 +31,9 @@ export function AboutPanel({ data, statusOf }: { data: DashboardData; statusOf: 
             <b>Sources can disagree.</b> The vital shown is the primary source (World Bank); other sources, such as the IMF, are listed in the detail card with their own period.
           </li>
           <li>
+            <b>The detailed map is volunteer-mapped.</b> Roads, rivers, towns and facilities come from OpenStreetMap (© OpenStreetMap contributors, ODbL). Coverage is uneven, so an empty area may simply be unmapped, and details can be out of date.
+          </li>
+          <li>
             <b>This dashboard reports; it does not forecast.</b> Map lines for infrastructure are schematic, not surveyed routes. Disputed areas are drawn dashed, never as settled borders.
           </li>
         </ul>
