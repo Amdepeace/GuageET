@@ -832,5 +832,29 @@
     "kind": "source_error",
     "source": "HDX (HAPI)",
     "message": "Fetch failed: No HDX_APP_IDENTIFIER configured"
+  },
+  {
+    "at": "2026-11-14T11:17:10.671Z",
+    "kind": "source_recovered",
+    "source": "World Bank WDI",
+    "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-14T11:17:58.758Z",
+    "kind": "source_error",
+    "source": "IMF PortWatch",
+    "message": "Fetch failed: no rows for chokepoint1"
+  },
+  {
+    "at": "2026-11-14T11:18:00.003Z",
+    "kind": "source_recovered",
+    "source": "World Bank IDS",
+    "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-14T11:18:02.440Z",
+    "kind": "source_recovered",
+    "source": "IMF WEO",
+    "message": "Source recovered"
   }
 ]

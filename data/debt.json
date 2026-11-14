@@ -1,7 +1,7 @@
 {
   "source": "World Bank IDS",
   "sourceUrl": "https://www.worldbank.org/en/programs/debt-statistics/ids",
-  "fetchedAt": "2026-11-14T11:00:51.634Z",
+  "fetchedAt": "2026-11-14T11:17:59.295Z",
   "composition": [
     {
       "id": "multilateral",

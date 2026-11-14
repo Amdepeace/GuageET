@@ -1,7 +1,7 @@
 {
   "source": "HDX (HAPI)",
   "sourceUrl": "https://data.humdata.org/",
-  "fetchedAt": "2026-11-14T10:31:32.529Z",
+  "fetchedAt": "2026-11-14T11:18:00.267Z",
   "available": false,
   "note": "Set HDX_APP_IDENTIFIER (a free HDX app identifier) as a GitHub Secret to populate the humanitarian panel.",
   "peopleInNeed": null,

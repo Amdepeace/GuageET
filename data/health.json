@@ -2,71 +2,78 @@
   "World Bank WDI": {
     "source": "World Bank WDI",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-14T10:28:16.839Z",
-    "lastSuccessAt": "2026-11-13T11:04:32.238Z",
-    "lastError": "BX.TRF.PWKR.CD.DT: The operation was aborted due to timeout; BX.KLT.DINV.CD.WD: The operation was aborted due to timeout"
+    "lastAttemptAt": "2026-11-14T11:17:10.671Z",
+    "lastSuccessAt": "2026-11-14T11:17:10.671Z",
+    "lastError": null
   },
   "IMF WEO": {
     "source": "IMF WEO",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-11T22:37:34.035Z",
-    "lastSuccessAt": null,
-    "lastError": "NGDP_RPCH: HTTP 403 for https://www.imf.org/external/datamapper/api/v1/NGDP_RPCH/ETH/KEN/DJI/EGY/SDN/TZA; PCPIPCH: HTTP 403 for https://www.imf.org/external/datamapper/api/v1/PCPIPCH/ETH/KEN/DJI/EGY/SDN/TZA"
+    "lastAttemptAt": "2026-11-14T11:18:02.440Z",
+    "lastSuccessAt": "2026-11-14T11:18:02.440Z",
+    "lastError": null
   },
   "World Bank (world indicators)": {
     "source": "World Bank (world indicators)",
     "expectedRefreshDays": 30,
-    "lastAttemptAt": "2026-11-14T10:28:18.904Z",
-    "lastSuccessAt": "2026-11-14T10:28:18.904Z",
+    "lastAttemptAt": "2026-11-14T11:17:12.498Z",
+    "lastSuccessAt": "2026-11-14T11:17:12.498Z",
     "lastError": null
   },
   "World Bank Pink Sheet": {
     "source": "World Bank Pink Sheet",
     "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-14T10:28:20.093Z",
-    "lastSuccessAt": "2026-11-14T10:28:20.093Z",
+    "lastAttemptAt": "2026-11-14T11:17:13.530Z",
+    "lastSuccessAt": "2026-11-14T11:17:13.530Z",
     "lastError": null
   },
   "open.er-api.com": {
     "source": "open.er-api.com",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-14T10:28:20.555Z",
-    "lastSuccessAt": "2026-11-14T10:28:20.555Z",
+    "lastAttemptAt": "2026-11-14T11:17:13.967Z",
+    "lastSuccessAt": "2026-11-14T11:17:13.967Z",
     "lastError": null
   },
   "GDELT": {
     "source": "GDELT",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-14T10:29:49.246Z",
+    "lastAttemptAt": "2026-11-14T11:17:56.398Z",
     "lastSuccessAt": null,
     "lastError": "429 rate limited"
   },
   "IMF PortWatch": {
     "source": "IMF PortWatch",
     "expectedRefreshDays": 2,
-    "lastAttemptAt": "2026-11-14T10:29:50.886Z",
+    "lastAttemptAt": "2026-11-14T11:17:58.758Z",
     "lastSuccessAt": "2026-11-14T10:29:50.886Z",
-    "lastError": null
+    "lastError": "no rows for chokepoint1"
   },
   "UN Comtrade": {
     "source": "UN Comtrade",
     "expectedRefreshDays": 40,
-    "lastAttemptAt": "2026-11-14T10:29:51.215Z",
+    "lastAttemptAt": "2026-11-14T11:17:59.017Z",
     "lastSuccessAt": null,
     "lastError": "No COMTRADE_PRIMARY_KEY configured"
   },
   "World Bank IDS": {
     "source": "World Bank IDS",
     "expectedRefreshDays": 400,
-    "lastAttemptAt": "2026-11-14T10:31:32.202Z",
-    "lastSuccessAt": null,
-    "lastError": "The operation was aborted due to timeout"
+    "lastAttemptAt": "2026-11-14T11:18:00.003Z",
+    "lastSuccessAt": "2026-11-14T11:18:00.003Z",
+    "lastError": null
   },
   "HDX (HAPI)": {
     "source": "HDX (HAPI)",
     "expectedRefreshDays": 30,
-    "lastAttemptAt": "2026-11-14T10:31:32.529Z",
+    "lastAttemptAt": "2026-11-14T11:18:00.267Z",
     "lastSuccessAt": null,
     "lastError": "No HDX_APP_IDENTIFIER configured"
+  },
+  "News RSS": {
+    "source": "News RSS",
+    "expectedRefreshDays": 1,
+    "lastAttemptAt": "2026-11-14T11:17:57.872Z",
+    "lastSuccessAt": "2026-11-14T11:17:57.872Z",
+    "lastError": null
   }
 }
