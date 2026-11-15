@@ -1,0 +1,1642 @@
+{
+  "source": "Open-Meteo Historical Weather (ERA5)",
+  "sourceUrl": "https://open-meteo.com/en/docs/historical-weather-api",
+  "fetchedAt": "2026-11-15T21:01:46.633Z",
+  "baseline": "1991–2020",
+  "throughDate": "2026-11-08",
+  "note": "ERA5 reanalysis (about 10 km grid), not station measurements. Months marked partial are incomplete and not compared with the normal.",
+  "cities": [
+    {
+      "id": "ADD",
+      "name": "Addis Ababa",
+      "normals": {
+        "tempC": [
+          15,
+          16.1,
+          16.9,
+          16.8,
+          16.6,
+          15.3,
+          14.4,
+          14.4,
+          14.4,
+          14.4,
+          14.5,
+          14.3
+        ],
+        "precipMm": [
+          16,
+          18,
+          65,
+          133,
+          159,
+          254,
+          369,
+          395,
+          270,
+          46,
+          10,
+          6
+        ]
+      },
+      "recent": [
+        {
+          "month": "2024-12",
+          "tempC": 13.9,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-01",
+          "tempC": 14.7,
+          "precipMm": 1,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-02",
+          "tempC": 16.6,
+          "precipMm": 1,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2025-03",
+          "tempC": 16.5,
+          "precipMm": 100,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-04",
+          "tempC": 16.8,
+          "precipMm": 42,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-05",
+          "tempC": 16.6,
+          "precipMm": 51,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-06",
+          "tempC": 16.3,
+          "precipMm": 52,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-07",
+          "tempC": 14.1,
+          "precipMm": 276,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-08",
+          "tempC": 13.7,
+          "precipMm": 312,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-09",
+          "tempC": 13.6,
+          "precipMm": 256,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-10",
+          "tempC": 14.7,
+          "precipMm": 25,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-11",
+          "tempC": 14.8,
+          "precipMm": 0,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-12",
+          "tempC": 15,
+          "precipMm": 7,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-01",
+          "tempC": 14.8,
+          "precipMm": 1,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-02",
+          "tempC": 16.7,
+          "precipMm": 2,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2026-03",
+          "tempC": 15.4,
+          "precipMm": 140,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-04",
+          "tempC": 15.6,
+          "precipMm": 65,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-05",
+          "tempC": 17.9,
+          "precipMm": 71,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-06",
+          "tempC": 17,
+          "precipMm": 49,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-07",
+          "tempC": 15.2,
+          "precipMm": 164,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-08",
+          "tempC": 14.4,
+          "precipMm": 297,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-09",
+          "tempC": 14.8,
+          "precipMm": 148,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-10",
+          "tempC": 16,
+          "precipMm": 32,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-11",
+          "tempC": 15.5,
+          "precipMm": 1,
+          "days": 8,
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "DIR",
+      "name": "Dire Dawa",
+      "normals": {
+        "tempC": [
+          20.9,
+          22.2,
+          23.8,
+          24.5,
+          25.3,
+          25.8,
+          25,
+          24.9,
+          25.2,
+          23.8,
+          21.9,
+          20.7
+        ],
+        "precipMm": [
+          25,
+          30,
+          91,
+          138,
+          85,
+          25,
+          84,
+          115,
+          95,
+          69,
+          34,
+          20
+        ]
+      },
+      "recent": [
+        {
+          "month": "2024-12",
+          "tempC": 21.6,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-01",
+          "tempC": 21.8,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-02",
+          "tempC": 24,
+          "precipMm": 0,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2025-03",
+          "tempC": 25.1,
+          "precipMm": 34,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-04",
+          "tempC": 26.9,
+          "precipMm": 25,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-05",
+          "tempC": 27.1,
+          "precipMm": 50,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-06",
+          "tempC": 28,
+          "precipMm": 0,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-07",
+          "tempC": 26.9,
+          "precipMm": 32,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-08",
+          "tempC": 24.8,
+          "precipMm": 149,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-09",
+          "tempC": 24.9,
+          "precipMm": 78,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-10",
+          "tempC": 25.4,
+          "precipMm": 3,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-11",
+          "tempC": 23.5,
+          "precipMm": 0,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-12",
+          "tempC": 22.3,
+          "precipMm": 22,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-01",
+          "tempC": 21.8,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-02",
+          "tempC": 23.9,
+          "precipMm": 3,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2026-03",
+          "tempC": 23.9,
+          "precipMm": 141,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-04",
+          "tempC": 24.9,
+          "precipMm": 36,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-05",
+          "tempC": 27.1,
+          "precipMm": 21,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-06",
+          "tempC": 27.5,
+          "precipMm": 2,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-07",
+          "tempC": 27.4,
+          "precipMm": 23,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-08",
+          "tempC": 26.8,
+          "precipMm": 44,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-09",
+          "tempC": 26.6,
+          "precipMm": 54,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-10",
+          "tempC": 25.8,
+          "precipMm": 24,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-11",
+          "tempC": 24.8,
+          "precipMm": 6,
+          "days": 8,
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "MEK",
+      "name": "Mekelle",
+      "normals": {
+        "tempC": [
+          16,
+          17.1,
+          18.5,
+          19.6,
+          20.9,
+          20.5,
+          17.9,
+          17.7,
+          18.5,
+          18,
+          16.6,
+          15.7
+        ],
+        "precipMm": [
+          22,
+          19,
+          56,
+          56,
+          24,
+          60,
+          222,
+          278,
+          63,
+          10,
+          12,
+          10
+        ]
+      },
+      "recent": [
+        {
+          "month": "2024-12",
+          "tempC": 15.9,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-01",
+          "tempC": 16.1,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-02",
+          "tempC": 17.9,
+          "precipMm": 7,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2025-03",
+          "tempC": 19.3,
+          "precipMm": 21,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-04",
+          "tempC": 20.6,
+          "precipMm": 15,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-05",
+          "tempC": 21.5,
+          "precipMm": 12,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-06",
+          "tempC": 22.1,
+          "precipMm": 3,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-07",
+          "tempC": 18,
+          "precipMm": 189,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-08",
+          "tempC": 16.6,
+          "precipMm": 272,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-09",
+          "tempC": 17.5,
+          "precipMm": 65,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-10",
+          "tempC": 17.5,
+          "precipMm": 13,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-11",
+          "tempC": 17.1,
+          "precipMm": 0,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-12",
+          "tempC": 16.7,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-01",
+          "tempC": 16.2,
+          "precipMm": 1,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-02",
+          "tempC": 18,
+          "precipMm": 2,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2026-03",
+          "tempC": 18.7,
+          "precipMm": 40,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-04",
+          "tempC": 19.6,
+          "precipMm": 102,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-05",
+          "tempC": 21,
+          "precipMm": 8,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-06",
+          "tempC": 22.5,
+          "precipMm": 1,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-07",
+          "tempC": 20.2,
+          "precipMm": 111,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-08",
+          "tempC": 18.2,
+          "precipMm": 175,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-09",
+          "tempC": 19.8,
+          "precipMm": 23,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-10",
+          "tempC": 19.2,
+          "precipMm": 29,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-11",
+          "tempC": 18.8,
+          "precipMm": 0,
+          "days": 8,
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "BAH",
+      "name": "Bahir Dar",
+      "normals": {
+        "tempC": [
+          20.1,
+          21.6,
+          22.6,
+          23,
+          21.8,
+          19.4,
+          17.9,
+          17.9,
+          18.5,
+          19.2,
+          19.4,
+          19.6
+        ],
+        "precipMm": [
+          3,
+          4,
+          15,
+          25,
+          94,
+          266,
+          493,
+          495,
+          232,
+          57,
+          14,
+          4
+        ]
+      },
+      "recent": [
+        {
+          "month": "2024-12",
+          "tempC": 18.5,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-01",
+          "tempC": 19.7,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-02",
+          "tempC": 21.7,
+          "precipMm": 8,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2025-03",
+          "tempC": 22.4,
+          "precipMm": 2,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-04",
+          "tempC": 22.6,
+          "precipMm": 25,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-05",
+          "tempC": 22.4,
+          "precipMm": 32,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-06",
+          "tempC": 20.5,
+          "precipMm": 79,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-07",
+          "tempC": 18,
+          "precipMm": 343,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-08",
+          "tempC": 17.2,
+          "precipMm": 346,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-09",
+          "tempC": 17.8,
+          "precipMm": 177,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-10",
+          "tempC": 18.2,
+          "precipMm": 84,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-11",
+          "tempC": 18.8,
+          "precipMm": 2,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-12",
+          "tempC": 19.5,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-01",
+          "tempC": 20.5,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-02",
+          "tempC": 22,
+          "precipMm": 2,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2026-03",
+          "tempC": 21.9,
+          "precipMm": 21,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-04",
+          "tempC": 22.4,
+          "precipMm": 67,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-05",
+          "tempC": 22.4,
+          "precipMm": 70,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-06",
+          "tempC": 21.1,
+          "precipMm": 53,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-07",
+          "tempC": 19,
+          "precipMm": 197,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-08",
+          "tempC": 18.3,
+          "precipMm": 281,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-09",
+          "tempC": 18.9,
+          "precipMm": 129,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-10",
+          "tempC": 19.9,
+          "precipMm": 50,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-11",
+          "tempC": 20.3,
+          "precipMm": 0,
+          "days": 8,
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "HAW",
+      "name": "Hawassa",
+      "normals": {
+        "tempC": [
+          19.6,
+          20.7,
+          21.5,
+          20.7,
+          19.4,
+          18.4,
+          17.8,
+          18,
+          18.4,
+          18.7,
+          18.8,
+          18.8
+        ],
+        "precipMm": [
+          17,
+          19,
+          70,
+          148,
+          173,
+          74,
+          72,
+          88,
+          168,
+          140,
+          37,
+          11
+        ]
+      },
+      "recent": [
+        {
+          "month": "2024-12",
+          "tempC": 19.1,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-01",
+          "tempC": 20.1,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-02",
+          "tempC": 22,
+          "precipMm": 0,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2025-03",
+          "tempC": 21.6,
+          "precipMm": 94,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-04",
+          "tempC": 21,
+          "precipMm": 64,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-05",
+          "tempC": 20.3,
+          "precipMm": 115,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-06",
+          "tempC": 19.7,
+          "precipMm": 106,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-07",
+          "tempC": 19,
+          "precipMm": 152,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-08",
+          "tempC": 18.7,
+          "precipMm": 197,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-09",
+          "tempC": 19.1,
+          "precipMm": 155,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-10",
+          "tempC": 19.2,
+          "precipMm": 68,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-11",
+          "tempC": 20,
+          "precipMm": 4,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-12",
+          "tempC": 20.4,
+          "precipMm": 12,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-01",
+          "tempC": 20.6,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-02",
+          "tempC": 22.4,
+          "precipMm": 4,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2026-03",
+          "tempC": 20.6,
+          "precipMm": 176,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-04",
+          "tempC": 20.6,
+          "precipMm": 119,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-05",
+          "tempC": 20.6,
+          "precipMm": 105,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-06",
+          "tempC": 20,
+          "precipMm": 73,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-07",
+          "tempC": 20.2,
+          "precipMm": 117,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-08",
+          "tempC": 20,
+          "precipMm": 94,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-09",
+          "tempC": 20.1,
+          "precipMm": 109,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-10",
+          "tempC": 20.5,
+          "precipMm": 85,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-11",
+          "tempC": 20.6,
+          "precipMm": 3,
+          "days": 8,
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "JIM",
+      "name": "Jimma",
+      "normals": {
+        "tempC": [
+          19.7,
+          20.7,
+          20.8,
+          20,
+          18.9,
+          18,
+          17.5,
+          17.6,
+          17.8,
+          18.2,
+          18.6,
+          19
+        ],
+        "precipMm": [
+          25,
+          30,
+          72,
+          140,
+          213,
+          174,
+          185,
+          193,
+          235,
+          136,
+          51,
+          22
+        ]
+      },
+      "recent": [
+        {
+          "month": "2024-12",
+          "tempC": 18,
+          "precipMm": 2,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-01",
+          "tempC": 19.3,
+          "precipMm": 13,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-02",
+          "tempC": 21.1,
+          "precipMm": 1,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2025-03",
+          "tempC": 20.4,
+          "precipMm": 117,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-04",
+          "tempC": 19.9,
+          "precipMm": 171,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-05",
+          "tempC": 19,
+          "precipMm": 202,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-06",
+          "tempC": 18.1,
+          "precipMm": 228,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-07",
+          "tempC": 17.4,
+          "precipMm": 205,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-08",
+          "tempC": 17.1,
+          "precipMm": 202,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-09",
+          "tempC": 17.6,
+          "precipMm": 202,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-10",
+          "tempC": 17.8,
+          "precipMm": 138,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-11",
+          "tempC": 18.5,
+          "precipMm": 7,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-12",
+          "tempC": 19.1,
+          "precipMm": 72,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-01",
+          "tempC": 19.8,
+          "precipMm": 13,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-02",
+          "tempC": 20.1,
+          "precipMm": 24,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2026-03",
+          "tempC": 19.6,
+          "precipMm": 240,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-04",
+          "tempC": 19.6,
+          "precipMm": 277,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-05",
+          "tempC": 19.3,
+          "precipMm": 222,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-06",
+          "tempC": 18.6,
+          "precipMm": 128,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-07",
+          "tempC": 18.2,
+          "precipMm": 217,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-08",
+          "tempC": 18,
+          "precipMm": 190,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-09",
+          "tempC": 18.5,
+          "precipMm": 86,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-10",
+          "tempC": 19.2,
+          "precipMm": 113,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-11",
+          "tempC": 19.3,
+          "precipMm": 12,
+          "days": 8,
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "GON",
+      "name": "Gondar",
+      "normals": {
+        "tempC": [
+          17.7,
+          19.4,
+          20.5,
+          21.1,
+          20.3,
+          18,
+          16.4,
+          16.4,
+          16.8,
+          17.1,
+          17.2,
+          17.3
+        ],
+        "precipMm": [
+          4,
+          5,
+          23,
+          39,
+          108,
+          264,
+          443,
+          523,
+          402,
+          86,
+          15,
+          4
+        ]
+      },
+      "recent": [
+        {
+          "month": "2024-12",
+          "tempC": 16.8,
+          "precipMm": 1,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-01",
+          "tempC": 17.8,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-02",
+          "tempC": 19.7,
+          "precipMm": 9,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2025-03",
+          "tempC": 20.2,
+          "precipMm": 5,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-04",
+          "tempC": 19.7,
+          "precipMm": 63,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-05",
+          "tempC": 19.7,
+          "precipMm": 65,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-06",
+          "tempC": 18.9,
+          "precipMm": 60,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-07",
+          "tempC": 15.9,
+          "precipMm": 261,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-08",
+          "tempC": 15.2,
+          "precipMm": 330,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-09",
+          "tempC": 16,
+          "precipMm": 206,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-10",
+          "tempC": 16.3,
+          "precipMm": 87,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-11",
+          "tempC": 17.1,
+          "precipMm": 7,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-12",
+          "tempC": 17.3,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-01",
+          "tempC": 18.3,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-02",
+          "tempC": 19.6,
+          "precipMm": 3,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2026-03",
+          "tempC": 19.1,
+          "precipMm": 17,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-04",
+          "tempC": 20,
+          "precipMm": 71,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-05",
+          "tempC": 19.5,
+          "precipMm": 74,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-06",
+          "tempC": 19.2,
+          "precipMm": 76,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-07",
+          "tempC": 16.9,
+          "precipMm": 290,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-08",
+          "tempC": 16.6,
+          "precipMm": 284,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-09",
+          "tempC": 17.6,
+          "precipMm": 114,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-10",
+          "tempC": 18.2,
+          "precipMm": 61,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-11",
+          "tempC": 18.2,
+          "precipMm": 1,
+          "days": 8,
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "JIJ",
+      "name": "Jijiga",
+      "normals": {
+        "tempC": [
+          18.5,
+          20,
+          21.2,
+          20.8,
+          20.2,
+          19.5,
+          18.9,
+          19.3,
+          20.1,
+          19.5,
+          18.6,
+          17.9
+        ],
+        "precipMm": [
+          5,
+          7,
+          26,
+          72,
+          76,
+          24,
+          28,
+          30,
+          32,
+          46,
+          14,
+          7
+        ]
+      },
+      "recent": [
+        {
+          "month": "2024-12",
+          "tempC": 17.1,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-01",
+          "tempC": 17.7,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-02",
+          "tempC": 20.1,
+          "precipMm": 0,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2025-03",
+          "tempC": 21.2,
+          "precipMm": 37,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-04",
+          "tempC": 21.3,
+          "precipMm": 47,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-05",
+          "tempC": 21,
+          "precipMm": 46,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-06",
+          "tempC": 21.1,
+          "precipMm": 9,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-07",
+          "tempC": 20.1,
+          "precipMm": 12,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-08",
+          "tempC": 19.5,
+          "precipMm": 36,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-09",
+          "tempC": 19.9,
+          "precipMm": 70,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-10",
+          "tempC": 19.6,
+          "precipMm": 22,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2025-11",
+          "tempC": 18.8,
+          "precipMm": 0,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2025-12",
+          "tempC": 19.2,
+          "precipMm": 3,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-01",
+          "tempC": 18,
+          "precipMm": 0,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-02",
+          "tempC": 19.8,
+          "precipMm": 0,
+          "days": 28,
+          "complete": true
+        },
+        {
+          "month": "2026-03",
+          "tempC": 20.5,
+          "precipMm": 61,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-04",
+          "tempC": 20.4,
+          "precipMm": 29,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-05",
+          "tempC": 21.3,
+          "precipMm": 58,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-06",
+          "tempC": 20.5,
+          "precipMm": 21,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-07",
+          "tempC": 21,
+          "precipMm": 15,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-08",
+          "tempC": 21.5,
+          "precipMm": 13,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-09",
+          "tempC": 21.3,
+          "precipMm": 30,
+          "days": 30,
+          "complete": true
+        },
+        {
+          "month": "2026-10",
+          "tempC": 20.3,
+          "precipMm": 41,
+          "days": 31,
+          "complete": true
+        },
+        {
+          "month": "2026-11",
+          "tempC": 19.2,
+          "precipMm": 8,
+          "days": 8,
+          "complete": false
+        }
+      ]
+    }
+  ]
+}

@@ -28,6 +28,10 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 
 Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle "Quakes"), the **Red Sea risk monitor**, a **headlines** feed, an in-page **alerts banner** (FX moves, Red Sea drops, big quakes), **event markers** on the vital charts (birr float, GERD milestones), an **Ethiopian-calendar** axis toggle (E.C./G.C.) on those charts, and a **Trade panel**.
 
+### Climate vs normal
+
+The **CLIMATE** panel (`scripts/fetch-climate.ts`) compares each city's last 12 complete months of rainfall and temperature with its 1991–2020 normal, from the Open-Meteo Historical Weather API (ERA5 reanalysis, free, no key). It is reanalysis on a ~10 km grid, not station data. The idea comes from [pooja97/ethio_hydro](https://github.com/pooja97/ethio_hydro); none of its code or data is used.
+
 ### RSDP road programme (World Bank study data)
 
 The **ROADS · RSDP** panel and the map's **RSDP road upgrades** layer come from the replication package [worldbank/ethiopia-rsdp-ie](https://github.com/worldbank/ethiopia-rsdp-ie) (road network from the Ethiopian Roads Authority, 1996–2016). `scripts/build-rsdp.py` derives a simplified line layer (`public/geo-detail/rsdp-roads.json`, links assigned to RSDP phases I–IV) and summary totals (`data/curated/rsdp.json`). It is historical, not current road status. The repository states no data licence, so only simplified geometry and totals are shipped, with attribution; remove them if the owners object.

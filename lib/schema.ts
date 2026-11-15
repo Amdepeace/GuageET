@@ -256,3 +256,19 @@ export type RsdpFile = {
   phases: { phase: number; startYear: number; links: number; km: number; pavedKm1996: number; pavedKm2014: number }[];
   regions: { region: string; km2014: number; pavedKm1996: number; pavedKm2014: number }[];
 };
+
+export type ClimateCity = {
+  id: string;
+  name: string;
+  normals: { tempC: number[]; precipMm: number[] };
+  recent: { month: string; tempC: number | null; precipMm: number | null; days: number; complete: boolean }[];
+};
+export type ClimateFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  baseline: string;
+  throughDate: string;
+  note: string;
+  cities: ClimateCity[];
+};

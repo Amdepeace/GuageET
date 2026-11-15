@@ -136,6 +136,14 @@
       "access": "Public GitHub repository; no data licence stated",
       "url": "https://github.com/worldbank/ethiopia-rsdp-ie",
       "statusKey": null
+    },
+    {
+      "name": "Open-Meteo Historical Weather (ERA5)",
+      "provides": "Monthly rainfall and temperature against the 1991–2020 normal for 8 cities",
+      "cadence": "Daily job; reanalysis lags about a week",
+      "access": "Free, no key; reanalysis grid, not station data",
+      "url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "statusKey": "Open-Meteo Historical Weather (ERA5)"
     }
   ]
 }
