@@ -12,6 +12,8 @@ import type { Quake } from "@/lib/usgs";
 import { GLYPHS_URL, HIT_LAYERS, LAYER_KIND, pretty, type DetailFeature } from "./detail";
 import { LayerPanel } from "./LayerPanel";
 import { CITIES, useDetailLayers } from "./useDetailLayers";
+import { useDeckOverlay, type DeckPick } from "./useDeckOverlay";
+import type { CorridorsFile, TradeFile } from "@/lib/schema";
 
 const HOME: LngLatBoundsLike = [
   [32.5, -6],
@@ -65,6 +67,9 @@ export function MapView({
   onFac,
   lang,
   onLang,
+  corridors,
+  trade,
+  onCorridor,
   relationsSel,
   initialView,
   onViewChange,
@@ -87,6 +92,9 @@ export function MapView({
   onFac: (c: FacCat) => void;
   lang: Lang;
   onLang: (l: Lang) => void;
+  corridors: CorridorsFile;
+  trade: TradeFile;
+  onCorridor: (id: string) => void;
   relationsSel: string | null;
   initialView: { zoom: number | null; center: [number, number] | null };
   onViewChange: (zoom: number, center: [number, number]) => void;
@@ -101,8 +109,17 @@ export function MapView({
   const [hover, setHover] = useState<{ x: number; y: number; text: string } | null>(null);
   const [hoverCountry, setHoverCountry] = useState<string | null>(null);
   const [panelOpen, setPanelOpen] = useState(false);
-  const cb = useRef({ onSelect, onViewChange, onCity, onQuake, onCountry, onFeature });
-  cb.current = { onSelect, onViewChange, onCity, onQuake, onCountry, onFeature };
+  const cb = useRef<{
+    onSelect: typeof onSelect;
+    onViewChange: typeof onViewChange;
+    onCity: typeof onCity;
+    onQuake: typeof onQuake;
+    onCountry: typeof onCountry;
+    onFeature: typeof onFeature;
+    onCorridor: typeof onCorridor;
+    pick: (x: number, y: number) => DeckPick | null;
+  }>({ onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, pick: () => null });
+  cb.current = { ...cb.current, onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor };
   const avoid = useMemo(() => cities.map((c) => [c.lon, c.lat] as [number, number]), [cities]);
 
   // init once
@@ -208,13 +225,15 @@ export function MapView({
         return present.length ? m.queryRenderedFeatures([[x - r, y - r], [x + r, y + r]], { layers: present })[0] : undefined;
       };
       m.on("mousemove", (e) => {
-        const infraHit = m.queryRenderedFeatures(e.point, { layers: ["infra-hit-pt", "infra-hit-line"] })[0];
+        const dp = cb.current.pick(e.point.x, e.point.y); // deck.gl arcs sit on top, so they win
+        const infraHit = dp ? undefined : m.queryRenderedFeatures(e.point, { layers: ["infra-hit-pt", "infra-hit-line"] })[0];
         const ip = infraHit?.properties as { callsign: string; name: string } | undefined;
-        const f = infraHit ? undefined : detailAt(e.point.x, e.point.y, 5);
-        if (ip) setHover({ x: e.point.x, y: e.point.y, text: `${ip.callsign} · ${ip.name}` });
+        const f = dp || infraHit ? undefined : detailAt(e.point.x, e.point.y, 5);
+        if (dp) setHover({ x: e.point.x, y: e.point.y, text: dp.text });
+        else if (ip) setHover({ x: e.point.x, y: e.point.y, text: `${ip.callsign} · ${ip.name}` });
         else if (f) setHover({ x: e.point.x, y: e.point.y, text: tip(LAYER_KIND[f.layer.id], f.properties as Record<string, unknown>) });
         else setHover(null);
-        m.getCanvas().style.cursor = ip || f ? "pointer" : "";
+        m.getCanvas().style.cursor = dp || ip || f ? "pointer" : "";
         const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as { name?: string } | undefined;
         setHoverCountry(c?.name ?? null);
       });
@@ -223,6 +242,12 @@ export function MapView({
         setHoverCountry(null);
       });
       m.on("click", (e) => {
+        const dp = cb.current.pick(e.point.x, e.point.y);
+        if (dp) {
+          if (dp.kind === "corridor") cb.current.onCorridor(dp.id);
+          else cb.current.onCountry({ iso3: dp.iso3, un: dp.id, name: dp.name });
+          return;
+        }
         const hits = m.queryRenderedFeatures(e.point, { layers: ["infra-hit-pt", "infra-hit-line"] });
         const id = (hits[0]?.properties as { id?: string } | undefined)?.id ?? null;
         if (id) {
@@ -418,7 +443,9 @@ export function MapView({
 
   // detailed OpenStreetMap layers: loaded on demand, drawn and labelled here
   const detail = useDetailLayers({ map, ready, layers, facCats: fac, theme, lang, avoid });
-  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rail", "places", "facilities", "streets"];
+  const deck = useDeckOverlay({ map, ready, layers, fac, theme, corridors, trade });
+  cb.current.pick = deck.pick;
+  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rail", "places", "facilities", "streets", "flows", "density"];
   const detailOn = DETAIL.filter((l) => layers.includes(l)).length;
 
   const jump = (id: string) => {
@@ -487,6 +514,7 @@ export function MapView({
             onLang={onLang}
             loading={detail.loading}
             errors={detail.errors}
+            deck={{ loading: deck.loading, error: deck.error, partnerArcs: deck.partnerArcs, tradeReady: trade.available }}
             onJump={jump}
             onClose={() => setPanelOpen(false)}
           />

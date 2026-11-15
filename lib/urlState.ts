@@ -13,7 +13,10 @@ export type Layer =
   | "rail"
   | "places"
   | "facilities"
-  | "streets";
+  | "streets"
+  // deck.gl visual layers (loaded on demand)
+  | "flows"
+  | "density";
 
 export const ALL_LAYERS: Layer[] = [
   "existing",
@@ -28,6 +31,8 @@ export const ALL_LAYERS: Layer[] = [
   "places",
   "facilities",
   "streets",
+  "flows",
+  "density",
 ];
 
 /** On by default: the infrastructure story plus a calm detailed base. The

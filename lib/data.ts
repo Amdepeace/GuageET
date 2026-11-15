@@ -26,6 +26,7 @@ import blocsJson from "@/config/blocs.json";
 import relationsJson from "@/data/curated/relations.json";
 import debtJson from "@/data/debt.json";
 import imfProgrammeJson from "@/data/curated/imf-programme.json";
+import corridorsJson from "@/data/curated/corridors.json";
 import humanitarianJson from "@/data/humanitarian.json";
 import type {
   ChangeEntry,
@@ -46,6 +47,7 @@ import type {
   DebtFile,
   ImfProgramme,
   HumanitarianFile,
+  CorridorsFile,
 } from "./schema";
 
 export type City = { id: string; name: string; am: string; lat: number; lon: number; labelAnchor?: "top" | "bottom" };
@@ -101,6 +103,7 @@ export type DashboardData = {
   debt: DebtFile;
   imfProgramme: ImfProgramme;
   humanitarian: HumanitarianFile;
+  corridors: CorridorsFile;
 };
 
 export function loadData(): DashboardData {
@@ -128,5 +131,6 @@ export function loadData(): DashboardData {
     debt: debtJson as DebtFile,
     imfProgramme: imfProgrammeJson as ImfProgramme,
     humanitarian: humanitarianJson as HumanitarianFile,
+    corridors: corridorsJson as unknown as CorridorsFile,
   };
 }

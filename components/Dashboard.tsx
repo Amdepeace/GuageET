@@ -32,6 +32,7 @@ import { DebtPanel } from "./econ/DebtPanel";
 import { HumanitarianPanel } from "./humanitarian/HumanitarianPanel";
 import { AboutPanel } from "./shell/AboutPanel";
 import { FeatureDetail, featureTitle } from "./map/FeatureDetail";
+import { CorridorDetail } from "./map/CorridorDetail";
 import type { DetailFeature } from "./map/detail";
 import type { FacCat } from "@/lib/urlState";
 
@@ -51,6 +52,7 @@ type Detail =
   | { kind: "desk"; id: string }
   | { kind: "about" }
   | { kind: "feature"; f: DetailFeature }
+  | { kind: "corridor"; id: string }
   | null;
 
 const DAY = 86_400_000;
@@ -321,6 +323,15 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </Drawer>
       );
     }
+    if (detail.kind === "corridor") {
+      const c = data.corridors.corridors.find((x) => x.id === detail.id);
+      if (!c) return null;
+      return (
+        <Drawer title={c.name} callsign="CORRIDOR" onClose={closeDetail}>
+          <CorridorDetail c={c} originName={data.corridors.origin.name} />
+        </Drawer>
+      );
+    }
     if (detail.kind === "feature") {
       return (
         <Drawer title={featureTitle(detail.f)} callsign="MAP" onClose={closeDetail}>
@@ -397,6 +408,9 @@ export function Dashboard({ data }: { data: DashboardData }) {
               onQuake={(id) => setDetail({ kind: "quake", id })}
               onCountry={(c) => setDetail({ kind: "country", iso3: c.iso3, un: c.un, name: c.name })}
               onFeature={(f) => setDetail({ kind: "feature", f })}
+              corridors={data.corridors}
+              trade={data.trade}
+              onCorridor={(id) => setDetail({ kind: "corridor", id })}
               lang={view.lang}
               onLang={(lang) => setView((v) => ({ ...v, lang }))}
               fac={view.fac}

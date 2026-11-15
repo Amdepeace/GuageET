@@ -32,6 +32,8 @@ const ROWS: { id: Layer; label: string; note: string; sw: ReactNode }[] = [
   { id: "places", label: "Towns & villages", note: "names appear as you zoom", sw: <span className="inline-block w-[7px] h-[7px] rounded-full mx-[7px]" style={{ background: "var(--ink-2)" }} /> },
   { id: "facilities", label: "Facilities", note: "health, schools, banks, fuel, markets…", sw: <ShapeIcon shape="plus" color="var(--ink-2)" /> },
   { id: "streets", label: "City streets", note: "loads automatically when you zoom into a city", sw: <Line color="var(--road)" w={1} /> },
+  { id: "flows", label: "Trade corridors & flows", note: "arcs from Addis Ababa to the sea ports; partner trade arcs when the Comtrade key is set", sw: <Line color="var(--ink-2)" w={3} /> },
+  { id: "density", label: "Facility density", note: "hexagon map of where facilities are mapped (categories below). Mapping effort varies by area, so it is not a measure of need", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px] rounded-full" style={{ background: "radial-gradient(circle, var(--accent), transparent)" }} /> },
 ];
 
 export function LayerPanel({
@@ -44,6 +46,7 @@ export function LayerPanel({
   onLang,
   loading,
   errors,
+  deck,
   onJump,
   onClose,
 }: {
@@ -56,6 +59,7 @@ export function LayerPanel({
   onLang: (l: Lang) => void;
   loading: string[];
   errors: string[];
+  deck: { loading: boolean; error: string | null; partnerArcs: number; tradeReady: boolean };
   onJump: (cityId: string) => void;
   onClose: () => void;
 }) {
@@ -80,7 +84,7 @@ export function LayerPanel({
                 <span className="block text-[10.5px] muted">{r.note}</span>
               </span>
             </label>
-            {r.id === "facilities" && layers.includes("facilities") && (
+            {(r.id === "facilities" ? layers.includes("facilities") : r.id === "density" && layers.includes("density") && !layers.includes("facilities")) && (
               <div className="flex flex-wrap gap-1 pl-6 pb-1.5 pt-0.5" role="group" aria-label="Facility categories">
                 {ALL_FAC_CATS.map((c) => (
                   <button key={c} type="button" className="ctl flex items-center gap-1.5" aria-pressed={fac.includes(c)} onClick={() => onFac(c)} title={FAC_META[c].note}>
@@ -121,6 +125,15 @@ export function LayerPanel({
           ))}
         </select>
       </div>
+
+      {(layers.includes("flows") || layers.includes("density")) && (
+        <div className="px-3 pb-2 text-[10.5px]" role="status">
+          {deck.loading && <div className="muted mono">Loading deck.gl…</div>}
+          {deck.error && <div style={{ color: "var(--warn)" }}>Could not draw the overlay: {deck.error}</div>}
+          {layers.includes("flows") && !deck.tradeReady && <div className="muted">Partner trade arcs appear once the UN Comtrade key is configured (see the Trade panel). Corridor arcs show the sea-access routes, not trade volume.</div>}
+          {layers.includes("flows") && deck.tradeReady && <div className="muted mono">{deck.partnerArcs} partner arcs · width = trade value · cyan exports, violet imports · zoom out to see them · click one for the country</div>}
+        </div>
+      )}
 
       {(loading.length > 0 || errors.length > 0) && (
         <div className="px-3 pb-2 text-[10.5px]" role="status">

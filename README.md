@@ -85,6 +85,13 @@ Open the **Detail layers** panel on the map to switch on rivers and lakes, strea
 - **Names:** English or Amharic (አማርኛ), drawn as native map text using self-hosted Noto Sans glyphs.
 - **Rail:** the curated Addis–Djibouti and Awash–Weldiya lines use the real OpenStreetMap track. Other curated lines are hand-drawn and are marked `schematic`, so they fade out when you zoom to city scale.
 
+### Visual layers (deck.gl)
+
+Two optional layers use [deck.gl](https://github.com/visgl/deck.gl) (MIT) as an overlay on the map. deck.gl is loaded only when one of them is switched on, so it adds about 1 kB to the first page load.
+
+- **Trade corridors & flows:** curated arcs from Addis Ababa to the Djibouti, Berbera and Lamu corridors, using the status and sources already recorded in the infrastructure tracker (`data/curated/corridors.json`; arcs show the route, not trade volume). Once the UN Comtrade key is set, arcs also appear for Ethiopia's top 15 trade partners: width = trade value, cyan exports, violet imports. They fade out as you zoom in, because they belong to a world view. Click an arc for its card (a partner arc opens that country's relations panel).
+- **Facility density:** hexagons of the mapped facilities, coloured by rank so rural districts stay visible next to Addis Ababa. It respects the facility category chips. It shows where facilities are *mapped*, which depends on volunteer effort, so it is not a measure of need.
+
 Licence and rebuild steps for the data are in [`public/geo-detail/README.md`](public/geo-detail/README.md). OpenStreetMap is volunteer-mapped: an empty area may simply be unmapped.
 
 ## World relations

@@ -1,0 +1,96 @@
+{
+ "_doc": "Sea-access corridors drawn as arcs from Addis Ababa to each port. Status, summary and sources are taken from the linked infrastructure records (data/curated/infrastructure.geojson) so they cannot drift. Arcs show the corridor, not trade volume. Port Sudan is not included because no sourced status has been recorded for it yet.",
+ "origin": {
+  "name": "Addis Ababa",
+  "coordinates": [
+   38.74,
+   9.03
+  ]
+ },
+ "corridors": [
+  {
+   "id": "djibouti",
+   "name": "Djibouti corridor",
+   "port": "Port of Djibouti",
+   "coordinates": [
+    43.14,
+    11.59
+   ],
+   "infraIds": [
+    "add-dji-rail",
+    "dji-road"
+   ],
+   "status": "operational",
+   "verified": true,
+   "summary": "752 km electrified standard-gauge line operated by Ethio-Djibouti Railway (EDR). Commercial service since 2018. EDR plans to raise freight capacity from 2 Mt to 6.2 Mt a year by 2027 and to link more Djibouti terminals by end-2026. Main truck route for Ethiopia's imports via Djibouti. A 2026 fuel shortage slowed trucking on this corridor and shifted some cargo to rail.",
+   "sources": [
+    {
+     "title": "Wikipedia: Addis Ababa–Djibouti Railway",
+     "url": "https://en.wikipedia.org/wiki/Addis_Ababa%E2%80%93Djibouti_Railway"
+    },
+    {
+     "title": "Capital Ethiopia: EDR to double freight capacity",
+     "url": "https://capitalethiopia.com/2026/01/11/ethio-djibouti-railway-to-double-freight-capacity-by-year-end/"
+    },
+    {
+     "title": "Capital Ethiopia: ports to be linked to railway by 2026",
+     "url": "https://capitalethiopia.com/2026/02/22/ethiopia-and-djibouti-seal-deal-to-link-strategic-ports-to-railway-by-2026/"
+    },
+    {
+     "title": "Capital Ethiopia: fuel shortage slows Djibouti trucking",
+     "url": "https://capitalethiopia.com/2026/04/11/fuel-shortage-slows-djibouti-trucking-railway-cuts-turnaround-by-28/"
+    }
+   ]
+  },
+  {
+   "id": "berbera",
+   "name": "Berbera corridor",
+   "port": "Port of Berbera",
+   "coordinates": [
+    45.01,
+    10.44
+   ],
+   "infraIds": [
+    "berbera-corridor"
+   ],
+   "status": "under_construction",
+   "verified": false,
+   "summary": "Road from the Ethiopian border to Berbera port, launched 2019. An undated report gives 85% complete; no 2026 status found.",
+   "sources": [
+    {
+     "title": "The Reporter: Berbera–Togochale road nears completion (undated)",
+     "url": "https://www.thereporterethiopia.com/article/berbera-togochale-road-project-nears-completion"
+    }
+   ]
+  },
+  {
+   "id": "lamu",
+   "name": "LAPSSET / Lamu corridor",
+   "port": "Port of Lamu",
+   "coordinates": [
+    40.9,
+    -2.27
+   ],
+   "infraIds": [
+    "lapsset"
+   ],
+   "status": "under_construction",
+   "verified": true,
+   "summary": "Lamu port declared operational Feb 2026. Isiolo–Moyale–Hawassa road reported complete; Lamu–Garissa–Isiolo road partly built. Lamu–Ethiopia railway at planning stage.",
+   "sources": [
+    {
+     "title": "AllAfrica: Lamu Port now operational (Feb 2026)",
+     "url": "https://allafrica.com/stories/202602160082.html"
+    },
+    {
+     "title": "The Star: LAPSSET SGR gains momentum (Feb 2026)",
+     "url": "https://www.the-star.co.ke/business/2026-02-12-lapsset-sgr-project-gains-momentum-as-kenya-gears-up-for-lamu-isiolo-line"
+    },
+    {
+     "title": "The Star: key LAPSSET projects stall (Jul 2025)",
+     "url": "https://www.the-star.co.ke/news/2025-07-27-lapsset-gamechanger-project-a-pipedream-as-key-projects-stall"
+    }
+   ]
+  }
+ ]
+}

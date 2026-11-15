@@ -200,6 +200,19 @@ export type HumanitarianFile = {
   foodPrices: { commodity: string; price: number; unit: string; currency: string; period: string }[];
 };
 
+export type Corridor = {
+  id: string;
+  name: string;
+  port: string;
+  coordinates: [number, number];
+  infraIds: string[];
+  status: InfraStatus;
+  verified: boolean;
+  summary: string;
+  sources: { title: string; url: string }[];
+};
+export type CorridorsFile = { origin: { name: string; coordinates: [number, number] }; corridors: Corridor[] };
+
 export type IndicatorConfig = {
   id: string;
   label: string;
