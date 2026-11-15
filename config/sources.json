@@ -101,7 +101,7 @@
       "name": "HDX (HAPI)",
       "provides": "People in need, food insecurity (IPC), staple food prices",
       "cadence": "Daily job; many series update monthly or less",
-      "access": "Free, needs an app identifier",
+      "access": "Free, no key (generic usage tag)",
       "url": "https://data.humdata.org/",
       "statusKey": "HDX (HAPI)"
     },

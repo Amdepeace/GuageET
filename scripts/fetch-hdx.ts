@@ -1,7 +1,8 @@
 // Humanitarian Data Exchange (HDX HAPI) for Ethiopia: people in need, food
-// insecurity (IPC) and staple food prices. Needs a free HDX app identifier in
-// HDX_APP_IDENTIFIER (a usage tag, base64 of "appname:email"; stored as a
-// GitHub Secret). Without it the panel shows an "awaiting key" state.
+// insecurity (IPC) and staple food prices. HAPI's "app identifier" is only a
+// usage tag (base64 of "appname:email"), not a registered key, so a generic
+// default is used and nothing needs configuring. HDX_APP_IDENTIFIER (optional
+// GitHub Secret) overrides it with your own.
 // Each figure keeps its own reference period and provider, as HDX publishes it.
 import { join } from "node:path";
 import { DATA, recordHealth, writeJson, readJson } from "./lib/store";
@@ -9,7 +10,7 @@ import { DATA, recordHealth, writeJson, readJson } from "./lib/store";
 const SOURCE = "HDX (HAPI)";
 const SOURCE_URL = "https://data.humdata.org/";
 const OUT = join(DATA, "humanitarian.json");
-const KEY = process.env.HDX_APP_IDENTIFIER || "";
+const KEY = process.env.HDX_APP_IDENTIFIER || Buffer.from("guageet:noreply@example.com").toString("base64");
 const BASE = "https://hapi.humdata.org/api/v1";
 const STAPLES = ["teff", "maize", "wheat", "sorghum"];
 
@@ -49,7 +50,7 @@ const awaiting = (fetchedAt: string): HumanitarianFile => ({
   sourceUrl: SOURCE_URL,
   fetchedAt,
   available: false,
-  note: "Set HDX_APP_IDENTIFIER (a free HDX app identifier) as a GitHub Secret to populate the humanitarian panel.",
+  note: "Humanitarian data has not been fetched yet; the next scheduled update will fill it.",
   peopleInNeed: null,
   ipcPhase3plus: null,
   foodPrices: [],
@@ -58,13 +59,6 @@ const awaiting = (fetchedAt: string): HumanitarianFile => ({
 async function main() {
   const fetchedAt = new Date().toISOString();
   const prev = readJson<HumanitarianFile | null>(OUT, null);
-  if (!KEY) {
-    writeJson(OUT, awaiting(fetchedAt));
-    recordHealth(SOURCE, 30, { ok: false, error: "No HDX_APP_IDENTIFIER configured" });
-    console.log("hdx: no app identifier; wrote awaiting-key state");
-    return;
-  }
-
   try {
     // people in need: national intersectoral, "in need" population, latest period
     let peopleInNeed: HumanitarianFile["peopleInNeed"] = null;

@@ -22,7 +22,7 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 | **v2** Trade partners and balance | UN Comtrade | Free tier, **needs a key** (see below) | Daily job |
 | Remittances received, FDI net inflows | World Bank | Open, no key | Daily job |
 | External-debt composition, ratios, IMF programme | World Bank IDS + curated IMF timeline | Open, no key (timeline curated) | Daily job |
-| People in need, food insecurity (IPC), staple food prices | HDX (HAPI) | Free, **needs an app identifier** (see below) | Daily job |
+| People in need, food insecurity (IPC), staple food prices | HDX (HAPI) | Free, no key (generic usage tag) | Daily job |
 
 ### v2 features
 
@@ -105,13 +105,9 @@ Zoom the map out and click any country to open its **relations with Ethiopia**:
 
 The world layer is bundled Natural Earth 110m (`data/geo/world.geojson`); the detailed regional base stays as-is.
 
-### Enabling the Humanitarian panel (optional)
+### Humanitarian panel (no key needed)
 
-The HUMANITARIAN panel uses HDX HAPI, which needs a free **app identifier** (just an app name + email, no account):
-
-1. Generate one at [hapi.humdata.org/docs](https://hapi.humdata.org/docs) (the "Get started / app identifier" step).
-2. Add it as the repo secret `HDX_APP_IDENTIFIER`.
-3. Re-run the workflow. People-in-need, food insecurity (IPC) and staple prices populate; the HUMANITARIAN desk goes live.
+The HUMANITARIAN panel uses HDX HAPI. Its "app identifier" is only a usage tag (base64 of `appname:email`), not a registered key, so the fetcher uses a generic built-in one. Optionally set your own as the repo secret `HDX_APP_IDENTIFIER`.
 
 Each humanitarian figure keeps its own reference period and original provider (IPC, WFP, OCHA) — some series (e.g. national IPC) update infrequently, so they are clearly dated rather than shown as current.
 

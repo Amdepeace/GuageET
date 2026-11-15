@@ -17,22 +17,10 @@ export function HumanitarianPanel({ data, status }: { data: HumanitarianFile; st
       {!data.available ? (
         <div className="p-4 text-[12.5px] ink2 flex flex-col gap-2">
           <p className="font-semibold" style={{ color: "var(--ink)" }}>
-            Humanitarian panel is waiting for a data key.
+            Humanitarian data has not loaded yet.
           </p>
           <p>{data.note}</p>
-          <ol className="list-decimal ml-4 flex flex-col gap-1 text-[12px]">
-            <li>
-              Generate a free app identifier at{" "}
-              <a href="https://hapi.humdata.org/docs" target="_blank" rel="noreferrer">
-                HDX HAPI ↗
-              </a>{" "}
-              (an app name + email; no account).
-            </li>
-            <li>
-              Add it as the repo secret <span className="mono">HDX_APP_IDENTIFIER</span>.
-            </li>
-            <li>Re-run the workflow. People-in-need, food insecurity and staple prices appear here.</li>
-          </ol>
+          <p className="text-[12px]">The daily update pulls this from HDX HAPI, which needs no account. If it stays empty, the source may be rate-limiting; the last good value is kept once one exists.</p>
         </div>
       ) : (
         <div className="p-3 flex flex-col gap-3">
