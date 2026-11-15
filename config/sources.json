@@ -200,6 +200,14 @@
       "access": "Free, no key; streams play from each station's own host",
       "url": "https://www.radio-browser.info/",
       "statusKey": "Radio Browser directory"
+    },
+    {
+      "name": "Ethiopian Securities Exchange",
+      "provides": "Listed companies (name, symbol, sector, listing date); trading hours and holiday calendar. No prices.",
+      "cadence": "Company list: daily job. Hours and holidays: curated from ESX's page, last verified 2026-11-15",
+      "access": "Public pages; robots.txt allows it; breaks if the table layout changes",
+      "url": "https://esx.et/equity-market/trading-operations/",
+      "statusKey": "Ethiopian Securities Exchange"
     }
   ]
 }

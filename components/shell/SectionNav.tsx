@@ -8,6 +8,7 @@ export const SECTIONS = [
   { id: "sec-risk", label: "Risk" },
   { id: "sec-economy", label: "Debt & aid" },
   { id: "sec-trade", label: "Trade & news" },
+  { id: "sec-markets", label: "ESX" },
   { id: "sec-radio", label: "Radio" },
   { id: "sec-climate", label: "Climate" },
   { id: "sec-roads", label: "Roads" },

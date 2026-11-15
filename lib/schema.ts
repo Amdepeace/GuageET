@@ -356,3 +356,21 @@ export type RadioFile = {
   note: string;
   stations: RadioStation[];
 };
+
+export type EsxCompany = { name: string; symbol: string; sector: string; listed: string; incorporated: string; url: string };
+export type EsxFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  note: string;
+  companies: EsxCompany[];
+};
+export type EsxCalendar = {
+  lastVerified: string;
+  source: { title: string; url: string };
+  timezone: string;
+  note: string;
+  sessions: { name: string; from: string; to: string }[];
+  holidays: { date: string; name: string; tentative?: boolean }[];
+};

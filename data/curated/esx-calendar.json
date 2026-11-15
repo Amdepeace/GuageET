@@ -1,0 +1,25 @@
+{
+  "lastVerified": "2026-11-15",
+  "source": { "title": "ESX: Trading & Operations (equity market)", "url": "https://esx.et/equity-market/trading-operations/" },
+  "timezone": "Africa/Addis_Ababa",
+  "note": "Hours and holidays are as published by ESX; the exchange may change hours by notice to trading members. ESX opens on business days; this dashboard assumes Monday to Friday. The holiday list on ESX's page covers 2025–2026 and runs only to 27 Sep 2026, so closures after that are not known here. Eid dates were marked tentative by ESX. The weekday names printed beside some of ESX's dates do not match the calendar, so only the dates are shown.",
+  "sessions": [
+    { "name": "Pre-open", "from": "09:00", "to": "09:30" },
+    { "name": "Continuous trading", "from": "09:30", "to": "15:00" }
+  ],
+  "holidays": [
+    { "date": "2026-01-07", "name": "Ethiopian Christmas (Gena)" },
+    { "date": "2026-01-19", "name": "Epiphany (Timket)" },
+    { "date": "2026-03-02", "name": "Adwa Victory Day" },
+    { "date": "2026-03-08", "name": "International Women's Day" },
+    { "date": "2026-03-20", "name": "Eid al-Fitr", "tentative": true },
+    { "date": "2026-04-10", "name": "Ethiopian Good Friday" },
+    { "date": "2026-04-12", "name": "Ethiopian Easter (Fasika)" },
+    { "date": "2026-05-01", "name": "International Labour Day" },
+    { "date": "2026-05-05", "name": "Patriots' Victory Day" },
+    { "date": "2026-05-27", "name": "Eid al-Adha", "tentative": true },
+    { "date": "2026-08-25", "name": "The Prophet's Birthday" },
+    { "date": "2026-09-11", "name": "Ethiopian New Year" },
+    { "date": "2026-09-27", "name": "Meskel" }
+  ]
+}

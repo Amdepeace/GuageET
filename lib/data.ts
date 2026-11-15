@@ -35,6 +35,8 @@ import rainfallJson from "@/data/rainfall.json";
 import projectionsJson from "@/data/projections.json";
 import outlookJson from "@/data/outlook.json";
 import radioJson from "@/data/radio.json";
+import esxJson from "@/data/esx.json";
+import esxCalJson from "@/data/curated/esx-calendar.json";
 import humanitarianJson from "@/data/humanitarian.json";
 import type {
   ChangeEntry,
@@ -64,6 +66,8 @@ import type {
   ProjectionsFile,
   OutlookFile,
   RadioFile,
+  EsxFile,
+  EsxCalendar,
 } from "./schema";
 
 export type City = { id: string; name: string; am: string; lat: number; lon: number; labelAnchor?: "top" | "bottom" };
@@ -128,6 +132,8 @@ export type DashboardData = {
   projections: ProjectionsFile;
   outlook: OutlookFile;
   radio: RadioFile;
+  esx: EsxFile;
+  esxCalendar: EsxCalendar;
 };
 
 export function loadData(): DashboardData {
@@ -164,5 +170,7 @@ export function loadData(): DashboardData {
     projections: projectionsJson as unknown as ProjectionsFile,
     outlook: outlookJson as unknown as OutlookFile,
     radio: radioJson as unknown as RadioFile,
+    esx: esxJson as unknown as EsxFile,
+    esxCalendar: esxCalJson as unknown as EsxCalendar,
   };
 }

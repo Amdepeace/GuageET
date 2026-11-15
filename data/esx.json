@@ -1,0 +1,73 @@
+{
+  "source": "Ethiopian Securities Exchange",
+  "sourceUrl": "https://esx.et/equity-market/listed-companies/",
+  "fetchedAt": "2026-11-15T22:16:48.180Z",
+  "available": true,
+  "note": "Company list as published on ESX's Listed Companies page. The page carries no prices, so none are shown; for prices use ESX directly.",
+  "companies": [
+    {
+      "name": "Awash Insurance Share Company",
+      "symbol": "AWIN",
+      "sector": "Financial Services",
+      "listed": "2026-11-10",
+      "incorporated": "1994-10-01",
+      "url": "https://esx.et/directory/awash-insurance-share-company/"
+    },
+    {
+      "name": "Sidama Bank Share Company",
+      "symbol": "SIDAX",
+      "sector": "Financial Services",
+      "listed": "2026-09-28",
+      "incorporated": "2022-07-01",
+      "url": "https://esx.et/directory/sidama-bank-share-company/"
+    },
+    {
+      "name": "Bank of Abyssinia Share Company",
+      "symbol": "BOAX",
+      "sector": "Financial Services",
+      "listed": "2026-07-28",
+      "incorporated": "1996-02-16",
+      "url": "https://esx.et/directory/bank-of-abyssinia-share-company/"
+    },
+    {
+      "name": "Abay Bank Share Company",
+      "symbol": "ABAYB",
+      "sector": "Financial Services",
+      "listed": "2026-06-25",
+      "incorporated": "2010-07-14",
+      "url": "https://esx.et/directory/abay-bank-share-company/"
+    },
+    {
+      "name": "Ethio Telecom Share Company",
+      "symbol": "TELE",
+      "sector": "Telecom Services",
+      "listed": "2026-05-26",
+      "incorporated": "2024-07-01",
+      "url": "https://esx.et/directory/ethio-telecom-share-company/"
+    },
+    {
+      "name": "Awash Bank Share Company",
+      "symbol": "AWAB",
+      "sector": "Financial Services",
+      "listed": "2026-04-23",
+      "incorporated": "1994-11-10",
+      "url": "https://esx.et/directory/awash-bank-share-company/"
+    },
+    {
+      "name": "Gadaa Bank Share Company",
+      "symbol": "GDAB",
+      "sector": "Financial Services",
+      "listed": "2025-06-13",
+      "incorporated": "2022-04-26",
+      "url": "https://esx.et/directory/gadaa-bank-share-company/"
+    },
+    {
+      "name": "Wegagen Bank Share Company",
+      "symbol": "WGBX",
+      "sector": "Financial Services",
+      "listed": "2025-01-10",
+      "incorporated": "1997-06-11",
+      "url": "https://esx.et/directory/wegagen-bank-share-company/"
+    }
+  ]
+}

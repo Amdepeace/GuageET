@@ -28,6 +28,10 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 
 Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle "Quakes"), the **Red Sea risk monitor**, a **headlines** feed, an in-page **alerts banner** (FX moves, Red Sea drops, big quakes), **event markers** on the vital charts (birr float, GERD milestones), an **Ethiopian-calendar** axis toggle (E.C./G.C.) on those charts, and a **Trade panel**.
 
+### Ethiopian Securities Exchange box
+
+The **MARKETS** panel shows whether ESX is open now (computed in your browser from ESX's published sessions and holiday list, `data/curated/esx-calendar.json`, not a live exchange feed) and the listed companies (`scripts/fetch-esx.ts`, read from ESX's public Listed Companies page). ESX's pages publish no prices, so none are shown. The holiday list on ESX's page ends 27 Sep 2026 and some weekday names there are wrong, so only dates are used and the status says when it cannot account for holidays.
+
 ### Radio
 
 The **RADIO** panel lists Ethiopian stations from the [Radio Browser](https://www.radio-browser.info/) community directory (`scripts/fetch-radio.ts`, keyless). Only https streams the directory's own health check found working in the last 14 days are kept, with duplicates removed. Nothing is proxied: pressing play connects the listener's browser to the station's stream host, and nothing loads until then. A small fixed player keeps pause, volume and stop on screen while you scroll. A stream can still fail for an individual listener, in which case the row says so. The dashboard is not affiliated with any station.
