@@ -225,3 +225,22 @@ export type IndicatorConfig = {
   worldBank: string;
   imf: string | null;
 };
+
+export type PowerSource = { title: string; url: string };
+export type PowerPartner = {
+  id: string;
+  name: string;
+  infraIds: string[];
+  status: string;
+  verified: boolean;
+  revenueUsd: number | null;
+  revenuePeriod: string | null;
+  capacity: string;
+  sources: PowerSource[];
+};
+export type PowerExportsFile = {
+  lastVerified: string;
+  note: string;
+  total: { label: string; valueUsd: number; period: string; source: PowerSource; verified: boolean; caveat: string; caveatSource: PowerSource };
+  partners: PowerPartner[];
+};

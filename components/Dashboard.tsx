@@ -22,6 +22,7 @@ import { SimpleDetail } from "./pulse/SimpleDetail";
 import { NewsFeed } from "./pulse/NewsFeed";
 import { RedSeaMonitor } from "./pulse/RedSeaMonitor";
 import { TradePanel } from "./trade/TradePanel";
+import { PowerExportsPanel } from "./power/PowerExportsPanel";
 import { InfraTable } from "./infra/InfraTable";
 import { InfraDetail } from "./infra/InfraDetail";
 import { CityDetail, WeatherPanel } from "./weather/WeatherPanel";
@@ -442,6 +443,8 @@ export function Dashboard({ data }: { data: DashboardData }) {
         <TradePanel trade={trade} status={statusOf(trade.source)} />
         <NewsFeed news={news} status={newsStatus} now={now} />
       </div>
+
+      <PowerExportsPanel data={data.powerExports} onSelectInfra={(id) => selectInfra(id)} />
 
       <InfraTable infra={infra} selected={view.sel} onSelect={(id) => selectInfra(id)} />
 

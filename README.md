@@ -28,6 +28,10 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 
 Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle "Quakes"), the **Red Sea risk monitor**, a **headlines** feed, an in-page **alerts banner** (FX moves, Red Sea drops, big quakes), **event markers** on the vital charts (birr float, GERD milestones), an **Ethiopian-calendar** axis toggle (E.C./G.C.) on those charts, and a **Trade panel**.
 
+### Electricity exports (curated)
+
+The **POWER** panel (`data/curated/power-exports.json`) lists Ethiopia's electricity export earnings by partner (Kenya, Djibouti, Sudan, Tanzania) for FY2024/25, with capacity notes, source links and a verified flag. Each row links to its interconnector record in the infrastructure tracker. Figures come from news reports of EEP data; conflicts are flagged, not resolved, and values are USD earnings, not MWh.
+
 ### Trade panel (no key needed)
 
 Trade data comes from UN Comtrade's public **preview** endpoint, which needs no account or key (responses cap at 500 rows, enough for annual totals by partner and HS-2 groups). Optionally, for the full data API, register a free key at [comtradeplus.un.org](https://comtradeplus.un.org/) and add it as a repo secret named `COMTRADE_PRIMARY_KEY` (**Settings → Secrets and variables → Actions**); the fetcher uses it automatically.

@@ -1,0 +1,51 @@
+{
+  "lastVerified": "2026-11-15",
+  "note": "Hand-curated from news reports of Ethiopian Electric Power (EEP) figures. Nothing is estimated; where sources conflict the entry is flagged unverified.",
+  "total": {
+    "label": "Electricity export earnings, 2024/25 fiscal year",
+    "valueUsd": 118100000,
+    "period": "FY2024/25 (8 Jul 2024 – 7 Jul 2025)",
+    "source": { "title": "2Merkato: Ethiopia earns USD 118.1 million from regional electricity exports", "url": "https://www.2merkato.com/news/energy-and-mining/8568-ethiopia-earns-usd-1181-million-from-regional-electricity-exports" },
+    "verified": true,
+    "caveat": "A separate report quotes the EEP CEO putting export earnings at USD 338.7 million for the same year, The definitions behind the two figures are not stated, and they are not reconciled here.",
+    "caveatSource": { "title": "AllAfrica: GERD drives record earnings, says EEP CEO (Sep 2026)", "url": "https://allafrica.com/stories/202609150052.html" }
+  },
+  "partners": [
+    {
+      "id": "KEN", "name": "Kenya", "infraIds": ["eth-ken-hvdc"], "status": "operational", "verified": true,
+      "revenueUsd": 86300000, "revenuePeriod": "FY2024/25",
+      "capacity": "About 200 MW imported; a July 2026 supply agreement sets up a rise to 400 MW, reported for December 2026.",
+      "sources": [
+        { "title": "2Merkato: USD 118.1 million from regional electricity exports", "url": "https://www.2merkato.com/news/energy-and-mining/8568-ethiopia-earns-usd-1181-million-from-regional-electricity-exports" },
+        { "title": "The Star: Kenya deepens Ethiopian power imports (Jul 2026)", "url": "https://www.the-star.co.ke/business/kenya/2026-07-13-kenya-deepens-ethiopian-power-imports-in-fresh-supply-deal" },
+        { "title": "Capital Ethiopia: preparations to scale up by December 2026", "url": "https://capitalethiopia.com/2026/09/15/ethiopia-kenya-finalize-preparations-to-scale-up-cross-border-power-trade-by-december-2026" }
+      ]
+    },
+    {
+      "id": "DJI", "name": "Djibouti", "infraIds": ["eth-dji-power-1", "eth-dji-power-2"], "status": "operational", "verified": true,
+      "revenueUsd": 30900000, "revenuePeriod": "FY2024/25",
+      "capacity": "First 230 kV line reported near its transfer limit; a second line is planned (construction agreement signed November 2025, no progress reports found since).",
+      "sources": [
+        { "title": "2Merkato: USD 118.1 million from regional electricity exports", "url": "https://www.2merkato.com/news/energy-and-mining/8568-ethiopia-earns-usd-1181-million-from-regional-electricity-exports" },
+        { "title": "Dawan Africa: second interconnection deal signed", "url": "https://www.dawan.africa/news/djibouti-and-ethiopia-sign-deal-for-second-power-interconnection-project" }
+      ]
+    },
+    {
+      "id": "SDN", "name": "Sudan", "infraIds": ["eth-sdn-power"], "status": "operational", "verified": false,
+      "revenueUsd": 900000, "revenuePeriod": "FY2024/25",
+      "capacity": "Current transfer volume is not confirmed by a recent source; the line was energised around 2012 with an initial 100 MW.",
+      "sources": [
+        { "title": "2Merkato: USD 118.1 million from regional electricity exports", "url": "https://www.2merkato.com/news/energy-and-mining/8568-ethiopia-earns-usd-1181-million-from-regional-electricity-exports" },
+        { "title": "Sudan Tribune: Ethiopian electric cable to Sudan completed", "url": "https://sudantribune.com/?p=41082" }
+      ]
+    },
+    {
+      "id": "TZA", "name": "Tanzania", "infraIds": ["eth-tza-power"], "status": "trial", "verified": false,
+      "revenueUsd": null, "revenuePeriod": null,
+      "capacity": "Pilot flows over Kenya's grid reported at up to 100 MW; regular sales await Kenya–Tanzania upgrades. Sources conflict on progress; no revenue figure found.",
+      "sources": [
+        { "title": "Eastleigh Voice: Ethiopia begins supplying Tanzania via Kenya", "url": "https://eastleighvoice.co.ke/ketraco/172608/ethiopia-begins-supplying-electricity-to-tanzania-through-kenya-s-transmission-network" }
+      ]
+    }
+  ]
+}
