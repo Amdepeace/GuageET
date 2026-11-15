@@ -311,3 +311,28 @@ export type RainfallFile = {
   /** mean daily rainfall (mm) by day of year, 1991–2020, kept so the normal can be recomputed for any window */
   climatology: Record<string, number[]>;
 };
+
+export type ProjectionPoint = { year: number; value: number; projected: boolean };
+export type ProjectionSeries = { id: string; label: string; unit: string; country: CountryCode; points: ProjectionPoint[] };
+export type ProjectionsFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  note: string;
+  series: ProjectionSeries[];
+};
+
+export type OutlookFile = {
+  generatedAt: string;
+  available: boolean;
+  /** true only when the model beat the naive baseline in the backtest */
+  skillful: boolean;
+  series: string;
+  through: string;
+  method: string;
+  note: string;
+  backtest: { origins: number; maeModel: number; maeBaseline: number; skill: number };
+  history: { month: string; value: number }[];
+  forecast: { month: string; value: number; low: number; high: number }[];
+};

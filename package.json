@@ -20,7 +20,12 @@
     "build:alerts": "tsx scripts/build-alerts.ts",
     "fetch:world": "tsx scripts/fetch-world-indicators.ts",
     "fetch:debt": "tsx scripts/fetch-debt.ts",
-    "fetch:hdx": "tsx scripts/fetch-hdx.ts"
+    "fetch:hdx": "tsx scripts/fetch-hdx.ts",
+    "fetch:climate": "tsx scripts/fetch-climate.ts",
+    "fetch:conflict": "tsx scripts/fetch-conflict.ts",
+    "fetch:rainfall": "tsx scripts/fetch-rainfall.ts",
+    "fetch:projections": "tsx scripts/fetch-projections.ts",
+    "build:outlook": "tsx scripts/build-outlook.ts"
   },
   "dependencies": {
     "@deck.gl/aggregation-layers": "^9.4.1",

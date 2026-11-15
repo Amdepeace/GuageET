@@ -28,6 +28,10 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 
 Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle "Quakes"), the **Red Sea risk monitor**, a **headlines** feed, an in-page **alerts banner** (FX moves, Red Sea drops, big quakes), **event markers** on the vital charts (birr float, GERD milestones), an **Ethiopian-calendar** axis toggle (E.C./G.C.) on those charts, and a **Trade panel**.
 
+### Risk section
+
+The **RISK** panel has three parts. (1) A **stress matrix**: each Ethiopia indicator's year ranked against its own 2011-to-latest history (inflation, GDP growth, birr depreciation, reserves, external-debt growth, remittances, FDI); it is relative to history, not an absolute threshold, and it is not a probability of crisis. (2) **Projections quoted from the IMF** WEO (`scripts/fetch-projections.ts`), shown as the IMF's own, with dates. (3) A **statistical outlook** for monthly conflict events (`scripts/build-outlook.ts`): damped-trend smoothing, published only if it beats a plain 3-month average in a rolling backtest; the backtest error is always shown. At the last run it did not beat the baseline (skill +2%), so no outlook is published. The backtest uses revised counts, so real-time accuracy would be lower.
+
 ### Conflict heatmap (no account needed)
 
 The map's **Conflict heatmap** layer shades each admin-2 zone by ACLED-coded conflict events over the last 12 complete months, from HDX HAPI (keyless; `scripts/fetch-conflict.ts`). Click a zone for events, fatalities, the change against the previous 12 months, and the breakdown by event type. Zones the source has no rows for are drawn grey as *no data*, never as zero. Counts are reported events: places with little reporting are under-counted, recent months are often revised, and event counts say nothing about the scale of each event. UCDP needs an access token and GDELT's event files were unreachable, so neither is used. Boundaries: OCHA COD-AB Ethiopia (CC BY-IGO), simplified by `scripts/build-admin2.py`.

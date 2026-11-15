@@ -47,7 +47,7 @@ jobs:
           HDX_APP_IDENTIFIER: ${{ secrets.HDX_APP_IDENTIFIER }}
         run: |
           # One failing source must not stop the others; each keeps its last good data.
-          for job in worldbank world commodities fx news redsea comtrade debt hdx climate conflict rainfall; do
+          for job in worldbank world commodities fx news redsea comtrade debt hdx climate conflict rainfall projections; do
             npm run -s "fetch:$job" || echo "::warning::fetch:$job failed (last good data kept)"
           done
 
@@ -62,6 +62,7 @@ jobs:
 
       - name: Compute what-changed feed and alerts
         run: |
+          npm run build:outlook || echo "::warning::build:outlook failed (last good data kept)"
           npm run build:changes
           npm run build:alerts
 

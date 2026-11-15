@@ -27,6 +27,7 @@ import { RsdpPanel } from "./roads/RsdpPanel";
 import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
 import { RiskZoneDetail } from "./map/RiskZoneDetail";
+import { RiskPanel } from "./risk/RiskPanel";
 import { Explorer } from "./explore/Explorer";
 import { CommandPalette, type PaletteItem } from "./shell/CommandPalette";
 import { SectionNav, SECTIONS } from "./shell/SectionNav";
@@ -466,6 +467,22 @@ export function Dashboard({ data }: { data: DashboardData }) {
 
       <div id="sec-explore">
         <Explorer indicators={indicators} countries={countries} theme={theme} />
+      </div>
+
+      <div id="sec-risk">
+        <RiskPanel
+          eth={countries.ETH}
+          conflict={data.conflict}
+          rainfall={data.rainfall}
+          projections={data.projections}
+          outlook={data.outlook}
+          theme={theme}
+          onLayer={(layer) => {
+            setView((v) => ({ ...v, layers: v.layers.includes(layer) ? v.layers : [...v.layers, layer] }));
+            document.getElementById("sec-map")?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
+          onOpenVital={(id) => setDetail({ kind: "vital", id, country: "ETH" })}
+        />
       </div>
 
       <div id="sec-economy" className="grid grid-cols-1 lg:grid-cols-2 gap-2">

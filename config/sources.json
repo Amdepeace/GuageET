@@ -176,6 +176,22 @@
       "access": "Free, no key; reanalysis at one point per region",
       "url": "https://open-meteo.com/en/docs/historical-weather-api",
       "statusKey": "Rainfall anomaly (ERA5)"
+    },
+    {
+      "name": "IMF WEO projections",
+      "provides": "IMF estimates and projections of Ethiopia's GDP growth and inflation",
+      "cadence": "Daily job; IMF revises each April and October",
+      "access": "Free, no key; official IMF SDMX API",
+      "url": "https://www.imf.org/en/Publications/WEO",
+      "statusKey": "IMF WEO projections"
+    },
+    {
+      "name": "Conflict outlook (our model)",
+      "provides": "3-month statistical outlook of conflict events, published only if it beats a baseline in backtest",
+      "cadence": "Daily job",
+      "access": "Computed here from ACLED counts; labelled model output",
+      "url": "https://github.com/Amdepeace/GuageET",
+      "statusKey": "Conflict outlook (model)"
     }
   ]
 }

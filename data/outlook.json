@@ -1,0 +1,162 @@
+{
+  "generatedAt": "2026-11-15T21:47:20.570Z",
+  "available": true,
+  "skillful": false,
+  "series": "Conflict events per month, Ethiopia (ACLED via HDX HAPI)",
+  "through": "2026-10",
+  "method": "Damped-trend exponential smoothing (alpha 0.2, beta 0.2, phi 0.98) chosen on data before the backtest window; range = 10th to 90th percentile of past errors. Baseline = mean of the last 3 months.",
+  "note": "The model did not beat a simple 3-month average in the backtest, so no outlook is published. Past counts alone do not predict the next months.",
+  "backtest": {
+    "origins": 18,
+    "maeModel": 56,
+    "maeBaseline": 57,
+    "skill": 0.02
+  },
+  "history": [
+    {
+      "month": "2023-11",
+      "value": 244
+    },
+    {
+      "month": "2023-12",
+      "value": 201
+    },
+    {
+      "month": "2024-01",
+      "value": 208
+    },
+    {
+      "month": "2024-02",
+      "value": 268
+    },
+    {
+      "month": "2024-03",
+      "value": 286
+    },
+    {
+      "month": "2024-04",
+      "value": 317
+    },
+    {
+      "month": "2024-05",
+      "value": 281
+    },
+    {
+      "month": "2024-06",
+      "value": 315
+    },
+    {
+      "month": "2024-07",
+      "value": 314
+    },
+    {
+      "month": "2024-08",
+      "value": 322
+    },
+    {
+      "month": "2024-09",
+      "value": 217
+    },
+    {
+      "month": "2024-10",
+      "value": 318
+    },
+    {
+      "month": "2024-11",
+      "value": 328
+    },
+    {
+      "month": "2024-12",
+      "value": 204
+    },
+    {
+      "month": "2025-01",
+      "value": 217
+    },
+    {
+      "month": "2025-02",
+      "value": 172
+    },
+    {
+      "month": "2025-03",
+      "value": 272
+    },
+    {
+      "month": "2025-04",
+      "value": 196
+    },
+    {
+      "month": "2025-05",
+      "value": 163
+    },
+    {
+      "month": "2025-06",
+      "value": 221
+    },
+    {
+      "month": "2025-07",
+      "value": 244
+    },
+    {
+      "month": "2025-08",
+      "value": 334
+    },
+    {
+      "month": "2025-09",
+      "value": 370
+    },
+    {
+      "month": "2025-10",
+      "value": 311
+    },
+    {
+      "month": "2025-11",
+      "value": 283
+    },
+    {
+      "month": "2025-12",
+      "value": 233
+    },
+    {
+      "month": "2026-01",
+      "value": 198
+    },
+    {
+      "month": "2026-02",
+      "value": 247
+    },
+    {
+      "month": "2026-03",
+      "value": 248
+    },
+    {
+      "month": "2026-04",
+      "value": 248
+    },
+    {
+      "month": "2026-05",
+      "value": 285
+    },
+    {
+      "month": "2026-06",
+      "value": 332
+    },
+    {
+      "month": "2026-07",
+      "value": 237
+    },
+    {
+      "month": "2026-08",
+      "value": 235
+    },
+    {
+      "month": "2026-09",
+      "value": 272
+    },
+    {
+      "month": "2026-10",
+      "value": 420
+    }
+  ],
+  "forecast": []
+}

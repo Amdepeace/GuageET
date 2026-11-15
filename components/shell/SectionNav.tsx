@@ -5,6 +5,7 @@ export const SECTIONS = [
   { id: "sec-vitals", label: "Vitals" },
   { id: "sec-map", label: "Map" },
   { id: "sec-explore", label: "Explorer" },
+  { id: "sec-risk", label: "Risk" },
   { id: "sec-economy", label: "Debt & aid" },
   { id: "sec-trade", label: "Trade & news" },
   { id: "sec-climate", label: "Climate" },

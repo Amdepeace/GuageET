@@ -34,7 +34,7 @@ export function AboutPanel({ data, statusOf }: { data: DashboardData; statusOf: 
             <b>The detailed map is volunteer-mapped.</b> Roads, rivers, towns and facilities come from OpenStreetMap (© OpenStreetMap contributors, ODbL). Coverage is uneven, so an empty area may simply be unmapped, and details can be out of date. The facility density map shows where facilities are <em>mapped</em>, which depends on volunteer effort, so it is not a measure of need.
           </li>
           <li>
-            <b>This dashboard reports; it does not forecast.</b> Map lines for infrastructure are schematic, not surveyed routes. Disputed areas are drawn dashed, never as settled borders.
+            <b>This dashboard reports; it does not issue forecasts of record.</b> Projections shown are quoted from the IMF with their source, and the one statistical outlook is labelled as our model output and published only if it beat a naive baseline in a backtest. No figure is a probability of crisis. Map lines for infrastructure are schematic, not surveyed routes. Disputed areas are drawn dashed, never as settled borders.
           </li>
         </ul>
       </section>
