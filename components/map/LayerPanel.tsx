@@ -1,5 +1,6 @@
 "use client";
 import { CONFLICT_COLORS, RAIN_COLORS } from "./useRiskLayers";
+import { MINERAL_KINDS } from "./useMineralLayers";
 import type { ReactNode } from "react";
 import { ALL_FAC_CATS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import { FAC_META, SHAPES, facColor, type Shape } from "./detail";
@@ -37,6 +38,7 @@ const ROWS: { id: Layer; label: string; note: string; sw: ReactNode }[] = [
   { id: "flows", label: "Trade corridors & flows", note: "arcs from Addis Ababa to the sea ports; partner trade arcs from UN Comtrade", sw: <Line color="var(--ink-2)" w={3} /> },
   { id: "conflict", label: "Conflict heatmap", note: "ACLED events by zone, last 12 months (HDX HAPI). Reported events only; unreported areas are under-counted", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#6a3a73,#d4546a,#fbc552)" }} /> },
   { id: "rainfall", label: "Rainfall vs normal", note: "last 90 days by region as % of the 1991–2020 average (ERA5 reanalysis, coarse screen for drought or flood)", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#cf9440,#3a4752,#37a39a)" }} /> },
+  { id: "minerals", label: "Minerals & prospects", note: "mines and plants (2018 source), major deposits, exploration sites (USGS); positions approximate, records can be out of date", sw: <span className="inline-block w-[9px] h-[9px] mx-[6px] rounded-full" style={{ background: "#b8863f" }} /> },
   { id: "density", label: "Facility density", note: "hexagon map of where facilities are mapped (categories below). Mapping effort varies by area, so it is not a measure of need", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px] rounded-full" style={{ background: "radial-gradient(circle, var(--accent), transparent)" }} /> },
 ];
 
@@ -163,6 +165,21 @@ export function LayerPanel({
           ) : (
             <div className="muted">Conflict data has not loaded yet.</div>
           )}
+        </div>
+      )}
+
+      {layers.includes("minerals") && (
+        <div className="px-3 pb-2 text-[10.5px]" role="status">
+          <div className="label mb-1">Mineral sites · USGS</div>
+          <ul className="flex flex-col gap-0.5">
+            {MINERAL_KINDS.map((k) => (
+              <li key={k.k} className="flex items-center gap-1.5">
+                <span className="inline-block w-[9px] h-[9px] rounded-full" style={{ background: k.dark }} />
+                {k.label}
+              </li>
+            ))}
+          </ul>
+          <div className="muted mt-1">Click a point for commodities, status, operator and source. Facility status is as of 2018; exploration sites often lapse.</div>
         </div>
       )}
 

@@ -9,6 +9,7 @@ import type { City, InfraFeature } from "@/lib/data";
 import type { CityWeather } from "@/lib/openMeteo";
 import { ALL_LAYERS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import type { Quake } from "@/lib/usgs";
+import { useMineralLayers, type MineralProps } from "./useMineralLayers";
 import { useRiskLayers, type RiskPick, type RiskZone, type RainZone } from "./useRiskLayers";
 import { GLYPHS_URL, HIT_LAYERS, LAYER_KIND, pretty, type DetailFeature } from "./detail";
 import { LayerPanel } from "./LayerPanel";
@@ -73,6 +74,7 @@ export function MapView({
   conflict,
   rainfall,
   onRisk,
+  onMineral,
   onCorridor,
   relationsSel,
   initialView,
@@ -101,6 +103,7 @@ export function MapView({
   conflict: ConflictFile;
   rainfall: RainfallFile;
   onRisk: (p: RiskPick) => void;
+  onMineral: (p: MineralProps) => void;
   onCorridor: (id: string) => void;
   relationsSel: string | null;
   initialView: { zoom: number | null; center: [number, number] | null };
@@ -125,9 +128,10 @@ export function MapView({
     onFeature: typeof onFeature;
     onCorridor: typeof onCorridor;
     onRisk: typeof onRisk;
+    onMineral: typeof onMineral;
     pick: (x: number, y: number) => DeckPick | null;
-  }>({ onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, pick: () => null });
-  cb.current = { ...cb.current, onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk };
+  }>({ onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, pick: () => null });
+  cb.current = { ...cb.current, onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral };
   const avoid = useMemo(() => cities.map((c) => [c.lon, c.lat] as [number, number]), [cities]);
 
   // init once
@@ -232,6 +236,13 @@ export function MapView({
         const present = HIT_LAYERS.filter((id) => m.getLayer(id));
         return present.length ? m.queryRenderedFeatures([[x - r, y - r], [x + r, y + r]], { layers: present })[0] : undefined;
       };
+      const mineralAt = (pt: { x: number; y: number }): MineralProps | undefined => {
+        if (!m.getLayer("d-min-pt") || m.getLayoutProperty("d-min-pt", "visibility") !== "visible") return undefined;
+        const f = m.queryRenderedFeatures([[pt.x - 7, pt.y - 7], [pt.x + 7, pt.y + 7]], { layers: ["d-min-pt"] })[0];
+        if (!f) return undefined;
+        const p = f.properties as Record<string, unknown>;
+        return { ...(p as unknown as MineralProps), c: typeof p.c === "string" ? JSON.parse(p.c) : (p.c as string[]) };
+      };
       const riskAt = (pt: { x: number; y: number }): RiskPick | undefined => {
         const vis = (id: string) => m.getLayer(id) && m.getLayoutProperty(id, "visibility") === "visible";
         if (vis("d-risk-fill")) {
@@ -249,13 +260,15 @@ export function MapView({
         const infraHit = dp ? undefined : m.queryRenderedFeatures(e.point, { layers: ["infra-hit-pt", "infra-hit-line"] })[0];
         const ip = infraHit?.properties as { callsign: string; name: string } | undefined;
         const f = dp || infraHit ? undefined : detailAt(e.point.x, e.point.y, 5);
-        const rk = dp || infraHit || f ? undefined : riskAt(e.point);
+        const mn = dp || infraHit ? undefined : mineralAt(e.point);
+        const rk = dp || infraHit || f || mn ? undefined : riskAt(e.point);
         if (dp) setHover({ x: e.point.x, y: e.point.y, text: dp.text });
         else if (ip) setHover({ x: e.point.x, y: e.point.y, text: `${ip.callsign} · ${ip.name}` });
         else if (f) setHover({ x: e.point.x, y: e.point.y, text: tip(LAYER_KIND[f.layer.id], f.properties as Record<string, unknown>) });
+        else if (mn) setHover({ x: e.point.x, y: e.point.y, text: `${mn.n} · ${mn.c.slice(0, 2).join(", ") || "minerals"}` });
         else if (rk) setHover({ x: e.point.x, y: e.point.y, text: rk.kind === "conflict" ? (rk.z.nodata ? `${rk.z.n} · no conflict data` : `${rk.z.n} · ${rk.z.e} conflict events (12 mo)`) : `${rk.z.n} · rainfall ${rk.z.rated ? `${rk.z.pct}% of normal` : "not rated (dry season)"}` });
         else setHover(null);
-        m.getCanvas().style.cursor = dp || ip || f || rk ? "pointer" : "";
+        m.getCanvas().style.cursor = dp || ip || mn || f || rk ? "pointer" : "";
         const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as { name?: string } | undefined;
         setHoverCountry(c?.name ?? null);
       });
@@ -274,6 +287,11 @@ export function MapView({
         const id = (hits[0]?.properties as { id?: string } | undefined)?.id ?? null;
         if (id) {
           cb.current.onSelect(id);
+          return;
+        }
+        const mp = mineralAt(e.point);
+        if (mp) {
+          cb.current.onMineral(mp);
           return;
         }
         const f = detailAt(e.point.x, e.point.y, 6);
@@ -471,9 +489,10 @@ export function MapView({
   // detailed OpenStreetMap layers: loaded on demand, drawn and labelled here
   const detail = useDetailLayers({ map, ready, layers, facCats: fac, theme, lang, avoid });
   useRiskLayers({ map, ready, layers, theme, conflict, rainfall });
+  useMineralLayers({ map, ready, layers, theme });
   const deck = useDeckOverlay({ map, ready, layers, fac, theme, corridors, trade });
   cb.current.pick = deck.pick;
-  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall"];
+  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals"];
   const detailOn = DETAIL.filter((l) => layers.includes(l)).length;
 
   const jump = (id: string) => {

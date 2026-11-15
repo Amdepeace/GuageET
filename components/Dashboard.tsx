@@ -26,6 +26,8 @@ import { PowerExportsPanel } from "./power/PowerExportsPanel";
 import { RsdpPanel } from "./roads/RsdpPanel";
 import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
+import { MineralDetail } from "./map/MineralDetail";
+import type { MineralProps } from "./map/useMineralLayers";
 import { RiskZoneDetail } from "./map/RiskZoneDetail";
 import { RiskPanel } from "./risk/RiskPanel";
 import { InterbankPanel } from "./markets/InterbankPanel";
@@ -59,6 +61,7 @@ type Detail =
   | { kind: "simple"; id: string }
   | { kind: "infra"; id: string }
   | { kind: "risk"; pick: RiskPick }
+  | { kind: "mineral"; p: MineralProps }
   | { kind: "city"; id: string }
   | { kind: "quake"; id: string }
   | { kind: "country"; iso3: string; un: string | null; name: string }
@@ -337,6 +340,13 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </Drawer>
       );
     }
+    if (detail.kind === "mineral") {
+      return (
+        <Drawer title={detail.p.n} callsign="MINERAL" onClose={closeDetail}>
+          <MineralDetail p={detail.p} />
+        </Drawer>
+      );
+    }
     if (detail.kind === "risk") {
       return (
         <Drawer title={detail.pick.z.n} callsign={detail.pick.kind === "conflict" ? "CONFLICT" : "RAINFALL"} onClose={closeDetail}>
@@ -446,6 +456,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
               conflict={data.conflict}
               rainfall={data.rainfall}
               onRisk={(pick) => setDetail({ kind: "risk", pick })}
+              onMineral={(p) => setDetail({ kind: "mineral", p })}
               lang={view.lang}
               onLang={(lang) => setView((v) => ({ ...v, lang }))}
               fac={view.fac}

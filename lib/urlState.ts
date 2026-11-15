@@ -20,7 +20,8 @@ export type Layer =
   | "density"
   // risk heatmaps
   | "conflict"
-  | "rainfall";
+  | "rainfall"
+  | "minerals";
 
 export const ALL_LAYERS: Layer[] = [
   "existing",
@@ -40,6 +41,7 @@ export const ALL_LAYERS: Layer[] = [
   "density",
   "conflict",
   "rainfall",
+  "minerals",
 ];
 
 /** On by default: the infrastructure story plus a calm detailed base. The

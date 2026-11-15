@@ -216,6 +216,14 @@
       "access": "Public ESX page; breaks if the table layout changes",
       "url": "https://esx.et/fixed-income-market/data/",
       "statusKey": "ESX interbank money market"
+    },
+    {
+      "name": "USGS mineral industries of Africa (2024)",
+      "provides": "Ethiopian mines and plants (2018 source year), major deposits and exploration/development sites",
+      "cadence": "Static dataset; rebuilt by scripts/build-minerals.py",
+      "access": "Public domain (US Government); records can be out of date, positions approximate",
+      "url": "https://doi.org/10.5066/P97EQWXP",
+      "statusKey": null
     }
   ]
 }
