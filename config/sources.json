@@ -168,6 +168,14 @@
       "access": "CC BY-IGO",
       "url": "https://data.humdata.org/dataset/cod-ab-eth",
       "statusKey": null
+    },
+    {
+      "name": "Rainfall anomaly (ERA5)",
+      "provides": "90-day regional rainfall as a percent of the 1991–2020 normal",
+      "cadence": "Daily job; reanalysis lags about a week",
+      "access": "Free, no key; reanalysis at one point per region",
+      "url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "statusKey": "Rainfall anomaly (ERA5)"
     }
   ]
 }

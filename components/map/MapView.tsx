@@ -9,12 +9,12 @@ import type { City, InfraFeature } from "@/lib/data";
 import type { CityWeather } from "@/lib/openMeteo";
 import { ALL_LAYERS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import type { Quake } from "@/lib/usgs";
-import { useRiskLayers, type RiskZone } from "./useRiskLayers";
+import { useRiskLayers, type RiskPick, type RiskZone, type RainZone } from "./useRiskLayers";
 import { GLYPHS_URL, HIT_LAYERS, LAYER_KIND, pretty, type DetailFeature } from "./detail";
 import { LayerPanel } from "./LayerPanel";
 import { CITIES, useDetailLayers } from "./useDetailLayers";
 import { useDeckOverlay, type DeckPick } from "./useDeckOverlay";
-import type { ConflictFile, CorridorsFile, TradeFile } from "@/lib/schema";
+import type { ConflictFile, CorridorsFile, RainfallFile, TradeFile } from "@/lib/schema";
 
 const HOME: LngLatBoundsLike = [
   [32.5, -6],
@@ -71,6 +71,7 @@ export function MapView({
   corridors,
   trade,
   conflict,
+  rainfall,
   onRisk,
   onCorridor,
   relationsSel,
@@ -98,7 +99,8 @@ export function MapView({
   corridors: CorridorsFile;
   trade: TradeFile;
   conflict: ConflictFile;
-  onRisk: (z: RiskZone) => void;
+  rainfall: RainfallFile;
+  onRisk: (p: RiskPick) => void;
   onCorridor: (id: string) => void;
   relationsSel: string | null;
   initialView: { zoom: number | null; center: [number, number] | null };
@@ -230,18 +232,30 @@ export function MapView({
         const present = HIT_LAYERS.filter((id) => m.getLayer(id));
         return present.length ? m.queryRenderedFeatures([[x - r, y - r], [x + r, y + r]], { layers: present })[0] : undefined;
       };
+      const riskAt = (pt: { x: number; y: number }): RiskPick | undefined => {
+        const vis = (id: string) => m.getLayer(id) && m.getLayoutProperty(id, "visibility") === "visible";
+        if (vis("d-risk-fill")) {
+          const z = m.queryRenderedFeatures([pt.x, pt.y], { layers: ["d-risk-fill"] })[0]?.properties as unknown as RiskZone | undefined;
+          if (z) return { kind: "conflict", z };
+        }
+        if (vis("d-rain-fill")) {
+          const z = m.queryRenderedFeatures([pt.x, pt.y], { layers: ["d-rain-fill"] })[0]?.properties as unknown as RainZone | undefined;
+          if (z) return { kind: "rain", z };
+        }
+        return undefined;
+      };
       m.on("mousemove", (e) => {
         const dp = cb.current.pick(e.point.x, e.point.y); // deck.gl arcs sit on top, so they win
         const infraHit = dp ? undefined : m.queryRenderedFeatures(e.point, { layers: ["infra-hit-pt", "infra-hit-line"] })[0];
         const ip = infraHit?.properties as { callsign: string; name: string } | undefined;
         const f = dp || infraHit ? undefined : detailAt(e.point.x, e.point.y, 5);
-        const zone = dp || infraHit || f ? undefined : (m.getLayer("d-risk-fill") && m.getLayoutProperty("d-risk-fill", "visibility") === "visible" ? (m.queryRenderedFeatures(e.point, { layers: ["d-risk-fill"] })[0]?.properties as unknown as RiskZone | undefined) : undefined);
+        const rk = dp || infraHit || f ? undefined : riskAt(e.point);
         if (dp) setHover({ x: e.point.x, y: e.point.y, text: dp.text });
         else if (ip) setHover({ x: e.point.x, y: e.point.y, text: `${ip.callsign} · ${ip.name}` });
         else if (f) setHover({ x: e.point.x, y: e.point.y, text: tip(LAYER_KIND[f.layer.id], f.properties as Record<string, unknown>) });
-        else if (zone) setHover({ x: e.point.x, y: e.point.y, text: zone.nodata ? `${zone.n} · no conflict data` : `${zone.n} · ${zone.e} conflict events (12 mo)` });
+        else if (rk) setHover({ x: e.point.x, y: e.point.y, text: rk.kind === "conflict" ? (rk.z.nodata ? `${rk.z.n} · no conflict data` : `${rk.z.n} · ${rk.z.e} conflict events (12 mo)`) : `${rk.z.n} · rainfall ${rk.z.rated ? `${rk.z.pct}% of normal` : "not rated (dry season)"}` });
         else setHover(null);
-        m.getCanvas().style.cursor = dp || ip || f || zone ? "pointer" : "";
+        m.getCanvas().style.cursor = dp || ip || f || rk ? "pointer" : "";
         const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as { name?: string } | undefined;
         setHoverCountry(c?.name ?? null);
       });
@@ -272,12 +286,10 @@ export function MapView({
           });
           return;
         }
-        if (m.getLayer("d-risk-fill") && m.getLayoutProperty("d-risk-fill", "visibility") === "visible") {
-          const z = m.queryRenderedFeatures(e.point, { layers: ["d-risk-fill"] })[0]?.properties as unknown as RiskZone | undefined;
-          if (z) {
-            cb.current.onRisk(z);
-            return;
-          }
+        const rp = riskAt(e.point);
+        if (rp) {
+          cb.current.onRisk(rp);
+          return;
         }
         // nothing mapped under the cursor: open the country's relations
         const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as
@@ -458,10 +470,10 @@ export function MapView({
 
   // detailed OpenStreetMap layers: loaded on demand, drawn and labelled here
   const detail = useDetailLayers({ map, ready, layers, facCats: fac, theme, lang, avoid });
-  useRiskLayers({ map, ready, layers, theme, conflict });
+  useRiskLayers({ map, ready, layers, theme, conflict, rainfall });
   const deck = useDeckOverlay({ map, ready, layers, fac, theme, corridors, trade });
   cb.current.pick = deck.pick;
-  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict"];
+  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall"];
   const detailOn = DETAIL.filter((l) => layers.includes(l)).length;
 
   const jump = (id: string) => {
@@ -530,7 +542,7 @@ export function MapView({
             onLang={onLang}
             loading={detail.loading}
             errors={detail.errors}
-            risk={{ through: conflict.through, available: conflict.available, windowMonths: conflict.windowMonths }}
+            risk={{ through: conflict.through, available: conflict.available, windowMonths: conflict.windowMonths, rainFrom: rainfall.from, rainTo: rainfall.to, rainAvailable: rainfall.available }}
             deck={{ loading: deck.loading, error: deck.error, partnerArcs: deck.partnerArcs, tradeReady: trade.available }}
             onJump={jump}
             onClose={() => setPanelOpen(false)}

@@ -32,6 +32,10 @@ Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle
 
 The map's **Conflict heatmap** layer shades each admin-2 zone by ACLED-coded conflict events over the last 12 complete months, from HDX HAPI (keyless; `scripts/fetch-conflict.ts`). Click a zone for events, fatalities, the change against the previous 12 months, and the breakdown by event type. Zones the source has no rows for are drawn grey as *no data*, never as zero. Counts are reported events: places with little reporting are under-counted, recent months are often revised, and event counts say nothing about the scale of each event. UCDP needs an access token and GDELT's event files were unreachable, so neither is used. Boundaries: OCHA COD-AB Ethiopia (CC BY-IGO), simplified by `scripts/build-admin2.py`.
 
+### Rainfall vs normal (map layer)
+
+The map's **Rainfall vs normal** layer (`scripts/fetch-rainfall.ts`) colours each region by its last 90 days of rain as a percent of the 1991–2020 average for the same days (Open-Meteo ERA5, keyless). Brown is drier, teal is wetter; regions in a dry season (normal under 20 mm) are greyed, not rated. One sample point per region, so it is a coarse screen. A regional food-insecurity layer was not built because HAPI's IPC data for Ethiopia stops at 2021.
+
 ### Interactive explorer, command palette and section nav
 
 Three open-source libraries improve the UI: **[Apache ECharts](https://github.com/apache/echarts)** (Apache-2.0) powers the **EXPLORER** panel, where you pick an indicator and countries and view Values, Indexed (rebased to 100; disabled for rates and ratios) or Scatter (one indicator against another) with zoom, pan, legend toggles and save-as-image. ECharts is loaded on demand. **[cmdk](https://github.com/pacocoursey/cmdk)** (MIT) adds a **⌘K / Ctrl+K** palette to jump to any vital, infrastructure record or section. A sticky section bar highlights where you are. The Explorer uses only the sourced World Bank series already in `data/series`.

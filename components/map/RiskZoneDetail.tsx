@@ -1,11 +1,47 @@
 "use client";
-import type { ConflictFile } from "@/lib/schema";
+import type { ConflictFile, RainfallFile } from "@/lib/schema";
 import { Field } from "../shell/Drawer";
-import type { RiskZone } from "./useRiskLayers";
+import type { RiskPick, RiskZone } from "./useRiskLayers";
 
 const n = (v: number) => v.toLocaleString("en-US");
 
-export function RiskZoneDetail({ z, conflict }: { z: RiskZone; conflict: ConflictFile }) {
+export function RiskZoneDetail({ pick, conflict, rainfall }: { pick: RiskPick; conflict: ConflictFile; rainfall: RainfallFile }) {
+  if (pick.kind === "rain") {
+    const z = pick.z;
+    return (
+      <>
+        <div className="text-[12px] ink2">
+          {rainfall.from} to {rainfall.to} ({rainfall.windowDays} days)
+        </div>
+        {z.rated ? (
+          <>
+            <div className="grid grid-cols-3 gap-3">
+              <Field label="Rain">
+                <span className="mono text-[20px]">{n(z.mm)} mm</span>
+              </Field>
+              <Field label={`Normal ${rainfall.baseline}`}>
+                <span className="mono text-[20px]">{n(z.nm)} mm</span>
+              </Field>
+              <Field label="Of normal">
+                <span className="mono text-[20px]">{z.pct}%</span>
+              </Field>
+            </div>
+            <p className="text-[12px]">{z.pct < 75 ? "Markedly drier than normal for these weeks." : z.pct > 125 ? "Markedly wetter than normal for these weeks." : "Within about a quarter of normal."}</p>
+          </>
+        ) : (
+          <p className="text-[13px]">This region is in its dry season: the normal for these weeks is under 20 mm, so a percentage would swing wildly and is not rated.</p>
+        )}
+        <p className="text-[11px] muted leading-snug">
+          {rainfall.note} Source:{" "}
+          <a href={rainfall.sourceUrl} target="_blank" rel="noreferrer">
+            Open-Meteo / ERA5 ↗
+          </a>
+          . Region boundaries: OCHA COD-AB (CC BY-IGO).
+        </p>
+      </>
+    );
+  }
+  const z: RiskZone = pick.z;
   if (z.nodata) {
     return (
       <>

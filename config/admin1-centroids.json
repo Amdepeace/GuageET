@@ -1,0 +1,92 @@
+[
+ {
+  "id": "ET01",
+  "name": "Tigray",
+  "lat": 13.698,
+  "lon": 39.184
+ },
+ {
+  "id": "ET02",
+  "name": "Afar",
+  "lat": 11.673,
+  "lon": 40.904
+ },
+ {
+  "id": "ET03",
+  "name": "Amhara",
+  "lat": 11.237,
+  "lon": 38.323
+ },
+ {
+  "id": "ET04",
+  "name": "Oromia",
+  "lat": 6.95,
+  "lon": 40.414
+ },
+ {
+  "id": "ET05",
+  "name": "Somali",
+  "lat": 7.249,
+  "lon": 44.702
+ },
+ {
+  "id": "ET06",
+  "name": "Benishangul-Gumuz",
+  "lat": 10.474,
+  "lon": 35.346
+ },
+ {
+  "id": "ET07",
+  "name": "Central Ethiopia",
+  "lat": 7.754,
+  "lon": 37.923
+ },
+ {
+  "id": "ET08",
+  "name": "South Ethiopia",
+  "lat": 5.812,
+  "lon": 36.987
+ },
+ {
+  "id": "ET11",
+  "name": "South West Ethiopia",
+  "lat": 6.714,
+  "lon": 36.202
+ },
+ {
+  "id": "ET12",
+  "name": "Gambela",
+  "lat": 7.49,
+  "lon": 34.522
+ },
+ {
+  "id": "ET13",
+  "name": "Harari",
+  "lat": 9.293,
+  "lon": 42.161
+ },
+ {
+  "id": "ET14",
+  "name": "Addis Ababa",
+  "lat": 8.966,
+  "lon": 38.774
+ },
+ {
+  "id": "ET15",
+  "name": "Dire Dawa",
+  "lat": 9.625,
+  "lon": 41.877
+ },
+ {
+  "id": "ET16",
+  "name": "Sidama",
+  "lat": 6.652,
+  "lon": 38.478
+ },
+ {
+  "id": "ET99",
+  "name": "Contested",
+  "lat": 13.849,
+  "lon": 37.197
+ }
+]

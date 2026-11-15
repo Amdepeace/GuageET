@@ -1,5 +1,5 @@
 "use client";
-import { CONFLICT_COLORS } from "./useRiskLayers";
+import { CONFLICT_COLORS, RAIN_COLORS } from "./useRiskLayers";
 import type { ReactNode } from "react";
 import { ALL_FAC_CATS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import { FAC_META, SHAPES, facColor, type Shape } from "./detail";
@@ -36,6 +36,7 @@ const ROWS: { id: Layer; label: string; note: string; sw: ReactNode }[] = [
   { id: "streets", label: "City streets", note: "loads automatically when you zoom into a city", sw: <Line color="var(--road)" w={1} /> },
   { id: "flows", label: "Trade corridors & flows", note: "arcs from Addis Ababa to the sea ports; partner trade arcs from UN Comtrade", sw: <Line color="var(--ink-2)" w={3} /> },
   { id: "conflict", label: "Conflict heatmap", note: "ACLED events by zone, last 12 months (HDX HAPI). Reported events only; unreported areas are under-counted", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#6a3a73,#d4546a,#fbc552)" }} /> },
+  { id: "rainfall", label: "Rainfall vs normal", note: "last 90 days by region as % of the 1991–2020 average (ERA5 reanalysis, coarse screen for drought or flood)", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#cf9440,#3a4752,#37a39a)" }} /> },
   { id: "density", label: "Facility density", note: "hexagon map of where facilities are mapped (categories below). Mapping effort varies by area, so it is not a measure of need", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px] rounded-full" style={{ background: "radial-gradient(circle, var(--accent), transparent)" }} /> },
 ];
 
@@ -64,7 +65,7 @@ export function LayerPanel({
   loading: string[];
   errors: string[];
   deck: { loading: boolean; error: string | null; partnerArcs: number; tradeReady: boolean };
-  risk: { through: string; available: boolean; windowMonths: number };
+  risk: { through: string; available: boolean; windowMonths: number; rainFrom: string; rainTo: string; rainAvailable: boolean };
   onJump: (cityId: string) => void;
   onClose: () => void;
 }) {
@@ -161,6 +162,32 @@ export function LayerPanel({
             </>
           ) : (
             <div className="muted">Conflict data has not loaded yet.</div>
+          )}
+        </div>
+      )}
+
+      {layers.includes("rainfall") && (
+        <div className="px-3 pb-2 text-[10.5px]" role="status">
+          <div className="label mb-1">
+            Rainfall vs 1991–2020 normal{risk.rainAvailable ? `, ${risk.rainFrom} to ${risk.rainTo}` : ""}
+          </div>
+          {risk.rainAvailable ? (
+            <>
+              <div className="flex items-stretch">
+                {RAIN_COLORS.dark.map((c, i) => (
+                  <span key={i} className="flex-1 h-[8px]" style={{ background: c }} />
+                ))}
+              </div>
+              <div className="flex justify-between mono muted mt-0.5">
+                <span>&lt;50%</span>
+                <span>90</span>
+                <span>110</span>
+                <span>&gt;150%</span>
+              </div>
+              <div className="muted mt-1">Brown = drier than normal, teal = wetter. Grey = dry season, normal too small to rate. One sample point per region, so local rain can differ. Click a region.</div>
+            </>
+          ) : (
+            <div className="muted">Rainfall data has not loaded yet.</div>
           )}
         </div>
       )}

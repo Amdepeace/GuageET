@@ -295,3 +295,19 @@ export type ConflictFile = {
   areas: Record<string, ConflictArea>;
   national: { month: string; events: number; fatalities: number }[];
 };
+
+export type RainfallFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  note: string;
+  baseline: string;
+  windowDays: number;
+  /** window is [from, to], both YYYY-MM-DD */
+  from: string;
+  to: string;
+  regions: Record<string, { name: string; mm: number; normalMm: number; pct: number }>;
+  /** mean daily rainfall (mm) by day of year, 1991–2020, kept so the normal can be recomputed for any window */
+  climatology: Record<string, number[]>;
+};

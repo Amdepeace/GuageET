@@ -5,7 +5,7 @@
 // Boundaries: OCHA COD-AB Ethiopia (CC BY-IGO). Loaded on demand.
 import { useEffect, useRef, useState } from "react";
 import type { GeoJSONSource, Map as MlMap } from "maplibre-gl";
-import type { ConflictFile } from "@/lib/schema";
+import type { ConflictFile, RainfallFile } from "@/lib/schema";
 import type { Layer } from "@/lib/urlState";
 import { DETAIL_BASE, LAYER_ORDER } from "./detail";
 
@@ -17,6 +17,22 @@ export const CONFLICT_COLORS = {
 
 export type RiskZone = { id: string; n: string; r: string; nodata: boolean; e: number; f: number; ep: number; fp: number; ct: number; d: number; pv: number };
 
+export const RAIN_BREAKS = [50, 75, 90, 110, 125, 150];
+// brown = drier than normal, teal = wetter; the middle band is neutral
+export const RAIN_COLORS = {
+  dark: ["#a8631a", "#cf9440", "#e6c98a", "#3a4752", "#7fc7bd", "#37a39a", "#12766f"],
+  light: ["#8c510a", "#bf812d", "#dfc27d", "#e7ebee", "#80cdc1", "#35978f", "#01665e"],
+};
+export type RainZone = { id: string; n: string; pct: number; mm: number; nm: number; rated: boolean };
+export type RiskPick = { kind: "conflict"; z: RiskZone } | { kind: "rain"; z: RainZone };
+
+const rainFill = (theme: string) => {
+  const c = RAIN_COLORS[theme === "light" ? "light" : "dark"];
+  const step: unknown[] = ["step", ["get", "pct"], c[0]];
+  RAIN_BREAKS.forEach((b, i) => step.push(b, c[i + 1]));
+  return ["case", ["get", "rated"], step, theme === "light" ? "#c9d2da" : "#26323d"];
+};
+
 const fillColor = (theme: string) => {
   const c = CONFLICT_COLORS[theme === "light" ? "light" : "dark"];
   const step: unknown[] = ["step", ["get", "e"], c[0]];
@@ -24,10 +40,12 @@ const fillColor = (theme: string) => {
   return ["case", ["get", "nodata"], theme === "light" ? "#c9d2da" : "#26323d", step];
 };
 
-export function useRiskLayers({ map, ready, layers, theme, conflict }: { map: React.MutableRefObject<MlMap | null>; ready: boolean; layers: Layer[]; theme: string; conflict: ConflictFile }) {
+export function useRiskLayers({ map, ready, layers, theme, conflict, rainfall }: { map: React.MutableRefObject<MlMap | null>; ready: boolean; layers: Layer[]; theme: string; conflict: ConflictFile; rainfall: RainfallFile }) {
   const [state, setState] = useState<{ loading: boolean; error: string | null }>({ loading: false, error: null });
   const fc = useRef<{ type: string; features: { properties: Record<string, unknown> }[] } | null>(null);
+  const rainFc = useRef<{ type: string; features: { properties: Record<string, unknown> }[] } | null>(null);
   const on = layers.includes("conflict");
+  const rainOn = layers.includes("rainfall");
 
   useEffect(() => {
     const m = map.current;
@@ -70,12 +88,59 @@ export function useRiskLayers({ map, ready, layers, theme, conflict }: { map: Re
     };
   }, [map, ready, on, conflict, theme]);
 
+  // rainfall anomaly by region
+  useEffect(() => {
+    const m = map.current;
+    if (!m || !ready) return;
+    if (!rainOn) {
+      for (const id of ["d-rain-fill", "d-rain-line"]) if (m.getLayer(id)) m.setLayoutProperty(id, "visibility", "none");
+      return;
+    }
+    let alive = true;
+    (async () => {
+      try {
+        if (!rainFc.current) {
+          setState({ loading: true, error: null });
+          const r = await fetch(`${DETAIL_BASE}/admin1.json`);
+          if (!r.ok) throw new Error(`admin1.json HTTP ${r.status}`);
+          rainFc.current = await r.json();
+        }
+        if (!alive || !rainFc.current) return;
+        for (const f of rainFc.current.features) {
+          const p = f.properties as { id: string };
+          const a = rainfall.available ? rainfall.regions[p.id] : undefined;
+          // a dry-season normal this small makes the percentage meaningless
+          Object.assign(f.properties, a ? { rated: a.normalMm >= 20, pct: a.pct, mm: a.mm, nm: a.normalMm } : { rated: false, pct: 0, mm: 0, nm: 0 });
+        }
+        if (!m.getSource("d-rain")) m.addSource("d-rain", { type: "geojson", data: rainFc.current as never });
+        else (m.getSource("d-rain") as GeoJSONSource).setData(rainFc.current as never);
+        let before: string | undefined = LAYER_ORDER.find((id) => m.getLayer(id));
+        if (!before && m.getLayer("infra-halo")) before = "infra-halo";
+        if (!m.getLayer("d-rain-fill")) m.addLayer({ id: "d-rain-fill", type: "fill", source: "d-rain", paint: { "fill-color": rainFill(theme) as never, "fill-opacity": 0.72 } }, before);
+        if (!m.getLayer("d-rain-line")) m.addLayer({ id: "d-rain-line", type: "line", source: "d-rain", paint: { "line-color": theme === "light" ? "#ffffff" : "#0b1117", "line-width": 0.8, "line-opacity": 0.8 } }, before);
+        for (const id of ["d-rain-fill", "d-rain-line"]) m.setLayoutProperty(id, "visibility", "visible");
+        setState({ loading: false, error: null });
+      } catch (e) {
+        if (alive) setState({ loading: false, error: (e as Error).message });
+      }
+    })();
+    return () => {
+      alive = false;
+    };
+  }, [map, ready, rainOn, rainfall, theme]);
+
   // theme changes recolour in place
   useEffect(() => {
     const m = map.current;
     if (!m || !ready || !m.getLayer("d-risk-fill")) return;
     m.setPaintProperty("d-risk-fill", "fill-color", fillColor(theme) as never);
     m.setPaintProperty("d-risk-line", "line-color", theme === "light" ? "#ffffff" : "#0b1117");
+  }, [map, ready, theme]);
+  useEffect(() => {
+    const m = map.current;
+    if (!m || !ready || !m.getLayer("d-rain-fill")) return;
+    m.setPaintProperty("d-rain-fill", "fill-color", rainFill(theme) as never);
+    m.setPaintProperty("d-rain-line", "line-color", theme === "light" ? "#ffffff" : "#0b1117");
   }, [map, ready, theme]);
 
   return state;

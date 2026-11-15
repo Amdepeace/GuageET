@@ -31,6 +31,7 @@ import powerExportsJson from "@/data/curated/power-exports.json";
 import rsdpJson from "@/data/curated/rsdp.json";
 import climateJson from "@/data/climate.json";
 import conflictJson from "@/data/conflict.json";
+import rainfallJson from "@/data/rainfall.json";
 import humanitarianJson from "@/data/humanitarian.json";
 import type {
   ChangeEntry,
@@ -56,6 +57,7 @@ import type {
   RsdpFile,
   ClimateFile,
   ConflictFile,
+  RainfallFile,
 } from "./schema";
 
 export type City = { id: string; name: string; am: string; lat: number; lon: number; labelAnchor?: "top" | "bottom" };
@@ -116,6 +118,7 @@ export type DashboardData = {
   rsdp: RsdpFile;
   climate: ClimateFile;
   conflict: ConflictFile;
+  rainfall: RainfallFile;
 };
 
 export function loadData(): DashboardData {
@@ -148,5 +151,6 @@ export function loadData(): DashboardData {
     rsdp: rsdpJson as unknown as RsdpFile,
     climate: climateJson as unknown as ClimateFile,
     conflict: conflictJson as unknown as ConflictFile,
+    rainfall: rainfallJson as unknown as RainfallFile,
   };
 }
