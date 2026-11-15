@@ -4,7 +4,7 @@
 // Nothing here is a probability of crisis. Every cell shows how a value ranks
 // against that indicator's own history; the sources keep their own dates.
 import { CartesianGrid, ComposedChart, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import type { ConflictFile, CountryFile, OutlookFile, ProjectionsFile, RainfallFile, Observation } from "@/lib/schema";
+import type { ConflictFile, CountryFile, InterbankFile, OutlookFile, ProjectionsFile, RainfallFile, Observation } from "@/lib/schema";
 import { compact } from "@/lib/format";
 import { CONFLICT_COLORS } from "../map/useRiskLayers";
 
@@ -50,6 +50,7 @@ export function RiskPanel({
   rainfall,
   projections,
   outlook,
+  interbank,
   theme,
   onLayer,
   onOpenVital,
@@ -59,6 +60,7 @@ export function RiskPanel({
   rainfall: RainfallFile;
   projections: ProjectionsFile;
   outlook: OutlookFile;
+  interbank: InterbankFile;
   theme: string;
   onLayer: (layer: "conflict" | "rainfall") => void;
   onOpenVital: (id: string) => void;
@@ -74,6 +76,11 @@ export function RiskPanel({
   const rainRows = Object.values(rainfall.regions).filter((r) => r.normalMm >= 20);
   const dry = rainRows.filter((r) => r.pct < 75).length;
   const wet = rainRows.filter((r) => r.pct > 125).length;
+
+  const ibOn = interbank.available ? interbank.weeks.filter((w) => w.maturity === "overnight") : [];
+  const ibNow = ibOn.at(-1);
+  const ibPrev = ibOn.at(-2);
+  const ibMax = ibOn.length ? Math.max(...ibOn.map((w) => w.rate)) : 0;
 
   const axis = { fontSize: 10, fill: "var(--ink-3)" };
   const tip = { background: "var(--panel)", border: "1px solid var(--line-strong)", fontSize: 12 };
@@ -142,6 +149,13 @@ export function RiskPanel({
                 <button type="button" className="ctl" onClick={() => onLayer("conflict")}>
                   Show heatmap on map
                 </button>
+              </li>
+            )}
+            {ibNow && (
+              <li className="panel p-2">
+                <b>Interbank overnight rate:</b> {ibNow.rate.toFixed(2)}% in the week ending {ibNow.end}
+                {ibPrev ? `, from ${ibPrev.rate.toFixed(2)}% the week before` : ""}
+                {ibNow.rate >= ibMax && ibOn.length > 8 ? `; the highest weekly rate since the table begins (${ibOn[0].end})` : ""}. <span className="muted">ESX; thin weeks ({ibNow.trades} trades) can swing.</span>
               </li>
             )}
             {rainfall.available && (

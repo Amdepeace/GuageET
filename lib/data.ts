@@ -37,6 +37,7 @@ import outlookJson from "@/data/outlook.json";
 import radioJson from "@/data/radio.json";
 import esxJson from "@/data/esx.json";
 import esxCalJson from "@/data/curated/esx-calendar.json";
+import esxRatesJson from "@/data/esx-rates.json";
 import humanitarianJson from "@/data/humanitarian.json";
 import type {
   ChangeEntry,
@@ -68,6 +69,7 @@ import type {
   RadioFile,
   EsxFile,
   EsxCalendar,
+  InterbankFile,
 } from "./schema";
 
 export type City = { id: string; name: string; am: string; lat: number; lon: number; labelAnchor?: "top" | "bottom" };
@@ -134,6 +136,7 @@ export type DashboardData = {
   radio: RadioFile;
   esx: EsxFile;
   esxCalendar: EsxCalendar;
+  esxRates: InterbankFile;
 };
 
 export function loadData(): DashboardData {
@@ -172,5 +175,6 @@ export function loadData(): DashboardData {
     radio: radioJson as unknown as RadioFile,
     esx: esxJson as unknown as EsxFile,
     esxCalendar: esxCalJson as unknown as EsxCalendar,
+    esxRates: esxRatesJson as unknown as InterbankFile,
   };
 }

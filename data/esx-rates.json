@@ -1,0 +1,1233 @@
+{
+  "source": "ESX interbank money market",
+  "sourceUrl": "https://esx.et/fixed-income-market/data/",
+  "fetchedAt": "2026-11-15T22:24:36.813Z",
+  "available": true,
+  "note": "Weekly statistics for interbank loans traded on ESX, as published by ESX. The rate is the weighted-average interest rate; change is the weekly move in percentage points as published. A thin week (few trades) can move a lot.",
+  "weeks": [
+    {
+      "start": "2025-06-30",
+      "end": "2025-07-04",
+      "maturity": "7d",
+      "volumeEtb": 6480000000,
+      "trades": 24,
+      "rate": 14.29,
+      "changePts": -0.88
+    },
+    {
+      "start": "2025-06-30",
+      "end": "2025-07-04",
+      "maturity": "overnight",
+      "volumeEtb": 3200000000,
+      "trades": 11,
+      "rate": 12,
+      "changePts": -0.07
+    },
+    {
+      "start": "2025-07-07",
+      "end": "2025-07-11",
+      "maturity": "7d",
+      "volumeEtb": 6880000000,
+      "trades": 22,
+      "rate": 12.69,
+      "changePts": -1.6
+    },
+    {
+      "start": "2025-07-07",
+      "end": "2025-07-11",
+      "maturity": "overnight",
+      "volumeEtb": 6050000000,
+      "trades": 16,
+      "rate": 12,
+      "changePts": 0
+    },
+    {
+      "start": "2025-07-14",
+      "end": "2025-07-18",
+      "maturity": "7d",
+      "volumeEtb": 6150000000,
+      "trades": 24,
+      "rate": 12,
+      "changePts": -0.69
+    },
+    {
+      "start": "2025-07-14",
+      "end": "2025-07-18",
+      "maturity": "overnight",
+      "volumeEtb": 5500000000,
+      "trades": 11,
+      "rate": 12,
+      "changePts": 0
+    },
+    {
+      "start": "2025-07-21",
+      "end": "2025-07-25",
+      "maturity": "7d",
+      "volumeEtb": 4400000000,
+      "trades": 14,
+      "rate": 12,
+      "changePts": 0
+    },
+    {
+      "start": "2025-07-21",
+      "end": "2025-07-25",
+      "maturity": "overnight",
+      "volumeEtb": 3200000000,
+      "trades": 7,
+      "rate": 12,
+      "changePts": 0
+    },
+    {
+      "start": "2025-07-28",
+      "end": "2025-08-01",
+      "maturity": "7d",
+      "volumeEtb": 5125000000,
+      "trades": 16,
+      "rate": 12,
+      "changePts": 0
+    },
+    {
+      "start": "2025-07-28",
+      "end": "2025-08-01",
+      "maturity": "overnight",
+      "volumeEtb": 1700000000,
+      "trades": 6,
+      "rate": 12,
+      "changePts": 0
+    },
+    {
+      "start": "2025-08-04",
+      "end": "2025-08-08",
+      "maturity": "7d",
+      "volumeEtb": 9010000000,
+      "trades": 23,
+      "rate": 14.8,
+      "changePts": 2.8
+    },
+    {
+      "start": "2025-08-04",
+      "end": "2025-08-08",
+      "maturity": "overnight",
+      "volumeEtb": 6625000000,
+      "trades": 18,
+      "rate": 13.96,
+      "changePts": 1.96
+    },
+    {
+      "start": "2025-08-11",
+      "end": "2025-08-15",
+      "maturity": "7d",
+      "volumeEtb": 8000000000,
+      "trades": 23,
+      "rate": 13.93,
+      "changePts": -0.87
+    },
+    {
+      "start": "2025-08-11",
+      "end": "2025-08-15",
+      "maturity": "overnight",
+      "volumeEtb": 7130000000,
+      "trades": 24,
+      "rate": 12.07,
+      "changePts": -1.89
+    },
+    {
+      "start": "2025-08-18",
+      "end": "2025-08-22",
+      "maturity": "7d",
+      "volumeEtb": 7675000000,
+      "trades": 22,
+      "rate": 12.9,
+      "changePts": -1.03
+    },
+    {
+      "start": "2025-08-18",
+      "end": "2025-08-22",
+      "maturity": "overnight",
+      "volumeEtb": 5700000000,
+      "trades": 14,
+      "rate": 12,
+      "changePts": -0.07
+    },
+    {
+      "start": "2025-08-25",
+      "end": "2025-08-29",
+      "maturity": "7d",
+      "volumeEtb": 9480000000,
+      "trades": 28,
+      "rate": 13.07,
+      "changePts": 0.17
+    },
+    {
+      "start": "2025-08-25",
+      "end": "2025-08-29",
+      "maturity": "overnight",
+      "volumeEtb": 18450,
+      "trades": 34,
+      "rate": 12.24,
+      "changePts": 0.24
+    },
+    {
+      "start": "2025-09-01",
+      "end": "2025-09-05",
+      "maturity": "7d",
+      "volumeEtb": 7605000000,
+      "trades": 22,
+      "rate": 13.55,
+      "changePts": 0.48
+    },
+    {
+      "start": "2025-09-01",
+      "end": "2025-09-05",
+      "maturity": "overnight",
+      "volumeEtb": 2500000000,
+      "trades": 6,
+      "rate": 12.3,
+      "changePts": 0.06
+    },
+    {
+      "start": "2025-09-08",
+      "end": "2025-09-12",
+      "maturity": "7d",
+      "volumeEtb": 12185000000,
+      "trades": 37,
+      "rate": 14.49,
+      "changePts": 0.94
+    },
+    {
+      "start": "2025-09-08",
+      "end": "2025-09-12",
+      "maturity": "overnight",
+      "volumeEtb": 3830000000,
+      "trades": 10,
+      "rate": 12.9,
+      "changePts": 0.6
+    },
+    {
+      "start": "2025-09-15",
+      "end": "2025-09-19",
+      "maturity": "7d",
+      "volumeEtb": 14225000000,
+      "trades": 38,
+      "rate": 15.3,
+      "changePts": 0.8
+    },
+    {
+      "start": "2025-09-15",
+      "end": "2025-09-19",
+      "maturity": "overnight",
+      "volumeEtb": 4850000000,
+      "trades": 14,
+      "rate": 13.87,
+      "changePts": 1
+    },
+    {
+      "start": "2025-09-22",
+      "end": "2025-09-26",
+      "maturity": "7d",
+      "volumeEtb": 11020000000,
+      "trades": 28,
+      "rate": 14.22,
+      "changePts": -1.1
+    },
+    {
+      "start": "2025-09-22",
+      "end": "2025-09-26",
+      "maturity": "overnight",
+      "volumeEtb": 15100000000,
+      "trades": 30,
+      "rate": 13.01,
+      "changePts": -1
+    },
+    {
+      "start": "2025-09-29",
+      "end": "2025-10-03",
+      "maturity": "7d",
+      "volumeEtb": 10385000000,
+      "trades": 33,
+      "rate": 12.61,
+      "changePts": -1.61
+    },
+    {
+      "start": "2025-09-29",
+      "end": "2025-10-03",
+      "maturity": "overnight",
+      "volumeEtb": 3750000000,
+      "trades": 13,
+      "rate": 12,
+      "changePts": -1.01
+    },
+    {
+      "start": "2025-10-06",
+      "end": "2025-10-10",
+      "maturity": "7d",
+      "volumeEtb": 14800000000,
+      "trades": 40,
+      "rate": 12.37,
+      "changePts": -0.24
+    },
+    {
+      "start": "2025-10-06",
+      "end": "2025-10-10",
+      "maturity": "overnight",
+      "volumeEtb": 15125000000,
+      "trades": 34,
+      "rate": 12,
+      "changePts": 0
+    },
+    {
+      "start": "2025-10-13",
+      "end": "2025-10-17",
+      "maturity": "7d",
+      "volumeEtb": 17675000000,
+      "trades": 41,
+      "rate": 14.27,
+      "changePts": 1.9
+    },
+    {
+      "start": "2025-10-13",
+      "end": "2025-10-17",
+      "maturity": "overnight",
+      "volumeEtb": 6850000000,
+      "trades": 18,
+      "rate": 14.53,
+      "changePts": 2.23
+    },
+    {
+      "start": "2025-10-20",
+      "end": "2025-10-24",
+      "maturity": "7d",
+      "volumeEtb": 13000000000,
+      "trades": 31,
+      "rate": 13.04,
+      "changePts": -1.23
+    },
+    {
+      "start": "2025-10-20",
+      "end": "2025-10-24",
+      "maturity": "overnight",
+      "volumeEtb": 900000000,
+      "trades": 3,
+      "rate": 12,
+      "changePts": -2.53
+    },
+    {
+      "start": "2025-10-27",
+      "end": "2025-10-31",
+      "maturity": "7d",
+      "volumeEtb": 10450000000,
+      "trades": 29,
+      "rate": 16.23,
+      "changePts": 3.19
+    },
+    {
+      "start": "2025-10-27",
+      "end": "2025-10-31",
+      "maturity": "overnight",
+      "volumeEtb": 3350000000,
+      "trades": 8,
+      "rate": 12.15,
+      "changePts": 0.15
+    },
+    {
+      "start": "2025-11-03",
+      "end": "2025-11-07",
+      "maturity": "7d",
+      "volumeEtb": 13590000000,
+      "trades": 35,
+      "rate": 17.26,
+      "changePts": 1.03
+    },
+    {
+      "start": "2025-11-03",
+      "end": "2025-11-07",
+      "maturity": "overnight",
+      "volumeEtb": 16950000000,
+      "trades": 25,
+      "rate": 14.02,
+      "changePts": 1.87
+    },
+    {
+      "start": "2025-11-10",
+      "end": "2025-11-14",
+      "maturity": "7d",
+      "volumeEtb": 24075000000,
+      "trades": 57,
+      "rate": 17.95,
+      "changePts": 0.69
+    },
+    {
+      "start": "2025-11-10",
+      "end": "2025-11-14",
+      "maturity": "overnight",
+      "volumeEtb": 20725000000,
+      "trades": 38,
+      "rate": 16.72,
+      "changePts": 2.7
+    },
+    {
+      "start": "2025-11-17",
+      "end": "2025-11-21",
+      "maturity": "7d",
+      "volumeEtb": 24870000000,
+      "trades": 54,
+      "rate": 16.9,
+      "changePts": -1.05
+    },
+    {
+      "start": "2025-11-17",
+      "end": "2025-11-21",
+      "maturity": "overnight",
+      "volumeEtb": 13250000000,
+      "trades": 18,
+      "rate": 13.45,
+      "changePts": -3.27
+    },
+    {
+      "start": "2025-11-24",
+      "end": "2025-11-28",
+      "maturity": "7d",
+      "volumeEtb": 22130000000,
+      "trades": 46,
+      "rate": 17.45,
+      "changePts": 0.55
+    },
+    {
+      "start": "2025-11-24",
+      "end": "2025-11-28",
+      "maturity": "overnight",
+      "volumeEtb": 20650000000,
+      "trades": 36,
+      "rate": 12.9,
+      "changePts": -0.55
+    },
+    {
+      "start": "2025-12-01",
+      "end": "2025-12-05",
+      "maturity": "7d",
+      "volumeEtb": 25340000000,
+      "trades": 54,
+      "rate": 16.55,
+      "changePts": -0.9
+    },
+    {
+      "start": "2025-12-01",
+      "end": "2025-12-05",
+      "maturity": "overnight",
+      "volumeEtb": 5700000000,
+      "trades": 16,
+      "rate": 12.54,
+      "changePts": -0.36
+    },
+    {
+      "start": "2025-12-08",
+      "end": "2025-12-12",
+      "maturity": "7d",
+      "volumeEtb": 21200000000,
+      "trades": 45,
+      "rate": 15.12,
+      "changePts": -1.43
+    },
+    {
+      "start": "2025-12-08",
+      "end": "2025-12-12",
+      "maturity": "overnight",
+      "volumeEtb": 6850000000,
+      "trades": 14,
+      "rate": 12,
+      "changePts": -0.54
+    },
+    {
+      "start": "2025-12-15",
+      "end": "2025-12-19",
+      "maturity": "7d",
+      "volumeEtb": 22500000000,
+      "trades": 51,
+      "rate": 14.51,
+      "changePts": -0.61
+    },
+    {
+      "start": "2025-12-15",
+      "end": "2025-12-19",
+      "maturity": "overnight",
+      "volumeEtb": 6600000000,
+      "trades": 11,
+      "rate": 12.09,
+      "changePts": 0.09
+    },
+    {
+      "start": "2025-12-22",
+      "end": "2025-12-26",
+      "maturity": "7d",
+      "volumeEtb": 19820000000,
+      "trades": 45,
+      "rate": 14.37,
+      "changePts": -0.14
+    },
+    {
+      "start": "2025-12-22",
+      "end": "2025-12-26",
+      "maturity": "overnight",
+      "volumeEtb": 20350000000,
+      "trades": 33,
+      "rate": 12,
+      "changePts": -0.09
+    },
+    {
+      "start": "2025-12-28",
+      "end": "2026-01-02",
+      "maturity": "7d",
+      "volumeEtb": 25400000000,
+      "trades": 52,
+      "rate": 17.66,
+      "changePts": 3.29
+    },
+    {
+      "start": "2025-12-28",
+      "end": "2026-01-02",
+      "maturity": "overnight",
+      "volumeEtb": 19050000000,
+      "trades": 44,
+      "rate": 15.3,
+      "changePts": 3.3
+    },
+    {
+      "start": "2026-01-05",
+      "end": "2026-01-09",
+      "maturity": "7d",
+      "volumeEtb": 25000000000,
+      "trades": 45,
+      "rate": 17.68,
+      "changePts": 0.02
+    },
+    {
+      "start": "2026-01-05",
+      "end": "2026-01-09",
+      "maturity": "overnight",
+      "volumeEtb": 13700000000,
+      "trades": 27,
+      "rate": 14.08,
+      "changePts": -1.22
+    },
+    {
+      "start": "2026-01-12",
+      "end": "2026-01-16",
+      "maturity": "7d",
+      "volumeEtb": 34570000000,
+      "trades": 59,
+      "rate": 14.16,
+      "changePts": -3.52
+    },
+    {
+      "start": "2026-01-12",
+      "end": "2026-01-16",
+      "maturity": "overnight",
+      "volumeEtb": 21370000000,
+      "trades": 28,
+      "rate": 12,
+      "changePts": -2.08
+    },
+    {
+      "start": "2026-01-20",
+      "end": "2026-01-23",
+      "maturity": "7d",
+      "volumeEtb": 26250000000,
+      "trades": 51,
+      "rate": 15.92,
+      "changePts": 1.76
+    },
+    {
+      "start": "2026-01-20",
+      "end": "2026-01-23",
+      "maturity": "overnight",
+      "volumeEtb": 21685000000,
+      "trades": 34,
+      "rate": 12.82,
+      "changePts": 0.81
+    },
+    {
+      "start": "2026-01-26",
+      "end": "2026-01-30",
+      "maturity": "7d",
+      "volumeEtb": 16950000000,
+      "trades": 34,
+      "rate": 17.55,
+      "changePts": 1.63
+    },
+    {
+      "start": "2026-01-26",
+      "end": "2026-01-30",
+      "maturity": "overnight",
+      "volumeEtb": 52970000000,
+      "trades": 94,
+      "rate": 17.09,
+      "changePts": 4.26
+    },
+    {
+      "start": "2026-02-02",
+      "end": "2026-02-06",
+      "maturity": "7d",
+      "volumeEtb": 36075000000,
+      "trades": 63,
+      "rate": 18,
+      "changePts": 0.45
+    },
+    {
+      "start": "2026-02-02",
+      "end": "2026-02-06",
+      "maturity": "overnight",
+      "volumeEtb": 44700000000,
+      "trades": 72,
+      "rate": 17.49,
+      "changePts": 0.4
+    },
+    {
+      "start": "2026-02-09",
+      "end": "2026-02-13",
+      "maturity": "7d",
+      "volumeEtb": 32650000000,
+      "trades": 60,
+      "rate": 18,
+      "changePts": 0
+    },
+    {
+      "start": "2026-02-09",
+      "end": "2026-02-13",
+      "maturity": "overnight",
+      "volumeEtb": 23615000000,
+      "trades": 45,
+      "rate": 17.72,
+      "changePts": 0.23
+    },
+    {
+      "start": "2026-02-16",
+      "end": "2026-02-20",
+      "maturity": "7d",
+      "volumeEtb": 38700000000,
+      "trades": 66,
+      "rate": 17.99,
+      "changePts": -0.01
+    },
+    {
+      "start": "2026-02-16",
+      "end": "2026-02-20",
+      "maturity": "overnight",
+      "volumeEtb": 33300000000,
+      "trades": 49,
+      "rate": 14.11,
+      "changePts": -3.6
+    },
+    {
+      "start": "2026-02-23",
+      "end": "2026-02-27",
+      "maturity": "7d",
+      "volumeEtb": 12250000000,
+      "trades": 21,
+      "rate": 18,
+      "changePts": 0.01
+    },
+    {
+      "start": "2026-02-23",
+      "end": "2026-02-27",
+      "maturity": "overnight",
+      "volumeEtb": 87440000000,
+      "trades": 125,
+      "rate": 18,
+      "changePts": 3.89
+    },
+    {
+      "start": "2026-03-02",
+      "end": "2026-03-06",
+      "maturity": "7d",
+      "volumeEtb": 10300000000,
+      "trades": 20,
+      "rate": 18,
+      "changePts": 0
+    },
+    {
+      "start": "2026-03-02",
+      "end": "2026-03-06",
+      "maturity": "overnight",
+      "volumeEtb": 76730000000,
+      "trades": 99,
+      "rate": 18,
+      "changePts": 0
+    },
+    {
+      "start": "2026-03-09",
+      "end": "2026-03-13",
+      "maturity": "7d",
+      "volumeEtb": 19700000000,
+      "trades": 37,
+      "rate": 18,
+      "changePts": 0
+    },
+    {
+      "start": "2026-03-09",
+      "end": "2026-03-13",
+      "maturity": "overnight",
+      "volumeEtb": 88340000000,
+      "trades": 105,
+      "rate": 18,
+      "changePts": 0
+    },
+    {
+      "start": "2026-03-16",
+      "end": "2026-03-19",
+      "maturity": "7d",
+      "volumeEtb": 17550000000,
+      "trades": 36,
+      "rate": 18,
+      "changePts": 0
+    },
+    {
+      "start": "2026-03-16",
+      "end": "2026-03-19",
+      "maturity": "overnight",
+      "volumeEtb": 61950000000,
+      "trades": 81,
+      "rate": 18,
+      "changePts": 0
+    },
+    {
+      "start": "2026-03-23",
+      "end": "2026-03-27",
+      "maturity": "7d",
+      "volumeEtb": 26450000000,
+      "trades": 49,
+      "rate": 18,
+      "changePts": 0
+    },
+    {
+      "start": "2026-03-23",
+      "end": "2026-03-27",
+      "maturity": "overnight",
+      "volumeEtb": 118800000000,
+      "trades": 139,
+      "rate": 18,
+      "changePts": 0
+    },
+    {
+      "start": "2026-03-30",
+      "end": "2026-04-03",
+      "maturity": "7d",
+      "volumeEtb": 27700000000,
+      "trades": 45,
+      "rate": 17.82,
+      "changePts": -0.18
+    },
+    {
+      "start": "2026-03-30",
+      "end": "2026-04-03",
+      "maturity": "overnight",
+      "volumeEtb": 38200000000,
+      "trades": 52,
+      "rate": 14.02,
+      "changePts": -3.98
+    },
+    {
+      "start": "2026-05-04",
+      "end": "2026-05-08",
+      "maturity": "7d",
+      "volumeEtb": 42090000000,
+      "trades": 36,
+      "rate": 12.268,
+      "changePts": -0.98
+    },
+    {
+      "start": "2026-05-04",
+      "end": "2026-05-08",
+      "maturity": "overnight",
+      "volumeEtb": 10500000000,
+      "trades": 12,
+      "rate": 12,
+      "changePts": 0
+    },
+    {
+      "start": "2026-05-11",
+      "end": "2026-05-15",
+      "maturity": "7d",
+      "volumeEtb": 24500000000,
+      "trades": 30,
+      "rate": 12,
+      "changePts": -0.268
+    },
+    {
+      "start": "2026-05-11",
+      "end": "2026-05-15",
+      "maturity": "overnight",
+      "volumeEtb": 36950000000,
+      "trades": 42,
+      "rate": 12,
+      "changePts": 0
+    },
+    {
+      "start": "2026-05-18",
+      "end": "2026-05-22",
+      "maturity": "7d",
+      "volumeEtb": 53500000000,
+      "trades": 54,
+      "rate": 16.91,
+      "changePts": 4.91
+    },
+    {
+      "start": "2026-05-18",
+      "end": "2026-05-22",
+      "maturity": "overnight",
+      "volumeEtb": 36950000000,
+      "trades": 47,
+      "rate": 14.8,
+      "changePts": 2.82
+    },
+    {
+      "start": "2026-05-25",
+      "end": "2026-05-29",
+      "maturity": "7d",
+      "volumeEtb": 20150000000,
+      "trades": 30,
+      "rate": 15.019,
+      "changePts": -1.8914
+    },
+    {
+      "start": "2026-05-25",
+      "end": "2026-05-29",
+      "maturity": "overnight",
+      "volumeEtb": 55330000000,
+      "trades": 55,
+      "rate": 12.313,
+      "changePts": -2.5073
+    },
+    {
+      "start": "2026-06-01",
+      "end": "2026-06-05",
+      "maturity": "7d",
+      "volumeEtb": 34750000000,
+      "trades": 38,
+      "rate": 17.669,
+      "changePts": 2.6501
+    },
+    {
+      "start": "2026-06-01",
+      "end": "2026-06-05",
+      "maturity": "overnight",
+      "volumeEtb": 76250000000,
+      "trades": 54,
+      "rate": 12.157,
+      "changePts": -0.1556
+    },
+    {
+      "start": "2026-06-08",
+      "end": "2026-06-12",
+      "maturity": "7d",
+      "volumeEtb": 39600000000,
+      "trades": 43,
+      "rate": 16.528,
+      "changePts": -1.1412
+    },
+    {
+      "start": "2026-06-08",
+      "end": "2026-06-12",
+      "maturity": "overnight",
+      "volumeEtb": 58725000000,
+      "trades": 57,
+      "rate": 12.525,
+      "changePts": 0.3683
+    },
+    {
+      "start": "2026-06-15",
+      "end": "2026-06-19",
+      "maturity": "7d",
+      "volumeEtb": 49800000000,
+      "trades": 46,
+      "rate": 15.634,
+      "changePts": -0.8945
+    },
+    {
+      "start": "2026-06-15",
+      "end": "2026-06-19",
+      "maturity": "overnight",
+      "volumeEtb": 66300000000,
+      "trades": 59,
+      "rate": 12.416,
+      "changePts": -0.1087
+    },
+    {
+      "start": "2026-06-22",
+      "end": "2026-06-26",
+      "maturity": "7d",
+      "volumeEtb": 16800000000,
+      "trades": 22,
+      "rate": 14.387,
+      "changePts": -1.2471
+    },
+    {
+      "start": "2026-06-22",
+      "end": "2026-06-26",
+      "maturity": "overnight",
+      "volumeEtb": 50800000000,
+      "trades": 45,
+      "rate": 12.411,
+      "changePts": -0.0046
+    },
+    {
+      "start": "2026-06-29",
+      "end": "2026-07-03",
+      "maturity": "7d",
+      "volumeEtb": 36050000000,
+      "trades": 37,
+      "rate": 12.266,
+      "changePts": -2.1207
+    },
+    {
+      "start": "2026-06-29",
+      "end": "2026-07-03",
+      "maturity": "overnight",
+      "volumeEtb": 27880000000,
+      "trades": 30,
+      "rate": 12,
+      "changePts": -0.411
+    },
+    {
+      "start": "2026-07-06",
+      "end": "2026-07-10",
+      "maturity": "7d",
+      "volumeEtb": 33900000000,
+      "trades": 39,
+      "rate": 12,
+      "changePts": -0.266
+    },
+    {
+      "start": "2026-07-06",
+      "end": "2026-07-10",
+      "maturity": "overnight",
+      "volumeEtb": 24600000000,
+      "trades": 23,
+      "rate": 12,
+      "changePts": 0
+    },
+    {
+      "start": "2026-07-13",
+      "end": "2026-07-17",
+      "maturity": "7d",
+      "volumeEtb": 29600000000,
+      "trades": 37,
+      "rate": 12.392,
+      "changePts": 0.3919
+    },
+    {
+      "start": "2026-07-13",
+      "end": "2026-07-17",
+      "maturity": "overnight",
+      "volumeEtb": 2000000000,
+      "trades": 2,
+      "rate": 12,
+      "changePts": 0
+    },
+    {
+      "start": "2026-07-20",
+      "end": "2026-07-24",
+      "maturity": "7d",
+      "volumeEtb": 23900000000,
+      "trades": 27,
+      "rate": 13,
+      "changePts": 0.608
+    },
+    {
+      "start": "2026-07-20",
+      "end": "2026-07-24",
+      "maturity": "overnight",
+      "volumeEtb": 1000000000,
+      "trades": 1,
+      "rate": 13,
+      "changePts": 1
+    },
+    {
+      "start": "2026-07-27",
+      "end": "2026-07-31",
+      "maturity": "7d",
+      "volumeEtb": 9680000000,
+      "trades": 17,
+      "rate": 13,
+      "changePts": 0
+    },
+    {
+      "start": "2026-07-27",
+      "end": "2026-07-31",
+      "maturity": "overnight",
+      "volumeEtb": 14000000000,
+      "trades": 6,
+      "rate": 13,
+      "changePts": 0
+    },
+    {
+      "start": "2026-08-03",
+      "end": "2026-08-07",
+      "maturity": "7d",
+      "volumeEtb": 40950000000,
+      "trades": 31,
+      "rate": 13,
+      "changePts": 0
+    },
+    {
+      "start": "2026-08-03",
+      "end": "2026-08-07",
+      "maturity": "overnight",
+      "volumeEtb": 6350000000,
+      "trades": 6,
+      "rate": 13,
+      "changePts": 0
+    },
+    {
+      "start": "2026-08-10",
+      "end": "2026-08-14",
+      "maturity": "7d",
+      "volumeEtb": 24200000000,
+      "trades": 29,
+      "rate": 13,
+      "changePts": 0
+    },
+    {
+      "start": "2026-08-10",
+      "end": "2026-08-14",
+      "maturity": "overnight",
+      "volumeEtb": 3850000000,
+      "trades": 6,
+      "rate": 13,
+      "changePts": 0
+    },
+    {
+      "start": "2026-08-17",
+      "end": "2026-08-21",
+      "maturity": "7d",
+      "volumeEtb": 46575000000,
+      "trades": 47,
+      "rate": 15.186,
+      "changePts": 2.1857
+    },
+    {
+      "start": "2026-08-17",
+      "end": "2026-08-21",
+      "maturity": "overnight",
+      "volumeEtb": 11125000000,
+      "trades": 12,
+      "rate": 16.119,
+      "changePts": 3.1191
+    },
+    {
+      "start": "2026-08-24",
+      "end": "2026-08-28",
+      "maturity": "7d",
+      "volumeEtb": 38550000000,
+      "trades": 37,
+      "rate": 13.241,
+      "changePts": -1.9448
+    },
+    {
+      "start": "2026-08-24",
+      "end": "2026-08-28",
+      "maturity": "overnight",
+      "volumeEtb": 19700000000,
+      "trades": 12,
+      "rate": 14.574,
+      "changePts": -1.5454
+    },
+    {
+      "start": "2026-08-31",
+      "end": "2026-09-04",
+      "maturity": "7d",
+      "volumeEtb": 43850000000,
+      "trades": 50,
+      "rate": 13,
+      "changePts": -0.241
+    },
+    {
+      "start": "2026-08-31",
+      "end": "2026-09-04",
+      "maturity": "overnight",
+      "volumeEtb": 15350000000,
+      "trades": 13,
+      "rate": 13,
+      "changePts": -1.574
+    },
+    {
+      "start": "2026-09-07",
+      "end": "2026-09-10",
+      "maturity": "7d",
+      "volumeEtb": 28400000000,
+      "trades": 37,
+      "rate": 13.11,
+      "changePts": 0.11
+    },
+    {
+      "start": "2026-09-07",
+      "end": "2026-09-10",
+      "maturity": "overnight",
+      "volumeEtb": 2100000000,
+      "trades": 4,
+      "rate": 13,
+      "changePts": 0
+    },
+    {
+      "start": "2026-09-14",
+      "end": "2026-09-18",
+      "maturity": "7d",
+      "volumeEtb": 38100000000,
+      "trades": 42,
+      "rate": 12.97,
+      "changePts": -0.14
+    },
+    {
+      "start": "2026-09-14",
+      "end": "2026-09-18",
+      "maturity": "overnight",
+      "volumeEtb": 6000000000,
+      "trades": 6,
+      "rate": 13,
+      "changePts": 0
+    },
+    {
+      "start": "2026-09-21",
+      "end": "2026-09-25",
+      "maturity": "7d",
+      "volumeEtb": 36850000000,
+      "trades": 48,
+      "rate": 13,
+      "changePts": 0.03
+    },
+    {
+      "start": "2026-09-21",
+      "end": "2026-09-25",
+      "maturity": "overnight",
+      "volumeEtb": 5900000000,
+      "trades": 7,
+      "rate": 13,
+      "changePts": 0
+    },
+    {
+      "start": "2026-09-28",
+      "end": "2026-10-02",
+      "maturity": "7d",
+      "volumeEtb": 30880000000,
+      "trades": 32,
+      "rate": 12.98,
+      "changePts": -0.02
+    },
+    {
+      "start": "2026-09-28",
+      "end": "2026-10-02",
+      "maturity": "overnight",
+      "volumeEtb": 6225000000,
+      "trades": 11,
+      "rate": 12.79,
+      "changePts": -0.21
+    },
+    {
+      "start": "2026-10-05",
+      "end": "2026-10-09",
+      "maturity": "7d",
+      "volumeEtb": 43000000000,
+      "trades": 44,
+      "rate": 13,
+      "changePts": 0.02
+    },
+    {
+      "start": "2026-10-05",
+      "end": "2026-10-09",
+      "maturity": "overnight",
+      "volumeEtb": 8100000000,
+      "trades": 7,
+      "rate": 13,
+      "changePts": 0.21
+    },
+    {
+      "start": "2026-10-12",
+      "end": "2026-10-16",
+      "maturity": "7d",
+      "volumeEtb": 38200000000,
+      "trades": 47,
+      "rate": 12.882,
+      "changePts": -0.1178
+    },
+    {
+      "start": "2026-10-12",
+      "end": "2026-10-16",
+      "maturity": "overnight",
+      "volumeEtb": 3550000000,
+      "trades": 5,
+      "rate": 12.296,
+      "changePts": -0.7042
+    },
+    {
+      "start": "2026-10-19",
+      "end": "2026-10-23",
+      "maturity": "7d",
+      "volumeEtb": 34500000000,
+      "trades": 42,
+      "rate": 12.89,
+      "changePts": 0.01
+    },
+    {
+      "start": "2026-10-19",
+      "end": "2026-10-23",
+      "maturity": "overnight",
+      "volumeEtb": 1000000000,
+      "trades": 1,
+      "rate": 12,
+      "changePts": -0.3
+    },
+    {
+      "start": "2026-10-26",
+      "end": "2026-10-30",
+      "maturity": "7d",
+      "volumeEtb": 29500000000,
+      "trades": 33,
+      "rate": 12.84,
+      "changePts": -0.05
+    },
+    {
+      "start": "2026-10-26",
+      "end": "2026-10-30",
+      "maturity": "overnight",
+      "volumeEtb": 11100000000,
+      "trades": 8,
+      "rate": 12.46,
+      "changePts": 0.46
+    },
+    {
+      "start": "2026-11-02",
+      "end": "2026-11-06",
+      "maturity": "7d",
+      "volumeEtb": 29650000000,
+      "trades": 39,
+      "rate": 13.4,
+      "changePts": 0.56
+    },
+    {
+      "start": "2026-11-02",
+      "end": "2026-11-06",
+      "maturity": "overnight",
+      "volumeEtb": 9900000000,
+      "trades": 15,
+      "rate": 13.03,
+      "changePts": 0.57
+    },
+    {
+      "start": "2026-11-09",
+      "end": "2026-11-13",
+      "maturity": "7d",
+      "volumeEtb": 43200000000,
+      "trades": 46,
+      "rate": 18.91,
+      "changePts": 5.51
+    },
+    {
+      "start": "2026-11-09",
+      "end": "2026-11-13",
+      "maturity": "overnight",
+      "volumeEtb": 35400000000,
+      "trades": 32,
+      "rate": 18.31,
+      "changePts": 5.28
+    }
+  ]
+}

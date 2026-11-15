@@ -208,6 +208,14 @@
       "access": "Public pages; robots.txt allows it; breaks if the table layout changes",
       "url": "https://esx.et/equity-market/trading-operations/",
       "statusKey": "Ethiopian Securities Exchange"
+    },
+    {
+      "name": "ESX interbank money market",
+      "provides": "Weekly overnight and 7-day interbank volume, trades and weighted-average rate",
+      "cadence": "Daily job; ESX updates weekly",
+      "access": "Public ESX page; breaks if the table layout changes",
+      "url": "https://esx.et/fixed-income-market/data/",
+      "statusKey": "ESX interbank money market"
     }
   ]
 }

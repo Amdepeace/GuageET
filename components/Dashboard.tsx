@@ -28,6 +28,7 @@ import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
 import { RiskZoneDetail } from "./map/RiskZoneDetail";
 import { RiskPanel } from "./risk/RiskPanel";
+import { InterbankPanel } from "./markets/InterbankPanel";
 import { EsxPanel } from "./markets/EsxPanel";
 import { RadioPanel } from "./radio/RadioPanel";
 import { Explorer } from "./explore/Explorer";
@@ -478,6 +479,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
           rainfall={data.rainfall}
           projections={data.projections}
           outlook={data.outlook}
+          interbank={data.esxRates}
           theme={theme}
           onLayer={(layer) => {
             setView((v) => ({ ...v, layers: v.layers.includes(layer) ? v.layers : [...v.layers, layer] }));
@@ -497,7 +499,8 @@ export function Dashboard({ data }: { data: DashboardData }) {
         <NewsFeed news={news} status={newsStatus} now={now} />
       </div>
 
-      <div id="sec-markets">
+      <div id="sec-markets" className="flex flex-col gap-2">
+        <InterbankPanel data={data.esxRates} health={statusOf(data.esxRates.source)} />
         <EsxPanel data={data.esx} cal={data.esxCalendar} now={now ? new Date(now) : null} health={statusOf(data.esx.source)} />
       </div>
 

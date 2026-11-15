@@ -374,3 +374,13 @@ export type EsxCalendar = {
   sessions: { name: string; from: string; to: string }[];
   holidays: { date: string; name: string; tentative?: boolean }[];
 };
+
+export type InterbankWeek = { start: string; end: string; maturity: "overnight" | "7d"; volumeEtb: number; trades: number; rate: number; changePts: number | null };
+export type InterbankFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  note: string;
+  weeks: InterbankWeek[];
+};

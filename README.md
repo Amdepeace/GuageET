@@ -28,6 +28,10 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 
 Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle "Quakes"), the **Red Sea risk monitor**, a **headlines** feed, an in-page **alerts banner** (FX moves, Red Sea drops, big quakes), **event markers** on the vital charts (birr float, GERD milestones), an **Ethiopian-calendar** axis toggle (E.C./G.C.) on those charts, and a **Trade panel**.
 
+### Interbank money-market rates
+
+The **MARKETS · Interbank** box (`scripts/fetch-esx-rates.ts`) charts the weekly overnight and 7-day interbank rates, volumes and trade counts that ESX publishes on its fixed-income data page, and the Risk panel flags a jump. This is the one price-type dataset ESX publishes openly; equity share prices are not published on its public pages, so none are shown.
+
 ### Ethiopian Securities Exchange box
 
 The **MARKETS** panel shows whether ESX is open now (computed in your browser from ESX's published sessions and holiday list, `data/curated/esx-calendar.json`, not a live exchange feed) and the listed companies (`scripts/fetch-esx.ts`, read from ESX's public Listed Companies page). ESX's pages publish no prices, so none are shown. The holiday list on ESX's page ends 27 Sep 2026 and some weekday names there are wrong, so only dates are used and the status says when it cannot account for holidays.
