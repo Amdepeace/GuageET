@@ -144,6 +144,14 @@
       "access": "Free, no key; reanalysis grid, not station data",
       "url": "https://open-meteo.com/en/docs/historical-weather-api",
       "statusKey": "Open-Meteo Historical Weather (ERA5)"
+    },
+    {
+      "name": "Ethiopian News Agency (headlines)",
+      "provides": "Headline titles and links from the English homepage; no article text",
+      "cadence": "Daily job",
+      "access": "Public page (no RSS feed exists); robots.txt allows it; breaks if the page layout changes",
+      "url": "https://www.ena.et/web/eng",
+      "statusKey": null
     }
   ]
 }

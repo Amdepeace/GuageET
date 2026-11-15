@@ -18,7 +18,7 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 | **v2** Daily birr/USD (market) | open.er-api.com | Open, no key | Daily job |
 | **v2** Earthquakes (Horn/Rift region) | USGS | Open GeoJSON; called from the browser | Every 10 min |
 | **v2** Red Sea transit (Bab el-Mandeb, Suez) | IMF PortWatch (ArcGIS) | Open, no key | Daily job |
-| **v2** Headlines | GDELT 2.0 Doc API plus RSS from Capital Ethiopia, The Reporter and Addis Fortune | Open, no key; GDELT rate-limits, so RSS is the fallback | Daily job |
+| **v2** Headlines | GDELT 2.0 Doc API plus RSS from Capital Ethiopia, The Reporter and Addis Fortune, plus headline links (title and link only, no article text) read from the Ethiopian News Agency's public homepage | Open, no key; GDELT rate-limits, so RSS is the fallback | Daily job |
 | **v2** Trade partners and balance | UN Comtrade | Free tier, **needs a key** (see below) | Daily job |
 | Remittances received, FDI net inflows | World Bank | Open, no key | Daily job |
 | External-debt composition, ratios, IMF programme | World Bank IDS + curated IMF timeline | Open, no key (timeline curated) | Daily job |

@@ -93,6 +93,23 @@ function parseRss(xml: string, domain: string): NewsItem[] {
   return out;
 }
 
+// Ethiopian News Agency has no RSS feed, so read the headline links from its
+// public English homepage (robots.txt allows it). Only the title, link and
+// publication date are kept; no article text. One request per run.
+const ENA_URL = "https://www.ena.et/web/eng";
+async function fromEna(): Promise<NewsItem[]> {
+  const html = await fetchText(ENA_URL);
+  const out: NewsItem[] = [];
+  for (const m of html.matchAll(/<a href="(\/web\/eng\/w\/eng_\d+)">\s*<div class="ena_display_item_title">([\s\S]*?)<\/div>[\s\S]*?<div class="ena_display_item_date">\s*([A-Za-z]{3} \d{1,2}, \d{4})/g)) {
+    const title = decode(m[2]);
+    const t = Date.parse(`${m[3]} 12:00 UTC`);
+    if (!title) continue;
+    out.push({ title, url: `https://www.ena.et${m[1]}`, domain: "ena.et", seenAt: new Date(Number.isFinite(t) ? t : Date.now()).toISOString() });
+  }
+  if (!out.length) throw new Error("no headlines parsed (page layout may have changed)");
+  return out;
+}
+
 async function fromRss(): Promise<{ items: NewsItem[]; failed: string[] }> {
   const items: NewsItem[] = [];
   const failed: string[] = [];
@@ -105,6 +122,12 @@ async function fromRss(): Promise<{ items: NewsItem[]; failed: string[] }> {
     } catch (e) {
       failed.push(`${f.name}: ${(e as Error).message}`);
     }
+  }
+  try {
+    const ena = await fromEna();
+    items.push(...ena.filter((i) => TOPIC.test(i.title)).slice(0, 6)); // cap so one outlet cannot crowd out the rest
+  } catch (e) {
+    failed.push(`ENA: ${(e as Error).message}`);
   }
   return { items, failed };
 }
@@ -127,7 +150,7 @@ async function main() {
 
   const rss = await fromRss();
   all.push(...rss.items);
-  recordHealth("News RSS", 1, rss.failed.length === FEEDS.length ? { ok: false, error: rss.failed.join("; ") } : { ok: true });
+  recordHealth("News RSS", 1, rss.failed.length >= FEEDS.length + 1 ? { ok: false, error: rss.failed.join("; ") } : { ok: true });
   if (rss.failed.length) console.warn("news: RSS partial:", rss.failed.join("; "));
   console.log(`news: RSS ${rss.items.length}`);
 
