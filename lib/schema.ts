@@ -384,3 +384,18 @@ export type InterbankFile = {
   note: string;
   weeks: InterbankWeek[];
 };
+
+export type SoilStat = { mean: number; p10: number; p90: number; n: number };
+export type SoilProperty = { id: string; label: string; unit: string; backTransform: string; national: { mean: number; p10: number; p90: number }; zones: Record<string, SoilStat> };
+export type SoilFile = {
+  source: string;
+  sourceUrl: string;
+  dataUrl: string;
+  citation: string;
+  license: string;
+  depth: string;
+  period: string;
+  lastBuilt: string;
+  note: string;
+  properties: SoilProperty[];
+};

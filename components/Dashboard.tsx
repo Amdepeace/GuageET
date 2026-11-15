@@ -349,8 +349,8 @@ export function Dashboard({ data }: { data: DashboardData }) {
     }
     if (detail.kind === "risk") {
       return (
-        <Drawer title={detail.pick.z.n} callsign={detail.pick.kind === "conflict" ? "CONFLICT" : "RAINFALL"} onClose={closeDetail}>
-          <RiskZoneDetail pick={detail.pick} conflict={data.conflict} rainfall={data.rainfall} />
+        <Drawer title={detail.pick.z.n} callsign={detail.pick.kind === "conflict" ? "CONFLICT" : detail.pick.kind === "rain" ? "RAINFALL" : "SOIL"} onClose={closeDetail}>
+          <RiskZoneDetail pick={detail.pick} conflict={data.conflict} rainfall={data.rainfall} soil={data.soil} />
         </Drawer>
       );
     }
@@ -455,6 +455,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
               onCorridor={(id) => setDetail({ kind: "corridor", id })}
               conflict={data.conflict}
               rainfall={data.rainfall}
+              soil={data.soil}
               onRisk={(pick) => setDetail({ kind: "risk", pick })}
               onMineral={(p) => setDetail({ kind: "mineral", p })}
               lang={view.lang}

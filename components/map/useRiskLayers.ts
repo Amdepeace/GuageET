@@ -5,7 +5,7 @@
 // Boundaries: OCHA COD-AB Ethiopia (CC BY-IGO). Loaded on demand.
 import { useEffect, useRef, useState } from "react";
 import type { GeoJSONSource, Map as MlMap } from "maplibre-gl";
-import type { ConflictFile, RainfallFile } from "@/lib/schema";
+import type { ConflictFile, RainfallFile, SoilFile } from "@/lib/schema";
 import type { Layer } from "@/lib/urlState";
 import { DETAIL_BASE, LAYER_ORDER } from "./detail";
 
@@ -24,7 +24,27 @@ export const RAIN_COLORS = {
   light: ["#8c510a", "#bf812d", "#dfc27d", "#e7ebee", "#80cdc1", "#35978f", "#01665e"],
 };
 export type RainZone = { id: string; n: string; pct: number; mm: number; nm: number; rated: boolean };
-export type RiskPick = { kind: "conflict"; z: RiskZone } | { kind: "rain"; z: RainZone };
+export type SoilZone = { id: string; n: string; r: string };
+export type RiskPick = { kind: "conflict"; z: RiskZone } | { kind: "rain"; z: RainZone } | { kind: "soil"; z: SoilZone };
+
+// sequential earth tones; brighter/darker = more of the property
+export const SOIL_COLORS = {
+  dark: ["#3b2f23", "#6b4e30", "#9c7040", "#c99a58", "#f0d29a"],
+  light: ["#f3e9d2", "#e2c58f", "#c99a58", "#a06a35", "#6f4220"],
+};
+/** four break values at the 20th/40th/60th/80th percentile of the zone means */
+export function soilBreaks(soil: SoilFile, prop: string): number[] {
+  const p = soil.properties.find((x) => x.id === prop);
+  if (!p) return [];
+  const v = Object.values(p.zones).map((z) => z.mean).sort((a, b) => a - b);
+  return [0.2, 0.4, 0.6, 0.8].map((q) => Math.round(v[Math.min(v.length - 1, Math.floor(q * v.length))] * 100) / 100);
+}
+const soilFill = (theme: string, breaks: number[]) => {
+  const c = SOIL_COLORS[theme === "light" ? "light" : "dark"];
+  const step: unknown[] = ["step", ["get", "v"], c[0]];
+  breaks.forEach((b, i) => step.push(b, c[i + 1]));
+  return ["case", ["get", "rated"], step, theme === "light" ? "#c9d2da" : "#26323d"];
+};
 
 const rainFill = (theme: string) => {
   const c = RAIN_COLORS[theme === "light" ? "light" : "dark"];
@@ -40,12 +60,14 @@ const fillColor = (theme: string) => {
   return ["case", ["get", "nodata"], theme === "light" ? "#c9d2da" : "#26323d", step];
 };
 
-export function useRiskLayers({ map, ready, layers, theme, conflict, rainfall }: { map: React.MutableRefObject<MlMap | null>; ready: boolean; layers: Layer[]; theme: string; conflict: ConflictFile; rainfall: RainfallFile }) {
+export function useRiskLayers({ map, ready, layers, theme, conflict, rainfall, soil, soilProp }: { map: React.MutableRefObject<MlMap | null>; ready: boolean; layers: Layer[]; theme: string; conflict: ConflictFile; rainfall: RainfallFile; soil: SoilFile; soilProp: string }) {
   const [state, setState] = useState<{ loading: boolean; error: string | null }>({ loading: false, error: null });
   const fc = useRef<{ type: string; features: { properties: Record<string, unknown> }[] } | null>(null);
   const rainFc = useRef<{ type: string; features: { properties: Record<string, unknown> }[] } | null>(null);
   const on = layers.includes("conflict");
   const rainOn = layers.includes("rainfall");
+  const soilOn = layers.includes("soil");
+  const soilFc = useRef<{ type: string; features: { properties: Record<string, unknown> }[] } | null>(null);
 
   useEffect(() => {
     const m = map.current;
@@ -128,6 +150,49 @@ export function useRiskLayers({ map, ready, layers, theme, conflict, rainfall }:
       alive = false;
     };
   }, [map, ready, rainOn, rainfall, theme]);
+
+  // soil property by zone (iSDAsoil)
+  useEffect(() => {
+    const m = map.current;
+    if (!m || !ready) return;
+    if (!soilOn) {
+      for (const id of ["d-soil-fill", "d-soil-line"]) if (m.getLayer(id)) m.setLayoutProperty(id, "visibility", "none");
+      return;
+    }
+    let alive = true;
+    (async () => {
+      try {
+        if (!soilFc.current) {
+          setState({ loading: true, error: null });
+          const r = await fetch(`${DETAIL_BASE}/admin2.json`);
+          if (!r.ok) throw new Error(`admin2.json HTTP ${r.status}`);
+          soilFc.current = await r.json();
+        }
+        if (!alive || !soilFc.current) return;
+        const p = soil.properties.find((x) => x.id === soilProp);
+        for (const f of soilFc.current.features) {
+          const id = (f.properties as { id: string }).id;
+          const z = p?.zones[id];
+          Object.assign(f.properties, z ? { rated: true, v: z.mean } : { rated: false, v: 0 });
+        }
+        const breaks = soilBreaks(soil, soilProp);
+        if (!m.getSource("d-soil")) m.addSource("d-soil", { type: "geojson", data: soilFc.current as never });
+        else (m.getSource("d-soil") as GeoJSONSource).setData(soilFc.current as never);
+        let before: string | undefined = LAYER_ORDER.find((id) => m.getLayer(id));
+        if (!before && m.getLayer("infra-halo")) before = "infra-halo";
+        if (!m.getLayer("d-soil-fill")) m.addLayer({ id: "d-soil-fill", type: "fill", source: "d-soil", paint: { "fill-color": soilFill(theme, breaks) as never, "fill-opacity": 0.78 } }, before);
+        else m.setPaintProperty("d-soil-fill", "fill-color", soilFill(theme, breaks) as never);
+        if (!m.getLayer("d-soil-line")) m.addLayer({ id: "d-soil-line", type: "line", source: "d-soil", paint: { "line-color": theme === "light" ? "#ffffff" : "#0b1117", "line-width": 0.6, "line-opacity": 0.8 } }, before);
+        for (const id of ["d-soil-fill", "d-soil-line"]) m.setLayoutProperty(id, "visibility", "visible");
+        setState({ loading: false, error: null });
+      } catch (e) {
+        if (alive) setState({ loading: false, error: (e as Error).message });
+      }
+    })();
+    return () => {
+      alive = false;
+    };
+  }, [map, ready, soilOn, soil, soilProp, theme]);
 
   // theme changes recolour in place
   useEffect(() => {

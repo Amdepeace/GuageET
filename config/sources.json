@@ -224,6 +224,14 @@
       "access": "Public domain (US Government); records can be out of date, positions approximate",
       "url": "https://doi.org/10.5066/P97EQWXP",
       "statusKey": null
+    },
+    {
+      "name": "iSDAsoil (topsoil properties)",
+      "provides": "Zone averages of topsoil pH, organic carbon, extractable phosphorus and clay (0-20 cm)",
+      "cadence": "Static; rebuilt by scripts/build-soil.py",
+      "access": "CC BY 4.0; machine-learning predictions at 30 m, not field measurements",
+      "url": "https://www.isda-africa.com/isdasoil/",
+      "statusKey": null
     }
   ]
 }

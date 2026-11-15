@@ -10,12 +10,12 @@ import type { CityWeather } from "@/lib/openMeteo";
 import { ALL_LAYERS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import type { Quake } from "@/lib/usgs";
 import { useMineralLayers, type MineralProps } from "./useMineralLayers";
-import { useRiskLayers, type RiskPick, type RiskZone, type RainZone } from "./useRiskLayers";
+import { useRiskLayers, type RiskPick, type RiskZone, type RainZone, type SoilZone } from "./useRiskLayers";
 import { GLYPHS_URL, HIT_LAYERS, LAYER_KIND, pretty, type DetailFeature } from "./detail";
 import { LayerPanel } from "./LayerPanel";
 import { CITIES, useDetailLayers } from "./useDetailLayers";
 import { useDeckOverlay, type DeckPick } from "./useDeckOverlay";
-import type { ConflictFile, CorridorsFile, RainfallFile, TradeFile } from "@/lib/schema";
+import type { ConflictFile, CorridorsFile, RainfallFile, SoilFile, TradeFile } from "@/lib/schema";
 
 const HOME: LngLatBoundsLike = [
   [32.5, -6],
@@ -73,6 +73,7 @@ export function MapView({
   trade,
   conflict,
   rainfall,
+  soil,
   onRisk,
   onMineral,
   onCorridor,
@@ -102,6 +103,7 @@ export function MapView({
   trade: TradeFile;
   conflict: ConflictFile;
   rainfall: RainfallFile;
+  soil: SoilFile;
   onRisk: (p: RiskPick) => void;
   onMineral: (p: MineralProps) => void;
   onCorridor: (id: string) => void;
@@ -116,6 +118,7 @@ export function MapView({
   const cityMarkers = useRef<maplibregl.Marker[]>([]);
   const quakeMarkers = useRef<maplibregl.Marker[]>([]);
   const [ready, setReady] = useState(false);
+  const [soilProp, setSoilProp] = useState("ph");
   const [hover, setHover] = useState<{ x: number; y: number; text: string } | null>(null);
   const [hoverCountry, setHoverCountry] = useState<string | null>(null);
   const [panelOpen, setPanelOpen] = useState(false);
@@ -253,6 +256,10 @@ export function MapView({
           const z = m.queryRenderedFeatures([pt.x, pt.y], { layers: ["d-rain-fill"] })[0]?.properties as unknown as RainZone | undefined;
           if (z) return { kind: "rain", z };
         }
+        if (vis("d-soil-fill")) {
+          const z = m.queryRenderedFeatures([pt.x, pt.y], { layers: ["d-soil-fill"] })[0]?.properties as unknown as SoilZone | undefined;
+          if (z) return { kind: "soil", z };
+        }
         return undefined;
       };
       m.on("mousemove", (e) => {
@@ -266,7 +273,7 @@ export function MapView({
         else if (ip) setHover({ x: e.point.x, y: e.point.y, text: `${ip.callsign} · ${ip.name}` });
         else if (f) setHover({ x: e.point.x, y: e.point.y, text: tip(LAYER_KIND[f.layer.id], f.properties as Record<string, unknown>) });
         else if (mn) setHover({ x: e.point.x, y: e.point.y, text: `${mn.n} · ${mn.c.slice(0, 2).join(", ") || "minerals"}` });
-        else if (rk) setHover({ x: e.point.x, y: e.point.y, text: rk.kind === "conflict" ? (rk.z.nodata ? `${rk.z.n} · no conflict data` : `${rk.z.n} · ${rk.z.e} conflict events (12 mo)`) : `${rk.z.n} · rainfall ${rk.z.rated ? `${rk.z.pct}% of normal` : "not rated (dry season)"}` });
+        else if (rk) setHover({ x: e.point.x, y: e.point.y, text: rk.kind === "conflict" ? (rk.z.nodata ? `${rk.z.n} · no conflict data` : `${rk.z.n} · ${rk.z.e} conflict events (12 mo)`) : rk.kind === "rain" ? `${rk.z.n} · rainfall ${rk.z.rated ? `${rk.z.pct}% of normal` : "not rated (dry season)"}` : `${rk.z.n} · soil (click for values)` });
         else setHover(null);
         m.getCanvas().style.cursor = dp || ip || mn || f || rk ? "pointer" : "";
         const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as { name?: string } | undefined;
@@ -488,11 +495,11 @@ export function MapView({
 
   // detailed OpenStreetMap layers: loaded on demand, drawn and labelled here
   const detail = useDetailLayers({ map, ready, layers, facCats: fac, theme, lang, avoid });
-  useRiskLayers({ map, ready, layers, theme, conflict, rainfall });
+  useRiskLayers({ map, ready, layers, theme, conflict, rainfall, soil, soilProp });
   useMineralLayers({ map, ready, layers, theme });
   const deck = useDeckOverlay({ map, ready, layers, fac, theme, corridors, trade });
   cb.current.pick = deck.pick;
-  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals"];
+  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals", "soil"];
   const detailOn = DETAIL.filter((l) => layers.includes(l)).length;
 
   const jump = (id: string) => {
@@ -561,6 +568,7 @@ export function MapView({
             onLang={onLang}
             loading={detail.loading}
             errors={detail.errors}
+            soil={{ file: soil, prop: soilProp, onProp: setSoilProp }}
             risk={{ through: conflict.through, available: conflict.available, windowMonths: conflict.windowMonths, rainFrom: rainfall.from, rainTo: rainfall.to, rainAvailable: rainfall.available }}
             deck={{ loading: deck.loading, error: deck.error, partnerArcs: deck.partnerArcs, tradeReady: trade.available }}
             onJump={jump}

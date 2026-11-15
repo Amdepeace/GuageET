@@ -1,11 +1,45 @@
 "use client";
-import type { ConflictFile, RainfallFile } from "@/lib/schema";
+import type { ConflictFile, RainfallFile, SoilFile } from "@/lib/schema";
 import { Field } from "../shell/Drawer";
 import type { RiskPick, RiskZone } from "./useRiskLayers";
 
 const n = (v: number) => v.toLocaleString("en-US");
 
-export function RiskZoneDetail({ pick, conflict, rainfall }: { pick: RiskPick; conflict: ConflictFile; rainfall: RainfallFile }) {
+export function RiskZoneDetail({ pick, conflict, rainfall, soil }: { pick: RiskPick; conflict: ConflictFile; rainfall: RainfallFile; soil: SoilFile }) {
+  if (pick.kind === "soil") {
+    const z = pick.z;
+    return (
+      <>
+        <div className="text-[12px] ink2">
+          {z.r} · topsoil {soil.depth}
+        </div>
+        <ul className="flex flex-col gap-2">
+          {soil.properties.map((p) => {
+            const s = p.zones[z.id];
+            return (
+              <li key={p.id} className="panel p-2">
+                <div className="label">{p.label}</div>
+                {s ? (
+                  <div className="mono text-[13px]">
+                    {s.mean} {p.unit} <span className="muted">· pixels range {s.p10}–{s.p90} (10th–90th percentile) · whole country {p.national.mean}</span>
+                  </div>
+                ) : (
+                  <div className="text-[12px] muted">no data for this zone</div>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+        <p className="text-[11px] muted leading-snug">
+          {soil.note} {soil.period}. Source:{" "}
+          <a href={soil.sourceUrl} target="_blank" rel="noreferrer">
+            iSDAsoil ↗
+          </a>{" "}
+          ({soil.license}). Cite: {soil.citation}
+        </p>
+      </>
+    );
+  }
   if (pick.kind === "rain") {
     const z = pick.z;
     return (
