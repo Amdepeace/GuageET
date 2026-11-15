@@ -192,6 +192,14 @@
       "access": "Computed here from ACLED counts; labelled model output",
       "url": "https://github.com/Amdepeace/GuageET",
       "statusKey": "Conflict outlook (model)"
+    },
+    {
+      "name": "Radio Browser directory",
+      "provides": "Ethiopian radio stations and their stream addresses",
+      "cadence": "Daily job; directory health-checks streams",
+      "access": "Free, no key; streams play from each station's own host",
+      "url": "https://www.radio-browser.info/",
+      "statusKey": "Radio Browser directory"
     }
   ]
 }

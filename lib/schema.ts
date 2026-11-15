@@ -336,3 +336,23 @@ export type OutlookFile = {
   history: { month: string; value: number }[];
   forecast: { month: string; value: number; low: number; high: number }[];
 };
+
+export type RadioStation = {
+  id: string;
+  name: string;
+  url: string;
+  codec: string;
+  bitrate: number;
+  language: string;
+  tags: string;
+  homepage: string;
+  lastCheck: string;
+};
+export type RadioFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  note: string;
+  stations: RadioStation[];
+};

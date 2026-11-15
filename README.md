@@ -28,6 +28,10 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 
 Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle "Quakes"), the **Red Sea risk monitor**, a **headlines** feed, an in-page **alerts banner** (FX moves, Red Sea drops, big quakes), **event markers** on the vital charts (birr float, GERD milestones), an **Ethiopian-calendar** axis toggle (E.C./G.C.) on those charts, and a **Trade panel**.
 
+### Radio
+
+The **RADIO** panel lists Ethiopian stations from the [Radio Browser](https://www.radio-browser.info/) community directory (`scripts/fetch-radio.ts`, keyless). Only https streams the directory's own health check found working in the last 14 days are kept, with duplicates removed. Nothing is proxied: pressing play connects the listener's browser to the station's stream host, and nothing loads until then. A small fixed player keeps pause, volume and stop on screen while you scroll. A stream can still fail for an individual listener, in which case the row says so. The dashboard is not affiliated with any station.
+
 ### Risk section
 
 The **RISK** panel has three parts. (1) A **stress matrix**: each Ethiopia indicator's year ranked against its own 2011-to-latest history (inflation, GDP growth, birr depreciation, reserves, external-debt growth, remittances, FDI); it is relative to history, not an absolute threshold, and it is not a probability of crisis. (2) **Projections quoted from the IMF** WEO (`scripts/fetch-projections.ts`), shown as the IMF's own, with dates. (3) A **statistical outlook** for monthly conflict events (`scripts/build-outlook.ts`): damped-trend smoothing, published only if it beats a plain 3-month average in a rolling backtest; the backtest error is always shown. At the last run it did not beat the baseline (skill +2%), so no outlook is published. The backtest uses revised counts, so real-time accuracy would be lower.

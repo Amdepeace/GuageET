@@ -28,6 +28,7 @@ import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
 import { RiskZoneDetail } from "./map/RiskZoneDetail";
 import { RiskPanel } from "./risk/RiskPanel";
+import { RadioPanel } from "./radio/RadioPanel";
 import { Explorer } from "./explore/Explorer";
 import { CommandPalette, type PaletteItem } from "./shell/CommandPalette";
 import { SectionNav, SECTIONS } from "./shell/SectionNav";
@@ -493,6 +494,10 @@ export function Dashboard({ data }: { data: DashboardData }) {
       <div id="sec-trade" className="grid grid-cols-1 lg:grid-cols-2 gap-2">
         <TradePanel trade={trade} status={statusOf(trade.source)} />
         <NewsFeed news={news} status={newsStatus} now={now} />
+      </div>
+
+      <div id="sec-radio">
+        <RadioPanel data={data.radio} />
       </div>
 
       <div id="sec-climate">
