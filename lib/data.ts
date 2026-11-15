@@ -30,6 +30,7 @@ import corridorsJson from "@/data/curated/corridors.json";
 import powerExportsJson from "@/data/curated/power-exports.json";
 import rsdpJson from "@/data/curated/rsdp.json";
 import climateJson from "@/data/climate.json";
+import conflictJson from "@/data/conflict.json";
 import humanitarianJson from "@/data/humanitarian.json";
 import type {
   ChangeEntry,
@@ -54,6 +55,7 @@ import type {
   PowerExportsFile,
   RsdpFile,
   ClimateFile,
+  ConflictFile,
 } from "./schema";
 
 export type City = { id: string; name: string; am: string; lat: number; lon: number; labelAnchor?: "top" | "bottom" };
@@ -113,6 +115,7 @@ export type DashboardData = {
   powerExports: PowerExportsFile;
   rsdp: RsdpFile;
   climate: ClimateFile;
+  conflict: ConflictFile;
 };
 
 export function loadData(): DashboardData {
@@ -144,5 +147,6 @@ export function loadData(): DashboardData {
     powerExports: powerExportsJson as unknown as PowerExportsFile,
     rsdp: rsdpJson as unknown as RsdpFile,
     climate: climateJson as unknown as ClimateFile,
+    conflict: conflictJson as unknown as ConflictFile,
   };
 }

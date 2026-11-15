@@ -1,4 +1,5 @@
 "use client";
+import { CONFLICT_COLORS } from "./useRiskLayers";
 import type { ReactNode } from "react";
 import { ALL_FAC_CATS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import { FAC_META, SHAPES, facColor, type Shape } from "./detail";
@@ -34,6 +35,7 @@ const ROWS: { id: Layer; label: string; note: string; sw: ReactNode }[] = [
   { id: "facilities", label: "Facilities", note: "health, schools, banks, fuel, markets…", sw: <ShapeIcon shape="plus" color="var(--ink-2)" /> },
   { id: "streets", label: "City streets", note: "loads automatically when you zoom into a city", sw: <Line color="var(--road)" w={1} /> },
   { id: "flows", label: "Trade corridors & flows", note: "arcs from Addis Ababa to the sea ports; partner trade arcs from UN Comtrade", sw: <Line color="var(--ink-2)" w={3} /> },
+  { id: "conflict", label: "Conflict heatmap", note: "ACLED events by zone, last 12 months (HDX HAPI). Reported events only; unreported areas are under-counted", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#6a3a73,#d4546a,#fbc552)" }} /> },
   { id: "density", label: "Facility density", note: "hexagon map of where facilities are mapped (categories below). Mapping effort varies by area, so it is not a measure of need", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px] rounded-full" style={{ background: "radial-gradient(circle, var(--accent), transparent)" }} /> },
 ];
 
@@ -48,6 +50,7 @@ export function LayerPanel({
   loading,
   errors,
   deck,
+  risk,
   onJump,
   onClose,
 }: {
@@ -61,6 +64,7 @@ export function LayerPanel({
   loading: string[];
   errors: string[];
   deck: { loading: boolean; error: string | null; partnerArcs: number; tradeReady: boolean };
+  risk: { through: string; available: boolean; windowMonths: number };
   onJump: (cityId: string) => void;
   onClose: () => void;
 }) {
@@ -133,6 +137,31 @@ export function LayerPanel({
           {deck.error && <div style={{ color: "var(--warn)" }}>Could not draw the overlay: {deck.error}</div>}
           {layers.includes("flows") && !deck.tradeReady && <div className="muted">Partner trade arcs appear once UN Comtrade data has loaded (see the Trade panel). Corridor arcs show the sea-access routes, not trade volume.</div>}
           {layers.includes("flows") && deck.tradeReady && <div className="muted mono">{deck.partnerArcs} partner arcs · width = trade value · cyan exports, violet imports · zoom out to see them · click one for the country</div>}
+        </div>
+      )}
+
+      {layers.includes("conflict") && (
+        <div className="px-3 pb-2 text-[10.5px]" role="status">
+          <div className="label mb-1">Conflict events, 12 months to {risk.available ? risk.through : "—"}</div>
+          {risk.available ? (
+            <>
+              <div className="flex items-stretch">
+                {CONFLICT_COLORS.dark.map((c, i) => (
+                  <span key={i} className="flex-1 h-[8px]" style={{ background: c }} />
+                ))}
+              </div>
+              <div className="flex justify-between mono muted mt-0.5">
+                <span>0</span>
+                <span>10</span>
+                <span>30</span>
+                <span>80</span>
+                <span>200+</span>
+              </div>
+              <div className="muted mt-1">Grey = no data from the source for that zone (not zero). Click a zone for detail.</div>
+            </>
+          ) : (
+            <div className="muted">Conflict data has not loaded yet.</div>
+          )}
         </div>
       )}
 

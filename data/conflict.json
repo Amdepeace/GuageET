@@ -1,0 +1,1379 @@
+{
+  "source": "ACLED via HDX HAPI",
+  "sourceUrl": "https://hdx-hapi.readthedocs.io/en/latest/data_usage_guides/coordination_and_context/#conflict-events",
+  "fetchedAt": "2026-11-15T21:40:33.381Z",
+  "available": true,
+  "note": "ACLED data via HDX HAPI. Counts are reported events; areas with little media or partner reporting are under-counted, and recent months are often revised upward. Event counts say nothing about the scale of each event.",
+  "through": "2026-10",
+  "windowMonths": 12,
+  "areas": {
+    "ET0101": {
+      "name": "North Western",
+      "region": "Tigray",
+      "events": 54,
+      "fatalities": 98,
+      "eventsPrior": 29,
+      "fatalitiesPrior": 14,
+      "byType": {
+        "civilian_targeting": 10,
+        "demonstration": 9,
+        "political_violence": 35
+      }
+    },
+    "ET0102": {
+      "name": "Central",
+      "region": "Tigray",
+      "events": 87,
+      "fatalities": 117,
+      "eventsPrior": 18,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 19,
+        "demonstration": 13,
+        "political_violence": 55
+      }
+    },
+    "ET0103": {
+      "name": "Eastern",
+      "region": "Tigray",
+      "events": 37,
+      "fatalities": 3,
+      "eventsPrior": 24,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 2,
+        "demonstration": 15,
+        "political_violence": 20
+      }
+    },
+    "ET0104": {
+      "name": "Southern",
+      "region": "Tigray",
+      "events": 112,
+      "fatalities": 120,
+      "eventsPrior": 63,
+      "fatalitiesPrior": 39,
+      "byType": {
+        "civilian_targeting": 23,
+        "demonstration": 7,
+        "political_violence": 82
+      }
+    },
+    "ET0106": {
+      "name": "South Eastern",
+      "region": "Tigray",
+      "events": 37,
+      "fatalities": 25,
+      "eventsPrior": 27,
+      "fatalitiesPrior": 5,
+      "byType": {
+        "civilian_targeting": 3,
+        "demonstration": 7,
+        "political_violence": 27
+      }
+    },
+    "ET0107": {
+      "name": "Mekelle",
+      "region": "Tigray",
+      "events": 25,
+      "fatalities": 1,
+      "eventsPrior": 36,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 6,
+        "demonstration": 5,
+        "political_violence": 14
+      }
+    },
+    "ET0201": {
+      "name": "Awsi /Zone 1",
+      "region": "Afar",
+      "events": 2,
+      "fatalities": 11,
+      "eventsPrior": 5,
+      "fatalitiesPrior": 11,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 2
+      }
+    },
+    "ET0202": {
+      "name": "Kilbati /Zone 2",
+      "region": "Afar",
+      "events": 42,
+      "fatalities": 42,
+      "eventsPrior": 1,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 1,
+        "demonstration": 5,
+        "political_violence": 36
+      }
+    },
+    "ET0203": {
+      "name": "Gabi /Zone 3",
+      "region": "Afar",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 12,
+      "fatalitiesPrior": 15,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0204": {
+      "name": "Fanti /Zone 4",
+      "region": "Afar",
+      "events": 4,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 3,
+        "political_violence": 1
+      }
+    },
+    "ET0205": {
+      "name": "Hari /Zone 5",
+      "region": "Afar",
+      "events": 1,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 1,
+        "political_violence": 0
+      }
+    },
+    "ET0301": {
+      "name": "North Gondar",
+      "region": "Amhara",
+      "events": 23,
+      "fatalities": 67,
+      "eventsPrior": 41,
+      "fatalitiesPrior": 81,
+      "byType": {
+        "civilian_targeting": 2,
+        "demonstration": 2,
+        "political_violence": 19
+      }
+    },
+    "ET0302": {
+      "name": "South Gondar",
+      "region": "Amhara",
+      "events": 187,
+      "fatalities": 440,
+      "eventsPrior": 155,
+      "fatalitiesPrior": 511,
+      "byType": {
+        "civilian_targeting": 14,
+        "demonstration": 3,
+        "political_violence": 170
+      }
+    },
+    "ET0303": {
+      "name": "North Wello",
+      "region": "Amhara",
+      "events": 329,
+      "fatalities": 970,
+      "eventsPrior": 227,
+      "fatalitiesPrior": 716,
+      "byType": {
+        "civilian_targeting": 29,
+        "demonstration": 6,
+        "political_violence": 294
+      }
+    },
+    "ET0304": {
+      "name": "South Wello",
+      "region": "Amhara",
+      "events": 206,
+      "fatalities": 580,
+      "eventsPrior": 107,
+      "fatalitiesPrior": 326,
+      "byType": {
+        "civilian_targeting": 18,
+        "demonstration": 2,
+        "political_violence": 186
+      }
+    },
+    "ET0305": {
+      "name": "North Shewa (AM)",
+      "region": "Amhara",
+      "events": 205,
+      "fatalities": 618,
+      "eventsPrior": 257,
+      "fatalitiesPrior": 629,
+      "byType": {
+        "civilian_targeting": 17,
+        "demonstration": 5,
+        "political_violence": 183
+      }
+    },
+    "ET0306": {
+      "name": "East Gojam",
+      "region": "Amhara",
+      "events": 188,
+      "fatalities": 463,
+      "eventsPrior": 195,
+      "fatalitiesPrior": 699,
+      "byType": {
+        "civilian_targeting": 20,
+        "demonstration": 8,
+        "political_violence": 160
+      }
+    },
+    "ET0307": {
+      "name": "West Gojam",
+      "region": "Amhara",
+      "events": 205,
+      "fatalities": 513,
+      "eventsPrior": 332,
+      "fatalitiesPrior": 1224,
+      "byType": {
+        "civilian_targeting": 20,
+        "demonstration": 5,
+        "political_violence": 180
+      }
+    },
+    "ET0308": {
+      "name": "Wag Hamra",
+      "region": "Amhara",
+      "events": 58,
+      "fatalities": 140,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 5,
+        "demonstration": 1,
+        "political_violence": 52
+      }
+    },
+    "ET0309": {
+      "name": "Awi",
+      "region": "Amhara",
+      "events": 75,
+      "fatalities": 227,
+      "eventsPrior": 103,
+      "fatalitiesPrior": 385,
+      "byType": {
+        "civilian_targeting": 7,
+        "demonstration": 4,
+        "political_violence": 64
+      }
+    },
+    "ET0310": {
+      "name": "Oromo Nationality Administration",
+      "region": "Amhara",
+      "events": 17,
+      "fatalities": 36,
+      "eventsPrior": 4,
+      "fatalitiesPrior": 21,
+      "byType": {
+        "civilian_targeting": 5,
+        "demonstration": 0,
+        "political_violence": 12
+      }
+    },
+    "ET0311": {
+      "name": "Central Gondar",
+      "region": "Amhara",
+      "events": 124,
+      "fatalities": 593,
+      "eventsPrior": 137,
+      "fatalitiesPrior": 444,
+      "byType": {
+        "civilian_targeting": 9,
+        "demonstration": 0,
+        "political_violence": 115
+      }
+    },
+    "ET0312": {
+      "name": "West Gondar",
+      "region": "Amhara",
+      "events": 29,
+      "fatalities": 88,
+      "eventsPrior": 80,
+      "fatalitiesPrior": 233,
+      "byType": {
+        "civilian_targeting": 4,
+        "demonstration": 2,
+        "political_violence": 23
+      }
+    },
+    "ET0401": {
+      "name": "West Wellega",
+      "region": "Oromia",
+      "events": 32,
+      "fatalities": 80,
+      "eventsPrior": 18,
+      "fatalitiesPrior": 25,
+      "byType": {
+        "civilian_targeting": 7,
+        "demonstration": 1,
+        "political_violence": 24
+      }
+    },
+    "ET0402": {
+      "name": "East Wellega",
+      "region": "Oromia",
+      "events": 150,
+      "fatalities": 790,
+      "eventsPrior": 210,
+      "fatalitiesPrior": 321,
+      "byType": {
+        "civilian_targeting": 31,
+        "demonstration": 8,
+        "political_violence": 111
+      }
+    },
+    "ET0403": {
+      "name": "Ilu Aba Bora",
+      "region": "Oromia",
+      "events": 5,
+      "fatalities": 17,
+      "eventsPrior": 5,
+      "fatalitiesPrior": 28,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 2,
+        "political_violence": 3
+      }
+    },
+    "ET0404": {
+      "name": "Jimma",
+      "region": "Oromia",
+      "events": 13,
+      "fatalities": 7,
+      "eventsPrior": 35,
+      "fatalitiesPrior": 14,
+      "byType": {
+        "civilian_targeting": 2,
+        "demonstration": 4,
+        "political_violence": 7
+      }
+    },
+    "ET0405": {
+      "name": "West Shewa",
+      "region": "Oromia",
+      "events": 105,
+      "fatalities": 351,
+      "eventsPrior": 91,
+      "fatalitiesPrior": 309,
+      "byType": {
+        "civilian_targeting": 23,
+        "demonstration": 5,
+        "political_violence": 77
+      }
+    },
+    "ET0406": {
+      "name": "North Shewa (OR)",
+      "region": "Oromia",
+      "events": 70,
+      "fatalities": 183,
+      "eventsPrior": 110,
+      "fatalitiesPrior": 259,
+      "byType": {
+        "civilian_targeting": 13,
+        "demonstration": 2,
+        "political_violence": 55
+      }
+    },
+    "ET0407": {
+      "name": "East Shewa",
+      "region": "Oromia",
+      "events": 78,
+      "fatalities": 150,
+      "eventsPrior": 84,
+      "fatalitiesPrior": 201,
+      "byType": {
+        "civilian_targeting": 21,
+        "demonstration": 6,
+        "political_violence": 51
+      }
+    },
+    "ET0408": {
+      "name": "Arsi",
+      "region": "Oromia",
+      "events": 218,
+      "fatalities": 458,
+      "eventsPrior": 122,
+      "fatalitiesPrior": 190,
+      "byType": {
+        "civilian_targeting": 87,
+        "demonstration": 5,
+        "political_violence": 126
+      }
+    },
+    "ET0409": {
+      "name": "West Hararge",
+      "region": "Oromia",
+      "events": 33,
+      "fatalities": 65,
+      "eventsPrior": 22,
+      "fatalitiesPrior": 32,
+      "byType": {
+        "civilian_targeting": 13,
+        "demonstration": 2,
+        "political_violence": 18
+      }
+    },
+    "ET0410": {
+      "name": "East Hararge",
+      "region": "Oromia",
+      "events": 32,
+      "fatalities": 40,
+      "eventsPrior": 17,
+      "fatalitiesPrior": 40,
+      "byType": {
+        "civilian_targeting": 15,
+        "demonstration": 2,
+        "political_violence": 15
+      }
+    },
+    "ET0411": {
+      "name": "Bale",
+      "region": "Oromia",
+      "events": 10,
+      "fatalities": 2,
+      "eventsPrior": 17,
+      "fatalitiesPrior": 14,
+      "byType": {
+        "civilian_targeting": 3,
+        "demonstration": 3,
+        "political_violence": 4
+      }
+    },
+    "ET0412": {
+      "name": "Borena",
+      "region": "Oromia",
+      "events": 27,
+      "fatalities": 14,
+      "eventsPrior": 45,
+      "fatalitiesPrior": 33,
+      "byType": {
+        "civilian_targeting": 3,
+        "demonstration": 5,
+        "political_violence": 19
+      }
+    },
+    "ET0413": {
+      "name": "South West Shewa",
+      "region": "Oromia",
+      "events": 33,
+      "fatalities": 82,
+      "eventsPrior": 23,
+      "fatalitiesPrior": 72,
+      "byType": {
+        "civilian_targeting": 7,
+        "demonstration": 5,
+        "political_violence": 21
+      }
+    },
+    "ET0414": {
+      "name": "Guji",
+      "region": "Oromia",
+      "events": 53,
+      "fatalities": 53,
+      "eventsPrior": 13,
+      "fatalitiesPrior": 6,
+      "byType": {
+        "civilian_targeting": 4,
+        "demonstration": 1,
+        "political_violence": 48
+      }
+    },
+    "ET0415": {
+      "name": "West Guji",
+      "region": "Oromia",
+      "events": 14,
+      "fatalities": 18,
+      "eventsPrior": 14,
+      "fatalitiesPrior": 23,
+      "byType": {
+        "civilian_targeting": 3,
+        "demonstration": 2,
+        "political_violence": 9
+      }
+    },
+    "ET0416": {
+      "name": "Buno Bedele",
+      "region": "Oromia",
+      "events": 1,
+      "fatalities": 5,
+      "eventsPrior": 3,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 1
+      }
+    },
+    "ET0417": {
+      "name": "West Arsi",
+      "region": "Oromia",
+      "events": 17,
+      "fatalities": 48,
+      "eventsPrior": 13,
+      "fatalitiesPrior": 14,
+      "byType": {
+        "civilian_targeting": 4,
+        "demonstration": 3,
+        "political_violence": 10
+      }
+    },
+    "ET0418": {
+      "name": "Kelem Wellega",
+      "region": "Oromia",
+      "events": 18,
+      "fatalities": 41,
+      "eventsPrior": 13,
+      "fatalitiesPrior": 27,
+      "byType": {
+        "civilian_targeting": 4,
+        "demonstration": 1,
+        "political_violence": 13
+      }
+    },
+    "ET0419": {
+      "name": "Horo Gudru Wellega",
+      "region": "Oromia",
+      "events": 83,
+      "fatalities": 350,
+      "eventsPrior": 111,
+      "fatalitiesPrior": 160,
+      "byType": {
+        "civilian_targeting": 26,
+        "demonstration": 4,
+        "political_violence": 53
+      }
+    },
+    "ET0420": {
+      "name": "Shager City",
+      "region": "Oromia",
+      "events": 8,
+      "fatalities": 12,
+      "eventsPrior": 14,
+      "fatalitiesPrior": 33,
+      "byType": {
+        "civilian_targeting": 2,
+        "demonstration": 2,
+        "political_violence": 4
+      }
+    },
+    "ET0421": {
+      "name": "East Bale",
+      "region": "Oromia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0501": {
+      "name": "Siti",
+      "region": "Somali",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 4,
+      "fatalitiesPrior": 2,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0502": {
+      "name": "Fafan",
+      "region": "Somali",
+      "events": 10,
+      "fatalities": 13,
+      "eventsPrior": 17,
+      "fatalitiesPrior": 58,
+      "byType": {
+        "civilian_targeting": 3,
+        "demonstration": 2,
+        "political_violence": 5
+      }
+    },
+    "ET0503": {
+      "name": "Jarar",
+      "region": "Somali",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 2,
+      "fatalitiesPrior": 6,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0504": {
+      "name": "Erer",
+      "region": "Somali",
+      "events": 2,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 1,
+        "demonstration": 0,
+        "political_violence": 1
+      }
+    },
+    "ET0505": {
+      "name": "Korahe",
+      "region": "Somali",
+      "events": 1,
+      "fatalities": 1,
+      "eventsPrior": 4,
+      "fatalitiesPrior": 23,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 1
+      }
+    },
+    "ET0506": {
+      "name": "Shabelle",
+      "region": "Somali",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 3,
+      "fatalitiesPrior": 8,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0507": {
+      "name": "Doolo",
+      "region": "Somali",
+      "events": 2,
+      "fatalities": 2,
+      "eventsPrior": 2,
+      "fatalitiesPrior": 5,
+      "byType": {
+        "civilian_targeting": 1,
+        "demonstration": 0,
+        "political_violence": 1
+      }
+    },
+    "ET0508": {
+      "name": "Afder",
+      "region": "Somali",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 1,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0509": {
+      "name": "Liban",
+      "region": "Somali",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0510": {
+      "name": "Nogob",
+      "region": "Somali",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 4,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0511": {
+      "name": "Daawa",
+      "region": "Somali",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 2,
+      "fatalitiesPrior": 6,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0602": {
+      "name": "Metekel",
+      "region": "Benishangul-Gumuz",
+      "events": 52,
+      "fatalities": 305,
+      "eventsPrior": 52,
+      "fatalitiesPrior": 110,
+      "byType": {
+        "civilian_targeting": 16,
+        "demonstration": 1,
+        "political_violence": 35
+      }
+    },
+    "ET0603": {
+      "name": "Assosa",
+      "region": "Benishangul-Gumuz",
+      "events": 12,
+      "fatalities": 37,
+      "eventsPrior": 4,
+      "fatalitiesPrior": 3,
+      "byType": {
+        "civilian_targeting": 2,
+        "demonstration": 1,
+        "political_violence": 9
+      }
+    },
+    "ET0604": {
+      "name": "Kamashi",
+      "region": "Benishangul-Gumuz",
+      "events": 2,
+      "fatalities": 4,
+      "eventsPrior": 8,
+      "fatalitiesPrior": 46,
+      "byType": {
+        "civilian_targeting": 1,
+        "demonstration": 0,
+        "political_violence": 1
+      }
+    },
+    "ET0605": {
+      "name": "Mao-komo Special",
+      "region": "Benishangul-Gumuz",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0701": {
+      "name": "Guraghe",
+      "region": "Central Ethiopia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0702": {
+      "name": "Hadiya",
+      "region": "Central Ethiopia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0703": {
+      "name": "Kembata",
+      "region": "Central Ethiopia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0714": {
+      "name": "Halaba",
+      "region": "Central Ethiopia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0720": {
+      "name": "Siltie",
+      "region": "Central Ethiopia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET0724": {
+      "name": "Yem",
+      "region": "Central Ethiopia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET1101": {
+      "name": "Sheka",
+      "region": "South West Ethiopia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 3,
+      "fatalitiesPrior": 40,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET1102": {
+      "name": "Kefa",
+      "region": "South West Ethiopia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 1,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET1103": {
+      "name": "Bench Sheko",
+      "region": "South West Ethiopia",
+      "events": 1,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 1,
+        "political_violence": 0
+      }
+    },
+    "ET1104": {
+      "name": "Dawuro",
+      "region": "South West Ethiopia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET1105": {
+      "name": "West Omo",
+      "region": "South West Ethiopia",
+      "events": 7,
+      "fatalities": 17,
+      "eventsPrior": 1,
+      "fatalitiesPrior": 10,
+      "byType": {
+        "civilian_targeting": 2,
+        "demonstration": 0,
+        "political_violence": 5
+      }
+    },
+    "ET1106": {
+      "name": "Konta",
+      "region": "South West Ethiopia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET1201": {
+      "name": "Nuwer",
+      "region": "Gambela",
+      "events": 3,
+      "fatalities": 9,
+      "eventsPrior": 11,
+      "fatalitiesPrior": 5,
+      "byType": {
+        "civilian_targeting": 1,
+        "demonstration": 0,
+        "political_violence": 2
+      }
+    },
+    "ET1202": {
+      "name": "Agnewak",
+      "region": "Gambela",
+      "events": 44,
+      "fatalities": 169,
+      "eventsPrior": 22,
+      "fatalitiesPrior": 36,
+      "byType": {
+        "civilian_targeting": 17,
+        "demonstration": 1,
+        "political_violence": 26
+      }
+    },
+    "ET1203": {
+      "name": "Majang",
+      "region": "Gambela",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 1,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET1204": {
+      "name": "Itang Special",
+      "region": "Gambela",
+      "events": 6,
+      "fatalities": 48,
+      "eventsPrior": 7,
+      "fatalitiesPrior": 15,
+      "byType": {
+        "civilian_targeting": 2,
+        "demonstration": 0,
+        "political_violence": 4
+      }
+    },
+    "ET1301": {
+      "name": "Harari",
+      "region": "Harari",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET1401": {
+      "name": "Region 14",
+      "region": "Addis Ababa",
+      "events": 17,
+      "fatalities": 2,
+      "eventsPrior": 20,
+      "fatalitiesPrior": 4,
+      "byType": {
+        "civilian_targeting": 4,
+        "demonstration": 7,
+        "political_violence": 6
+      }
+    },
+    "ET1501": {
+      "name": "Dire Dawa urban",
+      "region": "Dire Dawa",
+      "events": 1,
+      "fatalities": 0,
+      "eventsPrior": 9,
+      "fatalitiesPrior": 53,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 1,
+        "political_violence": 0
+      }
+    },
+    "ET1502": {
+      "name": "Dire Dawa rural",
+      "region": "Dire Dawa",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET01-XXX": {
+      "name": "Western Tigray",
+      "region": "Tigray",
+      "events": 22,
+      "fatalities": 40,
+      "eventsPrior": 15,
+      "fatalitiesPrior": 52,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 13,
+        "political_violence": 9
+      }
+    },
+    "ET07-XXX": {
+      "name": "Amaro",
+      "region": "Central Ethiopia",
+      "events": 0,
+      "fatalities": 0,
+      "eventsPrior": 0,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 0,
+        "political_violence": 0
+      }
+    },
+    "ET16-XXX": {
+      "name": "Sidama",
+      "region": "Sidama",
+      "events": 9,
+      "fatalities": 10,
+      "eventsPrior": 6,
+      "fatalitiesPrior": 0,
+      "byType": {
+        "civilian_targeting": 0,
+        "demonstration": 1,
+        "political_violence": 8
+      }
+    }
+  },
+  "national": [
+    {
+      "month": "2021-11",
+      "events": 294,
+      "fatalities": 978
+    },
+    {
+      "month": "2021-12",
+      "events": 201,
+      "fatalities": 1661
+    },
+    {
+      "month": "2022-01",
+      "events": 164,
+      "fatalities": 627
+    },
+    {
+      "month": "2022-02",
+      "events": 110,
+      "fatalities": 436
+    },
+    {
+      "month": "2022-03",
+      "events": 135,
+      "fatalities": 413
+    },
+    {
+      "month": "2022-04",
+      "events": 140,
+      "fatalities": 432
+    },
+    {
+      "month": "2022-05",
+      "events": 101,
+      "fatalities": 460
+    },
+    {
+      "month": "2022-06",
+      "events": 162,
+      "fatalities": 1642
+    },
+    {
+      "month": "2022-07",
+      "events": 127,
+      "fatalities": 1346
+    },
+    {
+      "month": "2022-08",
+      "events": 167,
+      "fatalities": 836
+    },
+    {
+      "month": "2022-09",
+      "events": 196,
+      "fatalities": 945
+    },
+    {
+      "month": "2022-10",
+      "events": 232,
+      "fatalities": 943
+    },
+    {
+      "month": "2022-11",
+      "events": 189,
+      "fatalities": 730
+    },
+    {
+      "month": "2022-12",
+      "events": 141,
+      "fatalities": 421
+    },
+    {
+      "month": "2023-01",
+      "events": 126,
+      "fatalities": 280
+    },
+    {
+      "month": "2023-02",
+      "events": 75,
+      "fatalities": 232
+    },
+    {
+      "month": "2023-03",
+      "events": 101,
+      "fatalities": 134
+    },
+    {
+      "month": "2023-04",
+      "events": 101,
+      "fatalities": 102
+    },
+    {
+      "month": "2023-05",
+      "events": 157,
+      "fatalities": 262
+    },
+    {
+      "month": "2023-06",
+      "events": 175,
+      "fatalities": 331
+    },
+    {
+      "month": "2023-07",
+      "events": 139,
+      "fatalities": 357
+    },
+    {
+      "month": "2023-08",
+      "events": 258,
+      "fatalities": 656
+    },
+    {
+      "month": "2023-09",
+      "events": 255,
+      "fatalities": 691
+    },
+    {
+      "month": "2023-10",
+      "events": 203,
+      "fatalities": 642
+    },
+    {
+      "month": "2023-11",
+      "events": 244,
+      "fatalities": 683
+    },
+    {
+      "month": "2023-12",
+      "events": 201,
+      "fatalities": 540
+    },
+    {
+      "month": "2024-01",
+      "events": 208,
+      "fatalities": 568
+    },
+    {
+      "month": "2024-02",
+      "events": 268,
+      "fatalities": 718
+    },
+    {
+      "month": "2024-03",
+      "events": 286,
+      "fatalities": 691
+    },
+    {
+      "month": "2024-04",
+      "events": 317,
+      "fatalities": 1003
+    },
+    {
+      "month": "2024-05",
+      "events": 281,
+      "fatalities": 699
+    },
+    {
+      "month": "2024-06",
+      "events": 315,
+      "fatalities": 940
+    },
+    {
+      "month": "2024-07",
+      "events": 314,
+      "fatalities": 846
+    },
+    {
+      "month": "2024-08",
+      "events": 322,
+      "fatalities": 837
+    },
+    {
+      "month": "2024-09",
+      "events": 217,
+      "fatalities": 550
+    },
+    {
+      "month": "2024-10",
+      "events": 318,
+      "fatalities": 1134
+    },
+    {
+      "month": "2024-11",
+      "events": 328,
+      "fatalities": 957
+    },
+    {
+      "month": "2024-12",
+      "events": 204,
+      "fatalities": 565
+    },
+    {
+      "month": "2025-01",
+      "events": 217,
+      "fatalities": 380
+    },
+    {
+      "month": "2025-02",
+      "events": 172,
+      "fatalities": 276
+    },
+    {
+      "month": "2025-03",
+      "events": 272,
+      "fatalities": 597
+    },
+    {
+      "month": "2025-04",
+      "events": 196,
+      "fatalities": 788
+    },
+    {
+      "month": "2025-05",
+      "events": 163,
+      "fatalities": 326
+    },
+    {
+      "month": "2025-06",
+      "events": 221,
+      "fatalities": 548
+    },
+    {
+      "month": "2025-07",
+      "events": 244,
+      "fatalities": 630
+    },
+    {
+      "month": "2025-08",
+      "events": 334,
+      "fatalities": 771
+    },
+    {
+      "month": "2025-09",
+      "events": 370,
+      "fatalities": 913
+    },
+    {
+      "month": "2025-10",
+      "events": 311,
+      "fatalities": 885
+    },
+    {
+      "month": "2025-11",
+      "events": 283,
+      "fatalities": 863
+    },
+    {
+      "month": "2025-12",
+      "events": 233,
+      "fatalities": 592
+    },
+    {
+      "month": "2026-01",
+      "events": 198,
+      "fatalities": 486
+    },
+    {
+      "month": "2026-02",
+      "events": 247,
+      "fatalities": 704
+    },
+    {
+      "month": "2026-03",
+      "events": 248,
+      "fatalities": 685
+    },
+    {
+      "month": "2026-04",
+      "events": 248,
+      "fatalities": 720
+    },
+    {
+      "month": "2026-05",
+      "events": 285,
+      "fatalities": 845
+    },
+    {
+      "month": "2026-06",
+      "events": 332,
+      "fatalities": 726
+    },
+    {
+      "month": "2026-07",
+      "events": 237,
+      "fatalities": 579
+    },
+    {
+      "month": "2026-08",
+      "events": 235,
+      "fatalities": 647
+    },
+    {
+      "month": "2026-09",
+      "events": 272,
+      "fatalities": 714
+    },
+    {
+      "month": "2026-10",
+      "events": 420,
+      "fatalities": 1014
+    }
+  ]
+}

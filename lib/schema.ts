@@ -272,3 +272,26 @@ export type ClimateFile = {
   note: string;
   cities: ClimateCity[];
 };
+
+export type ConflictTypeCounts = { civilian_targeting: number; demonstration: number; political_violence: number };
+export type ConflictArea = {
+  name: string;
+  region: string;
+  events: number;
+  fatalities: number;
+  eventsPrior: number;
+  fatalitiesPrior: number;
+  byType: ConflictTypeCounts;
+};
+export type ConflictFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  note: string;
+  /** last complete month included, YYYY-MM */
+  through: string;
+  windowMonths: number;
+  areas: Record<string, ConflictArea>;
+  national: { month: string; events: number; fatalities: number }[];
+};

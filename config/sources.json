@@ -152,6 +152,22 @@
       "access": "Public page (no RSS feed exists); robots.txt allows it; breaks if the page layout changes",
       "url": "https://www.ena.et/web/eng",
       "statusKey": null
+    },
+    {
+      "name": "ACLED via HDX HAPI",
+      "provides": "Monthly conflict events and reported fatalities by zone and event type",
+      "cadence": "Daily job; source updates about monthly, recent months revised",
+      "access": "Free, no key (generic usage tag); reported events, under-counts poorly reported areas",
+      "url": "https://acleddata.com/",
+      "statusKey": "ACLED via HDX HAPI"
+    },
+    {
+      "name": "OCHA COD-AB Ethiopia boundaries",
+      "provides": "Region and zone boundaries for the risk layers",
+      "cadence": "Static; version 2025",
+      "access": "CC BY-IGO",
+      "url": "https://data.humdata.org/dataset/cod-ab-eth",
+      "statusKey": null
     }
   ]
 }

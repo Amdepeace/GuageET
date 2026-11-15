@@ -25,6 +25,8 @@ import { TradePanel } from "./trade/TradePanel";
 import { PowerExportsPanel } from "./power/PowerExportsPanel";
 import { RsdpPanel } from "./roads/RsdpPanel";
 import { ClimatePanel } from "./weather/ClimatePanel";
+import type { RiskZone } from "./map/useRiskLayers";
+import { RiskZoneDetail } from "./map/RiskZoneDetail";
 import { Explorer } from "./explore/Explorer";
 import { CommandPalette, type PaletteItem } from "./shell/CommandPalette";
 import { SectionNav, SECTIONS } from "./shell/SectionNav";
@@ -52,6 +54,7 @@ type Detail =
   | { kind: "vital"; id: string; country: CountryCode }
   | { kind: "simple"; id: string }
   | { kind: "infra"; id: string }
+  | { kind: "risk"; zone: RiskZone }
   | { kind: "city"; id: string }
   | { kind: "quake"; id: string }
   | { kind: "country"; iso3: string; un: string | null; name: string }
@@ -330,6 +333,13 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </Drawer>
       );
     }
+    if (detail.kind === "risk") {
+      return (
+        <Drawer title={detail.zone.n} callsign="CONFLICT" onClose={closeDetail}>
+          <RiskZoneDetail z={detail.zone} conflict={data.conflict} />
+        </Drawer>
+      );
+    }
     if (detail.kind === "country") {
       const rel = buildRelations(data, { iso3: detail.iso3, un: detail.un, name: detail.name });
       return (
@@ -429,6 +439,8 @@ export function Dashboard({ data }: { data: DashboardData }) {
               corridors={data.corridors}
               trade={data.trade}
               onCorridor={(id) => setDetail({ kind: "corridor", id })}
+              conflict={data.conflict}
+              onRisk={(zone) => setDetail({ kind: "risk", zone })}
               lang={view.lang}
               onLang={(lang) => setView((v) => ({ ...v, lang }))}
               fac={view.fac}

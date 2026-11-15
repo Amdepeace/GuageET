@@ -28,6 +28,10 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 
 Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle "Quakes"), the **Red Sea risk monitor**, a **headlines** feed, an in-page **alerts banner** (FX moves, Red Sea drops, big quakes), **event markers** on the vital charts (birr float, GERD milestones), an **Ethiopian-calendar** axis toggle (E.C./G.C.) on those charts, and a **Trade panel**.
 
+### Conflict heatmap (no account needed)
+
+The map's **Conflict heatmap** layer shades each admin-2 zone by ACLED-coded conflict events over the last 12 complete months, from HDX HAPI (keyless; `scripts/fetch-conflict.ts`). Click a zone for events, fatalities, the change against the previous 12 months, and the breakdown by event type. Zones the source has no rows for are drawn grey as *no data*, never as zero. Counts are reported events: places with little reporting are under-counted, recent months are often revised, and event counts say nothing about the scale of each event. UCDP needs an access token and GDELT's event files were unreachable, so neither is used. Boundaries: OCHA COD-AB Ethiopia (CC BY-IGO), simplified by `scripts/build-admin2.py`.
+
 ### Interactive explorer, command palette and section nav
 
 Three open-source libraries improve the UI: **[Apache ECharts](https://github.com/apache/echarts)** (Apache-2.0) powers the **EXPLORER** panel, where you pick an indicator and countries and view Values, Indexed (rebased to 100; disabled for rates and ratios) or Scatter (one indicator against another) with zoom, pan, legend toggles and save-as-image. ECharts is loaded on demand. **[cmdk](https://github.com/pacocoursey/cmdk)** (MIT) adds a **⌘K / Ctrl+K** palette to jump to any vital, infrastructure record or section. A sticky section bar highlights where you are. The Explorer uses only the sourced World Bank series already in `data/series`.

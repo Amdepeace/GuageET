@@ -17,7 +17,9 @@ export type Layer =
   | "streets"
   // deck.gl visual layers (loaded on demand)
   | "flows"
-  | "density";
+  | "density"
+  // risk heatmaps
+  | "conflict";
 
 export const ALL_LAYERS: Layer[] = [
   "existing",
@@ -35,6 +37,7 @@ export const ALL_LAYERS: Layer[] = [
   "streets",
   "flows",
   "density",
+  "conflict",
 ];
 
 /** On by default: the infrastructure story plus a calm detailed base. The
