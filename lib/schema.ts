@@ -150,7 +150,7 @@ export type TradeFile = {
   source: string;
   sourceUrl: string;
   period: string; // latest year with data
-  available: boolean; // false when no Comtrade key is configured
+  available: boolean; // false until a Comtrade fetch has succeeded
   note: string;
   exportsByPartner: TradePartner[];
   importsByPartner: TradePartner[];

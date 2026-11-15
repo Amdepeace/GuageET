@@ -28,13 +28,9 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 
 Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle "Quakes"), the **Red Sea risk monitor**, a **headlines** feed, an in-page **alerts banner** (FX moves, Red Sea drops, big quakes), **event markers** on the vital charts (birr float, GERD milestones), an **Ethiopian-calendar** axis toggle (E.C./G.C.) on those charts, and a **Trade panel**.
 
-### Enabling the Trade panel (optional)
+### Trade panel (no key needed)
 
-The Trade panel needs a free UN Comtrade key:
-
-1. Register at [comtradeplus.un.org](https://comtradeplus.un.org/) (free tier, email).
-2. In the repo: **Settings → Secrets and variables → Actions → New repository secret**, named `COMTRADE_PRIMARY_KEY`.
-3. Re-run **Update data and deploy**. Until then the panel shows an "awaiting key" state and the TRADE desk light is amber; nothing else is affected.
+Trade data comes from UN Comtrade's public **preview** endpoint, which needs no account or key (responses cap at 500 rows, enough for annual totals by partner and HS-2 groups). Optionally, for the full data API, register a free key at [comtradeplus.un.org](https://comtradeplus.un.org/) and add it as a repo secret named `COMTRADE_PRIMARY_KEY` (**Settings → Secrets and variables → Actions**); the fetcher uses it automatically.
 
 The IMF DataMapper refused requests from the build sandbox (HTTP 403). The fetcher records this in `data/health.json`, and the System Health panel shows the source as OFFLINE. The dashboard works without it, since the World Bank is the primary source.
 
@@ -100,7 +96,7 @@ Zoom the map out and click any country to open its **relations with Ethiopia**:
 
 - **Key indicators** — that country's GDP, population and growth beside Ethiopia's (World Bank, all countries via `data/world-indicators.json`).
 - **Shared organizations & blocs** — which of AU, IGAD, COMESA, EAC, BRICS+, Arab League, EU, Nile Basin, OPEC, Commonwealth and G20 it shares with Ethiopia, plus the ones only one of them is in (curated membership in `config/blocs.json`, computed overlap).
-- **Bilateral trade** — Ethiopia's exports to / imports from that country (UN Comtrade, keyed by M49; needs the Comtrade key).
+- **Bilateral trade** — Ethiopia's exports to / imports from that country (UN Comtrade, keyed by M49).
 - **Curated relations profile** — current relations, history and economic ties for ~14 key partners (China, US, Eritrea, Egypt, Sudan, Djibouti, Kenya, Somalia, Saudi, UAE, Türkiye, Russia, India, Italy), each sourced in `data/curated/relations.json`. Other countries show the structured sourced data only, never invented prose.
 
 The world layer is bundled Natural Earth 110m (`data/geo/world.geojson`); the detailed regional base stays as-is.

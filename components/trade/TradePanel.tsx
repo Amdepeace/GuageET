@@ -38,23 +38,10 @@ export function TradePanel({ trade, status }: { trade: TradeFile; status: Health
       {!trade.available ? (
         <div className="p-4 text-[12.5px] ink2 flex flex-col gap-2">
           <p className="font-semibold" style={{ color: "var(--ink)" }}>
-            Trade panel is waiting for a data key.
+            Trade data has not loaded yet.
           </p>
           <p>{trade.note}</p>
-          <ol className="list-decimal ml-4 flex flex-col gap-1 text-[12px]">
-            <li>
-              Register a free key at{" "}
-              <a href="https://comtradeplus.un.org/" target="_blank" rel="noreferrer">
-                UN Comtrade ↗
-              </a>{" "}
-              (free tier, email sign-up).
-            </li>
-            <li>
-              In the repo: <span className="mono">Settings → Secrets and variables → Actions → New repository secret</span>, named{" "}
-              <span className="mono">COMTRADE_PRIMARY_KEY</span>.
-            </li>
-            <li>Re-run the &ldquo;Update data and deploy&rdquo; workflow. Top partners and the trade balance appear here.</li>
-          </ol>
+          <p className="text-[12px]">The daily update fetches UN Comtrade&apos;s public preview endpoint, which needs no key. If this persists, the source may be rate-limiting; the last good value is kept once one exists.</p>
         </div>
       ) : (
         <div className="p-3">

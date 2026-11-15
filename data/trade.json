@@ -1,14 +1,1060 @@
 {
-  "fetchedAt": "2026-11-15T10:59:26.988Z",
+  "fetchedAt": "2026-11-15T20:21:50.146Z",
   "source": "UN Comtrade",
   "sourceUrl": "https://comtradeplus.un.org/",
-  "period": "",
-  "available": false,
-  "note": "Set COMTRADE_PRIMARY_KEY (a free UN Comtrade subscription key) as a GitHub Secret to populate trade data.",
-  "exportsByPartner": [],
-  "importsByPartner": [],
-  "balance": [],
-  "bilateral": {},
-  "topExportCommodities": [],
-  "topImportCommodities": []
+  "period": "2023",
+  "available": true,
+  "note": "Latest year with data: 2023. Trade data lags by months to years. Reporter-declared values (UN Comtrade public preview, no key); partners can mirror-report differently.",
+  "exportsByPartner": [
+    {
+      "partner": "Saudi Arabia",
+      "partnerCode": "682",
+      "value": 297920261.054
+    },
+    {
+      "partner": "USA",
+      "partnerCode": "842",
+      "value": 276456879.815
+    },
+    {
+      "partner": "Netherlands",
+      "partnerCode": "528",
+      "value": 218711710.923
+    },
+    {
+      "partner": "United Arab Emirates",
+      "partnerCode": "784",
+      "value": 163901925.094
+    },
+    {
+      "partner": "Somalia",
+      "partnerCode": "706",
+      "value": 142156892.409
+    },
+    {
+      "partner": "India",
+      "partnerCode": "699",
+      "value": 139250487.678
+    },
+    {
+      "partner": "Germany",
+      "partnerCode": "276",
+      "value": 135401558.012
+    },
+    {
+      "partner": "China",
+      "partnerCode": "156",
+      "value": 131648664.172
+    }
+  ],
+  "importsByPartner": [
+    {
+      "partner": "China",
+      "partnerCode": "156",
+      "value": 5572385918.438
+    },
+    {
+      "partner": "India",
+      "partnerCode": "699",
+      "value": 1637773788.221
+    },
+    {
+      "partner": "Kuwait",
+      "partnerCode": "414",
+      "value": 1327406433.618
+    },
+    {
+      "partner": "Saudi Arabia",
+      "partnerCode": "682",
+      "value": 1129206584.727
+    },
+    {
+      "partner": "USA",
+      "partnerCode": "842",
+      "value": 1080898775.733
+    },
+    {
+      "partner": "Morocco",
+      "partnerCode": "504",
+      "value": 676621797.556
+    },
+    {
+      "partner": "Türkiye",
+      "partnerCode": "792",
+      "value": 619977258.677
+    },
+    {
+      "partner": "United Arab Emirates",
+      "partnerCode": "784",
+      "value": 471919481.77
+    }
+  ],
+  "balance": [
+    {
+      "period": "2019",
+      "exports": 2683752373.01,
+      "imports": 15533415853.65
+    },
+    {
+      "period": "2020",
+      "exports": 2533277228.8,
+      "imports": 14090449257.25
+    },
+    {
+      "period": "2021",
+      "exports": 3057628826.59,
+      "imports": 15284934933.46
+    },
+    {
+      "period": "2022",
+      "exports": 3085116109.034,
+      "imports": 16537801018.968
+    },
+    {
+      "period": "2023",
+      "exports": 2859456865.95,
+      "imports": 17050150860.951
+    }
+  ],
+  "bilateral": {
+    "4": {
+      "partner": "Afghanistan",
+      "exports": 0,
+      "imports": 3609.749
+    },
+    "8": {
+      "partner": "Albania",
+      "exports": 0,
+      "imports": 405207.936
+    },
+    "12": {
+      "partner": "Algeria",
+      "exports": 258762.544,
+      "imports": 458676.277
+    },
+    "20": {
+      "partner": "Andorra",
+      "exports": 69813.416,
+      "imports": 72956.448
+    },
+    "24": {
+      "partner": "Angola",
+      "exports": 100307.449,
+      "imports": 63610.112
+    },
+    "28": {
+      "partner": "Antigua and Barbuda",
+      "exports": 0,
+      "imports": 12587.106
+    },
+    "31": {
+      "partner": "Azerbaijan",
+      "exports": 4688.197,
+      "imports": 0
+    },
+    "32": {
+      "partner": "Argentina",
+      "exports": 52709.668,
+      "imports": 2749728.124
+    },
+    "36": {
+      "partner": "Australia",
+      "exports": 25954945.083,
+      "imports": 7675134.149
+    },
+    "40": {
+      "partner": "Austria",
+      "exports": 399061.455,
+      "imports": 26898175.024
+    },
+    "44": {
+      "partner": "Bahamas",
+      "exports": 0,
+      "imports": 18207.553
+    },
+    "48": {
+      "partner": "Bahrain",
+      "exports": 886250.692,
+      "imports": 32494245.773
+    },
+    "50": {
+      "partner": "Bangladesh",
+      "exports": 3022636.231,
+      "imports": 4241463.491
+    },
+    "51": {
+      "partner": "Armenia",
+      "exports": 87504.056,
+      "imports": 6783.255
+    },
+    "56": {
+      "partner": "Belgium",
+      "exports": 92309491.24,
+      "imports": 141228981.862
+    },
+    "68": {
+      "partner": "Bolivia (Plurinational State of)",
+      "exports": 0,
+      "imports": 277385.685
+    },
+    "70": {
+      "partner": "Bosnia Herzegovina",
+      "exports": 0,
+      "imports": 24638.024
+    },
+    "72": {
+      "partner": "Botswana",
+      "exports": 9567.795,
+      "imports": 591.729
+    },
+    "76": {
+      "partner": "Brazil",
+      "exports": 2317464.975,
+      "imports": 40473355.082
+    },
+    "84": {
+      "partner": "Belize",
+      "exports": 1247.106,
+      "imports": 339856.634
+    },
+    "100": {
+      "partner": "Bulgaria",
+      "exports": 3544317.639,
+      "imports": 7792867.048
+    },
+    "104": {
+      "partner": "Myanmar",
+      "exports": 10945.32,
+      "imports": 327506.355
+    },
+    "108": {
+      "partner": "Burundi",
+      "exports": 84800.828,
+      "imports": 0
+    },
+    "112": {
+      "partner": "Belarus",
+      "exports": 47625.726,
+      "imports": 81256.117
+    },
+    "116": {
+      "partner": "Cambodia",
+      "exports": 70597.112,
+      "imports": 477104.973
+    },
+    "120": {
+      "partner": "Cameroon",
+      "exports": 96833.977,
+      "imports": 108802.265
+    },
+    "124": {
+      "partner": "Canada",
+      "exports": 24774180.194,
+      "imports": 42739329.887
+    },
+    "136": {
+      "partner": "Cayman Isds",
+      "exports": 0,
+      "imports": 13229.044
+    },
+    "140": {
+      "partner": "Central African Rep.",
+      "exports": 3397.083,
+      "imports": 0
+    },
+    "144": {
+      "partner": "Sri Lanka",
+      "exports": 380514.636,
+      "imports": 4209799.853
+    },
+    "148": {
+      "partner": "Chad",
+      "exports": 198495.513,
+      "imports": 2578.089
+    },
+    "152": {
+      "partner": "Chile",
+      "exports": 72127.598,
+      "imports": 1876373.564
+    },
+    "156": {
+      "partner": "China",
+      "exports": 131648664.172,
+      "imports": 5572385918.438
+    },
+    "170": {
+      "partner": "Colombia",
+      "exports": 13873.718,
+      "imports": 1944595.762
+    },
+    "174": {
+      "partner": "Comoros",
+      "exports": 378.387,
+      "imports": 0
+    },
+    "178": {
+      "partner": "Congo",
+      "exports": 71099.657,
+      "imports": 12712.539
+    },
+    "180": {
+      "partner": "Dem. Rep. of the Congo",
+      "exports": 5055319.356,
+      "imports": 44247.548
+    },
+    "188": {
+      "partner": "Costa Rica",
+      "exports": 0,
+      "imports": 4787272.385
+    },
+    "191": {
+      "partner": "Croatia",
+      "exports": 1681926.046,
+      "imports": 70735.27
+    },
+    "192": {
+      "partner": "Cuba",
+      "exports": 0,
+      "imports": 39110.266
+    },
+    "196": {
+      "partner": "Cyprus",
+      "exports": 249783.375,
+      "imports": 6669538.534
+    },
+    "203": {
+      "partner": "Czechia",
+      "exports": 505997.86,
+      "imports": 19539591.638
+    },
+    "204": {
+      "partner": "Benin",
+      "exports": 2777.39,
+      "imports": 618.568
+    },
+    "208": {
+      "partner": "Denmark",
+      "exports": 2211383.271,
+      "imports": 21900677.695
+    },
+    "212": {
+      "partner": "Dominica",
+      "exports": 0,
+      "imports": 1642.778
+    },
+    "214": {
+      "partner": "Dominican Rep.",
+      "exports": 287932.26,
+      "imports": 184504.029
+    },
+    "218": {
+      "partner": "Ecuador",
+      "exports": 0,
+      "imports": 123599.813
+    },
+    "222": {
+      "partner": "El Salvador",
+      "exports": 2813924.391,
+      "imports": 75555.644
+    },
+    "226": {
+      "partner": "Equatorial Guinea",
+      "exports": 205326.531,
+      "imports": 0
+    },
+    "232": {
+      "partner": "Eritrea",
+      "exports": 20149.805,
+      "imports": 8328.389
+    },
+    "233": {
+      "partner": "Estonia",
+      "exports": 1085057.53,
+      "imports": 6098126.435
+    },
+    "246": {
+      "partner": "Finland",
+      "exports": 2496090.064,
+      "imports": 9001339.7
+    },
+    "251": {
+      "partner": "France",
+      "exports": 34816866.064,
+      "imports": 200085234.387
+    },
+    "262": {
+      "partner": "Djibouti",
+      "exports": 98377418.38,
+      "imports": 205791226.955
+    },
+    "266": {
+      "partner": "Gabon",
+      "exports": 47849.399,
+      "imports": 0
+    },
+    "268": {
+      "partner": "Georgia",
+      "exports": 404391.996,
+      "imports": 168400.803
+    },
+    "270": {
+      "partner": "Gambia",
+      "exports": 3412.616,
+      "imports": 4499.725
+    },
+    "275": {
+      "partner": "State of Palestine",
+      "exports": 0,
+      "imports": 158276.942
+    },
+    "276": {
+      "partner": "Germany",
+      "exports": 135401558.012,
+      "imports": 175500668.477
+    },
+    "288": {
+      "partner": "Ghana",
+      "exports": 371828.611,
+      "imports": 400385.955
+    },
+    "292": {
+      "partner": "Gibraltar",
+      "exports": 0,
+      "imports": 69.691
+    },
+    "300": {
+      "partner": "Greece",
+      "exports": 9511180.009,
+      "imports": 5257279.497
+    },
+    "320": {
+      "partner": "Guatemala",
+      "exports": 282349.096,
+      "imports": 161259.596
+    },
+    "324": {
+      "partner": "Guinea",
+      "exports": 0,
+      "imports": 401976.26
+    },
+    "332": {
+      "partner": "Haiti",
+      "exports": 0,
+      "imports": 162562.608
+    },
+    "336": {
+      "partner": "Holy See (Vatican City State)",
+      "exports": 0,
+      "imports": 1012.872
+    },
+    "340": {
+      "partner": "Honduras",
+      "exports": 621263.99,
+      "imports": 14734.211
+    },
+    "344": {
+      "partner": "China, Hong Kong SAR",
+      "exports": 21640048.94,
+      "imports": 70977552.469
+    },
+    "348": {
+      "partner": "Hungary",
+      "exports": 205316.711,
+      "imports": 19867367.374
+    },
+    "352": {
+      "partner": "Iceland",
+      "exports": 38558.668,
+      "imports": 184650.697
+    },
+    "360": {
+      "partner": "Indonesia",
+      "exports": 23449869.863,
+      "imports": 331469689.59
+    },
+    "364": {
+      "partner": "Iran",
+      "exports": 1317347.672,
+      "imports": 1644754.944
+    },
+    "368": {
+      "partner": "Iraq",
+      "exports": 791680.263,
+      "imports": 17759292.681
+    },
+    "372": {
+      "partner": "Ireland",
+      "exports": 271407.245,
+      "imports": 20336199.098
+    },
+    "376": {
+      "partner": "Israel",
+      "exports": 104006746.026,
+      "imports": 16368606.852
+    },
+    "380": {
+      "partner": "Italy",
+      "exports": 56645403.954,
+      "imports": 249006392.816
+    },
+    "384": {
+      "partner": "Côte d'Ivoire",
+      "exports": 282116.57,
+      "imports": 2225459.518
+    },
+    "388": {
+      "partner": "Jamaica",
+      "exports": 43152.898,
+      "imports": 28990.697
+    },
+    "392": {
+      "partner": "Japan",
+      "exports": 104119341.675,
+      "imports": 381941037.156
+    },
+    "398": {
+      "partner": "Kazakhstan",
+      "exports": 26365.585,
+      "imports": 3028826.407
+    },
+    "400": {
+      "partner": "Jordan",
+      "exports": 39737412.45,
+      "imports": 4694234.438
+    },
+    "404": {
+      "partner": "Kenya",
+      "exports": 64898245.539,
+      "imports": 79501568.792
+    },
+    "408": {
+      "partner": "Dem. People's Rep. of Korea",
+      "exports": 1024.4,
+      "imports": 497361.494
+    },
+    "410": {
+      "partner": "Rep. of Korea",
+      "exports": 116131401.522,
+      "imports": 178147341.714
+    },
+    "414": {
+      "partner": "Kuwait",
+      "exports": 5761725.817,
+      "imports": 1327406433.618
+    },
+    "417": {
+      "partner": "Kyrgyzstan",
+      "exports": 0,
+      "imports": 3451.268
+    },
+    "418": {
+      "partner": "Lao People's Dem. Rep.",
+      "exports": 0,
+      "imports": 44502.87
+    },
+    "422": {
+      "partner": "Lebanon",
+      "exports": 2630161.623,
+      "imports": 2409655.86
+    },
+    "426": {
+      "partner": "Lesotho",
+      "exports": 47048.18,
+      "imports": 15093.404
+    },
+    "428": {
+      "partner": "Latvia",
+      "exports": 6198080.307,
+      "imports": 1559990.101
+    },
+    "430": {
+      "partner": "Liberia",
+      "exports": 0,
+      "imports": 139.072
+    },
+    "434": {
+      "partner": "Libya",
+      "exports": 1317595.257,
+      "imports": 167.117
+    },
+    "440": {
+      "partner": "Lithuania",
+      "exports": 839201.928,
+      "imports": 2438121.836
+    },
+    "442": {
+      "partner": "Luxembourg",
+      "exports": 664.778,
+      "imports": 3559396.379
+    },
+    "446": {
+      "partner": "China, Macao SAR",
+      "exports": 0,
+      "imports": 2620.777
+    },
+    "450": {
+      "partner": "Madagascar",
+      "exports": 1416450.088,
+      "imports": 505879.11
+    },
+    "454": {
+      "partner": "Malawi",
+      "exports": 193599.03,
+      "imports": 11922.107
+    },
+    "458": {
+      "partner": "Malaysia",
+      "exports": 10832993.555,
+      "imports": 264094621.836
+    },
+    "462": {
+      "partner": "Maldives",
+      "exports": 1680.379,
+      "imports": 0
+    },
+    "466": {
+      "partner": "Mali",
+      "exports": 108810.194,
+      "imports": 31535.374
+    },
+    "470": {
+      "partner": "Malta",
+      "exports": 0,
+      "imports": 402988.748
+    },
+    "478": {
+      "partner": "Mauritania",
+      "exports": 1944.593,
+      "imports": 58.097
+    },
+    "480": {
+      "partner": "Mauritius",
+      "exports": 324824.822,
+      "imports": 154182.093
+    },
+    "484": {
+      "partner": "Mexico",
+      "exports": 410948.05,
+      "imports": 17562982.485
+    },
+    "490": {
+      "partner": "Other Asia, nes",
+      "exports": 30664606.452,
+      "imports": 29051505.006
+    },
+    "496": {
+      "partner": "Mongolia",
+      "exports": 32720.088,
+      "imports": 0
+    },
+    "498": {
+      "partner": "Rep. of Moldova",
+      "exports": 0,
+      "imports": 141414.03
+    },
+    "504": {
+      "partner": "Morocco",
+      "exports": 2738384.086,
+      "imports": 676621797.556
+    },
+    "508": {
+      "partner": "Mozambique",
+      "exports": 43166.733,
+      "imports": 93528.233
+    },
+    "512": {
+      "partner": "Oman",
+      "exports": 9973161.09,
+      "imports": 149622118.752
+    },
+    "516": {
+      "partner": "Namibia",
+      "exports": 3263.47,
+      "imports": 162907.98
+    },
+    "520": {
+      "partner": "Naoero",
+      "exports": 0,
+      "imports": 314252.662
+    },
+    "524": {
+      "partner": "Nepal",
+      "exports": 1112163.88,
+      "imports": 788.917
+    },
+    "528": {
+      "partner": "Netherlands",
+      "exports": 218711710.923,
+      "imports": 99873748.854
+    },
+    "531": {
+      "partner": "Curaçao",
+      "exports": 0,
+      "imports": 115149.277
+    },
+    "540": {
+      "partner": "New Caledonia",
+      "exports": 0,
+      "imports": 23984.947
+    },
+    "554": {
+      "partner": "New Zealand",
+      "exports": 3362650.783,
+      "imports": 6134698.323
+    },
+    "558": {
+      "partner": "Nicaragua",
+      "exports": 0,
+      "imports": 26.219
+    },
+    "562": {
+      "partner": "Niger",
+      "exports": 472271.023,
+      "imports": 56129.706
+    },
+    "566": {
+      "partner": "Nigeria",
+      "exports": 1280195.149,
+      "imports": 35965030.368
+    },
+    "579": {
+      "partner": "Norway",
+      "exports": 5819450.85,
+      "imports": 4018231.904
+    },
+    "586": {
+      "partner": "Pakistan",
+      "exports": 35918563.75,
+      "imports": 46997305.02
+    },
+    "591": {
+      "partner": "Panama",
+      "exports": 501.668,
+      "imports": 39226.644
+    },
+    "604": {
+      "partner": "Peru",
+      "exports": 0,
+      "imports": 888850.008
+    },
+    "608": {
+      "partner": "Philippines",
+      "exports": 28133.725,
+      "imports": 12943903.545
+    },
+    "616": {
+      "partner": "Poland",
+      "exports": 4546263.19,
+      "imports": 42972911.661
+    },
+    "620": {
+      "partner": "Portugal",
+      "exports": 4205575.666,
+      "imports": 8544966.49
+    },
+    "624": {
+      "partner": "Guinea-Bissau",
+      "exports": 2211.727,
+      "imports": 8054.699
+    },
+    "634": {
+      "partner": "Qatar",
+      "exports": 7855740.968,
+      "imports": 6827320.808
+    },
+    "642": {
+      "partner": "Romania",
+      "exports": 1524879.158,
+      "imports": 34503606.914
+    },
+    "643": {
+      "partner": "Russian Federation",
+      "exports": 12934262.357,
+      "imports": 18780665.834
+    },
+    "646": {
+      "partner": "Rwanda",
+      "exports": 121229.743,
+      "imports": 1778686.578
+    },
+    "674": {
+      "partner": "San Marino",
+      "exports": 0,
+      "imports": 36905.776
+    },
+    "678": {
+      "partner": "Sao Tome and Principe",
+      "exports": 0,
+      "imports": 346.978
+    },
+    "682": {
+      "partner": "Saudi Arabia",
+      "exports": 297920261.054,
+      "imports": 1129206584.727
+    },
+    "686": {
+      "partner": "Senegal",
+      "exports": 37426.319,
+      "imports": 251885.584
+    },
+    "688": {
+      "partner": "Serbia",
+      "exports": 36202.869,
+      "imports": 1681308.264
+    },
+    "690": {
+      "partner": "Seychelles",
+      "exports": 225925.874,
+      "imports": 0
+    },
+    "694": {
+      "partner": "Sierra Leone",
+      "exports": 1453383.884,
+      "imports": 156742.015
+    },
+    "699": {
+      "partner": "India",
+      "exports": 139250487.678,
+      "imports": 1637773788.221
+    },
+    "702": {
+      "partner": "Singapore",
+      "exports": 73469216.877,
+      "imports": 34719296.071
+    },
+    "703": {
+      "partner": "Slovakia",
+      "exports": 191738.456,
+      "imports": 5830652.742
+    },
+    "704": {
+      "partner": "Viet Nam",
+      "exports": 47887434.249,
+      "imports": 46644220.602
+    },
+    "705": {
+      "partner": "Slovenia",
+      "exports": 951672.743,
+      "imports": 3280386.448
+    },
+    "706": {
+      "partner": "Somalia",
+      "exports": 142156892.409,
+      "imports": 1085297.615
+    },
+    "710": {
+      "partner": "South Africa",
+      "exports": 9976816.545,
+      "imports": 153143129.967
+    },
+    "716": {
+      "partner": "Zimbabwe",
+      "exports": 347400.847,
+      "imports": 1470626.318
+    },
+    "724": {
+      "partner": "Spain",
+      "exports": 11535264.797,
+      "imports": 62596796.369
+    },
+    "728": {
+      "partner": "South Sudan",
+      "exports": 2604973.909,
+      "imports": 84986.534
+    },
+    "729": {
+      "partner": "Sudan",
+      "exports": 52840537.139,
+      "imports": 8959881.087
+    },
+    "748": {
+      "partner": "Eswatini",
+      "exports": 435570.137,
+      "imports": 908884.053
+    },
+    "752": {
+      "partner": "Sweden",
+      "exports": 7213921.133,
+      "imports": 27361757.416
+    },
+    "757": {
+      "partner": "Switzerland",
+      "exports": 4407546.019,
+      "imports": 16843014.328
+    },
+    "760": {
+      "partner": "Syria",
+      "exports": 107447.912,
+      "imports": 0
+    },
+    "764": {
+      "partner": "Thailand",
+      "exports": 7107771.618,
+      "imports": 107143411.163
+    },
+    "768": {
+      "partner": "Togo",
+      "exports": 51796.63,
+      "imports": 949.607
+    },
+    "772": {
+      "partner": "Tokelau",
+      "exports": 0,
+      "imports": 9357.182
+    },
+    "780": {
+      "partner": "Trinidad and Tobago",
+      "exports": 0,
+      "imports": 96.02
+    },
+    "784": {
+      "partner": "United Arab Emirates",
+      "exports": 163901925.094,
+      "imports": 471919481.77
+    },
+    "788": {
+      "partner": "Tunisia",
+      "exports": 433287.989,
+      "imports": 5426842.377
+    },
+    "792": {
+      "partner": "Türkiye",
+      "exports": 46367426.13,
+      "imports": 619977258.677
+    },
+    "800": {
+      "partner": "Uganda",
+      "exports": 1711701.545,
+      "imports": 4478026.257
+    },
+    "804": {
+      "partner": "Ukraine",
+      "exports": 1394.992,
+      "imports": 83479429.596
+    },
+    "807": {
+      "partner": "North Macedonia",
+      "exports": 27974.303,
+      "imports": 104183.259
+    },
+    "818": {
+      "partner": "Egypt",
+      "exports": 8711754.285,
+      "imports": 454682459.684
+    },
+    "826": {
+      "partner": "United Kingdom",
+      "exports": 41452027.206,
+      "imports": 362511614.697
+    },
+    "834": {
+      "partner": "United Rep. of Tanzania",
+      "exports": 180446.528,
+      "imports": 4821274.108
+    },
+    "842": {
+      "partner": "USA",
+      "exports": 276456879.815,
+      "imports": 1080898775.733
+    },
+    "854": {
+      "partner": "Burkina Faso",
+      "exports": 184687.743,
+      "imports": 13573.85
+    },
+    "858": {
+      "partner": "Uruguay",
+      "exports": 0,
+      "imports": 98642.856
+    },
+    "860": {
+      "partner": "Uzbekistan",
+      "exports": 0,
+      "imports": 78223.673
+    },
+    "876": {
+      "partner": "Wallis and Futuna Isds",
+      "exports": 0,
+      "imports": 58.043
+    },
+    "882": {
+      "partner": "Samoa",
+      "exports": 1552.115,
+      "imports": 0
+    },
+    "887": {
+      "partner": "Yemen",
+      "exports": 31741030.051,
+      "imports": 1817194.544
+    },
+    "894": {
+      "partner": "Zambia",
+      "exports": 86726.474,
+      "imports": 219892.296
+    }
+  },
+  "topExportCommodities": [
+    {
+      "code": "09",
+      "label": "Coffee, tea, mate and spices",
+      "value": 1235180922.299
+    },
+    {
+      "code": "07",
+      "label": "Vegetables and certain roots and tubers; edible",
+      "value": 499531543.214
+    },
+    {
+      "code": "12",
+      "label": "Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",
+      "value": 424462669.817
+    },
+    {
+      "code": "06",
+      "label": "Trees and other plants, live; bulbs, roots and the like; cut flowers and ornamental foliage",
+      "value": 262091823.764
+    },
+    {
+      "code": "02",
+      "label": "Meat and edible meat offal",
+      "value": 63042057.021
+    },
+    {
+      "code": "61",
+      "label": "Apparel and clothing accessories; knitted or crocheted",
+      "value": 59811039.22
+    }
+  ],
+  "topImportCommodities": [
+    {
+      "code": "27",
+      "label": "Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",
+      "value": 2651161984.554
+    },
+    {
+      "code": "84",
+      "label": "Machinery and mechanical appliances, boilers, nuclear reactors; parts thereof",
+      "value": 1928097474.634
+    },
+    {
+      "code": "85",
+      "label": "Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",
+      "value": 1325309090.572
+    },
+    {
+      "code": "87",
+      "label": "Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",
+      "value": 1314470571.962
+    },
+    {
+      "code": "31",
+      "label": "Fertilizers",
+      "value": 1197441459.417
+    },
+    {
+      "code": "39",
+      "label": "Plastics and articles thereof",
+      "value": 832525155.797
+    }
+  ]
 }

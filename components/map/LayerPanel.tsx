@@ -32,7 +32,7 @@ const ROWS: { id: Layer; label: string; note: string; sw: ReactNode }[] = [
   { id: "places", label: "Towns & villages", note: "names appear as you zoom", sw: <span className="inline-block w-[7px] h-[7px] rounded-full mx-[7px]" style={{ background: "var(--ink-2)" }} /> },
   { id: "facilities", label: "Facilities", note: "health, schools, banks, fuel, markets…", sw: <ShapeIcon shape="plus" color="var(--ink-2)" /> },
   { id: "streets", label: "City streets", note: "loads automatically when you zoom into a city", sw: <Line color="var(--road)" w={1} /> },
-  { id: "flows", label: "Trade corridors & flows", note: "arcs from Addis Ababa to the sea ports; partner trade arcs when the Comtrade key is set", sw: <Line color="var(--ink-2)" w={3} /> },
+  { id: "flows", label: "Trade corridors & flows", note: "arcs from Addis Ababa to the sea ports; partner trade arcs from UN Comtrade", sw: <Line color="var(--ink-2)" w={3} /> },
   { id: "density", label: "Facility density", note: "hexagon map of where facilities are mapped (categories below). Mapping effort varies by area, so it is not a measure of need", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px] rounded-full" style={{ background: "radial-gradient(circle, var(--accent), transparent)" }} /> },
 ];
 
@@ -130,7 +130,7 @@ export function LayerPanel({
         <div className="px-3 pb-2 text-[10.5px]" role="status">
           {deck.loading && <div className="muted mono">Loading deck.gl…</div>}
           {deck.error && <div style={{ color: "var(--warn)" }}>Could not draw the overlay: {deck.error}</div>}
-          {layers.includes("flows") && !deck.tradeReady && <div className="muted">Partner trade arcs appear once the UN Comtrade key is configured (see the Trade panel). Corridor arcs show the sea-access routes, not trade volume.</div>}
+          {layers.includes("flows") && !deck.tradeReady && <div className="muted">Partner trade arcs appear once UN Comtrade data has loaded (see the Trade panel). Corridor arcs show the sea-access routes, not trade volume.</div>}
           {layers.includes("flows") && deck.tradeReady && <div className="muted mono">{deck.partnerArcs} partner arcs · width = trade value · cyan exports, violet imports · zoom out to see them · click one for the country</div>}
         </div>
       )}

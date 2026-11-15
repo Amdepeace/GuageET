@@ -90,7 +90,7 @@ export function RelationsPanel({ rel }: { rel: CountryRelations }) {
           <div className="label mb-1">Bilateral trade with Ethiopia</div>
           {!rel.tradeAvailable ? (
             <div className="text-[12px] muted">
-              Needs a UN Comtrade key (see the Trade panel). Once set, Ethiopia&apos;s exports to and imports from {rel.country.name} appear here.
+              Trade data has not loaded yet (see the Trade panel). Ethiopia&apos;s exports to and imports from {rel.country.name} appear here once it does.
             </div>
           ) : bilateral ? (
             <div className="grid grid-cols-3 gap-2 text-[12px]">

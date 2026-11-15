@@ -1,8 +1,10 @@
 // UN Comtrade (free tier) — Ethiopia's trade: top partners, the trade balance,
 // bilateral totals for every partner (keyed by M49 so the world map can look
-// them up), and the top traded commodity groups. Needs a free subscription key
-// in COMTRADE_PRIMARY_KEY (a GitHub Secret). Without it the panel and the
-// relations trade section show a clear "awaiting key" state.
+// them up), and the top traded commodity groups.
+// Keyless by default: UN Comtrade's public "preview" endpoint needs no key or
+// account (it caps a response at 500 rows, plenty for annual totals by partner
+// and HS-2 groups). If COMTRADE_PRIMARY_KEY (a free subscription key, stored as
+// a GitHub Secret) is set, the full data API is used instead.
 // Docs: https://comtradeplus.un.org/
 import { join } from "node:path";
 import type { BilateralTrade, TradeCommodity, TradeFile, TradePartner } from "../lib/schema";
@@ -18,9 +20,25 @@ type Row = { flowCode: string; partnerCode: number; partnerDesc: string; cmdCode
 
 async function query(params: Record<string, string>): Promise<Row[]> {
   const qs = new URLSearchParams({ reporterCode: String(ETH), motCode: "0", customsCode: "C00", includeDesc: "true", ...params });
-  const res = await fetch(`https://comtradeapi.un.org/data/v1/get/C/A/HS?${qs}`, { headers: { "Ocp-Apim-Subscription-Key": KEY } });
-  if (!res.ok) throw new Error(`HTTP ${res.status} for ${params.flowCode} ${params.period}`);
-  return ((await res.json()) as { data?: Row[] }).data ?? [];
+  const url = KEY ? `https://comtradeapi.un.org/data/v1/get/C/A/HS?${qs}` : `https://comtradeapi.un.org/public/v1/preview/C/A/HS?${qs}`;
+  const headers: Record<string, string> = KEY ? { "Ocp-Apim-Subscription-Key": KEY } : {};
+  let last = "";
+  for (let attempt = 0; attempt < 4; attempt++) {
+    if (attempt) await new Promise((r) => setTimeout(r, 4000 * attempt));
+    try {
+      const res = await fetch(url, { headers, signal: AbortSignal.timeout(60000) });
+      if (res.status === 429 || res.status >= 500) {
+        last = `HTTP ${res.status}`;
+        continue;
+      }
+      if (!res.ok) throw new Error(`HTTP ${res.status} for ${params.flowCode} ${params.period}`);
+      return ((await res.json()) as { data?: Row[] }).data ?? [];
+    } catch (e) {
+      last = String((e as Error).message ?? e);
+      if (/^HTTP 4/.test(last)) throw e;
+    }
+  }
+  throw new Error(`${last} for ${params.flowCode} ${params.period}`);
 }
 
 const awaitingKey = (fetchedAt: string): TradeFile => ({
@@ -29,7 +47,7 @@ const awaitingKey = (fetchedAt: string): TradeFile => ({
   sourceUrl: SOURCE_URL,
   period: "",
   available: false,
-  note: "Set COMTRADE_PRIMARY_KEY (a free UN Comtrade subscription key) as a GitHub Secret to populate trade data.",
+  note: "Trade data has not been fetched yet; the next scheduled update will fill it.",
   exportsByPartner: [],
   importsByPartner: [],
   balance: [],
@@ -57,13 +75,6 @@ function topCommodities(rows: Row[]): TradeCommodity[] {
 async function main() {
   const fetchedAt = new Date().toISOString();
   const prev = readJson<TradeFile | null>(OUT, null);
-
-  if (!KEY) {
-    writeJson(OUT, awaitingKey(fetchedAt));
-    recordHealth(SOURCE, 40, { ok: false, error: "No COMTRADE_PRIMARY_KEY configured" });
-    console.log("trade: no key configured; wrote awaiting-key state");
-    return;
-  }
 
   try {
     const thisYear = new Date().getUTCFullYear();
@@ -116,7 +127,7 @@ async function main() {
       sourceUrl: SOURCE_URL,
       period: String(period),
       available: true,
-      note: `Latest year with data: ${period}. Trade data lags by months to years.`,
+      note: `Latest year with data: ${period}. Trade data lags by months to years. Reporter-declared values (${KEY ? "UN Comtrade data API" : "UN Comtrade public preview, no key"}); partners can mirror-report differently.`,
       exportsByPartner: topPartners(exp),
       importsByPartner: topPartners(imp),
       balance,
