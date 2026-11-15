@@ -25,6 +25,9 @@ import { TradePanel } from "./trade/TradePanel";
 import { PowerExportsPanel } from "./power/PowerExportsPanel";
 import { RsdpPanel } from "./roads/RsdpPanel";
 import { ClimatePanel } from "./weather/ClimatePanel";
+import { Explorer } from "./explore/Explorer";
+import { CommandPalette, type PaletteItem } from "./shell/CommandPalette";
+import { SectionNav, SECTIONS } from "./shell/SectionNav";
 import { InfraTable } from "./infra/InfraTable";
 import { InfraDetail } from "./infra/InfraDetail";
 import { CityDetail, WeatherPanel } from "./weather/WeatherPanel";
@@ -258,6 +261,15 @@ export function Dashboard({ data }: { data: DashboardData }) {
     }
     return out;
   }, [countries, infra, now, oldestVerified, weather.snap, sourceRows, thresholds, redsea, trade.available, newsStatus, data.debt, data.humanitarian]);
+  const [paletteOpen, setPaletteOpen] = useState(false);
+  const goTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const paletteItems: PaletteItem[] = [
+    ...SECTIONS.map((sec) => ({ id: sec.id, group: "Go to section", label: sec.label, run: () => goTo(sec.id) })),
+    ...indicators.map((i) => ({ id: `v-${i.id}`, group: "Vitals", label: i.label, hint: i.callsign, run: () => setDetail({ kind: "vital", id: i.id, country: "ETH" }) })),
+    ...infra.map((f) => ({ id: `i-${f.properties.id}`, group: "Infrastructure", label: f.properties.name, hint: f.properties.callsign, run: () => selectInfra(f.properties.id) })),
+    { id: "a-about", group: "Actions", label: "About, sources and data export", run: () => setDetail({ kind: "about" }) },
+    { id: "a-theme", group: "Actions", label: theme === "light" ? "Switch to dark theme" : "Switch to light theme", run: () => toggleTheme() },
+  ];
   const desks = Object.entries(deskRules).map(([id, r]) => ({ id, light: worst(r.map((x) => x.light)) as Light }));
 
   // --- selection -----------------------------------------------------------
@@ -374,9 +386,12 @@ export function Dashboard({ data }: { data: DashboardData }) {
     <main className="min-h-screen flex flex-col gap-2 p-2 md:p-3 max-w-[1800px] mx-auto">
       <StatusBar lastSync={lastSync} desks={desks} onDesk={(id) => setDetail({ kind: "desk", id })} theme={theme} onTheme={toggleTheme} onAbout={() => setDetail({ kind: "about" })} />
 
+      <SectionNav onSearch={() => setPaletteOpen(true)} />
+      <CommandPalette items={paletteItems} open={paletteOpen} onOpenChange={setPaletteOpen} />
+
       <AlertBanner alerts={alerts} />
 
-      <section aria-label="ECON vitals" className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-2">
+      <section id="sec-vitals" aria-label="ECON vitals" className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-2">
         {indicators.map((ind) => (
           <VitalTile
             key={ind.id}
@@ -395,7 +410,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
         ))}
       </section>
 
-      <div className="grid grid-cols-1 gap-2 lg:grid-cols-[minmax(260px,300px)_minmax(0,1fr)_minmax(280px,330px)]">
+      <div id="sec-map" className="grid grid-cols-1 gap-2 lg:grid-cols-[minmax(260px,300px)_minmax(0,1fr)_minmax(280px,330px)]">
         <div className="order-1 lg:order-2 h-[62vh] min-h-[380px] lg:h-auto lg:min-h-[560px]">
           {viewReady && (
             <MapView
@@ -436,22 +451,33 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+      <div id="sec-explore">
+        <Explorer indicators={indicators} countries={countries} theme={theme} />
+      </div>
+
+      <div id="sec-economy" className="grid grid-cols-1 lg:grid-cols-2 gap-2">
         <DebtPanel debt={data.debt} imf={data.imfProgramme} status={statusOf(data.debt.source)} now={now} />
         <HumanitarianPanel data={data.humanitarian} status={statusOf(data.humanitarian.source)} />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+      <div id="sec-trade" className="grid grid-cols-1 lg:grid-cols-2 gap-2">
         <TradePanel trade={trade} status={statusOf(trade.source)} />
         <NewsFeed news={news} status={newsStatus} now={now} />
       </div>
 
-      <ClimatePanel data={data.climate} />
+      <div id="sec-climate">
+        <ClimatePanel data={data.climate} />
+      </div>
 
-      <RsdpPanel data={data.rsdp} />
+      <div id="sec-roads">
+        <RsdpPanel data={data.rsdp} />
+      </div>
 
-      <PowerExportsPanel data={data.powerExports} onSelectInfra={(id) => selectInfra(id)} />
+      <div id="sec-power">
+        <PowerExportsPanel data={data.powerExports} onSelectInfra={(id) => selectInfra(id)} />
+      </div>
 
+      <div id="sec-infra"></div>
       <InfraTable infra={infra} selected={view.sel} onSelect={(id) => selectInfra(id)} />
 
       <EventLog changes={data.changes} events={data.events} indicators={indicators} lastVisit={lastVisit} onOpen={(id, country) => setDetail({ kind: "vital", id, country })} />

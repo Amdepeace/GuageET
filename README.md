@@ -28,6 +28,10 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 
 Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle "Quakes"), the **Red Sea risk monitor**, a **headlines** feed, an in-page **alerts banner** (FX moves, Red Sea drops, big quakes), **event markers** on the vital charts (birr float, GERD milestones), an **Ethiopian-calendar** axis toggle (E.C./G.C.) on those charts, and a **Trade panel**.
 
+### Interactive explorer, command palette and section nav
+
+Three open-source libraries improve the UI: **[Apache ECharts](https://github.com/apache/echarts)** (Apache-2.0) powers the **EXPLORER** panel, where you pick an indicator and countries and view Values, Indexed (rebased to 100; disabled for rates and ratios) or Scatter (one indicator against another) with zoom, pan, legend toggles and save-as-image. ECharts is loaded on demand. **[cmdk](https://github.com/pacocoursey/cmdk)** (MIT) adds a **⌘K / Ctrl+K** palette to jump to any vital, infrastructure record or section. A sticky section bar highlights where you are. The Explorer uses only the sourced World Bank series already in `data/series`.
+
 ### Climate vs normal
 
 The **CLIMATE** panel (`scripts/fetch-climate.ts`) compares each city's last 12 complete months of rainfall and temperature with its 1991–2020 normal, from the Open-Meteo Historical Weather API (ERA5 reanalysis, free, no key). It is reanalysis on a ~10 km grid, not station data. The idea comes from [pooja97/ethio_hydro](https://github.com/pooja97/ethio_hydro); none of its code or data is used.
