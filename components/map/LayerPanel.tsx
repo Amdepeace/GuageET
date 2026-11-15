@@ -28,6 +28,7 @@ const ROWS: { id: Layer; label: string; note: string; sw: ReactNode }[] = [
   { id: "streams", label: "Streams & tributaries", note: "small tributaries; appear when zoomed in", sw: <Line color="var(--river)" w={1} /> },
   { id: "roads", label: "Main roads", note: "motorway, trunk, primary, secondary", sw: <Line color="var(--road)" w={2.6} /> },
   { id: "tertiary", label: "Tertiary roads", note: "appear when zoomed in", sw: <Line color="var(--road)" w={1.2} /> },
+  { id: "rsdp", label: "RSDP road upgrades", note: "links upgraded in Road Sector Development Programme phases I–IV (ERA data, World Bank study); colour = phase", sw: <Line color="#7b6cf0" w={2.6} /> },
   { id: "rail", label: "Rail & runways", note: "lines, stations, airport runways", sw: <Line color="var(--rail)" dash="4 2.5" w={2} /> },
   { id: "places", label: "Towns & villages", note: "names appear as you zoom", sw: <span className="inline-block w-[7px] h-[7px] rounded-full mx-[7px]" style={{ background: "var(--ink-2)" }} /> },
   { id: "facilities", label: "Facilities", note: "health, schools, banks, fuel, markets…", sw: <ShapeIcon shape="plus" color="var(--ink-2)" /> },

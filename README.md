@@ -28,6 +28,10 @@ A single-page, map-centred console for Ethiopia's economy, infrastructure and we
 
 Pulse row (daily FX + commodity tiles), a live **earthquakes** map layer (toggle "Quakes"), the **Red Sea risk monitor**, a **headlines** feed, an in-page **alerts banner** (FX moves, Red Sea drops, big quakes), **event markers** on the vital charts (birr float, GERD milestones), an **Ethiopian-calendar** axis toggle (E.C./G.C.) on those charts, and a **Trade panel**.
 
+### RSDP road programme (World Bank study data)
+
+The **ROADS · RSDP** panel and the map's **RSDP road upgrades** layer come from the replication package [worldbank/ethiopia-rsdp-ie](https://github.com/worldbank/ethiopia-rsdp-ie) (road network from the Ethiopian Roads Authority, 1996–2016). `scripts/build-rsdp.py` derives a simplified line layer (`public/geo-detail/rsdp-roads.json`, links assigned to RSDP phases I–IV) and summary totals (`data/curated/rsdp.json`). It is historical, not current road status. The repository states no data licence, so only simplified geometry and totals are shipped, with attribution; remove them if the owners object.
+
 ### Electricity exports (curated)
 
 The **POWER** panel (`data/curated/power-exports.json`) lists Ethiopia's electricity export earnings by partner (Kenya, Djibouti, Sudan, Tanzania) for FY2024/25, with capacity notes, source links and a verified flag. Each row links to its interconnector record in the infrastructure tracker. Figures come from news reports of EEP data; conflicts are flagged, not resolved, and values are USD earnings, not MWh.

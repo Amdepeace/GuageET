@@ -10,6 +10,7 @@ export type Layer =
   | "streams"
   | "roads"
   | "tertiary"
+  | "rsdp"
   | "rail"
   | "places"
   | "facilities"
@@ -27,6 +28,7 @@ export const ALL_LAYERS: Layer[] = [
   "streams",
   "roads",
   "tertiary",
+  "rsdp",
   "rail",
   "places",
   "facilities",

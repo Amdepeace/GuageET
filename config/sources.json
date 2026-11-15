@@ -128,6 +128,14 @@
       "access": "Written in this repository",
       "url": "https://github.com/Amdepeace/GuageET/tree/claude/ethiopia-vitals-v1/data/curated",
       "statusKey": "Curated infrastructure"
+    },
+    {
+      "name": "World Bank RSDP study data",
+      "provides": "Road upgrades by RSDP phase and road surface type, 1996–2016 (road data from the Ethiopian Roads Authority)",
+      "cadence": "Static historical dataset; curated",
+      "access": "Public GitHub repository; no data licence stated",
+      "url": "https://github.com/worldbank/ethiopia-rsdp-ie",
+      "statusKey": null
     }
   ]
 }

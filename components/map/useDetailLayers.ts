@@ -28,6 +28,16 @@ const colors = () => ({
   bg: cssVar("--bg") || "#0b1117",
 });
 
+// RSDP phases (Ethiopian Roads Authority data via the World Bank replication package)
+export const RSDP_COLORS = {
+  dark: ["#d95b92", "#7b6cf0", "#b8863f", "#0ea5c6"],
+  light: ["#c2447f", "#5a49d6", "#8f5f12", "#0587ad"],
+};
+const rsdpColor = (theme: string) => {
+  const p = RSDP_COLORS[theme === "light" ? "light" : "dark"];
+  return ["match", ["get", "p"], 1, p[0], 2, p[1], 3, p[2], p[3]];
+};
+
 const MAJOR_TYPES = ["hospital", "university", "college", "aerodrome", "bus_station", "station", "ferry_terminal"];
 
 type Args = {
@@ -124,6 +134,8 @@ export function useDetailLayers({ map, ready, layers, facCats, theme, lang, avoi
         });
       } else if (id === "d-streams") {
         add(m, { id: "d-streams", type: "line", source: id, minzoom: 7, paint: { "line-color": c.river, "line-opacity": 0.6, "line-width": zoomW([[7, 0.3], [10, 0.6], [14, 1.4]]) } });
+      } else if (id === "d-rsdp") {
+        add(m, { id: "d-rsdp", type: "line", source: id, minzoom: 4, layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": rsdpColor(live.current.theme) as never, "line-opacity": 0.9, "line-width": zoomW([[4, 0.6], [8, 1.4], [12, 2.6], [16, 5]]) } });
       } else if (id === "d-roads-tertiary") {
         add(m, { id: "d-roads-tertiary", type: "line", source: id, minzoom: 8, paint: { "line-color": c.road, "line-opacity": 0.45, "line-width": zoomW([[8, 0.3], [12, 1], [16, 3]]) } });
         add(m, { id: "d-road-names-tertiary", type: "symbol", source: id, minzoom: 12, filter: hasName, ...text(FONT.regular, 10, c.ink3, { "symbol-placement": "line", "symbol-spacing": 280 }) });
@@ -201,6 +213,7 @@ export function useDetailLayers({ map, ready, layers, facCats, theme, lang, avoi
     const set = (id: string, prop: string, v: string) => m.getLayer(id) && m.setPaintProperty(id, prop, v);
     for (const id of ["d-water-big", "d-water-mid", "d-water-small"]) set(id, "fill-color", c.river);
     for (const id of ["d-water-line", "d-rivers", "d-streams"]) set(id, "line-color", c.river);
+    if (m.getLayer("d-rsdp")) m.setPaintProperty("d-rsdp", "line-color", rsdpColor(live.current.theme) as never);
     for (const id of ["d-roads-tertiary", "d-roads-secondary", "d-roads-major", "d-streets"]) set(id, "line-color", c.road);
     for (const id of ["d-rail", "d-runways"]) set(id, "line-color", c.rail);
     set("d-stations", "circle-color", c.panel);
@@ -336,6 +349,7 @@ export function useDetailLayers({ map, ready, layers, facCats, theme, lang, avoi
     }
     if (on("streams")) void ensure("d-streams", "streams.json");
     if (on("roads")) void ensure("d-roads-major", "roads-major.json");
+    if (on("rsdp")) void ensure("d-rsdp", "rsdp-roads.json");
     if (on("tertiary")) void ensure("d-roads-tertiary", "roads-tertiary.json");
     if (on("rail")) {
       void ensure("d-rail", "rail.json");

@@ -244,3 +244,15 @@ export type PowerExportsFile = {
   total: { label: string; valueUsd: number; period: string; source: PowerSource; verified: boolean; caveat: string; caveatSource: PowerSource };
   partners: PowerPartner[];
 };
+
+export type RsdpFile = {
+  source: string;
+  sourceUrl: string;
+  publicationUrl: string;
+  period: string;
+  lastVerified: string;
+  links: number;
+  surfaceKm: Record<string, Record<string, number>>;
+  phases: { phase: number; startYear: number; links: number; km: number; pavedKm1996: number; pavedKm2014: number }[];
+  regions: { region: string; km2014: number; pavedKm1996: number; pavedKm2014: number }[];
+};

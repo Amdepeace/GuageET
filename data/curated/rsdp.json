@@ -1,0 +1,129 @@
+{
+  "source": "World Bank replication package: The Impact of Ethiopia's Road Sector Development Program (road network data provided by the Ethiopian Roads Authority)",
+  "sourceUrl": "https://github.com/worldbank/ethiopia-rsdp-ie",
+  "publicationUrl": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099332404062230683/idu073a7158605532046490b712098aed9008539",
+  "period": "1996–2016 (surface types recorded for 1996 and 2014)",
+  "lastVerified": "2026-11-15",
+  "links": 16815,
+  "surfaceKm": {
+    "1996": {
+      "gravel": 27210,
+      "paved": 5066,
+      "earth": 28783
+    },
+    "2014": {
+      "gravel": 66102,
+      "paved": 14923,
+      "earth": 8004,
+      "cobble": 353
+    }
+  },
+  "phases": [
+    {
+      "phase": 1,
+      "startYear": 1997,
+      "links": 225,
+      "km": 7089,
+      "pavedKm1996": 168,
+      "pavedKm2014": 699
+    },
+    {
+      "phase": 2,
+      "startYear": 2003,
+      "links": 178,
+      "km": 6491,
+      "pavedKm1996": 1805,
+      "pavedKm2014": 2445
+    },
+    {
+      "phase": 3,
+      "startYear": 2008,
+      "links": 810,
+      "km": 7618,
+      "pavedKm1996": 710,
+      "pavedKm2014": 2463
+    },
+    {
+      "phase": 4,
+      "startYear": 2011,
+      "links": 3742,
+      "km": 48957,
+      "pavedKm1996": 665,
+      "pavedKm2014": 6877
+    }
+  ],
+  "regions": [
+    {
+      "region": "Oromia",
+      "km2014": 25157,
+      "pavedKm1996": 1873,
+      "pavedKm2014": 4379
+    },
+    {
+      "region": "Amhara",
+      "km2014": 17177,
+      "pavedKm1996": 1019,
+      "pavedKm2014": 2593
+    },
+    {
+      "region": "SNNP",
+      "km2014": 15676,
+      "pavedKm1996": 211,
+      "pavedKm2014": 2040
+    },
+    {
+      "region": "Unknown",
+      "km2014": 7778,
+      "pavedKm1996": 0,
+      "pavedKm2014": 0
+    },
+    {
+      "region": "Tigray",
+      "km2014": 6414,
+      "pavedKm1996": 78,
+      "pavedKm2014": 1975
+    },
+    {
+      "region": "Somali",
+      "km2014": 4706,
+      "pavedKm1996": 0,
+      "pavedKm2014": 833
+    },
+    {
+      "region": "Afar",
+      "km2014": 4359,
+      "pavedKm1996": 467,
+      "pavedKm2014": 1264
+    },
+    {
+      "region": "Region 14",
+      "km2014": 3582,
+      "pavedKm1996": 1415,
+      "pavedKm2014": 1415
+    },
+    {
+      "region": "Benshangul Gumuz",
+      "km2014": 2922,
+      "pavedKm1996": 0,
+      "pavedKm2014": 168
+    },
+    {
+      "region": "Gambella",
+      "km2014": 1123,
+      "pavedKm1996": 0,
+      "pavedKm2014": 93
+    },
+    {
+      "region": "Dire Dawa",
+      "km2014": 265,
+      "pavedKm1996": 0,
+      "pavedKm2014": 74
+    },
+    {
+      "region": "Harari",
+      "km2014": 224,
+      "pavedKm1996": 3,
+      "pavedKm2014": 91
+    }
+  ]
+}
