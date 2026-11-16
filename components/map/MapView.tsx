@@ -10,6 +10,7 @@ import type { CityWeather } from "@/lib/openMeteo";
 import { ALL_LAYERS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import type { Quake } from "@/lib/usgs";
 import { marineTrafficView } from "@/lib/marinetraffic";
+import { useVesselLayer, vesselTypeLabel, type VesselProps } from "./useVesselLayer";
 import { useSatelliteLayer, latestCompleteDay, type SatKind } from "./useSatelliteLayer";
 import { useEonetLayer, type EonetEvent } from "./useEonetLayer";
 import { useShippingLayer, type ShipPick } from "./useShippingLayer";
@@ -84,6 +85,7 @@ export function MapView({
   redsea,
   onShip,
   onEvent,
+  onVessel,
   onCorridor,
   relationsSel,
   initialView,
@@ -118,6 +120,7 @@ export function MapView({
   redsea: RedSeaFile;
   onShip: (p: ShipPick) => void;
   onEvent: (e: EonetEvent) => void;
+  onVessel: (v: VesselProps, lat: number, lon: number) => void;
   onCorridor: (id: string) => void;
   relationsSel: string | null;
   initialView: { zoom: number | null; center: [number, number] | null };
@@ -149,9 +152,10 @@ export function MapView({
     onMineral: typeof onMineral;
     onShip: typeof onShip;
     onEvent: typeof onEvent;
+    onVessel: typeof onVessel;
     pick: (x: number, y: number) => DeckPick | null;
-  }>({ onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, onShip, onEvent, pick: () => null });
-  cb.current = { ...cb.current, onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, onShip, onEvent };
+  }>({ onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, onShip, onEvent, onVessel, pick: () => null });
+  cb.current = { ...cb.current, onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, onShip, onEvent, onVessel };
   const avoid = useMemo(() => cities.map((c) => [c.lon, c.lat] as [number, number]), [cities]);
 
   // init once
@@ -256,6 +260,13 @@ export function MapView({
         const present = HIT_LAYERS.filter((id) => m.getLayer(id));
         return present.length ? m.queryRenderedFeatures([[x - r, y - r], [x + r, y + r]], { layers: present })[0] : undefined;
       };
+      const vesselAt = (pt: { x: number; y: number }): { v: VesselProps; lat: number; lon: number } | undefined => {
+        if (!m.getLayer("d-ais-pt") || m.getLayoutProperty("d-ais-pt", "visibility") !== "visible") return undefined;
+        const f = m.queryRenderedFeatures([[pt.x - 6, pt.y - 6], [pt.x + 6, pt.y + 6]], { layers: ["d-ais-pt"] })[0];
+        if (!f) return undefined;
+        const g = f.geometry as { type: string; coordinates: [number, number] };
+        return { v: f.properties as unknown as VesselProps, lat: g.coordinates[1], lon: g.coordinates[0] };
+      };
       const eventAt = (pt: { x: number; y: number }): EonetEvent | undefined => {
         if (!m.getLayer("d-eonet-pt") || m.getLayoutProperty("d-eonet-pt", "visibility") !== "visible") return undefined;
         const f = m.queryRenderedFeatures([[pt.x - 8, pt.y - 8], [pt.x + 8, pt.y + 8]], { layers: ["d-eonet-pt"] })[0];
@@ -298,19 +309,21 @@ export function MapView({
         const infraHit = dp ? undefined : m.queryRenderedFeatures(e.point, { layers: ["infra-hit-pt", "infra-hit-line"] })[0];
         const ip = infraHit?.properties as { callsign: string; name: string } | undefined;
         const f = dp || infraHit ? undefined : detailAt(e.point.x, e.point.y, 5);
-        const ev = dp || infraHit ? undefined : eventAt(e.point);
+        const vs = dp || infraHit ? undefined : vesselAt(e.point);
+        const ev = dp || infraHit || vs ? undefined : eventAt(e.point);
         const sh = dp || infraHit || ev ? undefined : shipAt(e.point);
         const mn = dp || infraHit || sh ? undefined : mineralAt(e.point);
         const rk = dp || infraHit || f || mn ? undefined : riskAt(e.point);
         if (dp) setHover({ x: e.point.x, y: e.point.y, text: dp.text });
         else if (ip) setHover({ x: e.point.x, y: e.point.y, text: `${ip.callsign} · ${ip.name}` });
         else if (f) setHover({ x: e.point.x, y: e.point.y, text: tip(LAYER_KIND[f.layer.id], f.properties as Record<string, unknown>) });
+        else if (vs) setHover({ x: e.point.x, y: e.point.y, text: `${vs.v.name?.trim() || `MMSI ${vs.v.mmsi}`} · ${vesselTypeLabel(vs.v.type)}${vs.v.sog != null ? ` · ${vs.v.sog.toFixed(1)} kn` : ""}` });
         else if (ev) setHover({ x: e.point.x, y: e.point.y, text: `${ev.category} · ${ev.title}` });
         else if (sh) setHover({ x: e.point.x, y: e.point.y, text: sh.text });
         else if (mn) setHover({ x: e.point.x, y: e.point.y, text: `${mn.n} · ${mn.c.slice(0, 2).join(", ") || "minerals"}` });
         else if (rk) setHover({ x: e.point.x, y: e.point.y, text: rk.kind === "conflict" ? (rk.z.nodata ? `${rk.z.n} · no conflict data` : `${rk.z.n} · ${rk.z.e} conflict events (12 mo)`) : rk.kind === "rain" ? `${rk.z.n} · rainfall ${rk.z.rated ? `${rk.z.pct}% of normal` : "not rated (dry season)"}` : `${rk.z.n} · soil (click for values)` });
         else setHover(null);
-        m.getCanvas().style.cursor = dp || ip || ev || sh || mn || f || rk ? "pointer" : "";
+        m.getCanvas().style.cursor = dp || ip || vs || ev || sh || mn || f || rk ? "pointer" : "";
         const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as { name?: string } | undefined;
         setHoverCountry(c?.name ?? null);
       });
@@ -329,6 +342,11 @@ export function MapView({
         const id = (hits[0]?.properties as { id?: string } | undefined)?.id ?? null;
         if (id) {
           cb.current.onSelect(id);
+          return;
+        }
+        const vp = vesselAt(e.point);
+        if (vp) {
+          cb.current.onVessel(vp.v, vp.lat, vp.lon);
           return;
         }
         const evp = eventAt(e.point);
@@ -543,13 +561,14 @@ export function MapView({
   useRiskLayers({ map, ready, layers, theme, conflict, rainfall, soil, soilProp });
   useMineralLayers({ map, ready, layers, theme });
   useShippingLayer({ map, ready, layers, theme, ports, redsea });
+  useVesselLayer({ map, ready, layers, theme });
   useSatelliteLayer({ map, ready, layers, kind: satKind, date: satDate || latestCompleteDay() });
   const eonet = useEonetLayer({ map, ready, layers });
   const eonetRef = useRef<EonetEvent[]>([]);
   eonetRef.current = eonet.events;
   const deck = useDeckOverlay({ map, ready, layers, fac, theme, corridors, trade });
   cb.current.pick = deck.pick;
-  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals", "soil", "ships", "satellite", "events"];
+  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals", "soil", "ships", "satellite", "events", "vessels"];
   const detailOn = DETAIL.filter((l) => layers.includes(l)).length;
 
   const jump = (id: string) => {

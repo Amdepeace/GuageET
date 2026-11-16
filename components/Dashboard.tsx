@@ -28,6 +28,8 @@ import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
 import { InvestTab, type GoTarget } from "./invest/InvestTab";
 import { GlobeSection } from "./globe/GlobeSection";
+import { VesselDetail } from "./map/VesselDetail";
+import type { VesselProps } from "./map/useVesselLayer";
 import { EonetDetail } from "./map/EonetDetail";
 import type { EonetEvent } from "./map/useEonetLayer";
 import { AirQualityPanel } from "./weather/AirQualityPanel";
@@ -71,6 +73,7 @@ type Detail =
   | { kind: "mineral"; p: MineralProps }
   | { kind: "ship"; pick: ShipPick }
   | { kind: "event"; e: EonetEvent }
+  | { kind: "vessel"; v: VesselProps; lat: number; lon: number }
   | { kind: "city"; id: string }
   | { kind: "quake"; id: string }
   | { kind: "country"; iso3: string; un: string | null; name: string }
@@ -362,6 +365,13 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </Drawer>
       );
     }
+    if (detail.kind === "vessel") {
+      return (
+        <Drawer title={detail.v.name?.trim() || `MMSI ${detail.v.mmsi}`} callsign="VESSEL" onClose={closeDetail}>
+          <VesselDetail v={detail.v} lat={detail.lat} lon={detail.lon} />
+        </Drawer>
+      );
+    }
     if (detail.kind === "event") {
       return (
         <Drawer title={detail.e.title} callsign="EVENT" onClose={closeDetail}>
@@ -518,6 +528,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
               redsea={redsea}
               onShip={(pick) => setDetail({ kind: "ship", pick })}
               onEvent={(e) => setDetail({ kind: "event", e })}
+              onVessel={(v, lat, lon) => setDetail({ kind: "vessel", v, lat, lon })}
               lang={view.lang}
               onLang={(lang) => setView((v) => ({ ...v, lang }))}
               fac={view.fac}

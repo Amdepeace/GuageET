@@ -288,6 +288,14 @@
       "access": "MIT licence; loaded only when the globe is opened",
       "url": "https://github.com/vasturiano/react-globe.gl",
       "statusKey": null
+    },
+    {
+      "name": "Open Waters AIS (live vessels)",
+      "provides": "Live vessel positions (last 30 minutes) as map tiles, from government feeds, aggregators and volunteer receivers",
+      "cadence": "Live in your browser, tiles refreshed every 30 s while the layer is on",
+      "access": "Free anonymous tier, no key; free for personal use, paid plans for commercial use; licence per source; coverage uneven (none heard around the Red Sea / East Africa)",
+      "url": "https://openwaters.io/ais/",
+      "statusKey": null
     }
   ]
 }

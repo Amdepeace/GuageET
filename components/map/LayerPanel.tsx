@@ -5,6 +5,7 @@ import { MINERAL_KINDS } from "./useMineralLayers";
 import { SHIP_COLORS } from "./useShippingLayer";
 import { SAT_KINDS, latestCompleteDay, type SatKind } from "./useSatelliteLayer";
 import { eonetColor } from "./useEonetLayer";
+import { VESSEL_CLASSES } from "./useVesselLayer";
 import type { ReactNode } from "react";
 import { ALL_FAC_CATS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import { FAC_META, SHAPES, facColor, type Shape } from "./detail";
@@ -47,6 +48,7 @@ const ROWS: { id: Layer; label: string; note: string; sw: ReactNode }[] = [
   { id: "ships", label: "Ports & shipping", note: "port calls and chokepoint transits (IMF PortWatch, AIS-derived; near-live, a few days behind). Size = calls in 30 days; colour = change vs prior 30 days", sw: <span className="inline-block w-[9px] h-[9px] mx-[6px] rounded-full" style={{ background: "#0ea5c6" }} /> },
   { id: "satellite", label: "Satellite imagery (NASA)", note: "daily true colour or land surface temperature from NASA GIBS; pick the date", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#2d5a3d,#8fa66a,#c9b98a)" }} /> },
   { id: "events", label: "Natural events (NASA EONET)", note: "wildfires, volcanoes, floods, storms in the last 30 days, Horn of Africa region; live", sw: <span className="inline-block w-[9px] h-[9px] mx-[6px] rounded-full" style={{ background: "#f08a4b" }} /> },
+  { id: "vessels", label: "Live vessels (AIS)", note: "ships heard in the last 30 min via the open Open Waters AIS network; coverage is uneven (none in much of the Red Sea / East Africa)", sw: <span className="inline-block w-[7px] h-[7px] mx-[7px] rounded-full" style={{ background: "#0ea5c6" }} /> },
   { id: "density", label: "Facility density", note: "hexagon map of where facilities are mapped (categories below). Mapping effort varies by area, so it is not a measure of need", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px] rounded-full" style={{ background: "radial-gradient(circle, var(--accent), transparent)" }} /> },
 ];
 
@@ -256,6 +258,24 @@ export function LayerPanel({
             ))}
           </ul>
           <div className="muted mt-1">EONET covers Africa sparsely, so an empty map means none was reported, not that nothing happened. Click a point for sources.</div>
+        </div>
+      )}
+
+      {layers.includes("vessels") && (
+        <div className="px-3 pb-2 text-[10.5px]" role="status">
+          <div className="label mb-1">Live vessels · Open Waters AIS</div>
+          <ul className="flex flex-wrap gap-x-3 gap-y-0.5">
+            {VESSEL_CLASSES.map((v) => (
+              <li key={v.id} className="flex items-center gap-1">
+                <span className="inline-block w-[8px] h-[8px] rounded-full" style={{ background: v.dark }} />
+                {v.label}
+              </li>
+            ))}
+          </ul>
+          <div className="mt-1" style={{ color: "var(--warn)" }}>
+            Coverage is uneven. The open network hears many vessels in Europe, North America, East Asia and South Africa, but none were heard around Djibouti, the Gulf of Aden, the southern Red Sea or Mombasa when this was built. An empty sea means no receiver there, not no ships. For those waters use the Ports &amp; shipping layer (daily, a few days late).
+          </div>
+          <div className="muted mt-1">Faded dots were last heard a while ago. Positions refresh every 30 seconds while this page is open. Free anonymous tier: loaded from your browser, with a limit per visitor.</div>
         </div>
       )}
 

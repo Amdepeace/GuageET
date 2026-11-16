@@ -14,7 +14,7 @@ const SOURCE = "Radio Browser directory";
 const SOURCE_URL = "https://www.radio-browser.info/";
 const OUT = join(DATA, "radio.json");
 const MIRRORS = ["https://de1.api.radio-browser.info", "https://all.api.radio-browser.info"];
-const UA = "GuageET-dashboard/1.0 (+https://github.com/Amdepeace/GuageET)";
+const UA = "open-data-dashboard/1.0";
 
 type Raw = { stationuuid: string; name: string; url_resolved: string; codec: string; bitrate: number; language: string; tags: string; homepage: string; lastcheckok: number; lastchecktime_iso8601?: string; lastchecktime: string; clickcount: number };
 
