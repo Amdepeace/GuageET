@@ -6,6 +6,7 @@ import "@fontsource/jetbrains-mono/600.css";
 import "@fontsource/noto-sans-ethiopic/400.css";
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
+import { ChunkRecovery } from "@/components/shell/ChunkRecovery";
 
 export const metadata: Metadata = {
   title: "Ethiopia Vitals",
@@ -27,7 +28,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body>{children}</body>
+      <body>
+        <ChunkRecovery />
+        {children}
+      </body>
     </html>
   );
 }

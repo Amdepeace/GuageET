@@ -30,6 +30,7 @@ import { InvestTab, type GoTarget } from "./invest/InvestTab";
 import { GlobeSection } from "./globe/GlobeSection";
 import { VesselDetail } from "./map/VesselDetail";
 import type { VesselProps } from "./map/useVesselLayer";
+import { MapLoading } from "./shell/ChunkRecovery";
 import { EonetDetail } from "./map/EonetDetail";
 import type { EonetEvent } from "./map/useEonetLayer";
 import { AirQualityPanel } from "./weather/AirQualityPanel";
@@ -62,7 +63,7 @@ import type { FacCat } from "@/lib/urlState";
 // MapLibre is the heaviest dependency; load it after the vitals render.
 const MapView = dynamic(() => import("./map/MapView").then((m) => m.MapView), {
   ssr: false,
-  loading: () => <div className="panel h-full min-h-[380px] flex items-center justify-center label">Acquiring map…</div>,
+  loading: () => <MapLoading />,
 });
 
 type Detail =
