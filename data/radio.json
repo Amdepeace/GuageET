@@ -1,7 +1,7 @@
 {
   "source": "Radio Browser directory",
   "sourceUrl": "https://www.radio-browser.info/",
-  "fetchedAt": "2026-11-15T22:02:42.169Z",
+  "fetchedAt": "2026-11-16T11:22:38.949Z",
   "available": true,
   "note": "Station list and stream addresses come from the Radio Browser community directory, which health-checks each stream; a stream can still be down or blocked for you. Audio plays straight from each station's own stream host. This dashboard is not affiliated with any station.",
   "stations": [
@@ -28,6 +28,17 @@
       "lastCheck": "2026-11-11"
     },
     {
+      "id": "ead338ab-3b2b-4835-bad0-dcc270b102f4",
+      "name": "FM ADDIS 97-1",
+      "url": "https://stream.zeno.fm/rb6wbrap7yzuv",
+      "codec": "MP3",
+      "bitrate": 128,
+      "language": "amharic",
+      "tags": "public radio",
+      "homepage": "https://zeno.fm/radio/ebc-fm-addis-97-1/",
+      "lastCheck": "2026-11-12"
+    },
+    {
       "id": "1711b4da-1e44-49c1-98be-a690d8decacb",
       "name": "Tizta ትዝታ FM",
       "url": "https://stream.zeno.fm/55nlq5yzqlftv",
@@ -39,25 +50,14 @@
       "lastCheck": "2026-11-12"
     },
     {
-      "id": "5188257a-5ae1-4294-b6b5-479caae85f31",
-      "name": "Addis Music",
-      "url": "https://stream.zeno.fm/umguj2baxdctv",
+      "id": "dbbee4e3-a0ee-4405-9d70-2a558233dcc4",
+      "name": "Ahadu Radio",
+      "url": "https://stream-155.zeno.fm/txxpndf1wwzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ0eHhwbmRmMXd3enV2IiwiaG9zdCI6InN0cmVhbS0xNTUuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Ilp6VmgwOG5XUUFtWXQySm5OYk5XbXciLCJpYXQiOjE3MzAyMjY1NTksImV4cCI6MTczMDIyNjYxOX0.AnMCHL-Etgnu9fOBcU_h1hawhJJv_PcXGHBS2BOlzV0",
       "codec": "MP3",
       "bitrate": 128,
-      "language": "amharic",
-      "tags": "ethiopia,music",
-      "homepage": "https://zeno.fm/radio/addis-music/",
-      "lastCheck": "2026-11-12"
-    },
-    {
-      "id": "ead338ab-3b2b-4835-bad0-dcc270b102f4",
-      "name": "FM ADDIS 97-1",
-      "url": "https://stream.zeno.fm/rb6wbrap7yzuv",
-      "codec": "MP3",
-      "bitrate": 128,
-      "language": "amharic",
-      "tags": "public radio",
-      "homepage": "https://zeno.fm/radio/ebc-fm-addis-97-1/",
+      "language": "",
+      "tags": "",
+      "homepage": "https://www.ahaduradio.com/",
       "lastCheck": "2026-11-12"
     },
     {
@@ -72,14 +72,14 @@
       "lastCheck": "2026-11-12"
     },
     {
-      "id": "22dd8fd6-ee1a-445b-af52-18dc574cff2d",
-      "name": "Bisrat FM 101.1 Addis Ababa · 101.1 FM",
-      "url": "https://bisratfm-atunwadigital.streamguys1.com/bisratfm",
+      "id": "5188257a-5ae1-4294-b6b5-479caae85f31",
+      "name": "Addis Music",
+      "url": "https://stream.zeno.fm/umguj2baxdctv",
       "codec": "MP3",
       "bitrate": 128,
-      "language": "",
-      "tags": "",
-      "homepage": "https://radio-ethiopia.com/stations",
+      "language": "amharic",
+      "tags": "ethiopia,music",
+      "homepage": "https://zeno.fm/radio/addis-music/",
       "lastCheck": "2026-11-12"
     },
     {
@@ -94,6 +94,17 @@
       "lastCheck": "2026-11-11"
     },
     {
+      "id": "9192cd80-b402-4b63-b265-066d065b8659",
+      "name": "Taem Radio ጣዕም ሬድዮ",
+      "url": "https://stream.zeno.fm/ffg8htkh1k0uv",
+      "codec": "MP3",
+      "bitrate": 128,
+      "language": "amharic",
+      "tags": "",
+      "homepage": "https://www.taemmedia.com/",
+      "lastCheck": "2026-11-12"
+    },
+    {
       "id": "89e889e1-124c-4c36-882b-c666ef83189b",
       "name": "Ethiopian Orthodox Church Mezmur",
       "url": "https://stream.zeno.fm/pfaho9uockwuv",
@@ -105,14 +116,14 @@
       "lastCheck": "2026-11-11"
     },
     {
-      "id": "dbbee4e3-a0ee-4405-9d70-2a558233dcc4",
-      "name": "Ahadu Radio",
-      "url": "https://stream-155.zeno.fm/txxpndf1wwzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ0eHhwbmRmMXd3enV2IiwiaG9zdCI6InN0cmVhbS0xNTUuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Ilp6VmgwOG5XUUFtWXQySm5OYk5XbXciLCJpYXQiOjE3MzAyMjY1NTksImV4cCI6MTczMDIyNjYxOX0.AnMCHL-Etgnu9fOBcU_h1hawhJJv_PcXGHBS2BOlzV0",
+      "id": "22dd8fd6-ee1a-445b-af52-18dc574cff2d",
+      "name": "Bisrat FM 101.1 Addis Ababa · 101.1 FM",
+      "url": "https://bisratfm-atunwadigital.streamguys1.com/bisratfm",
       "codec": "MP3",
       "bitrate": 128,
       "language": "",
       "tags": "",
-      "homepage": "https://www.ahaduradio.com/",
+      "homepage": "https://radio-ethiopia.com/stations",
       "lastCheck": "2026-11-12"
     },
     {
@@ -127,25 +138,14 @@
       "lastCheck": "2026-11-12"
     },
     {
-      "id": "05ac2e34-a4a2-4719-bd85-05b7a54aeacf",
-      "name": "YeneVibe Radio",
-      "url": "https://stream.zeno.fm/5mz3qqftsnhvv",
+      "id": "ce7d2197-eca5-4188-b8d2-c550992160e5",
+      "name": "Christian Mezmur Ethiopia",
+      "url": "https://stream.zeno.fm/0bws6ct0ey8uv",
       "codec": "MP3",
       "bitrate": 128,
       "language": "amharic",
-      "tags": "amharic,ethiopia,music,public radio",
-      "homepage": "https://radio.yenevibe.com/",
-      "lastCheck": "2026-11-12"
-    },
-    {
-      "id": "9192cd80-b402-4b63-b265-066d065b8659",
-      "name": "Taem Radio ጣዕም ሬድዮ",
-      "url": "https://stream.zeno.fm/ffg8htkh1k0uv",
-      "codec": "MP3",
-      "bitrate": 128,
-      "language": "amharic",
-      "tags": "",
-      "homepage": "https://www.taemmedia.com/",
+      "tags": "christian,ethiopia,religious",
+      "homepage": "https://zeno.fm/radio/christian-mez/",
       "lastCheck": "2026-11-12"
     },
     {
@@ -182,14 +182,14 @@
       "lastCheck": "2026-11-12"
     },
     {
-      "id": "ce7d2197-eca5-4188-b8d2-c550992160e5",
-      "name": "Christian Mezmur Ethiopia",
-      "url": "https://stream.zeno.fm/0bws6ct0ey8uv",
+      "id": "05ac2e34-a4a2-4719-bd85-05b7a54aeacf",
+      "name": "YeneVibe Radio",
+      "url": "https://stream.zeno.fm/5mz3qqftsnhvv",
       "codec": "MP3",
       "bitrate": 128,
       "language": "amharic",
-      "tags": "christian,ethiopia,religious",
-      "homepage": "https://zeno.fm/radio/christian-mez/",
+      "tags": "amharic,ethiopia,music,public radio",
+      "homepage": "https://radio.yenevibe.com/",
       "lastCheck": "2026-11-12"
     },
     {

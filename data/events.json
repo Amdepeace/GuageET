@@ -862,5 +862,29 @@
     "kind": "source_recovered",
     "source": "IMF PortWatch",
     "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-16T11:17:21.125Z",
+    "kind": "source_error",
+    "source": "World Bank (world indicators)",
+    "message": "Fetch failed: HTTP 502 for https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000&date=2020:2026"
+  },
+  {
+    "at": "2026-11-16T11:20:47.746Z",
+    "kind": "source_recovered",
+    "source": "UN Comtrade",
+    "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-16T11:21:41.790Z",
+    "kind": "source_error",
+    "source": "World Bank IDS",
+    "message": "Fetch failed: ratios: HTTP 502 for https://api.worldbank.org/v2/country/ETH/indicator/DT.DOD.DECT.CD;DT.DOD.DECT.GN.ZS;DT.TDS.DECT.CD;FI.RES.TOTL.DT.ZS;DT.DOD.DIMF.CD;DT.DOD.DSTC.CD?source=2&format=json&per_page=500&date=2008:2026"
+  },
+  {
+    "at": "2026-11-16T11:21:49.308Z",
+    "kind": "source_recovered",
+    "source": "HDX (HAPI)",
+    "message": "Source recovered"
   }
 ]
