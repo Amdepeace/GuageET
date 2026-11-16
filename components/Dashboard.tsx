@@ -7,7 +7,7 @@ import { liveStatus, sourceStatus } from "@/lib/freshness";
 import { evalRule, worst, type Light, type RuleResult } from "@/lib/thresholds";
 import { fetchWeather, WEATHER_POLL_MIN, WEATHER_SOURCE, type WeatherSnapshot } from "@/lib/openMeteo";
 import { fetchQuakes, QUAKE_POLL_MIN, QUAKE_SOURCE, type QuakeSnapshot } from "@/lib/usgs";
-import { DEFAULT_VIEW, readView, writeView, type ViewState } from "@/lib/urlState";
+import { DEFAULT_VIEW, readView, writeView, type Tab, type ViewState } from "@/lib/urlState";
 import alertCfg from "@/config/alerts.json";
 import { StatusBar } from "./shell/StatusBar";
 import { Drawer } from "./shell/Drawer";
@@ -26,6 +26,7 @@ import { PowerExportsPanel } from "./power/PowerExportsPanel";
 import { RsdpPanel } from "./roads/RsdpPanel";
 import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
+import { InvestTab, type GoTarget } from "./invest/InvestTab";
 import { MineralDetail } from "./map/MineralDetail";
 import type { MineralProps } from "./map/useMineralLayers";
 import { RiskZoneDetail } from "./map/RiskZoneDetail";
@@ -273,8 +274,21 @@ export function Dashboard({ data }: { data: DashboardData }) {
   }, [countries, infra, now, oldestVerified, weather.snap, sourceRows, thresholds, redsea, trade.available, newsStatus, data.debt, data.humanitarian]);
   const [paletteOpen, setPaletteOpen] = useState(false);
   const goTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  /** switch tab, then scroll to a section or switch on a map layer once the dashboard view is mounted */
+  const goDash = (t: GoTarget) => {
+    setView((v) => ({ ...v, tab: "dashboard" as Tab, layers: t.layer && !v.layers.includes(t.layer as never) ? [...v.layers, t.layer as never] : v.layers }));
+    window.scrollTo({ top: 0 });
+    setTimeout(() => goTo(t.layer ? "sec-map" : (t.section ?? "sec-vitals")), 250);
+  };
+  const setTab = (tab: Tab) => {
+    setView((v) => ({ ...v, tab }));
+    window.scrollTo({ top: 0 });
+  };
   const paletteItems: PaletteItem[] = [
-    ...SECTIONS.map((sec) => ({ id: sec.id, group: "Go to section", label: sec.label, run: () => goTo(sec.id) })),
+    { id: "t-invest", group: "Tabs", label: "Investment tab", hint: "sectors, pipeline, legal", run: () => setTab("invest") },
+    { id: "t-dash", group: "Tabs", label: "Dashboard tab", run: () => setTab("dashboard") },
+    ...(data.invest.sectors.map((s) => ({ id: `s-${s.id}`, group: "Investment sectors", label: s.name, hint: s.group, run: () => { setTab("invest"); setTimeout(() => document.getElementById(`sector-${s.id}`)?.scrollIntoView({ behavior: "smooth", block: "center" }), 250); } }))),
+    ...SECTIONS.map((sec) => ({ id: sec.id, group: "Go to section", label: sec.label, run: () => goDash({ section: sec.id }) })),
     ...indicators.map((i) => ({ id: `v-${i.id}`, group: "Vitals", label: i.label, hint: i.callsign, run: () => setDetail({ kind: "vital", id: i.id, country: "ETH" }) })),
     ...infra.map((f) => ({ id: `i-${f.properties.id}`, group: "Infrastructure", label: f.properties.name, hint: f.properties.callsign, run: () => selectInfra(f.properties.id) })),
     { id: "a-about", group: "Actions", label: "About, sources and data export", run: () => setDetail({ kind: "about" }) },
@@ -410,8 +424,27 @@ export function Dashboard({ data }: { data: DashboardData }) {
     <main className="min-h-screen flex flex-col gap-2 p-2 md:p-3 max-w-[1800px] mx-auto">
       <StatusBar lastSync={lastSync} desks={desks} onDesk={(id) => setDetail({ kind: "desk", id })} theme={theme} onTheme={toggleTheme} onAbout={() => setDetail({ kind: "about" })} />
 
-      <SectionNav onSearch={() => setPaletteOpen(true)} />
+      <div role="tablist" aria-label="Main views" className="flex items-center gap-1 border-b" style={{ borderColor: "var(--line)" }}>
+        {([["dashboard", "Dashboard"], ["invest", "Investment"]] as [Tab, string][]).map(([t, label]) => (
+          <button key={t} type="button" role="tab" aria-selected={view.tab === t} className="px-4 py-2 text-[13px] border-b-2" style={{ borderColor: view.tab === t ? "var(--accent)" : "transparent", color: view.tab === t ? "var(--ink)" : "var(--ink-2)", background: "transparent" }} onClick={() => setTab(t)}>
+            {label}
+          </button>
+        ))}
+        <span className="grow" />
+        {view.tab === "invest" && (
+          <button type="button" className="ctl" onClick={() => setPaletteOpen(true)} aria-label="Search the dashboard (Ctrl or Cmd plus K)">
+            Search <span className="mono muted">⌘K</span>
+          </button>
+        )}
+      </div>
+
       <CommandPalette items={paletteItems} open={paletteOpen} onOpenChange={setPaletteOpen} />
+
+      {view.tab === "invest" ? (
+        <InvestTab invest={data.invest} pipeline={data.investPipeline} eth={countries.ETH} esx={data.esx} rates={data.esxRates} onGo={goDash} />
+      ) : (
+        <>
+      <SectionNav onSearch={() => setPaletteOpen(true)} />
 
       <AlertBanner alerts={alerts} />
 
@@ -541,6 +574,8 @@ export function Dashboard({ data }: { data: DashboardData }) {
         <span>Every figure shows its source and period. Values are never estimated; on a failed fetch the last good value stays, marked stale.</span>
         <span>Data: World Bank · IMF · Open-Meteo · USGS · World Bank Pink Sheet · open.er-api · IMF PortWatch · GDELT and Ethiopian outlet RSS · UN Comtrade · Natural Earth · curated records.</span>
       </footer>
+        </>
+      )}
       {detailNode}
     </main>
   );

@@ -55,7 +55,10 @@ export const ALL_FAC_CATS: FacCat[] = ["health", "education", "finance", "market
 
 export type Lang = "en" | "am";
 
+export type Tab = "dashboard" | "invest";
+
 export type ViewState = {
+  tab: Tab;
   lang: Lang;
   layers: Layer[];
   fac: FacCat[];
@@ -66,6 +69,7 @@ export type ViewState = {
 };
 
 export const DEFAULT_VIEW: ViewState = {
+  tab: "dashboard",
   lang: "en",
   layers: DEFAULT_LAYERS,
   fac: ALL_FAC_CATS,
@@ -84,6 +88,7 @@ export function readView(search: string): ViewState {
   const z = Number(q.get("z"));
   const c = q.get("c")?.split(",").map(Number);
   return {
+    tab: q.get("tab") === "invest" ? "invest" : "dashboard",
     lang: q.get("lang") === "am" ? "am" : "en",
     layers: layers != null ? (layers.split(",").filter((l) => (ALL_LAYERS as string[]).includes(l)) as Layer[]) : DEFAULT_VIEW.layers,
     fac: fc != null ? (fc.split(",").filter((l) => (ALL_FAC_CATS as string[]).includes(l)) as FacCat[]) : DEFAULT_VIEW.fac,
@@ -98,6 +103,7 @@ export function writeView(v: ViewState) {
   const q = new URLSearchParams();
   if (!same(v.layers, DEFAULT_LAYERS)) q.set("layers", v.layers.join(","));
   if (!same(v.fac, ALL_FAC_CATS)) q.set("fc", v.fac.join(","));
+  if (v.tab !== "dashboard") q.set("tab", v.tab);
   if (v.lang !== "en") q.set("lang", v.lang);
   if (v.sel) q.set("sel", v.sel);
   if (v.cmp !== DEFAULT_VIEW.cmp) q.set("cmp", v.cmp);

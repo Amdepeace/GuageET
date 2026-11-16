@@ -232,6 +232,22 @@
       "access": "CC BY 4.0; machine-learning predictions at 30 m, not field measurements",
       "url": "https://www.isda-africa.com/isdasoil/",
       "statusKey": null
+    },
+    {
+      "name": "Ethiopian Investment Commission (curated)",
+      "provides": "Sector claims, industrial parks, setup requirements and legal documents for the Investment tab",
+      "cadence": "Curated by hand from EIC pages (copyright 2023); last verified 2026-11-16",
+      "access": "Public pages; promotional claims, not audited statistics",
+      "url": "https://investethiopia.gov.et/",
+      "statusKey": null
+    },
+    {
+      "name": "World Bank projects (Ethiopia)",
+      "provides": "Pipeline and active World Bank operations (public-sector development finance)",
+      "cadence": "Daily job",
+      "access": "Open API, no key",
+      "url": "https://projects.worldbank.org/en/projects-operations/projects-list?countrycode_exact=ET",
+      "statusKey": "World Bank projects (Ethiopia)"
     }
   ]
 }

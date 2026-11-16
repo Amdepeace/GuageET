@@ -399,3 +399,35 @@ export type SoilFile = {
   note: string;
   properties: SoilProperty[];
 };
+
+export type InvestSector = {
+  id: string;
+  name: string;
+  group: string;
+  tagline: string;
+  claims: { t: string; asOf: string }[];
+  opportunities: string[];
+  foreign: { status: "opened" | "see-law"; note: string };
+  links: { title: string; url: string }[];
+  onDashboard: { label: string; layer?: string; section?: string }[];
+};
+export type InvestFile = {
+  lastVerified: string;
+  notice: string;
+  eic: { name: string; url: string; contact: string };
+  groups: string[];
+  sectors: InvestSector[];
+  parks: { source: { title: string; url: string }; asOf: string; summary: { kind: string; text: string; url: string }[]; agroTerms: string[]; note: string };
+  process: { source: { title: string; url: string }; asOf: string; items: { label: string; value: string }[]; steps: string[] };
+  legal: { title: string; url: string; note: string }[];
+  resources: { name: string; url: string; what: string }[];
+};
+export type PipelineProject = { id: string; name: string; status: string; approved: string; closing: string; commitmentUsd: number; instrument: string; agency: string; sector: string; url: string; objective: string };
+export type InvestPipelineFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  note: string;
+  projects: PipelineProject[];
+};

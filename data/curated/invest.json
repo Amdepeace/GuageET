@@ -1,0 +1,245 @@
+{
+  "lastVerified": "2026-11-16",
+  "notice": "Information only, not investment advice. Sector claims below are the Ethiopian Investment Commission's (EIC) own promotional statements from pages that carry a 2023 copyright; figures are EIC's, are not independently audited, and several refer to 2019–2022. Where this dashboard holds its own data, it is cross-linked so you can compare. Always verify with the issuing body and take professional legal and financial advice.",
+  "eic": { "name": "Ethiopian Investment Commission", "url": "https://investethiopia.gov.et/", "contact": "info@eic.gov.et · +251 11 551 0033" },
+  "groups": ["Manufacturing", "Agriculture & mining", "Infrastructure & services", "Finance & privatisation"],
+  "sectors": [
+    {
+      "id": "agriculture", "name": "Agriculture", "group": "Agriculture & mining",
+      "tagline": "A large domestic food market plus export access (coffee, oilseeds, fruit and vegetables, cut flowers).",
+      "claims": [
+        { "t": "Ethiopia is the third-largest producer of wheat in Africa and fifth-largest of tropical fruits (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "74.3 million hectares are described as suitable for agriculture, across 18 agro-ecological zones (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "Third-largest producer of Arabica coffee, citing USDA; top non-EU exporter of cut flowers to the EU (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "Cereals market value estimated at over US$4.1 billion (EIC).", "asOf": "EIC page, 2023" }
+      ],
+      "opportunities": ["Cotton production", "Livestock and poultry", "Fruits and vegetables", "Wheat, rice, maize, sorghum", "Pulses and oilseeds", "Animal feed", "Floriculture"],
+      "foreign": { "status": "see-law", "note": "EIC invites foreign investors but does not list the restrictions on this page. Check the investment regulation (links below) for the current rules on agricultural land and activities." },
+      "links": [{ "title": "EIC: Agriculture", "url": "https://investethiopia.gov.et/key-sectors/agriculture/" }],
+      "onDashboard": [{ "label": "Soil properties by zone", "layer": "soil" }, { "label": "Rainfall vs normal", "layer": "rainfall" }, { "label": "Climate vs normal (cities)", "section": "sec-climate" }]
+    },
+    {
+      "id": "agro-processing", "name": "Agro-processing", "group": "Manufacturing",
+      "tagline": "Replace imported processed food and reach regional and export markets.",
+      "claims": [
+        { "t": "Imports of processed agricultural products reached US$4.7 billion (EIC).", "asOf": "2021, EIC" },
+        { "t": "Main imports named: edible oil, refined sugar, malt barley, processed fruit, pasta and macaroni, milled rice (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "Three integrated agro-industrial parks exist: Burie (Amhara), Yirgalem (Sidama) and Bulbula (Oromia) (EIC).", "asOf": "EIC page, 2023" }
+      ],
+      "opportunities": ["Edible oil", "Sugar refining", "Malt barley and brewing inputs", "Fruit and vegetable processing", "Milling", "Cold storage and packaging"],
+      "foreign": { "status": "see-law", "note": "Manufacturing is the sector EIC says received over half of FDI inflows. Confirm current incentives for your activity with EIC." },
+      "links": [{ "title": "EIC: Agro-processing", "url": "https://investethiopia.gov.et/key-sectors/manufacturing/agro-processing/" }, { "title": "EIC: Integrated agro-industrial parks", "url": "https://investethiopia.gov.et/key-sectors/special-economic-zones/integrated-agro-industrial-parks/" }],
+      "onDashboard": [{ "label": "Trade: top exports and imports", "section": "sec-trade" }]
+    },
+    {
+      "id": "textile", "name": "Textile & garment", "group": "Manufacturing",
+      "tagline": "Integrated cotton-to-garment production for export.",
+      "claims": [
+        { "t": "The sector is said to have grown four-fold since 2020, generating over US$140 million in exports (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "Brands listed as producing in Ethiopia include PVH, H&M, The Children's Place and Decathlon (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "EIC states a goal of US$30 billion in exports over the next decade.", "asOf": "EIC page, 2023" },
+        { "t": "EIC credits AGOA and EBA trade preferences. Check current eligibility: US AGOA benefits for Ethiopia were reported withdrawn from January 2022 (dashboard note, not verified here).", "asOf": "verify with USTR / EU" }
+      ],
+      "opportunities": ["Ginning, spinning, weaving, dyeing", "Garments and apparel", "Trims and accessories", "Dedicated textile industrial parks"],
+      "foreign": { "status": "see-law", "note": "EIC says investment-law reforms cleared the way for integrated textile industries." },
+      "links": [{ "title": "EIC: Textile & apparel", "url": "https://investethiopia.gov.et/key-sectors/manufacturing/textile-garment/" }],
+      "onDashboard": [{ "label": "Trade balance and partners", "section": "sec-trade" }]
+    },
+    {
+      "id": "leather", "name": "Leather & leather products", "group": "Manufacturing",
+      "tagline": "A very large livestock base feeding tanning, footwear and leather goods.",
+      "claims": [
+        { "t": "Livestock population described as nearly 200 million, the largest in Africa (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "Footwear, gloves, bags and garments are said to generate over US$120 million a year (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "Capacity to produce over 500 million square feet of finished leather a year; target of 300,000 jobs by 2030 (EIC).", "asOf": "EIC page, 2023" }
+      ],
+      "opportunities": ["Tanning hides and skins", "Footwear and gloves", "Luggage and handbags", "Leather garments", "Parks with zero-liquid-discharge treatment"],
+      "foreign": { "status": "see-law", "note": "Confirm current rules and incentives with EIC." },
+      "links": [{ "title": "EIC: Leather & leather products", "url": "https://investethiopia.gov.et/key-sectors/manufacturing/leather-and-leather-products/" }],
+      "onDashboard": []
+    },
+    {
+      "id": "pharma", "name": "Pharmaceuticals", "group": "Manufacturing",
+      "tagline": "Local production to replace imports in a fast-growing market.",
+      "claims": [
+        { "t": "Domestic pharmaceutical market estimated at US$1 billion, with 85% of supply imported (EIC, citing a 2019 Frost & Sullivan / World Bank presentation).", "asOf": "2019 source" },
+        { "t": "Demand said to be growing about 15% a year, projected at US$1.8 billion in 2025 and US$4 billion in 2030 (EIC). These are projections, not recorded figures.", "asOf": "projection" }
+      ],
+      "opportunities": ["Finished-dose pharmaceuticals", "Antisera and vaccines", "Therapeutic extracts and cultures"],
+      "foreign": { "status": "see-law", "note": "EIC calls pharmaceutical manufacturing a government priority; check licensing with the regulator." },
+      "links": [{ "title": "EIC: Pharmaceuticals", "url": "https://investethiopia.gov.et/key-sectors/manufacturing/pharmaceuticals/" }],
+      "onDashboard": [{ "label": "Humanitarian needs and food prices", "section": "sec-economy" }]
+    },
+    {
+      "id": "mining", "name": "Mining", "group": "Agriculture & mining",
+      "tagline": "Gold, industrial minerals and construction inputs, plus import substitution.",
+      "claims": [
+        { "t": "Gold export earnings said to have reached US$672 million in 2021, up 25-fold in two years (EIC).", "asOf": "2021, EIC" },
+        { "t": "Ethiopia is said to spend over US$8 billion a year importing coal, iron, fertiliser, marble and granite, chlor-alkali products, ceramics and petroleum (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "Fertiliser imports cost US$688 million, 5% of total imports (EIC).", "asOf": "2021, EIC" },
+        { "t": "National cement demand estimated at 17 million tonnes a year against 8.8 million tonnes of local production (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "EIC's 2030 mining projections (14% of GDP, 37% of export earnings) are targets, not forecasts.", "asOf": "target" }
+      ],
+      "opportunities": ["Fertilisers", "Iron and steel", "Construction inputs: cement, ceramics, marble, granite, gypsum, limestone", "Gold", "Gemstones", "Lithium, coal, tantalum", "Petroleum"],
+      "foreign": { "status": "see-law", "note": "Mining licences are issued under separate mining law; check with the Ministry of Mines and EIC." },
+      "links": [{ "title": "EIC: Mining", "url": "https://investethiopia.gov.et/key-sectors/mining/" }],
+      "onDashboard": [{ "label": "Minerals & prospects (88 USGS sites)", "layer": "minerals" }, { "label": "Soil properties", "layer": "soil" }]
+    },
+    {
+      "id": "energy", "name": "Energy", "group": "Infrastructure & services",
+      "tagline": "Power for a large unserved population and for export to neighbours.",
+      "claims": [
+        { "t": "About 55% of 116 million people are said to live without electricity; installed capacity 4,478 MW (2021) with a plan to reach 19,900 MW by 2030 (EIC).", "asOf": "2021, EIC" },
+        { "t": "Geothermal: power purchase agreements for Corbetti and Tulu Moye signed March 2020, about US$1.2 billion of investment (EIC).", "asOf": "March 2020" },
+        { "t": "Solar: Metahara (100 MW, Enel) and two ACWA Power projects (250 MW, about US$300 million), all signed in 2019 (EIC).", "asOf": "2019" },
+        { "t": "EIC puts GERD's expected output at 6,450 MW; this dashboard's infrastructure record cites 5,150 MW (Tractebel). The figures differ; check the operator.", "asOf": "conflicting sources" },
+        { "t": "EIC aims to more than double electricity exports from 2,803 GWh to 7,184 GWh by 2030, a target. Reported 2024/25 export earnings are on this dashboard.", "asOf": "target" }
+      ],
+      "opportunities": ["Independent power producers (solar, wind, geothermal)", "Public-private partnerships", "Transmission", "Off-grid and household access"],
+      "foreign": { "status": "see-law", "note": "New generation is developed through PPPs and IPPs per EIC; terms are set in each agreement." },
+      "links": [{ "title": "EIC: Energy", "url": "https://investethiopia.gov.et/key-sectors/emerging-sectors/energy/" }],
+      "onDashboard": [{ "label": "Electricity exports by partner", "section": "sec-power" }, { "label": "Power infrastructure records", "section": "sec-infra" }]
+    },
+    {
+      "id": "ict", "name": "ICT & digital", "group": "Infrastructure & services",
+      "tagline": "Software, outsourcing and data centres on low-cost power.",
+      "claims": [
+        { "t": "A 200-hectare ICT park in Addis Ababa is described as plug-and-play (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "Red Fox's data centre, built at a reported US$130 million, went live in 2022; Safaricom Ethiopia began building its own that year (EIC).", "asOf": "2022" },
+        { "t": "The 'Digital Ethiopia 2025' strategy was launched in 2020 (EIC).", "asOf": "2020" }
+      ],
+      "opportunities": ["Software development", "Business process outsourcing", "Data centres", "ICT park tenancy"],
+      "foreign": { "status": "see-law", "note": "Telecom services are licensed separately (see Telecom)." },
+      "links": [{ "title": "EIC: ICT", "url": "https://investethiopia.gov.et/key-sectors/ict/" }],
+      "onDashboard": []
+    },
+    {
+      "id": "tourism", "name": "Tourism & hospitality", "group": "Infrastructure & services",
+      "tagline": "Hotels, resorts and destination development.",
+      "claims": [
+        { "t": "Nine UNESCO World Heritage sites, described as the most in Africa (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "Over 800,000 tourist arrivals a year (EIC; the year is not stated, so verify current figures).", "asOf": "EIC page, 2023" },
+        { "t": "Government-launched destination projects at Gorgora, Wonchi and Koisha are open to investors (EIC).", "asOf": "EIC page, 2023" }
+      ],
+      "opportunities": ["Hotels and resorts", "Convention centres", "Duty-free centres", "Cultural villages", "Destination development"],
+      "foreign": { "status": "see-law", "note": "Confirm with EIC and the Ministry of Tourism." },
+      "links": [{ "title": "EIC: Tourism", "url": "https://investethiopia.gov.et/key-sectors/tourism/" }],
+      "onDashboard": [{ "label": "Conflict heatmap (check area risk)", "layer": "conflict" }]
+    },
+    {
+      "id": "health", "name": "Healthcare", "group": "Infrastructure & services",
+      "tagline": "An under-served market for hospitals, diagnostics and specialist care.",
+      "claims": [
+        { "t": "0.3 hospital beds per 1,000 people; 364 hospitals, of which 17% private and 85% of private hospitals in Addis Ababa (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "More than 6,000 patients a year are said to travel abroad for treatment, spending over US$120 million (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "Healthcare spending projected at US$5 billion by 2024/25 (EIC projection).", "asOf": "projection" }
+      ],
+      "opportunities": ["Tertiary hospitals (300+ beds)", "Advanced diagnostics and laboratories", "Specialist clinics outside Addis Ababa", "Health tourism"],
+      "foreign": { "status": "see-law", "note": "Confirm sector rules with EIC and the Ministry of Health." },
+      "links": [{ "title": "EIC: Healthcare", "url": "https://investethiopia.gov.et/key-sectors/emerging-sectors/health/" }],
+      "onDashboard": [{ "label": "Humanitarian needs", "section": "sec-economy" }]
+    },
+    {
+      "id": "logistics", "name": "Transport & logistics", "group": "Infrastructure & services",
+      "tagline": "Dry ports, logistics cities, rail freight and services on the Djibouti corridor.",
+      "claims": [
+        { "t": "The sector is said to have been closed to foreign investment until a 2020 investment law opened it (EIC).", "asOf": "2020 law, per EIC" },
+        { "t": "Named projects: Modjo Green Logistics Cities, an Indode logistics hub, dry ports at Semera, Dire Dawa, Woreta, Mekelle, Kombolcha and Jijiga (EIC).", "asOf": "EIC page, 2023" },
+        { "t": "Rail links offered for PPP discussion: Ayisha–Berbera (310 km), Modjo–Moyale / LAPSSET (976 km), and a 1,400 km line to Sudan (EIC). This dashboard's corridor records show their status and sources.", "asOf": "EIC page, 2023" },
+        { "t": "Annual import-export trade is described as more than US$20 billion (EIC).", "asOf": "EIC page, 2023" }
+      ],
+      "opportunities": ["Dry ports and cargo terminals", "Logistics services and cold chain", "Rail-freight handling on the Addis–Djibouti line", "Freight forwarding and shipping", "Port-connecting rail (PPP)"],
+      "foreign": { "status": "opened", "note": "EIC states the sector was opened to foreign investors by the 2020 investment law." },
+      "links": [{ "title": "EIC: Transport & logistics", "url": "https://investethiopia.gov.et/key-sectors/emerging-sectors/transport-and-logistics/" }],
+      "onDashboard": [{ "label": "Trade corridors & flows (map)", "layer": "flows" }, { "label": "Red Sea shipping monitor", "section": "sec-map" }, { "label": "Corridor and rail records", "section": "sec-infra" }]
+    },
+    {
+      "id": "telecom", "name": "Telecom", "group": "Finance & privatisation",
+      "tagline": "A liberalised market: one private operator launched, a third licence and a part-sale of Ethio Telecom.",
+      "claims": [
+        { "t": "Safaricom Telecommunications Ethiopia (consortium of Safaricom, Vodafone, Vodacom, CDC Group and Sumitomo) won a 15-year licence in May 2021 with an upfront fee of US$850 million; services launched October 2022 (EIC).", "asOf": "2021–2022" },
+        { "t": "EIC said a third operator licence was being sought (request for proposals, 2023) and a 40% stake in Ethio Telecom was being prepared for sale. Ethio Telecom has since listed on the Ethiopian Securities Exchange (26 May 2026, ESX record on this dashboard); the details of any stake sale are not in these sources.", "asOf": "2023 EIC; 2026 ESX" }
+      ],
+      "opportunities": ["Third operator licence (status unknown here)", "Infrastructure sharing and towers", "Digital services"],
+      "foreign": { "status": "opened", "note": "The telecom sector was opened to competition by a 2018 government decision (EIC)." },
+      "links": [{ "title": "EIC: Emerging sectors (telecom)", "url": "https://investethiopia.gov.et/key-sectors/emerging-sectors/" }, { "title": "ESX: listed companies", "url": "https://esx.et/equity-market/listed-companies/" }],
+      "onDashboard": [{ "label": "ESX market and listed companies", "section": "sec-markets" }]
+    },
+    {
+      "id": "finance", "name": "Financial services", "group": "Finance & privatisation",
+      "tagline": "Banking opened to foreign competition; capital market launched.",
+      "claims": [
+        { "t": "EIC says a bill approved in the last quarter of 2022 opened banking to foreign investors, who may establish banks or partner with existing ones.", "asOf": "Q4 2022, per EIC" },
+        { "t": "ESX lists eight companies, seven of them financial (banks and an insurer), per its listed-companies page.", "asOf": "ESX, fetched daily" }
+      ],
+      "opportunities": ["Banking and microfinance", "Insurance", "Capital-market services", "Listed-equity investment via ESX members"],
+      "foreign": { "status": "opened", "note": "Opened to foreign investors from late 2022 per EIC; licensing is by the National Bank of Ethiopia. Verify current licence conditions." },
+      "links": [{ "title": "EIC: Emerging sectors (financial services)", "url": "https://investethiopia.gov.et/key-sectors/emerging-sectors/" }, { "title": "Ethiopian Securities Exchange", "url": "https://esx.et/" }],
+      "onDashboard": [{ "label": "Interbank rates and ESX", "section": "sec-markets" }, { "label": "Stress matrix", "section": "sec-risk" }]
+    },
+    {
+      "id": "privatisation", "name": "Privatisation of state enterprises", "group": "Finance & privatisation",
+      "tagline": "Partial or full sale of state-owned enterprises.",
+      "claims": [
+        { "t": "EIC says the government is offering to sell state enterprises, in whole or part, including state monopolies in airline, logistics, telecom and energy, and businesses in sugar, tourism and hospitality, and cement expected to be privatised in the short term.", "asOf": "EIC page, 2023" },
+        { "t": "No specific current offers, prices or deadlines are published on that page. Ask EIC or Ethiopian Investments Holding for the live list.", "asOf": "verify" }
+      ],
+      "opportunities": ["Partial stakes in utilities and logistics", "Sugar", "Hospitality", "Cement"],
+      "foreign": { "status": "see-law", "note": "Each sale sets its own terms." },
+      "links": [{ "title": "EIC: Emerging sectors (privatisation)", "url": "https://investethiopia.gov.et/key-sectors/emerging-sectors/" }],
+      "onDashboard": [{ "label": "Debt and IMF programme context", "section": "sec-economy" }]
+    }
+  ],
+  "parks": {
+    "source": { "title": "EIC: Special Economic Zones", "url": "https://investethiopia.gov.et/key-sectors/special-economic-zones/" },
+    "asOf": "EIC pages, 2023",
+    "summary": [
+      { "kind": "Public industrial parks", "text": "16 built; over 300 companies operating in them; EIC invites PPP development of further parks.", "url": "https://investethiopia.gov.et/key-sectors/special-economic-zones/public-industrial-parks/" },
+      { "kind": "Private industrial parks", "text": "Six privately developed parks serving over 200 companies.", "url": "https://investethiopia.gov.et/key-sectors/special-economic-zones/private-industrial-parks/" },
+      { "kind": "Integrated agro-industrial parks", "text": "Three parks: Burie (Amhara), Yirgalem (Sidama), Bulbula (Oromia), each with a nearby rural transformation centre.", "url": "https://investethiopia.gov.et/key-sectors/special-economic-zones/integrated-agro-industrial-parks/" }
+    ],
+    "agroTerms": [
+      "50 MW power supply at US$0.045/kWh",
+      "Water at US$0.57 per m³ per month, 12,000 m³ a day",
+      "Ready-made sheds of 1,500, 2,500 and 3,500 m² at US$1.5 per m² per month for foreign investors",
+      "Land for building at US$1.2 per m² per year",
+      "Incentives listed: income-tax exemption, loss carry-over, export tax exemption, customs-duty exemption, franco valuta, export credit guarantee"
+    ],
+    "note": "Prices and tariffs are EIC's stated rates on its 2023 pages; confirm current rates before committing. The Special Economic Zone Proclamation No. 1322/2024 (below) may have changed the framework."
+  },
+  "process": {
+    "source": { "title": "EIC: FAQs", "url": "https://investethiopia.gov.et/faqs/" },
+    "asOf": "EIC FAQ page, fetched 2026-11-16",
+    "items": [
+      { "label": "Minimum capital, wholly foreign-owned", "value": "US$200,000 (US$100,000 for architectural or engineering works, technical consultancy, technical testing and analysis, or publishing)" },
+      { "label": "Minimum capital, joint venture with a domestic partner", "value": "US$150,000 (US$50,000 for the same technical categories)" },
+      { "label": "Time to an investment permit", "value": "A minimum of 5 days; EIC says about 5 hours if all requirements are met" },
+      { "label": "Renewal", "value": "Annually at the end of the fiscal year (July)" },
+      { "label": "Permit fee", "value": "600 birr, as stated by EIC" },
+      { "label": "Labour cost (EIC claim)", "value": "US$40–135 a month; no statutory minimum wage; wages negotiated" }
+    ],
+    "steps": ["Collect information and requirements from EIC", "Prepare company documents (memorandum and articles) and choose a company name", "Authenticate foreign documents through a notary, the Ethiopian embassy and the Ministry of Foreign Affairs", "Open a foreign-currency account at the National Bank of Ethiopia with an EIC letter", "Deposit the investment capital and get the bank's credit advice", "Get a tax identification number (needs an authenticated lease)", "Collect the investment permit and commercial registration"]
+  },
+  "legal": [
+    { "title": "Investment Proclamation No. 1180/2020", "url": "https://investethiopia.gov.et/wp-content/uploads/2022/11/Investment-Proclamation-No.-1180_2020-Copy.pdf", "note": "The main investment law." },
+    { "title": "Investment Regulation No. 474/2020", "url": "https://investethiopia.gov.et/wp-content/uploads/2022/11/Investment-Regulation-No.-4742020_09-08-2020_0001-2.pdf", "note": "Sets which areas are open, restricted or reserved. The PDF is a scanned image." },
+    { "title": "Investment Regulation No. 517/2022 (amendment)", "url": "https://investethiopia.gov.et/wp-content/uploads/2025/02/Investment%20Rgulation%20517%202022.pdf", "note": "Amends the 2020 regulation. Scanned image." },
+    { "title": "Special Economic Zone Proclamation No. 1322/2024", "url": "https://investethiopia.gov.et/wp-content/uploads/2024/06/Special_Economic_Zone_Proclamation_No._1322_2024.pdf", "note": "Framework for special economic zones." },
+    { "title": "Board Directive No. 1001/2024: foreign participation in restricted export-import, wholesale and retail trade", "url": "https://investethiopia.gov.et/wp-content/uploads/2024/04/Ethiopian-Investment-Board-Directive-to-Regulate-Foreign-Investors-Participation-in-Restricted-Export-Import-Wholesale-and-Retail-Trade-Investments-No.1001_2024.pdf", "note": "Trade-sector rules for foreign investors." },
+    { "title": "Directive No. 1082/2025: export, import and wholesale", "url": "https://investethiopia.gov.et/wp-content/uploads/2025/06/Directive-on-Export-Import-Wholesale-1082-2025.pdf", "note": "Later trade directive." },
+    { "title": "Directive No. 1083/2025: SEZ land designation and allocation", "url": "https://investethiopia.gov.et/wp-content/uploads/2025/07/Ethiopian-Investment-Board-Directive-Number-1083-2025-Special-Economic-Zone-Land-Designation-Allocation.pdf", "note": "How SEZ land is allocated." },
+    { "title": "Industrial Parks Proclamation No. 886/2015", "url": "https://investethiopia.gov.et/wp-content/uploads/2022/11/Industrial-Parks-Proclamation-No-886_2015.pdf", "note": "Original industrial parks law." },
+    { "title": "FX Directive FXD-48/2017: retention and use of export earnings and remittances", "url": "https://investethiopia.gov.et/wp-content/uploads/2022/11/FXD-48-2017-Directive-on-retention-and-utilization-of-export-earnings-and-inward-remittances.pdf", "note": "Foreign-exchange rules; the FX regime has changed since, so check the National Bank of Ethiopia." },
+    { "title": "Directive on expatriate work permits and knowledge transfer", "url": "https://investethiopia.gov.et/wp-content/uploads/2022/11/Directive-on-Expats-work-permit-and-knowledge-transfer.pdf", "note": "Rules for hiring foreign staff." }
+  ],
+  "resources": [
+    { "name": "Ethiopian Investment Commission", "url": "https://investethiopia.gov.et/", "what": "Official investment promotion agency, permits, sector guides, laws." },
+    { "name": "EIC project opportunities (UNIDO Invest in ACP portal)", "url": "https://investethiopia.gov.et/project-opportunities/", "what": "EIC points to project summaries and detailed profiles on a UNIDO portal; request full profiles through the portal's enquiry form." },
+    { "name": "Ethiopian Securities Exchange", "url": "https://esx.et/", "what": "Listed equities and fixed-income instruments; see the MARKETS panel." },
+    { "name": "National Bank of Ethiopia", "url": "https://nbe.gov.et/", "what": "Foreign-exchange rules, bank licensing, interbank market." },
+    { "name": "IFC disclosures", "url": "https://disclosures.ifc.org/", "what": "Private-sector projects the IFC is considering or financing in Ethiopia." },
+    { "name": "World Bank projects", "url": "https://projects.worldbank.org/en/projects-operations/projects-list?countrycode_exact=ET", "what": "Public-sector development financing; downstream procurement opportunities." },
+    { "name": "US State Department Investment Climate Statements", "url": "https://www.state.gov/investment-climate-statements/", "what": "Annual, sector-by-sector summary of rules and obstacles (not summarised on this dashboard)." },
+    { "name": "UNCTAD World Investment Report", "url": "https://unctad.org/topic/investment/world-investment-report", "what": "Global FDI trends and country data (not summarised on this dashboard)." }
+  ]
+}
