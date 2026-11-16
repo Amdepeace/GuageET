@@ -9,6 +9,7 @@ import type { City, InfraFeature } from "@/lib/data";
 import type { CityWeather } from "@/lib/openMeteo";
 import { ALL_LAYERS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import type { Quake } from "@/lib/usgs";
+import { marineTrafficView } from "@/lib/marinetraffic";
 import { useSatelliteLayer, latestCompleteDay, type SatKind } from "./useSatelliteLayer";
 import { useEonetLayer, type EonetEvent } from "./useEonetLayer";
 import { useShippingLayer, type ShipPick } from "./useShippingLayer";
@@ -617,6 +618,12 @@ export function MapView({
             onLang={onLang}
             loading={detail.loading}
             errors={detail.errors}
+            onOpenMarine={() => {
+              const mm = map.current;
+              if (!mm) return;
+              const c = mm.getCenter();
+              window.open(marineTrafficView(c.lat, c.lng, Math.max(3, Math.min(12, mm.getZoom()))), "_blank", "noopener,noreferrer");
+            }}
             sat={{ kind: satKind, onKind: setSatKind, date: satDate || latestCompleteDay(), onDate: setSatDate }}
             eonet={{ count: eonet.events.length, loading: eonet.loading, error: eonet.error, fetchedAt: eonet.fetchedAt }}
             soil={{ file: soil, prop: soilProp, onProp: setSoilProp }}

@@ -4,11 +4,21 @@ import type { PortsFile, RedSeaFile } from "@/lib/schema";
 import { compact } from "@/lib/format";
 import { Field } from "../shell/Drawer";
 import { portChange, type ShipPick } from "./useShippingLayer";
+import { marineTrafficView, MT_NOTE } from "@/lib/marinetraffic";
 
 const axis = { fontSize: 10, fill: "var(--ink-3)" };
 const tip = { background: "var(--panel)", border: "1px solid var(--line-strong)", fontSize: 12 };
 
 export function PortDetail({ pick, ports, redsea }: { pick: ShipPick; ports: PortsFile; redsea: RedSeaFile }) {
+  const at = pick.kind === "port" ? ports.ports.find((x) => x.id === pick.id) : ports.chokepoints.find((x) => x.id === pick.id);
+  const mtLink = at ? (
+    <p className="text-[11px] leading-snug">
+      <a href={marineTrafficView(at.lat, "lon" in at ? at.lon : 0, pick.kind === "port" ? 10 : 8)} target="_blank" rel="noopener noreferrer" className="font-semibold">
+        See live vessel positions here on MarineTraffic ↗
+      </a>
+      <span className="block muted">{MT_NOTE}</span>
+    </p>
+  ) : null;
   if (pick.kind === "choke") {
     const cp = redsea.chokepoints.find((c) => c.id === pick.id);
     const last = cp?.history.at(-1);
@@ -35,6 +45,7 @@ export function PortDetail({ pick, ports, redsea }: { pick: ShipPick; ports: Por
           </ResponsiveContainer>
         </div>
         <p className="text-[11px] muted leading-snug">This is the same data as the Red Sea monitor on the dashboard. Source: IMF PortWatch, derived from AIS vessel tracking; published several days behind.</p>
+        {mtLink}
       </>
     ) : (
       <p className="text-[12px] muted">No transit data for this chokepoint yet.</p>
@@ -104,6 +115,7 @@ export function PortDetail({ pick, ports, redsea }: { pick: ShipPick; ports: Por
         </a>
         . Ethiopia is landlocked; its trade moves through these ports and the Djibouti corridor.
       </p>
+      {mtLink}
     </>
   );
 }

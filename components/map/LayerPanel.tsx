@@ -63,6 +63,7 @@ export function LayerPanel({
   deck,
   risk,
   soil,
+  onOpenMarine,
   sat,
   eonet,
   onJump,
@@ -78,6 +79,7 @@ export function LayerPanel({
   loading: string[];
   errors: string[];
   deck: { loading: boolean; error: string | null; partnerArcs: number; tradeReady: boolean };
+  onOpenMarine: () => void;
   sat: { kind: SatKind; onKind: (k: SatKind) => void; date: string; onDate: (d: string) => void };
   eonet: { count: number; loading: boolean; error: string | null; fetchedAt: string | null };
   soil: { file: SoilFile; prop: string; onProp: (id: string) => void };
@@ -279,6 +281,10 @@ export function LayerPanel({
             </li>
           </ul>
           <div className="muted mt-1">Near-live: PortWatch publishes several days behind, so each popup shows its as-of date. Not a live ship tracker. Click a port for detail.</div>
+          <button type="button" className="ctl mt-1.5 w-full" onClick={onOpenMarine}>
+            Open this view in MarineTraffic (live ships) ↗
+          </button>
+          <div className="muted mt-0.5">Opens MarineTraffic&apos;s own map in a new tab, centred where you are looking. It is a separate commercial service; nothing from it is stored here.</div>
         </div>
       )}
 
