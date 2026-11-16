@@ -9,13 +9,14 @@ import type { City, InfraFeature } from "@/lib/data";
 import type { CityWeather } from "@/lib/openMeteo";
 import { ALL_LAYERS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import type { Quake } from "@/lib/usgs";
+import { useShippingLayer, type ShipPick } from "./useShippingLayer";
 import { useMineralLayers, type MineralProps } from "./useMineralLayers";
 import { useRiskLayers, type RiskPick, type RiskZone, type RainZone, type SoilZone } from "./useRiskLayers";
 import { GLYPHS_URL, HIT_LAYERS, LAYER_KIND, pretty, type DetailFeature } from "./detail";
 import { LayerPanel } from "./LayerPanel";
 import { CITIES, useDetailLayers } from "./useDetailLayers";
 import { useDeckOverlay, type DeckPick } from "./useDeckOverlay";
-import type { ConflictFile, CorridorsFile, RainfallFile, SoilFile, TradeFile } from "@/lib/schema";
+import type { ConflictFile, CorridorsFile, PortsFile, RainfallFile, RedSeaFile, SoilFile, TradeFile } from "@/lib/schema";
 
 const HOME: LngLatBoundsLike = [
   [32.5, -6],
@@ -76,6 +77,9 @@ export function MapView({
   soil,
   onRisk,
   onMineral,
+  ports,
+  redsea,
+  onShip,
   onCorridor,
   relationsSel,
   initialView,
@@ -106,6 +110,9 @@ export function MapView({
   soil: SoilFile;
   onRisk: (p: RiskPick) => void;
   onMineral: (p: MineralProps) => void;
+  ports: PortsFile;
+  redsea: RedSeaFile;
+  onShip: (p: ShipPick) => void;
   onCorridor: (id: string) => void;
   relationsSel: string | null;
   initialView: { zoom: number | null; center: [number, number] | null };
@@ -132,9 +139,10 @@ export function MapView({
     onCorridor: typeof onCorridor;
     onRisk: typeof onRisk;
     onMineral: typeof onMineral;
+    onShip: typeof onShip;
     pick: (x: number, y: number) => DeckPick | null;
-  }>({ onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, pick: () => null });
-  cb.current = { ...cb.current, onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral };
+  }>({ onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, onShip, pick: () => null });
+  cb.current = { ...cb.current, onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, onShip };
   const avoid = useMemo(() => cities.map((c) => [c.lon, c.lat] as [number, number]), [cities]);
 
   // init once
@@ -239,6 +247,14 @@ export function MapView({
         const present = HIT_LAYERS.filter((id) => m.getLayer(id));
         return present.length ? m.queryRenderedFeatures([[x - r, y - r], [x + r, y + r]], { layers: present })[0] : undefined;
       };
+      const shipAt = (pt: { x: number; y: number }): { pick: ShipPick; text: string } | undefined => {
+        if (!m.getLayer("d-ship-pt") || m.getLayoutProperty("d-ship-pt", "visibility") !== "visible") return undefined;
+        const f = m.queryRenderedFeatures([[pt.x - 8, pt.y - 8], [pt.x + 8, pt.y + 8]], { layers: ["d-ship-pt"] })[0];
+        if (!f) return undefined;
+        const p = f.properties as { k: "port" | "choke"; id: string; n: string; calls: number; asOf: string; pct?: number };
+        const txt = p.k === "choke" ? `${p.n} · ${p.calls} transits on ${p.asOf}` : `${p.n} · ${p.calls} port calls (30 d to ${p.asOf})${p.pct != null ? `, ${p.pct >= 0 ? "+" : ""}${p.pct}% vs prior 30 d` : ""}`;
+        return { pick: { kind: p.k, id: p.id }, text: txt };
+      };
       const mineralAt = (pt: { x: number; y: number }): MineralProps | undefined => {
         if (!m.getLayer("d-min-pt") || m.getLayoutProperty("d-min-pt", "visibility") !== "visible") return undefined;
         const f = m.queryRenderedFeatures([[pt.x - 7, pt.y - 7], [pt.x + 7, pt.y + 7]], { layers: ["d-min-pt"] })[0];
@@ -267,15 +283,17 @@ export function MapView({
         const infraHit = dp ? undefined : m.queryRenderedFeatures(e.point, { layers: ["infra-hit-pt", "infra-hit-line"] })[0];
         const ip = infraHit?.properties as { callsign: string; name: string } | undefined;
         const f = dp || infraHit ? undefined : detailAt(e.point.x, e.point.y, 5);
-        const mn = dp || infraHit ? undefined : mineralAt(e.point);
+        const sh = dp || infraHit ? undefined : shipAt(e.point);
+        const mn = dp || infraHit || sh ? undefined : mineralAt(e.point);
         const rk = dp || infraHit || f || mn ? undefined : riskAt(e.point);
         if (dp) setHover({ x: e.point.x, y: e.point.y, text: dp.text });
         else if (ip) setHover({ x: e.point.x, y: e.point.y, text: `${ip.callsign} · ${ip.name}` });
         else if (f) setHover({ x: e.point.x, y: e.point.y, text: tip(LAYER_KIND[f.layer.id], f.properties as Record<string, unknown>) });
+        else if (sh) setHover({ x: e.point.x, y: e.point.y, text: sh.text });
         else if (mn) setHover({ x: e.point.x, y: e.point.y, text: `${mn.n} · ${mn.c.slice(0, 2).join(", ") || "minerals"}` });
         else if (rk) setHover({ x: e.point.x, y: e.point.y, text: rk.kind === "conflict" ? (rk.z.nodata ? `${rk.z.n} · no conflict data` : `${rk.z.n} · ${rk.z.e} conflict events (12 mo)`) : rk.kind === "rain" ? `${rk.z.n} · rainfall ${rk.z.rated ? `${rk.z.pct}% of normal` : "not rated (dry season)"}` : `${rk.z.n} · soil (click for values)` });
         else setHover(null);
-        m.getCanvas().style.cursor = dp || ip || mn || f || rk ? "pointer" : "";
+        m.getCanvas().style.cursor = dp || ip || sh || mn || f || rk ? "pointer" : "";
         const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as { name?: string } | undefined;
         setHoverCountry(c?.name ?? null);
       });
@@ -294,6 +312,11 @@ export function MapView({
         const id = (hits[0]?.properties as { id?: string } | undefined)?.id ?? null;
         if (id) {
           cb.current.onSelect(id);
+          return;
+        }
+        const sp = shipAt(e.point);
+        if (sp) {
+          cb.current.onShip(sp.pick);
           return;
         }
         const mp = mineralAt(e.point);
@@ -497,9 +520,10 @@ export function MapView({
   const detail = useDetailLayers({ map, ready, layers, facCats: fac, theme, lang, avoid });
   useRiskLayers({ map, ready, layers, theme, conflict, rainfall, soil, soilProp });
   useMineralLayers({ map, ready, layers, theme });
+  useShippingLayer({ map, ready, layers, theme, ports, redsea });
   const deck = useDeckOverlay({ map, ready, layers, fac, theme, corridors, trade });
   cb.current.pick = deck.pick;
-  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals", "soil"];
+  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals", "soil", "ships"];
   const detailOn = DETAIL.filter((l) => layers.includes(l)).length;
 
   const jump = (id: string) => {

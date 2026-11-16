@@ -248,6 +248,14 @@
       "access": "Open API, no key",
       "url": "https://projects.worldbank.org/en/projects-operations/projects-list?countrycode_exact=ET",
       "statusKey": "World Bank projects (Ethiopia)"
+    },
+    {
+      "name": "IMF PortWatch (ports)",
+      "provides": "Daily port calls and estimated import/export tonnage for ports on Ethiopia's trade routes",
+      "cadence": "Daily job; PortWatch publishes several days behind",
+      "access": "Free, no key; AIS-derived estimates, near-live not live",
+      "url": "https://portwatch.imf.org/",
+      "statusKey": "IMF PortWatch (ports)"
     }
   ]
 }

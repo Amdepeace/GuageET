@@ -27,6 +27,8 @@ import { RsdpPanel } from "./roads/RsdpPanel";
 import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
 import { InvestTab, type GoTarget } from "./invest/InvestTab";
+import { PortDetail } from "./map/PortDetail";
+import type { ShipPick } from "./map/useShippingLayer";
 import { MineralDetail } from "./map/MineralDetail";
 import type { MineralProps } from "./map/useMineralLayers";
 import { RiskZoneDetail } from "./map/RiskZoneDetail";
@@ -63,6 +65,7 @@ type Detail =
   | { kind: "infra"; id: string }
   | { kind: "risk"; pick: RiskPick }
   | { kind: "mineral"; p: MineralProps }
+  | { kind: "ship"; pick: ShipPick }
   | { kind: "city"; id: string }
   | { kind: "quake"; id: string }
   | { kind: "country"; iso3: string; un: string | null; name: string }
@@ -354,6 +357,14 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </Drawer>
       );
     }
+    if (detail.kind === "ship") {
+      const name = detail.pick.kind === "port" ? data.ports.ports.find((x) => x.id === detail.pick.id)?.name : data.ports.chokepoints.find((x) => x.id === detail.pick.id)?.name;
+      return (
+        <Drawer title={name ?? "Ports & shipping"} callsign={detail.pick.kind === "port" ? "PORT" : "CHOKEPOINT"} onClose={closeDetail}>
+          <PortDetail pick={detail.pick} ports={data.ports} redsea={data.redsea} />
+        </Drawer>
+      );
+    }
     if (detail.kind === "mineral") {
       return (
         <Drawer title={detail.p.n} callsign="MINERAL" onClose={closeDetail}>
@@ -491,6 +502,9 @@ export function Dashboard({ data }: { data: DashboardData }) {
               soil={data.soil}
               onRisk={(pick) => setDetail({ kind: "risk", pick })}
               onMineral={(p) => setDetail({ kind: "mineral", p })}
+              ports={data.ports}
+              redsea={redsea}
+              onShip={(pick) => setDetail({ kind: "ship", pick })}
               lang={view.lang}
               onLang={(lang) => setView((v) => ({ ...v, lang }))}
               fac={view.fac}

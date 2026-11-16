@@ -22,7 +22,8 @@ export type Layer =
   | "conflict"
   | "rainfall"
   | "minerals"
-  | "soil";
+  | "soil"
+  | "ships";
 
 export const ALL_LAYERS: Layer[] = [
   "existing",
@@ -44,6 +45,7 @@ export const ALL_LAYERS: Layer[] = [
   "rainfall",
   "minerals",
   "soil",
+  "ships",
 ];
 
 /** On by default: the infrastructure story plus a calm detailed base. The

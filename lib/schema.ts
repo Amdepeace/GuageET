@@ -431,3 +431,29 @@ export type InvestPipelineFile = {
   note: string;
   projects: PipelineProject[];
 };
+
+export type PortDay = { d: string; calls: number; imp: number; exp: number };
+export type PortSummary = {
+  id: string;
+  name: string;
+  iso3: string;
+  country: string;
+  lat: number;
+  lon: number;
+  asOf: string;
+  calls30: number;
+  calls30Prior: number;
+  imp30: number;
+  exp30: number;
+  byType30: { container: number; tanker: number; dryBulk: number; generalCargo: number; roro: number };
+  history: PortDay[];
+};
+export type PortsFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  note: string;
+  ports: PortSummary[];
+  chokepoints: { id: string; name: string; lat: number; lon: number }[];
+};

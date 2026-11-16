@@ -41,6 +41,7 @@ import esxRatesJson from "@/data/esx-rates.json";
 import soilJson from "@/data/curated/soil.json";
 import investJson from "@/data/curated/invest.json";
 import investPipelineJson from "@/data/invest-pipeline.json";
+import portsJson from "@/data/ports.json";
 import humanitarianJson from "@/data/humanitarian.json";
 import type {
   ChangeEntry,
@@ -76,6 +77,7 @@ import type {
   SoilFile,
   InvestFile,
   InvestPipelineFile,
+  PortsFile,
 } from "./schema";
 
 export type City = { id: string; name: string; am: string; lat: number; lon: number; labelAnchor?: "top" | "bottom" };
@@ -146,6 +148,7 @@ export type DashboardData = {
   soil: SoilFile;
   invest: InvestFile;
   investPipeline: InvestPipelineFile;
+  ports: PortsFile;
 };
 
 export function loadData(): DashboardData {
@@ -188,5 +191,6 @@ export function loadData(): DashboardData {
     soil: soilJson as unknown as SoilFile,
     invest: investJson as unknown as InvestFile,
     investPipeline: investPipelineJson as unknown as InvestPipelineFile,
+    ports: portsJson as unknown as PortsFile,
   };
 }
