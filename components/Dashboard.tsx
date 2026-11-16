@@ -27,6 +27,7 @@ import { RsdpPanel } from "./roads/RsdpPanel";
 import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
 import { InvestTab, type GoTarget } from "./invest/InvestTab";
+import { GlobeSection } from "./globe/GlobeSection";
 import { EonetDetail } from "./map/EonetDetail";
 import type { EonetEvent } from "./map/useEonetLayer";
 import { AirQualityPanel } from "./weather/AirQualityPanel";
@@ -538,6 +539,18 @@ export function Dashboard({ data }: { data: DashboardData }) {
           <AirQualityPanel cities={cities} />
           <RedSeaMonitor data={redsea} status={statusOf(redsea.source)} now={now} />
         </div>
+      </div>
+
+      <div id="sec-globe">
+        <GlobeSection
+          trade={data.trade}
+          corridors={data.corridors}
+          ports={data.ports}
+          quakes={quakeList}
+          theme={theme}
+          onCountry={(c) => setDetail({ kind: "country", iso3: c.iso3, un: c.un, name: c.name })}
+          onShip={(pick) => setDetail({ kind: "ship", pick })}
+        />
       </div>
 
       <div id="sec-explore">

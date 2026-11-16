@@ -280,6 +280,14 @@
       "access": "Free, no key; Copernicus CAMS model on a ~45 km grid, not ground sensors",
       "url": "https://open-meteo.com/en/docs/air-quality-api",
       "statusKey": null
+    },
+    {
+      "name": "react-globe.gl (3D globe)",
+      "provides": "3D globe rendering library for the GLOBE panel (MIT; also used by the MIT-licensed globe-3d project)",
+      "cadence": "Library; Earth image from NASA GIBS Blue Marble",
+      "access": "MIT licence; loaded only when the globe is opened",
+      "url": "https://github.com/vasturiano/react-globe.gl",
+      "statusKey": null
     }
   ]
 }

@@ -51,7 +51,7 @@ function centroidOf(g: Geometry): Pt | null {
 }
 
 let centroidsByUn: Map<string, { c: Pt; name: string; iso3: string }> | null = null;
-function centroids() {
+export function centroids() {
   if (centroidsByUn) return centroidsByUn;
   centroidsByUn = new Map();
   for (const f of (world as unknown as { features: { properties: { un?: string | number | null; name: string; iso3: string }; geometry: Geometry }[] }).features) {
