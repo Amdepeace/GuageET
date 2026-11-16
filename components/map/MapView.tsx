@@ -9,6 +9,8 @@ import type { City, InfraFeature } from "@/lib/data";
 import type { CityWeather } from "@/lib/openMeteo";
 import { ALL_LAYERS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import type { Quake } from "@/lib/usgs";
+import { useSatelliteLayer, latestCompleteDay, type SatKind } from "./useSatelliteLayer";
+import { useEonetLayer, type EonetEvent } from "./useEonetLayer";
 import { useShippingLayer, type ShipPick } from "./useShippingLayer";
 import { useMineralLayers, type MineralProps } from "./useMineralLayers";
 import { useRiskLayers, type RiskPick, type RiskZone, type RainZone, type SoilZone } from "./useRiskLayers";
@@ -80,6 +82,7 @@ export function MapView({
   ports,
   redsea,
   onShip,
+  onEvent,
   onCorridor,
   relationsSel,
   initialView,
@@ -113,6 +116,7 @@ export function MapView({
   ports: PortsFile;
   redsea: RedSeaFile;
   onShip: (p: ShipPick) => void;
+  onEvent: (e: EonetEvent) => void;
   onCorridor: (id: string) => void;
   relationsSel: string | null;
   initialView: { zoom: number | null; center: [number, number] | null };
@@ -126,6 +130,9 @@ export function MapView({
   const quakeMarkers = useRef<maplibregl.Marker[]>([]);
   const [ready, setReady] = useState(false);
   const [soilProp, setSoilProp] = useState("ph");
+  const [satKind, setSatKind] = useState<SatKind>("truecolor");
+  const [satDate, setSatDate] = useState("");
+  useEffect(() => setSatDate(latestCompleteDay()), []);
   const [hover, setHover] = useState<{ x: number; y: number; text: string } | null>(null);
   const [hoverCountry, setHoverCountry] = useState<string | null>(null);
   const [panelOpen, setPanelOpen] = useState(false);
@@ -140,9 +147,10 @@ export function MapView({
     onRisk: typeof onRisk;
     onMineral: typeof onMineral;
     onShip: typeof onShip;
+    onEvent: typeof onEvent;
     pick: (x: number, y: number) => DeckPick | null;
-  }>({ onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, onShip, pick: () => null });
-  cb.current = { ...cb.current, onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, onShip };
+  }>({ onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, onShip, onEvent, pick: () => null });
+  cb.current = { ...cb.current, onSelect, onViewChange, onCity, onQuake, onCountry, onFeature, onCorridor, onRisk, onMineral, onShip, onEvent };
   const avoid = useMemo(() => cities.map((c) => [c.lon, c.lat] as [number, number]), [cities]);
 
   // init once
@@ -247,6 +255,12 @@ export function MapView({
         const present = HIT_LAYERS.filter((id) => m.getLayer(id));
         return present.length ? m.queryRenderedFeatures([[x - r, y - r], [x + r, y + r]], { layers: present })[0] : undefined;
       };
+      const eventAt = (pt: { x: number; y: number }): EonetEvent | undefined => {
+        if (!m.getLayer("d-eonet-pt") || m.getLayoutProperty("d-eonet-pt", "visibility") !== "visible") return undefined;
+        const f = m.queryRenderedFeatures([[pt.x - 8, pt.y - 8], [pt.x + 8, pt.y + 8]], { layers: ["d-eonet-pt"] })[0];
+        const id = (f?.properties as { id?: string } | undefined)?.id;
+        return id ? eonetRef.current.find((e) => e.id === id) : undefined;
+      };
       const shipAt = (pt: { x: number; y: number }): { pick: ShipPick; text: string } | undefined => {
         if (!m.getLayer("d-ship-pt") || m.getLayoutProperty("d-ship-pt", "visibility") !== "visible") return undefined;
         const f = m.queryRenderedFeatures([[pt.x - 8, pt.y - 8], [pt.x + 8, pt.y + 8]], { layers: ["d-ship-pt"] })[0];
@@ -283,17 +297,19 @@ export function MapView({
         const infraHit = dp ? undefined : m.queryRenderedFeatures(e.point, { layers: ["infra-hit-pt", "infra-hit-line"] })[0];
         const ip = infraHit?.properties as { callsign: string; name: string } | undefined;
         const f = dp || infraHit ? undefined : detailAt(e.point.x, e.point.y, 5);
-        const sh = dp || infraHit ? undefined : shipAt(e.point);
+        const ev = dp || infraHit ? undefined : eventAt(e.point);
+        const sh = dp || infraHit || ev ? undefined : shipAt(e.point);
         const mn = dp || infraHit || sh ? undefined : mineralAt(e.point);
         const rk = dp || infraHit || f || mn ? undefined : riskAt(e.point);
         if (dp) setHover({ x: e.point.x, y: e.point.y, text: dp.text });
         else if (ip) setHover({ x: e.point.x, y: e.point.y, text: `${ip.callsign} · ${ip.name}` });
         else if (f) setHover({ x: e.point.x, y: e.point.y, text: tip(LAYER_KIND[f.layer.id], f.properties as Record<string, unknown>) });
+        else if (ev) setHover({ x: e.point.x, y: e.point.y, text: `${ev.category} · ${ev.title}` });
         else if (sh) setHover({ x: e.point.x, y: e.point.y, text: sh.text });
         else if (mn) setHover({ x: e.point.x, y: e.point.y, text: `${mn.n} · ${mn.c.slice(0, 2).join(", ") || "minerals"}` });
         else if (rk) setHover({ x: e.point.x, y: e.point.y, text: rk.kind === "conflict" ? (rk.z.nodata ? `${rk.z.n} · no conflict data` : `${rk.z.n} · ${rk.z.e} conflict events (12 mo)`) : rk.kind === "rain" ? `${rk.z.n} · rainfall ${rk.z.rated ? `${rk.z.pct}% of normal` : "not rated (dry season)"}` : `${rk.z.n} · soil (click for values)` });
         else setHover(null);
-        m.getCanvas().style.cursor = dp || ip || sh || mn || f || rk ? "pointer" : "";
+        m.getCanvas().style.cursor = dp || ip || ev || sh || mn || f || rk ? "pointer" : "";
         const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as { name?: string } | undefined;
         setHoverCountry(c?.name ?? null);
       });
@@ -312,6 +328,11 @@ export function MapView({
         const id = (hits[0]?.properties as { id?: string } | undefined)?.id ?? null;
         if (id) {
           cb.current.onSelect(id);
+          return;
+        }
+        const evp = eventAt(e.point);
+        if (evp) {
+          cb.current.onEvent(evp);
           return;
         }
         const sp = shipAt(e.point);
@@ -521,9 +542,13 @@ export function MapView({
   useRiskLayers({ map, ready, layers, theme, conflict, rainfall, soil, soilProp });
   useMineralLayers({ map, ready, layers, theme });
   useShippingLayer({ map, ready, layers, theme, ports, redsea });
+  useSatelliteLayer({ map, ready, layers, kind: satKind, date: satDate || latestCompleteDay() });
+  const eonet = useEonetLayer({ map, ready, layers });
+  const eonetRef = useRef<EonetEvent[]>([]);
+  eonetRef.current = eonet.events;
   const deck = useDeckOverlay({ map, ready, layers, fac, theme, corridors, trade });
   cb.current.pick = deck.pick;
-  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals", "soil", "ships"];
+  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals", "soil", "ships", "satellite", "events"];
   const detailOn = DETAIL.filter((l) => layers.includes(l)).length;
 
   const jump = (id: string) => {
@@ -592,6 +617,8 @@ export function MapView({
             onLang={onLang}
             loading={detail.loading}
             errors={detail.errors}
+            sat={{ kind: satKind, onKind: setSatKind, date: satDate || latestCompleteDay(), onDate: setSatDate }}
+            eonet={{ count: eonet.events.length, loading: eonet.loading, error: eonet.error, fetchedAt: eonet.fetchedAt }}
             soil={{ file: soil, prop: soilProp, onProp: setSoilProp }}
             risk={{ through: conflict.through, available: conflict.available, windowMonths: conflict.windowMonths, rainFrom: rainfall.from, rainTo: rainfall.to, rainAvailable: rainfall.available }}
             deck={{ loading: deck.loading, error: deck.error, partnerArcs: deck.partnerArcs, tradeReady: trade.available }}

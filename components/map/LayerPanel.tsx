@@ -3,6 +3,8 @@ import type { SoilFile } from "@/lib/schema";
 import { CONFLICT_COLORS, RAIN_COLORS, SOIL_COLORS, soilBreaks } from "./useRiskLayers";
 import { MINERAL_KINDS } from "./useMineralLayers";
 import { SHIP_COLORS } from "./useShippingLayer";
+import { SAT_KINDS, latestCompleteDay, type SatKind } from "./useSatelliteLayer";
+import { eonetColor } from "./useEonetLayer";
 import type { ReactNode } from "react";
 import { ALL_FAC_CATS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import { FAC_META, SHAPES, facColor, type Shape } from "./detail";
@@ -43,6 +45,8 @@ const ROWS: { id: Layer; label: string; note: string; sw: ReactNode }[] = [
   { id: "minerals", label: "Minerals & prospects", note: "mines and plants (2018 source), major deposits, exploration sites (USGS); positions approximate, records can be out of date", sw: <span className="inline-block w-[9px] h-[9px] mx-[6px] rounded-full" style={{ background: "#b8863f" }} /> },
   { id: "soil", label: "Soil properties", note: "zone averages of topsoil pH, organic carbon, phosphorus or clay (iSDAsoil model predictions, not field measurements)", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#6b4e30,#c99a58,#f0d29a)" }} /> },
   { id: "ships", label: "Ports & shipping", note: "port calls and chokepoint transits (IMF PortWatch, AIS-derived; near-live, a few days behind). Size = calls in 30 days; colour = change vs prior 30 days", sw: <span className="inline-block w-[9px] h-[9px] mx-[6px] rounded-full" style={{ background: "#0ea5c6" }} /> },
+  { id: "satellite", label: "Satellite imagery (NASA)", note: "daily true colour or land surface temperature from NASA GIBS; pick the date", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#2d5a3d,#8fa66a,#c9b98a)" }} /> },
+  { id: "events", label: "Natural events (NASA EONET)", note: "wildfires, volcanoes, floods, storms in the last 30 days, Horn of Africa region; live", sw: <span className="inline-block w-[9px] h-[9px] mx-[6px] rounded-full" style={{ background: "#f08a4b" }} /> },
   { id: "density", label: "Facility density", note: "hexagon map of where facilities are mapped (categories below). Mapping effort varies by area, so it is not a measure of need", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px] rounded-full" style={{ background: "radial-gradient(circle, var(--accent), transparent)" }} /> },
 ];
 
@@ -59,6 +63,8 @@ export function LayerPanel({
   deck,
   risk,
   soil,
+  sat,
+  eonet,
   onJump,
   onClose,
 }: {
@@ -72,6 +78,8 @@ export function LayerPanel({
   loading: string[];
   errors: string[];
   deck: { loading: boolean; error: string | null; partnerArcs: number; tradeReady: boolean };
+  sat: { kind: SatKind; onKind: (k: SatKind) => void; date: string; onDate: (d: string) => void };
+  eonet: { count: number; loading: boolean; error: string | null; fetchedAt: string | null };
   soil: { file: SoilFile; prop: string; onProp: (id: string) => void };
   risk: { through: string; available: boolean; windowMonths: number; rainFrom: string; rainTo: string; rainAvailable: boolean };
   onJump: (cityId: string) => void;
@@ -204,6 +212,50 @@ export function LayerPanel({
           </div>
         );
       })()}
+
+      {layers.includes("satellite") && (() => {
+        const k = SAT_KINDS.find((x) => x.id === sat.kind) ?? SAT_KINDS[0];
+        return (
+          <div className="px-3 pb-2 text-[10.5px]" role="status">
+            <div className="label mb-1">Satellite · NASA GIBS</div>
+            <select className="ctl w-full mb-1" value={sat.kind} onChange={(e) => sat.onKind(e.target.value as SatKind)} aria-label="Satellite product">
+              {SAT_KINDS.map((x) => (
+                <option key={x.id} value={x.id}>
+                  {x.label}
+                </option>
+              ))}
+            </select>
+            <label className="flex items-center gap-2">
+              <span className="muted">Date (UTC)</span>
+              <input type="date" className="ctl" value={sat.date} max={latestCompleteDay()} min="2023-03-01" onChange={(e) => e.target.value && sat.onDate(e.target.value)} />
+            </label>
+            <div className="muted mt-1">{k.note} Defaults to yesterday (UTC), the latest complete day: today&apos;s tiles are partly empty. Clouds are normal; zoom in for detail (to level {k.maxzoom}). Imagery: NASA GIBS.</div>
+          </div>
+        );
+      })()}
+
+      {layers.includes("events") && (
+        <div className="px-3 pb-2 text-[10.5px]" role="status">
+          <div className="label mb-1">Natural events · NASA EONET</div>
+          {eonet.loading && <div className="muted mono">Loading…</div>}
+          {eonet.error && <div style={{ color: "var(--warn)" }}>Could not load events: {eonet.error}</div>}
+          {!eonet.loading && !eonet.error && (
+            <div>
+              {eonet.count > 0 ? `${eonet.count} event${eonet.count === 1 ? "" : "s"} in the last 30 days` : "No events reported in the last 30 days in this region."}
+              {eonet.fetchedAt ? ` · fetched ${eonet.fetchedAt.slice(11, 16)} UTC` : ""}
+            </div>
+          )}
+          <ul className="flex flex-wrap gap-x-3 gap-y-0.5 mt-1">
+            {[["wildfires", "Wildfire"], ["volcanoes", "Volcano"], ["floods", "Flood"], ["severeStorms", "Storm"], ["drought", "Drought"], ["dustHaze", "Dust/haze"]].map(([id, l]) => (
+              <li key={id} className="flex items-center gap-1">
+                <span className="inline-block w-[8px] h-[8px] rounded-full" style={{ background: eonetColor(id) }} />
+                {l}
+              </li>
+            ))}
+          </ul>
+          <div className="muted mt-1">EONET covers Africa sparsely, so an empty map means none was reported, not that nothing happened. Click a point for sources.</div>
+        </div>
+      )}
 
       {layers.includes("ships") && (
         <div className="px-3 pb-2 text-[10.5px]" role="status">

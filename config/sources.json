@@ -256,6 +256,30 @@
       "access": "Free, no key; AIS-derived estimates, near-live not live",
       "url": "https://portwatch.imf.org/",
       "statusKey": "IMF PortWatch (ports)"
+    },
+    {
+      "name": "NASA GIBS (satellite imagery)",
+      "provides": "Daily true-colour and land-surface-temperature imagery overlay",
+      "cadence": "Live tiles; latest complete UTC day",
+      "access": "Free, no key; loaded in your browser",
+      "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api",
+      "statusKey": null
+    },
+    {
+      "name": "NASA EONET (natural events)",
+      "provides": "Open natural events (wildfires, volcanoes, floods, storms) in the region over the last 30 days",
+      "cadence": "Live in your browser, refreshed every 30 minutes",
+      "access": "Free, no key; aggregates other agencies' reports; sparse coverage in Africa",
+      "url": "https://eonet.gsfc.nasa.gov/",
+      "statusKey": null
+    },
+    {
+      "name": "Open-Meteo air quality (CAMS)",
+      "provides": "Modelled US AQI, PM2.5 and PM10 for the dashboard cities",
+      "cadence": "Live in your browser, refreshed every 30 minutes",
+      "access": "Free, no key; Copernicus CAMS model on a ~45 km grid, not ground sensors",
+      "url": "https://open-meteo.com/en/docs/air-quality-api",
+      "statusKey": null
     }
   ]
 }

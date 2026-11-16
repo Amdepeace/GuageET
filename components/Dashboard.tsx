@@ -27,6 +27,9 @@ import { RsdpPanel } from "./roads/RsdpPanel";
 import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
 import { InvestTab, type GoTarget } from "./invest/InvestTab";
+import { EonetDetail } from "./map/EonetDetail";
+import type { EonetEvent } from "./map/useEonetLayer";
+import { AirQualityPanel } from "./weather/AirQualityPanel";
 import { PortDetail } from "./map/PortDetail";
 import type { ShipPick } from "./map/useShippingLayer";
 import { MineralDetail } from "./map/MineralDetail";
@@ -66,6 +69,7 @@ type Detail =
   | { kind: "risk"; pick: RiskPick }
   | { kind: "mineral"; p: MineralProps }
   | { kind: "ship"; pick: ShipPick }
+  | { kind: "event"; e: EonetEvent }
   | { kind: "city"; id: string }
   | { kind: "quake"; id: string }
   | { kind: "country"; iso3: string; un: string | null; name: string }
@@ -357,6 +361,13 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </Drawer>
       );
     }
+    if (detail.kind === "event") {
+      return (
+        <Drawer title={detail.e.title} callsign="EVENT" onClose={closeDetail}>
+          <EonetDetail e={detail.e} />
+        </Drawer>
+      );
+    }
     if (detail.kind === "ship") {
       const name = detail.pick.kind === "port" ? data.ports.ports.find((x) => x.id === detail.pick.id)?.name : data.ports.chokepoints.find((x) => x.id === detail.pick.id)?.name;
       return (
@@ -505,6 +516,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
               ports={data.ports}
               redsea={redsea}
               onShip={(pick) => setDetail({ kind: "ship", pick })}
+              onEvent={(e) => setDetail({ kind: "event", e })}
               lang={view.lang}
               onLang={(lang) => setView((v) => ({ ...v, lang }))}
               fac={view.fac}
@@ -523,6 +535,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </div>
         <div className="order-3 flex flex-col gap-2">
           <WeatherPanel cities={cities} snap={weather.snap} status={weatherStatus} now={now} onCity={(id) => setDetail({ kind: "city", id })} />
+          <AirQualityPanel cities={cities} />
           <RedSeaMonitor data={redsea} status={statusOf(redsea.source)} now={now} />
         </div>
       </div>
