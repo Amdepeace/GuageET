@@ -886,5 +886,29 @@
     "kind": "source_recovered",
     "source": "HDX (HAPI)",
     "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-17T11:53:44.490Z",
+    "kind": "source_recovered",
+    "source": "World Bank (world indicators)",
+    "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-17T11:54:35.619Z",
+    "kind": "source_error",
+    "source": "IMF PortWatch",
+    "message": "Fetch failed: Bab el-Mandeb Strait: ArcGIS error 499: Token Required; Suez Canal: ArcGIS error 499: Token Required"
+  },
+  {
+    "at": "2026-11-17T11:59:58.464Z",
+    "kind": "source_recovered",
+    "source": "World Bank IDS",
+    "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-17T12:01:07.740Z",
+    "kind": "source_error",
+    "source": "IMF PortWatch (ports)",
+    "message": "Fetch failed: ArcGIS error 499: Token Required"
   }
 ]

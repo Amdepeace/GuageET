@@ -1,7 +1,7 @@
 {
   "source": "ACLED via HDX HAPI",
   "sourceUrl": "https://hdx-hapi.readthedocs.io/en/latest/data_usage_guides/coordination_and_context/#conflict-events",
-  "fetchedAt": "2026-11-16T11:22:03.889Z",
+  "fetchedAt": "2026-11-17T12:00:30.689Z",
   "available": true,
   "note": "ACLED data via HDX HAPI. Counts are reported events; areas with little media or partner reporting are under-counted, and recent months are often revised upward. Event counts say nothing about the scale of each event.",
   "through": "2026-10",
@@ -1048,7 +1048,7 @@
       }
     },
     "ET07-XXX": {
-      "name": "Alle",
+      "name": "South Omo",
       "region": "Central Ethiopia",
       "events": 0,
       "fatalities": 0,
