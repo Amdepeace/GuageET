@@ -910,5 +910,17 @@
     "kind": "source_error",
     "source": "IMF PortWatch (ports)",
     "message": "Fetch failed: ArcGIS error 499: Token Required"
+  },
+  {
+    "at": "2026-11-18T11:43:49.425Z",
+    "kind": "source_recovered",
+    "source": "IMF PortWatch",
+    "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-18T11:46:54.074Z",
+    "kind": "source_recovered",
+    "source": "IMF PortWatch (ports)",
+    "message": "Source recovered"
   }
 ]

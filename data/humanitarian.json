@@ -1,7 +1,7 @@
 {
   "source": "HDX (HAPI)",
   "sourceUrl": "https://data.humdata.org/",
-  "fetchedAt": "2026-11-17T11:59:58.692Z",
+  "fetchedAt": "2026-11-18T11:45:36.381Z",
   "available": true,
   "note": "Each figure carries its own reference period and original provider (WFP, IPC, OCHA). Some HDX series update infrequently.",
   "peopleInNeed": {

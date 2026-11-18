@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-16T11:18:10.031Z",
+  "fetchedAt": "2026-11-18T11:43:42.428Z",
   "source": "IMF PortWatch",
   "sourceUrl": "https://portwatch.imf.org/",
   "chokepoints": [
@@ -7,41 +7,6 @@
       "id": "chokepoint4",
       "name": "Bab el-Mandeb Strait",
       "history": [
-        {
-          "date": "2026-07-12",
-          "ships": 41,
-          "capacity": 1366176
-        },
-        {
-          "date": "2026-07-13",
-          "ships": 46,
-          "capacity": 1954128
-        },
-        {
-          "date": "2026-07-14",
-          "ships": 46,
-          "capacity": 1564038
-        },
-        {
-          "date": "2026-07-15",
-          "ships": 40,
-          "capacity": 1317165
-        },
-        {
-          "date": "2026-07-16",
-          "ships": 33,
-          "capacity": 1189533
-        },
-        {
-          "date": "2026-07-17",
-          "ships": 46,
-          "capacity": 1594172
-        },
-        {
-          "date": "2026-07-18",
-          "ships": 40,
-          "capacity": 1845862
-        },
         {
           "date": "2026-07-19",
           "ships": 33,
@@ -79,13 +44,13 @@
         },
         {
           "date": "2026-07-26",
-          "ships": 20,
-          "capacity": 814080
+          "ships": 22,
+          "capacity": 884038
         },
         {
           "date": "2026-07-27",
-          "ships": 32,
-          "capacity": 1446031
+          "ships": 30,
+          "capacity": 1376073
         },
         {
           "date": "2026-07-28",
@@ -606,49 +571,49 @@
           "date": "2026-11-08",
           "ships": 24,
           "capacity": 715603
+        },
+        {
+          "date": "2026-11-09",
+          "ships": 29,
+          "capacity": 936397
+        },
+        {
+          "date": "2026-11-10",
+          "ships": 25,
+          "capacity": 1147832
+        },
+        {
+          "date": "2026-11-11",
+          "ships": 19,
+          "capacity": 666031
+        },
+        {
+          "date": "2026-11-12",
+          "ships": 24,
+          "capacity": 707113
+        },
+        {
+          "date": "2026-11-13",
+          "ships": 28,
+          "capacity": 1184906
+        },
+        {
+          "date": "2026-11-14",
+          "ships": 20,
+          "capacity": 660869
+        },
+        {
+          "date": "2026-11-15",
+          "ships": 34,
+          "capacity": 1244148
         }
       ],
-      "baselineShips": 28
+      "baselineShips": 27
     },
     {
       "id": "chokepoint1",
       "name": "Suez Canal",
       "history": [
-        {
-          "date": "2026-07-12",
-          "ships": 39,
-          "capacity": 1325078
-        },
-        {
-          "date": "2026-07-13",
-          "ships": 43,
-          "capacity": 2133513
-        },
-        {
-          "date": "2026-07-14",
-          "ships": 34,
-          "capacity": 2108558
-        },
-        {
-          "date": "2026-07-15",
-          "ships": 42,
-          "capacity": 1599188
-        },
-        {
-          "date": "2026-07-16",
-          "ships": 39,
-          "capacity": 1503404
-        },
-        {
-          "date": "2026-07-17",
-          "ships": 44,
-          "capacity": 1437081
-        },
-        {
-          "date": "2026-07-18",
-          "ships": 46,
-          "capacity": 1545567
-        },
         {
           "date": "2026-07-19",
           "ships": 43,
@@ -686,13 +651,13 @@
         },
         {
           "date": "2026-07-26",
-          "ships": 37,
-          "capacity": 1406914
+          "ships": 42,
+          "capacity": 1468369
         },
         {
           "date": "2026-07-27",
-          "ships": 51,
-          "capacity": 2078535
+          "ships": 46,
+          "capacity": 2017081
         },
         {
           "date": "2026-07-28",
@@ -1213,6 +1178,41 @@
           "date": "2026-11-08",
           "ships": 43,
           "capacity": 2163702
+        },
+        {
+          "date": "2026-11-09",
+          "ships": 43,
+          "capacity": 1523557
+        },
+        {
+          "date": "2026-11-10",
+          "ships": 50,
+          "capacity": 2497944
+        },
+        {
+          "date": "2026-11-11",
+          "ships": 43,
+          "capacity": 2107972
+        },
+        {
+          "date": "2026-11-12",
+          "ships": 59,
+          "capacity": 2386779
+        },
+        {
+          "date": "2026-11-13",
+          "ships": 48,
+          "capacity": 1818787
+        },
+        {
+          "date": "2026-11-14",
+          "ships": 36,
+          "capacity": 1174603
+        },
+        {
+          "date": "2026-11-15",
+          "ships": 44,
+          "capacity": 1883625
         }
       ],
       "baselineShips": 42
