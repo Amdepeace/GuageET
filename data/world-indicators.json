@@ -1,7 +1,7 @@
 {
   "source": "World Bank WDI",
   "sourceUrl": "https://data.worldbank.org/",
-  "fetchedAt": "2026-11-18T11:42:53.875Z",
+  "fetchedAt": "2026-11-19T11:40:06.937Z",
   "countries": {
     "AFE": {
       "population": {

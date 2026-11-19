@@ -1,9 +1,9 @@
 {
   "source": "Open-Meteo Historical Weather (ERA5)",
   "sourceUrl": "https://open-meteo.com/en/docs/historical-weather-api",
-  "fetchedAt": "2026-11-18T11:45:41.906Z",
+  "fetchedAt": "2026-11-19T11:45:03.211Z",
   "baseline": "1991–2020",
-  "throughDate": "2026-11-11",
+  "throughDate": "2026-11-12",
   "note": "ERA5 reanalysis (about 10 km grid), not station measurements. Months marked partial are incomplete and not compared with the normal.",
   "cities": [
     {
@@ -204,8 +204,8 @@
         {
           "month": "2026-11",
           "tempC": 15.6,
-          "precipMm": 7,
-          "days": 11,
+          "precipMm": 10,
+          "days": 12,
           "complete": false
         }
       ]
@@ -407,9 +407,9 @@
         },
         {
           "month": "2026-11",
-          "tempC": 24.5,
-          "precipMm": 15,
-          "days": 11,
+          "tempC": 24.4,
+          "precipMm": 16,
+          "days": 12,
           "complete": false
         }
       ]
@@ -611,9 +611,9 @@
         },
         {
           "month": "2026-11",
-          "tempC": 18.6,
-          "precipMm": 11,
-          "days": 11,
+          "tempC": 18.5,
+          "precipMm": 19,
+          "days": 12,
           "complete": false
         }
       ]
@@ -815,9 +815,9 @@
         },
         {
           "month": "2026-11",
-          "tempC": 20.1,
-          "precipMm": 11,
-          "days": 11,
+          "tempC": 20,
+          "precipMm": 18,
+          "days": 12,
           "complete": false
         }
       ]
@@ -1019,9 +1019,9 @@
         },
         {
           "month": "2026-11",
-          "tempC": 20.5,
-          "precipMm": 21,
-          "days": 11,
+          "tempC": 20.4,
+          "precipMm": 34,
+          "days": 12,
           "complete": false
         }
       ]
@@ -1223,9 +1223,9 @@
         },
         {
           "month": "2026-11",
-          "tempC": 19.1,
-          "precipMm": 46,
-          "days": 11,
+          "tempC": 19,
+          "precipMm": 75,
+          "days": 12,
           "complete": false
         }
       ]
@@ -1427,9 +1427,9 @@
         },
         {
           "month": "2026-11",
-          "tempC": 17.9,
-          "precipMm": 24,
-          "days": 11,
+          "tempC": 17.8,
+          "precipMm": 26,
+          "days": 12,
           "complete": false
         }
       ]
@@ -1633,7 +1633,7 @@
           "month": "2026-11",
           "tempC": 19.2,
           "precipMm": 16,
-          "days": 11,
+          "days": 12,
           "complete": false
         }
       ]
