@@ -1,102 +1,102 @@
 {
   "source": "Open-Meteo Historical Weather (ERA5)",
   "sourceUrl": "https://open-meteo.com/en/docs/historical-weather-api",
-  "fetchedAt": "2026-11-19T11:45:43.352Z",
+  "fetchedAt": "2026-11-20T11:43:15.644Z",
   "available": true,
   "note": "ERA5 reanalysis sampled at each region's centre point, so it is a coarse regional screen, not a measurement. Normal = 1991–2020 average for the same 90 calendar days. Regions in a dry season have tiny normals, so percentages there swing widely and are not coloured as anomalies.",
   "baseline": "1991–2020",
   "windowDays": 90,
-  "from": "2026-08-15",
-  "to": "2026-11-12",
+  "from": "2026-08-16",
+  "to": "2026-11-13",
   "regions": {
     "ET01": {
       "name": "Tigray",
-      "mm": 164,
-      "normalMm": 213,
-      "pct": 77
+      "mm": 175,
+      "normalMm": 202,
+      "pct": 87
     },
     "ET02": {
       "name": "Afar",
       "mm": 50,
-      "normalMm": 41,
-      "pct": 122
+      "normalMm": 40,
+      "pct": 125
     },
     "ET03": {
       "name": "Amhara",
-      "mm": 382,
-      "normalMm": 306,
-      "pct": 125
+      "mm": 378,
+      "normalMm": 296,
+      "pct": 128
     },
     "ET04": {
       "name": "Oromia",
-      "mm": 316,
-      "normalMm": 432,
+      "mm": 318,
+      "normalMm": 434,
       "pct": 73
     },
     "ET05": {
       "name": "Somali",
       "mm": 149,
-      "normalMm": 107,
-      "pct": 139
+      "normalMm": 108,
+      "pct": 138
     },
     "ET06": {
       "name": "Benishangul-Gumuz",
-      "mm": 144,
-      "normalMm": 403,
+      "mm": 141,
+      "normalMm": 396,
       "pct": 36
     },
     "ET07": {
       "name": "Central Ethiopia",
-      "mm": 257,
-      "normalMm": 627,
-      "pct": 41
+      "mm": 249,
+      "normalMm": 617,
+      "pct": 40
     },
     "ET08": {
       "name": "South Ethiopia",
-      "mm": 117,
-      "normalMm": 120,
-      "pct": 98
+      "mm": 121,
+      "normalMm": 121,
+      "pct": 100
     },
     "ET11": {
       "name": "South West Ethiopia",
-      "mm": 172,
-      "normalMm": 259,
+      "mm": 175,
+      "normalMm": 261,
       "pct": 67
     },
     "ET12": {
       "name": "Gambela",
-      "mm": 129,
-      "normalMm": 319,
-      "pct": 40
+      "mm": 130,
+      "normalMm": 317,
+      "pct": 41
     },
     "ET13": {
       "name": "Harari",
-      "mm": 124,
-      "normalMm": 177,
+      "mm": 123,
+      "normalMm": 175,
       "pct": 70
     },
     "ET14": {
       "name": "Addis Ababa",
-      "mm": 274,
-      "normalMm": 536,
+      "mm": 265,
+      "normalMm": 521,
       "pct": 51
     },
     "ET15": {
       "name": "Dire Dawa",
       "mm": 97,
-      "normalMm": 38,
-      "pct": 253
+      "normalMm": 39,
+      "pct": 245
     },
     "ET16": {
       "name": "Sidama",
-      "mm": 758,
-      "normalMm": 601,
-      "pct": 126
+      "mm": 779,
+      "normalMm": 599,
+      "pct": 130
     },
     "ET99": {
       "name": "Contested",
-      "mm": 137,
-      "normalMm": 360,
+      "mm": 134,
+      "normalMm": 350,
       "pct": 38
     }
   },

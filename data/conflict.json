@@ -1,7 +1,7 @@
 {
   "source": "ACLED via HDX HAPI",
   "sourceUrl": "https://hdx-hapi.readthedocs.io/en/latest/data_usage_guides/coordination_and_context/#conflict-events",
-  "fetchedAt": "2026-11-19T11:45:17.882Z",
+  "fetchedAt": "2026-11-20T11:42:54.646Z",
   "available": true,
   "note": "ACLED data via HDX HAPI. Counts are reported events; areas with little media or partner reporting are under-counted, and recent months are often revised upward. Event counts say nothing about the scale of each event.",
   "through": "2026-10",
@@ -1048,7 +1048,7 @@
       }
     },
     "ET07-XXX": {
-      "name": "Amaro",
+      "name": "Alle",
       "region": "Central Ethiopia",
       "events": 0,
       "fatalities": 0,
