@@ -242,12 +242,20 @@ export function useDetailLayers({ map, ready, layers, facCats, theme, lang, avoi
   // ---- data loading ---------------------------------------------------------------
   const fetchData = useCallback((id: string, file: string): Promise<FC> => {
     if (data.current[id]) return Promise.resolve(data.current[id]);
-    return fetch(`${DETAIL_BASE}/${file}`).then((r) => {
-      if (!r.ok) throw new Error(`HTTP ${r.status} for ${file}`);
-      return r.json().then((fc: FC) => {
-        data.current[id] = fc;
-        return fc;
-      });
+    // retry transient failures (flaky mobile data, a deploy swapping files mid-load) before giving up
+    const attempt = (n: number): Promise<FC> =>
+      fetch(`${DETAIL_BASE}/${file}`)
+        .then((r) => {
+          if (!r.ok) throw new Error(`HTTP ${r.status} for ${file}`);
+          return r.json() as Promise<FC>;
+        })
+        .catch((e) => {
+          if (n >= 3) throw e;
+          return new Promise<FC>((res) => setTimeout(res, 800 * 2 ** n)).then(() => attempt(n + 1));
+        });
+    return attempt(0).then((fc) => {
+      data.current[id] = fc;
+      return fc;
     });
   }, []);
 
