@@ -1,7 +1,7 @@
 {
   "source": "ESX interbank money market",
   "sourceUrl": "https://esx.et/fixed-income-market/data/",
-  "fetchedAt": "2026-11-20T11:43:40.750Z",
+  "fetchedAt": "2026-11-21T11:04:58.109Z",
   "available": true,
   "note": "Weekly statistics for interbank loans traded on ESX, as published by ESX. The rate is the weighted-average interest rate; change is the weekly move in percentage points as published. A thin week (few trades) can move a lot.",
   "weeks": [
@@ -1228,6 +1228,24 @@
       "trades": 32,
       "rate": 18.31,
       "changePts": 5.28
+    },
+    {
+      "start": "2026-11-16",
+      "end": "2026-11-20",
+      "maturity": "7d",
+      "volumeEtb": 51600000000,
+      "trades": 53,
+      "rate": 18.76,
+      "changePts": -0.15
+    },
+    {
+      "start": "2026-11-16",
+      "end": "2026-11-20",
+      "maturity": "overnight",
+      "volumeEtb": 29100000000,
+      "trades": 21,
+      "rate": 17.93,
+      "changePts": -0.38
     }
   ]
 }
