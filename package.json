@@ -21,6 +21,8 @@
     "fetch:world": "tsx scripts/fetch-world-indicators.ts",
     "fetch:debt": "tsx scripts/fetch-debt.ts",
     "fetch:hdx": "tsx scripts/fetch-hdx.ts",
+    "fetch:demographics": "tsx scripts/fetch-demographics.ts",
+    "fetch:population-zones": "tsx scripts/fetch-population-zones.ts",
     "fetch:ports": "tsx scripts/fetch-ports.ts",
     "fetch:invest-pipeline": "tsx scripts/fetch-invest-pipeline.ts",
     "fetch:esx-rates": "tsx scripts/fetch-esx-rates.ts",

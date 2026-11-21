@@ -6,6 +6,8 @@ import { SHIP_COLORS } from "./useShippingLayer";
 import { SAT_KINDS, latestCompleteDay, type SatKind } from "./useSatelliteLayer";
 import { eonetColor } from "./useEonetLayer";
 import { VESSEL_CLASSES } from "./useVesselLayer";
+import { POP_COLORS, POP_METRICS, type PopMetric } from "./usePopulationLayer";
+import type { PopulationZonesFile } from "@/lib/schema";
 import type { ReactNode } from "react";
 import { ALL_FAC_CATS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import { FAC_META, SHAPES, facColor, type Shape } from "./detail";
@@ -49,6 +51,7 @@ const ROWS: { id: Layer; label: string; note: string; sw: ReactNode }[] = [
   { id: "satellite", label: "Satellite imagery (NASA)", note: "daily true colour or land surface temperature from NASA GIBS; pick the date", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#2d5a3d,#8fa66a,#c9b98a)" }} /> },
   { id: "events", label: "Natural events (NASA EONET)", note: "wildfires, volcanoes, floods, storms in the last 30 days, Horn of Africa region; live", sw: <span className="inline-block w-[9px] h-[9px] mx-[6px] rounded-full" style={{ background: "#f08a4b" }} /> },
   { id: "vessels", label: "Live vessels (AIS)", note: "ships heard in the last 30 min via the open Open Waters AIS network; coverage is uneven (none in much of the Red Sea / East Africa)", sw: <span className="inline-block w-[7px] h-[7px] mx-[7px] rounded-full" style={{ background: "#0ea5c6" }} /> },
+  { id: "population", label: "Population & age (by zone)", note: "population, density, sex and age structure by zone, 2022 (OCHA COD-PS); pick a measure", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#26305a,#5b6fcf,#c4d2ff)" }} /> },
   { id: "density", label: "Facility density", note: "hexagon map of where facilities are mapped (categories below). Mapping effort varies by area, so it is not a measure of need", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px] rounded-full" style={{ background: "radial-gradient(circle, var(--accent), transparent)" }} /> },
 ];
 
@@ -66,6 +69,7 @@ export function LayerPanel({
   risk,
   soil,
   onOpenMarine,
+  population,
   sat,
   eonet,
   onJump,
@@ -82,6 +86,7 @@ export function LayerPanel({
   errors: string[];
   deck: { loading: boolean; error: string | null; partnerArcs: number; tradeReady: boolean };
   onOpenMarine: () => void;
+  population: { file: PopulationZonesFile; metric: PopMetric; onMetric: (m: PopMetric) => void; breaks: number[] };
   sat: { kind: SatKind; onKind: (k: SatKind) => void; date: string; onDate: (d: string) => void };
   eonet: { count: number; loading: boolean; error: string | null; fetchedAt: string | null };
   soil: { file: SoilFile; prop: string; onProp: (id: string) => void };
@@ -260,6 +265,41 @@ export function LayerPanel({
           <div className="muted mt-1">EONET covers Africa sparsely, so an empty map means none was reported, not that nothing happened. Click a point for sources.</div>
         </div>
       )}
+
+      {layers.includes("population") && (() => {
+        const mt = POP_METRICS.find((x) => x.id === population.metric) ?? POP_METRICS[0];
+        const br = population.breaks;
+        return (
+          <div className="px-3 pb-2 text-[10.5px]" role="status">
+            <div className="label mb-1">Population · {population.file.period || "—"}</div>
+            {population.file.available ? (
+              <>
+                <select className="ctl w-full mb-1" value={population.metric} onChange={(e) => population.onMetric(e.target.value as PopMetric)} aria-label="Population measure">
+                  {POP_METRICS.map((x) => (
+                    <option key={x.id} value={x.id}>
+                      {x.label}
+                    </option>
+                  ))}
+                </select>
+                <div className="flex items-stretch">
+                  {POP_COLORS.dark.map((c, i) => (
+                    <span key={i} className="flex-1 h-[8px]" style={{ background: c }} />
+                  ))}
+                </div>
+                <div className="flex justify-between mono muted mt-0.5">
+                  <span>&lt;{br[0] != null ? mt.fmt(br[0]) : ""}</span>
+                  <span>{br[1] != null ? mt.fmt(br[1]) : ""}</span>
+                  <span>{br[2] != null ? mt.fmt(br[2]) : ""}</span>
+                  <span>&gt;{br[3] != null ? mt.fmt(br[3]) : ""}</span>
+                </div>
+                <div className="muted mt-1">{mt.unit}. Classes are quintiles across the zones in the source; grey = no data (not zero). OCHA COD-PS 2022 figures differ from the UN national series and miss some areas; no subnational projections exist here. Click a zone for its pyramid.</div>
+              </>
+            ) : (
+              <div className="muted">Population data has not loaded yet.</div>
+            )}
+          </div>
+        );
+      })()}
 
       {layers.includes("vessels") && (
         <div className="px-3 pb-2 text-[10.5px]" role="status">

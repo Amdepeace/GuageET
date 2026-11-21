@@ -25,7 +25,7 @@ export const RAIN_COLORS = {
 };
 export type RainZone = { id: string; n: string; pct: number; mm: number; nm: number; rated: boolean };
 export type SoilZone = { id: string; n: string; r: string };
-export type RiskPick = { kind: "conflict"; z: RiskZone } | { kind: "rain"; z: RainZone } | { kind: "soil"; z: SoilZone };
+export type RiskPick = { kind: "conflict"; z: RiskZone } | { kind: "rain"; z: RainZone } | { kind: "soil"; z: SoilZone } | { kind: "pop"; z: SoilZone };
 
 // sequential earth tones; brighter/darker = more of the property
 export const SOIL_COLORS = {

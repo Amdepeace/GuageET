@@ -1,11 +1,13 @@
 "use client";
-import type { ConflictFile, RainfallFile, SoilFile } from "@/lib/schema";
+import type { ConflictFile, PopulationZonesFile, RainfallFile, SoilFile } from "@/lib/schema";
+import { PopulationZoneDetail } from "./PopulationZoneDetail";
 import { Field } from "../shell/Drawer";
 import type { RiskPick, RiskZone } from "./useRiskLayers";
 
 const n = (v: number) => v.toLocaleString("en-US");
 
-export function RiskZoneDetail({ pick, conflict, rainfall, soil }: { pick: RiskPick; conflict: ConflictFile; rainfall: RainfallFile; soil: SoilFile }) {
+export function RiskZoneDetail({ pick, conflict, rainfall, soil, population }: { pick: RiskPick; conflict: ConflictFile; rainfall: RainfallFile; soil: SoilFile; population: PopulationZonesFile }) {
+  if (pick.kind === "pop") return <PopulationZoneDetail zone={pick.z} pop={population} areaKm2={Number((pick.z as unknown as { a?: number }).a) || 0} />;
   if (pick.kind === "soil") {
     const z = pick.z;
     return (

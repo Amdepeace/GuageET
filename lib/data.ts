@@ -42,6 +42,8 @@ import soilJson from "@/data/curated/soil.json";
 import investJson from "@/data/curated/invest.json";
 import investPipelineJson from "@/data/invest-pipeline.json";
 import portsJson from "@/data/ports.json";
+import demographicsJson from "@/data/demographics.json";
+import populationZonesJson from "@/data/population-zones.json";
 import humanitarianJson from "@/data/humanitarian.json";
 import type {
   ChangeEntry,
@@ -78,6 +80,8 @@ import type {
   InvestFile,
   InvestPipelineFile,
   PortsFile,
+  DemographicsFile,
+  PopulationZonesFile,
 } from "./schema";
 
 export type City = { id: string; name: string; am: string; lat: number; lon: number; labelAnchor?: "top" | "bottom" };
@@ -149,6 +153,8 @@ export type DashboardData = {
   invest: InvestFile;
   investPipeline: InvestPipelineFile;
   ports: PortsFile;
+  demographics: DemographicsFile;
+  populationZones: PopulationZonesFile;
 };
 
 export function loadData(): DashboardData {
@@ -192,5 +198,7 @@ export function loadData(): DashboardData {
     invest: investJson as unknown as InvestFile,
     investPipeline: investPipelineJson as unknown as InvestPipelineFile,
     ports: portsJson as unknown as PortsFile,
+    demographics: demographicsJson as unknown as DemographicsFile,
+    populationZones: populationZonesJson as unknown as PopulationZonesFile,
   };
 }

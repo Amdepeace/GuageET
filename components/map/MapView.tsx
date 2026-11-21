@@ -10,6 +10,7 @@ import type { CityWeather } from "@/lib/openMeteo";
 import { ALL_LAYERS, type FacCat, type Lang, type Layer } from "@/lib/urlState";
 import type { Quake } from "@/lib/usgs";
 import { marineTrafficView } from "@/lib/marinetraffic";
+import { usePopulationLayer, popBreaks, type PopMetric } from "./usePopulationLayer";
 import { useVesselLayer, vesselTypeLabel, type VesselProps } from "./useVesselLayer";
 import { useSatelliteLayer, latestCompleteDay, type SatKind } from "./useSatelliteLayer";
 import { useEonetLayer, type EonetEvent } from "./useEonetLayer";
@@ -20,7 +21,7 @@ import { GLYPHS_URL, HIT_LAYERS, LAYER_KIND, pretty, type DetailFeature } from "
 import { LayerPanel } from "./LayerPanel";
 import { CITIES, useDetailLayers } from "./useDetailLayers";
 import { useDeckOverlay, type DeckPick } from "./useDeckOverlay";
-import type { ConflictFile, CorridorsFile, PortsFile, RainfallFile, RedSeaFile, SoilFile, TradeFile } from "@/lib/schema";
+import type { ConflictFile, CorridorsFile, PopulationZonesFile, PortsFile, RainfallFile, RedSeaFile, SoilFile, TradeFile } from "@/lib/schema";
 
 const HOME: LngLatBoundsLike = [
   [32.5, -6],
@@ -86,6 +87,7 @@ export function MapView({
   onShip,
   onEvent,
   onVessel,
+  population,
   onCorridor,
   relationsSel,
   initialView,
@@ -121,6 +123,7 @@ export function MapView({
   onShip: (p: ShipPick) => void;
   onEvent: (e: EonetEvent) => void;
   onVessel: (v: VesselProps, lat: number, lon: number) => void;
+  population: PopulationZonesFile;
   onCorridor: (id: string) => void;
   relationsSel: string | null;
   initialView: { zoom: number | null; center: [number, number] | null };
@@ -134,6 +137,7 @@ export function MapView({
   const quakeMarkers = useRef<maplibregl.Marker[]>([]);
   const [ready, setReady] = useState(false);
   const [soilProp, setSoilProp] = useState("ph");
+  const [popMetric, setPopMetric] = useState<PopMetric>("pop");
   const [satKind, setSatKind] = useState<SatKind>("truecolor");
   const [satDate, setSatDate] = useState("");
   useEffect(() => setSatDate(latestCompleteDay()), []);
@@ -298,6 +302,10 @@ export function MapView({
           const z = m.queryRenderedFeatures([pt.x, pt.y], { layers: ["d-rain-fill"] })[0]?.properties as unknown as RainZone | undefined;
           if (z) return { kind: "rain", z };
         }
+        if (vis("d-pop-fill")) {
+          const z = m.queryRenderedFeatures([pt.x, pt.y], { layers: ["d-pop-fill"] })[0]?.properties as unknown as SoilZone | undefined;
+          if (z) return { kind: "pop", z };
+        }
         if (vis("d-soil-fill")) {
           const z = m.queryRenderedFeatures([pt.x, pt.y], { layers: ["d-soil-fill"] })[0]?.properties as unknown as SoilZone | undefined;
           if (z) return { kind: "soil", z };
@@ -321,7 +329,7 @@ export function MapView({
         else if (ev) setHover({ x: e.point.x, y: e.point.y, text: `${ev.category} · ${ev.title}` });
         else if (sh) setHover({ x: e.point.x, y: e.point.y, text: sh.text });
         else if (mn) setHover({ x: e.point.x, y: e.point.y, text: `${mn.n} · ${mn.c.slice(0, 2).join(", ") || "minerals"}` });
-        else if (rk) setHover({ x: e.point.x, y: e.point.y, text: rk.kind === "conflict" ? (rk.z.nodata ? `${rk.z.n} · no conflict data` : `${rk.z.n} · ${rk.z.e} conflict events (12 mo)`) : rk.kind === "rain" ? `${rk.z.n} · rainfall ${rk.z.rated ? `${rk.z.pct}% of normal` : "not rated (dry season)"}` : `${rk.z.n} · soil (click for values)` });
+        else if (rk) setHover({ x: e.point.x, y: e.point.y, text: rk.kind === "conflict" ? (rk.z.nodata ? `${rk.z.n} · no conflict data` : `${rk.z.n} · ${rk.z.e} conflict events (12 mo)`) : rk.kind === "rain" ? `${rk.z.n} · rainfall ${rk.z.rated ? `${rk.z.pct}% of normal` : "not rated (dry season)"}` : rk.kind === "pop" ? `${rk.z.n} · population (click for detail)` : `${rk.z.n} · soil (click for values)` });
         else setHover(null);
         m.getCanvas().style.cursor = dp || ip || vs || ev || sh || mn || f || rk ? "pointer" : "";
         const c = m.queryRenderedFeatures(e.point, { layers: ["world-fill"] })[0]?.properties as { name?: string } | undefined;
@@ -562,13 +570,14 @@ export function MapView({
   useMineralLayers({ map, ready, layers, theme });
   useShippingLayer({ map, ready, layers, theme, ports, redsea });
   useVesselLayer({ map, ready, layers, theme });
+  const popLayer = usePopulationLayer({ map, ready, layers, theme, pop: population, metric: popMetric });
   useSatelliteLayer({ map, ready, layers, kind: satKind, date: satDate || latestCompleteDay() });
   const eonet = useEonetLayer({ map, ready, layers });
   const eonetRef = useRef<EonetEvent[]>([]);
   eonetRef.current = eonet.events;
   const deck = useDeckOverlay({ map, ready, layers, fac, theme, corridors, trade });
   cb.current.pick = deck.pick;
-  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals", "soil", "ships", "satellite", "events", "vessels"];
+  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals", "soil", "ships", "satellite", "events", "vessels", "population"];
   const detailOn = DETAIL.filter((l) => layers.includes(l)).length;
 
   const jump = (id: string) => {
@@ -645,6 +654,7 @@ export function MapView({
             }}
             sat={{ kind: satKind, onKind: setSatKind, date: satDate || latestCompleteDay(), onDate: setSatDate }}
             eonet={{ count: eonet.events.length, loading: eonet.loading, error: eonet.error, fetchedAt: eonet.fetchedAt }}
+            population={{ file: population, metric: popMetric, onMetric: setPopMetric, breaks: popBreaks(population, popMetric, popLayer.areas) }}
             soil={{ file: soil, prop: soilProp, onProp: setSoilProp }}
             risk={{ through: conflict.through, available: conflict.available, windowMonths: conflict.windowMonths, rainFrom: rainfall.from, rainTo: rainfall.to, rainAvailable: rainfall.available }}
             deck={{ loading: deck.loading, error: deck.error, partnerArcs: deck.partnerArcs, tradeReady: trade.available }}

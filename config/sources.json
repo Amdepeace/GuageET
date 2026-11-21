@@ -296,6 +296,22 @@
       "access": "Free anonymous tier, no key; free for personal use, paid plans for commercial use; licence per source; coverage uneven (none heard around the Red Sea / East Africa)",
       "url": "https://openwaters.io/ais/",
       "statusKey": null
+    },
+    {
+      "name": "World Bank / UN World Population Prospects",
+      "provides": "Population by sex and 5-year age band, fertility, life expectancy, birth/death rates, dependency, 1960–2050 (projections from 2024)",
+      "cadence": "Daily job; the database is updated about yearly",
+      "access": "Free, no key; years from 2024 are UN medium-variant projections",
+      "url": "https://databank.worldbank.org/source/population-estimates-and-projections",
+      "statusKey": "World Bank / UN World Population Prospects"
+    },
+    {
+      "name": "OCHA COD-PS via HDX HAPI",
+      "provides": "Population by zone and region, sex and age band, 2022",
+      "cadence": "Daily job; source is a one-off reference year",
+      "access": "Free, no key; omits some areas and differs from UN totals",
+      "url": "https://data.humdata.org/dataset/cod-ps-eth",
+      "statusKey": "OCHA COD-PS via HDX HAPI"
     }
   ]
 }

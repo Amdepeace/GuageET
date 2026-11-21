@@ -18,7 +18,7 @@ def run(src, level, tol):
         g = shape(f["geometry"]).simplify(tol, preserve_topology=True)
         gm = mapping(g)
         gm = {"type": gm["type"], "coordinates": rnd(json.loads(json.dumps(gm["coordinates"], default=list)))}
-        props = {"id": p[f"adm{level}_pcode"], "n": p[f"adm{level}_name"]}
+        props = {"id": p[f"adm{level}_pcode"], "n": p[f"adm{level}_name"], "a": round(p.get("area_sqkm") or 0, 1)}
         if level == 2: props["r"] = p["adm1_name"]
         out.append({"type": "Feature", "properties": props, "geometry": gm})
     json.dump({"type": "FeatureCollection", "features": out}, open(f"public/geo-detail/admin{level}.json", "w"), separators=(",", ":"))

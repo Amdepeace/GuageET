@@ -457,3 +457,32 @@ export type PortsFile = {
   ports: PortSummary[];
   chokepoints: { id: string; name: string; lat: number; lon: number }[];
 };
+
+export type DemoSeries = { id: string; label: string; unit: string; values: Record<string, number> };
+export type DemographicsFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  lastUpdated: string;
+  available: boolean;
+  note: string;
+  /** first year that the UN medium-variant projection covers (earlier years are estimates) */
+  projectionFrom: number;
+  years: number[];
+  bands: string[];
+  /** population by 5-year age band and sex, per year (index matches `bands`) */
+  pyramid: Record<string, { m: number[]; f: number[] }>;
+  series: DemoSeries[];
+};
+export type PopZone = { id: string; name: string; region: string; total: number; m: number[]; f: number[] };
+export type PopulationZonesFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  note: string;
+  period: string;
+  bands: string[];
+  zones: PopZone[];
+  regions: PopZone[];
+};

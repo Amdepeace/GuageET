@@ -27,6 +27,7 @@ import { RsdpPanel } from "./roads/RsdpPanel";
 import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
 import { InvestTab, type GoTarget } from "./invest/InvestTab";
+import { DemographicsPanel } from "./demography/DemographicsPanel";
 import { GlobeSection } from "./globe/GlobeSection";
 import { VesselDetail } from "./map/VesselDetail";
 import type { VesselProps } from "./map/useVesselLayer";
@@ -397,8 +398,8 @@ export function Dashboard({ data }: { data: DashboardData }) {
     }
     if (detail.kind === "risk") {
       return (
-        <Drawer title={detail.pick.z.n} callsign={detail.pick.kind === "conflict" ? "CONFLICT" : detail.pick.kind === "rain" ? "RAINFALL" : "SOIL"} onClose={closeDetail}>
-          <RiskZoneDetail pick={detail.pick} conflict={data.conflict} rainfall={data.rainfall} soil={data.soil} />
+        <Drawer title={detail.pick.z.n} callsign={detail.pick.kind === "conflict" ? "CONFLICT" : detail.pick.kind === "rain" ? "RAINFALL" : detail.pick.kind === "pop" ? "POPULATION" : "SOIL"} onClose={closeDetail}>
+          <RiskZoneDetail pick={detail.pick} conflict={data.conflict} rainfall={data.rainfall} soil={data.soil} population={data.populationZones} />
         </Drawer>
       );
     }
@@ -530,6 +531,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
               onShip={(pick) => setDetail({ kind: "ship", pick })}
               onEvent={(e) => setDetail({ kind: "event", e })}
               onVessel={(v, lat, lon) => setDetail({ kind: "vessel", v, lat, lon })}
+              population={data.populationZones}
               lang={view.lang}
               onLang={(lang) => setView((v) => ({ ...v, lang }))}
               fac={view.fac}
@@ -563,6 +565,10 @@ export function Dashboard({ data }: { data: DashboardData }) {
           onCountry={(c) => setDetail({ kind: "country", iso3: c.iso3, un: c.un, name: c.name })}
           onShip={(pick) => setDetail({ kind: "ship", pick })}
         />
+      </div>
+
+      <div id="sec-demography">
+        <DemographicsPanel demo={data.demographics} zones={data.populationZones} onShowMap={() => goDash({ layer: "population" })} />
       </div>
 
       <div id="sec-explore">
