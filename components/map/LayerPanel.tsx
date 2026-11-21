@@ -32,6 +32,14 @@ const Line = ({ color, dash, w = 2 }: { color: string; dash?: string; w?: number
   </svg>
 );
 
+/** layers that only draw once the map is zoomed in far enough (from the layer definitions in useDetailLayers) */
+const ZOOM_NEEDED: Partial<Record<Layer, { z: number; text: string }>> = {
+  streams: { z: 7, text: "Streams draw from zoom 7" },
+  tertiary: { z: 8, text: "Tertiary roads draw from zoom 8" },
+  facilities: { z: 6.5, text: "Major facilities draw from zoom 6.5, all of them from 9.5" },
+  streets: { z: 10, text: "City streets load from zoom 10" },
+};
+
 const ROWS: { id: Layer; label: string; note: string; sw: ReactNode }[] = [
   { id: "rivers", label: "Rivers & lakes", note: "rivers, reservoirs, lakes, wetlands", sw: <Line color="var(--river)" w={2.2} /> },
   { id: "streams", label: "Streams & tributaries", note: "small tributaries; appear when zoomed in", sw: <Line color="var(--river)" w={1} /> },
@@ -68,6 +76,8 @@ export function LayerPanel({
   deck,
   risk,
   soil,
+  zoom,
+  onZoomTo,
   onOpenMarine,
   population,
   sat,
@@ -85,6 +95,8 @@ export function LayerPanel({
   loading: string[];
   errors: string[];
   deck: { loading: boolean; error: string | null; partnerArcs: number; tradeReady: boolean };
+  zoom: number;
+  onZoomTo: (z: number) => void;
   onOpenMarine: () => void;
   population: { file: PopulationZonesFile; metric: PopMetric; onMetric: (m: PopMetric) => void; breaks: number[] };
   sat: { kind: SatKind; onKind: (k: SatKind) => void; date: string; onDate: (d: string) => void };
@@ -115,6 +127,14 @@ export function LayerPanel({
                 <span className="block text-[10.5px] muted">{r.note}</span>
               </span>
             </label>
+            {ZOOM_NEEDED[r.id] && layers.includes(r.id) && zoom < ZOOM_NEEDED[r.id]!.z && (
+              <div className="pl-6 pb-1.5 text-[10.5px]" style={{ color: "var(--warn)" }} role="status">
+                On, but not visible at this zoom ({zoom.toFixed(1)}). {ZOOM_NEEDED[r.id]!.text}.{" "}
+                <button type="button" className="ctl" onClick={() => onZoomTo(ZOOM_NEEDED[r.id]!.z + 0.5)}>
+                  Zoom in
+                </button>
+              </div>
+            )}
             {(r.id === "facilities" ? layers.includes("facilities") : r.id === "density" && layers.includes("density") && !layers.includes("facilities")) && (
               <div className="flex flex-wrap gap-1 pl-6 pb-1.5 pt-0.5" role="group" aria-label="Facility categories">
                 {ALL_FAC_CATS.map((c) => (

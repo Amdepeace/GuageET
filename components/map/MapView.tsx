@@ -136,6 +136,7 @@ export function MapView({
   const cityMarkers = useRef<maplibregl.Marker[]>([]);
   const quakeMarkers = useRef<maplibregl.Marker[]>([]);
   const [ready, setReady] = useState(false);
+  const [zoomNow, setZoomNow] = useState(5);
   const [soilProp, setSoilProp] = useState("ph");
   const [popMetric, setPopMetric] = useState<PopMetric>("pop");
   const [satKind, setSatKind] = useState<SatKind>("truecolor");
@@ -396,6 +397,7 @@ export function MapView({
       m.on("moveend", () => {
         const c = m.getCenter();
         cb.current.onViewChange(m.getZoom(), [c.lng, c.lat]);
+        setZoomNow(m.getZoom());
       });
       setReady(true);
     });
@@ -646,6 +648,8 @@ export function MapView({
             onLang={onLang}
             loading={detail.loading}
             errors={detail.errors}
+            zoom={zoomNow}
+            onZoomTo={(z) => map.current?.easeTo({ zoom: z, duration: 700 })}
             onOpenMarine={() => {
               const mm = map.current;
               if (!mm) return;
