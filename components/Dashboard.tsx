@@ -14,6 +14,7 @@ import { Drawer } from "./shell/Drawer";
 import { EventLog } from "./shell/EventLog";
 import { SystemHealth, type SourceRow } from "./shell/SystemHealth";
 import { AlertBanner } from "./shell/AlertBanner";
+import { DevelopmentPanel } from "./vitals/DevelopmentPanel";
 import { VitalTile } from "./vitals/VitalTile";
 import { VitalDetail } from "./vitals/VitalDetail";
 import { NeighborCompare } from "./vitals/NeighborCompare";
@@ -484,7 +485,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
       <AlertBanner alerts={alerts} />
 
       <section id="sec-vitals" aria-label="ECON vitals" className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-2">
-        {indicators.map((ind) => (
+        {indicators.filter((i) => !i.group).map((ind) => (
           <VitalTile
             key={ind.id}
             ind={ind}
@@ -494,6 +495,13 @@ export function Dashboard({ data }: { data: DashboardData }) {
           />
         ))}
       </section>
+
+      <DevelopmentPanel
+        indicators={indicators}
+        eth={countries.ETH}
+        staleSources={staleSources}
+        onOpen={(id) => setDetail({ kind: "vital", id, country: "ETH" })}
+      />
 
       <section aria-label="Pulse: FX and commodities" className="grid grid-cols-2 sm:grid-cols-4 gap-2">
         <SimpleTile series={fxDaily} stale={statusOf(fxDaily.source) === "OFFLINE"} onOpen={() => setDetail({ kind: "simple", id: fxDaily.id })} />

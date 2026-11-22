@@ -1228,6 +1228,2709 @@
         }
       ],
       "alternatives": []
+    },
+    "infant_mort": {
+      "id": "infant_mort",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 41.5,
+          "unit": "per 1,000 live births",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 41,
+          "unit": "per 1,000 live births",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 41.1,
+          "unit": "per 1,000 live births",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 40.7,
+          "unit": "per 1,000 live births",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 40,
+          "unit": "per 1,000 live births",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 38.9,
+          "unit": "per 1,000 live births",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 38.4,
+          "unit": "per 1,000 live births",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 38.2,
+          "unit": "per 1,000 live births",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 37.5,
+          "unit": "per 1,000 live births",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 37,
+          "unit": "per 1,000 live births",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 36.5,
+          "unit": "per 1,000 live births",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 36,
+          "unit": "per 1,000 live births",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 35.5,
+          "unit": "per 1,000 live births",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 34.7,
+          "unit": "per 1,000 live births",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 34.2,
+          "unit": "per 1,000 live births",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "under5_mort": {
+      "id": "under5_mort",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 53.1,
+          "unit": "per 1,000 live births",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 51.7,
+          "unit": "per 1,000 live births",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 50.7,
+          "unit": "per 1,000 live births",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 49.4,
+          "unit": "per 1,000 live births",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 48.3,
+          "unit": "per 1,000 live births",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 46.8,
+          "unit": "per 1,000 live births",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 45.5,
+          "unit": "per 1,000 live births",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 44.7,
+          "unit": "per 1,000 live births",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 43.7,
+          "unit": "per 1,000 live births",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 42.7,
+          "unit": "per 1,000 live births",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 42.1,
+          "unit": "per 1,000 live births",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 41.3,
+          "unit": "per 1,000 live births",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 40.5,
+          "unit": "per 1,000 live births",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 39.6,
+          "unit": "per 1,000 live births",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 38.8,
+          "unit": "per 1,000 live births",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.DYN.MORT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "maternal_mort": {
+      "id": "maternal_mort",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 210,
+          "unit": "per 100,000 live births",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 209,
+          "unit": "per 100,000 live births",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 214,
+          "unit": "per 100,000 live births",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 206,
+          "unit": "per 100,000 live births",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 203,
+          "unit": "per 100,000 live births",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 203,
+          "unit": "per 100,000 live births",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 196,
+          "unit": "per 100,000 live births",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 186,
+          "unit": "per 100,000 live births",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 183,
+          "unit": "per 100,000 live births",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 176,
+          "unit": "per 100,000 live births",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 184,
+          "unit": "per 100,000 live births",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 183,
+          "unit": "per 100,000 live births",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 155,
+          "unit": "per 100,000 live births",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 149,
+          "unit": "per 100,000 live births",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.MMRT?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "life_exp": {
+      "id": "life_exp",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 60.915,
+          "unit": "years at birth",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 61.283,
+          "unit": "years at birth",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 61.537,
+          "unit": "years at birth",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 61.729,
+          "unit": "years at birth",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 61.99,
+          "unit": "years at birth",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 62.279,
+          "unit": "years at birth",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 62.526,
+          "unit": "years at birth",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 62.725,
+          "unit": "years at birth",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 62.825,
+          "unit": "years at birth",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 62.939,
+          "unit": "years at birth",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 61.596,
+          "unit": "years at birth",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 61.225,
+          "unit": "years at birth",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 63.549,
+          "unit": "years at birth",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 63.646,
+          "unit": "years at birth",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 63.834,
+          "unit": "years at birth",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "measles": {
+      "id": "measles",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 86,
+          "unit": "% of children 12-23 months",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 87,
+          "unit": "% of children 12-23 months",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 93,
+          "unit": "% of children 12-23 months",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 94,
+          "unit": "% of children 12-23 months",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 95,
+          "unit": "% of children 12-23 months",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 96,
+          "unit": "% of children 12-23 months",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 93,
+          "unit": "% of children 12-23 months",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 84,
+          "unit": "% of children 12-23 months",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 92,
+          "unit": "% of children 12-23 months",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 92,
+          "unit": "% of children 12-23 months",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 89,
+          "unit": "% of children 12-23 months",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 90,
+          "unit": "% of children 12-23 months",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 89,
+          "unit": "% of children 12-23 months",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 91,
+          "unit": "% of children 12-23 months",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 88,
+          "unit": "% of children 12-23 months",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.IMM.MEAS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "stunting": {
+      "id": "stunting",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 26.3,
+          "unit": "% of children under 5",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.STNT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 26.2,
+          "unit": "% of children under 5",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.STNT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 28.6,
+          "unit": "% of children under 5",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.STNT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 17.6,
+          "unit": "% of children under 5",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SH.STA.STNT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "undernourish": {
+      "id": "undernourish",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 22.3,
+          "unit": "% of population",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 20.6,
+          "unit": "% of population",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 19.9,
+          "unit": "% of population",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 19.4,
+          "unit": "% of population",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 19.4,
+          "unit": "% of population",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 21.2,
+          "unit": "% of population",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 23,
+          "unit": "% of population",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 24.8,
+          "unit": "% of population",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 24.6,
+          "unit": "% of population",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 25.8,
+          "unit": "% of population",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 28.8,
+          "unit": "% of population",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 33.4,
+          "unit": "% of population",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 36.2,
+          "unit": "% of population",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 36.4,
+          "unit": "% of population",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 34.9,
+          "unit": "% of population",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SN.ITK.DEFC.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "unemployment": {
+      "id": "unemployment",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 2.793,
+          "unit": "% of labour force",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 2.699,
+          "unit": "% of labour force",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 2.678,
+          "unit": "% of labour force",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 2.762,
+          "unit": "% of labour force",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 2.767,
+          "unit": "% of labour force",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 2.762,
+          "unit": "% of labour force",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 2.757,
+          "unit": "% of labour force",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 3.542,
+          "unit": "% of labour force",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 4.284,
+          "unit": "% of labour force",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 5.014,
+          "unit": "% of labour force",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 5.613,
+          "unit": "% of labour force",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 5.693,
+          "unit": "% of labour force",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 5.565,
+          "unit": "% of labour force",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 5.409,
+          "unit": "% of labour force",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 5.487,
+          "unit": "% of labour force",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 5.449,
+          "unit": "% of labour force",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "youth_unemp": {
+      "id": "youth_unemp",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 7.049,
+          "unit": "% of youth labour force",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 6.924,
+          "unit": "% of youth labour force",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 6.945,
+          "unit": "% of youth labour force",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 7.183,
+          "unit": "% of youth labour force",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 7.253,
+          "unit": "% of youth labour force",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 7.299,
+          "unit": "% of youth labour force",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 7.333,
+          "unit": "% of youth labour force",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 9.097,
+          "unit": "% of youth labour force",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 10.818,
+          "unit": "% of youth labour force",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 12.547,
+          "unit": "% of youth labour force",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 13.619,
+          "unit": "% of youth labour force",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 12.232,
+          "unit": "% of youth labour force",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 15.488,
+          "unit": "% of youth labour force",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 15.164,
+          "unit": "% of youth labour force",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 15.477,
+          "unit": "% of youth labour force",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 15.246,
+          "unit": "% of youth labour force",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.UEM.1524.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "lfpr": {
+      "id": "lfpr",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 73.705,
+          "unit": "% of population 15+",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 73.823,
+          "unit": "% of population 15+",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 73.94,
+          "unit": "% of population 15+",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 74.057,
+          "unit": "% of population 15+",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 74.173,
+          "unit": "% of population 15+",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 74.289,
+          "unit": "% of population 15+",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 74.405,
+          "unit": "% of population 15+",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 72.306,
+          "unit": "% of population 15+",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 70.103,
+          "unit": "% of population 15+",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 67.803,
+          "unit": "% of population 15+",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 67.081,
+          "unit": "% of population 15+",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 67.462,
+          "unit": "% of population 15+",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 67.503,
+          "unit": "% of population 15+",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 67.463,
+          "unit": "% of population 15+",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 67.418,
+          "unit": "% of population 15+",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 67.385,
+          "unit": "% of population 15+",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "poverty": {
+      "id": "poverty",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 37.7,
+          "unit": "% of population",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.DDAY?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 44.4,
+          "unit": "% of population",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.DDAY?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 46.4,
+          "unit": "% of population",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.DDAY?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 45.5,
+          "unit": "% of population",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.DDAY?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "gini": {
+      "id": "gini",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 40.8,
+          "unit": "0 = equal, 100 = unequal",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.GINI?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 36.2,
+          "unit": "0 = equal, 100 = unequal",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.GINI?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 38.7,
+          "unit": "0 = equal, 100 = unequal",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.GINI?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 38.5,
+          "unit": "0 = equal, 100 = unequal",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SI.POV.GINI?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "electricity": {
+      "id": "electricity",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 19.2,
+          "unit": "% of population",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 36.2,
+          "unit": "% of population",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 38.1,
+          "unit": "% of population",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 40.1,
+          "unit": "% of population",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 36,
+          "unit": "% of population",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 41.6,
+          "unit": "% of population",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 53.1,
+          "unit": "% of population",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 55.8,
+          "unit": "% of population",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 61.2,
+          "unit": "% of population",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 69.7,
+          "unit": "% of population",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 71.5,
+          "unit": "% of population",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 76.5,
+          "unit": "% of population",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 76,
+          "unit": "% of population",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 76.2,
+          "unit": "% of population",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 77,
+          "unit": "% of population",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "internet": {
+      "id": "internet",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 7.2,
+          "unit": "% of population",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 8.800000191,
+          "unit": "% of population",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 10.5,
+          "unit": "% of population",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 13,
+          "unit": "% of population",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 16.5,
+          "unit": "% of population",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 16.5878548475992,
+          "unit": "% of population",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 16.6,
+          "unit": "% of population",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 17.82710075,
+          "unit": "% of population",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 19.5,
+          "unit": "% of population",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 22.6687733618171,
+          "unit": "% of population",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 24.7227993,
+          "unit": "% of population",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 26.96290016,
+          "unit": "% of population",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 29.40589905,
+          "unit": "% of population",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 32.07040024,
+          "unit": "% of population",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 34.97622513,
+          "unit": "% of population",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.NET.USER.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "mobile": {
+      "id": "mobile",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 60.0234402305252,
+          "unit": "per 100 people",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 65.6730161546273,
+          "unit": "per 100 people",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 70.0226527327794,
+          "unit": "per 100 people",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 70.7541086893706,
+          "unit": "per 100 people",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 73.0327455558393,
+          "unit": "per 100 people",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 80.0958263165851,
+          "unit": "per 100 people",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 80.9772361004341,
+          "unit": "per 100 people",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 87.026530838819,
+          "unit": "per 100 people",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 98.5944679106884,
+          "unit": "per 100 people",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 106.547822056778,
+          "unit": "per 100 people",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 117.602526394779,
+          "unit": "per 100 people",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 122.297519656734,
+          "unit": "per 100 people",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 121.168999135357,
+          "unit": "per 100 people",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 120.612416887959,
+          "unit": "per 100 people",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 126.477706000949,
+          "unit": "per 100 people",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/IT.CEL.SETS.P2?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "urban": {
+      "id": "urban",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 31.8713287706458,
+          "unit": "% of population",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.8673949025409,
+          "unit": "% of population",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.8558130142761,
+          "unit": "% of population",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.8324454433988,
+          "unit": "% of population",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.7931545274563,
+          "unit": "% of population",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.7338026039958,
+          "unit": "% of population",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.6502520105647,
+          "unit": "% of population",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.5383650847102,
+          "unit": "% of population",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.3940041639796,
+          "unit": "% of population",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.1895566421135,
+          "unit": "% of population",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.2063494632616,
+          "unit": "% of population",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.2879334021971,
+          "unit": "% of population",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.4307820066946,
+          "unit": "% of population",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.6330340816429,
+          "unit": "% of population",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 31.8937831721599,
+          "unit": "% of population",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 32.2121192871745,
+          "unit": "% of population",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "gdp_pc": {
+      "id": "gdp_pc",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 1091.51873101194,
+          "unit": "current US$",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 1096.14499807675,
+          "unit": "current US$",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 1285.00536171512,
+          "unit": "current US$",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 1370.87885214659,
+          "unit": "current US$",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 1482.81566253497,
+          "unit": "current US$",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 1489.11959777284,
+          "unit": "current US$",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 1554.12610314423,
+          "unit": "current US$",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 1667.48447230835,
+          "unit": "current US$",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 1836.45275528993,
+          "unit": "current US$",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 1960.40808854893,
+          "unit": "current US$",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 1927.66459027849,
+          "unit": "current US$",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 2061.35622089594,
+          "unit": "current US$",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 2109.56288513137,
+          "unit": "current US$",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 1942.58802756191,
+          "unit": "current US$",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 2133.46193404026,
+          "unit": "current US$",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 2362.86091198611,
+          "unit": "current US$",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "current_acct": {
+      "id": "current_acct",
+      "country": "KEN",
+      "history": [
+        {
+          "value": -5.21669389712651,
+          "unit": "% of GDP",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -8.14880935200662,
+          "unit": "% of GDP",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -7.47587166159348,
+          "unit": "% of GDP",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -7.85152228564966,
+          "unit": "% of GDP",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -9.34004850596924,
+          "unit": "% of GDP",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -6.30459656347731,
+          "unit": "% of GDP",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -5.39700863817028,
+          "unit": "% of GDP",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -6.99683322084962,
+          "unit": "% of GDP",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -5.4110667914175,
+          "unit": "% of GDP",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -5.2385293590781,
+          "unit": "% of GDP",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -3.26911007065288,
+          "unit": "% of GDP",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -4.5990081153926,
+          "unit": "% of GDP",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -4.19995258299619,
+          "unit": "% of GDP",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -2.81601276856738,
+          "unit": "% of GDP",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -1.75858874840526,
+          "unit": "% of GDP",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": -2.12391242301486,
+          "unit": "% of GDP",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/BN.CAB.XOKA.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "agri_share": {
+      "id": "agri_share",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 17.5677598863696,
+          "unit": "% of GDP",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 18.8947112249953,
+          "unit": "% of GDP",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 18.8297259329446,
+          "unit": "% of GDP",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 18.6165515854622,
+          "unit": "% of GDP",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 18.3478393393556,
+          "unit": "% of GDP",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 19.4696147780528,
+          "unit": "% of GDP",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 20.0345164328349,
+          "unit": "% of GDP",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 20.8936374065292,
+          "unit": "% of GDP",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 20.314910419968,
+          "unit": "% of GDP",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 20.8611638110686,
+          "unit": "% of GDP",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 22.7027261604451,
+          "unit": "% of GDP",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 21.4770750957252,
+          "unit": "% of GDP",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 21.0361920649933,
+          "unit": "% of GDP",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 21.4522060902205,
+          "unit": "% of GDP",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 22.4419960332165,
+          "unit": "% of GDP",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 23.1599874772131,
+          "unit": "% of GDP",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NV.AGR.TOTL.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "exports_gdp": {
+      "id": "exports_gdp",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 20.1243596478793,
+          "unit": "% of GDP",
+          "asOf": "2010-12-31",
+          "period": "2010",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 21.5494770708279,
+          "unit": "% of GDP",
+          "asOf": "2011-12-31",
+          "period": "2011",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 19.8649477228834,
+          "unit": "% of GDP",
+          "asOf": "2012-12-31",
+          "period": "2012",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 17.7921805531655,
+          "unit": "% of GDP",
+          "asOf": "2013-12-31",
+          "period": "2013",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 16.4728044658123,
+          "unit": "% of GDP",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 15.1287339034504,
+          "unit": "% of GDP",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 13.2497448006759,
+          "unit": "% of GDP",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 12.7366599413725,
+          "unit": "% of GDP",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 12.541975333359,
+          "unit": "% of GDP",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 11.4279956869332,
+          "unit": "% of GDP",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 11.4410451821593,
+          "unit": "% of GDP",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 13.1097382018218,
+          "unit": "% of GDP",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 15.9570283629469,
+          "unit": "% of GDP",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 16.7133442998721,
+          "unit": "% of GDP",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 16.8549548908518,
+          "unit": "% of GDP",
+          "asOf": "2024-12-31",
+          "period": "2024",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 15.7640677825707,
+          "unit": "% of GDP",
+          "asOf": "2025-12-31",
+          "period": "2025",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/NE.EXP.GNFS.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
+    },
+    "govt_rev": {
+      "id": "govt_rev",
+      "country": "KEN",
+      "history": [
+        {
+          "value": 19.5621058827303,
+          "unit": "% of GDP",
+          "asOf": "2014-12-31",
+          "period": "2014",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/GC.REV.XGRT.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 19.3515429430809,
+          "unit": "% of GDP",
+          "asOf": "2015-12-31",
+          "period": "2015",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/GC.REV.XGRT.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 19.0657755266586,
+          "unit": "% of GDP",
+          "asOf": "2016-12-31",
+          "period": "2016",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/GC.REV.XGRT.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 21.1458721961561,
+          "unit": "% of GDP",
+          "asOf": "2017-12-31",
+          "period": "2017",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/GC.REV.XGRT.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 18.6789342149032,
+          "unit": "% of GDP",
+          "asOf": "2018-12-31",
+          "period": "2018",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/GC.REV.XGRT.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 19.0978050742836,
+          "unit": "% of GDP",
+          "asOf": "2019-12-31",
+          "period": "2019",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/GC.REV.XGRT.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 17.6588131025385,
+          "unit": "% of GDP",
+          "asOf": "2020-12-31",
+          "period": "2020",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/GC.REV.XGRT.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 17.3452383502575,
+          "unit": "% of GDP",
+          "asOf": "2021-12-31",
+          "period": "2021",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/GC.REV.XGRT.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 17.8826094865972,
+          "unit": "% of GDP",
+          "asOf": "2022-12-31",
+          "period": "2022",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/GC.REV.XGRT.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        },
+        {
+          "value": 18.6388294257783,
+          "unit": "% of GDP",
+          "asOf": "2023-12-31",
+          "period": "2023",
+          "source": "World Bank WDI",
+          "sourceUrl": "https://data.worldbank.org/indicator/GC.REV.XGRT.GD.ZS?locations=KE",
+          "fetchedAt": "2026-11-22T14:13:40.375Z"
+        }
+      ],
+      "alternatives": []
     }
   }
 }

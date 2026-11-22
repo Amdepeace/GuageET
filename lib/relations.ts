@@ -29,7 +29,7 @@ export type CountryRelations = {
   country: ClickedCountry;
   isEthiopia: boolean;
   blocs: SharedBlocs;
-  indicators: { id: string; label: string; eth: { value: number; year: string } | null; them: { value: number; year: string } | null; format: "count" | "usd" | "pct" }[];
+  indicators: { id: string; label: string; eth: { value: number; year: string } | null; them: { value: number; year: string } | null; format: "count" | "usd" | "pct" | "num" }[];
   bilateral: { exports: number; imports: number } | null;
   tradePeriod: string;
   tradeAvailable: boolean;
@@ -38,10 +38,16 @@ export type CountryRelations = {
   profile: { current: string; history: string; investment: string; sources: { title: string; url: string }[] } | null;
 };
 
-const IND_META: { id: "population" | "gdp_usd" | "gdp_growth"; label: string; format: "count" | "usd" | "pct" }[] = [
+const IND_META: { id: "population" | "gdp_usd" | "gdp_growth" | "gdp_pc" | "life_exp" | "infant_mort" | "unemployment" | "internet" | "electricity"; label: string; format: "count" | "usd" | "pct" | "num" }[] = [
   { id: "gdp_usd", label: "GDP (US$)", format: "usd" },
   { id: "population", label: "Population", format: "count" },
   { id: "gdp_growth", label: "GDP growth", format: "pct" },
+  { id: "gdp_pc", label: "GDP per capita (US$)", format: "usd" },
+  { id: "life_exp", label: "Life expectancy (years)", format: "num" },
+  { id: "infant_mort", label: "Infant mortality (per 1,000 births)", format: "num" },
+  { id: "unemployment", label: "Unemployment (ILO modelled)", format: "pct" },
+  { id: "internet", label: "Internet users (% of population)", format: "pct" },
+  { id: "electricity", label: "Access to electricity", format: "pct" },
 ];
 
 export function buildRelations(d: RelationsInput, c: ClickedCountry): CountryRelations {

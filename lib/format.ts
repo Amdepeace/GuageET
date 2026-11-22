@@ -10,6 +10,8 @@ export function formatValue(v: number, format: IndicatorConfig["format"], unit?:
       return compact(v);
     case "rate":
       return v >= 100 ? v.toFixed(1) : v.toFixed(2);
+    case "num":
+      return Math.abs(v) >= 100 ? v.toFixed(0) : v.toFixed(1);
     default:
       return `${v}${unit ? " " + unit : ""}`;
   }

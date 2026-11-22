@@ -1,7 +1,7 @@
 {
   "source": "World Bank WDI",
   "sourceUrl": "https://data.worldbank.org/",
-  "fetchedAt": "2026-11-22T11:30:05.987Z",
+  "fetchedAt": "2026-11-22T14:13:40.363Z",
   "countries": {
     "AFE": {
       "population": {
@@ -15,6 +15,30 @@
       "gdp_growth": {
         "value": 3.74,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1722,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 65.35,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 40.69,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 7.54,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 30.4,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 52.6,
+        "year": "2024"
       }
     },
     "AFW": {
@@ -29,6 +53,30 @@
       "gdp_growth": {
         "value": 4.6,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1600,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 59.04,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 56.46,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.19,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 42.4,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 58.82,
+        "year": "2024"
       }
     },
     "ARB": {
@@ -43,6 +91,26 @@
       "gdp_growth": {
         "value": 3.68,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 7544,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.72,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 26.58,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 9.19,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 92.17,
+        "year": "2024"
       }
     },
     "CSS": {
@@ -57,6 +125,26 @@
       "gdp_growth": {
         "value": 7.98,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 20880,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.31,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 16.53,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 7.55,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 98.43,
+        "year": "2024"
       }
     },
     "CEB": {
@@ -71,6 +159,26 @@
       "gdp_growth": {
         "value": 2.37,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 27677,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.92,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.98,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.14,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "EAR": {
@@ -85,6 +193,26 @@
       "gdp_growth": {
         "value": 4.37,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 4566,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.01,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 25.06,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.15,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 96.09,
+        "year": "2024"
       }
     },
     "EAS": {
@@ -99,6 +227,30 @@
       "gdp_growth": {
         "value": 4,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 14077,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.74,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 10.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.81,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 88.4,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 98.56,
+        "year": "2024"
       }
     },
     "EAP": {
@@ -113,6 +265,30 @@
       "gdp_growth": {
         "value": 4.94,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 10843,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.96,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 11.34,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.92,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 88.1,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 98.41,
+        "year": "2024"
       }
     },
     "TEA": {
@@ -127,6 +303,30 @@
       "gdp_growth": {
         "value": 4.94,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 10966,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.99,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 11.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.92,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 88.9,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 98.87,
+        "year": "2024"
       }
     },
     "EMU": {
@@ -141,6 +341,26 @@
       "gdp_growth": {
         "value": 1.41,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 50214,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.25,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.06,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.28,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "ECS": {
@@ -155,6 +375,30 @@
       "gdp_growth": {
         "value": 1.7,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 34603,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 78.6,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 6.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.36,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 92.4,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "ECA": {
@@ -169,6 +413,30 @@
       "gdp_growth": {
         "value": 4.2,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 11118,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.14,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 11.53,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.84,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 87.5,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "TEC": {
@@ -183,6 +451,30 @@
       "gdp_growth": {
         "value": 2.84,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 15300,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 74.97,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 9.06,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.62,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 90.8,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "EUU": {
@@ -197,6 +489,26 @@
       "gdp_growth": {
         "value": 1.54,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 47089,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 81.56,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.93,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "FCV": {
@@ -211,6 +523,26 @@
       "gdp_growth": {
         "value": 1.73,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1703,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 64.69,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 48.36,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.34,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 64.1,
+        "year": "2024"
       }
     },
     "HPC": {
@@ -225,6 +557,26 @@
       "gdp_growth": {
         "value": 5.83,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1332,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 64.92,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 42.76,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.14,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 52.48,
+        "year": "2024"
       }
     },
     "IBD": {
@@ -239,6 +591,30 @@
       "gdp_growth": {
         "value": 4.31,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 8599,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 74.67,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 16.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.98,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 82.7,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 99.17,
+        "year": "2024"
       }
     },
     "IBT": {
@@ -253,6 +629,30 @@
       "gdp_growth": {
         "value": 4.34,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6613,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.13,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 29.77,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.84,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 70.3,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 90.68,
+        "year": "2024"
       }
     },
     "IDB": {
@@ -267,6 +667,30 @@
       "gdp_growth": {
         "value": 4.58,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1841,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 62.62,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 52.94,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.43,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 44.2,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 78.81,
+        "year": "2024"
       }
     },
     "IDX": {
@@ -281,6 +705,30 @@
       "gdp_growth": {
         "value": 4.87,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1484,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.25,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 39.48,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.43,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 36.1,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 63.67,
+        "year": "2024"
       }
     },
     "IDA": {
@@ -295,6 +743,30 @@
       "gdp_growth": {
         "value": 4.73,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1608,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 65.64,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 44.11,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.43,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 38.9,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 68.95,
+        "year": "2024"
       }
     },
     "LTE": {
@@ -309,6 +781,26 @@
       "gdp_growth": {
         "value": 4.45,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 13677,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.23,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7.15,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.5,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 99.5,
+        "year": "2024"
       }
     },
     "LCN": {
@@ -323,6 +815,30 @@
       "gdp_growth": {
         "value": 2.32,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 11095,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.82,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 13.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.46,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 83.7,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 98.05,
+        "year": "2024"
       }
     },
     "LAC": {
@@ -337,6 +853,30 @@
       "gdp_growth": {
         "value": 2.21,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 10407,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.54,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 13.49,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.29,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 83.6,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 97.99,
+        "year": "2024"
       }
     },
     "TLA": {
@@ -351,6 +891,30 @@
       "gdp_growth": {
         "value": 2.36,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 10823,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.74,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 13.38,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.51,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 83.9,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 98,
+        "year": "2024"
       }
     },
     "LDC": {
@@ -365,6 +929,30 @@
       "gdp_growth": {
         "value": 4.3,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1362,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 66.71,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 40.67,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.67,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 33.7,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 60.37,
+        "year": "2024"
       }
     },
     "LMY": {
@@ -379,6 +967,26 @@
       "gdp_growth": {
         "value": 4.53,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6107,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.02,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 30.15,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.89,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 90.26,
+        "year": "2024"
       }
     },
     "MEA": {
@@ -393,6 +1001,30 @@
       "gdp_growth": {
         "value": 2.74,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6202,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.32,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 32,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 7.78,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 63.7,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 96.77,
+        "year": "2024"
       }
     },
     "MNA": {
@@ -407,6 +1039,30 @@
       "gdp_growth": {
         "value": 2,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2829,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.49,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 33.57,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.69,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 0,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 96.46,
+        "year": "2024"
       }
     },
     "TMN": {
@@ -421,6 +1077,30 @@
       "gdp_growth": {
         "value": 1.98,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2827,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.5,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 33.71,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.69,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 60.2,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 96.44,
+        "year": "2024"
       }
     },
     "MIC": {
@@ -435,6 +1115,26 @@
       "gdp_growth": {
         "value": 4.52,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6779,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.87,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 26.18,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.88,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 95.44,
+        "year": "2024"
       }
     },
     "NAC": {
@@ -449,6 +1149,30 @@
       "gdp_growth": {
         "value": 2.13,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 86308,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 79.24,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 5.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.51,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 95.6,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "OED": {
@@ -463,6 +1187,26 @@
       "gdp_growth": {
         "value": 1.77,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 51734,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 80.4,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 5.84,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.93,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 99.92,
+        "year": "2024"
       }
     },
     "OSS": {
@@ -477,6 +1221,26 @@
       "gdp_growth": {
         "value": 2.88,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 17540,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.81,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 24.49,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.59,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 94.54,
+        "year": "2024"
       }
     },
     "PSS": {
@@ -491,6 +1255,26 @@
       "gdp_growth": {
         "value": 3.32,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 4720,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 69.44,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 18.72,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.52,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 88.27,
+        "year": "2024"
       }
     },
     "PST": {
@@ -505,6 +1289,26 @@
       "gdp_growth": {
         "value": 1.65,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 59490,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 81.11,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.7,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "PRE": {
@@ -519,6 +1323,26 @@
       "gdp_growth": {
         "value": 3.57,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1470,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 62.35,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 48.98,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.54,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 54.32,
+        "year": "2024"
       }
     },
     "SST": {
@@ -533,6 +1357,30 @@
       "gdp_growth": {
         "value": 4.39,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 16578,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.11,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 21.79,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 7.76,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 0,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 94.57,
+        "year": "2024"
       }
     },
     "SAS": {
@@ -547,6 +1395,30 @@
       "gdp_growth": {
         "value": 7.12,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2705,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.56,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 23.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.24,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 67.8,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 99.82,
+        "year": "2024"
       }
     },
     "TSA": {
@@ -561,6 +1433,30 @@
       "gdp_growth": {
         "value": 7.12,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2705,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.56,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 23.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.24,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 67.8,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 99.82,
+        "year": "2024"
       }
     },
     "SSF": {
@@ -575,6 +1471,30 @@
       "gdp_growth": {
         "value": 4.14,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1673,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 62.8,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 47.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.66,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 35.7,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 55.11,
+        "year": "2024"
       }
     },
     "SSA": {
@@ -589,6 +1509,30 @@
       "gdp_growth": {
         "value": 4.14,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1671,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 62.8,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 47.12,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.66,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 36.5,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 55.11,
+        "year": "2024"
       }
     },
     "TSS": {
@@ -603,6 +1547,30 @@
       "gdp_growth": {
         "value": 4.14,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1673,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 62.8,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 47.12,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.66,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 35.2,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 55.11,
+        "year": "2024"
       }
     },
     "WLD": {
@@ -617,6 +1585,30 @@
       "gdp_growth": {
         "value": 2.92,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 14406,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.48,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 27.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.79,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 73.6,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 91.93,
+        "year": "2024"
       }
     },
     "AFG": {
@@ -630,6 +1622,30 @@
       },
       "gdp_growth": {
         "value": 1.87,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 417,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 66.29,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 48.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 13.35,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 16.09,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 87.8,
         "year": "2024"
       }
     },
@@ -645,6 +1661,30 @@
       "gdp_growth": {
         "value": 3.79,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 12998,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 79.78,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 8.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 10.93,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 85.86,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "DZA": {
@@ -659,6 +1699,30 @@
       "gdp_growth": {
         "value": 3.82,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6051,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.47,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 19.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 11.63,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 77.42,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "ASM": {
@@ -673,6 +1737,14 @@
       "gdp_growth": {
         "value": 1.74,
         "year": "2022"
+      },
+      "gdp_pc": {
+        "value": 18017,
+        "year": "2022"
+      },
+      "life_exp": {
+        "value": 72.99,
+        "year": "2024"
       }
     },
     "AND": {
@@ -687,6 +1759,26 @@
       "gdp_growth": {
         "value": 3.87,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 54292,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 84.19,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.4,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 94.4,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "AGO": {
@@ -701,6 +1793,30 @@
       "gdp_growth": {
         "value": 3.13,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3129,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 64.81,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 32.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 14.11,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 40.7,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 55.5,
+        "year": "2024"
       }
     },
     "ATG": {
@@ -715,6 +1831,26 @@
       "gdp_growth": {
         "value": 5,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 24819,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.77,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 72.73,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "ARG": {
@@ -729,6 +1865,30 @@
       "gdp_growth": {
         "value": 4.37,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 14898,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.54,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 7.14,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 89.67,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 98.4,
+        "year": "2024"
       }
     },
     "ARM": {
@@ -743,6 +1903,30 @@
       "gdp_growth": {
         "value": 7.2,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 9474,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 78.32,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 8.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 12.87,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 81.34,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "ABW": {
@@ -756,6 +1940,18 @@
       },
       "gdp_growth": {
         "value": 6.81,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 38591,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 76.5,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -771,6 +1967,30 @@
       "gdp_growth": {
         "value": 1.35,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 65130,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 83.05,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.09,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 96.13,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "AUT": {
@@ -785,6 +2005,30 @@
       "gdp_growth": {
         "value": 0.62,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 62930,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.58,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 91.93,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "AZE": {
@@ -799,6 +2043,30 @@
       "gdp_growth": {
         "value": 1.45,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 7411,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 74.58,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 12.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.46,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 90.8,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "BHS": {
@@ -812,6 +2080,30 @@
       },
       "gdp_growth": {
         "value": 3.38,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 39455,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 74.71,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 11.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 9.21,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 92.47,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -827,6 +2119,30 @@
       "gdp_growth": {
         "value": 3.48,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 30597,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 81.42,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 1.1,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 100,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "BGD": {
@@ -841,6 +2157,30 @@
       "gdp_growth": {
         "value": 3.49,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2597,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 74.93,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 24.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.78,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 53.42,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99.5,
+        "year": "2024"
       }
     },
     "BRB": {
@@ -855,6 +2195,30 @@
       "gdp_growth": {
         "value": 2.7,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 28365,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.33,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 9.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.52,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 70.36,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "BLR": {
@@ -869,6 +2233,30 @@
       "gdp_growth": {
         "value": 1.3,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 10279,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 74.37,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 1.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.38,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 94.26,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "BEL": {
@@ -883,6 +2271,30 @@
       "gdp_growth": {
         "value": 0.98,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 60750,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.3,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.91,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 95.78,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "BLZ": {
@@ -897,6 +2309,30 @@
       "gdp_growth": {
         "value": 2.75,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 7865,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.74,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 10.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.86,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 80.01,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99.6,
+        "year": "2024"
       }
     },
     "BEN": {
@@ -911,6 +2347,30 @@
       "gdp_growth": {
         "value": 8.07,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1658,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 60.96,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 45.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 1.59,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 33.98,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 59,
+        "year": "2024"
       }
     },
     "BMU": {
@@ -924,6 +2384,18 @@
       },
       "gdp_growth": {
         "value": 1.89,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 142250,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 82.49,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -939,6 +2411,30 @@
       "gdp_growth": {
         "value": 8.01,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 4493,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.26,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 13.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.23,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 91.28,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "BOL": {
@@ -953,6 +2449,30 @@
       "gdp_growth": {
         "value": -1.58,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 5148,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 68.74,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 14.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.97,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 79.7,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 96.6,
+        "year": "2024"
       }
     },
     "BIH": {
@@ -967,6 +2487,30 @@
       "gdp_growth": {
         "value": 2.13,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 10382,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 78.04,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 5.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 11.04,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 86.1,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "BWA": {
@@ -981,6 +2525,30 @@
       "gdp_growth": {
         "value": -0.73,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 7778,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 69.29,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 32.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 24.48,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 57.46,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 80.2,
+        "year": "2024"
       }
     },
     "BRA": {
@@ -995,12 +2563,48 @@
       "gdp_growth": {
         "value": 2.29,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 10713,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.02,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 12.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.97,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 84.46,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99.8,
+        "year": "2024"
       }
     },
     "VGB": {
       "population": {
         "value": 39732,
         "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.43,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 11.4,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "BRN": {
@@ -1015,6 +2619,30 @@
       "gdp_growth": {
         "value": 0.67,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 32235,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.5,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 8.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.28,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 96.3,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "BGR": {
@@ -1029,6 +2657,30 @@
       "gdp_growth": {
         "value": 3.1,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 20328,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.76,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.54,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 82.44,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "BFA": {
@@ -1043,6 +2695,30 @@
       "gdp_growth": {
         "value": 5.29,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1148,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 61.29,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 43.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.48,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 28.25,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 34,
+        "year": "2024"
       }
     },
     "BDI": {
@@ -1057,6 +2733,30 @@
       "gdp_growth": {
         "value": 4.24,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 234,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 63.82,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 30.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 0.92,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 8.6,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 20.1,
+        "year": "2024"
       }
     },
     "CPV": {
@@ -1071,6 +2771,30 @@
       "gdp_growth": {
         "value": 6.3,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 5796,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.22,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 10.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 11.94,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 74.74,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 98.4,
+        "year": "2024"
       }
     },
     "KHM": {
@@ -1085,6 +2809,30 @@
       "gdp_growth": {
         "value": 5.35,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2872,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 70.82,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 16.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 0.26,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 68.48,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99.2,
+        "year": "2024"
       }
     },
     "CMR": {
@@ -1099,6 +2847,30 @@
       "gdp_growth": {
         "value": 3.2,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1972,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 63.97,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 40.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.6,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 46.26,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 72,
+        "year": "2024"
       }
     },
     "CAN": {
@@ -1113,6 +2885,30 @@
       "gdp_growth": {
         "value": 1.74,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 55698,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.11,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.91,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 94.35,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "CYM": {
@@ -1126,6 +2922,18 @@
       },
       "gdp_growth": {
         "value": 3.76,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 104293,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 80.54,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -1141,6 +2949,30 @@
       "gdp_growth": {
         "value": 4.5,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 556,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 57.67,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 58.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.25,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 13.78,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 18.2,
+        "year": "2024"
       }
     },
     "TCD": {
@@ -1155,6 +2987,30 @@
       "gdp_growth": {
         "value": 5.59,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1022,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 55.24,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 56.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 1.06,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 12.63,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 13.4,
+        "year": "2024"
       }
     },
     "CHI": {
@@ -1169,6 +3025,22 @@
       "gdp_growth": {
         "value": 3.72,
         "year": "2023"
+      },
+      "gdp_pc": {
+        "value": 74586,
+        "year": "2023"
+      },
+      "life_exp": {
+        "value": 81.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.17,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "CHL": {
@@ -1183,6 +3055,30 @@
       "gdp_growth": {
         "value": 2.46,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 17995,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 81.36,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 5.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.97,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 95.59,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99,
+        "year": "2024"
       }
     },
     "CHN": {
@@ -1197,6 +3093,30 @@
       "gdp_growth": {
         "value": 4.96,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 13862,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 78.02,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.62,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 91.6,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "COL": {
@@ -1211,6 +3131,30 @@
       "gdp_growth": {
         "value": 2.64,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 8562,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.91,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 10.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.29,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 79.35,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 98.9,
+        "year": "2024"
       }
     },
     "COM": {
@@ -1225,6 +3169,30 @@
       "gdp_growth": {
         "value": 3.75,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2056,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.02,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 35,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.82,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 32.52,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 91.7,
+        "year": "2024"
       }
     },
     "COD": {
@@ -1239,6 +3207,30 @@
       "gdp_growth": {
         "value": 5.76,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 807,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 62.07,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 56.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.43,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 19.67,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 22.5,
+        "year": "2024"
       }
     },
     "COG": {
@@ -1253,6 +3245,30 @@
       "gdp_growth": {
         "value": 3.08,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2515,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 66,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 27,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 19.88,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 47.25,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 53,
+        "year": "2024"
       }
     },
     "CRI": {
@@ -1267,6 +3283,30 @@
       "gdp_growth": {
         "value": 4.56,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 19970,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 81,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 9.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.84,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 87.17,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99.8,
+        "year": "2024"
       }
     },
     "CIV": {
@@ -1281,6 +3321,30 @@
       "gdp_growth": {
         "value": 6.5,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3050,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 62.11,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 44.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.32,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 41.43,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 72.9,
+        "year": "2024"
       }
     },
     "HRV": {
@@ -1295,6 +3359,30 @@
       "gdp_growth": {
         "value": 3.4,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 27104,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 78.93,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 83.63,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "CUB": {
@@ -1308,6 +3396,30 @@
       },
       "gdp_growth": {
         "value": -1.06,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 9605,
+        "year": "2020"
+      },
+      "life_exp": {
+        "value": 78.26,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 6.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 1.75,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 70.48,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -1323,6 +3435,18 @@
       "gdp_growth": {
         "value": 5.03,
         "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 22833,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 76.99,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "CYP": {
@@ -1337,6 +3461,30 @@
       "gdp_growth": {
         "value": 3.77,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 41783,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 81.82,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.92,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 89.6,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "CZE": {
@@ -1351,6 +3499,30 @@
       "gdp_growth": {
         "value": 2.58,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 35917,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 79.98,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.83,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 87.69,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "DNK": {
@@ -1365,6 +3537,30 @@
       "gdp_growth": {
         "value": 2.93,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 76970,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.25,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.53,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 99.77,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "DJI": {
@@ -1379,6 +3575,30 @@
       "gdp_growth": {
         "value": 6.5,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3906,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 66.2,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 43,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 26.02,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 65.3,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 69.2,
+        "year": "2024"
       }
     },
     "DMA": {
@@ -1393,6 +3613,26 @@
       "gdp_growth": {
         "value": 3.05,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 10989,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.29,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 33.3,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 82.05,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "DOM": {
@@ -1407,6 +3647,30 @@
       "gdp_growth": {
         "value": 2.12,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 11059,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.87,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 27.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.09,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 91,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99.5,
+        "year": "2024"
       }
     },
     "ECU": {
@@ -1421,6 +3685,30 @@
       "gdp_growth": {
         "value": 3.73,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 7125,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.58,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 10.9,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.31,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 77.17,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 98.5,
+        "year": "2024"
       }
     },
     "EGY": {
@@ -1435,6 +3723,30 @@
       "gdp_growth": {
         "value": 4.39,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3086,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.81,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 20.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.78,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 74.65,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SLV": {
@@ -1449,6 +3761,30 @@
       "gdp_growth": {
         "value": 3.91,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 5767,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.3,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 8.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.3,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 66.48,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 98.7,
+        "year": "2024"
       }
     },
     "GNQ": {
@@ -1463,12 +3799,56 @@
       "gdp_growth": {
         "value": -5.85,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6615,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 63.91,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 47.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.34,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 63.3,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 65.1,
+        "year": "2024"
       }
     },
     "ERI": {
       "population": {
         "value": 3607003,
         "year": "2025"
+      },
+      "life_exp": {
+        "value": 68.89,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 24.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.98,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 14.35,
+        "year": "2020"
+      },
+      "electricity": {
+        "value": 55.3,
+        "year": "2024"
       }
     },
     "EST": {
@@ -1483,6 +3863,30 @@
       "gdp_growth": {
         "value": 0.58,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 34418,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 79.3,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 1.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.31,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 92.24,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SWZ": {
@@ -1497,6 +3901,30 @@
       "gdp_growth": {
         "value": 4.19,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 4108,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 64.26,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 42.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 34.2,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 63.4,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 89.3,
+        "year": "2024"
       }
     },
     "ETH": {
@@ -1511,6 +3939,30 @@
       "gdp_growth": {
         "value": 9.77,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 933,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.6,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 34.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.32,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 21.94,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 56.6,
+        "year": "2024"
       }
     },
     "FRO": {
@@ -1524,6 +3976,18 @@
       },
       "gdp_growth": {
         "value": 0.84,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 74175,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 83.08,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -1539,6 +4003,30 @@
       "gdp_growth": {
         "value": 3.2,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6642,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.46,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 23.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.35,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 74.71,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 95.9,
+        "year": "2024"
       }
     },
     "FIN": {
@@ -1553,6 +4041,30 @@
       "gdp_growth": {
         "value": 0.17,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 56149,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.34,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 1.9,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 9.46,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 93.72,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "FRA": {
@@ -1567,6 +4079,30 @@
       "gdp_growth": {
         "value": 0.84,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 48986,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.98,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 7.54,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 88.65,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "PYF": {
@@ -1580,6 +4116,22 @@
       },
       "gdp_growth": {
         "value": 1.13,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 22440,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 84.19,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 11.66,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -1595,6 +4147,30 @@
       "gdp_growth": {
         "value": 2.47,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 8263,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 68.51,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 25.9,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 20.15,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 68.72,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 95.1,
+        "year": "2024"
       }
     },
     "GMB": {
@@ -1609,6 +4185,30 @@
       "gdp_growth": {
         "value": 5.89,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 919,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 66.06,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 32.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.52,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 49.49,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 69,
+        "year": "2024"
       }
     },
     "GEO": {
@@ -1623,6 +4223,30 @@
       "gdp_growth": {
         "value": 7.46,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 9692,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 74.66,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 12.1,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 83.8,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "DEU": {
@@ -1637,6 +4261,30 @@
       "gdp_growth": {
         "value": 0.24,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 60496,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 80.79,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.71,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 93.5,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "GHA": {
@@ -1651,12 +4299,44 @@
       "gdp_growth": {
         "value": 5.95,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3257,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 65.69,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 27.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.98,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 72.18,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 91.9,
+        "year": "2024"
       }
     },
     "GIB": {
       "population": {
         "value": 40126,
         "year": "2025"
+      },
+      "life_exp": {
+        "value": 83.63,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "GRC": {
@@ -1671,6 +4351,30 @@
       "gdp_growth": {
         "value": 2.07,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 26948,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 81.84,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.54,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 86.27,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "GRL": {
@@ -1685,6 +4389,18 @@
       "gdp_growth": {
         "value": 0.87,
         "year": "2023"
+      },
+      "gdp_pc": {
+        "value": 58499,
+        "year": "2023"
+      },
+      "life_exp": {
+        "value": 70.27,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "GRD": {
@@ -1699,6 +4415,26 @@
       "gdp_growth": {
         "value": 4.41,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 12107,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.37,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 16.4,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 70.16,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 95.6,
+        "year": "2024"
       }
     },
     "GUM": {
@@ -1713,6 +4449,22 @@
       "gdp_growth": {
         "value": 5.1,
         "year": "2022"
+      },
+      "gdp_pc": {
+        "value": 41833,
+        "year": "2022"
+      },
+      "life_exp": {
+        "value": 77.42,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.57,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "GTM": {
@@ -1727,6 +4479,30 @@
       "gdp_growth": {
         "value": 4.28,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6598,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.75,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 17.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.6,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 60.22,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 90.9,
+        "year": "2024"
       }
     },
     "GIN": {
@@ -1741,6 +4517,30 @@
       "gdp_growth": {
         "value": 7.45,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1877,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 60.9,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 59.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.16,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 33.3,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 53.8,
+        "year": "2024"
       }
     },
     "GNB": {
@@ -1755,6 +4555,30 @@
       "gdp_growth": {
         "value": 5.82,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1124,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 64.25,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 42.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.67,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 29.78,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 43.7,
+        "year": "2024"
       }
     },
     "GUY": {
@@ -1769,6 +4593,30 @@
       "gdp_growth": {
         "value": 19.34,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 32414,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 70.32,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 23.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 11.96,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 83,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 93,
+        "year": "2024"
       }
     },
     "HTI": {
@@ -1783,6 +4631,30 @@
       "gdp_growth": {
         "value": -2.71,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2694,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 65.12,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 39,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 14.94,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 47.86,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 53.9,
+        "year": "2024"
       }
     },
     "HND": {
@@ -1797,6 +4669,30 @@
       "gdp_growth": {
         "value": 3.75,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3598,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.04,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 12.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.92,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 58.62,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 95.5,
+        "year": "2024"
       }
     },
     "HKG": {
@@ -1811,6 +4707,26 @@
       "gdp_growth": {
         "value": 3.49,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 56983,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 85.39,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.8,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 95.76,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "HUN": {
@@ -1825,6 +4741,30 @@
       "gdp_growth": {
         "value": 0.51,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 25907,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.72,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.52,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 93.78,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "ISL": {
@@ -1839,6 +4779,30 @@
       "gdp_growth": {
         "value": 1.28,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 98323,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.81,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.63,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 98.21,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "IND": {
@@ -1853,6 +4817,30 @@
       "gdp_growth": {
         "value": 7.57,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2702,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.23,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 23.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.22,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 70,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 99.9,
+        "year": "2024"
       }
     },
     "IDN": {
@@ -1867,6 +4855,30 @@
       "gdp_growth": {
         "value": 5.11,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 5060,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.29,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 15.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.24,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 72.78,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99.9,
+        "year": "2024"
       }
     },
     "IRN": {
@@ -1881,6 +4893,30 @@
       "gdp_growth": {
         "value": -2.83,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3924,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.85,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 10.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.3,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 85.34,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "IRQ": {
@@ -1895,6 +4931,30 @@
       "gdp_growth": {
         "value": -2.16,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 5410,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.42,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 20.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 15.48,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 81.47,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "IRL": {
@@ -1909,6 +4969,30 @@
       "gdp_growth": {
         "value": 12.34,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 131592,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 83.01,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.63,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 97.19,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "IMN": {
@@ -1923,6 +5007,18 @@
       "gdp_growth": {
         "value": -2.04,
         "year": "2023"
+      },
+      "gdp_pc": {
+        "value": 90015,
+        "year": "2023"
+      },
+      "life_exp": {
+        "value": 81.09,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "ISR": {
@@ -1937,6 +5033,30 @@
       "gdp_growth": {
         "value": 2.93,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 60337,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 83.2,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.49,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 88.18,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "ITA": {
@@ -1951,6 +5071,30 @@
       "gdp_growth": {
         "value": 0.54,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 43309,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 83.95,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.39,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 89.22,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "JAM": {
@@ -1965,6 +5109,30 @@
       "gdp_growth": {
         "value": 0.08,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 8003,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.61,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 16.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.29,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 90.11,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 97.7,
+        "year": "2024"
       }
     },
     "JPN": {
@@ -1979,6 +5147,30 @@
       "gdp_growth": {
         "value": 1.19,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 35951,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 84.04,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 1.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.45,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 85.54,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "JOR": {
@@ -1993,6 +5185,30 @@
       "gdp_growth": {
         "value": 2.83,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 5348,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.98,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 12,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 16.54,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 95.62,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "KAZ": {
@@ -2007,6 +5223,30 @@
       "gdp_growth": {
         "value": 6.5,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 14692,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 74.53,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.77,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 93.39,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "KEN": {
@@ -2021,6 +5261,30 @@
       "gdp_growth": {
         "value": 4.63,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2363,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 63.83,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 34.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.45,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 34.98,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 77,
+        "year": "2024"
       }
     },
     "KIR": {
@@ -2035,12 +5299,48 @@
       "gdp_growth": {
         "value": 4.22,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2559,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 66.6,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 38.8,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 89.44,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 97.7,
+        "year": "2024"
       }
     },
     "PRK": {
       "population": {
         "value": 26571036,
         "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.74,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 13.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.54,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 61.4,
+        "year": "2024"
       }
     },
     "KOR": {
@@ -2055,6 +5355,30 @@
       "gdp_growth": {
         "value": 1.01,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 36227,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 83.63,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.68,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 97.9,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "XKX": {
@@ -2069,6 +5393,18 @@
       "gdp_growth": {
         "value": 3.59,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 7899,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 78.22,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 8,
+        "year": "2024"
       }
     },
     "KWT": {
@@ -2083,6 +5419,30 @@
       "gdp_growth": {
         "value": 2.73,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 32312,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 84.58,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.18,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 100,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "KGZ": {
@@ -2097,6 +5457,30 @@
       "gdp_growth": {
         "value": 11.1,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3081,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.4,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 14.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.53,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 92.03,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "LAO": {
@@ -2111,6 +5495,30 @@
       "gdp_growth": {
         "value": 4.54,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2325,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 69.22,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 27.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 1.19,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 65.59,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 96.5,
+        "year": "2024"
       }
     },
     "LVA": {
@@ -2125,6 +5533,30 @@
       "gdp_growth": {
         "value": 2.14,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 26312,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.43,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.57,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 92.71,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "LBN": {
@@ -2138,6 +5570,30 @@
       },
       "gdp_growth": {
         "value": -7.08,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 4473,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 77.94,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 15.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 10.98,
+        "year": "2023"
+      },
+      "internet": {
+        "value": 80.63,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -2153,6 +5609,30 @@
       "gdp_growth": {
         "value": 1.98,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1089,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 57.8,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 56.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 16.32,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 51.8,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 60.6,
+        "year": "2024"
       }
     },
     "LBR": {
@@ -2167,6 +5647,30 @@
       "gdp_growth": {
         "value": 5.02,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 915,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 62.32,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 63.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.88,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 32.23,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 34.9,
+        "year": "2024"
       }
     },
     "LBY": {
@@ -2181,6 +5685,30 @@
       "gdp_growth": {
         "value": 13.37,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6449,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.12,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7.9,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 18.76,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 81.95,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 77.4,
+        "year": "2024"
       }
     },
     "LIE": {
@@ -2190,6 +5718,22 @@
       },
       "gdp_usd": {
         "value": 8905764270,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 220167,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 84.2,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 98.26,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -2205,6 +5749,30 @@
       "gdp_growth": {
         "value": 2.92,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 32959,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.2,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.73,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 89.16,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "LUX": {
@@ -2219,6 +5787,30 @@
       "gdp_growth": {
         "value": 0.64,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 147252,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 83.2,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 1.9,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.34,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 99.13,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "MAC": {
@@ -2233,6 +5825,26 @@
       "gdp_growth": {
         "value": 4.67,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 75902,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 83.33,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.35,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 89.83,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "MDG": {
@@ -2247,6 +5859,30 @@
       "gdp_growth": {
         "value": 3,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 599,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 63.84,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 43,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.04,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 18.68,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 42.5,
+        "year": "2024"
       }
     },
     "MWI": {
@@ -2261,6 +5897,30 @@
       "gdp_growth": {
         "value": 1.89,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 672,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.56,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 38,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.07,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 18.96,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 15.6,
+        "year": "2024"
       }
     },
     "MYS": {
@@ -2275,6 +5935,30 @@
       "gdp_growth": {
         "value": 5.17,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 13125,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.82,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.76,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 98.02,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "MDV": {
@@ -2289,6 +5973,30 @@
       "gdp_growth": {
         "value": 6.31,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 14615,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 81.28,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.51,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 85.24,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "MLI": {
@@ -2303,6 +6011,30 @@
       "gdp_growth": {
         "value": 5.6,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1193,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 60.67,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 47.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.83,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 36.8,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 49.5,
+        "year": "2024"
       }
     },
     "MLT": {
@@ -2317,6 +6049,30 @@
       "gdp_growth": {
         "value": 3.96,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 47907,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.96,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.9,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 93.86,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "MHL": {
@@ -2331,6 +6087,26 @@
       "gdp_growth": {
         "value": 2.28,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 8489,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.08,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 22.7,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 65.92,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 97.2,
+        "year": "2024"
       }
     },
     "MRT": {
@@ -2345,6 +6121,30 @@
       "gdp_growth": {
         "value": 4.03,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2198,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 68.71,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 30.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 10.32,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 45.78,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 52.2,
+        "year": "2024"
       }
     },
     "MUS": {
@@ -2359,6 +6159,30 @@
       "gdp_growth": {
         "value": 3.15,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 12991,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.79,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 13.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.63,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 73.31,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "MEX": {
@@ -2373,6 +6197,30 @@
       "gdp_growth": {
         "value": 0.56,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 13889,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.26,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 12.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.67,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 83.12,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99.8,
+        "year": "2024"
       }
     },
     "FSM": {
@@ -2387,6 +6235,26 @@
       "gdp_growth": {
         "value": 1.06,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 4414,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.36,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 20.3,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 39.52,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 88.9,
+        "year": "2024"
       }
     },
     "MDA": {
@@ -2401,6 +6269,30 @@
       "gdp_growth": {
         "value": 2.42,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 8622,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.33,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 15.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 1.5,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 77.37,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "MCO": {
@@ -2414,6 +6306,26 @@
       },
       "gdp_growth": {
         "value": 8.51,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 288002,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 86.5,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.2,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 99.04,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -2429,6 +6341,30 @@
       "gdp_growth": {
         "value": 6.84,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 7108,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.4,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 11.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.23,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 85.12,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99.1,
+        "year": "2024"
       }
     },
     "MNE": {
@@ -2443,6 +6379,30 @@
       "gdp_growth": {
         "value": 2.74,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 14817,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.89,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 1.9,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 13.57,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 88.88,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "MAR": {
@@ -2457,6 +6417,30 @@
       "gdp_growth": {
         "value": 4.6,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 4672,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.49,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 14.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 9,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 91.2,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "MOZ": {
@@ -2471,6 +6455,30 @@
       "gdp_growth": {
         "value": -0.52,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 627,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 63.8,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 43.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.63,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 20.53,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 36.9,
+        "year": "2024"
       }
     },
     "MMR": {
@@ -2485,6 +6493,30 @@
       "gdp_growth": {
         "value": -2.01,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1489,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.09,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 32.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.05,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 45.45,
+        "year": "2020"
+      },
+      "electricity": {
+        "value": 80.4,
+        "year": "2024"
       }
     },
     "NAM": {
@@ -2499,6 +6531,30 @@
       "gdp_growth": {
         "value": 1.73,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 4876,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.52,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 36.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 19.29,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 64.87,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 59.3,
+        "year": "2024"
       }
     },
     "NRU": {
@@ -2513,6 +6569,26 @@
       "gdp_growth": {
         "value": 2.14,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 14640,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 62.28,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7.7,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 83.01,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "NPL": {
@@ -2527,6 +6603,30 @@
       "gdp_growth": {
         "value": 4.43,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1536,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 70.64,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 22.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 10.46,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 46.32,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 97.9,
+        "year": "2024"
       }
     },
     "NLD": {
@@ -2541,6 +6641,30 @@
       "gdp_growth": {
         "value": 1.78,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 73684,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 81.97,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.87,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 97.01,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "NCL": {
@@ -2554,6 +6678,22 @@
       },
       "gdp_growth": {
         "value": -13.5,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 29213,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 78.92,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 11.17,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -2569,6 +6709,30 @@
       "gdp_growth": {
         "value": 0.46,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 49591,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.01,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.08,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 93.52,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "NIC": {
@@ -2583,6 +6747,30 @@
       "gdp_growth": {
         "value": 4.92,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3173,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.1,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 9.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.04,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 61.4,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 88.7,
+        "year": "2024"
       }
     },
     "NER": {
@@ -2597,6 +6785,30 @@
       "gdp_growth": {
         "value": 7.01,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 775,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 61.43,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 65.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 0.39,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 15.56,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 21.3,
+        "year": "2024"
       }
     },
     "NGA": {
@@ -2611,6 +6823,30 @@
       "gdp_growth": {
         "value": 4.01,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1224,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 54.63,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 69.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.06,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 41.21,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 62.5,
+        "year": "2024"
       }
     },
     "MKD": {
@@ -2625,6 +6861,30 @@
       "gdp_growth": {
         "value": 3.49,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 10490,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.62,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 12.26,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 93.1,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "MNP": {
@@ -2639,6 +6899,18 @@
       "gdp_growth": {
         "value": 16.64,
         "year": "2022"
+      },
+      "gdp_pc": {
+        "value": 23786,
+        "year": "2022"
+      },
+      "life_exp": {
+        "value": 78.95,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "NOR": {
@@ -2653,6 +6925,30 @@
       "gdp_growth": {
         "value": 1.09,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 94594,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 83.16,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.64,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 99,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "OMN": {
@@ -2667,6 +6963,30 @@
       "gdp_growth": {
         "value": 2.4,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 19947,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 80.25,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 8.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.25,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 95.25,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "PAK": {
@@ -2681,6 +7001,30 @@
       "gdp_growth": {
         "value": 3.7,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1596,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.8,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 48.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.42,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 57.25,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 95.7,
+        "year": "2024"
       }
     },
     "PLW": {
@@ -2695,6 +7039,26 @@
       "gdp_growth": {
         "value": 6.29,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 19532,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 69.38,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 18.6,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 83.93,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "PAN": {
@@ -2709,6 +7073,30 @@
       "gdp_growth": {
         "value": 4.35,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 19790,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 79.78,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 12,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.36,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 72.77,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 96,
+        "year": "2024"
       }
     },
     "PNG": {
@@ -2723,6 +7111,30 @@
       "gdp_growth": {
         "value": 5.64,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3020,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 66.26,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 31.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.57,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 18.81,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 43.3,
+        "year": "2024"
       }
     },
     "PRY": {
@@ -2737,6 +7149,30 @@
       "gdp_growth": {
         "value": 6.64,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 7027,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.98,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 14.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.8,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 81.58,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99.8,
+        "year": "2024"
       }
     },
     "PER": {
@@ -2751,6 +7187,30 @@
       "gdp_growth": {
         "value": 3.43,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 9684,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.94,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 11,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.12,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 81.96,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 96.5,
+        "year": "2024"
       }
     },
     "PHL": {
@@ -2765,6 +7225,30 @@
       "gdp_growth": {
         "value": 4.4,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 4171,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 69.95,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 21.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.23,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 67.26,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 94.8,
+        "year": "2024"
       }
     },
     "POL": {
@@ -2779,6 +7263,30 @@
       "gdp_growth": {
         "value": 3.57,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 28420,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 78.41,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.98,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 88.58,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "PRT": {
@@ -2793,6 +7301,30 @@
       "gdp_growth": {
         "value": 1.86,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 32082,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.38,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.16,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 88.49,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "PRI": {
@@ -2807,6 +7339,26 @@
       "gdp_growth": {
         "value": 0.32,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 40620,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 81.9,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.99,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 87.29,
+        "year": "2022"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "QAT": {
@@ -2821,6 +7373,30 @@
       "gdp_growth": {
         "value": 2.9,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 72525,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.52,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 0.13,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 98.09,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "ROU": {
@@ -2835,6 +7411,30 @@
       "gdp_growth": {
         "value": 0.68,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 22538,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.46,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.99,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 91.29,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "RUS": {
@@ -2849,6 +7449,30 @@
       "gdp_growth": {
         "value": 1,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 17547,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.44,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.13,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 94.36,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "RWA": {
@@ -2863,6 +7487,30 @@
       "gdp_growth": {
         "value": 9.38,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1124,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 68.02,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 29.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 11.36,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 31.7,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 72,
+        "year": "2024"
       }
     },
     "WSM": {
@@ -2877,6 +7525,26 @@
       "gdp_growth": {
         "value": 4.2,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 5873,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.83,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 12.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SMR": {
@@ -2891,6 +7559,26 @@
       "gdp_growth": {
         "value": 0.4,
         "year": "2023"
+      },
+      "gdp_pc": {
+        "value": 59871,
+        "year": "2023"
+      },
+      "life_exp": {
+        "value": 85.82,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 1.2,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 97.35,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "STP": {
@@ -2905,6 +7593,30 @@
       "gdp_growth": {
         "value": 1.03,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 4084,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 69.91,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 9.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 9.13,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 59.12,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 77.7,
+        "year": "2024"
       }
     },
     "SAU": {
@@ -2919,6 +7631,30 @@
       "gdp_growth": {
         "value": 4.5,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 34537,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 78.98,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.04,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 100,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SEN": {
@@ -2933,6 +7669,30 @@
       "gdp_growth": {
         "value": 6.68,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1955,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 68.92,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 28.9,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.73,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 60.12,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 82.9,
+        "year": "2024"
       }
     },
     "SRB": {
@@ -2947,6 +7707,30 @@
       "gdp_growth": {
         "value": 2.03,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 15262,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 75.97,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 7.12,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 87.69,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SYC": {
@@ -2961,6 +7745,26 @@
       "gdp_growth": {
         "value": 5.8,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 19449,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.3,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 12.9,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 87.82,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SLE": {
@@ -2975,6 +7779,30 @@
       "gdp_growth": {
         "value": 4.61,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 846,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 61.96,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 54.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.15,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 25.1,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 39.2,
+        "year": "2024"
       }
     },
     "SGP": {
@@ -2989,6 +7817,30 @@
       "gdp_growth": {
         "value": 5.03,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 98814,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 83.35,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.82,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 94.38,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SXM": {
@@ -3003,6 +7855,18 @@
       "gdp_growth": {
         "value": 3.4,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 42978,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.53,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SVK": {
@@ -3017,6 +7881,30 @@
       "gdp_growth": {
         "value": 0.81,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 28544,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 78.37,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 5.3,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.36,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 89.83,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SVN": {
@@ -3031,6 +7919,30 @@
       "gdp_growth": {
         "value": 1.06,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 37376,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 82.29,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 1.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.17,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 90.76,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SLB": {
@@ -3045,6 +7957,30 @@
       "gdp_growth": {
         "value": 3.62,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 2086,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 70.69,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 16.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 1.43,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 29.04,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 81.5,
+        "year": "2024"
       }
     },
     "SOM": {
@@ -3059,6 +7995,30 @@
       "gdp_growth": {
         "value": 2.99,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 661,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 58.97,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 65.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 18.95,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 27.94,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 54.4,
+        "year": "2024"
       }
     },
     "ZAF": {
@@ -3073,12 +8033,52 @@
       "gdp_growth": {
         "value": 1.11,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6598,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 66.31,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 24.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 32.39,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 78.36,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 90.2,
+        "year": "2024"
       }
     },
     "SSD": {
       "population": {
         "value": 12188788,
         "year": "2025"
+      },
+      "life_exp": {
+        "value": 57.74,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 71.9,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 12.37,
+        "year": "2023"
+      },
+      "electricity": {
+        "value": 5.4,
+        "year": "2024"
       }
     },
     "ESP": {
@@ -3093,6 +8093,30 @@
       "gdp_growth": {
         "value": 2.82,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 38627,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 83.89,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 10.38,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 95.76,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "LKA": {
@@ -3107,6 +8131,30 @@
       "gdp_growth": {
         "value": 4.95,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 5002,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.67,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 5.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 54.59,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "KNA": {
@@ -3121,6 +8169,26 @@
       "gdp_growth": {
         "value": 2.69,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 25223,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.28,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 13.9,
+        "year": "2024"
+      },
+      "internet": {
+        "value": 76.88,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "LCA": {
@@ -3135,6 +8203,30 @@
       "gdp_growth": {
         "value": -0.57,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 14746,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.85,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 15.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 9.45,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 68.21,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "MAF": {
@@ -3149,6 +8241,18 @@
       "gdp_growth": {
         "value": 4.9,
         "year": "2021"
+      },
+      "gdp_pc": {
+        "value": 21668,
+        "year": "2021"
+      },
+      "life_exp": {
+        "value": 80.44,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "VCT": {
@@ -3163,6 +8267,30 @@
       "gdp_growth": {
         "value": 3.39,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 12562,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.38,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 10.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 18,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 76.19,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SDN": {
@@ -3177,6 +8305,26 @@
       "gdp_growth": {
         "value": 3.06,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1165,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 66.52,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 42.9,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 7.53,
+        "year": "2022"
+      },
+      "electricity": {
+        "value": 66,
+        "year": "2024"
       }
     },
     "SUR": {
@@ -3191,6 +8339,30 @@
       "gdp_growth": {
         "value": 1.79,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 7070,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.76,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 14.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 7.83,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 87.4,
+        "year": "2023"
+      },
+      "electricity": {
+        "value": 99,
+        "year": "2024"
       }
     },
     "SWE": {
@@ -3205,6 +8377,30 @@
       "gdp_growth": {
         "value": 1.54,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 63133,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 84.06,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.69,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 95.77,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "CHE": {
@@ -3219,6 +8415,30 @@
       "gdp_growth": {
         "value": 1.3,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 114769,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 84.41,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.87,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 97.32,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "SYR": {
@@ -3233,6 +8453,26 @@
       "gdp_growth": {
         "value": -0.2,
         "year": "2022"
+      },
+      "gdp_pc": {
+        "value": 1057,
+        "year": "2022"
+      },
+      "life_exp": {
+        "value": 72.56,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 17.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 13.57,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 89.3,
+        "year": "2024"
       }
     },
     "TJK": {
@@ -3247,6 +8487,30 @@
       "gdp_growth": {
         "value": 8.4,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1637,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.93,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 23.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 6.93,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 55.79,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 99.9,
+        "year": "2024"
       }
     },
     "TZA": {
@@ -3261,6 +8525,30 @@
       "gdp_growth": {
         "value": 5.85,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1319,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.21,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 28.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 1.57,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 31.16,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 52.4,
+        "year": "2024"
       }
     },
     "THA": {
@@ -3275,6 +8563,30 @@
       "gdp_growth": {
         "value": 2.44,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 8057,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.56,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 0.78,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 90.87,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "TLS": {
@@ -3289,6 +8601,30 @@
       "gdp_growth": {
         "value": 6.98,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1341,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.9,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 34.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 1.59,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 35.04,
+        "year": "2021"
+      },
+      "electricity": {
+        "value": 94.3,
+        "year": "2024"
       }
     },
     "TGO": {
@@ -3303,6 +8639,30 @@
       "gdp_growth": {
         "value": 6.31,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1384,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 62.94,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 34.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 39.48,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 61.1,
+        "year": "2024"
       }
     },
     "TON": {
@@ -3317,6 +8677,30 @@
       "gdp_growth": {
         "value": 2.8,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6547,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.07,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.01,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 67.44,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "TTO": {
@@ -3331,6 +8715,30 @@
       "gdp_growth": {
         "value": -0.79,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 18967,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 73.62,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 17,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 3.33,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 82.16,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "TUN": {
@@ -3345,6 +8753,30 @@
       "gdp_growth": {
         "value": 2.49,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 4657,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 76.71,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 9.7,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 15.11,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 76.5,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "TUR": {
@@ -3359,6 +8791,30 @@
       "gdp_growth": {
         "value": 3.6,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 18599,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 77.42,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 8.52,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 89.77,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "TKM": {
@@ -3373,6 +8829,26 @@
       "gdp_growth": {
         "value": 6.3,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6540,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 70.2,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 30.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.27,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "TCA": {
@@ -3386,6 +8862,22 @@
       },
       "gdp_growth": {
         "value": 5.64,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 37507,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 78.18,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -3401,6 +8893,22 @@
       "gdp_growth": {
         "value": 1.64,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 6041,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 67.26,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 16.5,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "UGA": {
@@ -3415,6 +8923,30 @@
       "gdp_growth": {
         "value": 6.33,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1206,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 68.49,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 35.9,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.75,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 8.95,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 55.3,
+        "year": "2024"
       }
     },
     "UKR": {
@@ -3429,6 +8961,30 @@
       "gdp_growth": {
         "value": 1.82,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 5866,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 74.69,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 7.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 9.83,
+        "year": "2021"
+      },
+      "internet": {
+        "value": 82.47,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "ARE": {
@@ -3442,6 +8998,30 @@
       },
       "gdp_growth": {
         "value": 3.99,
+        "year": "2024"
+      },
+      "gdp_pc": {
+        "value": 50274,
+        "year": "2024"
+      },
+      "life_exp": {
+        "value": 83.07,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 3.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 2.17,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 100,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
         "year": "2024"
       }
     },
@@ -3457,6 +9037,30 @@
       "gdp_growth": {
         "value": 1.39,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 57602,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 81.39,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 4.1,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.75,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 95.47,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "USA": {
@@ -3471,6 +9075,30 @@
       "gdp_growth": {
         "value": 2.16,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 90027,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 78.89,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 5.5,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.2,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 94.69,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "URY": {
@@ -3485,6 +9113,30 @@
       "gdp_growth": {
         "value": 1.78,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 25216,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 78.29,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 6.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 7.52,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 91.99,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "UZB": {
@@ -3499,6 +9151,30 @@
       "gdp_growth": {
         "value": 7.7,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3968,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.53,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 12.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 4.62,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 89.51,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "VUT": {
@@ -3513,6 +9189,26 @@
       "gdp_growth": {
         "value": 3.05,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 4039,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 71.65,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 14.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.07,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 65.5,
+        "year": "2024"
       }
     },
     "VEN": {
@@ -3527,6 +9223,30 @@
       "gdp_growth": {
         "value": 1.57,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3495,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 72.67,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 21.2,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.31,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 76.68,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "VNM": {
@@ -3541,6 +9261,30 @@
       "gdp_growth": {
         "value": 8.02,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 5066,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 74.74,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 12,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 1.52,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 84.15,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "VIR": {
@@ -3555,6 +9299,22 @@
       "gdp_growth": {
         "value": -1.31,
         "year": "2022"
+      },
+      "gdp_pc": {
+        "value": 44321,
+        "year": "2022"
+      },
+      "life_exp": {
+        "value": 80.77,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 11.44,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "PSE": {
@@ -3569,12 +9329,52 @@
       "gdp_growth": {
         "value": 4.34,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3171,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 69.21,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 17,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 24.42,
+        "year": "2022"
+      },
+      "internet": {
+        "value": 86.64,
+        "year": "2023"
+      },
+      "electricity": {
+        "value": 100,
+        "year": "2024"
       }
     },
     "YEM": {
       "population": {
         "value": 41773878,
         "year": "2025"
+      },
+      "life_exp": {
+        "value": 69.44,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 33.8,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 17.32,
+        "year": "2025"
+      },
+      "electricity": {
+        "value": 86.3,
+        "year": "2024"
       }
     },
     "ZMB": {
@@ -3589,6 +9389,30 @@
       "gdp_growth": {
         "value": 3.76,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 1318,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 66.53,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 34.6,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 5.92,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 17.1,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 53.6,
+        "year": "2024"
       }
     },
     "ZWE": {
@@ -3603,6 +9427,30 @@
       "gdp_growth": {
         "value": 8.11,
         "year": "2025"
+      },
+      "gdp_pc": {
+        "value": 3021,
+        "year": "2025"
+      },
+      "life_exp": {
+        "value": 63.06,
+        "year": "2024"
+      },
+      "infant_mort": {
+        "value": 62.4,
+        "year": "2024"
+      },
+      "unemployment": {
+        "value": 9.29,
+        "year": "2025"
+      },
+      "internet": {
+        "value": 41.64,
+        "year": "2024"
+      },
+      "electricity": {
+        "value": 62,
+        "year": "2024"
       }
     }
   }

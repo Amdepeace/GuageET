@@ -169,7 +169,7 @@ export type WorldIndicatorsFile = {
   source: string;
   sourceUrl: string;
   fetchedAt: string;
-  countries: Record<string, { population?: WorldIndicatorValue; gdp_usd?: WorldIndicatorValue; gdp_growth?: WorldIndicatorValue }>;
+  countries: Record<string, Partial<Record<"population" | "gdp_usd" | "gdp_growth" | "gdp_pc" | "life_exp" | "infant_mort" | "unemployment" | "internet" | "electricity", WorldIndicatorValue>>>;
 };
 export type RelationProfile = { current: string; history: string; investment: string; sources: { title: string; url: string }[] };
 export type RelationsFile = { profiles: Record<string, RelationProfile> };
@@ -218,12 +218,14 @@ export type IndicatorConfig = {
   label: string;
   callsign: string;
   unit: string;
-  format: "pct" | "usd" | "count" | "rate";
+  format: "pct" | "usd" | "count" | "rate" | "num";
   frequency: Frequency;
   expectedRefreshDays: number;
   higherIsBetter: boolean | null;
   worldBank: string;
   imf: string | null;
+  /** vitals strip = no group; the rest appear in the People & development section */
+  group?: "health" | "labour" | "access" | "structure";
 };
 
 export type PowerSource = { title: string; url: string };

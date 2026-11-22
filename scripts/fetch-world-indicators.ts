@@ -10,6 +10,12 @@ const INDICATORS: { id: string; wb: string }[] = [
   { id: "population", wb: "SP.POP.TOTL" },
   { id: "gdp_usd", wb: "NY.GDP.MKTP.CD" },
   { id: "gdp_growth", wb: "NY.GDP.MKTP.KD.ZG" },
+  { id: "gdp_pc", wb: "NY.GDP.PCAP.CD" },
+  { id: "life_exp", wb: "SP.DYN.LE00.IN" },
+  { id: "infant_mort", wb: "SP.DYN.IMRT.IN" },
+  { id: "unemployment", wb: "SL.UEM.TOTL.ZS" },
+  { id: "internet", wb: "IT.NET.USER.ZS" },
+  { id: "electricity", wb: "EG.ELC.ACCS.ZS" },
 ];
 
 type WbRow = { countryiso3code: string; date: string; value: number | null };
@@ -33,7 +39,7 @@ async function main() {
         if (!cur || r.date > cur.year) latest.set(r.countryiso3code, { value: r.value, year: r.date });
       }
       for (const [iso3, v] of latest) {
-        (out[iso3] ??= {})[ind.id] = { value: Number(v.value.toFixed(ind.id === "gdp_growth" ? 2 : 0)), year: v.year };
+        (out[iso3] ??= {})[ind.id] = { value: Number(v.value.toFixed(["gdp_growth", "life_exp", "infant_mort", "unemployment", "internet", "electricity"].includes(ind.id) ? 2 : 0)), year: v.year };
       }
       await new Promise((r) => setTimeout(r, 400));
     }

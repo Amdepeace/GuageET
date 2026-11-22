@@ -19,6 +19,8 @@ export function VitalTile({
   const prev = h.at(-2);
   const fmt = (v: number) => formatValue(v, ind.format);
   const delta = last && prev ? formatDelta(last.value, prev.value, ind.format) : null;
+  // surveys (poverty, stunting, literacy) are only run every few years: say so rather than let an old value pass as current
+  const dated = !!last && new Date().getUTCFullYear() - Number(last.period.slice(0, 4)) >= 4;
   const pts = h.slice(-12).map((o) => ({ label: o.period, value: o.value }));
 
   return (
@@ -63,6 +65,7 @@ export function VitalTile({
             {last.source}
           </a>
           {stale && <span className="stale-tag">STALE</span>}
+          {dated && <span className="stale-tag" title="Latest published value is several years old (survey-based indicator)">DATED</span>}
         </div>
       )}
     </div>

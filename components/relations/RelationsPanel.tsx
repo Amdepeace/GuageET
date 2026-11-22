@@ -3,9 +3,9 @@ import type { CountryRelations } from "@/lib/relations";
 import { compact } from "@/lib/format";
 import { Field } from "../shell/Drawer";
 
-function indValue(v: { value: number; year: string } | null, format: "count" | "usd" | "pct") {
+function indValue(v: { value: number; year: string } | null, format: "count" | "usd" | "pct" | "num") {
   if (!v) return <span className="muted">—</span>;
-  const s = format === "usd" ? `$${compact(v.value)}` : format === "pct" ? `${v.value.toFixed(1)}%` : compact(v.value);
+  const s = format === "usd" ? `$${compact(v.value)}` : format === "pct" ? `${v.value.toFixed(1)}%` : format === "num" ? v.value.toFixed(1) : compact(v.value);
   return (
     <>
       <span className="mono">{s}</span> <span className="muted text-[10px]">’{v.year.slice(2)}</span>
