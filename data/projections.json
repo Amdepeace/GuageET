@@ -1,7 +1,7 @@
 {
   "source": "IMF WEO projections",
   "sourceUrl": "https://www.imf.org/en/Publications/WEO",
-  "fetchedAt": "2026-11-21T11:04:51.016Z",
+  "fetchedAt": "2026-11-22T11:40:05.464Z",
   "available": true,
   "note": "IMF staff estimates and projections as last published (WEO is revised each April and October); they are the IMF's, not this dashboard's. Projections are conditional on the IMF's assumptions and often miss in a crisis.",
   "series": [

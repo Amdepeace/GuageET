@@ -1,7 +1,7 @@
 {
   "source": "ACLED via HDX HAPI",
   "sourceUrl": "https://hdx-hapi.readthedocs.io/en/latest/data_usage_guides/coordination_and_context/#conflict-events",
-  "fetchedAt": "2026-11-21T11:04:09.325Z",
+  "fetchedAt": "2026-11-22T11:39:35.206Z",
   "available": true,
   "note": "ACLED data via HDX HAPI. Counts are reported events; areas with little media or partner reporting are under-counted, and recent months are often revised upward. Event counts say nothing about the scale of each event.",
   "through": "2026-10",
@@ -205,14 +205,14 @@
     "ET0305": {
       "name": "North Shewa (AM)",
       "region": "Amhara",
-      "events": 205,
-      "fatalities": 618,
+      "events": 207,
+      "fatalities": 620,
       "eventsPrior": 257,
       "fatalitiesPrior": 629,
       "byType": {
-        "civilian_targeting": 17,
+        "civilian_targeting": 18,
         "demonstration": 5,
-        "political_violence": 183
+        "political_violence": 184
       }
     },
     "ET0306": {
@@ -348,14 +348,14 @@
     "ET0404": {
       "name": "Jimma",
       "region": "Oromia",
-      "events": 13,
+      "events": 15,
       "fatalities": 7,
       "eventsPrior": 35,
       "fatalitiesPrior": 14,
       "byType": {
-        "civilian_targeting": 2,
+        "civilian_targeting": 3,
         "demonstration": 4,
-        "political_violence": 7
+        "political_violence": 8
       }
     },
     "ET0405": {
@@ -1048,7 +1048,7 @@
       }
     },
     "ET07-XXX": {
-      "name": "Konso",
+      "name": "Gofa",
       "region": "Central Ethiopia",
       "events": 0,
       "fatalities": 0,
@@ -1372,8 +1372,8 @@
     },
     {
       "month": "2026-10",
-      "events": 420,
-      "fatalities": 1014
+      "events": 424,
+      "fatalities": 1016
     }
   ]
 }

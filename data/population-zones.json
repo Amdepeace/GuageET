@@ -1,7 +1,7 @@
 {
   "source": "OCHA COD-PS via HDX HAPI",
   "sourceUrl": "https://data.humdata.org/dataset/cod-ps-eth",
-  "fetchedAt": "2026-11-21T15:06:57.005Z",
+  "fetchedAt": "2026-11-22T11:48:34.491Z",
   "available": true,
   "note": "Reference year 2022. OCHA COD-PS population statistics (from the national statistics office's projections), by sex and 5-year age band. They differ from the UN figures used on the national charts, and some areas are absent from the source, so the zone totals add up to less than the national estimate. There are no subnational projections in these sources.",
   "period": "2022",
@@ -3060,6 +3060,44 @@
         6028,
         4574,
         13196
+      ]
+    },
+    {
+      "id": "ET07-XXX",
+      "name": "Gamo",
+      "region": "Central Ethiopia",
+      "total": 635948,
+      "m": [
+        15898,
+        51478,
+        169891,
+        34553,
+        2736,
+        8020,
+        49827,
+        5963,
+        23657,
+        36755,
+        2445,
+        17565,
+        5514,
+        15343
+      ],
+      "f": [
+        4155,
+        16279,
+        14990,
+        34839,
+        22453,
+        7696,
+        1634,
+        49594,
+        12973,
+        3542,
+        2568,
+        576,
+        5560,
+        8263
       ]
     },
     {

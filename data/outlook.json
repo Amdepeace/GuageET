@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T11:06:11.569Z",
+  "generatedAt": "2026-11-22T11:48:40.426Z",
   "available": true,
   "skillful": false,
   "series": "Conflict events per month, Ethiopia (ACLED via HDX HAPI)",
@@ -155,7 +155,7 @@
     },
     {
       "month": "2026-10",
-      "value": 420
+      "value": 424
     }
   ],
   "forecast": []

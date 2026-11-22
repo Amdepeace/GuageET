@@ -922,5 +922,17 @@
     "kind": "source_recovered",
     "source": "IMF PortWatch (ports)",
     "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-22T11:39:14.237Z",
+    "kind": "source_error",
+    "source": "World Bank IDS",
+    "message": "Fetch failed: ratios: HTTP 502 for https://api.worldbank.org/v2/country/ETH/indicator/DT.DOD.DECT.CD;DT.DOD.DECT.GN.ZS;DT.TDS.DECT.CD;FI.RES.TOTL.DT.ZS;DT.DOD.DIMF.CD;DT.DOD.DSTC.CD?source=2&format=json&per_page=500&date=2008:2026; DT.DOD.PBND.CD: HTTP 502 for https://api.worldbank.org/v2/sources/6/country/ETH/series/DT.DOD.PBND.CD/time/YR2025?format=json&per_page=500"
+  },
+  {
+    "at": "2026-11-22T11:48:34.249Z",
+    "kind": "source_error",
+    "source": "World Bank / UN World Population Prospects",
+    "message": "Fetch failed: HTTP 502 for https://api.worldbank.org/v2/country/ETH/indicator/SP.URB.TOTL.IN.ZS?source=2&date=1960:2050&format=json&per_page=20000"
   }
 ]
