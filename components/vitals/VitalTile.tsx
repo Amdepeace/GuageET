@@ -65,6 +65,7 @@ export function VitalTile({
             {last.source}
           </a>
           {stale && <span className="stale-tag">STALE</span>}
+          {ind.rebase && <span className="stale-tag" title="GDP-based: still on the old base after Ethiopia's November 2026 rebasing. See the Rebase tab.">REBASE</span>}
           {dated && <span className="stale-tag" title="Latest published value is several years old (survey-based indicator)">DATED</span>}
         </div>
       )}

@@ -22,6 +22,9 @@ import tradeJson from "@/data/trade.json";
 import alertsJson from "@/data/alerts.json";
 import timelineJson from "@/data/curated/timeline.json";
 import worldIndicatorsJson from "@/data/world-indicators.json";
+import rebaseCuratedJson from "@/data/curated/rebase.json";
+import rebaseLiveJson from "@/data/rebase.json";
+import type { RebaseCurated, RebaseLive } from "./schema";
 import blocsJson from "@/config/blocs.json";
 import relationsJson from "@/data/curated/relations.json";
 import debtJson from "@/data/debt.json";
@@ -132,6 +135,7 @@ export type DashboardData = {
   alerts: AlertsFile;
   timeline: TimelineEvent[];
   worldIndicators: WorldIndicatorsFile;
+  rebase: { curated: RebaseCurated; live: RebaseLive };
   blocs: Bloc[];
   relations: RelationsFile;
   debt: DebtFile;
@@ -177,6 +181,7 @@ export function loadData(): DashboardData {
     alerts: alertsJson as AlertsFile,
     timeline: (timelineJson as { events: TimelineEvent[] }).events,
     worldIndicators: worldIndicatorsJson as WorldIndicatorsFile,
+    rebase: { curated: rebaseCuratedJson as unknown as RebaseCurated, live: rebaseLiveJson as unknown as RebaseLive },
     blocs: (blocsJson as { blocs: Bloc[] }).blocs,
     relations: relationsJson as RelationsFile,
     debt: debtJson as DebtFile,

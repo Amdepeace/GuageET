@@ -6,7 +6,11 @@
       "label": "Birr floated",
       "type": "fx",
       "detail": "The National Bank of Ethiopia moved to a market-based exchange rate, part of an IMF programme. The official birr/USD rate jumped sharply.",
-      "indicators": ["fx_usd", "inflation", "etb_usd_daily"],
+      "indicators": [
+        "fx_usd",
+        "inflation",
+        "etb_usd_daily"
+      ],
       "sourceUrl": "https://www.imf.org/en/News/Articles/2024/07/29/pr24285-ethiopia-imf-exec-board-approves-eff-arrangement"
     },
     {
@@ -14,7 +18,9 @@
       "label": "GERD inaugurated",
       "type": "power",
       "detail": "The Grand Ethiopian Renaissance Dam was inaugurated at its full 5,150 MW capacity.",
-      "indicators": ["gdp_growth"],
+      "indicators": [
+        "gdp_growth"
+      ],
       "sourceUrl": "https://tractebel-engie.com/en/news/africas-largest-hydropower-scheme-inaugurated-in-ethiopia-doubling-national-power-capacity/"
     },
     {
@@ -22,7 +28,9 @@
       "label": "Red Sea shipping disrupted",
       "type": "conflict",
       "detail": "Attacks on shipping in the Bab el-Mandeb strait from late 2023 cut transit volumes through the Red Sea, raising freight costs on Ethiopia's main trade route.",
-      "indicators": ["external_debt"],
+      "indicators": [
+        "external_debt"
+      ],
       "sourceUrl": "https://portwatch.imf.org/"
     },
     {
@@ -30,8 +38,25 @@
       "label": "GERD first power",
       "type": "power",
       "detail": "The first GERD turbine began generating electricity.",
-      "indicators": ["gdp_growth"],
+      "indicators": [
+        "gdp_growth"
+      ],
       "sourceUrl": "https://en.wikipedia.org/wiki/Grand_Ethiopian_Renaissance_Dam"
+    },
+    {
+      "date": "2026-11-04",
+      "label": "GDP rebased",
+      "type": "policy",
+      "detail": "Ethiopia presented rebased national accounts (base year 2015/16 to 2024/25); the 2024/25 economy was revised up about 59% (press reports). GDP-based series here are still on the old base. See the Rebase tab.",
+      "indicators": [
+        "gdp_growth",
+        "gdp_pc",
+        "exports_gdp",
+        "current_acct",
+        "agri_share",
+        "govt_rev"
+      ],
+      "sourceUrl": "https://www.polity.org.za/article/ethiopia-revises-economy-up-nearly-60-to-201bn-after-gdp-rebasing-2026-11-05"
     }
   ]
 }

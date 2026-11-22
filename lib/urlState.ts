@@ -65,7 +65,7 @@ export const ALL_FAC_CATS: FacCat[] = ["health", "education", "finance", "market
 
 export type Lang = "en" | "am";
 
-export type Tab = "dashboard" | "invest";
+export type Tab = "dashboard" | "invest" | "rebase";
 
 export type ViewState = {
   tab: Tab;
@@ -98,7 +98,7 @@ export function readView(search: string): ViewState {
   const z = Number(q.get("z"));
   const c = q.get("c")?.split(",").map(Number);
   return {
-    tab: q.get("tab") === "invest" ? "invest" : "dashboard",
+    tab: q.get("tab") === "invest" ? "invest" : q.get("tab") === "rebase" ? "rebase" : "dashboard",
     lang: q.get("lang") === "am" ? "am" : "en",
     layers: layers != null ? (layers.split(",").filter((l) => (ALL_LAYERS as string[]).includes(l)) as Layer[]) : DEFAULT_VIEW.layers,
     fac: fc != null ? (fc.split(",").filter((l) => (ALL_FAC_CATS as string[]).includes(l)) as FacCat[]) : DEFAULT_VIEW.fac,

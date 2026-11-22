@@ -28,6 +28,7 @@ import { RsdpPanel } from "./roads/RsdpPanel";
 import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
 import { InvestTab, type GoTarget } from "./invest/InvestTab";
+import { RebaseTab } from "./rebase/RebaseTab";
 import { DemographicsPanel } from "./demography/DemographicsPanel";
 import { GlobeSection } from "./globe/GlobeSection";
 import { VesselDetail } from "./map/VesselDetail";
@@ -300,6 +301,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
   };
   const paletteItems: PaletteItem[] = [
     { id: "t-invest", group: "Tabs", label: "Investment tab", hint: "sectors, pipeline, legal", run: () => setTab("invest") },
+    { id: "t-rebase", group: "Tabs", label: "Rebase tab", hint: "GDP rebasing, Nov 2026", run: () => setTab("rebase") },
     { id: "t-dash", group: "Tabs", label: "Dashboard tab", run: () => setTab("dashboard") },
     ...(data.invest.sectors.map((s) => ({ id: `s-${s.id}`, group: "Investment sectors", label: s.name, hint: s.group, run: () => { setTab("invest"); setTimeout(() => document.getElementById(`sector-${s.id}`)?.scrollIntoView({ behavior: "smooth", block: "center" }), 250); } }))),
     ...SECTIONS.map((sec) => ({ id: sec.id, group: "Go to section", label: sec.label, run: () => goDash({ section: sec.id }) })),
@@ -329,7 +331,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
       const ind = indicators.find((i) => i.id === detail.id)!;
       return (
         <Drawer title={ind.label} callsign={ind.callsign} onClose={closeDetail}>
-          <VitalDetail ind={ind} countries={countries} country={detail.country} onCountry={(c) => setDetail({ ...detail, country: c })} staleSources={staleSources} timeline={timeline} />
+          <VitalDetail ind={ind} countries={countries} country={detail.country} onCountry={(c) => setDetail({ ...detail, country: c })} staleSources={staleSources} timeline={timeline} onRebase={() => { closeDetail(); setTab("rebase"); }} />
         </Drawer>
       );
     }
@@ -461,13 +463,13 @@ export function Dashboard({ data }: { data: DashboardData }) {
       <StatusBar lastSync={lastSync} desks={desks} onDesk={(id) => setDetail({ kind: "desk", id })} theme={theme} onTheme={toggleTheme} onAbout={() => setDetail({ kind: "about" })} />
 
       <div role="tablist" aria-label="Main views" className="flex items-center gap-1 border-b" style={{ borderColor: "var(--line)" }}>
-        {([["dashboard", "Dashboard"], ["invest", "Investment"]] as [Tab, string][]).map(([t, label]) => (
+        {([["dashboard", "Dashboard"], ["invest", "Investment"], ["rebase", "Rebase"]] as [Tab, string][]).map(([t, label]) => (
           <button key={t} type="button" role="tab" aria-selected={view.tab === t} className="px-4 py-2 text-[13px] border-b-2" style={{ borderColor: view.tab === t ? "var(--accent)" : "transparent", color: view.tab === t ? "var(--ink)" : "var(--ink-2)", background: "transparent" }} onClick={() => setTab(t)}>
             {label}
           </button>
         ))}
         <span className="grow" />
-        {view.tab === "invest" && (
+        {view.tab !== "dashboard" && (
           <button type="button" className="ctl" onClick={() => setPaletteOpen(true)} aria-label="Search the dashboard (Ctrl or Cmd plus K)">
             Search <span className="mono muted">⌘K</span>
           </button>
@@ -478,6 +480,8 @@ export function Dashboard({ data }: { data: DashboardData }) {
 
       {view.tab === "invest" ? (
         <InvestTab invest={data.invest} pipeline={data.investPipeline} eth={countries.ETH} esx={data.esx} rates={data.esxRates} onGo={goDash} />
+      ) : view.tab === "rebase" ? (
+        <RebaseTab curated={data.rebase.curated} live={data.rebase.live} indicators={indicators} eth={countries.ETH} onOpenVital={(id) => setDetail({ kind: "vital", id, country: "ETH" })} onGo={(section) => goDash({ section })} />
       ) : (
         <>
       <SectionNav onSearch={() => setPaletteOpen(true)} />

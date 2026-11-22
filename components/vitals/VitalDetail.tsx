@@ -20,6 +20,7 @@ export function VitalDetail({
   onCountry,
   staleSources,
   timeline,
+  onRebase,
 }: {
   ind: IndicatorConfig;
   countries: Record<CountryCode, CountryFile>;
@@ -27,6 +28,7 @@ export function VitalDetail({
   onCountry: (c: CountryCode) => void;
   staleSources: Set<string>;
   timeline: TimelineEvent[];
+  onRebase?: () => void;
 }) {
   const [showTable, setShowTable] = useState(false);
   const [ec, setEc] = useState(false);
@@ -67,6 +69,15 @@ export function VitalDetail({
               {prev && formatDelta(last.value, prev.value, ind.format).text} {prev && <span className="muted">vs {prev.period}</span>}
             </div>
           </div>
+
+          {ind.rebase && country === "ETH" && (
+            <div className="text-[12px] leading-snug p-2 rounded-sm" style={{ border: "1px solid var(--warn)" }}>
+              <b style={{ color: "var(--warn)" }}>GDP rebased, Nov 2026.</b> This figure is on the old GDP base and will be restated when the World Bank and IMF adopt the new series. Do not compare across that break.{" "}
+              {onRebase && (
+                <button type="button" className="ctl" onClick={onRebase}>Open the Rebase tab</button>
+              )}
+            </div>
+          )}
 
           <div className="grid grid-cols-2 gap-3 text-[12px]">
             <Field label="Period">

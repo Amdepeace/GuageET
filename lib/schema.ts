@@ -226,6 +226,8 @@ export type IndicatorConfig = {
   imf: string | null;
   /** vitals strip = no group; the rest appear in the People & development section */
   group?: "health" | "labour" | "access" | "structure";
+  /** "direct" = GDP is the measure or the denominator, so the Nov 2026 rebasing changes it */
+  rebase?: "direct";
 };
 
 export type PowerSource = { title: string; url: string };
@@ -487,4 +489,40 @@ export type PopulationZonesFile = {
   bands: string[];
   zones: PopZone[];
   regions: PopZone[];
+};
+
+// Ethiopia's GDP rebasing (Nov 2026): curated facts and the live World Bank check.
+export type RebaseCurated = {
+  lastVerified: string;
+  announced: string;
+  status: string;
+  oldBase: string;
+  newBase: string;
+  gdpBirr: { period: string; old: number; new: number };
+  revisionPct: number;
+  gdpUsdNew: number;
+  debtToGdpNew: number;
+  reported: { label: string; detail: string }[];
+  officialsSay: string[];
+  previous: string;
+  planned: string[];
+  sources: { title: string; url: string }[];
+};
+export type RebaseLive = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  gdpBirr: { period: string; value: number }[];
+  gdpUsd: { period: string; value: number }[];
+  check: {
+    status: "old_series" | "new_series_visible" | "unclear";
+    latestPeriod: string;
+    wbLatestBirr: number;
+    oldSeriesBirr: number;
+    newSeriesBirr: number;
+    gapToNewPct: number;
+    jumpVsPreviousRunPct: number | null;
+    text: string;
+  };
 };

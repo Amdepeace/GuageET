@@ -24,6 +24,7 @@
     "fetch:demographics": "tsx scripts/fetch-demographics.ts",
     "fetch:population-zones": "tsx scripts/fetch-population-zones.ts",
     "fetch:ports": "tsx scripts/fetch-ports.ts",
+    "fetch:rebase": "tsx scripts/fetch-rebase.ts",
     "fetch:invest-pipeline": "tsx scripts/fetch-invest-pipeline.ts",
     "fetch:esx-rates": "tsx scripts/fetch-esx-rates.ts",
     "fetch:esx": "tsx scripts/fetch-esx.ts",

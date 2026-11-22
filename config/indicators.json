@@ -9,7 +9,8 @@
     "expectedRefreshDays": 400,
     "higherIsBetter": true,
     "worldBank": "NY.GDP.MKTP.KD.ZG",
-    "imf": "NGDP_RPCH"
+    "imf": "NGDP_RPCH",
+    "rebase": "direct"
   },
   {
     "id": "inflation",
@@ -340,7 +341,8 @@
     "higherIsBetter": true,
     "worldBank": "NY.GDP.PCAP.CD",
     "imf": null,
-    "group": "structure"
+    "group": "structure",
+    "rebase": "direct"
   },
   {
     "id": "current_acct",
@@ -353,7 +355,8 @@
     "higherIsBetter": true,
     "worldBank": "BN.CAB.XOKA.GD.ZS",
     "imf": null,
-    "group": "structure"
+    "group": "structure",
+    "rebase": "direct"
   },
   {
     "id": "agri_share",
@@ -366,7 +369,8 @@
     "higherIsBetter": null,
     "worldBank": "NV.AGR.TOTL.ZS",
     "imf": null,
-    "group": "structure"
+    "group": "structure",
+    "rebase": "direct"
   },
   {
     "id": "exports_gdp",
@@ -379,7 +383,8 @@
     "higherIsBetter": true,
     "worldBank": "NE.EXP.GNFS.ZS",
     "imf": null,
-    "group": "structure"
+    "group": "structure",
+    "rebase": "direct"
   },
   {
     "id": "govt_rev",
@@ -392,6 +397,7 @@
     "higherIsBetter": true,
     "worldBank": "GC.REV.XGRT.GD.ZS",
     "imf": null,
-    "group": "structure"
+    "group": "structure",
+    "rebase": "direct"
   }
 ]

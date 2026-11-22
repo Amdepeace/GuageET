@@ -1,0 +1,35 @@
+{
+  "_doc": "Hand-maintained facts about Ethiopia's November 2026 GDP rebasing. Every figure is as REPORTED by the cited outlets; the Ethiopian Statistics Service release itself was not read when this was written. Update when the World Bank, IMF or the statistics service publish the new series. Reviewed with the monthly checklist.",
+  "lastVerified": "2026-11-22",
+  "announced": "2026-11-04",
+  "status": "Reported by press. The statistics service's own release was not read here.",
+  "oldBase": "2015/16",
+  "newBase": "2024/25",
+  "gdpBirr": { "period": "2024/25", "old": 15090000000000, "new": 24030000000000 },
+  "revisionPct": 59.2,
+  "gdpUsdNew": 201420000000,
+  "debtToGdpNew": 27.4,
+  "reported": [
+    { "label": "Size of the revision", "detail": "GDP for the 2024/25 base year rose to about 24.03 trillion birr (about US$201.4 billion), from 15.09 trillion birr under the previous series: up about 59%." },
+    { "label": "Why", "detail": "The 2015/16 base no longer captured structural change, sector growth and newer activities such as digital finance and services." },
+    { "label": "Method", "detail": "Statisticians drew on a fresh agriculture census and new household surveys, with IMF technical assistance." },
+    { "label": "Quarterly GDP", "detail": "Ethiopia plans quarterly GDP reporting under the updated framework." },
+    { "label": "A separate figure", "detail": "Officials also cited about US$210.7 billion for 2025/26. That is a different fiscal year, not the size of the rebasing revision." }
+  ],
+  "officialsSay": [
+    "The change reflects better measurement, not a comparable surge in actual economic activity.",
+    "Per-capita living standards are not directly affected.",
+    "Debt-to-GDP falls to about 27.4% on the new base, but the debt itself and its repayment costs have not changed."
+  ],
+  "previous": "Press reports describe an earlier rebasing that used 2010/11 as its benchmark year, from the 2011/12 fiscal year.",
+  "planned": [
+    "The World Bank and IMF will need to adopt the new series before it appears in their databases, which this dashboard reads.",
+    "Historic years are expected to be restated; how far back and by how much is not stated in the sources read here."
+  ],
+  "sources": [
+    { "title": "BusinessDay: Ethiopia's economy revised up by 60% after GDP rebasing (5 Nov 2026)", "url": "https://www.businessday.co.za/world/africa/2026-11-05-ethiopias-economy-revised-up-by-60-after-gdp-rebasing/" },
+    { "title": "Polity: Ethiopia revises economy up nearly 60% to $201bn after GDP rebasing (5 Nov 2026)", "url": "https://www.polity.org.za/article/ethiopia-revises-economy-up-nearly-60-to-201bn-after-gdp-rebasing-2026-11-05" },
+    { "title": "Ventureburn: Ethiopia becomes Africa's fifth largest economy after data overhaul", "url": "https://ventureburn.com/ethiopia-becomes-africas-fifth-largest-economy-gdp-rebasing/" },
+    { "title": "Addis Fortune: Commission to swap base year in GDP formula (Aug 2026)", "url": "https://addisfortune.news/commission-to-swap-base-year-in-gdp-formula" }
+  ]
+}

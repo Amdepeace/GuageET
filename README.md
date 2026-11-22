@@ -110,6 +110,8 @@ Trade data comes from UN Comtrade's public **preview** endpoint, which needs no 
 
 The IMF DataMapper refused requests from the build sandbox (HTTP 403). The fetcher records this in `data/health.json`, and the System Health panel shows the source as OFFLINE. The dashboard works without it, since the World Bank is the primary source.
 
+The **Rebase** tab (`?tab=rebase`) covers Ethiopia's November 2026 GDP rebasing (base year 2015/16 to 2024/25, GDP up about 59%). It lists which dashboard figures are directly affected (six GDP-based vitals, tagged REBASE), which may be, and which are not; it shows what officials reported (`data/curated/rebase.json`, press-sourced and hand-maintained); and `scripts/fetch-rebase.ts` checks the World Bank daily to tell whether it is still serving the old series. Nothing on the dashboard estimates a rebased value.
+
 ## Freshness rules
 
 - **Stale** is about the source, not the period. A source is NOMINAL if its last successful fetch is within its expected interval, DELAYED if the latest fetch failed but the last success is still within twice the interval, and OFFLINE (tiles marked STALE) beyond that.

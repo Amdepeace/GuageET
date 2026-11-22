@@ -312,6 +312,14 @@
       "access": "Free, no key; omits some areas and differs from UN totals",
       "url": "https://data.humdata.org/dataset/cod-ps-eth",
       "statusKey": "OCHA COD-PS via HDX HAPI"
+    },
+    {
+      "name": "World Bank (rebase check)",
+      "provides": "Daily check of whether the World Bank has adopted Ethiopia's rebased GDP (Rebase tab); compares GDP in birr with the old and new 2024/25 figures",
+      "cadence": "Daily job",
+      "access": "Open API, no key",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CN?locations=ET",
+      "statusKey": "World Bank (rebase check)"
     }
   ]
 }
