@@ -1,7 +1,7 @@
 {
   "source": "World Bank WDI (NY.GDP.MKTP.CN, NY.GDP.MKTP.CD)",
   "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CN?locations=ET",
-  "fetchedAt": "2026-11-22T15:42:02.658Z",
+  "fetchedAt": "2026-11-23T12:47:53.179Z",
   "available": true,
   "gdpBirr": [
     {
@@ -102,7 +102,7 @@
     "oldSeriesBirr": 15090000000000,
     "newSeriesBirr": 24030000000000,
     "gapToNewPct": 59.2,
-    "jumpVsPreviousRunPct": null,
+    "jumpVsPreviousRunPct": 0,
     "text": "The World Bank's 2025 GDP is 15.09 trillion birr, matching the OLD 2024/25 figure of 15.09 trillion birr, not the rebased 24.03 trillion birr. This dashboard is still on the old series."
   }
 }

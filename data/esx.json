@@ -1,7 +1,7 @@
 {
   "source": "Ethiopian Securities Exchange",
   "sourceUrl": "https://esx.et/equity-market/listed-companies/",
-  "fetchedAt": "2026-11-22T11:40:09.209Z",
+  "fetchedAt": "2026-11-23T12:46:55.936Z",
   "available": true,
   "note": "Company list as published on ESX's Listed Companies page. The page carries no prices, so none are shown; for prices use ESX directly.",
   "companies": [

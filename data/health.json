@@ -2,162 +2,169 @@
   "World Bank WDI": {
     "source": "World Bank WDI",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-22T11:30:05.730Z",
-    "lastSuccessAt": "2026-11-22T11:30:05.730Z",
+    "lastAttemptAt": "2026-11-23T12:39:44.761Z",
+    "lastSuccessAt": "2026-11-23T12:39:44.761Z",
     "lastError": null
   },
   "IMF WEO": {
     "source": "IMF WEO",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-16T11:22:48.772Z",
-    "lastSuccessAt": "2026-11-16T11:22:48.772Z",
+    "lastAttemptAt": "2026-11-23T12:47:56.629Z",
+    "lastSuccessAt": "2026-11-23T12:47:56.629Z",
     "lastError": null
   },
   "World Bank (world indicators)": {
     "source": "World Bank (world indicators)",
     "expectedRefreshDays": 30,
-    "lastAttemptAt": "2026-11-22T11:30:07.726Z",
-    "lastSuccessAt": "2026-11-22T11:30:07.726Z",
+    "lastAttemptAt": "2026-11-23T12:42:01.190Z",
+    "lastSuccessAt": "2026-11-23T12:42:01.190Z",
     "lastError": null
   },
   "World Bank Pink Sheet": {
     "source": "World Bank Pink Sheet",
     "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-22T11:30:08.587Z",
-    "lastSuccessAt": "2026-11-22T11:30:08.587Z",
+    "lastAttemptAt": "2026-11-23T12:42:02.514Z",
+    "lastSuccessAt": "2026-11-23T12:42:02.514Z",
     "lastError": null
   },
   "open.er-api.com": {
     "source": "open.er-api.com",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-22T11:30:08.922Z",
-    "lastSuccessAt": "2026-11-22T11:30:08.922Z",
+    "lastAttemptAt": "2026-11-23T12:42:03.067Z",
+    "lastSuccessAt": "2026-11-23T12:42:03.067Z",
     "lastError": null
   },
   "GDELT": {
     "source": "GDELT",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-22T11:30:48.195Z",
+    "lastAttemptAt": "2026-11-23T12:42:43.337Z",
     "lastSuccessAt": null,
-    "lastError": "fetch failed"
+    "lastError": "429 rate limited"
   },
   "IMF PortWatch": {
     "source": "IMF PortWatch",
     "expectedRefreshDays": 2,
-    "lastAttemptAt": "2026-11-22T11:31:03.884Z",
-    "lastSuccessAt": "2026-11-22T11:31:03.884Z",
+    "lastAttemptAt": "2026-11-23T12:43:33.338Z",
+    "lastSuccessAt": "2026-11-23T12:43:33.338Z",
     "lastError": null
   },
   "UN Comtrade": {
     "source": "UN Comtrade",
     "expectedRefreshDays": 40,
-    "lastAttemptAt": "2026-11-22T11:32:53.485Z",
-    "lastSuccessAt": "2026-11-22T11:32:53.485Z",
+    "lastAttemptAt": "2026-11-23T12:45:16.247Z",
+    "lastSuccessAt": "2026-11-23T12:45:16.247Z",
     "lastError": null
   },
   "World Bank IDS": {
     "source": "World Bank IDS",
     "expectedRefreshDays": 400,
-    "lastAttemptAt": "2026-11-22T11:39:14.237Z",
-    "lastSuccessAt": "2026-11-21T11:03:52.115Z",
-    "lastError": "ratios: HTTP 502 for https://api.worldbank.org/v2/country/ETH/indicator/DT.DOD.DECT.CD;DT.DOD.DECT.GN.ZS;DT.TDS.DECT.CD;FI.RES.TOTL.DT.ZS;DT.DOD.DIMF.CD;DT.DOD.DSTC.CD?source=2&format=json&per_page=500&date=2008:2026; DT.DOD.PBND.CD: HTTP 502 for https://api.worldbank.org/v2/sources/6/country/ETH/series/DT.DOD.PBND.CD/time/YR2025?format=json&per_page=500"
+    "lastAttemptAt": "2026-11-23T12:45:17.869Z",
+    "lastSuccessAt": "2026-11-23T12:45:17.869Z",
+    "lastError": null
   },
   "HDX (HAPI)": {
     "source": "HDX (HAPI)",
     "expectedRefreshDays": 30,
-    "lastAttemptAt": "2026-11-22T11:39:20.631Z",
-    "lastSuccessAt": "2026-11-22T11:39:20.631Z",
+    "lastAttemptAt": "2026-11-23T12:45:31.028Z",
+    "lastSuccessAt": "2026-11-23T12:45:31.028Z",
     "lastError": null
   },
   "News RSS": {
     "source": "News RSS",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-22T11:31:00.165Z",
-    "lastSuccessAt": "2026-11-22T11:31:00.165Z",
+    "lastAttemptAt": "2026-11-23T12:43:05.070Z",
+    "lastSuccessAt": "2026-11-23T12:43:05.070Z",
     "lastError": null
   },
   "Open-Meteo Historical Weather (ERA5)": {
     "source": "Open-Meteo Historical Weather (ERA5)",
     "expectedRefreshDays": 168,
-    "lastAttemptAt": "2026-11-22T11:39:34.968Z",
-    "lastSuccessAt": "2026-11-22T11:39:34.968Z",
+    "lastAttemptAt": "2026-11-23T12:45:45.523Z",
+    "lastSuccessAt": "2026-11-23T12:45:45.523Z",
     "lastError": null
   },
   "ACLED via HDX HAPI": {
     "source": "ACLED via HDX HAPI",
     "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-22T11:39:59.417Z",
-    "lastSuccessAt": "2026-11-22T11:39:59.417Z",
+    "lastAttemptAt": "2026-11-23T12:46:33.624Z",
+    "lastSuccessAt": "2026-11-23T12:46:33.624Z",
     "lastError": null
   },
   "Rainfall anomaly (ERA5)": {
     "source": "Rainfall anomaly (ERA5)",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-22T11:40:05.229Z",
-    "lastSuccessAt": "2026-11-22T11:40:05.229Z",
+    "lastAttemptAt": "2026-11-23T12:46:52.043Z",
+    "lastSuccessAt": "2026-11-23T12:46:52.043Z",
     "lastError": null
   },
   "IMF WEO projections": {
     "source": "IMF WEO projections",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-22T11:40:07.923Z",
-    "lastSuccessAt": "2026-11-22T11:40:07.923Z",
+    "lastAttemptAt": "2026-11-23T12:46:54.452Z",
+    "lastSuccessAt": "2026-11-23T12:46:54.452Z",
     "lastError": null
   },
   "Radio Browser directory": {
     "source": "Radio Browser directory",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-22T11:40:08.968Z",
-    "lastSuccessAt": "2026-11-22T11:40:08.968Z",
+    "lastAttemptAt": "2026-11-23T12:46:55.561Z",
+    "lastSuccessAt": "2026-11-23T12:46:55.561Z",
     "lastError": null
   },
   "Ethiopian Securities Exchange": {
     "source": "Ethiopian Securities Exchange",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-22T11:40:12.233Z",
-    "lastSuccessAt": "2026-11-22T11:40:12.233Z",
+    "lastAttemptAt": "2026-11-23T12:46:58.288Z",
+    "lastSuccessAt": "2026-11-23T12:46:58.288Z",
     "lastError": null
   },
   "ESX interbank money market": {
     "source": "ESX interbank money market",
     "expectedRefreshDays": 10,
-    "lastAttemptAt": "2026-11-22T11:40:14.720Z",
-    "lastSuccessAt": "2026-11-22T11:40:14.720Z",
+    "lastAttemptAt": "2026-11-23T12:47:00.838Z",
+    "lastSuccessAt": "2026-11-23T12:47:00.838Z",
     "lastError": null
   },
   "World Bank projects (Ethiopia)": {
     "source": "World Bank projects (Ethiopia)",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-22T11:40:15.380Z",
-    "lastSuccessAt": "2026-11-22T11:40:15.380Z",
+    "lastAttemptAt": "2026-11-23T12:47:02.202Z",
+    "lastSuccessAt": "2026-11-23T12:47:02.202Z",
     "lastError": null
   },
   "Conflict outlook (model)": {
     "source": "Conflict outlook (model)",
     "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-22T11:48:40.427Z",
-    "lastSuccessAt": "2026-11-22T11:48:40.427Z",
+    "lastAttemptAt": "2026-11-23T12:47:56.991Z",
+    "lastSuccessAt": "2026-11-23T12:47:56.991Z",
     "lastError": null
   },
   "IMF PortWatch (ports)": {
     "source": "IMF PortWatch (ports)",
     "expectedRefreshDays": 3,
-    "lastAttemptAt": "2026-11-22T11:40:20.799Z",
-    "lastSuccessAt": "2026-11-22T11:40:20.799Z",
+    "lastAttemptAt": "2026-11-23T12:47:33.411Z",
+    "lastSuccessAt": "2026-11-23T12:47:33.411Z",
     "lastError": null
   },
   "World Bank / UN World Population Prospects": {
     "source": "World Bank / UN World Population Prospects",
     "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-22T11:48:34.249Z",
-    "lastSuccessAt": null,
-    "lastError": "HTTP 502 for https://api.worldbank.org/v2/country/ETH/indicator/SP.URB.TOTL.IN.ZS?source=2&date=1960:2050&format=json&per_page=20000"
+    "lastAttemptAt": "2026-11-23T12:47:50.206Z",
+    "lastSuccessAt": "2026-11-23T12:47:50.206Z",
+    "lastError": null
   },
   "OCHA COD-PS via HDX HAPI": {
     "source": "OCHA COD-PS via HDX HAPI",
     "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-22T11:48:40.135Z",
-    "lastSuccessAt": "2026-11-22T11:48:40.135Z",
+    "lastAttemptAt": "2026-11-23T12:47:52.833Z",
+    "lastSuccessAt": "2026-11-23T12:47:52.833Z",
+    "lastError": null
+  },
+  "World Bank (rebase check)": {
+    "source": "World Bank (rebase check)",
+    "expectedRefreshDays": 30,
+    "lastAttemptAt": "2026-11-23T12:47:53.862Z",
+    "lastSuccessAt": "2026-11-23T12:47:53.862Z",
     "lastError": null
   }
 }
