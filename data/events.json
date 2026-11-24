@@ -946,5 +946,11 @@
     "kind": "source_recovered",
     "source": "World Bank / UN World Population Prospects",
     "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-24T13:43:51.809Z",
+    "kind": "source_error",
+    "source": "IMF PortWatch",
+    "message": "Fetch failed: Bab el-Mandeb Strait: ArcGIS error 400: Invalid URL; Suez Canal: ArcGIS error 400: Invalid URL"
   }
 ]

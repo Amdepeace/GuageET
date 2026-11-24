@@ -1,7 +1,7 @@
 {
   "source": "OCHA COD-PS via HDX HAPI",
   "sourceUrl": "https://data.humdata.org/dataset/cod-ps-eth",
-  "fetchedAt": "2026-11-23T12:47:50.547Z",
+  "fetchedAt": "2026-11-24T13:48:00.353Z",
   "available": true,
   "note": "Reference year 2022. OCHA COD-PS population statistics (from the national statistics office's projections), by sex and 5-year age band. They differ from the UN figures used on the national charts, and some areas are absent from the source, so the zone totals add up to less than the national estimate. There are no subnational projections in these sources.",
   "period": "2022",
