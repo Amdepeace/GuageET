@@ -1,7 +1,7 @@
 {
   "source": "Open-Meteo Historical Weather (ERA5)",
   "sourceUrl": "https://open-meteo.com/en/docs/historical-weather-api",
-  "fetchedAt": "2026-11-25T12:59:17.451Z",
+  "fetchedAt": "2026-11-25T13:22:32.080Z",
   "available": true,
   "note": "ERA5 reanalysis sampled at each region's centre point, so it is a coarse regional screen, not a measurement. Normal = 1991–2020 average for the same 90 calendar days. Regions in a dry season have tiny normals, so percentages there swing widely and are not coloured as anomalies.",
   "baseline": "1991–2020",

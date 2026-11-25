@@ -2,169 +2,169 @@
   "World Bank WDI": {
     "source": "World Bank WDI",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-25T12:54:44.467Z",
-    "lastSuccessAt": "2026-11-25T12:54:44.467Z",
+    "lastAttemptAt": "2026-11-25T13:18:23.917Z",
+    "lastSuccessAt": "2026-11-25T13:18:23.917Z",
     "lastError": null
   },
   "IMF WEO": {
     "source": "IMF WEO",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-23T12:47:56.629Z",
-    "lastSuccessAt": "2026-11-23T12:47:56.629Z",
+    "lastAttemptAt": "2026-11-25T13:22:59.199Z",
+    "lastSuccessAt": "2026-11-25T13:22:59.199Z",
     "lastError": null
   },
   "World Bank (world indicators)": {
     "source": "World Bank (world indicators)",
     "expectedRefreshDays": 30,
-    "lastAttemptAt": "2026-11-25T12:54:50.842Z",
-    "lastSuccessAt": "2026-11-25T12:54:50.842Z",
+    "lastAttemptAt": "2026-11-25T13:18:28.672Z",
+    "lastSuccessAt": "2026-11-25T13:18:28.672Z",
     "lastError": null
   },
   "World Bank Pink Sheet": {
     "source": "World Bank Pink Sheet",
     "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-25T12:54:51.797Z",
-    "lastSuccessAt": "2026-11-25T12:54:51.797Z",
+    "lastAttemptAt": "2026-11-25T13:18:29.495Z",
+    "lastSuccessAt": "2026-11-25T13:18:29.495Z",
     "lastError": null
   },
   "open.er-api.com": {
     "source": "open.er-api.com",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-25T12:54:52.195Z",
-    "lastSuccessAt": "2026-11-25T12:54:52.195Z",
+    "lastAttemptAt": "2026-11-25T13:18:30.281Z",
+    "lastSuccessAt": "2026-11-25T13:18:30.281Z",
     "lastError": null
   },
   "GDELT": {
     "source": "GDELT",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-25T12:55:32.380Z",
+    "lastAttemptAt": "2026-11-25T13:19:13.112Z",
     "lastSuccessAt": null,
-    "lastError": "fetch failed"
+    "lastError": "429 rate limited"
   },
   "IMF PortWatch": {
     "source": "IMF PortWatch",
     "expectedRefreshDays": 2,
-    "lastAttemptAt": "2026-11-25T12:55:42.222Z",
-    "lastSuccessAt": "2026-11-25T12:55:42.222Z",
+    "lastAttemptAt": "2026-11-25T13:19:22.388Z",
+    "lastSuccessAt": "2026-11-25T13:19:22.388Z",
     "lastError": null
   },
   "UN Comtrade": {
     "source": "UN Comtrade",
     "expectedRefreshDays": 40,
-    "lastAttemptAt": "2026-11-25T12:58:09.548Z",
-    "lastSuccessAt": "2026-11-25T12:58:09.548Z",
+    "lastAttemptAt": "2026-11-25T13:21:29.245Z",
+    "lastSuccessAt": "2026-11-25T13:21:29.245Z",
     "lastError": null
   },
   "World Bank IDS": {
     "source": "World Bank IDS",
     "expectedRefreshDays": 400,
-    "lastAttemptAt": "2026-11-25T12:58:23.455Z",
-    "lastSuccessAt": "2026-11-25T12:58:23.455Z",
+    "lastAttemptAt": "2026-11-25T13:21:29.810Z",
+    "lastSuccessAt": "2026-11-25T13:21:29.810Z",
     "lastError": null
   },
   "HDX (HAPI)": {
     "source": "HDX (HAPI)",
     "expectedRefreshDays": 30,
-    "lastAttemptAt": "2026-11-25T12:58:42.728Z",
-    "lastSuccessAt": "2026-11-25T12:58:42.728Z",
+    "lastAttemptAt": "2026-11-25T13:21:53.286Z",
+    "lastSuccessAt": "2026-11-25T13:21:53.286Z",
     "lastError": null
   },
   "News RSS": {
     "source": "News RSS",
     "expectedRefreshDays": 1,
-    "lastAttemptAt": "2026-11-25T12:55:37.596Z",
-    "lastSuccessAt": "2026-11-25T12:55:37.596Z",
+    "lastAttemptAt": "2026-11-25T13:19:18.149Z",
+    "lastSuccessAt": "2026-11-25T13:19:18.149Z",
     "lastError": null
   },
   "Open-Meteo Historical Weather (ERA5)": {
     "source": "Open-Meteo Historical Weather (ERA5)",
     "expectedRefreshDays": 168,
-    "lastAttemptAt": "2026-11-25T12:58:56.908Z",
-    "lastSuccessAt": "2026-11-25T12:58:56.908Z",
+    "lastAttemptAt": "2026-11-25T13:22:07.672Z",
+    "lastSuccessAt": "2026-11-25T13:22:07.672Z",
     "lastError": null
   },
   "ACLED via HDX HAPI": {
     "source": "ACLED via HDX HAPI",
     "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-25T12:59:17.218Z",
-    "lastSuccessAt": "2026-11-25T12:59:17.218Z",
+    "lastAttemptAt": "2026-11-25T13:22:31.836Z",
+    "lastSuccessAt": "2026-11-25T13:22:31.836Z",
     "lastError": null
   },
   "Rainfall anomaly (ERA5)": {
     "source": "Rainfall anomaly (ERA5)",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-25T12:59:35.631Z",
-    "lastSuccessAt": "2026-11-25T12:59:35.631Z",
+    "lastAttemptAt": "2026-11-25T13:22:37.630Z",
+    "lastSuccessAt": "2026-11-25T13:22:37.630Z",
     "lastError": null
   },
   "IMF WEO projections": {
     "source": "IMF WEO projections",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-25T12:59:39.091Z",
-    "lastSuccessAt": "2026-11-25T12:59:39.091Z",
+    "lastAttemptAt": "2026-11-25T13:22:40.386Z",
+    "lastSuccessAt": "2026-11-25T13:22:40.386Z",
     "lastError": null
   },
   "Radio Browser directory": {
     "source": "Radio Browser directory",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-25T12:59:40.068Z",
-    "lastSuccessAt": "2026-11-25T12:59:40.068Z",
+    "lastAttemptAt": "2026-11-25T13:22:41.481Z",
+    "lastSuccessAt": "2026-11-25T13:22:41.481Z",
     "lastError": null
   },
   "Ethiopian Securities Exchange": {
     "source": "Ethiopian Securities Exchange",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-25T12:59:42.600Z",
-    "lastSuccessAt": "2026-11-25T12:59:42.600Z",
+    "lastAttemptAt": "2026-11-25T13:22:44.665Z",
+    "lastSuccessAt": "2026-11-25T13:22:44.665Z",
     "lastError": null
   },
   "ESX interbank money market": {
     "source": "ESX interbank money market",
     "expectedRefreshDays": 10,
-    "lastAttemptAt": "2026-11-25T12:59:44.992Z",
-    "lastSuccessAt": "2026-11-25T12:59:44.992Z",
+    "lastAttemptAt": "2026-11-25T13:22:47.160Z",
+    "lastSuccessAt": "2026-11-25T13:22:47.160Z",
     "lastError": null
   },
   "World Bank projects (Ethiopia)": {
     "source": "World Bank projects (Ethiopia)",
     "expectedRefreshDays": 7,
-    "lastAttemptAt": "2026-11-25T12:59:45.690Z",
-    "lastSuccessAt": "2026-11-25T12:59:45.690Z",
+    "lastAttemptAt": "2026-11-25T13:22:48.122Z",
+    "lastSuccessAt": "2026-11-25T13:22:48.122Z",
     "lastError": null
   },
   "Conflict outlook (model)": {
     "source": "Conflict outlook (model)",
     "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-25T13:00:46.237Z",
-    "lastSuccessAt": "2026-11-25T13:00:46.237Z",
+    "lastAttemptAt": "2026-11-25T13:22:59.456Z",
+    "lastSuccessAt": "2026-11-25T13:22:59.456Z",
     "lastError": null
   },
   "IMF PortWatch (ports)": {
     "source": "IMF PortWatch (ports)",
     "expectedRefreshDays": 3,
-    "lastAttemptAt": "2026-11-25T12:59:52.144Z",
-    "lastSuccessAt": "2026-11-25T12:59:52.144Z",
+    "lastAttemptAt": "2026-11-25T13:22:53.393Z",
+    "lastSuccessAt": "2026-11-25T13:22:53.393Z",
     "lastError": null
   },
   "World Bank / UN World Population Prospects": {
     "source": "World Bank / UN World Population Prospects",
     "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-25T13:00:25.152Z",
-    "lastSuccessAt": "2026-11-25T13:00:25.152Z",
+    "lastAttemptAt": "2026-11-25T13:22:53.934Z",
+    "lastSuccessAt": "2026-11-25T13:22:53.934Z",
     "lastError": null
   },
   "OCHA COD-PS via HDX HAPI": {
     "source": "OCHA COD-PS via HDX HAPI",
     "expectedRefreshDays": 35,
-    "lastAttemptAt": "2026-11-25T13:00:27.826Z",
-    "lastSuccessAt": "2026-11-25T13:00:27.826Z",
+    "lastAttemptAt": "2026-11-25T13:22:56.295Z",
+    "lastSuccessAt": "2026-11-25T13:22:56.295Z",
     "lastError": null
   },
   "World Bank (rebase check)": {
     "source": "World Bank (rebase check)",
     "expectedRefreshDays": 30,
-    "lastAttemptAt": "2026-11-25T13:00:45.954Z",
-    "lastSuccessAt": "2026-11-25T13:00:45.954Z",
+    "lastAttemptAt": "2026-11-25T13:22:56.675Z",
+    "lastSuccessAt": "2026-11-25T13:22:56.675Z",
     "lastError": null
   }
 }
