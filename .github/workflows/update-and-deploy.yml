@@ -69,15 +69,24 @@ jobs:
       - name: Validate data contract
         run: npm run validate
 
+      # Committed through the GitHub API so the commit is signed ("Verified"). If the API call
+      # fails (for example the branch moved during the run), fall back to a plain push so the
+      # refreshed data is never lost.
       - name: Commit refreshed data
         if: github.ref_name == github.event.repository.default_branch && github.event_name != 'push'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ -n "$(git status --porcelain data)" ]; then
-            git config user.name "ethiopia-vitals-bot"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data
-            git commit -m "data: scheduled refresh $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            npx tsx scripts/commit-data-signed.ts || {
+              echo "::warning::API commit failed; falling back to a regular push (unsigned)"
+              git config user.name "ethiopia-vitals-bot"
+              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+              git add data
+              git commit -m "data: scheduled refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+              git pull --rebase -q
+              git push
+            }
           else
             echo "No data changes."
           fi
