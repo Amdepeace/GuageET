@@ -1,0 +1,76 @@
+{
+  "asOf": "2026-11-25",
+  "note": "Hand-maintained and sourced. Each statement is an agency's expectation, a long-studied pattern, or one past event used as an analogue, and is labelled as such. Nothing on this page is a forecast by this dashboard, and no impact is quantified here beyond what a cited source states.",
+  "definition": "\"Super El Niño\" has no official definition. It is shorthand, usually for an event whose Oceanic Niño Index (ONI) reaches +2.0 °C or more. NOAA CPC's own scale calls +1.5 °C or more \"strong\", and for strength it now also uses a relative index (RONI), so its figures can differ from the ONI shown here.",
+  "chain": [
+    {
+      "id": "rain",
+      "stage": "1 · Rainfall pattern",
+      "title": "Drier kiremt, wetter deyr/hageya",
+      "kind": "outlook",
+      "text": "FEWS NET's June 2026 outlook expected El Niño to bring below-average June–September kiremt rains, with the largest deficits in central and northeastern areas. For October–December it expects above-average rains, most likely in the bimodal and southern areas, with a flood risk to crops and livestock. Regional climate outlooks (ICPAC) likewise point to a wetter October–December in southern Ethiopia, Kenya and Somalia.",
+      "caveat": "Seasonal outlooks give tendencies, not guarantees: even a very strong El Niño does not always produce the usual impacts (NOAA CPC). Northern Ethiopia is the exception to the wet East African pattern.",
+      "sources": [
+        { "title": "FEWS NET, Ethiopia Food Security Outlook, June 2026", "url": "https://fews.net/east-africa/ethiopia/food-security-outlook/june-2026", "date": "2026-06" },
+        { "title": "FEWS NET, El Niño 2026–2027 topic page", "url": "https://fews.net/topics/el-nino-2026-2027", "date": "2026" },
+        { "title": "ICPAC, GHACOF 74 final technical statement", "url": "https://www.icpac.net/documents/1118/GHACOF74_Final_Technical_Statement.pdf", "date": "2026" }
+      ],
+      "watch": [{ "label": "Rainfall vs normal (map)", "layer": "rainfall" }]
+    },
+    {
+      "id": "crops",
+      "stage": "2 · Crops and livestock",
+      "title": "A weak meher harvest, then floods and pasture",
+      "kind": "reported",
+      "text": "FEWS NET reporting, as relayed by the press in September 2026, described the 2026 kiremt rains as among the poorest on record, with the main meher harvest possibly up to 30% below average. The meher supplies the large majority of Ethiopia's crop output. The October–December rains can help pasture and livestock but come too late for the meher crop, and heavy rain brings its own flood risk.",
+      "caveat": "Second-hand: the 30% figure comes from press coverage of FEWS NET, not from a FEWS NET page this dashboard has read. Check the FEWS NET outlook for the current wording.",
+      "sources": [
+        { "title": "allAfrica, Ethiopia faces contrasting drought and flood risks as a potentially record-strength El Niño looms", "url": "https://allafrica.com/stories/202611120342.html", "date": "2026-11-12" },
+        { "title": "allAfrica, Ethiopia meher harvest and El Niño rainfall", "url": "https://allafrica.com/stories/202609160041.html", "date": "2026-09-16" }
+      ],
+      "watch": [{ "label": "Agriculture share of GDP", "vital": "agri_share" }]
+    },
+    {
+      "id": "water",
+      "stage": "3 · Water and power",
+      "title": "Lower Blue Nile flow tends to follow El Niño",
+      "kind": "pattern",
+      "text": "Studies of the Nile basin find that precipitation over the Blue Nile basin and Nile flow tend to be lower in El Niño years and higher in La Niña years, and that the Indian Ocean Dipole is in some respects an even better predictor. The Blue Nile basin is about 11% of the Nile basin but supplies roughly 60% of the Nile's flow. Ethiopia's hydropower and its electricity exports depend on river flow and reservoir levels.",
+      "caveat": "This dashboard does not estimate the effect on GERD or on Ethiopian generation or exports; the published studies do not give a single figure for this event.",
+      "sources": [{ "title": "Scientific Reports (2022), ENSO and Blue Nile basin precipitation and flow", "url": "https://doi.org/10.1038/s41598-022-12008-8", "date": "2022" }],
+      "watch": [{ "label": "Electricity exports", "section": "sec-power" }]
+    },
+    {
+      "id": "people",
+      "stage": "4 · People and food security",
+      "title": "The 2015–16 El Niño as an analogue",
+      "kind": "analogue",
+      "text": "After El Niño-linked failures of the spring and summer rains in 2015, the Government of Ethiopia and the UN estimated in December 2015 that 10.2 million people would need food assistance in 2016, up from about 4.5 million in August 2015.",
+      "caveat": "One past event, shown for context only. WMO stresses that every El Niño is different and that analogue years are not predictions; Ethiopia's population, safety nets and markets have changed since 2015.",
+      "sources": [
+        { "title": "ReliefWeb, Responding to drought in Ethiopia (2016 Humanitarian Requirements Document)", "url": "https://reliefweb.int/report/ethiopia/responding-drought-ethiopia", "date": "2016-01" },
+        { "title": "NRC, Ethiopia hit by the worst drought in decades", "url": "https://www.nrc.no/news/2015/december/ethiopia-hit-by-the-worst-drought-in-decades", "date": "2015-12" },
+        { "title": "WMO, El Niño impacts Greater Horn of Africa", "url": "https://wmo.int/media/news/el-nino-impacts-greater-horn-of-africa", "date": "2026" }
+      ],
+      "watch": [{ "label": "Humanitarian panel", "section": "sec-economy" }]
+    },
+    {
+      "id": "macro",
+      "stage": "5 · Prices and the economy",
+      "title": "What to watch on this dashboard",
+      "kind": "pattern",
+      "text": "Poor harvests and weaker hydropower can feed into food prices, import needs and the exchange rate. No source this dashboard has read quantifies those effects for 2026, so none is estimated here. The tiles below show the live figures that would move first.",
+      "sources": [],
+      "watch": [
+        { "label": "Inflation (CPI)", "vital": "inflation" },
+        { "label": "Birr per USD", "vital": "fx_usd" },
+        { "label": "Foreign reserves", "vital": "reserves" },
+        { "label": "Commodity prices", "section": "sec-vitals" }
+      ]
+    }
+  ],
+  "mapNotes": [
+    { "id": "dry", "lon": 40.2, "lat": 11.2, "label": "Kiremt: drier", "text": "FEWS NET (June 2026 outlook) expected the largest June–September deficits in central and northeastern areas. Placement is approximate and is not a boundary.", "kind": "dry", "source": "FEWS NET, Ethiopia Food Security Outlook, June 2026" },
+    { "id": "wet", "lon": 40.4, "lat": 5.0, "label": "Deyr/hageya: wetter", "text": "FEWS NET and ICPAC outlooks point to above-average October–December rain in southern Ethiopia, with flood risk. Placement is approximate and is not a boundary.", "kind": "wet", "source": "FEWS NET and ICPAC, 2026 outlooks" }
+  ]
+}

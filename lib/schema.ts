@@ -526,3 +526,36 @@ export type RebaseLive = {
     text: string;
   };
 };
+
+// ---- El Niño / ENSO watch (NOAA CPC + PSL; see scripts/fetch-enso.ts) ----------------
+/** [SST °C, anomaly °C] for one Niño region in one week */
+export type NinoPair = [number, number];
+export type EnsoFile = {
+  source: string;
+  sourceUrl: string;
+  fetchedAt: string;
+  available: boolean;
+  weekly: { d: string; n12: NinoPair; n3: NinoPair; n34: NinoPair; n4: NinoPair }[];
+  oni: { season: string; year: number; total: number; anom: number }[];
+  episodes: { name: string; start: string; peak: number; peakSeason: string; current: boolean; series: { k: number; v: number }[] }[];
+  mei: { year: number; season: string; value: number }[];
+  discussion: { issued: string | null; status: string | null; synopsis: string | null; next: string | null; url: string };
+  errors: string[];
+};
+export type EnsoImpactsFile = {
+  asOf: string;
+  note: string;
+  definition: string;
+  chain: {
+    id: string;
+    stage: string;
+    title: string;
+    /** how firm the statement is: what an agency expects now, a long-observed pattern, or one past event used as an analogue */
+    kind: "outlook" | "pattern" | "analogue" | "reported";
+    text: string;
+    caveat?: string;
+    sources: { title: string; url: string; date: string }[];
+    watch?: { label: string; vital?: string; layer?: string; section?: string }[];
+  }[];
+  mapNotes: { id: string; lon: number; lat: number; label: string; text: string; kind: "dry" | "wet"; source: string }[];
+};

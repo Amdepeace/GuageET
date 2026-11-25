@@ -314,6 +314,14 @@
       "statusKey": "OCHA COD-PS via HDX HAPI"
     },
     {
+      "name": "NOAA CPC (ENSO)",
+      "provides": "El Niño watch: weekly Niño-region sea temperatures, the Oceanic Niño Index and past episodes, the CPC ENSO Diagnostic Discussion (status and synopsis), and MEI.v2 from NOAA PSL",
+      "cadence": "Daily job (CPC updates weekly; the discussion monthly)",
+      "access": "Open files, no key",
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+      "statusKey": "NOAA CPC (ENSO)"
+    },
+    {
       "name": "World Bank (rebase check)",
       "provides": "Daily check of whether the World Bank has adopted Ethiopia's rebased GDP (Rebase tab); compares GDP in birr with the old and new 2024/25 figures",
       "cadence": "Daily job",

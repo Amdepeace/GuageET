@@ -24,6 +24,8 @@ import timelineJson from "@/data/curated/timeline.json";
 import worldIndicatorsJson from "@/data/world-indicators.json";
 import rebaseCuratedJson from "@/data/curated/rebase.json";
 import rebaseLiveJson from "@/data/rebase.json";
+import ensoJson from "@/data/enso.json";
+import ensoImpactsJson from "@/data/curated/enso-impacts.json";
 import type { RebaseCurated, RebaseLive } from "./schema";
 import blocsJson from "@/config/blocs.json";
 import relationsJson from "@/data/curated/relations.json";
@@ -49,6 +51,8 @@ import demographicsJson from "@/data/demographics.json";
 import populationZonesJson from "@/data/population-zones.json";
 import humanitarianJson from "@/data/humanitarian.json";
 import type {
+  EnsoFile,
+  EnsoImpactsFile,
   ChangeEntry,
   CountryCode,
   CountryFile,
@@ -136,6 +140,8 @@ export type DashboardData = {
   timeline: TimelineEvent[];
   worldIndicators: WorldIndicatorsFile;
   rebase: { curated: RebaseCurated; live: RebaseLive };
+  enso: EnsoFile;
+  ensoImpacts: EnsoImpactsFile;
   blocs: Bloc[];
   relations: RelationsFile;
   debt: DebtFile;
@@ -182,6 +188,8 @@ export function loadData(): DashboardData {
     timeline: (timelineJson as { events: TimelineEvent[] }).events,
     worldIndicators: worldIndicatorsJson as WorldIndicatorsFile,
     rebase: { curated: rebaseCuratedJson as unknown as RebaseCurated, live: rebaseLiveJson as unknown as RebaseLive },
+    enso: ensoJson as unknown as EnsoFile,
+    ensoImpacts: ensoImpactsJson as unknown as EnsoImpactsFile,
     blocs: (blocsJson as { blocs: Bloc[] }).blocs,
     relations: relationsJson as RelationsFile,
     debt: debtJson as DebtFile,

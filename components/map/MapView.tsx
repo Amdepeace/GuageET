@@ -15,13 +15,14 @@ import { useVesselLayer, vesselTypeLabel, type VesselProps } from "./useVesselLa
 import { useSatelliteLayer, latestCompleteDay, type SatKind } from "./useSatelliteLayer";
 import { useEonetLayer, type EonetEvent } from "./useEonetLayer";
 import { useShippingLayer, type ShipPick } from "./useShippingLayer";
+import { useEnsoLayer, ENSO_BOUNDS } from "./useEnsoLayer";
 import { useMineralLayers, type MineralProps } from "./useMineralLayers";
 import { useRiskLayers, type RiskPick, type RiskZone, type RainZone, type SoilZone } from "./useRiskLayers";
 import { GLYPHS_URL, HIT_LAYERS, LAYER_KIND, pretty, type DetailFeature } from "./detail";
 import { LayerPanel } from "./LayerPanel";
 import { CITIES, useDetailLayers } from "./useDetailLayers";
 import { useDeckOverlay, type DeckPick } from "./useDeckOverlay";
-import type { ConflictFile, CorridorsFile, PopulationZonesFile, PortsFile, RainfallFile, RedSeaFile, SoilFile, TradeFile } from "@/lib/schema";
+import type { EnsoFile, EnsoImpactsFile, ConflictFile, CorridorsFile, PopulationZonesFile, PortsFile, RainfallFile, RedSeaFile, SoilFile, TradeFile } from "@/lib/schema";
 
 const HOME: LngLatBoundsLike = [
   [32.5, -6],
@@ -88,6 +89,8 @@ export function MapView({
   onEvent,
   onVessel,
   population,
+  enso,
+  ensoImpacts,
   onCorridor,
   relationsSel,
   initialView,
@@ -124,6 +127,8 @@ export function MapView({
   onEvent: (e: EonetEvent) => void;
   onVessel: (v: VesselProps, lat: number, lon: number) => void;
   population: PopulationZonesFile;
+  enso: EnsoFile;
+  ensoImpacts: EnsoImpactsFile;
   onCorridor: (id: string) => void;
   relationsSel: string | null;
   initialView: { zoom: number | null; center: [number, number] | null };
@@ -571,6 +576,7 @@ export function MapView({
   useRiskLayers({ map, ready, layers, theme, conflict, rainfall, soil, soilProp });
   useMineralLayers({ map, ready, layers, theme });
   useShippingLayer({ map, ready, layers, theme, ports, redsea });
+  useEnsoLayer({ map, ready, layers, theme, enso, impacts: ensoImpacts });
   useVesselLayer({ map, ready, layers, theme });
   const popLayer = usePopulationLayer({ map, ready, layers, theme, pop: population, metric: popMetric });
   useSatelliteLayer({ map, ready, layers, kind: satKind, date: satDate || latestCompleteDay() });
@@ -579,7 +585,7 @@ export function MapView({
   eonetRef.current = eonet.events;
   const deck = useDeckOverlay({ map, ready, layers, fac, theme, corridors, trade });
   cb.current.pick = deck.pick;
-  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals", "soil", "ships", "satellite", "events", "vessels", "population"];
+  const DETAIL: Layer[] = ["rivers", "streams", "roads", "tertiary", "rsdp", "rail", "places", "facilities", "streets", "flows", "density", "conflict", "rainfall", "minerals", "soil", "ships", "satellite", "events", "vessels", "population", "enso"];
   const detailOn = DETAIL.filter((l) => layers.includes(l)).length;
 
   const jump = (id: string) => {
@@ -650,6 +656,9 @@ export function MapView({
             errors={detail.errors}
             zoom={zoomNow}
             onZoomTo={(z) => map.current?.easeTo({ zoom: z, duration: 700 })}
+            onFitEnso={() => map.current?.fitBounds(ENSO_BOUNDS, { padding: 20, duration: 900 })}
+            onFitEthiopia={() => map.current?.fitBounds(HOME, { padding: 20, duration: 900 })}
+            enso={{ asOf: enso.weekly.at(-1)?.d ?? null, status: enso.discussion.status }}
             onOpenMarine={() => {
               const mm = map.current;
               if (!mm) return;

@@ -65,6 +65,7 @@ const VitalDetail = dynamic(() => import("./vitals/VitalDetail").then((m) => m.V
 const SimpleDetail = dynamic(() => import("./pulse/SimpleDetail").then((m) => m.SimpleDetail), { ssr: false });
 const PortDetail = dynamic(() => import("./map/PortDetail").then((m) => m.PortDetail), { ssr: false });
 const EventLog = dynamic(() => import("./shell/EventLog").then((m) => m.EventLog), { ssr: false });
+const EnsoPanel = dynamic(() => import("./enso/EnsoPanel").then((m) => m.EnsoPanel), { ssr: false });
 const GlobeSection = dynamic(() => import("./globe/GlobeSection").then((m) => m.GlobeSection), { ssr: false });
 
 // MapLibre is the heaviest dependency; load it after the vitals render.
@@ -558,6 +559,8 @@ export function Dashboard({ data }: { data: DashboardData }) {
               onEvent={(e) => setDetail({ kind: "event", e })}
               onVessel={(v, lat, lon) => setDetail({ kind: "vessel", v, lat, lon })}
               population={data.populationZones}
+              enso={data.enso}
+              ensoImpacts={data.ensoImpacts}
               lang={view.lang}
               onLang={(lang) => setView((v) => ({ ...v, lang }))}
               fac={view.fac}
@@ -584,6 +587,12 @@ export function Dashboard({ data }: { data: DashboardData }) {
             <RedSeaMonitor data={redsea} status={statusOf(redsea.source)} now={now} />
           </Lazy>
         </div>
+      </div>
+
+      <div id="sec-enso">
+        <Lazy minHeight={520}>
+          <EnsoPanel enso={data.enso} impacts={data.ensoImpacts} onOpenVital={(id) => setDetail({ kind: "vital", id, country: "ETH" })} onLayer={(layer) => goDash({ layer })} onGo={(section) => goDash({ section })} />
+        </Lazy>
       </div>
 
       <div id="sec-globe">

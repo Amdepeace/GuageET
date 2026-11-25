@@ -3,6 +3,7 @@ import type { SoilFile } from "@/lib/schema";
 import { CONFLICT_COLORS, RAIN_COLORS, SOIL_COLORS, soilBreaks } from "./useRiskLayers";
 import { MINERAL_KINDS } from "./useMineralLayers";
 import { SHIP_COLORS } from "./useShippingLayer";
+import { ENSO_STEPS } from "./useEnsoLayer";
 import { SAT_KINDS, latestCompleteDay, type SatKind } from "./useSatelliteLayer";
 import { eonetColor } from "./useEonetLayer";
 import { VESSEL_CLASSES } from "./useVesselLayer";
@@ -60,6 +61,7 @@ const ROWS: { id: Layer; label: string; note: string; sw: ReactNode }[] = [
   { id: "events", label: "Natural events (NASA EONET)", note: "wildfires, volcanoes, floods, storms in the last 30 days, Horn of Africa region; live", sw: <span className="inline-block w-[9px] h-[9px] mx-[6px] rounded-full" style={{ background: "#f08a4b" }} /> },
   { id: "vessels", label: "Live vessels (AIS)", note: "ships heard in the last 30 min via the open Open Waters AIS network; coverage is uneven (none in much of the Red Sea / East Africa)", sw: <span className="inline-block w-[7px] h-[7px] mx-[7px] rounded-full" style={{ background: "#0ea5c6" }} /> },
   { id: "population", label: "Population & age (by zone)", note: "population, density, sex and age structure by zone, 2022 (OCHA COD-PS); pick a measure", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#26305a,#5b6fcf,#c4d2ff)" }} /> },
+  { id: "enso", label: "El Niño watch (Pacific + Ethiopia)", note: "NOAA Niño regions coloured by this week's sea-surface anomaly, with the seasonal rainfall tendencies agencies expect for Ethiopia (FEWS NET, ICPAC). Zoom out to see the Pacific; pair with Rainfall vs normal", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px]" style={{ background: "linear-gradient(90deg,#4f8fc0,#d6b24a,#e08a3c,#d9534f,#b3261e)" }} /> },
   { id: "density", label: "Facility density", note: "hexagon map of where facilities are mapped (categories below). Mapping effort varies by area, so it is not a measure of need", sw: <span className="inline-block w-[14px] h-[8px] mx-[4px] rounded-full" style={{ background: "radial-gradient(circle, var(--accent), transparent)" }} /> },
 ];
 
@@ -78,6 +80,9 @@ export function LayerPanel({
   soil,
   zoom,
   onZoomTo,
+  onFitEnso,
+  onFitEthiopia,
+  enso,
   onOpenMarine,
   population,
   sat,
@@ -97,6 +102,9 @@ export function LayerPanel({
   deck: { loading: boolean; error: string | null; partnerArcs: number; tradeReady: boolean };
   zoom: number;
   onZoomTo: (z: number) => void;
+  onFitEnso: () => void;
+  onFitEthiopia: () => void;
+  enso: { asOf: string | null; status: string | null };
   onOpenMarine: () => void;
   population: { file: PopulationZonesFile; metric: PopMetric; onMetric: (m: PopMetric) => void; breaks: number[] };
   sat: { kind: SatKind; onKind: (k: SatKind) => void; date: string; onDate: (d: string) => void };
@@ -127,6 +135,32 @@ export function LayerPanel({
                 <span className="block text-[10.5px] muted">{r.note}</span>
               </span>
             </label>
+            {r.id === "enso" && layers.includes("enso") && (
+              <div className="pl-6 pb-1.5 flex flex-col gap-1 text-[10.5px]">
+                <div className="flex flex-wrap gap-1">
+                  <button type="button" className="ctl" onClick={onFitEnso}>
+                    Show the Pacific
+                  </button>
+                  <button type="button" className="ctl" onClick={onFitEthiopia}>
+                    Back to Ethiopia
+                  </button>
+                  {!layers.includes("rainfall") && (
+                    <button type="button" className="ctl" onClick={() => onToggle("rainfall")}>
+                      Add rainfall vs normal
+                    </button>
+                  )}
+                </div>
+                <div className="flex flex-wrap gap-x-2 gap-y-0.5 muted">
+                  {ENSO_STEPS.map((s) => (
+                    <span key={s.min} className="inline-flex items-center gap-1">
+                      <i className="inline-block w-[9px] h-[9px]" style={{ background: s.color }} />
+                      {s.label}
+                    </span>
+                  ))}
+                </div>
+                <span className="muted">Anomaly of the latest week{enso.asOf ? ` (${enso.asOf})` : ""}, NOAA CPC{enso.status ? ` · CPC status: ${enso.status}` : ""}. Ethiopia markers are approximate tendencies from FEWS NET and ICPAC outlooks, not boundaries.</span>
+              </div>
+            )}
             {ZOOM_NEEDED[r.id] && layers.includes(r.id) && zoom < ZOOM_NEEDED[r.id]!.z && (
               <div className="pl-6 pb-1.5 text-[10.5px]" style={{ color: "var(--warn)" }} role="status">
                 On, but not visible at this zoom ({zoom.toFixed(1)}). {ZOOM_NEEDED[r.id]!.text}.{" "}
