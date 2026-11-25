@@ -38,6 +38,10 @@ const rsdpColor = (theme: string) => {
   return ["match", ["get", "p"], 1, p[0], 2, p[1], 3, p[2], p[3]];
 };
 
+/** zoom at which the full-detail files replace the small overview files */
+const FULL_ZOOM = 6.5;
+const LOD_TOGGLE: Record<string, Layer> = { "d-water": "rivers", "d-rivers": "rivers", "d-roads-major": "roads", "d-rail": "rail" };
+
 const MAJOR_TYPES = ["hospital", "university", "college", "aerodrome", "bus_station", "station", "ferry_terminal"];
 
 type Args = {
@@ -59,6 +63,8 @@ export function useDetailLayers({ map, ready, layers, facCats, theme, lang, avoi
   const avoidIds = useRef<string[]>([]);
   const cityLoaded = useRef<Set<string>>(new Set());
   const streets = useRef<Feature[]>([]);
+  /** sources currently showing the small overview file, mapped to the full-detail file that replaces it when zoomed in */
+  const fullPending = useRef<Map<string, string>>(new Map());
 
   const live = useRef({ layers, facCats, theme, lang, avoid });
   live.current = { layers, facCats, theme, lang, avoid };
@@ -240,8 +246,8 @@ export function useDetailLayers({ map, ready, layers, facCats, theme, lang, avoi
   }, [map, registerIcons]);
 
   // ---- data loading ---------------------------------------------------------------
-  const fetchData = useCallback((id: string, file: string): Promise<FC> => {
-    if (data.current[id]) return Promise.resolve(data.current[id]);
+  const fetchData = useCallback((file: string): Promise<FC> => {
+    if (data.current[file]) return Promise.resolve(data.current[file]);
     // retry transient failures (flaky mobile data, a deploy swapping files mid-load) before giving up
     const attempt = (n: number): Promise<FC> =>
       fetch(`${DETAIL_BASE}/${file}`)
@@ -254,7 +260,7 @@ export function useDetailLayers({ map, ready, layers, facCats, theme, lang, avoi
           return new Promise<FC>((res) => setTimeout(res, 800 * 2 ** n)).then(() => attempt(n + 1));
         });
     return attempt(0).then((fc) => {
-      data.current[id] = fc;
+      data.current[file] = fc;
       return fc;
     });
   }, []);
@@ -316,17 +322,18 @@ export function useDetailLayers({ map, ready, layers, facCats, theme, lang, avoi
   }, [map, addLayers, applyVisibility, busy, fail]);
 
   const ensure = useCallback(
-    (id: string, file: string, after?: (fc: FC) => void): Promise<void> => {
+    (id: string, file: string, after?: (fc: FC) => void, lod?: string): Promise<void> => {
       const m = map.current;
       if (!m) return Promise.resolve();
       const existing = inflight.current.get(id);
       if (existing) return existing;
       if (m.getSource(id)) return Promise.resolve();
       busy(id, true);
-      const p = fetchData(id, file)
+      const p = fetchData(lod ?? file)
         .then((fc) => {
           after?.(fc);
           if (!m.getSource(id)) m.addSource(id, { type: "geojson", data: fc as never });
+          if (lod) fullPending.current.set(id, file);
           addLayers(m, id);
           applyVisibility();
           fail(id, false);
@@ -345,30 +352,67 @@ export function useDetailLayers({ map, ready, layers, facCats, theme, lang, avoi
     [map, fetchData, addLayers, applyVisibility, busy, fail],
   );
 
+  /** swap an overview file for its full-detail twin once the viewer is zoomed in far enough to need it */
+  const upgradeFull = useCallback(() => {
+    const m = map.current;
+    if (!m || m.getZoom() < FULL_ZOOM) return;
+    for (const [id, file] of [...fullPending.current]) {
+      if (!live.current.layers.includes(LOD_TOGGLE[id])) continue;
+      fullPending.current.delete(id);
+      busy(id, true);
+      fetchData(file)
+        .then((fc) => (m.getSource(id) as GeoJSONSource | undefined)?.setData(fc as never))
+        .catch((e) => {
+          console.warn(`full-detail ${id} failed; keeping the overview`, e);
+          fullPending.current.set(id, file); // retry on the next zoom
+        })
+        .finally(() => busy(id, false));
+    }
+  }, [map, fetchData, busy]);
+
   // ---- effects --------------------------------------------------------------------
   // load what is switched on, then show/hide
   useEffect(() => {
     const m = map.current;
     if (!m || !ready) return;
     const on = (l: Layer) => layers.includes(l);
-    if (on("rivers")) {
-      void ensure("d-water", "water.json");
-      void ensure("d-rivers", "rivers.json");
-    }
-    if (on("streams")) void ensure("d-streams", "streams.json");
-    if (on("roads")) void ensure("d-roads-major", "roads-major.json");
-    if (on("rsdp")) void ensure("d-rsdp", "rsdp-roads.json");
-    if (on("tertiary")) void ensure("d-roads-tertiary", "roads-tertiary.json");
-    if (on("rail")) {
-      void ensure("d-rail", "rail.json");
-      void ensure("d-airports", "airports.json");
-    }
-    if (on("places")) void ensure("d-places", "places.json", computeAvoid);
-    if (on("facilities")) void ensure("d-facilities", "facilities.json");
+    // wait for the base map to finish drawing so the first paint never competes with data downloads
+    const load = () => {
+      if (on("places")) void ensure("d-places", "places.json", computeAvoid);
+      if (on("roads")) void ensure("d-roads-major", "roads-major.json", undefined, "roads-major-lod.json");
+      if (on("rail")) {
+        void ensure("d-rail", "rail.json", undefined, "rail-lod.json");
+        void ensure("d-airports", "airports.json");
+      }
+      if (on("rivers")) {
+        void ensure("d-water", "water.json", undefined, "water-lod.json");
+        void ensure("d-rivers", "rivers.json", undefined, "rivers-lod.json");
+      }
+      if (on("streams")) void ensure("d-streams", "streams.json");
+      if (on("rsdp")) void ensure("d-rsdp", "rsdp-roads.json");
+      if (on("tertiary")) void ensure("d-roads-tertiary", "roads-tertiary.json");
+      if (on("facilities")) void ensure("d-facilities", "facilities.json");
+      upgradeFull();
+    };
+    if (m.loaded()) load();
+    else m.once("idle", load);
     applyVisibility();
     applyPlaceFilters();
     refreshStreets();
-  }, [layers, ready, map, ensure, applyVisibility, applyPlaceFilters, refreshStreets, computeAvoid]);
+    return () => {
+      m.off("idle", load);
+    };
+  }, [layers, ready, map, ensure, applyVisibility, applyPlaceFilters, refreshStreets, computeAvoid, upgradeFull]);
+
+  // full-detail files replace the overviews as the viewer zooms in
+  useEffect(() => {
+    const m = map.current;
+    if (!m || !ready) return;
+    m.on("zoomend", upgradeFull);
+    return () => {
+      m.off("zoomend", upgradeFull);
+    };
+  }, [map, ready, upgradeFull]);
 
   // city streets follow the view
   useEffect(() => {

@@ -59,3 +59,10 @@ pip install shapely pyshp
 python3 -I scripts/build-detail-geo.py <input dir>
 python3 -I scripts/refine-infra-geometry.py   # real OSM track for the curated rail lines
 ```
+
+## Overview (level-of-detail) files
+
+`rivers-lod.json`, `roads-major-lod.json`, `rail-lod.json` and `water-lod.json` are small copies of the heavy layers
+(simplified, 3-decimal coordinates, no OSM ids, secondary roads and unnamed minor rivers left out). The map loads these
+first (about 200 KB gzipped for all four, against about 2.5 MB for the full files) and swaps in the full files once the
+viewer zooms past 6.5. Regenerate after refreshing the full files: `npx tsx scripts/build-geo-lod.ts`.

@@ -33,13 +33,19 @@ function median(xs: number[]): number {
 }
 
 async function query(id: string): Promise<Row[]> {
-  const url = `${BASE}?where=portid%3D'${id}'&outFields=date,n_total,capacity&orderByFields=date%20DESC&resultRecordCount=${KEEP}&f=json`;
+  // fully encoded like fetch-ports.ts (whose requests succeed); the hand-built string drew "400 Invalid URL" from ArcGIS
+  const url = `${BASE}?${new URLSearchParams({ where: `portid='${id}'`, outFields: "date,n_total,capacity", orderByFields: "date DESC", resultRecordCount: String(KEEP), f: "json" })}`;
   for (let attempt = 0; attempt < 4; attempt++) {
     const body = (await fetchJson(url)) as ArcGis;
     if (body.error) {
       if (body.error.code === 429 && attempt < 3) {
         console.warn(`redsea: ${id} quota exceeded; waiting 65s (attempt ${attempt + 1})`);
         await sleep(65_000);
+        continue;
+      }
+      if (attempt < 3 && (body.error.code >= 500 || body.error.code === 400)) {
+        console.warn(`redsea: ${id} ArcGIS error ${body.error.code} (${body.error.message}); retrying in ${5 * (attempt + 1)}s`);
+        await sleep(5_000 * (attempt + 1));
         continue;
       }
       throw new Error(`ArcGIS error ${body.error.code}: ${body.error.message}`);

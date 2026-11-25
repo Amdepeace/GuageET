@@ -11,57 +11,61 @@ import { DEFAULT_VIEW, readView, writeView, type Tab, type ViewState } from "@/l
 import alertCfg from "@/config/alerts.json";
 import { StatusBar } from "./shell/StatusBar";
 import { Drawer } from "./shell/Drawer";
-import { EventLog } from "./shell/EventLog";
 import { SystemHealth, type SourceRow } from "./shell/SystemHealth";
 import { AlertBanner } from "./shell/AlertBanner";
 import { DevelopmentPanel } from "./vitals/DevelopmentPanel";
 import { VitalTile } from "./vitals/VitalTile";
-import { VitalDetail } from "./vitals/VitalDetail";
 import { NeighborCompare } from "./vitals/NeighborCompare";
 import { SimpleTile } from "./pulse/SimpleTile";
-import { SimpleDetail } from "./pulse/SimpleDetail";
-import { NewsFeed } from "./pulse/NewsFeed";
-import { RedSeaMonitor } from "./pulse/RedSeaMonitor";
-import { TradePanel } from "./trade/TradePanel";
-import { PowerExportsPanel } from "./power/PowerExportsPanel";
-import { RsdpPanel } from "./roads/RsdpPanel";
-import { ClimatePanel } from "./weather/ClimatePanel";
 import type { RiskPick } from "./map/useRiskLayers";
-import { InvestTab, type GoTarget } from "./invest/InvestTab";
-import { RebaseTab } from "./rebase/RebaseTab";
-import { DemographicsPanel } from "./demography/DemographicsPanel";
-import { GlobeSection } from "./globe/GlobeSection";
+import type { GoTarget } from "./invest/InvestTab";
 import { VesselDetail } from "./map/VesselDetail";
 import type { VesselProps } from "./map/useVesselLayer";
 import { MapLoading } from "./shell/ChunkRecovery";
+import { Lazy } from "./shell/Lazy";
 import { EonetDetail } from "./map/EonetDetail";
 import type { EonetEvent } from "./map/useEonetLayer";
-import { AirQualityPanel } from "./weather/AirQualityPanel";
-import { PortDetail } from "./map/PortDetail";
 import type { ShipPick } from "./map/useShippingLayer";
 import { MineralDetail } from "./map/MineralDetail";
 import type { MineralProps } from "./map/useMineralLayers";
 import { RiskZoneDetail } from "./map/RiskZoneDetail";
-import { RiskPanel } from "./risk/RiskPanel";
-import { InterbankPanel } from "./markets/InterbankPanel";
-import { EsxPanel } from "./markets/EsxPanel";
-import { RadioPanel } from "./radio/RadioPanel";
-import { Explorer } from "./explore/Explorer";
 import { CommandPalette, type PaletteItem } from "./shell/CommandPalette";
 import { SectionNav, SECTIONS } from "./shell/SectionNav";
-import { InfraTable } from "./infra/InfraTable";
 import { InfraDetail } from "./infra/InfraDetail";
 import { CityDetail, WeatherPanel } from "./weather/WeatherPanel";
 import { QuakeDetail } from "./map/QuakeDetail";
 import { RelationsPanel } from "./relations/RelationsPanel";
 import { buildRelations } from "@/lib/relations";
-import { DebtPanel } from "./econ/DebtPanel";
-import { HumanitarianPanel } from "./humanitarian/HumanitarianPanel";
 import { AboutPanel } from "./shell/AboutPanel";
 import { FeatureDetail, featureTitle } from "./map/FeatureDetail";
 import { CorridorDetail } from "./map/CorridorDetail";
 import type { DetailFeature } from "./map/detail";
 import type { FacCat } from "@/lib/urlState";
+
+// Heavy panels are code-split and only fetched when they scroll near (see shell/Lazy) or are opened.
+const DemographicsPanel = dynamic(() => import("./demography/DemographicsPanel").then((m) => m.DemographicsPanel), { ssr: false });
+const Explorer = dynamic(() => import("./explore/Explorer").then((m) => m.Explorer), { ssr: false });
+const RiskPanel = dynamic(() => import("./risk/RiskPanel").then((m) => m.RiskPanel), { ssr: false });
+const TradePanel = dynamic(() => import("./trade/TradePanel").then((m) => m.TradePanel), { ssr: false });
+const InterbankPanel = dynamic(() => import("./markets/InterbankPanel").then((m) => m.InterbankPanel), { ssr: false });
+const EsxPanel = dynamic(() => import("./markets/EsxPanel").then((m) => m.EsxPanel), { ssr: false });
+const RadioPanel = dynamic(() => import("./radio/RadioPanel").then((m) => m.RadioPanel), { ssr: false });
+const ClimatePanel = dynamic(() => import("./weather/ClimatePanel").then((m) => m.ClimatePanel), { ssr: false });
+const RsdpPanel = dynamic(() => import("./roads/RsdpPanel").then((m) => m.RsdpPanel), { ssr: false });
+const PowerExportsPanel = dynamic(() => import("./power/PowerExportsPanel").then((m) => m.PowerExportsPanel), { ssr: false });
+const InfraTable = dynamic(() => import("./infra/InfraTable").then((m) => m.InfraTable), { ssr: false });
+const DebtPanel = dynamic(() => import("./econ/DebtPanel").then((m) => m.DebtPanel), { ssr: false });
+const HumanitarianPanel = dynamic(() => import("./humanitarian/HumanitarianPanel").then((m) => m.HumanitarianPanel), { ssr: false });
+const NewsFeed = dynamic(() => import("./pulse/NewsFeed").then((m) => m.NewsFeed), { ssr: false });
+const AirQualityPanel = dynamic(() => import("./weather/AirQualityPanel").then((m) => m.AirQualityPanel), { ssr: false });
+const RedSeaMonitor = dynamic(() => import("./pulse/RedSeaMonitor").then((m) => m.RedSeaMonitor), { ssr: false });
+const InvestTab = dynamic(() => import("./invest/InvestTab").then((m) => m.InvestTab), { ssr: false });
+const RebaseTab = dynamic(() => import("./rebase/RebaseTab").then((m) => m.RebaseTab), { ssr: false });
+const VitalDetail = dynamic(() => import("./vitals/VitalDetail").then((m) => m.VitalDetail), { ssr: false });
+const SimpleDetail = dynamic(() => import("./pulse/SimpleDetail").then((m) => m.SimpleDetail), { ssr: false });
+const PortDetail = dynamic(() => import("./map/PortDetail").then((m) => m.PortDetail), { ssr: false });
+const EventLog = dynamic(() => import("./shell/EventLog").then((m) => m.EventLog), { ssr: false });
+const GlobeSection = dynamic(() => import("./globe/GlobeSection").then((m) => m.GlobeSection), { ssr: false });
 
 // MapLibre is the heaviest dependency; load it after the vitals render.
 const MapView = dynamic(() => import("./map/MapView").then((m) => m.MapView), {
@@ -88,6 +92,7 @@ type Detail =
   | null;
 
 const DAY = 86_400_000;
+const OPTIONAL_SOURCES = new Set(["GDELT"]);
 const LS_WEATHER = "ev-weather";
 const LS_QUAKES = "ev-quakes";
 const LS_VISIT = "ev-last-visit";
@@ -151,6 +156,13 @@ export function Dashboard({ data }: { data: DashboardData }) {
   const { indicators, countries, infra, cities, thresholds, health, commodities, fxDaily, news, redsea, trade, timeline } = data;
   const [view, setView] = useState<ViewState>(DEFAULT_VIEW);
   const [viewReady, setViewReady] = useState(false);
+  // warm the map's code in idle time after first paint so it opens instantly when scrolled to (nothing runs until then)
+  useEffect(() => {
+    const warm = () => void import("./map/MapView");
+    const idle = (window as unknown as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback;
+    const t = window.setTimeout(() => (idle ? idle(warm, { timeout: 6000 }) : warm()), 3500);
+    return () => window.clearTimeout(t);
+  }, []);
   const [detail, setDetail] = useState<Detail>(null);
   const [now, setNow] = useState<number | null>(null);
   const [lastVisit, setLastVisit] = useState<string | null>(null);
@@ -200,7 +212,8 @@ export function Dashboard({ data }: { data: DashboardData }) {
       ...Object.values(health).map((h) => ({
         source: h.source,
         kind: "scheduled" as const,
-        status: now ? sourceStatus(h, now) : ("NOMINAL" as HealthStatus),
+        // GDELT rate-limits shared IPs and the feed falls back to outlet RSS, so its outage is a warning, not an alarm
+        status: now ? (OPTIONAL_SOURCES.has(h.source) && sourceStatus(h, now) === "OFFLINE" ? ("DELAYED" as HealthStatus) : sourceStatus(h, now)) : ("NOMINAL" as HealthStatus),
         lastSuccess: h.lastSuccessAt,
         error: h.lastError,
       })),
@@ -517,6 +530,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
       <div id="sec-map" className="grid grid-cols-1 gap-2 lg:grid-cols-[minmax(260px,300px)_minmax(0,1fr)_minmax(280px,330px)]">
         <div className="order-1 lg:order-2 h-[62vh] min-h-[380px] lg:h-auto lg:min-h-[560px]">
           {viewReady && (
+            <Lazy className="h-full" minHeight={380} rootMargin="600px" placeholder={<MapLoading />}>
             <MapView
               infra={infra}
               cities={cities}
@@ -554,6 +568,7 @@ export function Dashboard({ data }: { data: DashboardData }) {
               pulseKey={weather.pulse}
               theme={theme}
             />
+            </Lazy>
           )}
         </div>
         <div className="order-2 lg:order-1 flex flex-col gap-2">
@@ -562,12 +577,17 @@ export function Dashboard({ data }: { data: DashboardData }) {
         </div>
         <div className="order-3 flex flex-col gap-2">
           <WeatherPanel cities={cities} snap={weather.snap} status={weatherStatus} now={now} onCity={(id) => setDetail({ kind: "city", id })} />
-          <AirQualityPanel cities={cities} />
-          <RedSeaMonitor data={redsea} status={statusOf(redsea.source)} now={now} />
+          <Lazy minHeight={120}>
+            <AirQualityPanel cities={cities} />
+          </Lazy>
+          <Lazy minHeight={120}>
+            <RedSeaMonitor data={redsea} status={statusOf(redsea.source)} now={now} />
+          </Lazy>
         </div>
       </div>
 
       <div id="sec-globe">
+        <Lazy minHeight={160}>
         <GlobeSection
           trade={data.trade}
           corridors={data.corridors}
@@ -577,17 +597,23 @@ export function Dashboard({ data }: { data: DashboardData }) {
           onCountry={(c) => setDetail({ kind: "country", iso3: c.iso3, un: c.un, name: c.name })}
           onShip={(pick) => setDetail({ kind: "ship", pick })}
         />
+        </Lazy>
       </div>
 
       <div id="sec-demography">
+<Lazy minHeight={420}>
         <DemographicsPanel demo={data.demographics} zones={data.populationZones} onShowMap={() => goDash({ layer: "population" })} />
+</Lazy>
       </div>
 
       <div id="sec-explore">
+<Lazy minHeight={420}>
         <Explorer indicators={indicators} countries={countries} theme={theme} />
+</Lazy>
       </div>
 
       <div id="sec-risk">
+<Lazy minHeight={420}>
         <RiskPanel
           eth={countries.ETH}
           conflict={data.conflict}
@@ -602,43 +628,62 @@ export function Dashboard({ data }: { data: DashboardData }) {
           }}
           onOpenVital={(id) => setDetail({ kind: "vital", id, country: "ETH" })}
         />
+</Lazy>
       </div>
 
       <div id="sec-economy" className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+<Lazy minHeight={300}>
         <DebtPanel debt={data.debt} imf={data.imfProgramme} status={statusOf(data.debt.source)} now={now} />
         <HumanitarianPanel data={data.humanitarian} status={statusOf(data.humanitarian.source)} />
+</Lazy>
       </div>
 
       <div id="sec-trade" className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+<Lazy minHeight={300}>
         <TradePanel trade={trade} status={statusOf(trade.source)} />
         <NewsFeed news={news} status={newsStatus} now={now} />
+</Lazy>
       </div>
 
       <div id="sec-markets" className="flex flex-col gap-2">
+<Lazy minHeight={300}>
         <InterbankPanel data={data.esxRates} health={statusOf(data.esxRates.source)} />
         <EsxPanel data={data.esx} cal={data.esxCalendar} now={now ? new Date(now) : null} health={statusOf(data.esx.source)} />
+</Lazy>
       </div>
 
       <div id="sec-radio">
+<Lazy minHeight={200}>
         <RadioPanel data={data.radio} />
+</Lazy>
       </div>
 
       <div id="sec-climate">
+<Lazy minHeight={300}>
         <ClimatePanel data={data.climate} />
+</Lazy>
       </div>
 
       <div id="sec-roads">
+<Lazy minHeight={300}>
         <RsdpPanel data={data.rsdp} />
+</Lazy>
       </div>
 
       <div id="sec-power">
+<Lazy minHeight={300}>
         <PowerExportsPanel data={data.powerExports} onSelectInfra={(id) => selectInfra(id)} />
+</Lazy>
       </div>
 
       <div id="sec-infra"></div>
-      <InfraTable infra={infra} selected={view.sel} onSelect={(id) => selectInfra(id)} />
+      <Lazy minHeight={240}>
+        <InfraTable infra={infra} selected={view.sel} onSelect={(id) => selectInfra(id)} />
+      </Lazy>
 
-      <EventLog changes={data.changes} events={data.events} indicators={indicators} lastVisit={lastVisit} onOpen={(id, country) => setDetail({ kind: "vital", id, country })} />
+      <Lazy minHeight={160}>
+        <EventLog changes={data.changes} events={data.events} indicators={indicators} lastVisit={lastVisit} onOpen={(id, country) => setDetail({ kind: "vital", id, country })} />
+      </Lazy>
 
       <footer className="text-[10.5px] muted px-1 pb-2 flex flex-wrap gap-x-3">
         <span>Every figure shows its source and period. Values are never estimated; on a failed fetch the last good value stays, marked stale.</span>
