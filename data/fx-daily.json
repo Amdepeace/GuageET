@@ -105,6 +105,15 @@
       "source": "open.er-api.com",
       "sourceUrl": "https://www.er-api.com/",
       "fetchedAt": "2026-11-24T13:42:52.592Z"
+    },
+    {
+      "value": 161.537273,
+      "unit": "ETB per USD",
+      "asOf": "2026-11-25",
+      "period": "2026-11-25",
+      "source": "open.er-api.com",
+      "sourceUrl": "https://www.er-api.com/",
+      "fetchedAt": "2026-11-25T12:54:52.038Z"
     }
   ]
 }

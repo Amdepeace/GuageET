@@ -1,7 +1,7 @@
 {
   "source": "World Bank / UN World Population Prospects",
   "sourceUrl": "https://databank.worldbank.org/source/population-estimates-and-projections",
-  "fetchedAt": "2026-11-24T13:47:58.236Z",
+  "fetchedAt": "2026-11-25T12:59:52.363Z",
   "lastUpdated": "2026-07-01",
   "available": true,
   "note": "Population by sex and age, fertility, life expectancy and related series as published by the UN Population Division (World Population Prospects) through the World Bank. Years from 2024 on are the UN's medium-variant projections, not recorded counts, and the further out, the more uncertain. Median age is computed here from the published 5-year age bands.",

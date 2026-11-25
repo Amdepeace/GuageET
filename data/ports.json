@@ -1,7 +1,7 @@
 {
   "source": "IMF PortWatch (ports)",
   "sourceUrl": "https://portwatch.imf.org/",
-  "fetchedAt": "2026-11-24T13:47:14.010Z",
+  "fetchedAt": "2026-11-25T12:59:45.963Z",
   "available": true,
   "note": "Daily port calls and estimated import/export tonnage from IMF PortWatch, derived from satellite vessel-tracking (AIS) data. Near-live, not live: PortWatch publishes with a lag of several days. Tonnage is PortWatch's estimate, not customs data, and a port with zero calls may simply have poor AIS coverage.",
   "ports": [

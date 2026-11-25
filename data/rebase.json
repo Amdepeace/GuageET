@@ -1,7 +1,7 @@
 {
   "source": "World Bank WDI (NY.GDP.MKTP.CN, NY.GDP.MKTP.CD)",
   "sourceUrl": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CN?locations=ET",
-  "fetchedAt": "2026-11-24T13:48:04.280Z",
+  "fetchedAt": "2026-11-25T13:00:28.056Z",
   "available": true,
   "gdpBirr": [
     {
