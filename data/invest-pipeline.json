@@ -1,7 +1,7 @@
 {
   "source": "World Bank projects (Ethiopia)",
   "sourceUrl": "https://projects.worldbank.org/en/projects-operations/projects-list?countrycode_exact=ET",
-  "fetchedAt": "2026-11-25T13:22:47.393Z",
+  "fetchedAt": "2026-11-26T12:37:21.142Z",
   "available": true,
   "note": "Public-sector development finance from the World Bank's open projects API, not private investment offers. Commitment is the amount the Bank lists (0 means not yet stated); pipeline projects can change or drop. Sector labels are the Bank's and are often blank for pipeline projects.",
   "projects": [

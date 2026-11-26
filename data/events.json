@@ -958,5 +958,17 @@
     "kind": "source_recovered",
     "source": "IMF PortWatch",
     "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-26T12:37:03.802Z",
+    "kind": "source_error",
+    "source": "ACLED via HDX HAPI",
+    "message": "Fetch failed: Unexpected end of JSON input"
+  },
+  {
+    "at": "2026-11-26T12:37:28.411Z",
+    "kind": "source_error",
+    "source": "OCHA COD-PS via HDX HAPI",
+    "message": "Fetch failed: Unexpected end of JSON input"
   }
 ]

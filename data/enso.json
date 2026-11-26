@@ -1,7 +1,7 @@
 {
   "source": "NOAA CPC (ENSO)",
   "sourceUrl": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
-  "fetchedAt": "2026-11-25T13:23:31.422Z",
+  "fetchedAt": "2026-11-26T12:37:29.012Z",
   "available": true,
   "weekly": [
     {
