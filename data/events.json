@@ -970,5 +970,17 @@
     "kind": "source_error",
     "source": "OCHA COD-PS via HDX HAPI",
     "message": "Fetch failed: Unexpected end of JSON input"
+  },
+  {
+    "at": "2026-11-27T12:24:17.063Z",
+    "kind": "source_recovered",
+    "source": "ACLED via HDX HAPI",
+    "message": "Source recovered"
+  },
+  {
+    "at": "2026-11-27T12:25:01.460Z",
+    "kind": "source_recovered",
+    "source": "OCHA COD-PS via HDX HAPI",
+    "message": "Source recovered"
   }
 ]

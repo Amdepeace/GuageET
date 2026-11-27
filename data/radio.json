@@ -1,21 +1,10 @@
 {
   "source": "Radio Browser directory",
   "sourceUrl": "https://www.radio-browser.info/",
-  "fetchedAt": "2026-11-26T12:37:14.399Z",
+  "fetchedAt": "2026-11-27T12:24:38.977Z",
   "available": true,
   "note": "Station list and stream addresses come from the Radio Browser community directory, which health-checks each stream; a stream can still be down or blocked for you. Audio plays straight from each station's own stream host. This dashboard is not affiliated with any station.",
   "stations": [
-    {
-      "id": "566306b4-6f54-4ab6-a238-adcef2b645fd",
-      "name": "Sheger FM 102.1",
-      "url": "https://stream.zenolive.com/y91n1vtbaw5tv",
-      "codec": "MP3",
-      "bitrate": 128,
-      "language": "",
-      "tags": "",
-      "homepage": "https://www.shegerfm.com/",
-      "lastCheck": "2026-11-21"
-    },
     {
       "id": "4cc6b1aa-5bf4-4fa6-87d2-9c687a854f8a",
       "name": "Ethio FM 107.8",
@@ -25,95 +14,18 @@
       "language": "amharic",
       "tags": "public radio",
       "homepage": "https://zeno.fm/radio/ethiofm107_8/",
-      "lastCheck": "2026-11-22"
+      "lastCheck": "2026-11-27"
     },
     {
-      "id": "ead338ab-3b2b-4835-bad0-dcc270b102f4",
-      "name": "FM ADDIS 97-1",
-      "url": "https://stream.zeno.fm/rb6wbrap7yzuv",
-      "codec": "MP3",
-      "bitrate": 128,
-      "language": "amharic",
-      "tags": "public radio",
-      "homepage": "https://zeno.fm/radio/ebc-fm-addis-97-1/",
-      "lastCheck": "2026-11-22"
-    },
-    {
-      "id": "1711b4da-1e44-49c1-98be-a690d8decacb",
-      "name": "Tizta ትዝታ FM",
-      "url": "https://stream.zeno.fm/55nlq5yzqlftv",
-      "codec": "MP3",
-      "bitrate": 128,
-      "language": "amharic",
-      "tags": "ambient,ethiopia,slow,tizta",
-      "homepage": "https://zeno.fm/radio/tizita-fm/",
-      "lastCheck": "2026-11-22"
-    },
-    {
-      "id": "dbbee4e3-a0ee-4405-9d70-2a558233dcc4",
-      "name": "Ahadu Radio",
-      "url": "https://stream-155.zeno.fm/txxpndf1wwzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ0eHhwbmRmMXd3enV2IiwiaG9zdCI6InN0cmVhbS0xNTUuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Ilp6VmgwOG5XUUFtWXQySm5OYk5XbXciLCJpYXQiOjE3MzAyMjY1NTksImV4cCI6MTczMDIyNjYxOX0.AnMCHL-Etgnu9fOBcU_h1hawhJJv_PcXGHBS2BOlzV0",
+      "id": "566306b4-6f54-4ab6-a238-adcef2b645fd",
+      "name": "Sheger FM 102.1",
+      "url": "https://stream.zenolive.com/y91n1vtbaw5tv",
       "codec": "MP3",
       "bitrate": 128,
       "language": "",
       "tags": "",
-      "homepage": "https://www.ahaduradio.com/",
-      "lastCheck": "2026-11-22"
-    },
-    {
-      "id": "9192cd80-b402-4b63-b265-066d065b8659",
-      "name": "Taem Radio ጣዕም ሬድዮ",
-      "url": "https://stream.zeno.fm/ffg8htkh1k0uv",
-      "codec": "MP3",
-      "bitrate": 128,
-      "language": "amharic",
-      "tags": "",
-      "homepage": "https://www.taemmedia.com/",
-      "lastCheck": "2026-11-22"
-    },
-    {
-      "id": "5188257a-5ae1-4294-b6b5-479caae85f31",
-      "name": "Addis Music",
-      "url": "https://stream.zeno.fm/umguj2baxdctv",
-      "codec": "MP3",
-      "bitrate": 128,
-      "language": "amharic",
-      "tags": "ethiopia,music",
-      "homepage": "https://zeno.fm/radio/addis-music/",
-      "lastCheck": "2026-11-22"
-    },
-    {
-      "id": "a46114c6-db82-4d3b-a9da-4a981504f7ff",
-      "name": "EthiOldies",
-      "url": "https://www.ethioldies.com/listen/ethioldies/radio.mp3",
-      "codec": "MP3",
-      "bitrate": 192,
-      "language": "",
-      "tags": "",
-      "homepage": "https://www.ethioldies.com/",
-      "lastCheck": "2026-11-22"
-    },
-    {
-      "id": "5c0d053a-f28f-45dd-97cc-06d85209cdda",
-      "name": "TIRITA 97.6 FM",
-      "url": "https://stream.zeno.fm/x751reg18zhvv",
-      "codec": "MP3",
-      "bitrate": 128,
-      "language": "",
-      "tags": "",
-      "homepage": "https://stream.zeno.fm/x751reg18zhvv",
-      "lastCheck": "2026-11-22"
-    },
-    {
-      "id": "89e889e1-124c-4c36-882b-c666ef83189b",
-      "name": "Ethiopian Orthodox Church Mezmur",
-      "url": "https://stream.zeno.fm/pfaho9uockwuv",
-      "codec": "MP3",
-      "bitrate": 128,
-      "language": "amharic",
-      "tags": "orthodox,religious",
-      "homepage": "https://zeno.fm/radio/orthodox/",
-      "lastCheck": "2026-11-21"
+      "homepage": "https://www.shegerfm.com/",
+      "lastCheck": "2026-11-26"
     },
     {
       "id": "22dd8fd6-ee1a-445b-af52-18dc574cff2d",
@@ -124,51 +36,73 @@
       "language": "",
       "tags": "",
       "homepage": "https://radio-ethiopia.com/stations",
-      "lastCheck": "2026-11-22"
+      "lastCheck": "2026-11-27"
     },
     {
-      "id": "ce7d2197-eca5-4188-b8d2-c550992160e5",
-      "name": "Christian Mezmur Ethiopia",
-      "url": "https://stream.zeno.fm/0bws6ct0ey8uv",
+      "id": "a46114c6-db82-4d3b-a9da-4a981504f7ff",
+      "name": "EthiOldies",
+      "url": "https://www.ethioldies.com/listen/ethioldies/radio.mp3",
+      "codec": "MP3",
+      "bitrate": 192,
+      "language": "",
+      "tags": "",
+      "homepage": "https://www.ethioldies.com/",
+      "lastCheck": "2026-11-27"
+    },
+    {
+      "id": "1711b4da-1e44-49c1-98be-a690d8decacb",
+      "name": "Tizta ትዝታ FM",
+      "url": "https://stream.zeno.fm/55nlq5yzqlftv",
       "codec": "MP3",
       "bitrate": 128,
       "language": "amharic",
-      "tags": "christian,ethiopia,religious",
-      "homepage": "https://zeno.fm/radio/christian-mez/",
-      "lastCheck": "2026-11-22"
+      "tags": "ambient,ethiopia,slow,tizta",
+      "homepage": "https://zeno.fm/radio/tizita-fm/",
+      "lastCheck": "2026-11-27"
     },
     {
-      "id": "0af2ed70-732c-4475-b206-6a937bb895ed",
-      "name": "Amharic Live Sport የኳስ ኮሜኔታተር",
-      "url": "https://stream.zeno.fm/bqtruhn4q98uv",
+      "id": "5c0d053a-f28f-45dd-97cc-06d85209cdda",
+      "name": "TIRITA 97.6 FM",
+      "url": "https://stream.zeno.fm/x751reg18zhvv",
+      "codec": "MP3",
+      "bitrate": 128,
+      "language": "",
+      "tags": "",
+      "homepage": "https://stream.zeno.fm/x751reg18zhvv",
+      "lastCheck": "2026-11-27"
+    },
+    {
+      "id": "dbbee4e3-a0ee-4405-9d70-2a558233dcc4",
+      "name": "Ahadu Radio",
+      "url": "https://stream-155.zeno.fm/txxpndf1wwzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ0eHhwbmRmMXd3enV2IiwiaG9zdCI6InN0cmVhbS0xNTUuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6Ilp6VmgwOG5XUUFtWXQySm5OYk5XbXciLCJpYXQiOjE3MzAyMjY1NTksImV4cCI6MTczMDIyNjYxOX0.AnMCHL-Etgnu9fOBcU_h1hawhJJv_PcXGHBS2BOlzV0",
+      "codec": "MP3",
+      "bitrate": 128,
+      "language": "",
+      "tags": "",
+      "homepage": "https://www.ahaduradio.com/",
+      "lastCheck": "2026-11-27"
+    },
+    {
+      "id": "9192cd80-b402-4b63-b265-066d065b8659",
+      "name": "Taem Radio ጣዕም ሬድዮ",
+      "url": "https://stream.zeno.fm/ffg8htkh1k0uv",
       "codec": "MP3",
       "bitrate": 128,
       "language": "amharic",
-      "tags": "amharic,football,soccer,sports",
-      "homepage": "https://zeno.fm/radio/Mereja/",
-      "lastCheck": "2026-11-21"
+      "tags": "",
+      "homepage": "https://www.taemmedia.com/",
+      "lastCheck": "2026-11-27"
     },
     {
-      "id": "94984219-a38e-47b3-ba54-206761e93d62",
-      "name": "YeneVibe Radio",
-      "url": "https://stream.yeneviberadio.com/",
-      "codec": "MP3",
-      "bitrate": 128,
-      "language": "amharic,english",
-      "tags": "addis ababa,amharic,entertainment,ethio-pop,ethiopian,music,talk,tizita",
-      "homepage": "https://yeneviberadio.com/",
-      "lastCheck": "2026-11-25"
-    },
-    {
-      "id": "448a7bdc-29b1-4953-b134-1e8ae5a087c6",
-      "name": "Jano FM",
-      "url": "https://stream-54.zeno.fm/1cyn1as4v68uv?zs=6ALEcBPQR5Wq6_T-zr8TDw",
+      "id": "ead338ab-3b2b-4835-bad0-dcc270b102f4",
+      "name": "FM ADDIS 97-1",
+      "url": "https://stream.zeno.fm/rb6wbrap7yzuv",
       "codec": "MP3",
       "bitrate": 128,
       "language": "amharic",
-      "tags": "african music",
-      "homepage": "https://zeno.fm/radio/jano-fm/",
-      "lastCheck": "2026-11-22"
+      "tags": "public radio",
+      "homepage": "https://zeno.fm/radio/ebc-fm-addis-97-1/",
+      "lastCheck": "2026-11-27"
     },
     {
       "id": "ca47343d-6126-4482-9ffe-42ea52f6c9c6",
@@ -179,7 +113,7 @@
       "language": "amharic,english",
       "tags": "african music",
       "homepage": "https://zeno.fm/radio/voice-of-Ethiopia/",
-      "lastCheck": "2026-11-22"
+      "lastCheck": "2026-11-27"
     },
     {
       "id": "dbabf997-a292-4112-9cf8-308ba92ff2fa",
@@ -190,7 +124,62 @@
       "language": "arabic,english,french",
       "tags": "music",
       "homepage": "https://ebc.et/",
-      "lastCheck": "2026-11-22"
+      "lastCheck": "2026-11-27"
+    },
+    {
+      "id": "448a7bdc-29b1-4953-b134-1e8ae5a087c6",
+      "name": "Jano FM",
+      "url": "https://stream-54.zeno.fm/1cyn1as4v68uv?zs=6ALEcBPQR5Wq6_T-zr8TDw",
+      "codec": "MP3",
+      "bitrate": 128,
+      "language": "amharic",
+      "tags": "african music",
+      "homepage": "https://zeno.fm/radio/jano-fm/",
+      "lastCheck": "2026-11-27"
+    },
+    {
+      "id": "89e889e1-124c-4c36-882b-c666ef83189b",
+      "name": "Ethiopian Orthodox Church Mezmur",
+      "url": "https://stream.zeno.fm/pfaho9uockwuv",
+      "codec": "MP3",
+      "bitrate": 128,
+      "language": "amharic",
+      "tags": "orthodox,religious",
+      "homepage": "https://zeno.fm/radio/orthodox/",
+      "lastCheck": "2026-11-26"
+    },
+    {
+      "id": "05ac2e34-a4a2-4719-bd85-05b7a54aeacf",
+      "name": "YeneVibe Radio",
+      "url": "https://stream.zeno.fm/5mz3qqftsnhvv",
+      "codec": "MP3",
+      "bitrate": 128,
+      "language": "amharic",
+      "tags": "amharic,ethiopia,music,public radio",
+      "homepage": "https://radio.yenevibe.com/",
+      "lastCheck": "2026-11-27"
+    },
+    {
+      "id": "5188257a-5ae1-4294-b6b5-479caae85f31",
+      "name": "Addis Music",
+      "url": "https://stream.zeno.fm/umguj2baxdctv",
+      "codec": "MP3",
+      "bitrate": 128,
+      "language": "amharic",
+      "tags": "ethiopia,music",
+      "homepage": "https://zeno.fm/radio/addis-music/",
+      "lastCheck": "2026-11-27"
+    },
+    {
+      "id": "0af2ed70-732c-4475-b206-6a937bb895ed",
+      "name": "Amharic Live Sport የኳስ ኮሜኔታተር",
+      "url": "https://stream.zeno.fm/bqtruhn4q98uv",
+      "codec": "MP3",
+      "bitrate": 128,
+      "language": "amharic",
+      "tags": "amharic,football,soccer,sports",
+      "homepage": "https://zeno.fm/radio/Mereja/",
+      "lastCheck": "2026-11-27"
     },
     {
       "id": "ca56cd1c-50b2-44ca-a7af-070b88f99031",
@@ -201,7 +190,18 @@
       "language": "",
       "tags": "",
       "homepage": "https://stream.zeno.fm/rqx24qj7offvv",
-      "lastCheck": "2026-11-22"
+      "lastCheck": "2026-11-27"
+    },
+    {
+      "id": "ce7d2197-eca5-4188-b8d2-c550992160e5",
+      "name": "Christian Mezmur Ethiopia",
+      "url": "https://stream.zeno.fm/0bws6ct0ey8uv",
+      "codec": "MP3",
+      "bitrate": 128,
+      "language": "amharic",
+      "tags": "christian,ethiopia,religious",
+      "homepage": "https://zeno.fm/radio/christian-mez/",
+      "lastCheck": "2026-11-27"
     }
   ]
 }
